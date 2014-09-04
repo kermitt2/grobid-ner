@@ -1,0 +1,48 @@
+target
+grobid-home/tmp
+.DS_Store
+Thumbs.db
+.project
+.settings
+.classpath
+.idea
+*.iml
+*.log
+*.log.*
+*.old
+
+# *.log
+# grobid-core/log/debug.log
+# *.log
+# grobid-core/log/error.log
+# grobid-core/log/warn.log
+# grobid-core/log/debug.log
+# grobid-core/log/error.log
+# grobid-core/log/warn.log
+
+
+grobid-core/src/test/resources/org/grobid/core/annotations/resTeiStAXParser/out.tei.xml
+
+grobid-home/models/affiliation-address/model.crf.old
+
+grobid-home/models/name/header/model.crf.old
+
+build.xml
+
+grobid-core/maven-build.properties
+
+grobid-core/maven-build.xml
+
+grobid-home/maven-build.properties
+
+grobid-home/maven-build.xml
+
+grobid-service/maven-build.properties
+
+grobid-service/maven-build.xml
+
+grobid-trainer/maven-build.properties
+
+grobid-trainer/maven-build.xml
+
+maven-build.xml
