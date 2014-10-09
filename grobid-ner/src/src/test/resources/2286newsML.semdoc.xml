@@ -1,0 +1,3274 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<docs len="497" num="1">
+  <doc len="497">
+    <sensesInfo>
+      <sense csk="rally/C4" fsk="rally/V4" fs="rally/V4">
+        <desc>return to a former condition.</desc>
+      </sense>
+      <sense csk="record/C13" fsk="record/N3" fs="record/N3">
+        <desc>an extreme attainment; the best (or worst) performance ever attested (as in a sport).</desc>
+      </sense>
+      <sense csk="record/C1" fsk="record/N1" fs="record/N1">
+        <desc>anything (such as a document or a phonograph record or a photograph) providing permanent evidence of or information about past events.</desc>
+      </sense>
+      <sense csk="record/C1" fsk="record/N8" fs="record/N8">
+        <desc>a document that can serve as legal evidence of a transaction.</desc>
+      </sense>
+      <sense csk="put/C2" fsk="put/V1" fs="put/V1">
+        <desc>put into a certain place or abstract location.</desc>
+      </sense>
+      <sense csk="market/C19" fsk="market/N1" fs="market/N1">
+        <desc>the world of commercial activity where goods and services are bought and sold.</desc>
+      </sense>
+      <sense csk="market/C19" fsk="market/N2" fs="market/N2">
+        <desc>the securities markets in the aggregate.</desc>
+      </sense>
+      <sense csk="auction/C2" fsk="auction/N2" fs="auction/N2">
+        <desc>the public sale of something to the highest bidder.</desc>
+      </sense>
+      <sense csk="free/C1" fsk="free/J1" fs="free/J1">
+        <desc>able to act at will; not hampered; not under compulsion or restraint.</desc>
+      </sense>
+      <sense csk="free/C4" fsk="free/J3" fs="free/J3">
+        <desc>costing nothing.</desc>
+      </sense>
+      <sense csk="raise/C1" fsk="raise/V1" fs="raise/V1">
+        <desc>raise the level or amount of something.</desc>
+      </sense>
+      <sense csk="domestic/C1" fsk="domestic/J1" fs="domestic/J1">
+        <desc>of concern to or concerning the internal affairs of a nation.</desc>
+      </sense>
+      <sense csk="domestic/C2" fsk="domestic/J2" fs="domestic/J2">
+        <desc>of or relating to the home.</desc>
+      </sense>
+      <sense csk="close/C11" fsk="close/V13" fs="close/V13">
+        <desc>be priced or listed when trading stops.</desc>
+      </sense>
+      <sense csk="level/C1" fsk="level/N1" fs="degree/N1">
+        <desc>a position on a scale of intensity or amount or quality.</desc>
+      </sense>
+      <sense csk="figure/C3" fsk="figure/N7" fs="figure/N7">
+        <desc>an amount of money expressed numerically.</desc>
+      </sense>
+      <sense csk="stage/C5" fsk="stage/V2" fs="arrange/V2">
+        <desc>make arrangements for.</desc>
+      </sense>
+      <sense csk="track/C1" fsk="track/N1" fs="path/N4">
+        <desc>a line or route along which something travels or moves.</desc>
+      </sense>
+      <sense csk="strong/C1" fsk="strong/J1" fs="strong/J1">
+        <desc>having or indicating strength or power greater than average or expected.</desc>
+      </sense>
+      <sense csk="quarter/C6" fsk="quarter/N6" fs="quarter/N6">
+        <desc>a fourth part of a year; three months.</desc>
+      </sense>
+      <sense csk="victim/C1" fsk="victim/N1" fs="victim/N1">
+        <desc>an unfortunate person or animal who suffers from some adverse circumstance.</desc>
+      </sense>
+      <sense csk="interest/C3" fsk="interest/N4" fs="interest/N4">
+        <desc>a fixed charge for borrowing money; usually a percentage of the amount borrowed.</desc>
+      </sense>
+      <sense csk="bill/C1" fsk="bill/N1" fs="bill/N1">
+        <desc>a statute in draft before it becomes law.</desc>
+      </sense>
+      <sense csk="technical/C5" fsk="technical/N2" fs="technical_foul/N1">
+        <desc>(basketball) a foul that that can be assessed on a player or a coach or a team for unsportsmanlike conduct; does not usually involve physical contact during play.</desc>
+      </sense>
+      <sense csk="risk/C1" fsk="risk/N1" fs="hazard/N1">
+        <desc>a potential cause of pain or injury or loss or misfortune, or the possibility or probability of incurring such pain, injury, loss or misfortune</desc>
+      </sense>
+      <sense csk="head/C3" fsk="head/N4" fs="head/N4">
+        <desc>a person who is in charge.</desc>
+      </sense>
+      <sense csk="view/C2" fsk="view/N3" fs="view/N3">
+        <desc>the act of looking or seeing or observing.</desc>
+      </sense>
+      <sense csk="etch/C1" fsk="etch/V1" fs="etch/V1">
+        <desc>make an etching of.</desc>
+      </sense>
+      <sense csk="index/C2" fsk="index/N2" fs="index/N2">
+        <desc>a number or ratio (a value on a scale of measurement) derived from a series of observed facts; can reveal relative changes as a function of time.</desc>
+      </sense>
+      <sense csk="long/C1" fsk="long/J1" fs="long/J1">
+        <desc>primarily temporal sense; being or indicating a relatively great or greater than average duration or passage of time or a duration as specified.</desc>
+      </sense>
+      <sense csk="stock/C1" fsk="stock/N1" fs="stock/N1">
+        <desc>the capital raised by a corporation through the issue of shares entitling holders to an ownership interest (equity).</desc>
+      </sense>
+      <sense csk="export/C1" fsk="export/N1" fs="export/N1">
+        <desc>commodities (goods or services) sold to a foreign country.</desc>
+      </sense>
+      <sense csk="justify/C1" fsk="justify/V1" fs="justify/V1">
+        <desc>show to be reasonable or provide adequate ground for.</desc>
+      </sense>
+      <sense csk="lead/C4" fsk="lead/V8" fs="lead/V8">
+        <desc>be ahead of others; be the first.</desc>
+      </sense>
+      <sense csk="Argentina/C1" fsk="Argentina/N1" isne="1" fs="Argentina/N1">
+        <desc>a republic in southern South America; second largest country in South America.</desc>
+        <neInfo>
+          <neT>location/N1</neT>
+          <neST>country/N1</neST>
+        </neInfo>
+      </sense>
+      <sense csk="volume/C3" fsk="volume/N2" fs="bulk/N2">
+        <desc>the property of something that is great in magnitude.</desc>
+      </sense>
+      <sense csk="buzz/C7" fsk="buzz/N2" fs="buzz/N2">
+        <desc>a confusion of activity and gossip.</desc>
+      </sense>
+      <sense csk="still/C1" fsk="still/D1" fs="still/D1">
+        <desc>with reference to action or condition; without change, interruption, or cessation.</desc>
+      </sense>
+      <sense csk="remain/C1" fsk="remain/V1" fs="stay/V1">
+        <desc>stay the same; remain in a certain state.</desc>
+      </sense>
+      <sense csk="high/C1" fsk="high/N1" fs="high/N1">
+        <desc>a lofty level or position or degree.</desc>
+      </sense>
+      <sense csk="high/C1" fsk="high/J1" fs="high/J1">
+        <desc>greater than normal in degree or intensity or amount.</desc>
+      </sense>
+      <sense csk="main/C1" fsk="main/J1" fs="chief/J1">
+        <desc>most important element.</desc>
+      </sense>
+      <sense csk="stock_market/C5" fsk="stock_market/N1" fs="stock_exchange/N1">
+        <desc>an exchange where security trading is conducted by professional stockbrokers.</desc>
+      </sense>
+      <sense csk="mind/C1" fsk="mind/N1" fs="mind/N1">
+        <desc>that which is responsible for one's thoughts and feelings; the seat of the faculty of reason.</desc>
+      </sense>
+      <sense csk="wary/C1" fsk="wary/J1" fs="wary/J1">
+        <desc>marked by keen caution and watchful prudence.</desc>
+      </sense>
+      <sense csk="steady/C1" fsk="steady/J2" fs="changeless/J2">
+        <desc>persistent in occurrence and unvarying in nature.</desc>
+      </sense>
+      <sense csk="patchy/C1" fsk="patchy/J1" fs="patchy/J1">
+        <desc>irregular or uneven in quality, texture, etc.</desc>
+      </sense>
+      <sense csk="gross/C14" fsk="gross/N2" fs="gross_income/N1">
+        <desc>the entire amount of income before any deductions are made.</desc>
+      </sense>
+      <sense csk="robust/C1" fsk="robust/J1" fs="robust/J1">
+        <desc>physically strong.</desc>
+      </sense>
+      <sense csk="robust/C3" fsk="robust/J3" fs="robust/J3">
+        <desc>strong enough to withstand intellectual challenge.</desc>
+      </sense>
+      <sense csk="strong/C1" fsk="strength/N1" fs="strength/N1">
+        <desc>the property of being physically or mentally strong.</desc>
+      </sense>
+      <sense csk="strong/C1" fsk="strength/N7" fs="potency/N1">
+        <desc>capacity to produce strong physiological or chemical effects.</desc>
+      </sense>
+      <sense csk="much/C1" fsk="much/D3" fs="a_lot/D1">
+        <desc>to a very great degree or extent.</desc>
+      </sense>
+      <sense csk="price/C10" fsk="price/N1" fs="price/N1">
+        <desc>the amount of money needed to purchase something.</desc>
+      </sense>
+      <sense csk="factor/C1" fsk="factor/N1" fs="factor/N1">
+        <desc>anything that contributes causally to a result.</desc>
+      </sense>
+      <sense csk="evidence/C1" fsk="evidence/N1" fs="evidence/N1">
+        <desc>your basis for belief or disbelief; knowledge on which to base belief.</desc>
+      </sense>
+      <sense csk="fundamentals/C1" fsk="fundamentals/N1" fs="fundamentals/N1">
+        <desc>principles from which other truths can be derived.</desc>
+      </sense>
+      <sense csk="expect/C1" fsk="expect/V1" fs="expect/V1">
+        <desc>regard something as probable or likely.</desc>
+      </sense>
+      <sense csk="expect/C1" fsk="expectation/N1" fs="expectation/N1">
+        <desc>belief about (or mental picture of) the future.</desc>
+      </sense>
+      <sense csk="history/C14" fsk="history/N1" fs="history/N1">
+        <desc>the aggregate of all past events.</desc>
+      </sense>
+      <sense csk="week/C1" fsk="week/N1" fs="week/N1">
+        <desc>any period of seven consecutive days.</desc>
+      </sense>
+      <sense csk="decline/C2" fsk="decline/N2" fs="decline/N2">
+        <desc>a condition inferior to an earlier condition; a gradual falling off from a better state.</desc>
+      </sense>
+      <sense csk="decline/C4" fsk="decline/N3" fs="decay/N2">
+        <desc>a gradual decrease; as of stored charge or current.</desc>
+      </sense>
+      <sense csk="price_index/C1" fsk="price_index/N1" fs="price_index/N1">
+        <desc>an index that traces the relative changes in the price of an individual good (or a market basket of goods) over time.</desc>
+      </sense>
+      <sense csk="refrain/C2" fsk="refrain/V1" fs="refrain/V1">
+        <desc>not do something.</desc>
+      </sense>
+      <sense csk="say/C1" fsk="say/V1" fs="state/V1">
+        <desc>express in words.</desc>
+      </sense>
+      <sense csk="offer/C1" fsk="offer/V1" fs="offer/V1">
+        <desc>make available or accessible, provide or furnish.</desc>
+      </sense>
+      <sense csk="report/C11" fsk="report/V2" fs="report/V2">
+        <desc>announce as the result of an investigation, or announce something to the proper authorities.</desc>
+      </sense>
+      <sense csk="hype/C3" fsk="hype/N1" fs="ballyhoo/N1">
+        <desc>blatant or sensational promotion.</desc>
+      </sense>
+      <sense csk="benchmark/C1" fsk="benchmark/N1" fs="benchmark/N1">
+        <desc>a standard by which something can be measured or judged.</desc>
+      </sense>
+      <sense csk="inflate/C2" fsk="inflation/N1" fs="inflation/N1">
+        <desc>a general and progressive increase in prices.</desc>
+      </sense>
+      <sense csk="crisis/C3" fsk="crisis/N1" fs="crisis/N1">
+        <desc>an unstable situation of extreme danger or difficulty.</desc>
+      </sense>
+      <sense csk="fall/C2" fsk="fall/V3" fs="fall/V3">
+        <desc>pass suddenly and passively into a state).</desc>
+      </sense>
+      <sense csk="fall/C6" fsk="fall/V7" fs="decrease/V1">
+        <desc>decrease in size, extent, or range.</desc>
+      </sense>
+      <sense csk="Inc/C8" fsk="corporate/J1" fs="corporate/J1">
+        <desc>of or belonging to a corporation.</desc>
+      </sense>
+      <sense csk="treasury/C2" fsk="treasury/N2" fs="treasury/N2">
+        <desc>the government department responsible for collecting and managing and spending public revenues.</desc>
+      </sense>
+      <sense csk="city/C1" fsk="city/N1" fs="city/N1">
+        <desc>a large and densely populated municipality, or the government or body of people belonging to this municipality.</desc>
+      </sense>
+      <sense csk="Federal_Reserve/C2" fsk="Federal_Reserve/N2" isne="1" fs="Federal_Reserve/N2">
+        <desc>the central bank of the United States; incorporates 12 Federal Reserve branch banks and all national banks and state charted commercial banks and some trust companies.</desc>
+        <neInfo>
+          <neT>business/N1</neT>
+          <neST>bank/N1</neST>
+        </neInfo>
+        <neInfo>
+          <neT>business/N1</neT>
+          <neST>company_group/N1</neST>
+        </neInfo>
+        <neInfo>
+          <neT>organizational_unit/N1</neT>
+          <neST>government_department/N1</neST>
+        </neInfo>
+      </sense>
+      <sense csk="U.S./C1" fsk="U.S./N2" isne="1" fs="United_States/N1">
+        <desc>North American republic containing 50 states - 48 conterminous states in North America plus Alaska in northwest North America and the Hawaiian Islands in the Pacific Ocean; achieved independence in 1776.</desc>
+        <neInfo>
+          <neT>location/N1</neT>
+          <neST>country/N1</neST>
+        </neInfo>
+      </sense>
+      <sense csk="Mexico/C13" fsk="Mexico/N1" isne="1" fs="Mexico/N1">
+        <desc>a Republic in southern North America; became independent from Spain in 1810.</desc>
+        <neInfo>
+          <neT>location/N1</neT>
+          <neST>country/N1</neST>
+        </neInfo>
+        <constituent>Mexico/N22</constituent>
+      </sense>
+      <sense csk="Mexico/C13" fsk="Mexico/N2" isne="1" fs="Mexico_City/N1">
+        <desc>the capital and largest city of Mexico is a political and cultural and commercial and industrial center; one of the world's largest cities.</desc>
+        <neInfo>
+          <neT>location/N1</neT>
+          <neST>municipality/N1</neST>
+        </neInfo>
+        <constituent>Mexico/N1</constituent>
+      </sense>
+      <sense csk="Mexico/C6" fsk="Mexico/N14" isne="1" fs="Mexico/N14">
+        <desc>a pop music album by Bob Loyce Moore, Bohse Onkelz, Cuco Sanchez Y Sus Interpretes, Jorge Alberto Negrete Moreno, Les Humphries Singers, etc</desc>
+        <neInfo>
+          <neT>creation/N2</neT>
+          <neST>musical_composition/N1</neST>
+        </neInfo>
+        <constituent>Mexico/N16</constituent>
+      </sense>
+      <sense csk="Mexico/C6" fsk="Mexico/N15" isne="1" fs="Mexico/N15">
+        <desc>a jazz album by Bob Moore &amp; His Orchestra, Cascada de Flores, Erik Truffaz &amp; Murcof, Hot Chip and Jack Wilkins</desc>
+        <neInfo>
+          <neT>creation/N2</neT>
+          <neST>musical_composition/N1</neST>
+        </neInfo>
+        <constituent>Mexico/N16</constituent>
+      </sense>
+      <sense csk="Mexico/C6" fsk="Mexico/N16" isne="1" fs="Mexico/N16">
+        <desc>a song by Alex de Grassi, Bob Loyce Moore, Camilo Blanes Cortes, Dada, Hawksley Workman, etc on the albums "Gehasst, Verdammt, Vergottert", Katrina and the Waves, Lover/Fighter, Pacific Ocean Blue, The Lonely Bull, etc</desc>
+        <neInfo>
+          <neT>creation/N2</neT>
+          <neST>musical_composition/N1</neST>
+        </neInfo>
+        <constituent>Mexico/N14</constituent>
+      </sense>
+      <sense csk="Mexico/C13" fsk="Mexico/N22" isne="1" fs="Mexico/N22">
+        <desc>a state in United Mexican States</desc>
+        <neInfo>
+          <neT>location/N1</neT>
+          <neST>state/N2</neST>
+        </neInfo>
+        <constituent>Mexico/N1</constituent>
+      </sense>
+      <sense csk="Mexico/C6" fsk="Mexico/N30" isne="1" fs="Mexico/N30">
+        <desc>Mexico is a mini-LP and the 3rd album of the German Hard rock band Bohse Onkelz.</desc>
+        <neInfo>
+          <neT>creation/N2</neT>
+          <neST>musical_composition/N1</neST>
+        </neInfo>
+      </sense>
+      <sense csk="Mexico_City/C1" fsk="Mexico_City/N1" isne="1" fs="Mexico_City/N1">
+        <desc>the capital and largest city of Mexico is a political and cultural and commercial and industrial center; one of the world's largest cities.</desc>
+        <neInfo>
+          <neT>location/N1</neT>
+          <neST>municipality/N1</neST>
+        </neInfo>
+        <constituent>city/N1</constituent>
+        <constituent>Mexico/N2</constituent>
+      </sense>
+      <sense csk="Brasil/C5" fsk="Brazil/N1" isne="1" fs="Brazil/N1">
+        <desc>the largest Latin American country and the largest Portuguese speaking country in the world; located in the central and northeastern part of South America; world's leading coffee exporter</desc>
+        <neInfo>
+          <neT>location/N1</neT>
+          <neST>country/N1</neST>
+        </neInfo>
+      </sense>
+      <sense csk="need/C1" fsk="need/V1" fs="necessitate/V1">
+        <desc>require as useful, just, or proper.</desc>
+      </sense>
+      <sense csk="Mexico/C13" fsk="Mexican/J1" isne="1" fs="Mexican/J1">
+        <desc>of or relating to Mexico or its inhabitants.</desc>
+        <neInfo>
+          <neT>national/J3</neT>
+          <neST>NESUBTYPE_jurisdictional_cultural_adjective/J1</neST>
+        </neInfo>
+      </sense>
+      <sense csk="million/C1" fsk="million/J1" fs="million/J1">
+        <desc>(in Roman numerals, M written with a macron over it) denoting a quantity consisting of 1,000,000 items or units.</desc>
+      </sense>
+      <sense csk="low/C20" fsk="low/N3" fs="low/N3">
+        <desc>a low level or position or degree.</desc>
+      </sense>
+      <sense csk="gross_domestic_product/C1" fsk="gross_domestic_product/N1" fs="gross_domestic_product/N1">
+        <desc>measure of the United States economy adopted in 1991; the total market values of goods and services by produced by workers and capital within the United States borders during a given period (usually 1 year).</desc>
+      </sense>
+      <sense csk="GDP/C1" fsk="GDP/N1" fs="gross_domestic_product/N1">
+        <desc>measure of the United States economy adopted in 1991; the total market values of goods and services by produced by workers and capital within the United States borders during a given period (usually 1 year).</desc>
+      </sense>
+      <sense csk="earn/C1" fsk="earnings/N1" fs="net_income/N1">
+        <desc>the excess of revenues over outlays in a given period of time (including depreciation and other non-cash expenses).</desc>
+      </sense>
+      <sense csk="interest_rate/C1" fsk="interest_rate/N1" fs="interest_rate/N1">
+        <desc>the percentage of a sum of money charged for its use.</desc>
+      </sense>
+      <sense csk="rate/C10" fsk="rate/N1" fs="rate/N1">
+        <desc>amount of a charge or payment relative to some basis.</desc>
+      </sense>
+      <sense csk="be/C2" fsk="be/V1" fs="be/V1">
+        <desc>have the quality of being; (copula, followed by an adjective).</desc>
+      </sense>
+      <sense csk="now/C1" fsk="now/D1" fs="now/D1">
+        <desc>at the present moment.</desc>
+      </sense>
+      <sense csk="Tuesday/C1" fsk="Tuesday/N1" isne="1" fs="Tuesday/N1">
+        <desc>the third day of the week; the second working day.</desc>
+        <neInfo>
+          <neT>time_period/N1</neT>
+          <neST>date/N7</neST>
+        </neInfo>
+      </sense>
+      <sense csk="Jan/C1" fsk="Jan/N1" isne="1" fs="January/N1">
+        <desc>the first month of the year; begins 10 days after the winter solstice.</desc>
+        <neInfo>
+          <neT>time_period/N1</neT>
+          <neST>date/N7</neST>
+        </neInfo>
+      </sense>
+      <sense csk="December/C1" fsk="December/N1" isne="1" fs="December/N1">
+        <desc>the last (12th) month of the year.</desc>
+        <neInfo>
+          <neT>time_period/N1</neT>
+          <neST>date/N7</neST>
+        </neInfo>
+      </sense>
+      <sense csk="get_ahead/C2" fsk="get_ahead/V2" fs="boom/V5">
+        <desc>grow stronger.</desc>
+      </sense>
+      <sense csk="confound/C1" fsk="confound/V1" fs="perplex/V1">
+        <desc>be a mystery or bewildering to.</desc>
+      </sense>
+      <sense csk="other/C2" fsk="other/J1" fs="other/J1">
+        <desc>not the same one or ones already mentioned or implied.</desc>
+      </sense>
+      <sense csk="higher/C1" fsk="higher/J1" fs="higher/J1">
+        <desc>advanced in complexity or elaboration.</desc>
+      </sense>
+      <sense csk="long_term/C2" fsk="long-term/J1" fs="long-run/J1">
+        <desc>relating to or extending over a relatively long time.</desc>
+      </sense>
+      <sense csk="short-term/C1" fsk="short-term/J1" fs="short-run/J1">
+        <desc>relating to or extending over a limited period.</desc>
+      </sense>
+      <sense csk="ahead/C8" fsk="ahead/J1" fs="ahead/J1">
+        <desc>having the leading position or higher score in a contest.</desc>
+      </sense>
+      <sense csk="always/C5" fsk="always/D1" fs="always/D1">
+        <desc>at all times; all the time and on every occasion.</desc>
+      </sense>
+      <sense csk="not/C1" fsk="not/D1" fs="not/D1">
+        <desc>negation of a word or group of words.</desc>
+      </sense>
+      <sense csk="however/C4" fsk="however/D1" fs="however/D1">
+        <desc>despite anything to the contrary (usually following a concession).</desc>
+      </sense>
+      <sense csk="where/C1" fsk="where/D1" fs="where/D1">
+        <desc>in or at or to what place.</desc>
+      </sense>
+      <sense csk="also/C1" fsk="also/D1" fs="besides/D2">
+        <desc>in addition.</desc>
+      </sense>
+      <sense csk="out_of_view/C1" fsk="out_of_view/D1" fs="out_of_sight/D1">
+        <desc>no longer visible.</desc>
+      </sense>
+      <sense csk="secondary_market/C1" fsk="secondary_market/N1" fs="secondary_market/N1">
+        <desc>In investment terminology, the market in which securities are traded after they have been issued by corporations.</desc>
+      </sense>
+      <sense csk="peso/C1" fsk="peso/N1" fs="peso/N1">
+        <desc>a basic unit of money.</desc>
+      </sense>
+      <sense csk="bring_to_life/C1" fsk="bring_to_life/V1" fs="bring_to_life/V1">
+        <desc>cause to be alive.</desc>
+      </sense>
+      <sense csk="second_quarter/C1" fsk="second_quarter/N1" fs="second_quarter/N1">
+        <desc>The second three-month period of the fiscal year.</desc>
+      </sense>
+      <sense csk="19/C1" fsk="19/J1" isne="1" fs="nineteen/J1">
+        <desc>being one more than eighteen.</desc>
+        <neInfo>
+          <neT>measure/N3</neT>
+          <neST>rational_number/N1</neST>
+        </neInfo>
+      </sense>
+      <sense csk="two/C5" fsk="second/J1" fs="second/J1">
+        <desc>coming next after the first in position in space or time or degree or magnitude.</desc>
+      </sense>
+      <sense csk="secondary/C1" fsk="secondary/J1" fs="secondary/J1">
+        <desc>of second rank or importance or value; not direct or immediate.</desc>
+      </sense>
+      <sense csk="25/C1" fsk="25/J1" isne="1" fs="twenty-five/J1">
+        <desc>being five more than twenty.</desc>
+        <neInfo>
+          <neT>measure/N3</neT>
+          <neST>rational_number/N1</neST>
+        </neInfo>
+      </sense>
+      <sense csk="foreign/C1" fsk="foreigner/N1" fs="foreigner/N1">
+        <desc>a person who comes from a foreign country; someone who does not owe allegiance to your country.</desc>
+      </sense>
+      <sense csk="vengeance/C1" fsk="vengeance/N1" fs="vengeance/N1">
+        <desc>the act of taking revenge (harming someone in retaliation for something harmful that they have done) especially in the next life.</desc>
+      </sense>
+      <sense csk="term/C2" fsk="term/N2" fs="term/N2">
+        <desc>a limited period of time.</desc>
+      </sense>
+      <sense csk="low/C20" fsk="lower/J3" fs="lower/J3">
+        <desc>less in degree, intensity, or amount</desc>
+      </sense>
+      <sense csk="low/C20" fsk="lowest/J3" fs="bottom/J2">
+        <desc>at the bottom; lowest or last.</desc>
+      </sense>
+      <sense csk="year/C5" fsk="year/N1" fs="year/N1">
+        <desc>a period of time containing 365 (or 366) days.</desc>
+      </sense>
+      <sense csk="New_York/C91" fsk="New_York/N2" isne="1" fs="New_York/N2">
+        <desc>a Mid-Atlantic state; one of the original 13 colonies.</desc>
+        <neInfo>
+          <neT>location/N1</neT>
+          <neST>state/N2</neST>
+        </neInfo>
+        <constituent>New_York/N1</constituent>
+      </sense>
+      <sense csk="New_York/C90" fsk="New_York/N1" isne="1" fs="New_York/N1">
+        <desc>the largest city in New York State and in the United States; located in southeastern New York at the mouth of the Hudson river; a major financial and cultural center.</desc>
+        <neInfo>
+          <neT>location/N1</neT>
+          <neST>municipality/N1</neST>
+        </neInfo>
+        <constituent>New_York/N2</constituent>
+      </sense>
+      <sense csk="research/C1" fsk="research/N1" fs="research/N1">
+        <desc>systematic investigation to establish facts.</desc>
+      </sense>
+      <sense csk="emerge/C1" fsk="emerge/V1" fs="emerge/V1">
+        <desc>come out into view, as from concealment.</desc>
+      </sense>
+      <sense csk="emerge/C1" fsk="emerge/V3" fs="emerge/V3">
+        <desc>become known or apparent.</desc>
+      </sense>
+      <sense csk="back/C3" fsk="back/D4" fs="back/D4">
+        <desc>in or to or toward a past time.</desc>
+      </sense>
+      <sense csk="back/C1" fsk="back/D1" fs="back/D1">
+        <desc>in or to or toward a former location.</desc>
+      </sense>
+      <sense csk="back/C3" fsk="back/D3" fs="back/D3">
+        <desc>in or to or toward an original condition.</desc>
+      </sense>
+      <sense csk="continue/C1" fsk="continue/V1" fs="continue/V1">
+        <desc>continue a certain state, condition, or activity.</desc>
+      </sense>
+      <sense csk="contract/C6" fsk="contract/N1" fs="contract/N1">
+        <desc>a binding agreement between two or more persons that is enforceable by law.</desc>
+      </sense>
+      <sense csk="crumble/C4" fsk="crumble/V1" fs="collapse/V1">
+        <desc>break down, literally or metaphorically.</desc>
+      </sense>
+      <sense csk="drop/C3" fsk="drop/N3" fs="drop/N3">
+        <desc>a sudden sharp decrease in some quantity.</desc>
+      </sense>
+      <sense csk="a_lot/C1" fsk="a_lot_of/J1" fs="a_lot_of/J1">
+        <desc>(quantifier used with mass nouns) great in quantity or degree or extent.</desc>
+      </sense>
+      <sense csk="end/C1" fsk="end/V1" fs="end/V1">
+        <desc>(intrans. or refl.) come to an end, in a temporal sense.</desc>
+      </sense>
+      <sense csk="have/C1" fsk="have/V1" fs="have/V1">
+        <desc>have or possess, either in a concrete or an abstract sense.</desc>
+      </sense>
+      <sense csk="focus/C1" fsk="focus/N1" fs="focus/N1">
+        <desc>the concentration of attention or energy on something.</desc>
+      </sense>
+      <sense csk="excite/C1" fsk="excitement/N2" fs="excitement/N2">
+        <desc>the state of being emotionally aroused and worked up.</desc>
+      </sense>
+      <sense csk="excite/C1" fsk="excitement/N1" fs="exhilaration/N1">
+        <desc>the feeling of lively and cheerful joy.</desc>
+      </sense>
+      <sense csk="economy/C6" fsk="economy/N1" fs="economy/N1">
+        <desc>the system of production and distribution and consumption.</desc>
+      </sense>
+      <sense csk="play/C1" fsk="play/N9" fs="playing_period/N1">
+        <desc>(in games or plays or other performances) the time during which play proceeds.</desc>
+      </sense>
+      <sense csk="point/C1" fsk="point/N2" fs="point/N2">
+        <desc>the precise location of something; a spatially limited location.</desc>
+      </sense>
+      <sense csk="point/C8" fsk="point/N10" fs="point/N10">
+        <desc>the unit of counting in scoring a game or contest.</desc>
+      </sense>
+      <sense csk="share/C1" fsk="share/N1" fs="share/N1">
+        <desc>any of the equal portions into which the capital stock of a corporation is divided and ownership of which is evidenced by a stock certificate.</desc>
+      </sense>
+      <sense csk="short/C1" fsk="short/J1" fs="short/J1">
+        <desc>primarily temporal sense; indicating or being or seeming to be limited in duration.</desc>
+      </sense>
+      <sense csk="south/C1" fsk="south/J1" fs="south/J1">
+        <desc>situated in or facing or moving toward or coming from the south.</desc>
+      </sense>
+      <sense csk="try/C3" fsk="try/V1" fs="try/V1">
+        <desc>try or attempt to.</desc>
+      </sense>
+      <sense csk="lack/C3" fsk="lack/N1" fs="lack/N1">
+        <desc>the state of needing something that is absent or unavailable.</desc>
+      </sense>
+      <sense csk="percent/C1" fsk="percent/N1" fs="percentage/N1">
+        <desc>a proportion multiplied by 100.</desc>
+      </sense>
+      <sense csk="month/C3" fsk="month/N2" fs="month/N2">
+        <desc>a time unit of 30 days.</desc>
+      </sense>
+      <sense csk="month/C3" fsk="month/N1" fs="calendar_month/N1">
+        <desc>one of the twelve divisions of the calendar year.</desc>
+      </sense>
+      <sense csk="America/C23" fsk="American/J2" isne="1" fs="American/J2">
+        <desc>of or relating to or characteristic of the continents and islands of the Americas.</desc>
+        <neInfo>
+          <neT>national/J3</neT>
+          <neST>NESUBTYPE_regional_cultural_adjective/J1</neST>
+        </neInfo>
+        <constituent>American/J1</constituent>
+      </sense>
+      <sense csk="move/C1" fsk="move/N3" fs="motion/N3">
+        <desc>a change of position that does not entail a change of location.</desc>
+      </sense>
+      <sense csk="move/C6" fsk="movement/N9" fs="drift/N5">
+        <desc>a general tendency to change (as of opinion).</desc>
+      </sense>
+      <sense csk="runup/C1" fsk="run-up/N1" fs="runup/N1">
+        <desc>a substantial increase over a relatively short period of time.</desc>
+      </sense>
+      <sense csk="run/C7" fsk="run/N14" fs="discharge/N6">
+        <desc>the pouring forth of a fluid.</desc>
+      </sense>
+      <sense csk="send/C6" fsk="send/V2" fs="send/V2">
+        <desc>cause (information or signals) to be transmitted from one place to another.</desc>
+      </sense>
+      <sense csk="return/C10" fsk="return/N6" fs="return/N6">
+        <desc>the income arising from land or other property, investments, or equity.</desc>
+      </sense>
+      <sense csk="life/C93" fsk="life/N4" fs="animation/N1">
+        <desc>the condition of living or the state of being alive.</desc>
+      </sense>
+      <sense csk="bring/C2" fsk="bring/V2" fs="bring/V2">
+        <desc>cause to come into a particular state or condition.</desc>
+      </sense>
+      <sense csk="get/C2" fsk="get/V2" fs="become/V1">
+        <desc>enter or assume a certain state or condition.</desc>
+      </sense>
+      <sense csk="grow/C2" fsk="growth/N3" fs="increase/N3">
+        <desc>a process of becoming larger or longer or more numerous or more important; the amount by which something increases.</desc>
+      </sense>
+      <sense csk="grow/C2" fsk="grow/V2" fs="grow/V2">
+        <desc>become larger, greater, or bigger; expand or gain.</desc>
+      </sense>
+      <sense csk="grow/C2" fsk="growing/J1" fs="growing/J1">
+        <desc>increasing in size or degree or amount.</desc>
+      </sense>
+      <sense csk="positive/C13" fsk="positive/J1" fs="positive/J1">
+        <desc>characterized by or displaying affirmation or acceptance or certainty etc.</desc>
+      </sense>
+      <sense csk="positive/C4" fsk="positive/J4" fs="positive/J4">
+        <desc>indicating existence or presence of a suspected condition or pathogen.</desc>
+      </sense>
+      <sense csk="one/C1" fsk="one/N2" fs="one/N2">
+        <desc>a single person or thing, can be pluralized.</desc>
+      </sense>
+      <sense csk="recover/C1" fsk="recovery/N19" fs="recovery/N19">
+        <desc>a period of improvement in the economy after a depression or recession</desc>
+      </sense>
+      <sense csk="begin/C13" fsk="beginning/N1" fs="beginning/N1">
+        <desc>the event consisting of the coming into being of an event, act, state or entity.</desc>
+      </sense>
+      <sense csk="attract/C1" fsk="attraction/N3" fs="attraction/N3">
+        <desc>the quality of arousing interest; being attractive or something that attracts.</desc>
+      </sense>
+      <sense csk="certain/C2" fsk="certainty/N1" fs="certainty/N1">
+        <desc>the state of being certain.</desc>
+      </sense>
+      <sense csk="incertain/C1" fsk="uncertainty/N2" fs="doubt/N1">
+        <desc>the state of being unsure of something.</desc>
+      </sense>
+      <sense csk="confident/C1" fsk="confidence/N1" fs="assurance/N1">
+        <desc>freedom from doubt; belief in yourself and your abilities.</desc>
+      </sense>
+      <sense csk="week/C1" fsk="weekly/J1" fs="weekly/J1">
+        <desc>occurring or payable every week.</desc>
+      </sense>
+      <sense csk="neighbor/C2" fsk="neighbour/V2" fs="neighbor/V2">
+        <desc>be located near or adjacent to.</desc>
+      </sense>
+      <sense csk="consume/C10" fsk="consumer/N1" fs="consumer/N1">
+        <desc>a person who uses goods or services.</desc>
+      </sense>
+      <sense csk="South_America/C1" fsk="South_American/J1" isne="1" fs="South_American/J1">
+        <desc>of or pertaining to or characteristic of the continent or countries of South America or their peoples.</desc>
+        <neInfo>
+          <neT>national/J3</neT>
+          <neST>NESUBTYPE_regional_cultural_adjective/J1</neST>
+        </neInfo>
+        <constituent>American/J2</constituent>
+        <constituent>south/J1</constituent>
+      </sense>
+      <sense csk="analysis/C1" fsk="analyst/N1" fs="analyst/N1">
+        <desc>someone who is skilled at analyzing data.</desc>
+      </sense>
+      <sense csk="analysis/C1" fsk="analyst/N2" fs="analyst/N2">
+        <desc>an expert who studies financial data (on credit or securities or sales or financial patterns etc.) and recommends appropriate business actions.</desc>
+      </sense>
+      <sense csk="invest/C4" fsk="investor/N1" fs="investor/N1">
+        <desc>someone who commits capital in order to gain financial returns.</desc>
+      </sense>
+      <sense csk="long/C1" fsk="longer/D1" fs="longer/D1">
+        <desc>for more time.</desc>
+      </sense>
+      <sense csk="research/C1" fsk="researcher/N1" fs="research_worker/N1">
+        <desc>a scientist who devotes himself to doing research.</desc>
+      </sense>
+      <sense csk="frenzy/C1" fsk="frenzied/J2" fs="frantic/J1">
+        <desc>excessively agitated; transported with rage or other violent emotion.</desc>
+      </sense>
+      <sense csk="economy/C6" fsk="economic/J1" fs="economic/J1">
+        <desc>of or relating to an economy, the system of production and management of material wealth.</desc>
+      </sense>
+      <sense csk="up/C1" fsk="upward/J2" fs="up/J3">
+        <desc>extending or moving toward a higher place.</desc>
+      </sense>
+      <sense csk="up/C2" fsk="upward/J1" fs="upward/J1">
+        <desc>directed up.</desc>
+      </sense>
+      <sense csk="strong/C1" fsk="strongly/D1" fs="strongly/D1">
+        <desc>with strength or in a strong manner.</desc>
+      </sense>
+      <sense csk="stubborn/C1" fsk="stubbornly/D1" fs="stubbornly/D1">
+        <desc>in a stubborn unregenerate manner.</desc>
+      </sense>
+      <sense csk="Lehman_Brothers/C1" fsk="Lehman_Brothers/N1" isne="1" fs="Lehman_Brothers_Incorporated/N1">
+        <desc>Lehman Brothers Holdings Inc. (former NYSE ticker symbol LEH) was a global financial-services firm which, until declaring bankruptcy in 2008, participated in business in investment banking, equity and fixed-income sales, research and trading, investment management, private equity, and private banking.</desc>
+        <neInfo>
+          <neT>business/N1</neT>
+          <neST>financial_institution/N1</neST>
+        </neInfo>
+        <neInfo>
+          <neT>business/N1</neT>
+          <neST>holding_company/N1</neST>
+        </neInfo>
+        <constituent>Lehman/N1</constituent>
+      </sense>
+      <sense csk="Santander/C2" fsk="Santander/N6" isne="1" fs="Santander/N6">
+        <desc>The port city of Santander is the capital of the autonomous community of Cantabria situated on the north coast of Spain between Asturias (to the west) and the Basque Country (to the east).</desc>
+        <neInfo>
+          <neT>location/N1</neT>
+          <neST>municipality/N1</neST>
+        </neInfo>
+      </sense>
+      <sense csk="at-risk/C1" fsk="at_risk/J1" fs="at-risk/J1">
+        <desc>susceptible to risk.</desc>
+      </sense>
+      <sense csk="Lehman/C1" fsk="Lehman/N1" isne="1" fs="Lehman_Brothers_Incorporated/N1">
+        <desc>Lehman Brothers Holdings Inc. (former NYSE ticker symbol LEH) was a global financial-services firm which, until declaring bankruptcy in 2008, participated in business in investment banking, equity and fixed-income sales, research and trading, investment management, private equity, and private banking.</desc>
+        <neInfo>
+          <neT>business/N1</neT>
+          <neST>financial_institution/N1</neST>
+        </neInfo>
+        <neInfo>
+          <neT>business/N1</neT>
+          <neST>holding_company/N1</neST>
+        </neInfo>
+      </sense>
+      <sense csk="economic_recovery/C1" fsk="economic_recovery/N1" fs="recovery/N19">
+        <desc>a period of improvement in the economy after a depression or recession</desc>
+      </sense>
+      <sense csk="Matthew_Hickman/C100" fsk="Matthew_Hickman/N100" isne="1" fs="Matthew_Hickman/N100">
+        <desc>a person</desc>
+        <neInfo>
+          <neT>person/N1</neT>
+        </neInfo>
+      </sense>
+      <sense csk="Review_of_Economic_Dynamics/C1" fsk="Review_of_Economic_Dynamics/N1" isne="1" fs="Review_of_Economic_Dynamics/N1">
+        <desc>The Review of Economic Dynamics (RED) is the journal of the Society for Economic Dynamics (SED), an academic organization devoted to dynamic equilibrium economic modeling.</desc>
+        <neInfo>
+          <neT>media/N1</neT>
+          <neST>periodical/N1</neST>
+        </neInfo>
+        <constituent>review/N6</constituent>
+      </sense>
+      <sense csk="159.89/C2104" fsk="159.89/N2104" isne="1" fs="159.89/N2104">
+        <desc>a rational number</desc>
+        <neInfo>
+          <neT>measure/N3</neT>
+          <neST>rational_number/N1</neST>
+        </neInfo>
+      </sense>
+      <sense csk="159.89_million/C2104" fsk="159.89_million/J2104" isne="1" fs="159.89_million/J2104">
+        <desc>a rational number</desc>
+        <constituent>159.89/N2104</constituent>
+        <constituent>million/J1</constituent>
+        <neInfo>
+          <neT>measure/N3</neT>
+          <neST>rational_number/N1</neST>
+        </neInfo>
+      </sense>
+      <sense csk="1994/C303" fsk="1994/N303" isne="1" fs="1994/N303">
+        <desc>a date</desc>
+        <neInfo>
+          <neT>time_period/N1</neT>
+          <neST>date/N7</neST>
+        </neInfo>
+      </sense>
+      <sense csk="1995/C303" fsk="1995/N303" isne="1" fs="1995/N303">
+        <desc>a date</desc>
+        <neInfo>
+          <neT>time_period/N1</neT>
+          <neST>date/N7</neST>
+        </neInfo>
+      </sense>
+      <sense csk="2.32_percent/C2103" fsk="2.32_percent/N2103" isne="1" fs="2.32_percent/N2103">
+        <desc>a percentage</desc>
+        <constituent>percent/N1</constituent>
+        <neInfo>
+          <neT>measure/N3</neT>
+          <neST>percentage/N1</neST>
+        </neInfo>
+      </sense>
+      <sense csk="23.90_percent/C2103" fsk="23.90_percent/N2103" isne="1" fs="23.90_percent/N2103">
+        <desc>a percentage</desc>
+        <constituent>percent/N1</constituent>
+        <neInfo>
+          <neT>measure/N3</neT>
+          <neST>percentage/N1</neST>
+        </neInfo>
+      </sense>
+      <sense csk="3,401.79/C2104" fsk="3,401.79/J2104" isne="1" fs="3,401.79/J2104">
+        <desc>a rational number</desc>
+        <neInfo>
+          <neT>measure/N3</neT>
+          <neST>rational_number/N1</neST>
+        </neInfo>
+      </sense>
+      <sense csk="7.2_percent/C2103" fsk="7.2_percent/N2103" isne="1" fs="7.2_percent/N2103">
+        <desc>a percentage</desc>
+        <constituent>percent/N1</constituent>
+        <neInfo>
+          <neT>measure/N3</neT>
+          <neST>percentage/N1</neST>
+        </neInfo>
+      </sense>
+      <sense csk="77.12/C2104" fsk="77.12/J2104" isne="1" fs="77.12/J2104">
+        <desc>a rational number</desc>
+        <neInfo>
+          <neT>measure/N3</neT>
+          <neST>rational_number/N1</neST>
+        </neInfo>
+      </sense>
+      <sense csk="Cetes/C1400" fsk="Cetes/N1400" isne="1" fs="Cetes/N1400">
+        <desc>a concept</desc>
+        <neInfo>
+          <neT>concept/N1</neT>
+        </neInfo>
+      </sense>
+      <sense csk="December_1994/C303" fsk="December_1994/N303" isne="1" fs="December_1994/N303">
+        <desc>a date</desc>
+        <constituent>December/N1</constituent>
+        <constituent>1994/N303</constituent>
+        <neInfo>
+          <neT>time_period/N1</neT>
+          <neST>date/N7</neST>
+        </neInfo>
+      </sense>
+      <sense csk="Felix_Boni/C100" fsk="Felix_Boni/N100" isne="1" fs="Felix_Boni/N100">
+        <desc>a person</desc>
+        <neInfo>
+          <neT>person/N1</neT>
+        </neInfo>
+      </sense>
+      <sense csk="James_Capel/C1000" fsk="James_Capel/N1000" isne="1" fs="James_Capel/N1000">
+        <desc>a business</desc>
+        <neInfo>
+          <neT>business/N1</neT>
+        </neInfo>
+      </sense>
+      <sense csk="Jan._25,_1995/C303" fsk="Jan._25,_1995/N303" isne="1" fs="Jan._25,_1995/N303">
+        <desc>a date</desc>
+        <constituent>Jan/N1</constituent>
+        <constituent>25/J1</constituent>
+        <constituent>1995/N303</constituent>
+        <neInfo>
+          <neT>time_period/N1</neT>
+          <neST>date/N7</neST>
+        </neInfo>
+      </sense>
+      <sense csk="Lars_Schonander/C100" fsk="Lars_Schonander/N100" isne="1" fs="Lars_Schonander/N100">
+        <desc>a person</desc>
+        <neInfo>
+          <neT>person/N1</neT>
+        </neInfo>
+      </sense>
+    </sensesInfo>
+    <para len="8" so="0">
+      <sent len="8" so="0">
+        <frag cccfmp="0.511" cccmp="0.756" ccfmp="0.491" len="1" so="0" sol="1">
+          <cs pb="1.000" pc="0.982" sk="recover/C1" so="0">
+            <fs pb="1.000" pc="0.809" sk="recovery/N19" so="0"/>
+          </cs>
+          <dep c="0.710" dest="excitement" destLc="noun" role="modifier" src="Recovery" srcLc="noun"/>
+        </frag>
+        <frag cccfmp="0.440" cccmp="0.684" ccfmp="0.510" len="1" so="1">
+          <cs pb="1.000" pc="0.963" sk="excite/C1" so="1">
+            <fs pb="0.669" pc="0.832" sk="excitement/N1" so="1"/>
+            <fs pb="0.331" pc="0.832" sk="excitement/N2" so="1"/>
+          </cs>
+          <dep c="0.710" dest="Recovery" destLc="noun" role="head" src="excitement" srcLc="noun"/>
+          <dep c="0.864" dest="brings" destLc="verb" role="argument" src="excitement" srcLc="noun" type="agent"/>
+        </frag>
+        <frag cccfmp="0.491" cccmp="0.559" ccfmp="0.518" len="1" so="2">
+          <cs pb="1.000" pc="1.000" sk="bring_to_life/C1" so="2">
+            <fs pb="1.000" pc="1.000" sk="bring_to_life/V1" so="2"/>
+          </cs>
+          <dep c="0.864" dest="excitement" destLc="noun" role="predicate" src="brings" srcLc="verb" type="agent"/>
+          <dep c="0.885" dest="markets" destLc="noun" role="predicate" src="brings" srcLc="verb" type="theme"/>
+        </frag>
+        <frag cccfmp="0.625" cccmp="0.841" ccfmp="0.523" len="1" so="3">
+          <cs pb="1.000" pc="0.735" sk="Mexico/C13" so="3">
+            <fs pb="1.000" pc="0.989" sk="Mexican/J1" so="3"/>
+          </cs>
+          <dep c="0.934" dest="markets" destLc="noun" role="modifier" src="Mexican" srcLc="adj"/>
+        </frag>
+        <frag cccfmp="0.335" cccmp="0.319" ccfmp="0.150" len="1" so="4">
+          <cs pb="1.000" pc="0.950" sk="market/C19" so="4">
+            <fs pb="1.000" pc="0.847" sk="market/N1" so="4"/>
+          </cs>
+          <dep c="0.885" dest="brings" destLc="verb" role="argument" src="markets" srcLc="noun" type="theme"/>
+          <dep c="0.934" dest="Mexican" destLc="adj" role="head" src="markets" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="5">
+          <lc lc="prep"/>
+        </frag>
+        <frag len="1" so="6">
+          <lc lc="noun"/>
+        </frag>
+        <frag len="1" so="7">
+          <lc lc="punct"/>
+        </frag>
+      </sent>
+    </para>
+    <para len="37" so="8">
+      <sent len="37" so="8">
+        <frag cccfmp="0.473" cccmp="0.757" ccfmp="0.496" len="1" so="8" sol="1">
+          <cs pb="1.000" pc="0.943" sk="emerge/C1" so="8">
+            <fs pb="0.509" pc="0.428" sk="emerge/V3" so="8"/>
+            <fs pb="0.491" pc="0.428" sk="emerge/V1" so="8"/>
+          </cs>
+          <dep c="0.880" dest="evidence" destLc="noun" role="predicate" src="Emerging" srcLc="verb"/>
+          <dep c="0.917" dest="evidence" destLc="noun" role="modifier" src="Emerging" srcLc="verb"/>
+        </frag>
+        <frag cccfmp="0.797" cccmp="0.787" ccfmp="0.862" len="1" so="9">
+          <cs pb="1.000" pc="0.903" sk="evidence/C1" so="9">
+            <fs pb="1.000" pc="0.938" sk="evidence/N1" so="9"/>
+          </cs>
+          <dep c="0.880" dest="Emerging" destLc="verb" role="argument" src="evidence" srcLc="noun"/>
+          <dep c="0.917" dest="Emerging" destLc="verb" role="head" src="evidence" srcLc="noun"/>
+          <dep c="0.576" dest="was" destLc="verb" role="lnkParent" src="evidence" srcLc="noun"/>
+          <dep c="0.803" dest="sent" destLc="verb" role="argument" src="evidence" srcLc="noun" type="agent"/>
+        </frag>
+        <frag len="1" so="10">
+          <lc lc="conj" pc="0.940"/>
+        </frag>
+        <frag cccfmp="0.716" cccmp="0.757" ccfmp="0.700" len="1" so="11">
+          <cs pb="1.000" pc="0.992" sk="Mexico/C13" so="11">
+            <fs pb="1.000" pc="0.984" sk="Mexico/N1" so="11"/>
+          </cs>
+          <dep c="0.959" dest="economy" destLc="noun" role="modifier" src="Mexico" srcLc="noun" type="possessor"/>
+        </frag>
+        <frag len="1" so="12">
+          <lc lc="prep" pc="0.988"/>
+        </frag>
+        <frag cccfmp="0.818" cccmp="0.765" ccfmp="0.795" len="1" so="13">
+          <cs pb="1.000" pc="0.992" sk="economy/C6" so="13">
+            <fs pb="1.000" pc="0.999" sk="economy/N1" so="13"/>
+          </cs>
+          <dep c="0.959" dest="Mexico" destLc="noun" role="head" src="economy" srcLc="noun" type="possessor"/>
+          <dep c="0.954" dest="was" destLc="verb" role="argument" src="economy" srcLc="noun" type="agent"/>
+        </frag>
+        <frag cccfmp="0.464" cccmp="0.440" ccfmp="0.563" len="1" so="14">
+          <cs pb="1.000" pc="0.899" sk="be/C2" so="14">
+            <fs pb="1.000" pc="0.899" sk="be/V1" so="14"/>
+          </cs>
+          <dep c="0.576" dest="evidence" destLc="noun" role="lnkChild" src="was" srcLc="verb"/>
+          <dep c="0.954" dest="economy" destLc="noun" role="predicate" src="was" srcLc="verb" type="agent"/>
+          <dep c="0.840" dest="back" destLc="adv" role="head" src="was" srcLc="verb"/>
+          <dep c="0.804" dest="track" destLc="noun" role="lnkParent" src="was" srcLc="verb"/>
+        </frag>
+        <frag cccfmp="0.335" cccmp="0.327" ccfmp="0.381" len="1" so="15">
+          <cs pb="1.000" pc="0.681" sk="back/C1" so="15">
+            <fs pb="1.000" pc="0.816" sk="back/D1" so="15"/>
+          </cs>
+          <dep c="0.840" dest="was" destLc="verb" role="modifier" src="back" srcLc="adv"/>
+        </frag>
+        <frag len="1" so="16">
+          <lc lc="prep" pc="0.999"/>
+        </frag>
+        <frag len="1" so="17">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.633" cccmp="0.781" ccfmp="0.684" len="1" so="18">
+          <cs pb="1.000" pc="0.993" sk="recover/C1" so="18">
+            <fs pb="1.000" pc="0.733" sk="recovery/N19" so="18"/>
+          </cs>
+          <dep c="0.940" dest="track" destLc="noun" role="modifier" src="recovery" srcLc="noun"/>
+        </frag>
+        <frag cccfmp="0.271" cccmp="0.344" ccfmp="0.304" len="1" so="19">
+          <cs pb="1.000" pc="0.664" sk="track/C1" so="19">
+            <fs pb="1.000" pc="0.351" sk="track/N1" so="19"/>
+          </cs>
+          <dep c="0.804" dest="was" destLc="verb" role="lnkChild" src="track" srcLc="noun"/>
+          <dep c="0.940" dest="recovery" destLc="noun" role="head" src="track" srcLc="noun"/>
+        </frag>
+        <frag cccfmp="0.267" cccmp="0.284" ccfmp="0.290" len="1" so="20">
+          <cs pb="1.000" pc="0.875" sk="send/C6" so="20">
+            <fs pb="1.000" pc="0.306" sk="send/V2" so="20"/>
+          </cs>
+          <dep c="0.803" dest="evidence" destLc="noun" role="predicate" src="sent" srcLc="verb" type="agent"/>
+          <dep c="0.915" dest="markets" destLc="noun" role="predicate" src="sent" srcLc="verb" type="theme"/>
+          <dep c="0.742" dest="buzz" destLc="noun" role="lnkParent" src="sent" srcLc="verb"/>
+          <dep c="0.630" dest="Tuesday" destLc="noun" role="predicate" src="sent" srcLc="verb" type="adverbialModifier"/>
+        </frag>
+        <frag cccfmp="0.910" cccmp="0.896" ccfmp="0.850" len="1" so="21">
+          <cs pb="1.000" pc="0.702" sk="Mexico/C13" so="21">
+            <fs pb="1.000" pc="0.991" sk="Mexican/J1" so="21"/>
+          </cs>
+          <dep c="0.962" dest="markets" destLc="noun" role="modifier" src="Mexican" srcLc="adj"/>
+        </frag>
+        <frag cccfmp="0.610" cccmp="0.653" ccfmp="0.637" len="1" so="22">
+          <cs pb="1.000" pc="0.988" sk="market/C19" so="22">
+            <fs pb="1.000" pc="0.917" sk="market/N1" so="22"/>
+          </cs>
+          <dep c="0.915" dest="sent" destLc="verb" role="argument" src="markets" srcLc="noun" type="theme"/>
+          <dep c="0.962" dest="Mexican" destLc="adj" role="head" src="markets" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="23">
+          <lc lc="prep"/>
+        </frag>
+        <frag len="1" so="24">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.569" cccmp="0.632" ccfmp="0.661" len="1" so="25">
+          <cs pb="1.000" pc="0.966" sk="buzz/C7" so="25">
+            <fs pb="1.000" pc="0.947" sk="buzz/N2" so="25"/>
+          </cs>
+          <dep c="0.742" dest="sent" destLc="verb" role="lnkChild" src="buzz" srcLc="noun"/>
+          <dep c="0.895" dest="excitement" destLc="noun" role="lnkParent" src="buzz" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="26">
+          <lc lc="prep"/>
+        </frag>
+        <frag cccfmp="0.588" cccmp="0.638" ccfmp="0.609" len="1" so="27">
+          <cs pb="1.000" pc="0.962" sk="excite/C1" so="27">
+            <fs pb="1.000" pc="0.871" sk="excitement/N1" so="27"/>
+          </cs>
+          <dep c="0.895" dest="buzz" destLc="noun" role="lnkChild" src="excitement" srcLc="noun"/>
+        </frag>
+        <frag cccfmp="0.657" cccmp="0.775" ccfmp="0.671" len="1" so="28">
+          <cs pb="1.000" pc="0.985" sk="Tuesday/C1" so="28">
+            <fs pb="1.000" pc="0.965" sk="Tuesday/N1" so="28"/>
+          </cs>
+          <dep c="0.630" dest="sent" destLc="verb" role="argument" src="Tuesday" srcLc="noun" type="adverbialModifier"/>
+        </frag>
+        <frag len="1" so="29">
+          <lc lc="punct"/>
+        </frag>
+        <frag len="1" so="30">
+          <lc lc="prep"/>
+        </frag>
+        <frag cccfmp="0.702" cccmp="0.750" ccfmp="0.712" len="1" so="31">
+          <cs pb="1.000" pc="0.943" sk="stock/C1" so="31">
+            <fs pb="1.000" pc="0.975" sk="stock/N1" so="31"/>
+          </cs>
+          <dep c="0.948" dest="closing" destLc="verb" role="argument" src="stocks" srcLc="noun" type="agent"/>
+        </frag>
+        <frag cccfmp="0.299" cccmp="0.385" ccfmp="0.367" len="1" so="32">
+          <cs pb="1.000" pc="0.725" sk="close/C11" so="32">
+            <fs pb="1.000" pc="0.570" sk="close/V13" so="32"/>
+          </cs>
+          <dep c="0.948" dest="stocks" destLc="noun" role="predicate" src="closing" srcLc="verb" type="agent"/>
+          <dep c="0.836" dest="highs" destLc="noun" role="lnkParent" src="closing" srcLc="verb"/>
+          <dep c="0.760" dest="interest rates" destLc="noun" role="lnkParent" src="closing" srcLc="verb"/>
+          <dep c="0.789" dest="lows" destLc="noun" role="lnkParent" src="closing" srcLc="verb"/>
+        </frag>
+        <frag len="1" so="33">
+          <lc lc="prep" pc="0.999"/>
+        </frag>
+        <frag cccfmp="0.350" cccmp="0.456" ccfmp="0.429" len="1" so="34">
+          <cs pb="1.000" pc="0.816" sk="record/C13" so="34">
+            <fs pb="1.000" pc="0.884" sk="record/N3" so="34"/>
+          </cs>
+          <dep c="0.983" dest="highs" destLc="noun" role="modifier" src="record" srcLc="noun"/>
+        </frag>
+        <frag cccfmp="0.582" cccmp="0.575" ccfmp="0.540" len="1" so="35">
+          <cs pb="1.000" pc="0.935" sk="high/C1" so="35">
+            <fs pb="1.000" pc="0.948" sk="high/N1" so="35"/>
+          </cs>
+          <dep c="0.836" dest="closing" destLc="verb" role="lnkChild" src="highs" srcLc="noun"/>
+          <dep c="0.983" dest="record" destLc="noun" role="head" src="highs" srcLc="noun"/>
+          <dep c="0.950" dest="interest rates" destLc="noun" role="peerLeft" src="highs" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="36">
+          <lc lc="conj"/>
+        </frag>
+        <frag cccfmp="0.934" cccmp="0.971" ccfmp="0.952" len="2" so="37">
+          <cs len="2" pb="1.000" pc="0.974" sk="interest_rate/C1" so="37">
+            <fs len="2" pb="1.000" pc="0.974" sk="interest_rate/N1" so="37"/>
+          </cs>
+          <dep c="0.760" dest="closing" destLc="verb" role="lnkChild" src="interest rates" srcLc="noun"/>
+          <dep c="0.950" dest="highs" destLc="noun" role="peerRight" src="interest rates" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="39">
+          <lc lc="prep" pc="0.999"/>
+        </frag>
+        <frag cccfmp="0.860" cccmp="0.897" ccfmp="0.872" len="1" so="40">
+          <cs pb="1.000" pc="0.924" sk="19/C1" so="40">
+            <fs pb="1.000" pc="0.924" sk="19/J1" so="40"/>
+          </cs>
+        </frag>
+        <frag len="1" so="41">
+          <lc lc="punct"/>
+        </frag>
+        <frag cccfmp="0.548" cccmp="0.674" ccfmp="0.540" len="1" so="42">
+          <cs pb="1.000" pc="0.894" sk="month/C3" so="42">
+            <fs pb="0.516" pc="0.664" sk="month/N1" so="42"/>
+            <fs pb="0.484" pc="0.664" sk="month/N2" so="42"/>
+          </cs>
+        </frag>
+        <frag cccfmp="0.629" cccmp="0.665" ccfmp="0.608" len="1" so="43">
+          <cs pb="1.000" pc="0.954" sk="low/C20" so="43">
+            <fs pb="1.000" pc="0.912" sk="low/N3" so="43"/>
+          </cs>
+          <dep c="0.789" dest="closing" destLc="verb" role="lnkChild" src="lows" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="44">
+          <lc lc="punct"/>
+        </frag>
+      </sent>
+    </para>
+    <para len="40" so="45">
+      <sent len="40" so="45">
+        <frag len="1" so="45" sol="1">
+          <lc lc="punct"/>
+        </frag>
+        <frag cccfmp="0.651" cccmp="0.731" ccfmp="0.564" len="1" so="46">
+          <cs pb="1.000" pc="0.973" sk="Mexico/C13" so="46">
+            <fs pb="1.000" pc="0.945" sk="Mexico/N1" so="46"/>
+          </cs>
+          <dep c="0.950" dest="trying" destLc="verb" role="argument" src="Mexico" srcLc="noun" type="agent"/>
+          <dep c="0.933" dest="stage" destLc="verb" role="argument" src="Mexico" srcLc="noun" type="agent"/>
+        </frag>
+        <frag len="1" so="47">
+          <lc lc="verb"/>
+          <dep c="0.975" dest="trying" destLc="verb" role="modifier" src="has" srcLc="verb" type="aux"/>
+        </frag>
+        <frag len="1" so="48">
+          <lc lc="verb"/>
+          <dep c="0.979" dest="trying" destLc="verb" role="modifier" src="been" srcLc="verb" type="aux"/>
+        </frag>
+        <frag cccfmp="0.949" cccmp="0.979" ccfmp="0.990" len="1" so="49">
+          <cs pb="1.000" pc="1.000" sk="try/C3" so="49">
+            <fs pb="1.000" pc="0.990" sk="try/V1" so="49"/>
+          </cs>
+          <dep c="0.950" dest="Mexico" destLc="noun" role="predicate" src="trying" srcLc="verb" type="agent"/>
+          <dep c="0.975" dest="has" destLc="verb" role="head" src="trying" srcLc="verb" type="aux"/>
+          <dep c="0.979" dest="been" destLc="verb" role="head" src="trying" srcLc="verb" type="aux"/>
+          <dep c="0.929" dest="stage" destLc="verb" role="lnkParent" src="trying" srcLc="verb"/>
+          <dep c="0.696" dest="said" destLc="verb" role="argument" src="trying" srcLc="verb"/>
+        </frag>
+        <frag len="1" so="50">
+          <lc lc="prep"/>
+        </frag>
+        <frag cccfmp="0.506" cccmp="0.493" ccfmp="0.463" len="1" so="51">
+          <cs pb="1.000" pc="0.834" sk="stage/C5" so="51">
+            <fs pb="1.000" pc="0.890" sk="stage/V2" so="51"/>
+          </cs>
+          <dep c="0.929" dest="trying" destLc="verb" role="lnkChild" src="stage" srcLc="verb"/>
+          <dep c="0.933" dest="Mexico" destLc="noun" role="predicate" src="stage" srcLc="verb" type="agent"/>
+          <dep c="0.900" dest="recovery" destLc="noun" role="predicate" src="stage" srcLc="verb" type="theme"/>
+        </frag>
+        <frag len="1" so="52">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.704" cccmp="0.776" ccfmp="0.652" len="1" so="53">
+          <cs pb="1.000" pc="0.989" sk="recover/C1" so="53">
+            <fs pb="1.000" pc="0.913" sk="recovery/N19" so="53"/>
+          </cs>
+          <dep c="0.900" dest="stage" destLc="verb" role="argument" src="recovery" srcLc="noun" type="theme"/>
+          <dep c="0.824" dest="beginning" destLc="noun" role="lnkParent" src="recovery" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="54">
+          <lc lc="prep" pc="0.930"/>
+        </frag>
+        <frag len="1" so="55">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.681" cccmp="0.836" ccfmp="0.775" len="1" so="56">
+          <cs pb="1.000" pc="0.955" sk="begin/C13" so="56">
+            <fs pb="1.000" pc="0.982" sk="beginning/N1" so="56"/>
+          </cs>
+          <dep c="0.824" dest="recovery" destLc="noun" role="lnkChild" src="beginning" srcLc="noun"/>
+          <dep c="0.894" dest="year" destLc="noun" role="lnkParent" src="beginning" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="57">
+          <lc lc="prep"/>
+        </frag>
+        <frag len="1" so="58">
+          <lc lc="det" pc="0.989"/>
+        </frag>
+        <frag cccfmp="0.745" cccmp="0.897" ccfmp="0.733" len="1" so="59">
+          <cs pb="1.000" pc="0.998" sk="year/C5" so="59">
+            <fs pb="1.000" pc="0.966" sk="year/N1" so="59"/>
+          </cs>
+          <dep c="0.894" dest="beginning" destLc="noun" role="lnkChild" src="year" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="60">
+          <lc lc="conj"/>
+        </frag>
+        <frag len="1" so="61">
+          <lc lc="pronoun"/>
+          <dep c="0.915" dest="getting" destLc="verb" role="argument" src="it" srcLc="pronoun" type="agent"/>
+        </frag>
+        <frag len="1" so="62">
+          <lc lc="verb"/>
+          <dep c="0.880" dest="getting" destLc="verb" role="modifier" src="'s" srcLc="verb" type="aux"/>
+        </frag>
+        <frag cccfmp="0.662" cccmp="0.532" ccfmp="0.617" len="1" so="63">
+          <cs pb="1.000" pc="0.935" sk="always/C5" so="63">
+            <fs pb="1.000" pc="0.942" sk="always/D1" so="63"/>
+          </cs>
+          <dep c="0.830" dest="getting" destLc="verb" role="modifier" src="always" srcLc="adv"/>
+        </frag>
+        <frag len="1" so="64">
+          <lc lc="verb"/>
+          <dep c="0.937" dest="getting" destLc="verb" role="modifier" src="been" srcLc="verb" type="aux"/>
+        </frag>
+        <frag cccfmp="0.566" cccmp="0.434" ccfmp="0.463" len="1" so="65">
+          <cs pb="1.000" pc="0.761" sk="get_ahead/C2" so="65">
+            <fs pb="1.000" pc="0.849" sk="get_ahead/V2" so="65"/>
+          </cs>
+          <dep c="0.915" dest="it" destLc="pronoun" role="predicate" src="getting" srcLc="verb" type="agent"/>
+          <dep c="0.880" dest="'s" destLc="verb" role="head" src="getting" srcLc="verb" type="aux"/>
+          <dep c="0.830" dest="always" destLc="adv" role="head" src="getting" srcLc="verb"/>
+          <dep c="0.937" dest="been" destLc="verb" role="head" src="getting" srcLc="verb" type="aux"/>
+          <dep c="0.717" dest="itself" destLc="pronoun" role="lnkParent" src="getting" srcLc="verb"/>
+          <dep c="0.618" dest="fundamentals" destLc="noun" role="lnkParent" src="getting" srcLc="verb"/>
+          <dep c="0.782" dest="said" destLc="verb" role="argument" src="getting" srcLc="verb"/>
+        </frag>
+        <frag len="1" so="66">
+          <lc lc="adv" pc="0.996"/>
+        </frag>
+        <frag len="1" so="67">
+          <lc lc="prep"/>
+        </frag>
+        <frag len="1" so="68">
+          <lc lc="pronoun"/>
+          <dep c="0.717" dest="getting" destLc="verb" role="lnkChild" src="itself" srcLc="pronoun"/>
+        </frag>
+        <frag len="1" so="69">
+          <lc lc="prep"/>
+        </frag>
+        <frag len="1" so="70">
+          <lc lc="prep"/>
+        </frag>
+        <frag len="1" so="71">
+          <lc lc="prep"/>
+        </frag>
+        <frag cccfmp="0.738" cccmp="0.882" ccfmp="0.782" len="1" so="72">
+          <cs pb="1.000" pc="0.993" sk="fundamentals/C1" so="72">
+            <fs pb="1.000" pc="0.983" sk="fundamentals/N1" so="72"/>
+          </cs>
+          <dep c="0.618" dest="getting" destLc="verb" role="lnkChild" src="fundamentals" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="73">
+          <lc lc="punct"/>
+        </frag>
+        <frag len="1" so="74">
+          <lc lc="punct"/>
+        </frag>
+        <frag cccfmp="0.909" cccmp="0.918" ccfmp="0.921" len="1" so="75">
+          <cs pb="1.000" pc="0.998" sk="say/C1" so="75">
+            <fs pb="1.000" pc="0.993" sk="say/V1" so="75"/>
+          </cs>
+          <dep c="0.696" dest="trying" destLc="verb" role="predicate" src="said" srcLc="verb"/>
+          <dep c="0.782" dest="getting" destLc="verb" role="predicate" src="said" srcLc="verb"/>
+          <dep c="0.976" dest="Matthew Hickman" destLc="noun" role="predicate" src="said" srcLc="verb" type="agent"/>
+        </frag>
+        <frag cccfmp="0.729" cccmp="0.751" ccfmp="0.758" len="2" so="76">
+          <cs len="2" pb="1.000" pc="0.860" sk="Matthew_Hickman/C100" so="76">
+            <fs len="2" pb="1.000" pc="0.860" sk="Matthew_Hickman/N100" so="76"/>
+          </cs>
+          <dep c="0.976" dest="said" destLc="verb" role="argument" src="Matthew Hickman" srcLc="noun" type="agent"/>
+          <dep c="0.655" dest="Lehman Brothers" destLc="noun" role="lnkParent" src="Matthew Hickman" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="78">
+          <lc lc="prep"/>
+        </frag>
+        <frag cccfmp="0.743" cccmp="0.786" ccfmp="0.814" len="2" so="79">
+          <cs len="2" pb="1.000" pc="0.937" sk="Lehman_Brothers/C1" so="79">
+            <fs len="2" pb="1.000" pc="0.937" sk="Lehman_Brothers/N1" so="79"/>
+          </cs>
+          <dep c="0.655" dest="Matthew Hickman" destLc="noun" role="lnkChild" src="Lehman Brothers" srcLc="noun"/>
+          <dep c="0.723" dest="New York" destLc="noun" role="lnkParent" src="Lehman Brothers" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="81">
+          <lc lc="prep" pc="0.956"/>
+        </frag>
+        <frag cccfmp="0.637" cccmp="0.744" ccfmp="0.587" len="2" so="82">
+          <cs len="2" pb="1.000" pc="0.979" sk="New_York/C90" so="82">
+            <fs len="2" pb="1.000" pc="0.973" sk="New_York/N1" so="82"/>
+          </cs>
+          <dep c="0.723" dest="Lehman Brothers" destLc="noun" role="lnkChild" src="New York" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="84">
+          <lc lc="punct"/>
+        </frag>
+      </sent>
+    </para>
+    <para len="24" so="85">
+      <sent len="14" so="85">
+        <frag len="1" so="85" sol="1">
+          <lc lc="punct"/>
+        </frag>
+        <frag cccfmp="0.535" cccmp="0.607" ccfmp="0.446" len="1" so="86">
+          <cs pb="1.000" pc="0.946" sk="now/C1" so="86">
+            <fs pb="1.000" pc="0.775" sk="now/D1" so="86"/>
+          </cs>
+          <dep c="0.944" dest="'re" destLc="verb" role="modifier" src="Now" srcLc="adv"/>
+        </frag>
+        <frag len="1" so="87">
+          <lc lc="pronoun"/>
+          <dep c="0.990" dest="'re" destLc="verb" role="argument" src="we" srcLc="pronoun" type="agent"/>
+        </frag>
+        <frag cccfmp="0.429" cccmp="0.413" ccfmp="0.437" len="1" so="88">
+          <cs pb="1.000" pc="0.894" sk="be/C2" so="88">
+            <fs pb="1.000" pc="0.859" sk="be/V1" so="88"/>
+          </cs>
+          <dep c="0.944" dest="Now" destLc="adv" role="head" src="'re" srcLc="verb"/>
+          <dep c="0.990" dest="we" destLc="pronoun" role="predicate" src="'re" srcLc="verb" type="agent"/>
+          <dep c="0.932" dest="point" destLc="noun" role="lnkParent" src="'re" srcLc="verb"/>
+        </frag>
+        <frag len="1" so="89">
+          <lc lc="prep" pc="0.999"/>
+        </frag>
+        <frag len="1" so="90">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.188" cccmp="0.271" ccfmp="0.268" len="1" so="91">
+          <cs pb="1.000" pc="0.423" sk="point/C1" so="91">
+            <fs pb="1.000" pc="0.627" sk="point/N2" so="91"/>
+          </cs>
+          <dep c="0.932" dest="'re" destLc="verb" role="lnkChild" src="point" srcLc="noun"/>
+          <dep c="0.972" dest="are" destLc="verb" role="lnkChild" src="point" srcLc="noun"/>
+        </frag>
+        <frag cccfmp="0.375" cccmp="0.392" ccfmp="0.376" len="1" so="92">
+          <cs pb="1.000" pc="0.974" sk="where/C1" so="92">
+            <fs pb="1.000" pc="0.974" sk="where/D1" so="92"/>
+          </cs>
+        </frag>
+        <frag len="1" so="93">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.631" cccmp="0.831" ccfmp="0.720" len="1" so="94">
+          <cs pb="1.000" pc="0.993" sk="fundamentals/C1" so="94">
+            <fs pb="1.000" pc="0.981" sk="fundamentals/N1" so="94"/>
+          </cs>
+          <dep c="0.987" dest="are" destLc="verb" role="argument" src="fundamentals" srcLc="noun" type="agent"/>
+        </frag>
+        <frag cccfmp="0.412" cccmp="0.424" ccfmp="0.378" len="1" so="95">
+          <cs pb="1.000" pc="0.884" sk="be/C2" so="95">
+            <fs pb="1.000" pc="0.823" sk="be/V1" so="95"/>
+          </cs>
+          <dep c="0.972" dest="point" destLc="noun" role="lnkParent" src="are" srcLc="verb"/>
+          <dep c="0.987" dest="fundamentals" destLc="noun" role="predicate" src="are" srcLc="verb" type="agent"/>
+          <dep c="0.926" dest="us" destLc="pronoun" role="lnkParent" src="are" srcLc="verb"/>
+        </frag>
+        <frag len="1" so="96">
+          <lc lc="prep"/>
+        </frag>
+        <frag len="1" so="97">
+          <lc lc="pronoun"/>
+          <dep c="0.926" dest="are" destLc="verb" role="lnkChild" src="us" srcLc="pronoun"/>
+        </frag>
+        <frag len="1" so="98">
+          <lc lc="punct"/>
+        </frag>
+      </sent>
+      <sent len="10" so="99">
+        <frag len="1" so="99">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.564" cccmp="0.782" ccfmp="0.615" len="1" so="100">
+          <cs pb="1.000" pc="0.960" sk="history/C14" so="100">
+            <fs pb="1.000" pc="0.961" sk="history/N1" so="100"/>
+          </cs>
+          <dep c="0.934" dest="falling" destLc="verb" role="argument" src="history" srcLc="noun" type="agent"/>
+        </frag>
+        <frag len="1" so="101">
+          <lc lc="verb"/>
+          <dep c="0.967" dest="falling" destLc="verb" role="modifier" src="is" srcLc="verb" type="aux"/>
+        </frag>
+        <frag cccfmp="0.653" cccmp="0.723" ccfmp="0.683" len="1" so="102">
+          <cs pb="1.000" pc="0.946" sk="now/C1" so="102">
+            <fs pb="1.000" pc="0.775" sk="now/D1" so="102"/>
+          </cs>
+          <dep c="0.963" dest="falling" destLc="verb" role="modifier" src="now" srcLc="adv"/>
+        </frag>
+        <frag cccfmp="0.199" cccmp="0.173" ccfmp="0.115" len="1" so="103">
+          <cs pb="1.000" pc="0.359" sk="fall/C2" so="103">
+            <fs pb="1.000" pc="0.628" sk="fall/V3" so="103"/>
+          </cs>
+          <dep c="0.934" dest="history" destLc="noun" role="predicate" src="falling" srcLc="verb" type="agent"/>
+          <dep c="0.967" dest="is" destLc="verb" role="head" src="falling" srcLc="verb" type="aux"/>
+          <dep c="0.963" dest="now" destLc="adv" role="head" src="falling" srcLc="verb"/>
+        </frag>
+        <frag cccfmp="0.570" cccmp="0.558" ccfmp="0.665" len="3" so="104">
+          <cs len="3" pb="1.000" pc="0.974" sk="out_of_view/C1" so="104">
+            <fs len="3" pb="1.000" pc="0.974" sk="out_of_view/D1" so="104"/>
+          </cs>
+        </frag>
+        <frag len="1" so="107">
+          <lc lc="punct"/>
+        </frag>
+        <frag len="1" so="108">
+          <lc lc="punct"/>
+        </frag>
+      </sent>
+    </para>
+    <para len="33" so="109">
+      <sent len="33" so="109">
+        <frag len="1" so="109" sol="1">
+          <lc lc="det" pb="0.500" pc="0.000"/>
+          <lc lc="conj" pb="0.500" pc="0.000"/>
+        </frag>
+        <frag cccfmp="0.584" cccmp="0.814" ccfmp="0.570" len="1" so="110">
+          <cs pb="1.000" pc="0.960" sk="history/C14" so="110">
+            <fs pb="1.000" pc="0.909" sk="history/N1" so="110"/>
+          </cs>
+          <dep c="0.980" dest="is" destLc="verb" role="argument" src="history" srcLc="noun" type="agent"/>
+        </frag>
+        <frag cccfmp="0.527" cccmp="0.501" ccfmp="0.543" len="1" so="111">
+          <cs pb="1.000" pc="0.959" sk="be/C2" so="111">
+            <fs pb="1.000" pc="0.953" sk="be/V1" so="111"/>
+          </cs>
+          <dep c="0.980" dest="history" destLc="noun" role="predicate" src="is" srcLc="verb" type="agent"/>
+          <dep c="0.987" dest="one" destLc="noun" role="predicate" src="is" srcLc="verb" type="theme"/>
+        </frag>
+        <frag cccfmp="0.439" cccmp="0.608" ccfmp="0.510" len="1" so="112">
+          <cs pb="1.000" pc="0.961" sk="one/C1" so="112">
+            <fs pb="1.000" pc="0.662" sk="one/N2" so="112"/>
+          </cs>
+          <dep c="0.987" dest="is" destLc="verb" role="argument" src="one" srcLc="noun" type="theme"/>
+          <dep c="0.989" dest="etched" destLc="verb" role="argument" src="one" srcLc="noun" type="theme"/>
+        </frag>
+        <frag cccfmp="0.678" cccmp="0.679" ccfmp="0.729" len="1" so="113">
+          <cs pb="1.000" pc="0.974" sk="etch/C1" so="113">
+            <fs pb="1.000" pc="0.974" sk="etch/V1" so="113"/>
+          </cs>
+          <dep c="0.989" dest="one" destLc="noun" role="predicate" src="etched" srcLc="verb" type="theme"/>
+          <dep c="0.914" dest="minds" destLc="noun" role="lnkParent" src="etched" srcLc="verb"/>
+        </frag>
+        <frag len="1" so="114">
+          <lc lc="prep"/>
+        </frag>
+        <frag len="1" so="115">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.402" cccmp="0.429" ccfmp="0.396" len="1" so="116">
+          <cs pb="1.000" pc="0.767" sk="mind/C1" so="116">
+            <fs pb="1.000" pc="0.685" sk="mind/N1" so="116"/>
+          </cs>
+          <dep c="0.914" dest="etched" destLc="verb" role="lnkChild" src="minds" srcLc="noun"/>
+          <dep c="0.774" dest="investors" destLc="noun" role="lnkParent" src="minds" srcLc="noun"/>
+          <dep c="0.480" dest="peso" destLc="noun" role="lnkParent" src="minds" srcLc="noun"/>
+          <dep c="0.454" dest="interest rates" destLc="noun" role="lnkParent" src="minds" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="117">
+          <lc lc="prep"/>
+        </frag>
+        <frag len="1" so="118">
+          <lc lc="det" pc="0.914"/>
+        </frag>
+        <frag cccfmp="0.780" cccmp="0.806" ccfmp="0.805" len="1" so="119">
+          <cs pb="1.000" pc="0.974" sk="invest/C4" so="119">
+            <fs pb="1.000" pc="0.974" sk="investor/N1" so="119"/>
+          </cs>
+          <dep c="0.774" dest="minds" destLc="noun" role="lnkChild" src="investors" srcLc="noun"/>
+          <dep c="0.814" dest="Mexico" destLc="noun" role="lnkParent" src="investors" srcLc="noun"/>
+          <dep c="0.517" dest="peso" destLc="noun" role="peerLeft" src="investors" srcLc="noun"/>
+          <dep c="0.517" dest="interest rates" destLc="noun" role="peerLeft" src="investors" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="120">
+          <lc lc="prep" pc="0.968"/>
+        </frag>
+        <frag cccfmp="0.678" cccmp="0.827" ccfmp="0.693" len="1" so="121">
+          <cs pb="1.000" pc="0.996" sk="Mexico/C13" so="121">
+            <fs pb="1.000" pc="0.981" sk="Mexico/N1" so="121"/>
+          </cs>
+          <dep c="0.814" dest="investors" destLc="noun" role="lnkChild" src="Mexico" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="122">
+          <lc lc="punct"/>
+        </frag>
+        <frag len="1" so="123">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.721" cccmp="0.627" ccfmp="0.740" len="1" so="124">
+          <cs pb="1.000" pc="0.939" sk="economy/C6" so="124">
+            <fs pb="1.000" pc="0.992" sk="economy/N1" so="124"/>
+          </cs>
+          <dep c="0.650" dest="crisis" destLc="noun" role="lnkParent" src="economy" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="125">
+          <lc lc="prep" pc="0.977"/>
+        </frag>
+        <frag cccfmp="0.643" cccmp="0.842" ccfmp="0.651" len="1" so="126">
+          <cs pb="1.000" pc="0.980" sk="crisis/C3" so="126">
+            <fs pb="1.000" pc="0.967" sk="crisis/N1" so="126"/>
+          </cs>
+          <dep c="0.650" dest="economy" destLc="noun" role="lnkChild" src="crisis" srcLc="noun"/>
+          <dep c="0.918" dest="December 1994" destLc="noun" role="lnkParent" src="crisis" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="127">
+          <lc lc="prep" pc="0.914"/>
+        </frag>
+        <frag cccfmp="0.677" cccmp="0.670" ccfmp="0.762" len="2" so="128">
+          <cs len="2" pb="1.000" pc="0.868" sk="December_1994/C303" so="128">
+            <fs len="2" pb="1.000" pc="0.868" sk="December_1994/N303" so="128"/>
+          </cs>
+          <dep c="0.918" dest="crisis" destLc="noun" role="lnkChild" src="December 1994" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="130">
+          <lc lc="punct"/>
+        </frag>
+        <frag len="1" so="131">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.325" cccmp="0.296" ccfmp="0.378" len="1" so="132">
+          <cs pb="0.581" pc="0.814" sk="free/C4" so="132">
+            <fs pb="0.581" pc="0.814" sk="free/J3" so="132"/>
+          </cs>
+          <cs pb="0.419" pc="0.814" sk="free/C1" so="132">
+            <fs pb="0.419" pc="0.814" sk="free/J1" so="132"/>
+          </cs>
+        </frag>
+        <frag len="1" so="133">
+          <lc lc="punct"/>
+        </frag>
+        <frag cccfmp="0.602" cccmp="0.653" ccfmp="0.555" len="1" so="134">
+          <cs pb="0.912" pc="0.817" sk="fall/C6" so="134">
+            <fs pb="0.912" pc="0.819" sk="fall/V7" so="134"/>
+          </cs>
+          <cs pb="0.088" pc="0.817" sk="fall/C2" so="134">
+            <fs pb="0.088" pc="0.819" sk="fall/V3" so="134"/>
+          </cs>
+          <dep c="0.907" dest="peso" destLc="noun" role="predicate" src="falling" srcLc="verb"/>
+        </frag>
+        <frag cccfmp="0.747" cccmp="0.758" ccfmp="0.770" len="1" so="135">
+          <cs pb="1.000" pc="0.974" sk="peso/C1" so="135">
+            <fs pb="1.000" pc="0.974" sk="peso/N1" so="135"/>
+          </cs>
+          <dep c="0.480" dest="minds" destLc="noun" role="lnkChild" src="peso" srcLc="noun"/>
+          <dep c="0.517" dest="investors" destLc="noun" role="peerRight" src="peso" srcLc="noun"/>
+          <dep c="0.907" dest="falling" destLc="verb" role="argument" src="peso" srcLc="noun"/>
+          <dep c="0.773" dest="interest rates" destLc="noun" role="peerLeft" src="peso" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="136">
+          <lc lc="conj"/>
+        </frag>
+        <frag cccfmp="0.754" cccmp="0.773" ccfmp="0.838" len="1" so="137">
+          <cs pb="1.000" pc="0.974" sk="stubborn/C1" so="137">
+            <fs pb="1.000" pc="0.974" sk="stubbornly/D1" so="137"/>
+          </cs>
+          <dep c="0.901" dest="high" destLc="adj" role="modifier" src="stubbornly" srcLc="adv"/>
+        </frag>
+        <frag cccfmp="0.773" cccmp="0.804" ccfmp="0.717" len="1" so="138">
+          <cs pb="1.000" pc="0.983" sk="high/C1" so="138">
+            <fs pb="1.000" pc="0.998" sk="high/J1" so="138"/>
+          </cs>
+          <dep c="0.901" dest="stubbornly" destLc="adv" role="head" src="high" srcLc="adj"/>
+          <dep c="0.918" dest="interest rates" destLc="noun" role="modifier" src="high" srcLc="adj"/>
+        </frag>
+        <frag cccfmp="0.944" cccmp="0.967" ccfmp="0.960" len="2" so="139">
+          <cs len="2" pb="1.000" pc="0.974" sk="interest_rate/C1" so="139">
+            <fs len="2" pb="1.000" pc="0.974" sk="interest_rate/N1" so="139"/>
+          </cs>
+          <dep c="0.454" dest="minds" destLc="noun" role="lnkChild" src="interest rates" srcLc="noun"/>
+          <dep c="0.517" dest="investors" destLc="noun" role="peerRight" src="interest rates" srcLc="noun"/>
+          <dep c="0.773" dest="peso" destLc="noun" role="peerRight" src="interest rates" srcLc="noun"/>
+          <dep c="0.918" dest="high" destLc="adj" role="head" src="interest rates" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="141">
+          <lc lc="punct"/>
+        </frag>
+      </sent>
+    </para>
+    <para len="55" so="142">
+      <sent len="25" so="142">
+        <frag len="1" so="142" sol="1">
+          <lc lc="det" pc="0.993"/>
+        </frag>
+        <frag cccfmp="0.768" cccmp="0.919" ccfmp="0.779" len="1" so="143">
+          <cs pb="1.000" pc="0.983" sk="week/C1" so="143">
+            <fs pb="1.000" pc="0.987" sk="week/N1" so="143"/>
+          </cs>
+          <dep c="0.897" dest="reported" destLc="verb" role="argument" src="week" srcLc="noun" type="adverbialModifier"/>
+        </frag>
+        <frag len="1" so="144">
+          <lc lc="punct"/>
+        </frag>
+        <frag cccfmp="0.454" cccmp="0.569" ccfmp="0.427" len="1" so="145">
+          <cs pb="1.000" pc="0.914" sk="however/C4" so="145">
+            <fs pb="1.000" pc="0.939" sk="however/D1" so="145"/>
+          </cs>
+          <dep c="0.873" dest="reported" destLc="verb" role="modifier" src="however" srcLc="adv"/>
+        </frag>
+        <frag len="1" so="146">
+          <lc lc="punct"/>
+        </frag>
+        <frag cccfmp="0.662" cccmp="0.751" ccfmp="0.799" len="3" so="147">
+          <cs len="3" pb="1.000" pc="0.988" sk="second_quarter/C1" so="147">
+            <fs len="3" pb="1.000" pc="0.977" sk="second_quarter/N1" so="147"/>
+          </cs>
+          <dep c="0.938" dest="gross domestic product" destLc="noun" role="modifier" src="second-quarter" srcLc="noun"/>
+        </frag>
+        <frag cccfmp="0.964" cccmp="0.893" ccfmp="0.983" len="3" so="150">
+          <cs len="3" pb="1.000" pc="0.974" sk="gross_domestic_product/C1" so="150">
+            <fs len="3" pb="1.000" pc="0.974" sk="gross_domestic_product/N1" so="150"/>
+          </cs>
+          <dep c="0.938" dest="second-quarter" destLc="noun" role="head" src="gross domestic product" srcLc="noun"/>
+          <dep c="0.979" dest="reported" destLc="verb" role="argument" src="gross domestic product" srcLc="noun" type="theme"/>
+        </frag>
+        <frag len="1" so="153">
+          <lc lc="verb"/>
+          <dep c="0.978" dest="reported" destLc="verb" role="modifier" src="was" srcLc="verb" type="aux"/>
+        </frag>
+        <frag cccfmp="0.585" cccmp="0.687" ccfmp="0.655" len="1" so="154">
+          <cs pb="1.000" pc="0.971" sk="report/C11" so="154">
+            <fs pb="1.000" pc="0.929" sk="report/V2" so="154"/>
+          </cs>
+          <dep c="0.897" dest="week" destLc="noun" role="predicate" src="reported" srcLc="verb" type="adverbialModifier"/>
+          <dep c="0.873" dest="however" destLc="adv" role="head" src="reported" srcLc="verb"/>
+          <dep c="0.979" dest="gross domestic product" destLc="noun" role="predicate" src="reported" srcLc="verb" type="theme"/>
+          <dep c="0.978" dest="was" destLc="verb" role="head" src="reported" srcLc="verb" type="aux"/>
+          <dep c="0.841" dest="7.2 percent" destLc="noun" role="lnkParent" src="reported" srcLc="verb"/>
+        </frag>
+        <frag len="1" so="155">
+          <lc lc="prep" pc="0.886"/>
+        </frag>
+        <frag cccfmp="0.743" cccmp="0.748" ccfmp="0.803" len="2" so="156">
+          <cs len="2" pb="1.000" pc="0.865" sk="7.2_percent/C2103" so="156">
+            <fs len="2" pb="1.000" pc="0.865" sk="7.2_percent/N2103" so="156"/>
+          </cs>
+          <dep c="0.841" dest="reported" destLc="verb" role="lnkChild" src="7.2 percent" srcLc="noun"/>
+          <dep c="0.869" dest="stronger" destLc="adj" role="head" src="7.2 percent" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="158">
+          <lc lc="punct"/>
+        </frag>
+        <frag cccfmp="0.607" cccmp="0.722" ccfmp="0.521" len="1" so="159">
+          <cs pb="1.000" pc="0.980" sk="much/C1" so="159">
+            <fs pb="1.000" pc="0.966" sk="much/D3" so="159"/>
+          </cs>
+          <dep c="0.960" dest="stronger" destLc="adj" role="modifier" src="much" srcLc="adv"/>
+        </frag>
+        <frag cccfmp="0.474" cccmp="0.492" ccfmp="0.491" len="1" so="160">
+          <cs pb="1.000" pc="0.903" sk="strong/C1" so="160">
+            <fs pb="1.000" pc="0.855" sk="strong/J1" so="160"/>
+          </cs>
+          <dep c="0.869" dest="7.2 percent" destLc="noun" role="modifier" src="stronger" srcLc="adj"/>
+          <dep c="0.960" dest="much" destLc="adv" role="head" src="stronger" srcLc="adj"/>
+        </frag>
+        <frag len="1" so="161">
+          <lc lc="conj" pc="0.975"/>
+        </frag>
+        <frag len="1" so="162">
+          <lc lc="det" pc="0.734"/>
+        </frag>
+        <frag cccfmp="0.827" cccmp="0.930" ccfmp="0.914" len="1" so="163">
+          <cs pb="1.000" pc="1.000" sk="analysis/C1" so="163">
+            <fs pb="1.000" pc="0.960" sk="analyst/N2" so="163"/>
+          </cs>
+          <dep c="0.967" dest="expected" destLc="verb" role="argument" src="analysts" srcLc="noun" type="agent"/>
+        </frag>
+        <frag len="1" so="164">
+          <lc lc="verb"/>
+          <dep c="0.990" dest="expected" destLc="verb" role="modifier" src="had" srcLc="verb" type="aux"/>
+        </frag>
+        <frag cccfmp="0.895" cccmp="0.882" ccfmp="0.916" len="1" so="165">
+          <cs pb="1.000" pc="0.998" sk="expect/C1" so="165">
+            <fs pb="1.000" pc="0.998" sk="expect/V1" so="165"/>
+          </cs>
+          <dep c="0.967" dest="analysts" destLc="noun" role="predicate" src="expected" srcLc="verb" type="agent"/>
+          <dep c="0.990" dest="had" destLc="verb" role="head" src="expected" srcLc="verb" type="aux"/>
+        </frag>
+        <frag len="1" so="166">
+          <lc lc="punct"/>
+        </frag>
+      </sent>
+      <sent len="30" so="167">
+        <frag cccfmp="0.872" cccmp="0.959" ccfmp="0.956" len="2" so="167">
+          <cs len="2" pb="1.000" pc="0.974" sk="interest_rate/C1" so="167">
+            <fs len="2" pb="1.000" pc="0.974" sk="interest_rate/N1" so="167"/>
+          </cs>
+          <dep c="0.610" dest="bills" destLc="noun" role="lnkParent" src="Interest rates" srcLc="noun"/>
+          <dep c="0.457" dest="Cetes" destLc="noun" role="lnkParent" src="Interest rates" srcLc="noun"/>
+          <dep c="0.811" dest="fell" destLc="verb" role="argument" src="Interest rates" srcLc="noun" type="agent"/>
+        </frag>
+        <frag len="1" so="169">
+          <lc lc="prep" pc="0.999"/>
+        </frag>
+        <frag len="1" so="170">
+          <cs pb="1.000" pc="0.000" sk="unk" so="170">
+            <fs lc="adj" pb="1.000" pc="0.000" sk="unk" so="170"/>
+          </cs>
+          <dep c="0.975" dest="bills" destLc="noun" role="modifier" src="governent" srcLc="adj"/>
+        </frag>
+        <frag cccfmp="0.574" cccmp="0.530" ccfmp="0.560" len="1" so="171">
+          <cs pb="1.000" pc="0.967" sk="treasury/C2" so="171">
+            <fs pb="1.000" pc="0.949" sk="treasury/N2" so="171"/>
+          </cs>
+          <dep c="0.984" dest="bills" destLc="noun" role="modifier" src="Treasury" srcLc="noun"/>
+        </frag>
+        <frag cccfmp="0.217" cccmp="0.316" ccfmp="0.224" len="1" so="172">
+          <cs pb="1.000" pc="0.607" sk="bill/C1" so="172">
+            <fs pb="1.000" pc="0.591" sk="bill/N1" so="172"/>
+          </cs>
+          <dep c="0.610" dest="Interest rates" destLc="noun" role="lnkChild" src="bills" srcLc="noun"/>
+          <dep c="0.975" dest="governent" destLc="adj" role="head" src="bills" srcLc="noun"/>
+          <dep c="0.984" dest="Treasury" destLc="noun" role="head" src="bills" srcLc="noun"/>
+          <dep c="0.800" dest="Cetes" destLc="noun" role="peerLeft" src="bills" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="173">
+          <lc lc="punct"/>
+        </frag>
+        <frag len="1" so="174">
+          <lc lc="conj"/>
+        </frag>
+        <frag cccfmp="0.432" cccmp="0.572" ccfmp="0.471" len="1" so="175">
+          <cs pb="1.000" pc="0.903" sk="Cetes/C1400" so="175">
+            <fs pb="1.000" pc="0.903" sk="Cetes/N1400" so="175"/>
+          </cs>
+          <dep c="0.457" dest="Interest rates" destLc="noun" role="lnkChild" src="Cetes" srcLc="noun"/>
+          <dep c="0.800" dest="bills" destLc="noun" role="peerRight" src="Cetes" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="176">
+          <lc lc="punct"/>
+        </frag>
+        <frag len="1" so="177">
+          <lc lc="prep" pc="0.982"/>
+        </frag>
+        <frag len="1" so="178">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.862" cccmp="0.904" ccfmp="0.892" len="2" so="179">
+          <cs len="2" pb="1.000" pc="0.974" sk="secondary_market/C1" so="179">
+            <fs len="2" pb="1.000" pc="0.974" sk="secondary_market/N1" so="179"/>
+          </cs>
+          <dep c="0.961" dest="fell" destLc="verb" role="lnkChild" src="secondary market" srcLc="noun"/>
+        </frag>
+        <frag cccfmp="0.601" cccmp="0.487" ccfmp="0.644" len="1" so="181">
+          <cs pb="1.000" pc="0.983" sk="fall/C6" so="181">
+            <fs pb="1.000" pc="0.978" sk="fall/V7" so="181"/>
+          </cs>
+          <dep c="0.811" dest="Interest rates" destLc="noun" role="predicate" src="fell" srcLc="verb" type="agent"/>
+          <dep c="0.961" dest="secondary market" destLc="noun" role="lnkParent" src="fell" srcLc="verb"/>
+          <dep c="0.900" dest="Tuesday" destLc="noun" role="lnkParent" src="fell" srcLc="verb"/>
+          <dep c="0.831" dest="23.90 percent" destLc="noun" role="lnkParent" src="fell" srcLc="verb"/>
+        </frag>
+        <frag len="1" so="182">
+          <lc lc="prep" pc="0.993"/>
+        </frag>
+        <frag cccfmp="0.641" cccmp="0.772" ccfmp="0.692" len="1" so="183">
+          <cs pb="1.000" pc="0.952" sk="Tuesday/C1" so="183">
+            <fs pb="1.000" pc="0.952" sk="Tuesday/N1" so="183"/>
+          </cs>
+          <dep c="0.900" dest="fell" destLc="verb" role="lnkChild" src="Tuesday" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="184">
+          <lc lc="prep"/>
+        </frag>
+        <frag cccfmp="0.668" cccmp="0.685" ccfmp="0.705" len="2" so="185">
+          <cs len="2" pb="1.000" pc="0.864" sk="23.90_percent/C2103" so="185">
+            <fs len="2" pb="1.000" pc="0.864" sk="23.90_percent/N2103" so="185"/>
+          </cs>
+          <dep c="0.831" dest="fell" destLc="verb" role="lnkChild" src="23.90 percent" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="187">
+          <lc lc="punct"/>
+        </frag>
+        <frag len="1" so="188">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.483" cccmp="0.546" ccfmp="0.441" len="1" so="189">
+          <cs pb="1.000" pc="0.921" sk="low/C20" so="189">
+            <fs pb="1.000" pc="0.836" sk="lowest/J3" so="189"/>
+          </cs>
+          <dep c="0.987" dest="level" destLc="noun" role="modifier" src="lowest" srcLc="adj"/>
+        </frag>
+        <frag cccfmp="0.886" cccmp="0.882" ccfmp="0.817" len="1" so="190">
+          <cs pb="1.000" pc="0.989" sk="level/C1" so="190">
+            <fs pb="1.000" pc="0.998" sk="level/N1" so="190"/>
+          </cs>
+          <dep c="0.987" dest="lowest" destLc="adj" role="head" src="level" srcLc="noun"/>
+          <dep c="0.932" dest="Jan. 25, 1995" destLc="noun" role="lnkParent" src="level" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="191">
+          <lc lc="prep" pc="0.986"/>
+        </frag>
+        <frag cccfmp="0.713" cccmp="0.772" ccfmp="0.670" len="4" so="192">
+          <cs len="4" pb="1.000" pc="0.883" sk="Jan._25,_1995/C303" so="192">
+            <fs len="4" pb="1.000" pc="0.883" sk="Jan._25,_1995/N303" so="192"/>
+          </cs>
+          <dep c="0.932" dest="level" destLc="noun" role="lnkChild" src="Jan. 25, 1995" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="196">
+          <lc lc="punct"/>
+        </frag>
+      </sent>
+    </para>
+    <para len="30" so="197">
+      <sent len="30" so="197">
+        <frag len="1" so="197" sol="1">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.900" cccmp="0.911" ccfmp="0.950" len="2" so="198">
+          <cs len="2" pb="1.000" pc="0.974" sk="stock_market/C5" so="198">
+            <fs len="2" pb="1.000" pc="0.974" sk="stock_market/N1" so="198"/>
+          </cs>
+          <dep c="0.962" dest="price index" destLc="noun" role="modifier" src="stock market" srcLc="noun" type="possessor"/>
+        </frag>
+        <frag len="1" so="200">
+          <lc lc="prep" pc="0.995"/>
+        </frag>
+        <frag cccfmp="0.436" cccmp="0.508" ccfmp="0.440" len="1" so="201">
+          <cs pb="1.000" pc="0.942" sk="main/C1" so="201">
+            <fs pb="1.000" pc="0.898" sk="main/J1" so="201"/>
+          </cs>
+          <dep c="0.984" dest="price index" destLc="noun" role="modifier" src="main" srcLc="adj"/>
+        </frag>
+        <frag cccfmp="0.904" cccmp="0.963" ccfmp="0.890" len="2" so="202">
+          <cs len="2" pb="1.000" pc="0.974" sk="price_index/C1" so="202">
+            <fs len="2" pb="1.000" pc="0.974" sk="price_index/N1" so="202"/>
+          </cs>
+          <dep c="0.962" dest="stock market" destLc="noun" role="head" src="price index" srcLc="noun" type="possessor"/>
+          <dep c="0.984" dest="main" destLc="adj" role="head" src="price index" srcLc="noun"/>
+          <dep c="0.984" dest="rallied" destLc="verb" role="argument" src="price index" srcLc="noun" type="agent"/>
+        </frag>
+        <frag cccfmp="0.456" cccmp="0.451" ccfmp="0.414" len="1" so="204">
+          <cs pb="1.000" pc="0.908" sk="rally/C4" so="204">
+            <fs pb="1.000" pc="0.813" sk="rally/V4" so="204"/>
+          </cs>
+          <dep c="0.984" dest="price index" destLc="noun" role="predicate" src="rallied" srcLc="verb" type="agent"/>
+          <dep c="0.943" dest="points" destLc="noun" role="predicate" src="rallied" srcLc="verb" type="theme"/>
+          <dep c="0.894" dest="2.32 percent" destLc="noun" role="predicate" src="rallied" srcLc="verb" type="theme"/>
+          <dep c="0.797" dest="points" destLc="noun" role="lnkParent" src="rallied" srcLc="verb"/>
+          <dep c="0.783" dest="volume" destLc="noun" role="lnkParent" src="rallied" srcLc="verb"/>
+        </frag>
+        <frag cccfmp="0.695" cccmp="0.762" ccfmp="0.832" len="1" so="205">
+          <cs pb="1.000" pc="0.867" sk="77.12/C2104" so="205">
+            <fs pb="1.000" pc="0.867" sk="77.12/J2104" so="205"/>
+          </cs>
+          <dep c="0.980" dest="points" destLc="noun" role="modifier" src="77.12" srcLc="adj"/>
+        </frag>
+        <frag cccfmp="0.636" cccmp="0.649" ccfmp="0.664" len="1" so="206">
+          <cs pb="1.000" pc="0.855" sk="point/C8" so="206">
+            <fs pb="1.000" pc="0.983" sk="point/N10" so="206"/>
+          </cs>
+          <dep c="0.943" dest="rallied" destLc="verb" role="argument" src="points" srcLc="noun" type="theme"/>
+          <dep c="0.980" dest="77.12" destLc="adj" role="head" src="points" srcLc="noun"/>
+          <dep c="0.888" dest="2.32 percent" destLc="noun" role="peerLeft" src="points" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="207">
+          <lc lc="punct"/>
+        </frag>
+        <frag len="1" so="208">
+          <lc lc="conj"/>
+        </frag>
+        <frag cccfmp="0.655" cccmp="0.647" ccfmp="0.765" len="2" so="209">
+          <cs len="2" pb="1.000" pc="0.903" sk="2.32_percent/C2103" so="209">
+            <fs len="2" pb="1.000" pc="0.903" sk="2.32_percent/N2103" so="209"/>
+          </cs>
+          <dep c="0.894" dest="rallied" destLc="verb" role="argument" src="2.32 percent" srcLc="noun" type="theme"/>
+          <dep c="0.888" dest="points" destLc="noun" role="peerRight" src="2.32 percent" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="211">
+          <lc lc="punct"/>
+        </frag>
+        <frag len="1" so="212">
+          <lc lc="prep"/>
+        </frag>
+        <frag len="1" so="213">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.226" cccmp="0.369" ccfmp="0.320" len="1" so="214">
+          <cs pb="1.000" pc="0.710" sk="record/C1" so="214">
+            <fs pb="0.565" pc="0.829" sk="record/N1" so="214"/>
+            <fs pb="0.435" pc="0.829" sk="record/N8" so="214"/>
+          </cs>
+          <dep c="0.957" dest="points" destLc="noun" role="modifier" src="record" srcLc="noun"/>
+        </frag>
+        <frag cccfmp="0.879" cccmp="0.922" ccfmp="0.943" len="1" so="215">
+          <cs pb="1.000" pc="0.930" sk="3,401.79/C2104" so="215">
+            <fs pb="1.000" pc="0.930" sk="3,401.79/J2104" so="215"/>
+          </cs>
+          <dep c="0.977" dest="points" destLc="noun" role="modifier" src="3,401.79" srcLc="adj"/>
+        </frag>
+        <frag cccfmp="0.653" cccmp="0.714" ccfmp="0.599" len="1" so="216">
+          <cs pb="1.000" pc="0.927" sk="point/C8" so="216">
+            <fs pb="1.000" pc="0.970" sk="point/N10" so="216"/>
+          </cs>
+          <dep c="0.797" dest="rallied" destLc="verb" role="lnkChild" src="points" srcLc="noun"/>
+          <dep c="0.957" dest="record" destLc="noun" role="head" src="points" srcLc="noun"/>
+          <dep c="0.977" dest="3,401.79" destLc="adj" role="head" src="points" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="217">
+          <lc lc="punct"/>
+        </frag>
+        <frag len="1" so="218">
+          <lc lc="prep"/>
+        </frag>
+        <frag cccfmp="0.545" cccmp="0.532" ccfmp="0.552" len="1" so="219">
+          <cs pb="1.000" pc="0.941" sk="volume/C3" so="219">
+            <fs pb="1.000" pc="0.974" sk="volume/N2" so="219"/>
+          </cs>
+          <dep c="0.783" dest="rallied" destLc="verb" role="lnkChild" src="volume" srcLc="noun"/>
+          <dep c="0.824" dest="shares" destLc="noun" role="lnkParent" src="volume" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="220">
+          <lc lc="prep" pc="0.999"/>
+        </frag>
+        <frag len="1" so="221">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.681" cccmp="0.776" ccfmp="0.476" len="1" so="222">
+          <cs pb="1.000" pc="0.994" sk="frenzy/C1" so="222">
+            <fs pb="1.000" pc="0.801" sk="frenzied/J2" so="222"/>
+          </cs>
+          <dep c="0.967" dest="shares" destLc="noun" role="modifier" src="frenzied" srcLc="adj"/>
+        </frag>
+        <frag cccfmp="0.830" cccmp="0.817" ccfmp="0.921" len="2" so="223">
+          <cs len="2" pb="1.000" pc="0.859" sk="159.89_million/C2104" so="223">
+            <fs len="2" pb="1.000" pc="0.859" sk="159.89_million/J2104" so="223"/>
+          </cs>
+          <dep c="0.988" dest="shares" destLc="noun" role="modifier" src="159.89 million" srcLc="adj"/>
+        </frag>
+        <frag cccfmp="0.871" cccmp="0.911" ccfmp="0.920" len="1" so="225">
+          <cs pb="1.000" pc="0.997" sk="share/C1" so="225">
+            <fs pb="1.000" pc="0.996" sk="share/N1" so="225"/>
+          </cs>
+          <dep c="0.824" dest="volume" destLc="noun" role="lnkChild" src="shares" srcLc="noun"/>
+          <dep c="0.967" dest="frenzied" destLc="adj" role="head" src="shares" srcLc="noun"/>
+          <dep c="0.988" dest="159.89 million" destLc="adj" role="head" src="shares" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="226">
+          <lc lc="punct"/>
+        </frag>
+      </sent>
+    </para>
+    <para len="39" so="227">
+      <sent len="39" so="227">
+        <frag cccfmp="0.405" cccmp="0.325" ccfmp="0.427" len="1" so="227" sol="1">
+          <cs pb="1.000" pc="0.777" sk="confound/C1" so="227">
+            <fs pb="1.000" pc="0.744" sk="confound/V1" so="227"/>
+          </cs>
+          <dep c="0.915" dest="expectations" destLc="noun" role="predicate" src="Confounding" srcLc="verb" type="theme"/>
+          <dep c="0.769" dest="been" destLc="verb" role="argument" src="Confounding" srcLc="verb"/>
+        </frag>
+        <frag len="1" so="228">
+          <lc lc="det" pc="0.943"/>
+        </frag>
+        <frag cccfmp="0.785" cccmp="0.921" ccfmp="0.799" len="1" so="229">
+          <cs pb="1.000" pc="0.965" sk="expect/C1" so="229">
+            <fs pb="1.000" pc="0.986" sk="expectation/N1" so="229"/>
+          </cs>
+          <dep c="0.915" dest="Confounding" destLc="verb" role="argument" src="expectations" srcLc="noun" type="theme"/>
+        </frag>
+        <frag len="1" so="230">
+          <lc lc="verb"/>
+          <dep c="0.975" dest="been" destLc="verb" role="modifier" src="has" srcLc="verb" type="aux"/>
+        </frag>
+        <frag cccfmp="0.483" cccmp="0.525" ccfmp="0.501" len="1" so="231">
+          <cs pb="1.000" pc="0.918" sk="be/C2" so="231">
+            <fs pb="1.000" pc="0.911" sk="be/V1" so="231"/>
+          </cs>
+          <dep c="0.769" dest="Confounding" destLc="verb" role="predicate" src="been" srcLc="verb"/>
+          <dep c="0.975" dest="has" destLc="verb" role="head" src="been" srcLc="verb" type="aux"/>
+          <dep c="0.913" dest="strength" destLc="noun" role="predicate" src="been" srcLc="verb" type="theme"/>
+        </frag>
+        <frag len="1" so="232">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.472" cccmp="0.556" ccfmp="0.451" len="1" so="233">
+          <cs pb="1.000" pc="0.919" sk="strong/C1" so="233">
+            <fs pb="0.662" pc="0.570" sk="strength/N7" so="233"/>
+            <fs pb="0.338" pc="0.570" sk="strength/N1" so="233"/>
+          </cs>
+          <dep c="0.913" dest="been" destLc="verb" role="argument" src="strength" srcLc="noun" type="theme"/>
+          <dep c="0.883" dest="peso" destLc="noun" role="lnkParent" src="strength" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="234">
+          <lc lc="prep"/>
+        </frag>
+        <frag len="1" so="235">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.781" cccmp="0.813" ccfmp="0.797" len="1" so="236">
+          <cs pb="1.000" pc="0.974" sk="peso/C1" so="236">
+            <fs pb="1.000" pc="0.974" sk="peso/N1" so="236"/>
+          </cs>
+          <dep c="0.883" dest="strength" destLc="noun" role="lnkChild" src="peso" srcLc="noun"/>
+          <dep c="0.936" dest="ended" destLc="verb" role="argument" src="peso" srcLc="noun" type="agent"/>
+        </frag>
+        <frag len="1" so="237">
+          <lc lc="punct"/>
+        </frag>
+        <frag len="1" so="238">
+          <lc lc="pronoun" pc="0.986"/>
+        </frag>
+        <frag cccfmp="0.714" cccmp="0.730" ccfmp="0.704" len="1" so="239">
+          <cs pb="1.000" pc="0.981" sk="end/C1" so="239">
+            <fs pb="1.000" pc="0.908" sk="end/V1" so="239"/>
+          </cs>
+          <dep c="0.936" dest="peso" destLc="noun" role="predicate" src="ended" srcLc="verb" type="agent"/>
+          <dep c="0.922" dest="higher" destLc="adj" role="predicate" src="ended" srcLc="verb"/>
+          <dep c="0.846" dest="contracts" destLc="noun" role="lnkParent" src="ended" srcLc="verb"/>
+          <dep c="0.618" dest="drop" destLc="noun" role="lnkParent" src="ended" srcLc="verb"/>
+          <dep c="0.598" dest="expectations" destLc="noun" role="lnkParent" src="ended" srcLc="verb"/>
+        </frag>
+        <frag cccfmp="0.314" cccmp="0.304" ccfmp="0.355" len="1" so="240">
+          <cs pb="1.000" pc="0.446" sk="higher/C1" so="240">
+            <fs pb="1.000" pc="0.532" sk="higher/J1" so="240"/>
+          </cs>
+          <dep c="0.922" dest="ended" destLc="verb" role="argument" src="higher" srcLc="adj"/>
+        </frag>
+        <frag len="1" so="241">
+          <lc lc="prep" pc="0.972"/>
+        </frag>
+        <frag len="1" so="242">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.730" cccmp="0.734" ccfmp="0.637" len="1" so="243">
+          <cs pb="1.000" pc="0.974" sk="long/C1" so="243">
+            <fs pb="1.000" pc="0.974" sk="longer/D1" so="243"/>
+          </cs>
+        </frag>
+        <frag len="1" so="244">
+          <lc lc="punct"/>
+        </frag>
+        <frag cccfmp="0.370" cccmp="0.352" ccfmp="0.377" len="1" so="245">
+          <cs pb="1.000" pc="0.629" sk="term/C2" so="245">
+            <fs pb="1.000" pc="0.805" sk="term/N2" so="245"/>
+          </cs>
+          <dep c="0.944" dest="contracts" destLc="noun" role="modifier" src="term" srcLc="noun"/>
+        </frag>
+        <frag cccfmp="0.608" cccmp="0.556" ccfmp="0.563" len="1" so="246">
+          <cs pb="1.000" pc="0.959" sk="contract/C6" so="246">
+            <fs pb="1.000" pc="0.929" sk="contract/N1" so="246"/>
+          </cs>
+          <dep c="0.846" dest="ended" destLc="verb" role="lnkChild" src="contracts" srcLc="noun"/>
+          <dep c="0.944" dest="term" destLc="noun" role="head" src="contracts" srcLc="noun"/>
+          <dep c="0.816" dest="Tuesday" destLc="noun" role="lnkParent" src="contracts" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="247">
+          <lc lc="prep"/>
+        </frag>
+        <frag cccfmp="0.775" cccmp="0.841" ccfmp="0.765" len="1" so="248">
+          <cs pb="1.000" pc="0.946" sk="Tuesday/C1" so="248">
+            <fs pb="1.000" pc="0.946" sk="Tuesday/N1" so="248"/>
+          </cs>
+          <dep c="0.816" dest="contracts" destLc="noun" role="lnkChild" src="Tuesday" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="249">
+          <lc lc="prep" pc="0.997"/>
+        </frag>
+        <frag len="1" so="250">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.410" cccmp="0.455" ccfmp="0.407" len="1" so="251">
+          <cs pb="1.000" pc="0.844" sk="secondary/C1" so="251">
+            <fs pb="1.000" pc="0.839" sk="secondary/J1" so="251"/>
+          </cs>
+          <dep c="0.902" dest="drop" destLc="noun" role="modifier" src="secondary" srcLc="adj"/>
+        </frag>
+        <frag cccfmp="0.485" cccmp="0.493" ccfmp="0.555" len="1" so="252">
+          <cs pb="1.000" pc="0.903" sk="Cetes/C1400" so="252">
+            <fs pb="1.000" pc="0.903" sk="Cetes/N1400" so="252"/>
+          </cs>
+          <dep c="0.926" dest="drop" destLc="noun" role="modifier" src="Cetes" srcLc="noun"/>
+        </frag>
+        <frag cccfmp="0.775" cccmp="0.834" ccfmp="0.738" len="1" so="253">
+          <cs pb="1.000" pc="0.981" sk="drop/C3" so="253">
+            <fs pb="1.000" pc="0.973" sk="drop/N3" so="253"/>
+          </cs>
+          <dep c="0.618" dest="ended" destLc="verb" role="lnkChild" src="drop" srcLc="noun"/>
+          <dep c="0.902" dest="secondary" destLc="adj" role="head" src="drop" srcLc="noun"/>
+          <dep c="0.926" dest="Cetes" destLc="noun" role="head" src="drop" srcLc="noun"/>
+          <dep c="0.824" dest="expectations" destLc="noun" role="peerLeft" src="drop" srcLc="noun"/>
+          <dep c="0.621" dest="rates" destLc="noun" role="lnkParent" src="drop" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="254">
+          <lc lc="conj"/>
+        </frag>
+        <frag cccfmp="0.813" cccmp="0.921" ccfmp="0.779" len="1" so="255">
+          <cs pb="1.000" pc="0.965" sk="expect/C1" so="255">
+            <fs pb="1.000" pc="0.989" sk="expectation/N1" so="255"/>
+          </cs>
+          <dep c="0.598" dest="ended" destLc="verb" role="lnkChild" src="expectations" srcLc="noun"/>
+          <dep c="0.824" dest="drop" destLc="noun" role="peerRight" src="expectations" srcLc="noun"/>
+          <dep c="0.673" dest="rates" destLc="noun" role="lnkParent" src="expectations" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="256">
+          <lc lc="prep"/>
+        </frag>
+        <frag cccfmp="0.361" cccmp="0.392" ccfmp="0.329" len="1" so="257">
+          <cs pb="1.000" pc="0.783" sk="low/C20" so="257">
+            <fs pb="1.000" pc="0.843" sk="lower/J3" so="257"/>
+          </cs>
+          <dep c="0.909" dest="rates" destLc="noun" role="modifier" src="lower" srcLc="adj"/>
+        </frag>
+        <frag cccfmp="0.439" cccmp="0.411" ccfmp="0.395" len="1" so="258">
+          <cs pb="1.000" pc="0.693" sk="benchmark/C1" so="258">
+            <fs pb="1.000" pc="0.866" sk="benchmark/N1" so="258"/>
+          </cs>
+          <dep c="0.931" dest="rates" destLc="noun" role="modifier" src="benchmark" srcLc="noun"/>
+        </frag>
+        <frag cccfmp="0.565" cccmp="0.554" ccfmp="0.589" len="1" so="259">
+          <cs pb="1.000" pc="0.904" sk="rate/C10" so="259">
+            <fs pb="1.000" pc="0.985" sk="rate/N1" so="259"/>
+          </cs>
+          <dep c="0.621" dest="drop" destLc="noun" role="lnkChild" src="rates" srcLc="noun"/>
+          <dep c="0.673" dest="expectations" destLc="noun" role="lnkChild" src="rates" srcLc="noun"/>
+          <dep c="0.909" dest="lower" destLc="adj" role="head" src="rates" srcLc="noun"/>
+          <dep c="0.931" dest="benchmark" destLc="noun" role="head" src="rates" srcLc="noun"/>
+          <dep c="0.648" dest="auction" destLc="noun" role="lnkParent" src="rates" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="260">
+          <lc lc="prep" pc="0.976"/>
+        </frag>
+        <frag cccfmp="0.668" cccmp="0.624" ccfmp="0.691" len="1" so="261">
+          <cs pb="1.000" pc="0.950" sk="Tuesday/C1" so="261">
+            <fs pb="1.000" pc="0.950" sk="Tuesday/N1" so="261"/>
+          </cs>
+          <dep c="0.961" dest="auction" destLc="noun" role="modifier" src="Tuesday" srcLc="noun" type="possessor"/>
+        </frag>
+        <frag len="1" so="262">
+          <lc lc="prep" pc="0.989"/>
+        </frag>
+        <frag cccfmp="0.779" cccmp="0.848" ccfmp="0.741" len="1" so="263">
+          <cs pb="1.000" pc="0.974" sk="week/C1" so="263">
+            <fs pb="1.000" pc="0.974" sk="weekly/J1" so="263"/>
+          </cs>
+          <dep c="0.983" dest="auction" destLc="noun" role="modifier" src="weekly" srcLc="adj"/>
+        </frag>
+        <frag cccfmp="0.627" cccmp="0.650" ccfmp="0.592" len="1" so="264">
+          <cs pb="1.000" pc="0.962" sk="auction/C2" so="264">
+            <fs pb="1.000" pc="0.943" sk="auction/N2" so="264"/>
+          </cs>
+          <dep c="0.648" dest="rates" destLc="noun" role="lnkChild" src="auction" srcLc="noun"/>
+          <dep c="0.961" dest="Tuesday" destLc="noun" role="head" src="auction" srcLc="noun" type="possessor"/>
+          <dep c="0.983" dest="weekly" destLc="adj" role="head" src="auction" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="265">
+          <lc lc="punct"/>
+        </frag>
+      </sent>
+    </para>
+    <para len="55" so="266">
+      <sent len="55" so="266">
+        <frag len="1" so="266" sol="1">
+          <lc lc="prep"/>
+        </frag>
+        <frag cccfmp="0.671" cccmp="0.624" ccfmp="0.612" len="1" so="267">
+          <cs pb="1.000" pc="0.903" sk="U.S./C1" so="267">
+            <fs pb="1.000" pc="0.903" sk="U.S./N2" so="267"/>
+          </cs>
+          <dep c="0.526" dest="interest rates" destLc="noun" role="modifier" src="U.S." srcLc="noun"/>
+        </frag>
+        <frag cccfmp="0.980" cccmp="0.956" ccfmp="0.972" len="3" so="268">
+          <cs len="3" pb="1.000" pc="0.974" sk="long_term/C2" so="268">
+            <fs len="3" pb="1.000" pc="0.974" sk="long-term/J1" so="268"/>
+          </cs>
+          <dep c="0.715" dest="interest rates" destLc="noun" role="modifier" src="long-term" srcLc="adj"/>
+        </frag>
+        <frag cccfmp="0.964" cccmp="0.967" ccfmp="0.957" len="2" so="271">
+          <cs len="2" pb="1.000" pc="0.974" sk="interest_rate/C1" so="271">
+            <fs len="2" pb="1.000" pc="0.974" sk="interest_rate/N1" so="271"/>
+          </cs>
+          <dep c="0.526" dest="U.S." destLc="noun" role="head" src="interest rates" srcLc="noun"/>
+          <dep c="0.715" dest="long-term" destLc="adj" role="head" src="interest rates" srcLc="noun"/>
+          <dep c="0.980" dest="expected" destLc="verb" role="argument" src="interest rates" srcLc="noun" type="theme"/>
+          <dep c="0.943" dest="remain" destLc="verb" role="argument" src="interest rates" srcLc="noun" type="agent"/>
+          <dep c="0.891" dest="is" destLc="verb" role="lnkChild" src="interest rates" srcLc="noun"/>
+        </frag>
+        <frag cccfmp="0.613" cccmp="0.677" ccfmp="0.623" len="1" so="273">
+          <cs pb="1.000" pc="0.990" sk="expect/C1" so="273">
+            <fs pb="1.000" pc="0.977" sk="expect/V1" so="273"/>
+          </cs>
+          <dep c="0.980" dest="interest rates" destLc="noun" role="predicate" src="expected" srcLc="verb" type="theme"/>
+          <dep c="0.938" dest="remain" destLc="verb" role="lnkParent" src="expected" srcLc="verb"/>
+        </frag>
+        <frag len="1" so="274">
+          <lc lc="prep"/>
+        </frag>
+        <frag cccfmp="0.730" cccmp="0.845" ccfmp="0.675" len="1" so="275">
+          <cs pb="1.000" pc="0.993" sk="remain/C1" so="275">
+            <fs pb="1.000" pc="0.960" sk="remain/V1" so="275"/>
+          </cs>
+          <dep c="0.938" dest="expected" destLc="verb" role="lnkChild" src="remain" srcLc="verb"/>
+          <dep c="0.943" dest="interest rates" destLc="noun" role="predicate" src="remain" srcLc="verb" type="agent"/>
+          <dep c="0.924" dest="steady" destLc="adj" role="predicate" src="remain" srcLc="verb"/>
+          <dep c="0.750" dest="refrained" destLc="verb" role="lnkParent" src="remain" srcLc="verb"/>
+        </frag>
+        <frag cccfmp="0.639" cccmp="0.565" ccfmp="0.673" len="1" so="276">
+          <cs pb="1.000" pc="0.962" sk="steady/C1" so="276">
+            <fs pb="1.000" pc="0.646" sk="steady/J2" so="276"/>
+          </cs>
+          <dep c="0.924" dest="remain" destLc="verb" role="argument" src="steady" srcLc="adj"/>
+        </frag>
+        <frag len="1" so="277">
+          <lc lc="prep" pc="0.769"/>
+        </frag>
+        <frag len="1" so="278">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.692" cccmp="0.661" ccfmp="0.768" len="2" so="279">
+          <cs len="2" pb="1.000" pc="0.903" sk="Federal_Reserve/C2" so="279">
+            <fs len="2" pb="1.000" pc="0.903" sk="Federal_Reserve/N2" so="279"/>
+          </cs>
+          <dep c="0.943" dest="refrained" destLc="verb" role="argument" src="Federal Reserve" srcLc="noun" type="agent"/>
+        </frag>
+        <frag cccfmp="0.855" cccmp="0.939" ccfmp="0.791" len="1" so="281">
+          <cs pb="1.000" pc="0.960" sk="refrain/C2" so="281">
+            <fs pb="1.000" pc="0.990" sk="refrain/V1" so="281"/>
+          </cs>
+          <dep c="0.750" dest="remain" destLc="verb" role="lnkChild" src="refrained" srcLc="verb"/>
+          <dep c="0.943" dest="Federal Reserve" destLc="noun" role="predicate" src="refrained" srcLc="verb" type="agent"/>
+        </frag>
+        <frag len="1" so="282">
+          <lc lc="prep"/>
+        </frag>
+        <frag cccfmp="0.750" cccmp="0.826" ccfmp="0.820" len="1" so="283">
+          <cs pb="1.000" pc="0.988" sk="raise/C1" so="283">
+            <fs pb="1.000" pc="0.998" sk="raise/V1" so="283"/>
+          </cs>
+          <dep c="0.949" dest="rates" destLc="noun" role="predicate" src="raising" srcLc="verb" type="theme"/>
+        </frag>
+        <frag cccfmp="0.973" cccmp="0.901" ccfmp="0.979" len="3" so="284">
+          <cs len="3" pb="1.000" pc="0.974" sk="short-term/C1" so="284">
+            <fs len="3" pb="1.000" pc="0.974" sk="short-term/J1" so="284"/>
+          </cs>
+          <dep c="0.966" dest="rates" destLc="noun" role="modifier" src="short-term" srcLc="adj"/>
+        </frag>
+        <frag cccfmp="0.910" cccmp="0.936" ccfmp="0.931" len="1" so="287">
+          <cs pb="1.000" pc="0.999" sk="rate/C10" so="287">
+            <fs pb="1.000" pc="0.998" sk="rate/N1" so="287"/>
+          </cs>
+          <dep c="0.949" dest="raising" destLc="verb" role="argument" src="rates" srcLc="noun" type="theme"/>
+          <dep c="0.966" dest="short-term" destLc="adj" role="head" src="rates" srcLc="noun"/>
+          <dep c="0.868" dest="Tuesday" destLc="noun" role="lnkParent" src="rates" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="288">
+          <lc lc="prep"/>
+        </frag>
+        <frag cccfmp="0.734" cccmp="0.800" ccfmp="0.717" len="1" so="289">
+          <cs pb="1.000" pc="0.942" sk="Tuesday/C1" so="289">
+            <fs pb="1.000" pc="0.942" sk="Tuesday/N1" so="289"/>
+          </cs>
+          <dep c="0.868" dest="rates" destLc="noun" role="lnkChild" src="Tuesday" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="290">
+          <lc lc="punct"/>
+        </frag>
+        <frag len="1" so="291">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.256" cccmp="0.325" ccfmp="0.283" len="1" so="292">
+          <cs pb="1.000" pc="0.784" sk="attract/C1" so="292">
+            <fs pb="1.000" pc="0.282" sk="attraction/N3" so="292"/>
+          </cs>
+          <dep c="0.862" dest="Mexico" destLc="noun" role="lnkParent" src="attraction" srcLc="noun"/>
+          <dep c="0.950" dest="is" destLc="verb" role="argument" src="attraction" srcLc="noun" type="agent"/>
+        </frag>
+        <frag len="1" so="293">
+          <lc lc="prep"/>
+        </frag>
+        <frag cccfmp="0.588" cccmp="0.737" ccfmp="0.601" len="1" so="294">
+          <cs pb="1.000" pc="0.986" sk="Mexico/C13" so="294">
+            <fs pb="1.000" pc="0.974" sk="Mexico/N1" so="294"/>
+          </cs>
+          <dep c="0.862" dest="attraction" destLc="noun" role="lnkChild" src="Mexico" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="295">
+          <lc lc="punct"/>
+        </frag>
+        <frag cccfmp="0.781" cccmp="0.869" ccfmp="0.827" len="1" so="296">
+          <cs pb="1.000" pc="0.998" sk="analysis/C1" so="296">
+            <fs pb="1.000" pc="0.844" sk="analyst/N1" so="296"/>
+          </cs>
+          <dep c="0.982" dest="say" destLc="verb" role="argument" src="analysts" srcLc="noun" type="agent"/>
+        </frag>
+        <frag cccfmp="0.826" cccmp="0.878" ccfmp="0.931" len="1" so="297">
+          <cs pb="1.000" pc="0.999" sk="say/C1" so="297">
+            <fs pb="1.000" pc="0.994" sk="say/V1" so="297"/>
+          </cs>
+          <dep c="0.982" dest="analysts" destLc="noun" role="predicate" src="say" srcLc="verb" type="agent"/>
+        </frag>
+        <frag len="1" so="298">
+          <lc lc="punct"/>
+        </frag>
+        <frag cccfmp="0.464" cccmp="0.468" ccfmp="0.494" len="1" so="299">
+          <cs pb="1.000" pc="0.913" sk="be/C2" so="299">
+            <fs pb="1.000" pc="0.792" sk="be/V1" so="299"/>
+          </cs>
+          <dep c="0.891" dest="interest rates" destLc="noun" role="lnkParent" src="is" srcLc="verb"/>
+          <dep c="0.950" dest="attraction" destLc="noun" role="predicate" src="is" srcLc="verb" type="agent"/>
+          <dep c="0.853" dest="offers" destLc="verb" role="lnkParent" src="is" srcLc="verb"/>
+        </frag>
+        <frag len="1" so="300">
+          <lc lc="conj" pc="0.982"/>
+        </frag>
+        <frag len="1" so="301">
+          <lc lc="pronoun"/>
+          <dep c="0.981" dest="offers" destLc="verb" role="argument" src="it" srcLc="pronoun" type="agent"/>
+        </frag>
+        <frag cccfmp="0.661" cccmp="0.664" ccfmp="0.665" len="1" so="302">
+          <cs pb="1.000" pc="0.973" sk="offer/C1" so="302">
+            <fs pb="1.000" pc="0.967" sk="offer/V1" so="302"/>
+          </cs>
+          <dep c="0.853" dest="is" destLc="verb" role="lnkChild" src="offers" srcLc="verb"/>
+          <dep c="0.981" dest="it" destLc="pronoun" role="predicate" src="offers" srcLc="verb" type="agent"/>
+          <dep c="0.914" dest="returns" destLc="noun" role="predicate" src="offers" srcLc="verb" type="theme"/>
+        </frag>
+        <frag cccfmp="0.286" cccmp="0.337" ccfmp="0.343" len="1" so="303">
+          <cs pb="0.585" pc="0.680" sk="robust/C3" so="303">
+            <fs pb="0.585" pc="0.680" sk="robust/J3" so="303"/>
+          </cs>
+          <cs pb="0.415" pc="0.680" sk="robust/C1" so="303">
+            <fs pb="0.415" pc="0.680" sk="robust/J1" so="303"/>
+          </cs>
+          <dep c="0.933" dest="returns" destLc="noun" role="modifier" src="robust" srcLc="adj"/>
+        </frag>
+        <frag cccfmp="0.440" cccmp="0.430" ccfmp="0.436" len="1" so="304">
+          <cs pb="1.000" pc="0.622" sk="return/C10" so="304">
+            <fs pb="1.000" pc="0.822" sk="return/N6" so="304"/>
+          </cs>
+          <dep c="0.914" dest="offers" destLc="verb" role="argument" src="returns" srcLc="noun" type="theme"/>
+          <dep c="0.933" dest="robust" destLc="adj" role="head" src="returns" srcLc="noun"/>
+          <dep c="0.838" dest="foreigners" destLc="noun" role="lnkParent" src="returns" srcLc="noun"/>
+          <dep c="0.738" dest="confidence" destLc="noun" role="lnkParent" src="returns" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="305">
+          <lc lc="prep" pc="0.999"/>
+        </frag>
+        <frag cccfmp="0.569" cccmp="0.598" ccfmp="0.599" len="1" so="306">
+          <cs pb="1.000" pc="0.971" sk="foreign/C1" so="306">
+            <fs pb="1.000" pc="0.964" sk="foreigner/N1" so="306"/>
+          </cs>
+          <dep c="0.838" dest="returns" destLc="noun" role="lnkChild" src="foreigners" srcLc="noun"/>
+          <dep c="0.850" dest="confidence" destLc="noun" role="peerLeft" src="foreigners" srcLc="noun"/>
+          <dep c="0.412" dest="fall" destLc="verb" role="lnkParent" src="foreigners" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="307">
+          <lc lc="conj"/>
+        </frag>
+        <frag cccfmp="0.773" cccmp="0.809" ccfmp="0.852" len="1" so="308">
+          <cs pb="1.000" pc="0.992" sk="grow/C2" so="308">
+            <fs pb="1.000" pc="0.993" sk="growing/J1" so="308"/>
+          </cs>
+          <dep c="0.963" dest="confidence" destLc="noun" role="modifier" src="growing" srcLc="adj"/>
+        </frag>
+        <frag cccfmp="0.395" cccmp="0.383" ccfmp="0.383" len="1" so="309">
+          <cs pb="1.000" pc="0.783" sk="confident/C1" so="309">
+            <fs pb="1.000" pc="0.736" sk="confidence/N1" so="309"/>
+          </cs>
+          <dep c="0.738" dest="returns" destLc="noun" role="lnkChild" src="confidence" srcLc="noun"/>
+          <dep c="0.850" dest="foreigners" destLc="noun" role="peerRight" src="confidence" srcLc="noun"/>
+          <dep c="0.963" dest="growing" destLc="adj" role="head" src="confidence" srcLc="noun"/>
+          <dep c="0.526" dest="fall" destLc="verb" role="lnkParent" src="confidence" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="310">
+          <lc lc="conj" pc="0.847"/>
+        </frag>
+        <frag len="1" so="311">
+          <lc lc="pronoun"/>
+          <dep c="0.937" dest="fall" destLc="verb" role="argument" src="they" srcLc="pronoun" type="agent"/>
+        </frag>
+        <frag len="1" so="312">
+          <lc lc="verb"/>
+          <dep c="0.945" dest="fall" destLc="verb" role="modifier" src="will" srcLc="verb" type="aux"/>
+        </frag>
+        <frag cccfmp="0.762" cccmp="0.835" ccfmp="0.752" len="1" so="313">
+          <cs pb="1.000" pc="0.974" sk="not/C1" so="313">
+            <fs pb="1.000" pc="0.974" sk="not/D1" so="313"/>
+          </cs>
+          <dep c="0.937" dest="fall" destLc="verb" role="modifier" src="not" srcLc="adv"/>
+        </frag>
+        <frag cccfmp="0.585" cccmp="0.524" ccfmp="0.599" len="1" so="314">
+          <cs pb="1.000" pc="0.878" sk="fall/C2" so="314">
+            <fs pb="1.000" pc="0.820" sk="fall/V3" so="314"/>
+          </cs>
+          <dep c="0.412" dest="foreigners" destLc="noun" role="lnkChild" src="fall" srcLc="verb"/>
+          <dep c="0.526" dest="confidence" destLc="noun" role="lnkChild" src="fall" srcLc="verb"/>
+          <dep c="0.937" dest="they" destLc="pronoun" role="predicate" src="fall" srcLc="verb" type="agent"/>
+          <dep c="0.945" dest="will" destLc="verb" role="head" src="fall" srcLc="verb" type="aux"/>
+          <dep c="0.937" dest="not" destLc="adv" role="head" src="fall" srcLc="verb"/>
+          <dep c="0.962" dest="victim" destLc="noun" role="predicate" src="fall" srcLc="verb" type="theme"/>
+          <dep c="0.796" dest="peso" destLc="noun" role="lnkParent" src="fall" srcLc="verb"/>
+        </frag>
+        <frag cccfmp="0.874" cccmp="0.896" ccfmp="0.880" len="1" so="315">
+          <cs pb="1.000" pc="0.967" sk="victim/C1" so="315">
+            <fs pb="1.000" pc="0.995" sk="victim/N1" so="315"/>
+          </cs>
+          <dep c="0.962" dest="fall" destLc="verb" role="argument" src="victim" srcLc="noun" type="theme"/>
+        </frag>
+        <frag len="1" so="316">
+          <lc lc="prep"/>
+        </frag>
+        <frag len="1" so="317">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.523" cccmp="0.532" ccfmp="0.618" len="1" so="318">
+          <cs pb="1.000" pc="0.911" sk="crumble/C4" so="318">
+            <fs pb="1.000" pc="0.901" sk="crumble/V1" so="318"/>
+          </cs>
+          <dep c="0.859" dest="peso" destLc="noun" role="predicate" src="crumbling" srcLc="verb"/>
+          <dep c="0.903" dest="peso" destLc="noun" role="modifier" src="crumbling" srcLc="verb"/>
+        </frag>
+        <frag cccfmp="0.739" cccmp="0.770" ccfmp="0.744" len="1" so="319">
+          <cs pb="1.000" pc="0.974" sk="peso/C1" so="319">
+            <fs pb="1.000" pc="0.974" sk="peso/N1" so="319"/>
+          </cs>
+          <dep c="0.796" dest="fall" destLc="verb" role="lnkChild" src="peso" srcLc="noun"/>
+          <dep c="0.859" dest="crumbling" destLc="verb" role="argument" src="peso" srcLc="noun"/>
+          <dep c="0.903" dest="crumbling" destLc="verb" role="head" src="peso" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="320">
+          <lc lc="punct"/>
+        </frag>
+      </sent>
+    </para>
+    <para len="53" so="321">
+      <sent len="23" so="321">
+        <frag len="1" so="321" sol="1">
+          <lc lc="punct"/>
+        </frag>
+        <frag len="1" so="322">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.562" cccmp="0.612" ccfmp="0.511" len="1" so="323">
+          <cs pb="1.000" pc="0.935" sk="focus/C1" so="323">
+            <fs pb="1.000" pc="0.840" sk="focus/N1" so="323"/>
+          </cs>
+          <dep c="0.932" dest="is" destLc="verb" role="argument" src="focus" srcLc="noun" type="agent"/>
+        </frag>
+        <frag cccfmp="0.463" cccmp="0.433" ccfmp="0.541" len="1" so="324">
+          <cs pb="1.000" pc="0.899" sk="be/C2" so="324">
+            <fs pb="1.000" pc="0.949" sk="be/V1" so="324"/>
+          </cs>
+          <dep c="0.932" dest="focus" destLc="noun" role="predicate" src="is" srcLc="verb" type="agent"/>
+          <dep c="0.828" dest="back" destLc="adv" role="head" src="is" srcLc="verb"/>
+          <dep c="0.732" dest="said" destLc="verb" role="argument" src="is" srcLc="verb"/>
+        </frag>
+        <frag cccfmp="0.212" cccmp="0.362" ccfmp="0.248" len="1" so="325">
+          <cs pb="1.000" pc="0.591" sk="back/C3" so="325">
+            <fs pb="0.505" pc="0.858" sk="back/D3" so="325"/>
+            <fs pb="0.495" pc="0.858" sk="back/D4" so="325"/>
+          </cs>
+          <dep c="0.828" dest="is" destLc="verb" role="modifier" src="back" srcLc="adv"/>
+          <dep c="0.601" dest="fundamentals" destLc="noun" role="lnkParent" src="back" srcLc="adv"/>
+        </frag>
+        <frag len="1" so="326">
+          <lc lc="prep" pc="0.990"/>
+        </frag>
+        <frag cccfmp="0.540" cccmp="0.670" ccfmp="0.772" len="1" so="327">
+          <cs pb="1.000" pc="0.860" sk="Mexico/C13" so="327">
+            <fs pb="1.000" pc="0.860" sk="Mexican/J1" so="327"/>
+          </cs>
+          <dep c="0.948" dest="fundamentals" destLc="noun" role="modifier" src="Mexican" srcLc="adj"/>
+        </frag>
+        <frag cccfmp="0.729" cccmp="0.903" ccfmp="0.756" len="1" so="328">
+          <cs pb="1.000" pc="0.996" sk="fundamentals/C1" so="328">
+            <fs pb="1.000" pc="0.987" sk="fundamentals/N1" so="328"/>
+          </cs>
+          <dep c="0.601" dest="back" destLc="adv" role="lnkChild" src="fundamentals" srcLc="noun"/>
+          <dep c="0.948" dest="Mexican" destLc="adj" role="head" src="fundamentals" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="329">
+          <lc lc="punct"/>
+        </frag>
+        <frag len="1" so="330">
+          <lc lc="punct"/>
+        </frag>
+        <frag cccfmp="0.864" cccmp="0.929" ccfmp="0.919" len="1" so="331">
+          <cs pb="1.000" pc="0.996" sk="say/C1" so="331">
+            <fs pb="1.000" pc="0.991" sk="say/V1" so="331"/>
+          </cs>
+          <dep c="0.732" dest="is" destLc="verb" role="predicate" src="said" srcLc="verb"/>
+          <dep c="0.943" dest="Lars Schonander" destLc="noun" role="predicate" src="said" srcLc="verb" type="agent"/>
+        </frag>
+        <frag cccfmp="0.831" cccmp="0.813" ccfmp="0.839" len="2" so="332">
+          <cs len="2" pb="1.000" pc="0.858" sk="Lars_Schonander/C100" so="332">
+            <fs len="2" pb="1.000" pc="0.858" sk="Lars_Schonander/N100" so="332"/>
+          </cs>
+          <dep c="0.943" dest="said" destLc="verb" role="argument" src="Lars Schonander" srcLc="noun" type="agent"/>
+        </frag>
+        <frag len="1" so="334">
+          <lc lc="punct"/>
+        </frag>
+        <frag cccfmp="0.662" cccmp="0.721" ccfmp="0.676" len="1" so="335">
+          <cs pb="1.000" pc="0.935" sk="head/C3" so="335">
+            <fs pb="1.000" pc="0.977" sk="head/N4" so="335"/>
+          </cs>
+          <dep c="0.824" dest="researcher" destLc="noun" role="lnkParent" src="head" srcLc="noun"/>
+          <dep c="0.749" dest="Santander" destLc="noun" role="lnkParent" src="head" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="336">
+          <lc lc="prep"/>
+        </frag>
+        <frag cccfmp="0.864" cccmp="0.960" ccfmp="0.845" len="1" so="337">
+          <cs pb="1.000" pc="0.968" sk="research/C1" so="337">
+            <fs pb="1.000" pc="0.995" sk="researcher/N1" so="337"/>
+          </cs>
+          <dep c="0.824" dest="head" destLc="noun" role="lnkChild" src="researcher" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="338">
+          <lc lc="prep" pc="0.999"/>
+        </frag>
+        <frag cccfmp="0.686" cccmp="0.663" ccfmp="0.732" len="1" so="339">
+          <cs pb="1.000" pc="0.933" sk="Santander/C2" so="339">
+            <fs pb="1.000" pc="0.933" sk="Santander/N6" so="339"/>
+          </cs>
+          <dep c="0.749" dest="head" destLc="noun" role="lnkChild" src="Santander" srcLc="noun"/>
+          <dep c="0.559" dest="Mexico City" destLc="noun" role="lnkParent" src="Santander" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="340">
+          <lc lc="prep" pc="0.945"/>
+        </frag>
+        <frag cccfmp="0.940" cccmp="0.899" ccfmp="0.991" len="2" so="341">
+          <cs len="2" pb="1.000" pc="0.949" sk="Mexico_City/C1" so="341">
+            <fs len="2" pb="1.000" pc="0.949" sk="Mexico_City/N1" so="341"/>
+          </cs>
+          <dep c="0.559" dest="Santander" destLc="noun" role="lnkChild" src="Mexico City" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="343">
+          <lc lc="punct"/>
+        </frag>
+      </sent>
+      <sent len="30" so="344">
+        <frag len="1" so="344">
+          <lc lc="punct"/>
+        </frag>
+        <frag len="1" so="345">
+          <lc lc="pronoun"/>
+          <dep c="0.978" dest="have" destLc="verb" role="argument" src="You" srcLc="pronoun" type="agent"/>
+        </frag>
+        <frag cccfmp="0.491" cccmp="0.482" ccfmp="0.498" len="1" so="346">
+          <cs pb="1.000" pc="0.958" sk="have/C1" so="346">
+            <fs pb="1.000" pc="0.842" sk="have/V1" so="346"/>
+          </cs>
+          <dep c="0.978" dest="You" destLc="pronoun" role="predicate" src="have" srcLc="verb" type="agent"/>
+          <dep c="0.874" dest="decline" destLc="noun" role="predicate" src="have" srcLc="verb" type="theme"/>
+          <dep c="0.733" dest="figure" destLc="noun" role="predicate" src="have" srcLc="verb" type="theme"/>
+          <dep c="0.607" dest="move" destLc="noun" role="predicate" src="have" srcLc="verb" type="theme"/>
+          <dep c="0.393" dest="lack" destLc="noun" role="predicate" src="have" srcLc="verb" type="headTheme"/>
+        </frag>
+        <frag len="1" so="347">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.313" cccmp="0.396" ccfmp="0.338" len="1" so="348">
+          <cs pb="1.000" pc="0.903" sk="continue/C1" so="348">
+            <fs pb="1.000" pc="0.726" sk="continue/V1" so="348"/>
+          </cs>
+          <dep c="0.944" dest="decline" destLc="noun" role="predicate" src="continuing" srcLc="verb"/>
+          <dep c="0.962" dest="decline" destLc="noun" role="modifier" src="continuing" srcLc="verb"/>
+        </frag>
+        <frag cccfmp="0.432" cccmp="0.469" ccfmp="0.468" len="1" so="349">
+          <cs pb="0.888" pc="0.866" sk="decline/C4" so="349">
+            <fs pb="0.888" pc="0.866" sk="decline/N3" so="349"/>
+          </cs>
+          <cs pb="0.112" pc="0.866" sk="decline/C2" so="349">
+            <fs pb="0.112" pc="0.866" sk="decline/N2" so="349"/>
+          </cs>
+          <dep c="0.874" dest="have" destLc="verb" role="argument" src="decline" srcLc="noun" type="theme"/>
+          <dep c="0.944" dest="continuing" destLc="verb" role="argument" src="decline" srcLc="noun"/>
+          <dep c="0.962" dest="continuing" destLc="verb" role="head" src="decline" srcLc="noun"/>
+          <dep c="0.893" dest="inflation" destLc="noun" role="lnkParent" src="decline" srcLc="noun"/>
+          <dep c="0.776" dest="figure" destLc="noun" role="peerLeft" src="decline" srcLc="noun"/>
+          <dep c="0.750" dest="lack" destLc="noun" role="peerLeft" src="decline" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="350">
+          <lc lc="prep" pc="0.973"/>
+        </frag>
+        <frag cccfmp="0.489" cccmp="0.470" ccfmp="0.489" len="1" so="351">
+          <cs pb="1.000" pc="0.911" sk="inflate/C2" so="351">
+            <fs pb="1.000" pc="0.910" sk="inflation/N1" so="351"/>
+          </cs>
+          <dep c="0.893" dest="decline" destLc="noun" role="lnkChild" src="inflation" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="352">
+          <lc lc="punct"/>
+        </frag>
+        <frag len="1" so="353">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.460" cccmp="0.519" ccfmp="0.448" len="1" so="354">
+          <cs pb="1.000" pc="0.918" sk="strong/C1" so="354">
+            <fs pb="1.000" pc="0.828" sk="strong/J1" so="354"/>
+          </cs>
+        </frag>
+        <frag len="1" so="355">
+          <lc lc="punct"/>
+        </frag>
+        <frag len="1" so="356">
+          <lc lc="prep" pc="0.961"/>
+        </frag>
+        <frag len="1" so="357">
+          <lc lc="punct"/>
+        </frag>
+        <frag cccfmp="0.541" cccmp="0.754" ccfmp="0.564" len="1" so="358">
+          <cs pb="1.000" pc="0.976" sk="expect/C1" so="358">
+            <fs pb="1.000" pc="0.984" sk="expect/V1" so="358"/>
+          </cs>
+        </frag>
+        <frag cccfmp="0.734" cccmp="0.753" ccfmp="0.751" len="1" so="359">
+          <cs pb="1.000" pc="0.988" sk="GDP/C1" so="359">
+            <fs pb="1.000" pc="0.988" sk="GDP/N1" so="359"/>
+          </cs>
+          <dep c="0.968" dest="growth" destLc="noun" role="modifier" src="GDP" srcLc="noun"/>
+        </frag>
+        <frag cccfmp="0.650" cccmp="0.611" ccfmp="0.653" len="1" so="360">
+          <cs pb="1.000" pc="0.952" sk="grow/C2" so="360">
+            <fs pb="1.000" pc="0.992" sk="growth/N3" so="360"/>
+          </cs>
+          <dep c="0.968" dest="GDP" destLc="noun" role="head" src="growth" srcLc="noun"/>
+          <dep c="0.968" dest="figure" destLc="noun" role="modifier" src="growth" srcLc="noun"/>
+        </frag>
+        <frag cccfmp="0.583" cccmp="0.658" ccfmp="0.623" len="1" so="361">
+          <cs pb="1.000" pc="0.964" sk="figure/C3" so="361">
+            <fs pb="1.000" pc="0.780" sk="figure/N7" so="361"/>
+          </cs>
+          <dep c="0.733" dest="have" destLc="verb" role="argument" src="figure" srcLc="noun" type="theme"/>
+          <dep c="0.776" dest="decline" destLc="noun" role="peerRight" src="figure" srcLc="noun"/>
+          <dep c="0.968" dest="growth" destLc="noun" role="head" src="figure" srcLc="noun"/>
+          <dep c="0.883" dest="lack" destLc="noun" role="peerLeft" src="figure" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="362">
+          <lc lc="conj"/>
+        </frag>
+        <frag len="1" so="363">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.694" cccmp="0.728" ccfmp="0.758" len="1" so="364">
+          <cs pb="1.000" pc="0.974" sk="lack/C3" so="364">
+            <fs pb="1.000" pc="0.974" sk="lack/N1" so="364"/>
+          </cs>
+          <dep c="0.393" dest="have" destLc="verb" role="argument" src="lack" srcLc="noun" type="headTheme"/>
+          <dep c="0.750" dest="decline" destLc="noun" role="peerRight" src="lack" srcLc="noun"/>
+          <dep c="0.883" dest="figure" destLc="noun" role="peerRight" src="lack" srcLc="noun"/>
+          <dep c="0.817" dest="move" destLc="noun" role="lnkParent" src="lack" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="365">
+          <lc lc="prep"/>
+        </frag>
+        <frag len="1" so="366">
+          <lc lc="det" pc="0.993"/>
+        </frag>
+        <frag cccfmp="0.148" cccmp="0.462" ccfmp="0.432" len="1" so="367">
+          <cs pb="0.520" pc="0.868" sk="up/C2" so="367">
+            <fs pb="0.520" pc="0.838" sk="upward/J1" so="367"/>
+          </cs>
+          <cs pb="0.480" pc="0.868" sk="up/C1" so="367">
+            <fs pb="0.480" pc="0.838" sk="upward/J2" so="367"/>
+          </cs>
+          <dep c="0.975" dest="move" destLc="noun" role="modifier" src="upward" srcLc="adj"/>
+        </frag>
+        <frag cccfmp="0.504" cccmp="0.523" ccfmp="0.487" len="1" so="368">
+          <cs pb="1.000" pc="0.956" sk="move/C1" so="368">
+            <fs pb="1.000" pc="0.712" sk="move/N3" so="368"/>
+          </cs>
+          <dep c="0.607" dest="have" destLc="verb" role="argument" src="move" srcLc="noun" type="theme"/>
+          <dep c="0.817" dest="lack" destLc="noun" role="lnkChild" src="move" srcLc="noun"/>
+          <dep c="0.975" dest="upward" destLc="adj" role="head" src="move" srcLc="noun"/>
+          <dep c="0.765" dest="rates" destLc="noun" role="lnkParent" src="move" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="369">
+          <lc lc="prep" pc="0.970"/>
+        </frag>
+        <frag cccfmp="0.572" cccmp="0.590" ccfmp="0.521" len="1" so="370">
+          <cs pb="1.000" pc="0.948" sk="U.S./C1" so="370">
+            <fs pb="1.000" pc="0.948" sk="U.S./N2" so="370"/>
+          </cs>
+          <dep c="0.845" dest="rates" destLc="noun" role="modifier" src="U.S." srcLc="noun"/>
+        </frag>
+        <frag cccfmp="0.547" cccmp="0.624" ccfmp="0.603" len="1" so="371">
+          <cs pb="1.000" pc="0.956" sk="rate/C10" so="371">
+            <fs pb="1.000" pc="0.968" sk="rate/N1" so="371"/>
+          </cs>
+          <dep c="0.765" dest="move" destLc="noun" role="lnkChild" src="rates" srcLc="noun"/>
+          <dep c="0.845" dest="U.S." destLc="noun" role="head" src="rates" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="372">
+          <lc lc="punct"/>
+        </frag>
+        <frag len="1" so="373">
+          <lc lc="punct"/>
+        </frag>
+      </sent>
+    </para>
+    <para len="43" so="374">
+      <sent len="43" so="374">
+        <frag cccfmp="0.884" cccmp="0.939" ccfmp="0.918" len="1" so="374" sol="1">
+          <cs pb="1.000" pc="0.992" sk="other/C2" so="374">
+            <fs pb="1.000" pc="0.977" sk="other/J1" so="374"/>
+          </cs>
+          <dep c="0.978" dest="factors" destLc="noun" role="modifier" src="Other" srcLc="adj"/>
+        </frag>
+        <frag cccfmp="0.491" cccmp="0.491" ccfmp="0.512" len="1" so="375">
+          <cs pb="1.000" pc="0.661" sk="factor/C1" so="375">
+            <fs pb="1.000" pc="0.930" sk="factor/N1" so="375"/>
+          </cs>
+          <dep c="0.978" dest="Other" destLc="adj" role="head" src="factors" srcLc="noun"/>
+          <dep c="0.949" dest="were" destLc="verb" role="argument" src="factors" srcLc="noun" type="agent"/>
+        </frag>
+        <frag cccfmp="0.521" cccmp="0.553" ccfmp="0.517" len="1" so="376">
+          <cs pb="1.000" pc="0.948" sk="be/C2" so="376">
+            <fs pb="1.000" pc="0.952" sk="be/V1" so="376"/>
+          </cs>
+          <dep c="0.949" dest="factors" destLc="noun" role="predicate" src="were" srcLc="verb" type="agent"/>
+          <dep c="0.852" dest="also" destLc="adv" role="head" src="were" srcLc="verb"/>
+          <dep c="0.860" dest="play" destLc="noun" role="lnkParent" src="were" srcLc="verb"/>
+        </frag>
+        <frag cccfmp="0.693" cccmp="0.744" ccfmp="0.713" len="1" so="377">
+          <cs pb="1.000" pc="0.974" sk="also/C1" so="377">
+            <fs pb="1.000" pc="0.974" sk="also/D1" so="377"/>
+          </cs>
+          <dep c="0.852" dest="were" destLc="verb" role="modifier" src="also" srcLc="adv"/>
+        </frag>
+        <frag len="1" so="378">
+          <lc lc="prep" pc="0.999"/>
+        </frag>
+        <frag cccfmp="0.286" cccmp="0.423" ccfmp="0.353" len="1" so="379">
+          <cs pb="1.000" pc="0.810" sk="play/C1" so="379">
+            <fs pb="1.000" pc="0.598" sk="play/N9" so="379"/>
+          </cs>
+          <dep c="0.860" dest="were" destLc="verb" role="lnkChild" src="play" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="380">
+          <lc lc="punct"/>
+        </frag>
+        <frag cccfmp="0.887" cccmp="0.945" ccfmp="0.911" len="1" so="381">
+          <cs pb="1.000" pc="0.997" sk="say/C1" so="381">
+            <fs pb="1.000" pc="0.991" sk="say/V1" so="381"/>
+          </cs>
+          <dep c="0.973" dest="Felix Boni" destLc="noun" role="predicate" src="said" srcLc="verb" type="agent"/>
+        </frag>
+        <frag cccfmp="0.870" cccmp="0.858" ccfmp="0.807" len="2" so="382">
+          <cs len="2" pb="1.000" pc="0.858" sk="Felix_Boni/C100" so="382">
+            <fs len="2" pb="1.000" pc="0.858" sk="Felix_Boni/N100" so="382"/>
+          </cs>
+          <dep c="0.973" dest="said" destLc="verb" role="argument" src="Felix Boni" srcLc="noun" type="agent"/>
+        </frag>
+        <frag len="1" so="384">
+          <lc lc="punct"/>
+        </frag>
+        <frag cccfmp="0.744" cccmp="0.893" ccfmp="0.777" len="1" so="385">
+          <cs pb="1.000" pc="0.983" sk="head/C3" so="385">
+            <fs pb="1.000" pc="0.998" sk="head/N4" so="385"/>
+          </cs>
+          <dep c="0.907" dest="research" destLc="noun" role="lnkParent" src="head" srcLc="noun"/>
+          <dep c="0.862" dest="James Capel" destLc="noun" role="lnkParent" src="head" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="386">
+          <lc lc="prep"/>
+        </frag>
+        <frag cccfmp="0.699" cccmp="0.778" ccfmp="0.769" len="1" so="387">
+          <cs pb="1.000" pc="0.974" sk="research/C1" so="387">
+            <fs pb="1.000" pc="0.974" sk="research/N1" so="387"/>
+          </cs>
+          <dep c="0.907" dest="head" destLc="noun" role="lnkChild" src="research" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="388">
+          <lc lc="prep" pc="0.999"/>
+        </frag>
+        <frag cccfmp="0.923" cccmp="0.970" ccfmp="0.946" len="2" so="389">
+          <cs len="2" pb="1.000" pc="0.873" sk="James_Capel/C1000" so="389">
+            <fs len="2" pb="1.000" pc="0.873" sk="James_Capel/N1000" so="389"/>
+          </cs>
+          <dep c="0.862" dest="head" destLc="noun" role="lnkChild" src="James Capel" srcLc="noun"/>
+          <dep c="0.874" dest="Mexico City" destLc="noun" role="lnkParent" src="James Capel" srcLc="noun"/>
+          <dep c="0.384" dest="put" destLc="verb" role="lnkParent" src="James Capel" srcLc="noun"/>
+          <dep c="0.325" dest="neighbouring" destLc="verb" role="lnkParent" src="James Capel" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="391">
+          <lc lc="prep" pc="0.954"/>
+        </frag>
+        <frag cccfmp="0.896" cccmp="0.953" ccfmp="0.977" len="2" so="392">
+          <cs len="2" pb="1.000" pc="0.948" sk="Mexico_City/C1" so="392">
+            <fs len="2" pb="1.000" pc="0.948" sk="Mexico_City/N1" so="392"/>
+          </cs>
+          <dep c="0.874" dest="James Capel" destLc="noun" role="lnkChild" src="Mexico City" srcLc="noun"/>
+          <dep c="0.539" dest="technicals" destLc="noun" role="lnkParent" src="Mexico City" srcLc="noun"/>
+          <dep c="0.424" dest="uncertainty" destLc="noun" role="lnkParent" src="Mexico City" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="394">
+          <lc lc="punct"/>
+        </frag>
+        <frag len="1" so="395">
+          <lc lc="prep"/>
+        </frag>
+        <frag len="1" so="396">
+          <lc lc="prep"/>
+        </frag>
+        <frag cccfmp="0.385" cccmp="0.407" ccfmp="0.397" len="1" so="397">
+          <cs pb="0.677" pc="0.913" sk="positive/C13" so="397">
+            <fs pb="0.677" pc="0.917" sk="positive/J1" so="397"/>
+          </cs>
+          <cs pb="0.323" pc="0.913" sk="positive/C4" so="397">
+            <fs pb="0.323" pc="0.917" sk="positive/J4" so="397"/>
+          </cs>
+          <dep c="0.935" dest="technicals" destLc="noun" role="modifier" src="positive" srcLc="adj"/>
+        </frag>
+        <frag cccfmp="0.265" cccmp="0.347" ccfmp="0.359" len="1" so="398">
+          <cs pb="1.000" pc="0.899" sk="technical/C5" so="398">
+            <fs pb="1.000" pc="0.701" sk="technical/N2" so="398"/>
+          </cs>
+          <dep c="0.539" dest="Mexico City" destLc="noun" role="lnkChild" src="technicals" srcLc="noun"/>
+          <dep c="0.935" dest="positive" destLc="adj" role="head" src="technicals" srcLc="noun"/>
+          <dep c="0.760" dest="uncertainty" destLc="noun" role="peerLeft" src="technicals" srcLc="noun"/>
+          <dep c="0.599" dest="Argentina" destLc="noun" role="lnkParent" src="technicals" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="399">
+          <lc lc="conj"/>
+        </frag>
+        <frag cccfmp="0.603" cccmp="0.581" ccfmp="0.606" len="1" so="400">
+          <cs pb="1.000" pc="0.949" sk="economy/C6" so="400">
+            <fs pb="1.000" pc="0.975" sk="economic/J1" so="400"/>
+          </cs>
+          <dep c="0.944" dest="uncertainty" destLc="noun" role="modifier" src="economic" srcLc="adj"/>
+        </frag>
+        <frag cccfmp="0.648" cccmp="0.879" ccfmp="0.545" len="1" so="401">
+          <cs pb="1.000" pc="0.960" sk="incertain/C1" so="401">
+            <fs pb="1.000" pc="0.922" sk="uncertainty/N2" so="401"/>
+          </cs>
+          <dep c="0.424" dest="Mexico City" destLc="noun" role="lnkChild" src="uncertainty" srcLc="noun"/>
+          <dep c="0.760" dest="technicals" destLc="noun" role="peerRight" src="uncertainty" srcLc="noun"/>
+          <dep c="0.944" dest="economic" destLc="adj" role="head" src="uncertainty" srcLc="noun"/>
+          <dep c="0.762" dest="Argentina" destLc="noun" role="lnkParent" src="uncertainty" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="402">
+          <lc lc="prep" pc="0.954"/>
+        </frag>
+        <frag cccfmp="0.866" cccmp="0.854" ccfmp="0.835" len="1" so="403">
+          <cs pb="1.000" pc="0.946" sk="Argentina/C1" so="403">
+            <fs pb="1.000" pc="0.946" sk="Argentina/N1" so="403"/>
+          </cs>
+          <dep c="0.599" dest="technicals" destLc="noun" role="lnkChild" src="Argentina" srcLc="noun"/>
+          <dep c="0.762" dest="uncertainty" destLc="noun" role="lnkChild" src="Argentina" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="404">
+          <lc lc="punct"/>
+        </frag>
+        <frag len="1" so="405">
+          <lc lc="pronoun" pc="0.996"/>
+        </frag>
+        <frag len="1" so="406">
+          <lc lc="verb"/>
+          <dep c="0.936" dest="put" destLc="verb" role="modifier" src="has" srcLc="verb" type="aux"/>
+          <dep c="0.820" dest="neighbouring" destLc="verb" role="modifier" src="has" srcLc="verb" type="aux"/>
+        </frag>
+        <frag cccfmp="0.590" cccmp="0.612" ccfmp="0.642" len="1" so="407">
+          <cs pb="1.000" pc="0.964" sk="put/C2" so="407">
+            <fs pb="1.000" pc="0.788" sk="put/V1" so="407"/>
+          </cs>
+          <dep c="0.384" dest="James Capel" destLc="noun" role="lnkChild" src="put" srcLc="verb"/>
+          <dep c="0.936" dest="has" destLc="verb" role="head" src="put" srcLc="verb" type="aux"/>
+          <dep c="0.815" dest="it" destLc="pronoun" role="predicate" src="put" srcLc="verb" type="theme"/>
+          <dep c="0.778" dest="neighbouring" destLc="verb" role="peerLeft" src="put" srcLc="verb"/>
+        </frag>
+        <frag len="1" so="408">
+          <lc lc="pronoun"/>
+          <dep c="0.815" dest="put" destLc="verb" role="argument" src="it" srcLc="pronoun" type="theme"/>
+        </frag>
+        <frag len="1" so="409">
+          <lc lc="conj"/>
+        </frag>
+        <frag cccfmp="0.514" cccmp="0.737" ccfmp="0.490" len="1" so="410">
+          <cs pb="1.000" pc="0.994" sk="neighbor/C2" so="410">
+            <fs pb="1.000" pc="0.526" sk="neighbour/V2" so="410"/>
+          </cs>
+          <dep c="0.325" dest="James Capel" destLc="noun" role="lnkChild" src="neighbouring" srcLc="verb"/>
+          <dep c="0.778" dest="put" destLc="verb" role="peerRight" src="neighbouring" srcLc="verb"/>
+          <dep c="0.820" dest="has" destLc="verb" role="head" src="neighbouring" srcLc="verb" type="aux"/>
+          <dep c="0.875" dest="markets" destLc="noun" role="predicate" src="neighbouring" srcLc="verb" type="theme"/>
+        </frag>
+        <frag cccfmp="0.855" cccmp="0.799" ccfmp="0.815" len="1" so="411">
+          <cs pb="1.000" pc="0.941" sk="Brasil/C5" so="411">
+            <fs pb="1.000" pc="0.941" sk="Brazil/N1" so="411"/>
+          </cs>
+          <dep c="0.956" dest="markets" destLc="noun" role="modifier" src="Brazil" srcLc="noun" type="possessor"/>
+        </frag>
+        <frag len="1" so="412">
+          <lc lc="prep" pc="0.988"/>
+        </frag>
+        <frag cccfmp="0.444" cccmp="0.487" ccfmp="0.420" len="1" so="413">
+          <cs pb="1.000" pc="0.923" sk="market/C19" so="413">
+            <fs pb="1.000" pc="0.848" sk="market/N1" so="413"/>
+          </cs>
+          <dep c="0.875" dest="neighbouring" destLc="verb" role="argument" src="markets" srcLc="noun" type="theme"/>
+          <dep c="0.956" dest="Brazil" destLc="noun" role="head" src="markets" srcLc="noun" type="possessor"/>
+        </frag>
+        <frag cccfmp="0.519" cccmp="0.527" ccfmp="0.531" len="2" so="414">
+          <cs len="2" pb="1.000" pc="0.974" sk="at-risk/C1" so="414">
+            <fs len="2" pb="1.000" pc="0.974" sk="at_risk/J1" so="414"/>
+          </cs>
+        </frag>
+        <frag len="1" so="416">
+          <lc lc="punct"/>
+        </frag>
+      </sent>
+    </para>
+    <para len="35" so="417">
+      <sent len="17" so="417">
+        <frag len="1" so="417" sol="1">
+          <lc lc="punct"/>
+        </frag>
+        <frag len="1" so="418">
+          <lc lc="pronoun" pc="0.902"/>
+          <dep c="0.980" dest="'s" destLc="verb" role="argument" src="There" srcLc="pronoun" type="agent"/>
+        </frag>
+        <frag cccfmp="0.196" cccmp="0.187" ccfmp="0.249" len="1" so="419">
+          <cs pb="1.000" pc="0.463" sk="be/C2" so="419">
+            <fs pb="1.000" pc="0.445" sk="be/V1" so="419"/>
+          </cs>
+          <dep c="0.980" dest="There" destLc="pronoun" role="predicate" src="'s" srcLc="verb" type="agent"/>
+          <dep c="0.923" dest="movement" destLc="noun" role="predicate" src="'s" srcLc="verb" type="theme"/>
+          <dep c="0.788" dest="markets" destLc="noun" role="lnkParent" src="'s" srcLc="verb"/>
+          <dep c="0.700" dest="Mexico" destLc="noun" role="lnkParent" src="'s" srcLc="verb"/>
+          <dep c="0.786" dest="said" destLc="verb" role="argument" src="'s" srcLc="verb"/>
+        </frag>
+        <frag len="1" so="420">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.287" cccmp="0.268" ccfmp="0.290" len="1" so="421">
+          <cs pb="1.000" pc="0.393" sk="move/C6" so="421">
+            <fs pb="1.000" pc="0.576" sk="movement/N9" so="421"/>
+          </cs>
+          <dep c="0.923" dest="'s" destLc="verb" role="argument" src="movement" srcLc="noun" type="theme"/>
+        </frag>
+        <frag len="1" so="422">
+          <lc lc="prep"/>
+        </frag>
+        <frag len="1" so="423">
+          <lc lc="prep"/>
+        </frag>
+        <frag cccfmp="0.754" cccmp="0.780" ccfmp="0.851" len="2" so="424">
+          <cs len="2" pb="1.000" pc="0.863" sk="South_America/C1" so="424">
+            <fs len="2" pb="1.000" pc="0.863" sk="South_American/J1" so="424"/>
+          </cs>
+          <dep c="0.971" dest="markets" destLc="noun" role="modifier" src="South American" srcLc="adj"/>
+        </frag>
+        <frag cccfmp="0.522" cccmp="0.525" ccfmp="0.524" len="1" so="426">
+          <cs pb="1.000" pc="0.957" sk="market/C19" so="426">
+            <fs pb="1.000" pc="0.870" sk="market/N1" so="426"/>
+          </cs>
+          <dep c="0.788" dest="'s" destLc="verb" role="lnkChild" src="markets" srcLc="noun"/>
+          <dep c="0.971" dest="South American" destLc="adj" role="head" src="markets" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="427">
+          <lc lc="prep"/>
+        </frag>
+        <frag cccfmp="0.677" cccmp="0.822" ccfmp="0.769" len="1" so="428">
+          <cs pb="1.000" pc="0.991" sk="Mexico/C13" so="428">
+            <fs pb="1.000" pc="0.986" sk="Mexico/N1" so="428"/>
+          </cs>
+          <dep c="0.700" dest="'s" destLc="verb" role="lnkChild" src="Mexico" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="429">
+          <lc lc="punct"/>
+        </frag>
+        <frag len="1" so="430">
+          <lc lc="punct"/>
+        </frag>
+        <frag len="1" so="431">
+          <lc lc="pronoun"/>
+          <dep c="0.978" dest="said" destLc="verb" role="argument" src="he" srcLc="pronoun" type="agent"/>
+        </frag>
+        <frag cccfmp="0.975" cccmp="0.950" ccfmp="0.989" len="1" so="432">
+          <cs pb="1.000" pc="0.999" sk="say/C1" so="432">
+            <fs pb="1.000" pc="0.995" sk="say/V1" so="432"/>
+          </cs>
+          <dep c="0.786" dest="'s" destLc="verb" role="predicate" src="said" srcLc="verb"/>
+          <dep c="0.978" dest="he" destLc="pronoun" role="predicate" src="said" srcLc="verb" type="agent"/>
+        </frag>
+        <frag len="1" so="433">
+          <lc lc="punct"/>
+        </frag>
+      </sent>
+      <sent len="18" so="434">
+        <frag len="1" so="434">
+          <lc lc="conj" pc="0.989"/>
+        </frag>
+        <frag cccfmp="0.462" cccmp="0.381" ccfmp="0.362" len="1" so="435">
+          <cs pb="1.000" pc="0.908" sk="Felix_Boni/C100" so="435">
+            <fs pb="1.000" pc="0.827" sk="Felix_Boni/N100" so="435"/>
+          </cs>
+          <dep c="0.974" dest="wary" destLc="adj" role="head" src="Boni" srcLc="noun" type="predicateAdj"/>
+          <dep c="0.989" dest="was" destLc="verb" role="argument" src="Boni" srcLc="noun" type="agent"/>
+        </frag>
+        <frag cccfmp="0.612" cccmp="0.519" ccfmp="0.573" len="1" so="436">
+          <cs pb="1.000" pc="0.933" sk="be/C2" so="436">
+            <fs pb="1.000" pc="0.997" sk="be/V1" so="436"/>
+          </cs>
+          <dep c="0.989" dest="Boni" destLc="noun" role="predicate" src="was" srcLc="verb" type="agent"/>
+          <dep c="0.877" dest="wary" destLc="adj" role="predicate" src="was" srcLc="verb"/>
+        </frag>
+        <frag cccfmp="0.758" cccmp="0.794" ccfmp="0.799" len="1" so="437">
+          <cs pb="1.000" pc="0.974" sk="also/C1" so="437">
+            <fs pb="1.000" pc="0.974" sk="also/D1" so="437"/>
+          </cs>
+          <dep c="0.925" dest="wary" destLc="adj" role="modifier" src="also" srcLc="adv"/>
+        </frag>
+        <frag cccfmp="0.631" cccmp="0.621" ccfmp="0.594" len="1" so="438">
+          <cs pb="1.000" pc="0.975" sk="wary/C1" so="438">
+            <fs pb="1.000" pc="0.962" sk="wary/J1" so="438"/>
+          </cs>
+          <dep c="0.974" dest="Boni" destLc="noun" role="modifier" src="wary" srcLc="adj" type="predicateAdj"/>
+          <dep c="0.877" dest="was" destLc="verb" role="argument" src="wary" srcLc="adj"/>
+          <dep c="0.925" dest="also" destLc="adv" role="head" src="wary" srcLc="adj"/>
+        </frag>
+        <frag len="1" so="439">
+          <lc lc="prep"/>
+        </frag>
+        <frag len="1" so="440">
+          <lc lc="conj" pc="0.986"/>
+          <dep c="0.975" dest="said" destLc="verb" role="argument" src="what" srcLc="conj" type="theme"/>
+        </frag>
+        <frag len="1" so="441">
+          <lc lc="pronoun"/>
+          <dep c="0.965" dest="said" destLc="verb" role="argument" src="he" srcLc="pronoun" type="agent"/>
+        </frag>
+        <frag cccfmp="0.956" cccmp="0.961" ccfmp="0.973" len="1" so="442">
+          <cs pb="1.000" pc="0.998" sk="say/C1" so="442">
+            <fs pb="1.000" pc="0.993" sk="say/V1" so="442"/>
+          </cs>
+          <dep c="0.975" dest="what" destLc="conj" role="predicate" src="said" srcLc="verb" type="theme"/>
+          <dep c="0.965" dest="he" destLc="pronoun" role="predicate" src="said" srcLc="verb" type="agent"/>
+          <dep c="0.875" dest="be" destLc="verb" role="predicate" src="said" srcLc="verb"/>
+        </frag>
+        <frag len="1" so="443">
+          <lc lc="verb"/>
+          <dep c="0.966" dest="be" destLc="verb" role="modifier" src="could" srcLc="verb" type="aux"/>
+        </frag>
+        <frag cccfmp="0.553" cccmp="0.459" ccfmp="0.516" len="1" so="444">
+          <cs pb="1.000" pc="0.870" sk="be/C2" so="444">
+            <fs pb="1.000" pc="0.932" sk="be/V1" so="444"/>
+          </cs>
+          <dep c="0.875" dest="said" destLc="verb" role="argument" src="be" srcLc="verb"/>
+          <dep c="0.966" dest="could" destLc="verb" role="head" src="be" srcLc="verb" type="aux"/>
+          <dep c="0.846" dest="hype" destLc="noun" role="predicate" src="be" srcLc="verb" type="theme"/>
+        </frag>
+        <frag len="1" so="445">
+          <lc lc="punct"/>
+        </frag>
+        <frag cccfmp="0.963" cccmp="0.912" ccfmp="0.974" len="3" so="446">
+          <cs len="3" pb="1.000" pc="0.974" sk="a_lot/C1" so="446">
+            <fs len="3" pb="1.000" pc="0.974" sk="a_lot_of/J1" so="446"/>
+          </cs>
+        </frag>
+        <frag cccfmp="0.690" cccmp="0.772" ccfmp="0.798" len="1" so="449">
+          <cs pb="1.000" pc="0.974" sk="hype/C3" so="449">
+            <fs pb="1.000" pc="0.974" sk="hype/N1" so="449"/>
+          </cs>
+          <dep c="0.846" dest="be" destLc="verb" role="argument" src="hype" srcLc="noun" type="theme"/>
+        </frag>
+        <frag len="1" so="450">
+          <lc lc="punct"/>
+        </frag>
+        <frag len="1" so="451">
+          <lc lc="punct"/>
+        </frag>
+      </sent>
+    </para>
+    <para len="45" so="452">
+      <sent len="23" so="452">
+        <frag len="1" so="452" sol="1">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.683" cccmp="0.602" ccfmp="0.703" len="2" so="453">
+          <cs len="2" pb="1.000" pc="0.974" sk="economic_recovery/C1" so="453">
+            <fs len="2" pb="1.000" pc="0.974" sk="economic_recovery/N1" so="453"/>
+          </cs>
+          <dep c="0.922" dest="led" destLc="verb" role="argument" src="economic recovery" srcLc="noun" type="theme"/>
+        </frag>
+        <frag len="1" so="455">
+          <lc lc="verb"/>
+          <dep c="0.950" dest="led" destLc="verb" role="modifier" src="was" srcLc="verb" type="aux"/>
+        </frag>
+        <frag cccfmp="0.449" cccmp="0.468" ccfmp="0.431" len="1" so="456">
+          <cs pb="1.000" pc="0.940" sk="still/C1" so="456">
+            <fs pb="1.000" pc="0.918" sk="still/D1" so="456"/>
+          </cs>
+          <dep c="0.943" dest="led" destLc="verb" role="modifier" src="still" srcLc="adv"/>
+        </frag>
+        <frag cccfmp="0.797" cccmp="0.883" ccfmp="0.687" len="1" so="457">
+          <cs pb="1.000" pc="0.982" sk="export/C1" so="457">
+            <fs pb="1.000" pc="0.967" sk="export/N1" so="457"/>
+          </cs>
+        </frag>
+        <frag len="1" so="458">
+          <lc lc="punct"/>
+        </frag>
+        <frag cccfmp="0.265" cccmp="0.315" ccfmp="0.300" len="1" so="459">
+          <cs pb="1.000" pc="0.484" sk="lead/C4" so="459">
+            <fs pb="1.000" pc="0.596" sk="lead/V8" so="459"/>
+          </cs>
+          <dep c="0.922" dest="economic recovery" destLc="noun" role="predicate" src="led" srcLc="verb" type="theme"/>
+          <dep c="0.950" dest="was" destLc="verb" role="head" src="led" srcLc="verb" type="aux"/>
+          <dep c="0.943" dest="still" destLc="adv" role="head" src="led" srcLc="verb"/>
+        </frag>
+        <frag len="1" so="460">
+          <lc lc="punct"/>
+        </frag>
+        <frag len="1" so="461">
+          <lc lc="conj"/>
+        </frag>
+        <frag cccfmp="0.690" cccmp="0.858" ccfmp="0.756" len="1" so="462">
+          <cs pb="1.000" pc="0.903" sk="evidence/C1" so="462">
+            <fs pb="1.000" pc="0.956" sk="evidence/N1" so="462"/>
+          </cs>
+          <dep c="0.910" dest="patchy" destLc="adj" role="head" src="evidence" srcLc="noun" type="predicateAdj"/>
+          <dep c="0.955" dest="was" destLc="verb" role="argument" src="evidence" srcLc="noun" type="agent"/>
+        </frag>
+        <frag cccfmp="0.584" cccmp="0.481" ccfmp="0.569" len="1" so="463">
+          <cs pb="1.000" pc="0.932" sk="be/C2" so="463">
+            <fs pb="1.000" pc="0.999" sk="be/V1" so="463"/>
+          </cs>
+          <dep c="0.955" dest="evidence" destLc="noun" role="predicate" src="was" srcLc="verb" type="agent"/>
+          <dep c="0.889" dest="patchy" destLc="adj" role="predicate" src="was" srcLc="verb"/>
+        </frag>
+        <frag cccfmp="0.780" cccmp="0.752" ccfmp="0.760" len="1" so="464">
+          <cs pb="1.000" pc="0.974" sk="patchy/C1" so="464">
+            <fs pb="1.000" pc="0.974" sk="patchy/J1" so="464"/>
+          </cs>
+          <dep c="0.910" dest="evidence" destLc="noun" role="modifier" src="patchy" srcLc="adj" type="predicateAdj"/>
+          <dep c="0.889" dest="was" destLc="verb" role="argument" src="patchy" srcLc="adj"/>
+          <dep c="0.398" dest="was" destLc="verb" role="lnkParent" src="patchy" srcLc="adj"/>
+        </frag>
+        <frag len="1" so="465">
+          <lc lc="conj" pc="0.983"/>
+        </frag>
+        <frag len="1" so="466">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.378" cccmp="0.412" ccfmp="0.435" len="1" so="467">
+          <cs pb="0.528" pc="0.775" sk="domestic/C1" so="467">
+            <fs pb="0.528" pc="0.800" sk="domestic/J1" so="467"/>
+          </cs>
+          <cs pb="0.472" pc="0.775" sk="domestic/C2" so="467">
+            <fs pb="0.472" pc="0.800" sk="domestic/J2" so="467"/>
+          </cs>
+          <dep c="0.972" dest="consumer" destLc="noun" role="modifier" src="domestic" srcLc="adj"/>
+        </frag>
+        <frag cccfmp="0.649" cccmp="0.649" ccfmp="0.676" len="1" so="468">
+          <cs pb="1.000" pc="0.974" sk="consume/C10" so="468">
+            <fs pb="1.000" pc="0.974" sk="consumer/N1" so="468"/>
+          </cs>
+          <dep c="0.972" dest="domestic" destLc="adj" role="head" src="consumer" srcLc="noun"/>
+          <dep c="0.967" dest="was" destLc="verb" role="argument" src="consumer" srcLc="noun" type="agent"/>
+        </frag>
+        <frag cccfmp="0.451" cccmp="0.444" ccfmp="0.437" len="1" so="469">
+          <cs pb="1.000" pc="0.932" sk="be/C2" so="469">
+            <fs pb="1.000" pc="0.942" sk="be/V1" so="469"/>
+          </cs>
+          <dep c="0.398" dest="patchy" destLc="adj" role="lnkChild" src="was" srcLc="verb"/>
+          <dep c="0.967" dest="consumer" destLc="noun" role="predicate" src="was" srcLc="verb" type="agent"/>
+          <dep c="0.816" dest="back" destLc="adv" role="head" src="was" srcLc="verb"/>
+          <dep c="0.775" dest="vengeance" destLc="noun" role="lnkParent" src="was" srcLc="verb"/>
+        </frag>
+        <frag cccfmp="0.244" cccmp="0.196" ccfmp="0.215" len="1" so="470">
+          <cs pb="1.000" pc="0.398" sk="back/C1" so="470">
+            <fs pb="1.000" pc="0.555" sk="back/D1" so="470"/>
+          </cs>
+          <dep c="0.816" dest="was" destLc="verb" role="modifier" src="back" srcLc="adv"/>
+        </frag>
+        <frag len="1" so="471">
+          <lc lc="prep"/>
+        </frag>
+        <frag len="1" so="472">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.609" cccmp="0.516" ccfmp="0.550" len="1" so="473">
+          <cs pb="1.000" pc="0.974" sk="vengeance/C1" so="473">
+            <fs pb="1.000" pc="0.974" sk="vengeance/N1" so="473"/>
+          </cs>
+          <dep c="0.775" dest="was" destLc="verb" role="lnkChild" src="vengeance" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="474">
+          <lc lc="punct"/>
+        </frag>
+      </sent>
+      <sent len="22" so="475">
+        <frag cccfmp="0.787" cccmp="0.842" ccfmp="0.827" len="1" so="475">
+          <cs pb="1.000" pc="0.974" sk="also/C1" so="475">
+            <fs pb="1.000" pc="0.974" sk="also/D1" so="475"/>
+          </cs>
+          <dep c="0.661" dest="said" destLc="verb" role="modifier" src="Also" srcLc="adv"/>
+        </frag>
+        <frag len="1" so="476">
+          <lc lc="punct"/>
+        </frag>
+        <frag cccfmp="0.821" cccmp="0.838" ccfmp="0.891" len="1" so="477">
+          <cs pb="1.000" pc="0.999" sk="Inc/C8" so="477">
+            <fs pb="1.000" pc="0.974" sk="corporate/J1" so="477"/>
+          </cs>
+          <dep c="0.977" dest="earnings" destLc="noun" role="modifier" src="corporate" srcLc="adj"/>
+        </frag>
+        <frag cccfmp="0.872" cccmp="0.923" ccfmp="0.845" len="1" so="478">
+          <cs pb="1.000" pc="0.979" sk="earn/C1" so="478">
+            <fs pb="1.000" pc="0.992" sk="earnings/N1" so="478"/>
+          </cs>
+          <dep c="0.977" dest="corporate" destLc="adj" role="head" src="earnings" srcLc="noun"/>
+          <dep c="0.967" dest="need" destLc="verb" role="argument" src="earnings" srcLc="noun" type="agent"/>
+          <dep c="0.927" dest="grow" destLc="verb" role="argument" src="earnings" srcLc="noun" type="agent"/>
+          <dep c="0.896" dest="justify" destLc="verb" role="argument" src="earnings" srcLc="noun" type="agent"/>
+        </frag>
+        <frag cccfmp="0.641" cccmp="0.792" ccfmp="0.695" len="1" so="479">
+          <cs pb="1.000" pc="0.910" sk="need/C1" so="479">
+            <fs pb="1.000" pc="0.979" sk="need/V1" so="479"/>
+          </cs>
+          <dep c="0.967" dest="earnings" destLc="noun" role="predicate" src="need" srcLc="verb" type="agent"/>
+          <dep c="0.939" dest="grow" destLc="verb" role="lnkParent" src="need" srcLc="verb"/>
+          <dep c="0.893" dest="justify" destLc="verb" role="lnkParent" src="need" srcLc="verb"/>
+        </frag>
+        <frag len="1" so="480">
+          <lc lc="prep"/>
+        </frag>
+        <frag cccfmp="0.734" cccmp="0.633" ccfmp="0.679" len="1" so="481">
+          <cs pb="1.000" pc="0.952" sk="grow/C2" so="481">
+            <fs pb="1.000" pc="0.995" sk="grow/V2" so="481"/>
+          </cs>
+          <dep c="0.939" dest="need" destLc="verb" role="lnkChild" src="grow" srcLc="verb"/>
+          <dep c="0.927" dest="earnings" destLc="noun" role="predicate" src="grow" srcLc="verb" type="agent"/>
+          <dep c="0.829" dest="strongly" destLc="adv" role="head" src="grow" srcLc="verb"/>
+        </frag>
+        <frag cccfmp="0.802" cccmp="0.971" ccfmp="0.775" len="1" so="482">
+          <cs pb="1.000" pc="0.979" sk="strong/C1" so="482">
+            <fs pb="1.000" pc="0.980" sk="strongly/D1" so="482"/>
+          </cs>
+          <dep c="0.829" dest="grow" destLc="verb" role="modifier" src="strongly" srcLc="adv"/>
+        </frag>
+        <frag len="1" so="483">
+          <lc lc="prep"/>
+        </frag>
+        <frag cccfmp="0.589" cccmp="0.601" ccfmp="0.526" len="1" so="484">
+          <cs pb="1.000" pc="0.967" sk="justify/C1" so="484">
+            <fs pb="1.000" pc="0.924" sk="justify/V1" so="484"/>
+          </cs>
+          <dep c="0.893" dest="need" destLc="verb" role="lnkChild" src="justify" srcLc="verb"/>
+          <dep c="0.896" dest="earnings" destLc="noun" role="predicate" src="justify" srcLc="verb" type="agent"/>
+          <dep c="0.897" dest="run-up" destLc="noun" role="predicate" src="justify" srcLc="verb" type="theme"/>
+        </frag>
+        <frag len="1" so="485">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.588" cccmp="0.516" ccfmp="0.571" len="3" so="486">
+          <cs len="3" pb="1.000" pc="0.914" sk="runup/C1" so="486">
+            <fs len="3" pb="1.000" pc="0.956" sk="run-up/N1" so="486"/>
+          </cs>
+          <dep c="0.897" dest="justify" destLc="verb" role="argument" src="run-up" srcLc="noun" type="theme"/>
+          <dep c="0.879" dest="stock market" destLc="noun" role="lnkParent" src="run-up" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="489">
+          <lc lc="prep" pc="0.964"/>
+        </frag>
+        <frag len="1" so="490">
+          <lc lc="det"/>
+        </frag>
+        <frag cccfmp="0.932" cccmp="0.876" ccfmp="0.966" len="2" so="491">
+          <cs len="2" pb="1.000" pc="0.974" sk="stock_market/C5" so="491">
+            <fs len="2" pb="1.000" pc="0.974" sk="stock_market/N1" so="491"/>
+          </cs>
+          <dep c="0.879" dest="run-up" destLc="noun" role="lnkChild" src="stock market" srcLc="noun"/>
+        </frag>
+        <frag len="1" so="493">
+          <lc lc="punct"/>
+        </frag>
+        <frag len="1" so="494">
+          <lc lc="pronoun"/>
+          <dep c="0.982" dest="said" destLc="verb" role="argument" src="he" srcLc="pronoun" type="agent"/>
+        </frag>
+        <frag cccfmp="0.973" cccmp="0.950" ccfmp="0.991" len="1" so="495">
+          <cs pb="1.000" pc="0.999" sk="say/C1" so="495">
+            <fs pb="1.000" pc="0.995" sk="say/V1" so="495"/>
+          </cs>
+          <dep c="0.661" dest="Also" destLc="adv" role="head" src="said" srcLc="verb"/>
+          <dep c="0.982" dest="he" destLc="pronoun" role="predicate" src="said" srcLc="verb" type="agent"/>
+        </frag>
+        <frag len="1" so="496">
+          <lc lc="punct"/>
+        </frag>
+      </sent>
+    </para>
+  </doc>
+</docs>
