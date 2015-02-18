@@ -295,6 +295,32 @@
             </build>
         </profile>
 		
+		<!-- mvn compile exec:exec -Ptrain_assemble_conll -->
+        <profile>
+            <id>train_assemble_conll</id>
+            <activation>
+                <property>
+                    <name>train_assemble_conll</name>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <configuration>
+                            <executable>java</executable>
+                            <arguments>
+                                <argument>-classpath</argument>
+                                <classpath/>
+                                <argument>org.grobid.trainer.AssembleNERCorpus</argument>
+                            </arguments>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+				
 	</profiles>	
 
 </project>
