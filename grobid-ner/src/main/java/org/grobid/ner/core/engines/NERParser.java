@@ -239,7 +239,7 @@ public class NERParser extends AbstractParser {
                 continue;
             }
 
-            if (actual != null) {
+            if (actual != null) { 
 				if (label.startsWith("B-")) {      
 					if (currentEntity != null) {
 						int localPos = currentEntity.getOffsetEnd();

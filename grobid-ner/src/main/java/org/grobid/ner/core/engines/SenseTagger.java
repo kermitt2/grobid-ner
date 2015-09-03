@@ -162,7 +162,7 @@ public class SenseTagger extends AbstractParser {
             }
             ress.append("\n");
 			String res = label(ress.toString());
-//System.out.println(res);			
+//System.out.println(res);
 			List<Pair<String, String>> labeled = GenericTaggerUtils.getTokensAndLabels(res);
 
             senses = resultExtraction(text, labeled, tokenizations);
@@ -308,7 +308,6 @@ public class SenseTagger extends AbstractParser {
             throw new GrobidException("An exception occured while running Grobid.", e);
         }
         return senses;
-
 	}
 
 
@@ -318,9 +317,9 @@ public class SenseTagger extends AbstractParser {
     public List<Sense> resultExtraction(String text, 
                                     List<Pair<String, String>> labeled,       
 									List<String> tokenizations) {
-
 		List<Sense> senses = new ArrayList<Sense>();
-		String label = null; // label
+		String label = null; // label without prefix like B-
+		String originalLabel = null; // label as used by CRF
         String actual = null; // token
 		int offset = 0;
 		int addedOffset = 0;
@@ -330,8 +329,12 @@ public class SenseTagger extends AbstractParser {
 		String previousLabel = "O";
 		for (Pair<String, String> l : labeled) {
             actual = l.a;
-            label = l.b;        
-           	
+            originalLabel = l.b;  
+			if (originalLabel.startsWith("B-")) 
+				label = originalLabel.substring(2, originalLabel.length());
+			else
+				label = originalLabel;
+			
 			boolean strop = false;
            	while ((!strop) && (p < tokenizations.size())) {
            		String tokOriginal = tokenizations.get(p);
@@ -378,9 +381,22 @@ public class SenseTagger extends AbstractParser {
 					}  
 				}
 				else if (!label.equals("O") && label.equals(previousLabel))	{
-					if (label.length() > 1) {  
+					if (label.length() > 1) {
 					    if ( (currentSense != null) && (currentSense.getFineSense().equals(label)) ) {
-							currentSense.setOffsetEnd(offset+addedOffset);		
+							if (originalLabel.startsWith("B-")) {
+								currentSense = new Sense(label, label);
+								if (nerLexicon.getDescription(label) != null) {
+									currentSense.setDescription(nerLexicon.getDescription(label));
+								}   
+								if ( (text.length()>offset) && (text.charAt(offset) == ' ') ) {	
+									currentSense.setOffsetStart(offset+1);
+								}
+								else
+									currentSense.setOffsetStart(offset);
+								currentSense.setOffsetEnd(offset+addedOffset);
+							}
+							else
+								currentSense.setOffsetEnd(offset+addedOffset);		
 						}
 						else {
 							// should not be the case, but we add the new entity, for robustness      
@@ -389,7 +405,7 @@ public class SenseTagger extends AbstractParser {
 							currentSense = new Sense(label, label); 
 							if (nerLexicon.getDescription(label) != null) {
 								currentSense.setDescription(nerLexicon.getDescription(label));
-							}     
+							}
 							currentSense.setOffsetStart(offset);
 							currentSense.setOffsetEnd(offset+addedOffset);
 						}

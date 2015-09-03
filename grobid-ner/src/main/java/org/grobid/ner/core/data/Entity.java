@@ -207,7 +207,7 @@ public class Entity implements Comparable<Entity> {
 					buffer.append(", \"" + subtype + "\"");
 				}
 			}
-			buffer.append(" ] \"");
+			buffer.append(" ] \""); 
 		}
 			
 		buffer.append(", \"offsetStart\" : " + offsets.start);

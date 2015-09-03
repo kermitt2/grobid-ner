@@ -13,7 +13,7 @@ U08:%x[4,0]
 #U0B:%x[1,0]/%x[2,0]
 #U0C:%x[-2,0]/%x[-1,0]
 
-# Lowercase token 1
+# Lowercase  token 1
 U10:%x[-2,1]
 U11:%x[-1,1]
 U12:%x[0,1]

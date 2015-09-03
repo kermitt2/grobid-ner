@@ -251,21 +251,24 @@ public class NERTrainer extends AbstractTrainer {
 			corpusDir1 = new File(nerCorpusPath + "/reuters.ner26.train");
 			System.out.println("Path to 26-classes Reuters corpus CoNLL train set: " + corpusDir1.getPath());
 			if (!corpusDir1.exists()) {
-				throw new GrobidException("Cannot start training, because corpus resource folder is not correctly set : " 
+				throw new 
+					GrobidException("Cannot start training, because corpus resource folder is not correctly set : " 
 					+ corpusDir1.getPath());
 			}
 			
 			corpusDir2 = new File(nerCorpusPath + "/reuters.ner26.testa");
 			System.out.println("Path to 26-classes Reuters corpus CoNLL testa set: " + corpusDir2.getPath());
 			if (!corpusDir2.exists()) {
-				throw new GrobidException("Cannot start training, because corpus resource folder is not correctly set : " 
+				throw new 
+					GrobidException("Cannot start training, because corpus resource folder is not correctly set : " 
 					+ corpusDir2.getPath());
 			}
 		
 			corpusDir3 = new File(nerCorpusPath + "/reuters.ner26.testa");
 			System.out.println("Path to 26-classes Reuters corpus CoNLL testb set: " + corpusDir3.getPath());
 			if (!corpusDir3.exists()) {
-				throw new GrobidException("Cannot start training, because corpus resource folder is not correctly set : " 
+				throw new 
+					GrobidException("Cannot start training, because corpus resource folder is not correctly set : " 
 					+ corpusDir3.getPath());
 			}
 			
@@ -273,7 +276,8 @@ public class NERTrainer extends AbstractTrainer {
 			corpusDir4 = new File("resources/dataset/ner/corpus/wikipedia.ner26.train");
 			System.out.println("Path to 26-classes Wikipedia corpus train set: " + corpusDir4.getPath());
 			if (!corpusDir4.exists()) {
-				throw new GrobidException("Cannot start training, because corpus resource folder is not correctly set : " 
+				throw new 
+					GrobidException("Cannot start training, because corpus resource folder is not correctly set : " 
 					+ corpusDir4.getPath());
 			}
 			

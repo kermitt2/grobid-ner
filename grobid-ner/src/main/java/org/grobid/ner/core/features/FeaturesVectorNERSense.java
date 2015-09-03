@@ -21,7 +21,7 @@ public class FeaturesVectorNERSense {
 
     public String punctType = null;
     // one of NOPUNCT, OPENBRACKET, ENDBRACKET, DOT, COMMA, HYPHEN, QUOTE, PUNCT (default)
-    // OPENQUOTE, ENDQUOTE
+    // OPENQUOTE, ENDQUOTE 
 
 	// lexical features
     public boolean lastName = false;

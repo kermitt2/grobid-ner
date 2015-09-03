@@ -7,5 +7,5 @@ Grobid NER has been developed more specifically for the purpose of supporting di
 ## License
 
 Grobid and grobid-ner are distributed under [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0). 
-
+ 
 Main author and contact: Patrice Lopez (<patrice.lopez@inria.fr>)

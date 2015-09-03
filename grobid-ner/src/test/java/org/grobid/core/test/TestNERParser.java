@@ -47,7 +47,7 @@ public class TestNERParser extends EngineTest {
 		NERParser parser = new NERParser();
 		
 		List<Entity> entities = parser.extractNE(text);
-		
+
 		System.out.println("\n" + text);
 		if (entities != null) {
 			for(Entity entity : entities) {

@@ -34,7 +34,7 @@ public class Sense {
 	private double prob = 1.0;
 
 	// optional information
-	private String description = null;
+	private String description = null; 
 	private String wiktionaryExternalRef = null;
 	private String wikipediaExternalRef = null;
 

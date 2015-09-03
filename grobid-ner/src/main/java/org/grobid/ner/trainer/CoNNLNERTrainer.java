@@ -236,7 +236,7 @@ public class CoNNLNERTrainer extends NERTrainer {
 			System.out.println("Model file under: " + tempModelPath.getPath());	
 	        trainer.train(getTemplatePath(), 
 						  trainingOutputFile, 
-						  tempModelPath, GrobidProperties.getNBThreads());
+						  tempModelPath, GrobidProperties.getNBThreads(), GrobidModels.ENTITIES_NER);
 			
 		}
 		catch (Exception e) {

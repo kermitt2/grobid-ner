@@ -26,7 +26,7 @@ import java.lang.Process;
 /**
  * Additional NER specific evaluation.
  * 
- *
+ * 
  * @author Patrice Lopez
  */
 public class NEREvaluation {

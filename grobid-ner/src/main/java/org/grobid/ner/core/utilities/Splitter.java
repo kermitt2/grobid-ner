@@ -20,7 +20,7 @@ public class Splitter {
 
     /**
      * Constructs a new Splitter object.
-     * 
+     *  
      * @param pattern
      *          Pattern to use. Default is '\s+', meaning any whitespace.
      * @param keep_delimiters

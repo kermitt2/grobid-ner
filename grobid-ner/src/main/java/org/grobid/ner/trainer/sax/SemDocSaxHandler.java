@@ -337,7 +337,18 @@ System.out.println("Lost alignment for : " + textVector.get(currentVectorPos).to
 							else {*/
 								if (tmpAnnotatedTextVector == null) 
 									tmpAnnotatedTextVector = new ArrayList<String>();	
-								tmpAnnotatedTextVector.add(subToken + "\t" + senseType + "\t" + type);
+								//tmpAnnotatedTextVector.add(subToken + "\t" + senseType + "\t" + type);
+								if ( ((previousType == null) || (!previousType.equals(senseType))) 
+										&& (!senseType.equals("O")) ) {
+									if (tmpAnnotatedTextVector == null) 
+										tmpAnnotatedTextVector = new ArrayList<String>();	
+									tmpAnnotatedTextVector.add(subToken + "\tB-" + senseType + "\tB-" + senseType);
+								}
+								else {
+									if (tmpAnnotatedTextVector == null) 
+										tmpAnnotatedTextVector = new ArrayList<String>();	
+									tmpAnnotatedTextVector.add(subToken + "\t" + senseType + "\t" + senseType);
+								}
 							//}
 						}
 						else {	

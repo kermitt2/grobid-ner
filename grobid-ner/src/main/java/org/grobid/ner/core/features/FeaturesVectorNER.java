@@ -324,7 +324,7 @@ public class FeaturesVectorNER {
                 featuresVector.countryName = true;
             }
 
-			featuresVector.isLocationToken = isLocationToken;
+			featuresVector.isLocationToken = isLocationToken; 
 			
 			featuresVector.isPersonTitleToken = isPersonTitleToken;
 			

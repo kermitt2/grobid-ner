@@ -64,7 +64,7 @@ public class NERLexicon {
 		SUBSTANCE			("SUBSTANCE"),
 		PLANT				("PLANT"),
 		PERIOD				("PERIOD"),
-		TITLE				("TITLE"),
+		TITLE				("TITLE"), 
 		PERSON_TYPE			("PERSON_TYPE"),
 		WEBSITE				("WEBSITE"),
 		ATHLETIC_TEAM		("ATHLETIC_TEAM");

@@ -47,7 +47,7 @@ public class SenseTrainer extends AbstractTrainer {
 	private Map<String,String> descriptions = null;
 	
 	private static int LIMIT = 20000; // limit of files to process per zip archives, -1 if no limit
-	private static int GLOBAL_LIMIT = 400000; // overall limit of files to process, -1 if no limit
+	private static int GLOBAL_LIMIT = 300000; // overall limit of files to process, -1 if no limit
 
     public SenseTrainer() {
         super(GrobidModels.ENTITIES_NERSense);
@@ -68,7 +68,7 @@ public class SenseTrainer extends AbstractTrainer {
 			conllPath = prop.getProperty("grobid.ner.reuters.conll_path");
 			idiliaPath = prop.getProperty("grobid.ner.reuters.idilia_path");
 			nerCorpusPath = prop.getProperty("grobid.ner.extra_corpus");
-		} 
+		}
 		catch (IOException ex) {
 			throw new GrobidResourceException(
 				"An exception occured when accessing/reading the grobid-ner property file.", ex);
@@ -354,14 +354,18 @@ public class SenseTrainer extends AbstractTrainer {
 	}
 	
 
-	private int processReutersCorpus(Writer writerTraining, Writer writerEvaluation, Writer writerDesc, double splitRatio) {
+	private int processReutersCorpus(Writer writerTraining, 
+									Writer writerEvaluation, 
+									Writer writerDesc, 
+									double splitRatio) {
 		int res = 0;
 
 		try {
 			File corpusDir = new File(reutersPath);
 			System.out.println("Path to Reuters corpus: " + reutersPath);
 			if (!corpusDir.exists()) {
-				throw new GrobidException("Cannot start training, because corpus resource folder is not correctly set : " 
+				throw new 
+					GrobidException("Cannot start training, because corpus resource folder is not correctly set : " 
 					+ reutersPath);
 			}
 
@@ -471,7 +475,7 @@ System.out.println(fileName);
 					writer = writerEvaluation;
 			}
 			
-			if (semdocSax.getAnnotatedTextVector() != null) {				
+			if (semdocSax.getAnnotatedTextVector() != null) {		
 				// to store unit term positions
 	            List<List<OffsetPosition>> locationPositions = new ArrayList<List<OffsetPosition>>();
 	            List<List<OffsetPosition>> personTitlePositions = new ArrayList<List<OffsetPosition>>();
@@ -554,6 +558,7 @@ System.out.println(fileName);
 						localOrganisationPositions = organisationPositions.get(sentence);
 					if (orgFormPositions.size() > sentence)	
 						localOrgFormPositions = orgFormPositions.get(sentence);
+					continue;
 				}
 
 				// do we have a unit term at position posit?

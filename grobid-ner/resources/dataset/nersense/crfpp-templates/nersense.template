@@ -20,7 +20,7 @@ U12:%x[0,1]
 U13:%x[1,1]
 U14:%x[2,1]
 
-# Prefix 1-4 characters (2-6)
+# Prefix 1-4 characters  (2-6)
 U20:%x[0,2]
 U21:%x[0,3]
 U22:%x[0,4]

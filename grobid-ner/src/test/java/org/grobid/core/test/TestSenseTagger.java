@@ -34,7 +34,7 @@ public class TestSenseTagger extends EngineTest {
 			throw new GrobidException("Cannot start test, because test resource folder is not correctly set.");
 		}
 		String text = FileUtils.readFileToString(textFile);	
-		
+
 		SenseTagger tagger = new SenseTagger();
 		
 		List<Sense> senses = tagger.extractSenses(text); 

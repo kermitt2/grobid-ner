@@ -85,7 +85,7 @@ public class TestAssembler {
 		tokens.add("around");
 		tokens.add(" ");
 		tokens.add("10");
-		tokens.add(",");
+		tokens.add(","); 
 		tokens.add("000");
 		System.out.println(tokens);
 		List<String> tokens2 = ReutersSaxHandler.retokenize(tokens);
