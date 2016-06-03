@@ -176,6 +176,20 @@ public class Entity implements Comparable<Entity> {
 		// TBD
 	}
 	
+	@Override
+	public boolean equals(Object object) {
+		boolean result = false;
+		if ( (object != null) && object instanceof Entity) {
+			int start = ((Entity)object).getOffsetStart();
+			int end = ((Entity)object).getOffsetEnd();
+			if ( (start == offsets.start) && (end == offsets.end) ) {
+				result = true;
+			}
+		}
+		return result;
+	}
+
+	@Override
 	public int compareTo(Entity theEntity) {
 		int start = theEntity.getOffsetStart();
 		int end = theEntity.getOffsetEnd();
@@ -207,7 +221,7 @@ public class Entity implements Comparable<Entity> {
 					buffer.append(", \"" + subtype + "\"");
 				}
 			}
-			buffer.append(" ] \""); 
+			buffer.append(" ] \"");
 		}
 			
 		buffer.append(", \"offsetStart\" : " + offsets.start);
