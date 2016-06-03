@@ -6,13 +6,13 @@
 	<parent>
 		<groupId>org.grobid</groupId>
 		<artifactId>grobid-parent</artifactId>
-		<version>0.3.4-SNAPSHOT</version>
+		<version>0.4.1-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
 	<groupId>org.grobid</groupId>
 	<artifactId>grobid-ner</artifactId>
-	<version>0.3.0</version>
+	<version>0.4.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>${project.artifactId}</name>
 
@@ -44,20 +44,20 @@
 		<dependency>
 			<groupId>org.grobid</groupId>
 			<artifactId>grobid-core</artifactId>
-			<version>0.3.4-SNAPSHOT</version>
+			<version>0.4.1-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.grobid</groupId>
 			<artifactId>grobid-trainer</artifactId>
-			<version>0.3.4-SNAPSHOT</version>
+			<version>0.4.1-SNAPSHOT</version>
 		</dependency>
 
-		<dependency>
+		<!--dependency>
 			<groupId>org.chasen</groupId>
 			<artifactId>crfpp</artifactId>
 			<version>1.0.2</version>
-		</dependency>
+		</dependency-->
 
 		<dependency>
 			<groupId>junit</groupId>
@@ -112,6 +112,17 @@
 			<artifactId>naming-java</artifactId>
 			<version>0.8</version>
 		</dependency>
+
+        <dependency>
+            <groupId>fr.limsi.wapiti</groupId>
+            <artifactId>wapiti</artifactId>
+            <version>1.5.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cybozu.labs</groupId>
+            <artifactId>langdetect</artifactId>
+            <version>1.1-20120112</version>
+        </dependency>
 		
 	</dependencies>
 
