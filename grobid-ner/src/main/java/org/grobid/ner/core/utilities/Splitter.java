@@ -1,7 +1,8 @@
 package org.grobid.core.utilities;
 
-import java.util.regex.*;
 import java.util.LinkedList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Splits a string using regex delimiters, optionally keeping the delimiters.

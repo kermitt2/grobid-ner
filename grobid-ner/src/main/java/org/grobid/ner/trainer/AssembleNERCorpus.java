@@ -1,37 +1,34 @@
 package org.grobid.trainer;
 
-import org.grobid.core.utilities.GrobidProperties;
-import org.grobid.core.mock.MockContext;
-import org.grobid.core.utilities.TextUtilities;
+import org.apache.commons.io.FileUtils;
+import org.grobid.ner.core.engines.NERParser;
+import org.grobid.ner.core.engines.SenseTagger;
+import org.grobid.core.engines.tagging.GenericTaggerUtils;
 import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.exceptions.GrobidResourceException;
-import org.grobid.trainer.sax.*;
-import org.grobid.trainer.evaluation.EvaluationUtilities;
-import org.grobid.core.data.Entity;
+import org.grobid.ner.core.features.FeaturesVectorNER;
+import org.grobid.ner.core.features.FeaturesVectorNERSense;
 import org.grobid.core.lexicon.Lexicon;
-import org.grobid.core.engines.NERParser;
-import org.grobid.core.engines.SenseTagger;
-import org.grobid.core.factory.*;
-import org.grobid.core.mock.*;
-import org.grobid.core.main.*;
-import org.grobid.core.utilities.Pair;
+import org.grobid.core.main.LibraryLoader;
+import org.grobid.core.mock.MockContext;
+import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.OffsetPosition;
-import org.grobid.core.features.FeaturesVectorNER;
-import org.grobid.core.features.FeaturesVectorNERSense;
-import org.grobid.core.engines.tagging.GenericTaggerUtils;
+import org.grobid.core.utilities.Pair;
+import org.grobid.core.utilities.TextUtilities;
+import org.grobid.ner.trainer.NEREvaluation;
+import org.grobid.ner.trainer.sax.ReutersSaxHandler;
+import org.grobid.ner.trainer.sax.SemDocSaxHandler;
+import org.grobid.trainer.sax.TextSaxHandler;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.StringTokenizer;
 import java.util.Properties;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory; 
-
-import org.apache.commons.io.FileUtils;
+import java.util.StringTokenizer;
 
 /**
  * Assemble the different corpus information spread in different source files into CoNNL files and TEI files. 
@@ -567,7 +564,7 @@ System.out.println(idiliaPath+"/reuters/"+reutersFileName.substring(0,3)+"/" +
 						}
 
 						if (!lineLabel.equals(label) || 
-							(!conllLabel.equals(NEREvaluation.translateLabel(label)) && 
+							(!conllLabel.equals(NEREvaluation.translateLabel(label)) &&
 						    !conllLabel.equals(NEREvaluation.translateLabel(lineLabel)) && conllLabel.length() > 0) ) {
 							buffer.append(token + "\t[" + label);
 							if (!lineLabel.equals(label)) {

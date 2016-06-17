@@ -1,23 +1,20 @@
-package org.grobid.core.engines;
+package org.grobid.ner.core.engines;
 
 import org.grobid.core.GrobidModels;
-import org.grobid.core.data.Sense;
-import org.grobid.core.lexicon.NERLexicon;
-import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.engines.AbstractParser;
 import org.grobid.core.engines.tagging.GenericTaggerUtils;
 import org.grobid.core.exceptions.GrobidException;
-import org.grobid.core.features.FeaturesVectorNERSense;
-import org.grobid.core.utilities.TextUtilities;
-import org.grobid.core.utilities.Pair;
+import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.utilities.OffsetPosition;
+import org.grobid.core.utilities.Pair;
+import org.grobid.core.utilities.TextUtilities;
+import org.grobid.ner.core.data.Sense;
+import org.grobid.ner.core.features.FeaturesVectorNERSense;
+import org.grobid.ner.core.lexicon.NERLexicon;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
-import java.util.Map;
-import java.util.TreeMap;
-import java.io.*;
 
 /**
  * Sense tagging model for named entities

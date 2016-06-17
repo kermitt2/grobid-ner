@@ -1,18 +1,10 @@
-package org.grobid.core.data;
+package org.grobid.ner.core.data;
 
 import org.grobid.core.utilities.OffsetPosition;
-import org.grobid.core.lexicon.NERLexicon;
+import org.grobid.ner.core.lexicon.NERLexicon;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.io.*;
-import java.util.*;
-import java.util.Comparator;
-import java.io.BufferedReader;
-import java.util.List;    
-     
-import org.apache.commons.lang3.StringUtils;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Common representation of an unresolved entity mention for the NER components.

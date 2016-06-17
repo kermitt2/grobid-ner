@@ -1,36 +1,16 @@
-package org.grobid.core.lexicon;
-
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.HashMap;
-import java.util.TreeMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.Set;
-import java.util.StringTokenizer;
-import java.util.regex.PatternSyntaxException;
-
-import javax.xml.parsers.SAXParser;
-import javax.xml.parsers.SAXParserFactory;
+package org.grobid.ner.core.lexicon;
 
 import org.grobid.core.exceptions.GrobidException;
-import org.grobid.core.exceptions.GrobidResourceException;
-import org.grobid.core.lang.Language;
-import org.grobid.core.sax.CountryCodeSaxParser;
 import org.grobid.core.utilities.GrobidProperties;
-import org.grobid.core.utilities.OffsetPosition;
-import org.grobid.core.utilities.TextUtilities;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.grobid.core.lexicon.FastMatcher;
-import org.grobid.core.data.Entity;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Map;
+import java.util.TreeMap;
 
 
 /**

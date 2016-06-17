@@ -1,27 +1,17 @@
-package org.grobid.core.test;
+package org.grobid.ner.core.test;
 
-import java.io.File;
-import java.util.List;
-import java.util.ArrayList;
-
-import org.apache.commons.io.FileUtils;
-import org.grobid.core.data.Entity;
-import org.grobid.core.lexicon.NERLexicon;
-import org.grobid.core.engines.NERParser;
 import org.grobid.core.exceptions.GrobidException;
-import org.grobid.trainer.AssembleNERCorpus;
-import org.grobid.trainer.sax.ReutersSaxHandler;
-import org.grobid.trainer.sax.SemDocSaxHandler;
-
-import org.junit.Ignore;
+import org.grobid.ner.trainer.sax.ReutersSaxHandler;
+import org.grobid.ner.trainer.sax.SemDocSaxHandler;
 import org.junit.Test;
-import static org.junit.Assert.assertEquals;
 
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
-import org.xml.sax.Attributes;
-import org.xml.sax.SAXException;
-import org.xml.sax.helpers.DefaultHandler;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  *  @author Patrice Lopez

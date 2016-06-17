@@ -1,30 +1,25 @@
-package org.grobid.trainer;
+package org.grobid.ner.trainer;
 
 import org.grobid.core.GrobidModels;
-import org.grobid.core.utilities.GrobidProperties;
-import org.grobid.core.mock.MockContext;
-import org.grobid.core.features.FeaturesVectorNER;
-import org.grobid.core.utilities.OffsetPosition;
-import org.grobid.core.utilities.TextUtilities;
 import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.exceptions.GrobidResourceException;
-import org.grobid.trainer.sax.*;
-import org.grobid.trainer.evaluation.EvaluationUtilities;
-import org.grobid.core.data.Entity;
-import org.grobid.core.lexicon.NERLexicon;
 import org.grobid.core.lexicon.Lexicon;
-import org.grobid.core.engines.NERParser;
+import org.grobid.core.mock.MockContext;
+import org.grobid.core.utilities.GrobidProperties;
+import org.grobid.core.utilities.OffsetPosition;
+import org.grobid.ner.core.features.FeaturesVectorNER;
+import org.grobid.ner.core.lexicon.NERLexicon;
+import org.grobid.ner.trainer.sax.ReutersSaxHandler;
+import org.grobid.ner.trainer.sax.SemDocSaxHandler;
+import org.grobid.trainer.AbstractTrainer;
+import org.grobid.trainer.evaluation.EvaluationUtilities;
 
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Arrays;
-import java.util.StringTokenizer;
-import java.util.zip.*;
-import java.util.Properties;
-import java.util.Enumeration;
+import java.util.*;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipFile;
 
 
 /**

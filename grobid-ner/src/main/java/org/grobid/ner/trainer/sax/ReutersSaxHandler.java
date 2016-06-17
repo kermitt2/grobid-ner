@@ -1,14 +1,13 @@
-package org.grobid.trainer.sax;
+package org.grobid.ner.trainer.sax;
 
-import java.util.*;
-import java.util.regex.*;
-
+import org.grobid.core.utilities.TextUtilities;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-import org.grobid.core.utilities.TextUtilities;
-import org.grobid.core.utilities.Splitter;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.StringTokenizer;
 
 /**
  * SAX parser for Reuters corpus.

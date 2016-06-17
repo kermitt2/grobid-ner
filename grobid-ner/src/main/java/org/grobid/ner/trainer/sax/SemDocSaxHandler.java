@@ -1,21 +1,17 @@
-package org.grobid.trainer.sax;
+package org.grobid.ner.trainer.sax;
 
-import java.util.*;
-
+import org.grobid.core.utilities.Pair;
+import org.grobid.core.utilities.TextUtilities;
+import org.grobid.ner.core.data.Entity;
+import org.grobid.ner.core.data.Sense;
+import org.grobid.ner.core.lexicon.NERLexicon;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-import org.grobid.core.data.Entity;
-import org.grobid.core.data.Sense;
-import org.grobid.core.lexicon.NERLexicon;
-
-import org.grobid.core.utilities.OffsetPosition;
-import org.grobid.core.utilities.Pair;
-import org.grobid.core.utilities.TextUtilities;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import java.util.*;
 
 /**
  * SAX parser for SemDoc.

@@ -1,26 +1,22 @@
-package org.grobid.trainer;
+package org.grobid.ner.trainer;
 
 import org.grobid.core.GrobidModels;
-import org.grobid.core.utilities.GrobidProperties;
-import org.grobid.core.mock.MockContext;
-import org.grobid.core.features.FeaturesVectorNER;
-import org.grobid.core.utilities.OffsetPosition;
-import org.grobid.core.utilities.TextUtilities;
+import org.grobid.ner.core.engines.NERParser;
 import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.exceptions.GrobidResourceException;
-import org.grobid.trainer.evaluation.EvaluationUtilities;
-import org.grobid.core.data.Entity;
-import org.grobid.core.lexicon.NERLexicon;
-import org.grobid.core.lexicon.Lexicon;
-import org.grobid.core.engines.NERParser;
 import org.grobid.core.factory.GrobidFactory;
+import org.grobid.core.lexicon.Lexicon;
+import org.grobid.ner.core.lexicon.NERLexicon;
+import org.grobid.core.mock.MockContext;
+import org.grobid.core.utilities.GrobidProperties;
+import org.grobid.core.utilities.OffsetPosition;
+import org.grobid.core.utilities.TextUtilities;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.StringTokenizer;
 import java.util.Properties;
-import java.lang.Process;
+import java.util.StringTokenizer;
 
 
 /**

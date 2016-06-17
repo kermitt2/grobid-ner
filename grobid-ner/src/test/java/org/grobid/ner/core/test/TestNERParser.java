@@ -1,17 +1,14 @@
-package org.grobid.core.test;
+package org.grobid.ner.core.test;
+
+import org.apache.commons.io.FileUtils;
+import org.grobid.core.exceptions.GrobidException;
+import org.grobid.ner.core.data.Entity;
+import org.grobid.ner.core.engines.NERParser;
+import org.grobid.ner.core.lexicon.NERLexicon;
+import org.junit.Test;
 
 import java.io.File;
 import java.util.List;
-
-import org.apache.commons.io.FileUtils;
-import org.grobid.core.data.Entity;
-import org.grobid.core.data.Sense;
-import org.grobid.core.utilities.Pair;
-import org.grobid.core.lexicon.NERLexicon;
-import org.grobid.core.engines.NERParser;
-import org.grobid.core.exceptions.GrobidException;
-import org.junit.Ignore;
-import org.junit.Test;
 
 /**
  *  @author Patrice Lopez

@@ -1,4 +1,4 @@
-package org.grobid.core.test;
+package org.grobid.ner.core.test;
 
 import org.grobid.core.engines.Engine;
 import org.grobid.core.factory.GrobidFactory;

@@ -1,9 +1,10 @@
-package org.grobid.core.features;
+package org.grobid.ner.core.features;
+
+import org.grobid.core.features.FeatureFactory;
+import org.grobid.core.utilities.TextUtilities;
 
 import java.util.StringTokenizer;
 import java.util.regex.Matcher;
-
-import org.grobid.core.utilities.TextUtilities;
 
 /**
  * Class for features used for NER in raw texts.
