@@ -1,4 +1,4 @@
-package org.grobid.ner.core.data;
+package org.grobid.core.data;
 
 import org.grobid.core.utilities.OffsetPosition;
 

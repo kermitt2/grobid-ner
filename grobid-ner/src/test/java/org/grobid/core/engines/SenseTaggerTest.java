@@ -1,9 +1,9 @@
-package org.grobid.ner.core.test;
+package org.grobid.core.engines;
 
 import org.apache.commons.io.FileUtils;
+import org.grobid.core.data.Sense;
 import org.grobid.core.exceptions.GrobidException;
-import org.grobid.ner.core.data.Sense;
-import org.grobid.ner.core.engines.SenseTagger;
+import org.grobid.core.EngineMockTest;
 import org.junit.Test;
 
 import java.io.File;
@@ -13,7 +13,7 @@ import java.util.List;
  * @author Patrice Lopez
  */
 //@Ignore
-public class TestSenseTagger extends EngineTest {
+public class SenseTaggerTest extends EngineMockTest {
 
     public File getResourceDir(String resourceDir) {
         File file = new File(resourceDir);

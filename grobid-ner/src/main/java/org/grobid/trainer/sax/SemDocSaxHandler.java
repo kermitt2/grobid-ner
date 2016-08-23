@@ -1,10 +1,10 @@
-package org.grobid.ner.trainer.sax;
+package org.grobid.trainer.sax;
 
+import org.grobid.core.data.Entity;
+import org.grobid.core.data.Sense;
 import org.grobid.core.utilities.Pair;
 import org.grobid.core.utilities.TextUtilities;
-import org.grobid.ner.core.data.Entity;
-import org.grobid.ner.core.data.Sense;
-import org.grobid.ner.core.lexicon.NERLexicon;
+import org.grobid.core.lexicon.NERLexicon;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.xml.sax.Attributes;

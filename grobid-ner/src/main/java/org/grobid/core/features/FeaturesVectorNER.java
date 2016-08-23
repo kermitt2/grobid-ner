@@ -1,17 +1,16 @@
-package org.grobid.ner.core.features;
+package org.grobid.core.features;
 
-import org.grobid.core.features.FeatureFactory;
 import org.grobid.core.utilities.TextUtilities;
 
 import java.util.StringTokenizer;
 import java.util.regex.Matcher;
 
 /**
- * Class for features used for estimating the sense of NER in raw texts.
+ * Class for features used for NER in raw texts.
  *
  * @author Patrice Lopez
  */
-public class FeaturesVectorNERSense {
+public class FeaturesVectorNER {
 
     public String string = null;     // lexical feature
     public String label = null;     // label if known
@@ -22,7 +21,7 @@ public class FeaturesVectorNERSense {
 
     public String punctType = null;
     // one of NOPUNCT, OPENBRACKET, ENDBRACKET, DOT, COMMA, HYPHEN, QUOTE, PUNCT (default)
-    // OPENQUOTE, ENDQUOTE 
+    // OPENQUOTE, ENDQUOTE
 
 	// lexical features
     public boolean lastName = false;
@@ -46,11 +45,7 @@ public class FeaturesVectorNERSense {
 	public boolean isOrganisationToken = false;
 	public boolean isOrgFormToken = false;
 
-	// propagated by the NER
-	public boolean isNER = false;
-	public String nerType = null;
-
-    public FeaturesVectorNERSense() {
+    public FeaturesVectorNER() {
     }
 
     public String printVector() {
@@ -225,17 +220,6 @@ public class FeaturesVectorNERSense {
 		// word shape trimmed (1)
 		res.append(" " + wordShapeTrimmed);
 		
-		// indicate of the token is part of a named entity according to a NER (1)
-		if (isNER)
-			res.append(" 1");
-        else
-            res.append(" 0");
-
-		if (nerType != null) 
-			res.append(" " + nerType);
-		else 
-			res.append(" O");
-		
         // label - for training data (1)
         if (label != null)
             res.append(" " + label + "");
@@ -248,30 +232,21 @@ public class FeaturesVectorNERSense {
     /**
      * Add the features for the NER model.
      */
-    static public FeaturesVectorNERSense addFeatures(String line,
+    static public FeaturesVectorNER addFeaturesNER(String line,
                                                    boolean isLocationToken,
 												   boolean isPersonTitleToken, 
 												   boolean isOrganisationToken, 
 												   boolean isOrgFormToken) {
         FeatureFactory featureFactory = FeatureFactory.getInstance();
 
-        FeaturesVectorNERSense featuresVector = new FeaturesVectorNERSense();
+        FeaturesVectorNER featuresVector = new FeaturesVectorNER();
         StringTokenizer st = new StringTokenizer(line, "\t ");
         if (st.hasMoreTokens()) {
             String word = st.nextToken();
-            String label = "O";
-			String nerType = "O";
-            
-			if (st.hasMoreTokens())
+            String label = null;
+            if (st.hasMoreTokens())
                 label = st.nextToken();
 
-			if (st.hasMoreTokens()) {
-                nerType = st.nextToken();
-				if (nerType.startsWith("B-") || nerType.startsWith("I-")) {
-					nerType = nerType.substring(2,nerType.length());
-				}
-			}
-			
             featuresVector.string = word;
             featuresVector.label = label;
 
@@ -349,7 +324,7 @@ public class FeaturesVectorNERSense {
                 featuresVector.countryName = true;
             }
 
-			featuresVector.isLocationToken = isLocationToken;
+			featuresVector.isLocationToken = isLocationToken; 
 			
 			featuresVector.isPersonTitleToken = isPersonTitleToken;
 			
@@ -362,16 +337,6 @@ public class FeaturesVectorNERSense {
 			featuresVector.wordShape = TextUtilities.wordShape(word);
 			
 			featuresVector.wordShapeTrimmed = TextUtilities.wordShapeTrimmed(word);
-			
-			if (nerType.equals("other") || nerType.equals("O"))
-				featuresVector.isNER = false;
-			else 
-				featuresVector.isNER = true;
-				
-			if (nerType.equals("other") || nerType.equals("O"))
-				featuresVector.nerType = "O";
-			else 
-				featuresVector.nerType = nerType;	
         }
 
         return featuresVector;

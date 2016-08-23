@@ -1,15 +1,13 @@
-package org.grobid.ner.trainer;
+package org.grobid.trainer;
 
 import org.grobid.core.GrobidModels;
 import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.exceptions.GrobidResourceException;
-import org.grobid.ner.core.lexicon.NERLexicon;
+import org.grobid.core.lexicon.NERLexicon;
 import org.grobid.core.mock.MockContext;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.OffsetPosition;
 import org.grobid.core.utilities.TextUtilities;
-import org.grobid.trainer.GenericTrainer;
-import org.grobid.trainer.TrainerFactory;
 
 import java.io.*;
 import java.util.ArrayList;

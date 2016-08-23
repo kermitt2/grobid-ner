@@ -1,8 +1,8 @@
-package org.grobid.ner.core.test;
+package org.grobid.trainer;
 
 import org.grobid.core.exceptions.GrobidException;
-import org.grobid.ner.trainer.sax.ReutersSaxHandler;
-import org.grobid.ner.trainer.sax.SemDocSaxHandler;
+import org.grobid.trainer.sax.ReutersSaxHandler;
+import org.grobid.trainer.sax.SemDocSaxHandler;
 import org.junit.Test;
 
 import javax.xml.parsers.SAXParser;
@@ -16,8 +16,7 @@ import static org.junit.Assert.assertEquals;
 /**
  *  @author Patrice Lopez
  */
-//@Ignore
-public class TestAssembler {
+public class AssemblerTest {
 
 	public File getResourceDir(String resourceDir) {
 		File file = new File(resourceDir);

@@ -1,16 +1,17 @@
-package org.grobid.ner.core.engines;
+package org.grobid.core.engines;
 
+import org.apache.commons.collections4.CollectionUtils;
 import org.grobid.core.GrobidModels;
-import org.grobid.core.engines.AbstractParser;
+import org.grobid.core.data.Sense;
 import org.grobid.core.engines.tagging.GenericTaggerUtils;
 import org.grobid.core.exceptions.GrobidException;
+import org.grobid.core.features.FeaturesVectorNERSense;
 import org.grobid.core.lexicon.Lexicon;
+import org.grobid.core.lexicon.LexiconPositionsIndexes;
+import org.grobid.core.lexicon.NERLexicon;
 import org.grobid.core.utilities.OffsetPosition;
 import org.grobid.core.utilities.Pair;
 import org.grobid.core.utilities.TextUtilities;
-import org.grobid.ner.core.data.Sense;
-import org.grobid.ner.core.features.FeaturesVectorNERSense;
-import org.grobid.ner.core.lexicon.NERLexicon;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -173,18 +174,22 @@ public class SenseTagger extends AbstractParser {
     /**
      * Extract all occurences of NER senses from a text tokenized and with already identified named entities.
      */
-    public List<Sense> extractSenses(String text, 
-									 List<Pair<String, String>> taggedText, 
-									 List<String> tokenizations, 
-									 List<OffsetPosition> localLocationPositions,
-									 List<OffsetPosition> localPersonTitlePositions,
-									 List<OffsetPosition> localOrganisationPositions,
-									 List<OffsetPosition> localOrgFormPositions) throws Exception {
-		if (taggedText == null)
-            return null;
-        if (taggedText.size() == 0)
-            return null;
-        List<Sense> senses = null;
+    public List<Sense> extractSenses(String text,
+									 List<Pair<String, String>> taggedText,
+									 List<String> tokenizations,
+									 LexiconPositionsIndexes positionsIndexes) {
+
+    	if (CollectionUtils.isEmpty(taggedText)) {
+			return null;
+		}
+
+		List<Sense> senses = null;
+
+		List<OffsetPosition> localLocationPositions = positionsIndexes.getLocalLocationPositions();
+		List<OffsetPosition> localPersonTitlePositions = positionsIndexes.getLocalPersonTitlePositions();
+		List<OffsetPosition> localOrganisationPositions = positionsIndexes.getLocalOrganisationPositions();
+		List<OffsetPosition> localOrgFormPositions = positionsIndexes.getLocalOrgFormPositions();
+
         try {
 			int sentence = 0;
 			int currentPosition = 0;

@@ -1,7 +1,7 @@
-package org.grobid.ner.core.data;
+package org.grobid.core.data;
 
 import org.grobid.core.utilities.OffsetPosition;
-import org.grobid.ner.core.lexicon.NERLexicon;
+import org.grobid.core.lexicon.NERLexicon;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,17 +1,16 @@
-package org.grobid.ner.trainer;
+package org.grobid.trainer;
 
 import org.grobid.core.GrobidModels;
 import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.exceptions.GrobidResourceException;
+import org.grobid.core.features.FeaturesVectorNER;
 import org.grobid.core.lexicon.Lexicon;
+import org.grobid.core.lexicon.NERLexicon;
 import org.grobid.core.mock.MockContext;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.OffsetPosition;
-import org.grobid.ner.core.features.FeaturesVectorNER;
-import org.grobid.ner.core.lexicon.NERLexicon;
-import org.grobid.ner.trainer.sax.ReutersSaxHandler;
-import org.grobid.ner.trainer.sax.SemDocSaxHandler;
-import org.grobid.trainer.AbstractTrainer;
+import org.grobid.trainer.sax.ReutersSaxHandler;
+import org.grobid.trainer.sax.SemDocSaxHandler;
 import org.grobid.trainer.evaluation.EvaluationUtilities;
 
 import javax.xml.parsers.SAXParser;

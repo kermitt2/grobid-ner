@@ -1,4 +1,4 @@
-package org.grobid.ner.trainer.sax;
+package org.grobid.trainer.sax;
 
 import org.grobid.core.utilities.TextUtilities;
 import org.xml.sax.Attributes;
