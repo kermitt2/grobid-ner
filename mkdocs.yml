@@ -1,0 +1,13 @@
+site_name: GROBID NER Documentation
+repo_url: https://github.com/kermitt2/grobid-ner/
+repo_name: GitHub
+theme: readthedocs
+site_description: Documentation for GROBID NER
+docs_dir: grobid-ner/doc
+include_search: true
+pages:
+- ['index.md', 'Home']
+- ['Licence.md', 'About', 'Licence']
+- ['build-and-install.md', 'User Manual', 'Build and Install']
+- ['using-grobid-ner.md', 'User Manual', 'Using GROBID NER']
+- ['class-and-senses.md', 'Class and senses', 'Class and Senses']
