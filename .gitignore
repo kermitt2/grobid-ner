@@ -10,17 +10,6 @@ Thumbs.db
 *.log
 *.log.*
 *.old
-
-# *.log
-# grobid-core/log/debug.log
-# *.log
-# grobid-core/log/error.log
-# grobid-core/log/warn.log
-# grobid-core/log/debug.log
-# grobid-core/log/error.log
-# grobid-core/log/warn.log
-
-
 grobid-core/src/test/resources/org/grobid/core/annotations/resTeiStAXParser/out.tei.xml
 
 grobid-home/models/affiliation-address/model.crf.old
