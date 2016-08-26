@@ -1,11 +1,21 @@
-<h1>GROBID Named Entity Recognition Documentation</h1>
+# GROBID Named Entity Recognition Documentation
 
+## Purpose
 
-<h3>About</h3>
+Grobid NER is a Named-Entity Recogniser module for ([GROBID](https://raw.github.com/kermitt2/grobid)), a text mining tool exploiting CRF.
+Grobid NER has been developed more specifically for the purpose of supporting disambiguation and resolution of entities against knowledge bases such as Wikipedia.
+ 
+The models supplied with the source have been trained using the following dataset: 
+ - [CONLL 2003](http://www.cnts.ua.ac.be/conll2003/ner/) Manually annotated training data (20k words, 4 classes)
+ - Wikipedia IDILIA semi-automatic generated data (approximately 10k words, 26 classes)
+
+Training data and annotation work will be always welcomed, if you like to contribute, you can contact us via email or by opening an issue in the GitHUB project.
+
+## About
 
 * [License](License.md)
 
-<h3>User manual</h3>
+## User manual
 
 * [Install GROBID NER](build-and-install.md)
 
@@ -13,7 +23,5 @@
 
 * [Classes and senses](classes-and-senses.md)
 
-<h3>Developer notes</h3>
-
-* [Recompiling and integrating CRF libraries into GROBID](Recompiling-and-integrating-CRF-libraries.md)
+* [Training guideline](training-guidelines.md) 
 
