@@ -176,14 +176,8 @@ November    PERIOD
  
 *European Union* it's a country? it's an institution? 
 
-Normally it's an INSTITUTION, for example: 
+The answer will be always _it depends_. If you take the wikipedia page on BREXIT, it's mostly referring to the European Union as an institution, but in different context could be something else, like a LOCATION.
 
-```
-European        B-INSTITUTION
-Union        INSTITUTION
-```
-
-for example, taking the wikipedia page on BREXIT, is referring to the European Union as the institution: 
 ```
 [...]    
 to          O
@@ -202,6 +196,8 @@ European    B-INSTITUTION
 Union       INSTITUTION
 .           O
 ```
+
+another example: 
 
 ``` 
 The         O
