@@ -1,22 +1,22 @@
 # Guidelines for annotation of NAmed Entities Recognition
     
-    The creation of annotated corpus for Named Entities is the process of find the correct class of named entities for words based on the context. 
+The creation of annotated corpus for Named Entities is the process of find the correct class of named entities for words based on the context. 
     
-    Grobid-NER can automatically generate training data from text files ( [Link to Page] ), recognising the best named entities with the model currently used. 
-    The goal of the annotator is to correct the generated entities by: (1) changing them, (2) extending them to the proximity tokens or (3) removing them.
+Grobid-NER can automatically generate training data from text files ( [Link to Page] ), recognising the best named entities with the model currently used. 
+The goal of the annotator is to correct the generated entities by: (1) changing them, (2) extending them to the proximity tokens or (3) removing them.
     
 ### Format 
         
-The format the training data is managed is the CONLL 2003 format, which is a 2 column tab separated file. 
+The format the training data is managed is the [CONLL 2003 format](http://www.cnts.ua.ac.be/conll2003/ner/), which is a 2 column tab separated file. 
 The first column is the token, the second column is the class:
 ```
 token           B-CLASS
 token           CLASS
 ```
 
-The B- prefix is used to indicate the beginning of the class. This is important when the same class is repeated for two adiacent entities, **normally this is a very rare event**. 
+The `B-` prefix is used to indicate the beginning of the class. This is important when the same class is repeated for two adiacent entities, **normally this is a very rare event**. 
 
-During training It's important not to touch the token but only the class.    
+During training it's mandatory not to modify the token for any reason. Only the column of the class can be changed. 
 
 ### Classes
 The list of classes with the set of examples are defined in the page (link to class page). 
@@ -26,10 +26,10 @@ The list of classes with the set of examples are defined in the page (link to cl
 Composed concept should be considered instead of simple concept. Usually extended Named Entities have different classes for example: 
 
   1. the token _british_: 
-    _british_ is tagged with class NATIONAL
+    `_british_ is tagged with class NATIONAL`
   but 
-    _british_ referendum it's an EVENT
-    _british_ government it's an INSTITUTION
+    `_british_ referendum it's an EVENT`
+    `_british_ government it's an INSTITUTION`
 
   2. composed token like European Union should be considered as a whole (please note that INSTITUTION could vary based on the context): 
 
@@ -98,7 +98,8 @@ Annotation process:
 
 1. The first token World War I it's correctly recognised but as a three separated tokens (note the B- at the beginning of each class), it shoudl be corrected as 
         
-```World        B-EVENT
+```
+World        B-EVENT
 War        EVENT
 I        EVENT
 ```
