@@ -1,7 +1,9 @@
 # Guidelines for annotation of Named Entities Recognition
 
 The creation of annotated corpus for Named Entities is the process of find the correct class of named entities for words based on the context.
+
 Grobid-NER can automatically generate training data from text files ( [Link to Page] ), recognising the best named entities with the model currently used.
+
 The goal of the annotator is to correct the generated entities by: (1) changing them, (2) extending them to the proximity tokens or (3) removing them.
 
 ### Format 
@@ -18,17 +20,17 @@ The `B-` prefix is used to indicate the beginning of the class. This is importan
 During training it's mandatory not to modify the token for any reason. Only the column of the class can be changed. 
 
 ### Classes
-The list of classes with the set of examples are defined in the page (link to class page). 
+The list of classes with the set of examples are defined in the [classes page](class-and-senses.md) of this manual. 
     
 ### Greedy approach
 
 Composed concept should be considered instead of simple concept. Usually extended Named Entities have different classes for example: 
 
   1. the token _british_: 
-    `_british_ is tagged with class NATIONAL`
+    _british_ is tagged with class NATIONAL
     but 
-    `_british_ referendum it's an EVENT`
-    `_british_ government it's an INSTITUTION`
+    _british_ referendum it's an EVENT
+    _british_ government it's an INSTITUTION
 
   2. composed token like European Union should be considered as a whole (please note that INSTITUTION could vary based on the context): 
 
@@ -46,20 +48,24 @@ Composed concept should be considered instead of simple concept. Usually extende
     
     3. more realworld case is when the entity precede an object that make the object specific: 
 
+    ```
     European          B-EVENT
     Union                EVENT
     membership     EVENT
     referendum       EVENT
-
+    ```
+    
     instead of the following, wrong approach: 
-
+    
+    ```
     European          B-INSTITUTION
     Union                INSTITUTION
     membership     B-CONCEPT
-    referendum       B-EVENT
-
+    referendum       B-EVENT    
+    ```
+    
     and so on and so forth. 
-
+    
 
 
 ### Practical example
@@ -101,32 +107,32 @@ Annotation process:
 
 1. The first token World War I it's correctly recognised but as a three separated tokens (note the B- at the beginning of each class), it shoudl be corrected as 
         
-```
-World        B-EVENT
-War        EVENT
-I        EVENT
-```
+  ```
+  World        B-EVENT
+  War        EVENT
+  I        EVENT
+  ```
 
 2. WWI is not recognised, it should be tagged as ACRONYM
-```
-WWI        B-ACRONYM
-```
+  ```
+  WWI        B-ACRONYM
+  ```
 
 3. Europe is intended as the european continent, therefore the class LOCATION is correct. 
 
 4. The token 28 July 1914 it's a single PERIOD and not two:
-```
-28        B-PERIOD
-July        PERIOD
-1914        PERIOD
-```
+  ```
+  28        B-PERIOD
+  July        PERIOD
+  1914        PERIOD
+  ```
 
 5. lastly the 11 Novembre 1918 has been wrongly split, although the tokens are correct if 11 and November 1918 would be isolated, they are not correct in this context, ence: 
-```
-11        B-PERIOD
-November        PERIOD
-1918        PERIOD
-```
+  ```
+  11        B-PERIOD
+  November        PERIOD
+  1918        PERIOD
+  ```
 
 The result is as following: 
 ```
