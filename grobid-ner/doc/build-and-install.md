@@ -1,6 +1,9 @@
+Grobid NER is a module of [Grobid](https://github.com/kermitt2/grobid) . 
+
 ## Grobid Installation
 
-Grobid needs first to be installed. Grobid is library for extracting bibliographical information from technical and scientific documents. he tool offers a convenient environment for creating efficient text mining tool based on CRF.
+Grobid is library for extracting bibliographical information from technical and scientific documents. 
+The tool offers a convenient environment for creating efficient text mining tool based on CRF.
 
 Clone source code from github:
 > git clone https://github.com/kermitt2/grobid.git
@@ -26,7 +29,9 @@ Clone source code from github:
 Or download directly the zip file:
 > https://github.com/kermitt2/grobid/zipball/master
 
-Grobid NER is actually a sub-project of Grobid. Although Grobid NER will be merged with Grobid in the future, at this point the Grobid NER sub-module simply need to added manually. In the main directory of Grobid NER:
+Grobid NER is actually a sub-project of Grobid. 
+Although Grobid NER will be merged with Grobid in the future, at this point the Grobid NER sub-module simply need to added manually. 
+In the main directory of Grobid NER:
 
 > cp -r grobid-ner /path/to/grobid/
 
@@ -36,4 +41,4 @@ Then build the Grobid NER subproject:
 
 > cd /path/to/grobid/grobid-ner
 
-> mvn clean install`
+> mvn clean install

@@ -29,44 +29,44 @@ The approach choosen with GROBID-NER is to try to match the largest entity menti
 
   1. the token _british_: 
     
-    _british_ is tagged with class NATIONAL
+    _british_ is recognised as class NATIONAL
     
     but 
     
-    _british referendum_ it's an EVENT
+    _british referendum_ is recognised as class EVENT
     
-    _british government_ it's an INSTITUTION
+    _british government_ is recognised as class INSTITUTION
 
   2. composed token like European Union should be considered as a whole (please note that the fact that _European Union_ it's an INSTITUTION could vary based on the context): 
 
     ```
-    European     B-INSTITUTION
-    Union        INSTITUTION 
+    President       B-INSTITUTION
+    Union           INSTITUTION 
     ```
     
     instead the following case, which is not correct because it consider the two tokens separately: 
 
     ```
-    European     B-NATIONAL
-    Union        B-CONCEPT 
+    European        B-NATIONAL
+    Union           O
     ```
     
     3. more realworld case is when the entity precede an object that make the object specific: 
 
     ```
-    European          B-EVENT
-    Union                EVENT
-    membership     EVENT
-    referendum       EVENT
+    European        B-EVENT
+    Union           EVENT
+    membership      EVENT
+    referendum      EVENT
     ```
     
     instead of the following, wrong approach: 
     
     ```
-    European          B-INSTITUTION
-    Union                INSTITUTION
-    membership     B-CONCEPT
-    referendum       B-EVENT    
+    European         B-INSTITUTION
+    Union            INSTITUTION
+    membership       B-CONCEPT
+    referendum       B-CONCEPT    
     ```
     
     and so on and so forth. 
@@ -80,32 +80,32 @@ For example the phrase: World War I (WWI) was a global war centred in Europe tha
 The generated training data happears like below.  
 
 ```
-World        B-EVENT
-War        B-EVENT
-I        B-EVENT
-(        O
-WWI        O
-)        O
-was        O
-a        O
-global        O
-war        O
-centred        O
-in        O
-Europe        B-LOCATION
+World       B-EVENT
+War         B-EVENT
+I           B-EVENT
+(           O
+WWI         O
+)           O
+was         O
+a           O
+global      O
+war         O
+centred     O
+in          O
+Europe      B-LOCATION
 that        O
-began        O
-on        O
-28        B-PERIOD
+began       O
+on          O
+28          B-PERIOD
 July        B-PERIOD
 1914        PERIOD
-and        O
-lasted        O
-until        O
-11        B-MEASURE
-November        B-PERIOD
+and         O
+lasted      O
+until       O
+11          B-MEASURE
+November    B-PERIOD
 1918        PERIOD
-.        O
+.           O
 ```    
     
 Annotation process: 
