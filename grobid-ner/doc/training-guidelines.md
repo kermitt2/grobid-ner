@@ -118,6 +118,7 @@ Annotation process:
   ```
 
 2. WWI is not recognised, it should be tagged as ACRONYM
+
   ```
   WWI        B-ACRONYM
   ```
@@ -125,13 +126,15 @@ Annotation process:
 3. Europe is intended as the european continent, therefore the class LOCATION is correct. 
 
 4. The token 28 July 1914 it's a single PERIOD and not two:
+
   ```
   28        B-PERIOD
   July      PERIOD
   1914      PERIOD
   ```
 
-5. lastly the 11 Novembre 1918 has been wrongly split, although the tokens are correct if 11 and November 1918 would be isolated, they are not correct in this context, ence: 
+5. lastly the 11 Novembre 1918 has been wrongly split, although the tokens are correct if 11 and November 1918 would be isolated, they are not correct in this context: 
+  
   ```
   11          B-PERIOD
   November    PERIOD
@@ -199,6 +202,7 @@ European    B-INSTITUTION
 Union       INSTITUTION
 .           O
 ```
+
 ``` 
 The         O
 country     O
