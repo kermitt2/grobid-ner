@@ -1,10 +1,9 @@
 # Guidelines for annotation of NAmed Entities Recognition
-    
+
 The creation of annotated corpus for Named Entities is the process of find the correct class of named entities for words based on the context. 
-    
 Grobid-NER can automatically generate training data from text files ( [Link to Page] ), recognising the best named entities with the model currently used. 
 The goal of the annotator is to correct the generated entities by: (1) changing them, (2) extending them to the proximity tokens or (3) removing them.
-    
+
 ### Format 
         
 The format the training data is managed is the [CONLL 2003 format](http://www.cnts.ua.ac.be/conll2003/ner/), which is a 2 column tab separated file. 
