@@ -22,9 +22,10 @@ During training it's mandatory not to modify the token for any reason. Only the 
 ### Classes
 The list of classes with the set of examples are defined in the [classes page](class-and-senses.md) of this manual. 
     
-### Greedy approach
+### Largest entity mention
 
-Composed concept should be considered instead of simple concept. Usually extended Named Entities have different classes for example: 
+Entities with more than one token, can be recognized in different way (for example given two tokens could be interpreted as one entity of two tokens or two entities of one token). 
+The approach choosen with GROBID-NER is to try to match the largest entity mentions. Here some examples: 
 
   1. the token _british_: 
     
