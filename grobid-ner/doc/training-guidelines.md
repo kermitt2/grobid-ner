@@ -117,40 +117,42 @@ July        PERIOD
 1914        PERIOD
 ```
 
-    5. lastly the 11 Novembre 1918 has been wrongly split, although the tokens are correct if 11 and November 1918 would be isolated, they are not correct in this context, ence: 
+5. lastly the 11 Novembre 1918 has been wrongly split, although the tokens are correct if 11 and November 1918 would be isolated, they are not correct in this context, ence: 
+```
+11        B-PERIOD
+November        PERIOD
+1918        PERIOD
+```
 
-    11        B-PERIOD
-    November        PERIOD
-    1918        PERIOD
-
-    The result is as following: 
-    World        B-EVENT
-    War        EVENT
-    I        EVENT
-    (        O
-    WWI        B-ACRONYM
-    )        O
-    was        O
-    a        O
-    global        O
-    war        O
-    centred        O
-    in        O
-    Europe        B-LOCATION
-    that        O
-    began        O
-    on        O
-    28        B-PERIOD
-    July        PERIOD
-    1914        PERIOD
-    and        O
-    lasted        O
-    until        O
-    11        B-PERIOD
-    November        PERIOD
-    1918        PERIOD
-    .        O
-    
+The result is as following: 
+```
+World        B-EVENT
+War        EVENT
+I        EVENT
+(        O
+WWI        B-ACRONYM
+)        O
+was        O
+a        O
+global        O
+war        O
+centred        O
+in        O
+Europe        B-LOCATION
+that        O
+began        O
+on        O
+28        B-PERIOD
+July        PERIOD
+1914        PERIOD
+and        O
+lasted        O
+until        O
+11        B-PERIOD
+November        PERIOD
+1918        PERIOD
+.        O
+```    
     
     
     More examples 

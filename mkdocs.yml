@@ -10,4 +10,5 @@ pages:
 - ['Licence.md', 'About', 'Licence']
 - ['build-and-install.md', 'User Manual', 'Build and Install']
 - ['using-grobid-ner.md', 'User Manual', 'Using GROBID NER']
-- ['class-and-senses.md', 'Class and senses', 'Class and Senses']
+- ['class-and-senses.md', 'User Manual', 'Class and Senses']
+- ['training-guidelines.md', 'User Manual', 'Training Guidelines']
