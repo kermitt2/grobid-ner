@@ -27,12 +27,16 @@ The list of classes with the set of examples are defined in the [classes page](c
 Composed concept should be considered instead of simple concept. Usually extended Named Entities have different classes for example: 
 
   1. the token _british_: 
+    
     _british_ is tagged with class NATIONAL
+    
     but 
-    _british_ referendum it's an EVENT
-    _british_ government it's an INSTITUTION
+    
+    _british referendum_ it's an EVENT
+    
+    _british government_ it's an INSTITUTION
 
-  2. composed token like European Union should be considered as a whole (please note that INSTITUTION could vary based on the context): 
+  2. composed token like European Union should be considered as a whole (please note that the fact that _European Union_ it's an INSTITUTION could vary based on the context): 
 
     ```
     European     B-INSTITUTION
@@ -109,8 +113,8 @@ Annotation process:
         
   ```
   World        B-EVENT
-  War        EVENT
-  I        EVENT
+  War          EVENT
+  I            EVENT
   ```
 
 2. WWI is not recognised, it should be tagged as ACRONYM
@@ -123,92 +127,97 @@ Annotation process:
 4. The token 28 July 1914 it's a single PERIOD and not two:
   ```
   28        B-PERIOD
-  July        PERIOD
-  1914        PERIOD
+  July      PERIOD
+  1914      PERIOD
   ```
 
 5. lastly the 11 Novembre 1918 has been wrongly split, although the tokens are correct if 11 and November 1918 would be isolated, they are not correct in this context, ence: 
   ```
-  11        B-PERIOD
-  November        PERIOD
+  11          B-PERIOD
+  November    PERIOD
   1918        PERIOD
   ```
 
 The result is as following: 
 ```
-World        B-EVENT
-War        EVENT
-I        EVENT
-(        O
-WWI        B-ACRONYM
-)        O
-was        O
-a        O
-global        O
-war        O
-centred        O
-in        O
-Europe        B-LOCATION
+World       B-EVENT
+War         EVENT
+I           EVENT
+(           O
+WWI         B-ACRONYM
+)           O
+was         O
+a           O
+global      O
+war         O
+centred     O
+in          O
+Europe      B-LOCATION
 that        O
-began        O
-on        O
-28        B-PERIOD
+began       O
+on          O
+28          B-PERIOD
 July        PERIOD
 1914        PERIOD
-and        O
-lasted        O
-until        O
-11        B-PERIOD
-November        PERIOD
+and         O
+lasted      O
+until       O
+11          B-PERIOD
+November    PERIOD
 1918        PERIOD
-.        O
+.           O
 ```    
     
-    
-    More examples 
 
-- EU: normally it's an INSTITUTION, for example: 
-        
+#### More examples
+ 
+*European Union* it's a country? it's an institution? 
+
+Normally it's an INSTITUTION, for example: 
+
+```
 European        B-INSTITUTION
 Union        INSTITUTION
-    e.g: from a wikipedia page on BREXIT
+```
 
-    [...]    
-    to        O
-    gauge        O
-    support        O
-    for        O
-    the        O
-    country        O
-    '        O
-    s        O
-    continued        O
-    membership        O
-    in        O
-    the        O
-    European        B-INSTITUTION
-    Union        INSTITUTION
-    .        O
-
-    e.g: 
-    The        O
-    country        O
-    joined        O
-    the        O
-    European        B-INSTITUTION
-    Economic        INSTITUTION
-    Community        INSTITUTION
-    (        O
-    EEC        B-INSTITUTION
-    ,        O
-    or        O
-    "        O
-    Common        B-INSTITUTION
-    Market        INSTITUTION
-    "        O
-    )        O
-    in        O
-    1973        B-PERIOD
-    .        O
-
+for example, taking the wikipedia page on BREXIT, is referring to the European Union as the institution: 
+```
+[...]    
+to          O
+gauge       O
+support     O
+for         O
+the         O
+country        O
+'           O
+s           O
+continued   O
+membership  O
+in          O
+the         O
+European    B-INSTITUTION
+Union       INSTITUTION
+.           O
+```
+``` 
+The         O
+country     O
+joined      O
+the         O
+European    B-INSTITUTION
+Economic    INSTITUTION
+Community   INSTITUTION
+(           O
+EEC         B-INSTITUTION
+,           O
+or          O
+"           O
+Common      B-INSTITUTION
+Market      INSTITUTION
+"           O
+)           O
+in          O
+1973        B-PERIOD
+.           O
+```
 
