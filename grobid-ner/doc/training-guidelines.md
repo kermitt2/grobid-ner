@@ -1,83 +1,64 @@
-# Guidelines for annotation of Named Entities Recognition
+# Annotation guidelines for GROBID Named Entities Recognition
 
-The creation of annotated corpus for Named Entities is the process of find the correct class of named entities for words based on the context.
+### Principle
 
-Grobid-NER can automatically generate training data from text files ( [Link to Page] ), recognising the best named entities with the model currently used.
+Creating annotated corpus for Named Entities Recognition suppose to identify Named Entities in a text and to classify these Named entities based on the context into a set of classes, 26 classes in the case of grobid-ner.
 
-The goal of the annotator is to correct the generated entities by: (1) changing them, (2) extending them to the proximity tokens or (3) removing them.
+Similarly as grobid's other CRF models, grobid-ner can bootstrap training data. grobid-ner can automatically generate training data from any text files ( [Link to Page] ), labeling tokens with the named entity classes based on the existing model. A human annotator then corrects the generated training data by modifying the labels produced for each token. This curated training data can be added to the existing training data and used to train a new improved model. 
 
 ### Format 
 
-The format the training data is managed is the [CONLL 2003 format](http://www.cnts.ua.ac.be/conll2003/ner/), which is a 2 column tab separated file.
-The first column is the token, the second column is the class:
+The current format of the training data follows the [CONLL 2003 NER format](http://www.cnts.ua.ac.be/conll2003/ner/), which is a n-column tab separated text file.
+In our case, the first column is a token, the second column is the NER class and a third optional column givens a word sense:
+
 ```
-token           B-CLASS
-token           CLASS
+token0           0         0
+token1           B-CLASS   word_sense1
+token2           CLASS     word_sense2
+token3           0         0
 ```
 
-The `B-` prefix is used to indicate the beginning of the class. This is important when the same class is repeated for two adiacent entities, **normally this is a very rare event**.
+Non-named entity tokens are labeled with the default label _0_. 
 
-During training it's mandatory not to modify the token for any reason. Only the column of the class can be changed. 
+Word senses are optional and correspond to a WordNet synset. They are only indicated for Named Entity tokens. 
+
+The `B-` prefix is used to indicate the beginning of an entity. This B- marker is necessary when several entities of the same NER class are immediatly repeated. As the prefix marker is really needed only in rare cases, it can be omited by default.  
+
+The end of a sentence is maked by an empty line. 
+
+Tokens and tokenization must not be modified during manual correction. Only the labels can be changed. 
 
 ### Classes
-The list of classes with the set of examples are defined in the [classes page](class-and-senses.md) of this manual. 
+
+The list of NER classes with examples are given in the [classes page](class-and-senses.md). 
     
 ### Largest entity mention
 
-Entities with more than one token, can be recognized in different way (for example given two tokens could be interpreted as one entity of two tokens or two entities of one token). 
-The approach choosen with GROBID-NER is to try to match the largest entity mentions. Here some examples: 
+Entities with more than one token can embed sub-entities. The approach currently followed by grobid-ner is to annotated only the largest entity mention and not the sub-entities. For example: 
 
-  1. the token _british_: 
+  1. the token _British_: 
     
-    _british_ is recognised as class NATIONAL
+    Depending on the context, _British_ in isolation can labelled with the classes NATIONAL (when introducing a relation to Great Britain), PERSON_TYPE (for the British people) or CONCEPT (when refering to the British English language)
     
-    but 
+    In contrast, 
     
-    _british referendum_ is recognised as class EVENT
+    _British referendum_ is entirely labeled with the class EVENT, because British is part of a larger entity mention. The fact that British here also refers to the country (so class NATIONAL) must not be annotated. 
     
-    _british government_ is recognised as class INSTITUTION
+    _British government_ is similarly entirely labeled with class INSTITUTION.
 
-  2. composed token like European Union should be considered as a whole (please note that the fact that _European Union_ it's an INSTITUTION could vary based on the context): 
-
-    ```
-    President       B-INSTITUTION
-    Union           INSTITUTION 
-    ```
-    
-    instead the following case, which is not correct because it consider the two tokens separately: 
-
-    ```
-    European        B-NATIONAL
-    Union           O
-    ```
-    
-    3. more realworld case is when the entity precede an object that make the object specific: 
-
-    ```
-    European        B-EVENT
-    Union           EVENT
-    membership      EVENT
-    referendum      EVENT
-    ```
-    
-    instead of the following, wrong approach: 
-    
-    ```
-    European         B-INSTITUTION
-    Union            INSTITUTION
-    membership       B-CONCEPT
-    referendum       B-CONCEPT    
-    ```
-    
-    and so on and so forth. 
-    
+  2. Similarly, in order to be consistent, for phrases like ```President of the United State``` and ```United State President```, the class labeling will be identical, entirely as PERSON. The manual annotator must be careful not to annotated two NE following (in particular for the first case, with __United State__ as LOCATION), and in general to annotate only the largest entity.  
+        
 
 
-### Practical example
+### Practical example of correction
 
-For example the phrase: World War I (WWI) was a global war centred in Europe that began on 28 July 1914 and lasted until 11 November 1918. 
+For example the sentence: 
 
-The generated training data happears like below.  
+```
+World War I (WWI) was a global war centred in Europe that began on 28 July 1914 and lasted until 11 November 1918. 
+```
+
+The training data automatically generated by grobid-ner is as follow.  
 
 ```
 World       B-EVENT
@@ -110,7 +91,7 @@ November    B-PERIOD
     
 Annotation process: 
 
-1. The first token World War I it's correctly recognised but as a three separated tokens (note the B- at the beginning of each class), it shoudl be corrected as 
+1. The first tokens ```World War I``` are correctly maked as Named Entities of class EVENT, but incorectly labeled as three independant entities (note the B- at the beginning of each class). The correction will be: 
         
   ```
   World        B-EVENT
@@ -118,15 +99,17 @@ Annotation process:
   I            EVENT
   ```
 
-2. WWI is not recognised, it should be tagged as ACRONYM
+Note that as the entity is not adjacent to any other entity, the ```B-``` marker is optional. 
+
+2. ```WWI``` is not maked as Named Entity and should be tagged as ACRONYM
 
   ```
   WWI        B-ACRONYM
   ```
 
-3. Europe is intended as the european continent, therefore the class LOCATION is correct. 
+3. ```Europe``` refers to the european continent, therefore the class LOCATION is correct. 
 
-4. The token 28 July 1914 it's a single PERIOD and not two:
+4. The tokens ```28 July 1914``` correspond to a single PERIOD and not two:
 
   ```
   28        B-PERIOD
@@ -134,7 +117,7 @@ Annotation process:
   1914      PERIOD
   ```
 
-5. lastly the 11 Novembre 1918 has been wrongly split, although the tokens are correct if 11 and November 1918 would be isolated, they are not correct in this context: 
+5. lastly the tokens ```11 Novembre 1918``` has been wrongly identified as two entities: 
   
   ```
   11          B-PERIOD
@@ -143,6 +126,7 @@ Annotation process:
   ```
 
 The result is as following: 
+
 ```
 World       B-EVENT
 War         EVENT
@@ -172,53 +156,4 @@ November    PERIOD
 .           O
 ```    
     
-
-#### More examples
- 
-*European Union* it's a country? it's an institution? 
-
-The answer will be always _it depends_. If you take the wikipedia page on BREXIT, it's mostly referring to the European Union as an institution, but in different context could be something else, like a LOCATION.
-
-```
-[...]    
-to          O
-gauge       O
-support     O
-for         O
-the         O
-country        O
-'           O
-s           O
-continued   O
-membership  O
-in          O
-the         O
-European    B-INSTITUTION
-Union       INSTITUTION
-.           O
-```
-
-another example: 
-
-``` 
-The         O
-country     O
-joined      O
-the         O
-European    B-INSTITUTION
-Economic    INSTITUTION
-Community   INSTITUTION
-(           O
-EEC         B-INSTITUTION
-,           O
-or          O
-"           O
-Common      B-INSTITUTION
-Market      INSTITUTION
-"           O
-)           O
-in          O
-1973        B-PERIOD
-.           O
-```
 
