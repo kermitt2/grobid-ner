@@ -1,15 +1,17 @@
 # GROBID Named Entity Recognition Documentation
 
-## Purpose
+## Purposes
 
-Grobid NER is a Named-Entity Recogniser module for [GROBID](https://raw.github.com/kermitt2/grobid), a text mining tool exploiting CRF.
-Grobid NER has been developed more specifically for the purpose of supporting disambiguation and resolution of entities against knowledge bases such as Wikipedia.
+GROBID NER is a Named-Entity Recogniser module for [GROBID](https://raw.github.com/kermitt2/grobid), a tool based on CRF.
+GROBID NER has been developed more specifically for the purpose of further supporting post disambiguation and resolution of entities against knowledge bases such as Wikipedia.
  
-The models supplied with the source have been trained using the following dataset: 
-- [CONLL 2003](http://www.cnts.ua.ac.be/conll2003/ner/) Manually annotated training data (20k words, 4 classes)
-- Wikipedia semi-automatic generated data (approximately 10k words, 26 classes)
+The current models shipped with the source uses 26 Named Entity classes and have been trained using the following dataset: 
+- Reuters NER [CONLL 2003](http://www.cnts.ua.ac.be/conll2003/ner/) partially manually annotated training data (10k words)
+- Manually annotated extract from the Wikipedia article on World War 1 (approximately 10k words)
 
-Training data and annotation work will be always welcomed, if you like to contribute, you can contact us via email or by opening an issue in the GitHUB project.
+The training has been completed with a very large semi-supervised training based on the Wikipedia Idilia data set. 
+
+Annotated data will be always welcomed, if you like to contribute, you can contact us via email or by opening an issue in the GitHub project.
 
 ## About
 
