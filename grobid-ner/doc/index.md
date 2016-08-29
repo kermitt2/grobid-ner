@@ -25,5 +25,5 @@ Annotated data will be always welcomed, if you like to contribute, you can conta
 
 * [Classes and senses](classes-and-senses.md)
 
-* [Training guideline](training-guidelines.md) 
+* [Annotation guidelines](training-guidelines.md) 
 

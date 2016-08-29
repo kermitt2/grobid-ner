@@ -18,7 +18,7 @@ token2           CLASS     word_sense2
 token3           0         0
 ```
 
-Non-named entity tokens are labeled with the default label _0_. 
+Non-named entity tokens are labeled with the default label ```0```. 
 
 Word senses are optional and correspond to a WordNet synset. They are only indicated for Named Entity tokens. 
 
@@ -36,17 +36,11 @@ The list of NER classes with examples are given in the [classes page](class-and-
 
 Entities with more than one token can embed sub-entities. The approach currently followed by grobid-ner is to annotated only the largest entity mention and not the sub-entities. For example: 
 
-  1. the token _British_: 
+  1. Let's consider the token _British_. Depending on the context, _British_ in isolation can labelled with the classes NATIONAL (when introducing a relation to Great Britain), PERSON_TYPE (for the British people) or CONCEPT (when refering to the British English language)
     
-    Depending on the context, _British_ in isolation can labelled with the classes NATIONAL (when introducing a relation to Great Britain), PERSON_TYPE (for the British people) or CONCEPT (when refering to the British English language)
-    
-    In contrast, 
-    
-    _British referendum_ is entirely labeled with the class EVENT, because British is part of a larger entity mention. The fact that British here also refers to the country (so class NATIONAL) must not be annotated. 
-    
-    _British government_ is similarly entirely labeled with class INSTITUTION.
+    In contrast, _British referendum_ is entirely labeled with the class EVENT, because British is part of a larger entity mention. The fact that British here also refers to the country (so class NATIONAL) must not be annotated. _British government_ is similarly entirely labeled with class INSTITUTION.
 
-  2. Similarly, in order to be consistent, for phrases like ```President of the United State``` and ```United State President```, the class labeling will be identical, entirely as PERSON. The manual annotator must be careful not to annotated two NE following (in particular for the first case, with __United State__ as LOCATION), and in general to annotate only the largest entity.  
+  2. Similarly, in order to be consistent, for phrases like __President of the United State__ and __United State President__, the class labeling will be identical, entirely as PERSON. The manual annotator must be careful not to annotated two NE following (in particular for the first case, with __United State__ as LOCATION), and in general to annotate only the largest entity.  
         
 
 
@@ -91,39 +85,39 @@ November    B-PERIOD
     
 Annotation process: 
 
-1. The first tokens ```World War I``` are correctly maked as Named Entities of class EVENT, but incorectly labeled as three independant entities (note the B- at the beginning of each class). The correction will be: 
+1. The first tokens __World War I__ are correctly maked as Named Entities of class EVENT, but incorectly labeled as three independant entities (note the B- at the beginning of each class). The correction will be: 
         
-  ```
-  World        B-EVENT
-  War          EVENT
-  I            EVENT
-  ```
+```
+World        B-EVENT
+War          EVENT
+I            EVENT
+```
 
 Note that as the entity is not adjacent to any other entity, the ```B-``` marker is optional. 
 
-2. ```WWI``` is not maked as Named Entity and should be tagged as ACRONYM
+2. __WWI__ is not maked as Named Entity and should be tagged as ACRONYM
 
-  ```
-  WWI        B-ACRONYM
-  ```
+```
+WWI        B-ACRONYM
+```
 
-3. ```Europe``` refers to the european continent, therefore the class LOCATION is correct. 
+3. __Europe__ refers to the european continent, therefore the class LOCATION is correct. 
 
-4. The tokens ```28 July 1914``` correspond to a single PERIOD and not two:
+4. The tokens __28 July 1914__ correspond to a single PERIOD and not two:
 
-  ```
-  28        B-PERIOD
-  July      PERIOD
-  1914      PERIOD
-  ```
+```
+28        B-PERIOD
+July      PERIOD
+1914      PERIOD
+```
 
-5. lastly the tokens ```11 Novembre 1918``` has been wrongly identified as two entities: 
+5. lastly the tokens __11 Novembre 1918__ has been wrongly identified as two entities: 
   
-  ```
-  11          B-PERIOD
-  November    PERIOD
-  1918        PERIOD
-  ```
+```
+11          B-PERIOD
+November    PERIOD
+1918        PERIOD
+```
 
 The result is as following: 
 
