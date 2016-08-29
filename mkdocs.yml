@@ -11,4 +11,4 @@ pages:
 - ['build-and-install.md', 'User Manual', 'Build and Install']
 - ['using-grobid-ner.md', 'User Manual', 'Using GROBID NER']
 - ['class-and-senses.md', 'User Manual', 'Class and Senses']
-- ['training-guidelines.md', 'User Manual', 'Training Guidelines']
+- ['annotation-guidelines.md', 'User Manual', 'Annotation Guidelines']
