@@ -41,9 +41,9 @@ public class TextSaxHandler extends DefaultHandler {
 		return textVector;
 	}
 	
-	public void endElement(java.lang.String uri,
-                           java.lang.String localName,
-                           java.lang.String qName) throws SAXException {
+	public void endElement(String uri,
+                           String localName,
+                           String qName) throws SAXException {
         if (qName.equals("txt")) {
 			String token = getText();
 			token = token.replace("n't", " n't");

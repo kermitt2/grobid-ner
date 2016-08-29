@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 public class TextBlocks {
+    public static final String SUFFIX_NER = "\t<ner>";
     private List<String> textBlocks = new ArrayList<String>();
     private List<String> tokens = new ArrayList<String>();
     private List<Integer> textBlocksPositions = new ArrayList<Integer>();
@@ -50,7 +51,7 @@ public class TextBlocks {
             String tok = st.nextToken();
             blocks.getTokens().add(tok);
             if (!tok.equals(" ")) {
-                blocks.getTextBlocks().add(tok + "\t<ner>");
+                blocks.getTextBlocks().add(tok + SUFFIX_NER);
                 blocks.getTextBlocksPositions().add(pos);
             }
             pos += tok.length();
