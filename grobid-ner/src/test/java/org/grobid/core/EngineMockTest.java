@@ -23,6 +23,14 @@ public abstract class EngineMockTest {
 
     @BeforeClass
     public static void initInitialContext() throws Exception {
+        findGrobidHome();
+
+        GrobidProperties.getInstance();
+        MockContext.setInitialContext();
+        engine = GrobidFactory.getInstance().createEngine();
+    }
+
+    public static void findGrobidHome() {
         String grobidHome = System.getenv("GROBID_HOME");
         if (!isEmpty(grobidHome)) {
             GrobidProperties.set_GROBID_HOME_PATH(grobidHome);
@@ -42,9 +50,5 @@ public abstract class EngineMockTest {
                 }
             }
         }
-
-        GrobidProperties.getInstance();
-        MockContext.setInitialContext();
-        engine = GrobidFactory.getInstance().createEngine();
     }
 }
