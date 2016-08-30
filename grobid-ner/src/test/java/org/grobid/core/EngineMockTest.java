@@ -30,6 +30,11 @@ public abstract class EngineMockTest {
         engine = GrobidFactory.getInstance().createEngine();
     }
 
+    /**
+     * Try to get the GROBID_HOME from the environment variable or by using some default locations:
+     *  - ../grobid-home
+     *  - ../../grobid-home (in case the whole repository is cloned directly under the grobid project)
+     */
     public static void findGrobidHome() {
         String grobidHome = System.getenv("GROBID_HOME");
         if (!isEmpty(grobidHome)) {
