@@ -12,6 +12,7 @@ This dataset contains the annotations used for the CONLL conference. It is publi
 It requires the Reuters dataset (see above) [to be built](http://www.cnts.ua.ac.be/conll2003/ner/000README). 
 
  - Manually annotated extract from the Wikipedia article on World War 1 (approximately 10k words, 26 classes). 
+This data can be downloaded from [IDILIA download page](http://download.idilia.com/datasets/wikipedia/index.html). 
 This data, as the whole wikipedia, is freely available under the licence [Creative Commons Attribution-ShareAlike License](https://creativecommons.org/licenses/by-sa/3.0/). 
  
  - [EHRI](https://portal.ehri-project.eu) data from the research portal, openly available ([data policy](https://portal.ehri-project.eu/data-policy)).
