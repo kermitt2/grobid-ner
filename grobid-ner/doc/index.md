@@ -6,8 +6,10 @@ GROBID NER is a Named-Entity Recogniser module for [GROBID](https://raw.github.c
 GROBID NER has been developed more specifically for the purpose of further supporting post disambiguation and resolution of entities against knowledge bases such as Wikipedia.
  
 The current models shipped with the source uses 26 Named Entity [classes](classes-ane-senses.md) and have been trained using the following dataset: 
- - Reuters NER [CONLL 2003](http://www.cnts.ua.ac.be/conll2003/ner/) manually annotated training data (10k words, 26 classes). This dataset is not public, so not shipped with the code. In order to obtain it, 
- - Manually annotated extract from the Wikipedia article on World War 1 (approximately 10k words, 26 classes)
+
+* Reuters NER [CONLL 2003](http://www.cnts.ua.ac.be/conll2003/ner/) manually annotated training data (10k words, 26 classes). This dataset is not public, so not shipped with the code. In order to obtain it, 
+
+* Manually annotated extract from the Wikipedia article on World War 1 (approximately 10k words, 26 classes)
 
 The training has been completed with a very large semi-supervised training based on the Wikipedia Idilia data set. 
 
