@@ -12,3 +12,4 @@ pages:
 - ['using-grobid-ner.md', 'User Manual', 'Using GROBID NER']
 - ['class-and-senses.md', 'User Manual', 'Class and Senses']
 - ['annotation-guidelines.md', 'User Manual', 'Annotation Guidelines']
+- ['training-ner-model.md', 'User Manual', 'Datasets and training']

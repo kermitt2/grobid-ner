@@ -9,9 +9,6 @@ For citing the tool, please refer to the github project: <https://github.com/gro
 
 ### Datasets
 
-The datasets distributed with this project are publicly available under the following licences: 
- - [Wikipedia](http://www.wikipedia.org) data is available under the licence [Creative Commons Attribution-ShareAlike License](https://creativecommons.org/licenses/by-sa/3.0/). 
- - [EHRI](https://portal.ehri-project.eu) data from the research portal, openly available as mentioned in the EHRI [data policy](https://portal.ehri-project.eu/data-policy).
-  
-The following datasets has been used as training data, but are not distributed with the project:  
- - Reuters corpus, not publicly available. To obtain it, contact [NIST](http://trec.nist.gov/data/reuters/reuters.html).
+The datasets used for training the models behind this tool are not all publicly available. 
+They can be requested at the respective owners and rebuild the original Grobid NER dataset.
+See the [respective pages](training-ner-model.md) for more information. 

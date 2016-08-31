@@ -4,6 +4,7 @@ import org.grobid.core.engines.Engine;
 import org.grobid.core.exceptions.GrobidPropertyException;
 import org.grobid.core.factory.GrobidFactory;
 import org.grobid.core.mock.MockContext;
+import org.grobid.core.utilities.GrobidHome;
 import org.grobid.core.utilities.GrobidProperties;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -23,37 +24,10 @@ public abstract class EngineMockTest {
 
     @BeforeClass
     public static void initInitialContext() throws Exception {
-        findGrobidHome();
+        GrobidHome.findGrobidHome();
 
         GrobidProperties.getInstance();
         MockContext.setInitialContext();
         engine = GrobidFactory.getInstance().createEngine();
-    }
-
-    /**
-     * Try to get the GROBID_HOME from the environment variable or by using some default locations:
-     *  - ../grobid-home
-     *  - ../../grobid-home (in case the whole repository is cloned directly under the grobid project)
-     */
-    public static void findGrobidHome() {
-        String grobidHome = System.getenv("GROBID_HOME");
-        if (!isEmpty(grobidHome)) {
-            GrobidProperties.set_GROBID_HOME_PATH(grobidHome);
-            GrobidProperties.setGrobidPropertiesPath(grobidHome + "/config/grobid.properties");
-        } else {
-            try {
-                LOGGER.trace("Trying grobid home from the usual location at ../grobid-home ");
-                GrobidProperties.set_GROBID_HOME_PATH("../grobid-home");
-                GrobidProperties.setGrobidPropertiesPath("../grobid-home/config/grobid.properties");
-            } catch (GrobidPropertyException gpe) {
-                LOGGER.error("Grobid HOME not found, trying to fish it from ../../grobid-home ");
-                try {
-                    GrobidProperties.set_GROBID_HOME_PATH("../../grobid-home");
-                    GrobidProperties.setGrobidPropertiesPath("../../grobid-home/config/grobid.properties");
-                } catch (GrobidPropertyException gpe2) {
-                    LOGGER.error("Grobid HOME at ../../grobid-home not found, set the environment variable GROBID_HOME");
-                }
-            }
-        }
     }
 }

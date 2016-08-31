@@ -39,7 +39,7 @@ public class INRIALeMondeCorpusStaxHandlerTest {
         String splitted[] = output.split("\n");
 
         assertThat(splitted[0], is("-DOCSTART- id248980"));
-        assertThat(splitted[1], is("Certes\tO"));
+        assertThat(splitted[1], is("zzbbzb\tO"));
         assertThat(splitted[2], is(",\tO"));
     }
 
