@@ -5,7 +5,7 @@ Grobid and Grobid NER are distributed under [Apache 2.0 license](http://www.apac
 
 Author and contact: Patrice Lopez (<patrice.lopez@inria.fr>) 
  
-For citing the tool, please refer to the github project: <https://github.com/grobid/grobid> (2014)
+For citing the tool, please refer to the github project: <https://github.com/grobid/grobid> (2016)
 
 ### Datasets
 

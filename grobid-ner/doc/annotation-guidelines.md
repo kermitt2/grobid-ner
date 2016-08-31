@@ -1,4 +1,4 @@
-# Annotation guidelines for GROBID Named Entities Recognition
+# Annotation guidelines for GROBID NER
 
 ### Principle
 
