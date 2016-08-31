@@ -4,17 +4,14 @@
   
 Grobid NER has been trained on several different datasets :
  
- - Reuters NER [CONLL 2003](http://www.cnts.ua.ac.be/conll2003/ner/) manually annotated training data (10k words, 26 classes). This dataset is not public, so not shipped with the code. In order to obtain it, 
+ - Reuters dataset: This dataset was made available from Reuters Ltd. It is not public and it is not provided within this project. 
+To obtain it, contact [NIST](http://trec.nist.gov/data/reuters/reuters.html).
  
- - Manually annotated extract from the Wikipedia article on World War 1 (approximately 10k words, 26 classes)
-  
-The datasets distributed with this project are publicly available under the following licences: 
+ - [CONLL 2003](http://www.cnts.ua.ac.be/conll2003/ner/) NER manually annotated dataset made available for CONLL 2003 conference.
+This dataset contains the annotations used for the CONLL conference. It is public and it ships only annotations. 
+It requires the Reuters dataset (see above) [to be built](http://www.cnts.ua.ac.be/conll2003/ner/000README). 
+
+ - Manually annotated extract from the Wikipedia article on World War 1 (approximately 10k words, 26 classes). 
+This data, as the whole wikipedia, is freely available under the licence [Creative Commons Attribution-ShareAlike License](https://creativecommons.org/licenses/by-sa/3.0/). 
  
- - [Wikipedia](http://www.wikipedia.org) data is available under the licence [Creative Commons Attribution-ShareAlike License](https://creativecommons.org/licenses/by-sa/3.0/). 
- 
- - [EHRI](https://portal.ehri-project.eu) data from the research portal, openly available as mentioned in the EHRI [data policy](https://portal.ehri-project.eu/data-policy).
- 
-  
-The following datasets has been used as training data, but are not distributed with the project:
- 
- - Reuters corpus, not publicly available. To obtain it, contact [NIST](http://trec.nist.gov/data/reuters/reuters.html).
+ - [EHRI](https://portal.ehri-project.eu) data from the research portal, openly available ([data policy](https://portal.ehri-project.eu/data-policy)).
