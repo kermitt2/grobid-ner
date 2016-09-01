@@ -24,7 +24,15 @@ TBD
 
 
 ### Train the NER model 
-The assumption is that all the dataset have been downloaded and the property file grobid-ner.properties updated accordingly. 
+The assumption is that all the required datasets have been downloaded and the property file `grobid-ner.properties` updated accordingly.
+The required files are: 
+
+- wikipedia.ner26.train shipped with the project
+
+- reuters.ner26.train which is a 26 classes reuters based data
+
+
+To start the training: 
 
 ```
 mvn generate-resources -Ptrain_ner
