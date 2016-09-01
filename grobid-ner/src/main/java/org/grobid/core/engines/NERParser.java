@@ -66,7 +66,7 @@ public class NERParser extends AbstractParser {
         return entities;
     }
 
-    private String toFeatureVector(TextBlocks blocks, LexiconPositionsIndexes positionsIndexes) {
+    public String toFeatureVector(TextBlocks blocks, LexiconPositionsIndexes positionsIndexes) {
         StringBuffer ress = new StringBuffer();
         int posit = 0; // keep track of the position index in the list of positions
 
@@ -252,13 +252,14 @@ public class NERParser extends AbstractParser {
     protected String createTrainingText(File file) throws IOException {
         String text = FileUtils.readFileToString(file);
 
-        return createTrainingFromText(text);
+        return createTrainingFromText(text, file.getName());
     }
 
-    protected String createTrainingFromText(String text) {
+    protected String createTrainingFromText(String text, String fileLabel) {
         if (isEmpty(text))
             return null;
 
+        //TODO: find a solution to avoid loosing the sentence delimiters
         text = text.replace("\n", " ");
 
         TextBlocks blocks = TextBlocks.getTextBlocks(text);
@@ -272,6 +273,7 @@ public class NERParser extends AbstractParser {
 //        List<Sense> senses = senseTagger.extractSenses(text, labeledEntries, blocks.getTokens(), positionsIndexes);
 
         StringBuilder sb = new StringBuilder();
+        sb.append("-DOCSTART-").append(" ").append(fileLabel).append("\n");
 
 //        int count = 0;
         for (Pair<String, String> labeledEntry : labeledEntries) {

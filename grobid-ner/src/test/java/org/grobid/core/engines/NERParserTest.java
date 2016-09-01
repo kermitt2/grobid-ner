@@ -53,7 +53,7 @@ public class NERParserTest extends EngineMockTest {
     @Test
     public void testCreateTrainingTest_simpleParagraph() throws Exception {
         String text = IOUtils.toString(this.getClass().getResourceAsStream("/test.txt"));
-        String test = target.createTrainingFromText(text);
+        String test = target.createTrainingFromText(text, "bao");
 
         System.out.println("\n" + test);
     }

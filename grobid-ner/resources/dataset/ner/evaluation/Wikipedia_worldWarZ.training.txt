@@ -1,3 +1,4 @@
+-DOCSTART- -Wikipedia_worldWarZ.training-
 World	B-EVENT
 War	EVENT
 Z	EVENT
@@ -21,6 +22,7 @@ by	O
 Max	B-PERSON
 Brooks	PERSON
 .	O
+
 The	O
 novel	O
 is	O
@@ -50,6 +52,7 @@ the	O
 zombie	O
 plague	O
 .	O
+
 Other	O
 passages	O
 record	O
@@ -68,6 +71,7 @@ of	O
 various	O
 nationalities	O
 .	O
+
 The	O
 personal	O
 accounts	O
@@ -85,6 +89,7 @@ and	O
 environmental	O
 changes	O
 .	O
+
 World	B-EVENT
 War	EVENT
 Z	EVENT
@@ -116,6 +121,7 @@ much	O
 more	O
 serious	O
 .	O
+
 It	O
 was	O
 inspired	O
@@ -149,6 +155,7 @@ A	PERSON
 .	PERSON
 Romero	PERSON
 .	O
+
 Brooks	B-PERSON
 used	O
 World	B-EVENT
@@ -170,6 +177,7 @@ survivalism	O
 and	O
 uncertainty	O
 .	O
+
 The	O
 novel	O
 was	O
@@ -183,6 +191,7 @@ by	O
 most	O
 critics	O
 .	O
+
 Its	O
 audiobook	O
 version	O
@@ -210,6 +219,7 @@ Award	AWARD
 in	O
 2007	B-PERIOD
 .	O
+
 A	O
 film	O
 inspired	O
@@ -231,6 +241,7 @@ released	O
 in	O
 2013	B-PERIOD
 .	O
+
 The	O
 story	O
 is	O
@@ -260,6 +271,7 @@ Nations	ORGANISATION
 Postwar	ORGANISATION
 Commission	ORGANISATION
 .	O
+
 Although	O
 the	O
 exact	O
@@ -289,6 +301,7 @@ official	O
 patient	B-CONCEPT
 zero	CONCEPT
 .	O
+
 The	O
 boy	O
 '	O
@@ -322,6 +335,7 @@ mask	O
 their	O
 activities	O
 .	O
+
 Nevertheless	O
 ,	O
 the	O
@@ -345,6 +359,7 @@ market	O
 organ	O
 trade	O
 .	O
+
 Initially	O
 ,	O
 these	O
@@ -373,6 +388,7 @@ to	O
 public	O
 attention	O
 .	O
+
 As	O
 the	O
 infection	O
@@ -400,6 +416,7 @@ Jews	B-PERSON_TYPE
 and	O
 Palestinians	B-PERSON_TYPE
 .	O
+
 Its	O
 military	O
 then	O
@@ -422,6 +439,7 @@ Israeli	B-NATIONAL
 civil	O
 war	O
 .	O
+
 The	O
 United	B-LOCATION
 States	LOCATION
@@ -441,6 +459,7 @@ suppress	O
 any	O
 threat	O
 .	O
+
 Although	O
 special	O
 forces	O
@@ -483,6 +502,7 @@ sense	O
 of	O
 security	O
 .	O
+
 As	O
 many	O
 more	O
@@ -505,6 +525,7 @@ Panic	CONCEPT
 "	O
 begins	O
 .	O
+
 Pakistan	B-LOCATION
 and	O
 Iran	B-LOCATION
@@ -533,6 +554,7 @@ Pakistan	B-LOCATION
 into	O
 Iran	B-LOCATION
 .	O
+
 After	O
 zombies	O
 overrun	O
@@ -560,6 +582,7 @@ city	O
 of	O
 Yonkers	B-LOCATION
 .	O
+
 The	O
 "	O
 Battle	B-CREATION
@@ -599,6 +622,7 @@ through	O
 the	O
 head	O
 .	O
+
 The	O
 unprepared	O
 and	O
@@ -610,6 +634,7 @@ on	O
 live	O
 television	O
 .	O
+
 Other	O
 countries	O
 suffer	O
@@ -627,6 +652,7 @@ brink	O
 of	O
 destruction	O
 .	O
+
 In	O
 South	B-LOCATION
 Africa	LOCATION
@@ -647,6 +673,7 @@ consultant	O
 Paul	B-PERSON
 Redeker	PERSON
 .	O
+
 It	O
 calls	O
 for	O
@@ -685,6 +712,7 @@ regroup	O
 and	O
 recuperate	O
 .	O
+
 Governments	O
 worldwide	O
 assume	O
@@ -712,6 +740,7 @@ archipelago	NATIONAL
 to	O
 Kamchatka	B-LOCATION
 .	O
+
 Because	O
 zombies	O
 freeze	O
@@ -746,6 +775,7 @@ starvation	O
 and	O
 hypothermia	O
 .	O
+
 It	O
 is	O
 implied	O
@@ -777,6 +807,7 @@ food	O
 shortages	O
 occurred	O
 .	O
+
 The	O
 three	O
 remaining	O
@@ -811,6 +842,7 @@ orbital	O
 fuel	O
 station	O
 .	O
+
 A	O
 surviving	O
 member	O
@@ -844,6 +876,7 @@ Earth	O
 s	O
 atmosphere	O
 .	O
+
 The	O
 U	B-LOCATION
 .	LOCATION
@@ -871,6 +904,7 @@ in	O
 that	O
 region	O
 .	O
+
 All	O
 aspects	O
 of	O
@@ -887,6 +921,7 @@ against	O
 the	O
 pandemic	O
 .	O
+
 Much	O
 of	O
 it	O
@@ -911,6 +946,7 @@ civilian	O
 neighborhood	O
 patrols	O
 .	O
+
 The	O
 U	B-ORGANISATION
 .	ORGANISATION
@@ -958,6 +994,7 @@ with	O
 managerial	O
 skills	O
 .	O
+
 Seven	B-MEASURE
 years	O
 after	O
@@ -1004,6 +1041,7 @@ their	O
 safe	O
 zones	O
 .	O
+
 The	O
 U	B-PERSON
 .	PERSON
@@ -1020,6 +1058,7 @@ on	O
 the	O
 offensive	O
 .	O
+
 Determined	O
 to	O
 lead	O
@@ -1122,6 +1161,7 @@ close	O
 quarters	O
 combat	O
 .	O
+
 The	O
 military	O
 ,	O
@@ -1160,6 +1200,7 @@ hostile	O
 human	O
 survivors	O
 .	O
+
 Prewar	O
 military	O
 tactics	O
@@ -1185,6 +1226,7 @@ or	O
 rebel	O
 opposition	O
 .	O
+
 Ten	O
 years	O
 after	O
@@ -1214,6 +1256,7 @@ snow	O
 line	O
 islands	O
 .	O
+
 A	O
 democratic	O
 Cuba	B-LOCATION
@@ -1227,6 +1270,7 @@ most	O
 thriving	O
 economy	O
 .	O
+
 Following	O
 a	O
 civil	O
@@ -1254,6 +1298,7 @@ Chinese	B-ORGANISATION
 Federation	ORGANISATION
 "	O
 .	O
+
 Tibet	B-LOCATION
 is	O
 freed	O
@@ -1272,6 +1317,7 @@ most	O
 populated	O
 city	O
 .	O
+
 Following	O
 a	O
 religious	O
@@ -1296,6 +1342,7 @@ Holy	O
 Russian	B-INSTITUTION
 Empire	INSTITUTION
 .	O
+
 Owing	O
 to	O
 the	O
@@ -1344,6 +1391,7 @@ raise	O
 the	O
 birthrate	O
 .	O
+
 North	B-LOCATION
 Korea	LOCATION
 is	O
@@ -1362,6 +1410,7 @@ into	O
 underground	O
 bunkers	O
 .	O
+
 The	O
 situation	O
 in	O
@@ -1387,6 +1436,7 @@ of	O
 the	O
 outbreak	O
 .	O
+
 Members	O
 of	O
 the	O
@@ -1441,6 +1491,7 @@ with	O
 her	O
 relatives	O
 .	O
+
 The	O
 Papacy	B-INSTITUTION
 established	O
@@ -1515,6 +1566,7 @@ whom	O
 became	O
 zombies	O
 .	O
+
 Iceland	B-LOCATION
 has	O
 been	O
@@ -1531,6 +1583,7 @@ heavily	O
 infested	O
 country	O
 .	O
+
 The	O
 Israelis	B-PERSON_TYPE
 and	O
@@ -1552,6 +1605,7 @@ Unified	O
 Palestine	B-LOCATION
 "	O
 .	O
+
 Mexico	B-LOCATION
 is	O
 now	O
@@ -1561,6 +1615,7 @@ as	O
 Aztlán	B-CREATION
 "	O
 .	O
+
 Several	O
 countries	O
 are	O
@@ -1596,6 +1651,7 @@ became	O
 independent	O
 states	O
 .	O
+
 A	O
 so	O
 -	O
@@ -1622,6 +1678,7 @@ lack	O
 of	O
 fuel	O
 .	O
+
 For	O
 unknown	O
 reasons	O
@@ -1638,6 +1695,7 @@ in	O
 Saudi	B-LOCATION
 Arabia	LOCATION
 .	O
+
 The	O
 United	B-ORGANISATION
 Nations	ORGANISATION
@@ -1672,6 +1730,7 @@ before	O
 they	O
 unfreeze	O
 .	O
+
 It	O
 is	O
 stated	O
@@ -1701,6 +1760,7 @@ where	O
 it	O
 began	O
 .	O
+
 Brooks	O
 designed	O
 World	B-EVENT
@@ -1785,6 +1845,7 @@ brain	O
 is	O
 destroyed	O
 .	O
+
 Decomposition	O
 will	O
 eventually	O
@@ -1811,6 +1872,7 @@ such	O
 as	O
 freezing	O
 .	O
+
 Although	O
 zombies	O
 do	O
@@ -1841,6 +1903,7 @@ in	O
 their	O
 attacks	O
 .	O
+
 Zombies	O
 usually	O
 reveal	O
@@ -1873,6 +1936,7 @@ on	O
 the	O
 novel	O
 .	O
+
 He	O
 claimed	O
 inspiration	O
@@ -1915,6 +1979,7 @@ World	B-EVENT
 War	EVENT
 II	EVENT
 .	O
+
 I	O
 read	O
 it	O
@@ -1933,6 +1998,7 @@ me	O
 ever	O
 since	O
 .	O
+
 When	O
 I	O
 sat	O
@@ -2003,6 +2069,7 @@ silly	O
 and	O
 campy	O
 .	O
+
 They	O
 '	O
 ve	O
@@ -2074,6 +2141,7 @@ World	B-EVENT
 War	EVENT
 Z	EVENT
 .	O
+
 The	O
 technology	O
 ,	O
