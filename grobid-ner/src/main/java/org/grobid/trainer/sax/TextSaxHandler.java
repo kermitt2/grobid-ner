@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 /**
- * SAX parser for Reuters corpus.
+ * SAX parser for Wikipedia corpus.
  *
  * @author Patrice Lopez
  */

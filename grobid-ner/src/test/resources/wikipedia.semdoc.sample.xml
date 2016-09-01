@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<docs len="5020" num="1" title="World War I" fsk="World_War_I/N1">
+    <doc len="5020">
+        <para len="9" so="0">
+            <sent len="9" so="0">
+                <frag cccfmp="0.984" cccmp="0.931" ccfmp="0.958" len="3" so="0" sol="1">
+                    <txt>World War I </txt>
+                    <cs len="3" pb="1.000" pc="1.000" sk="World_War_I/C5" so="0">
+                        <fs len="3" pb="1.000" pc="1.000" sk="World_War_I/N1" so="0"/>
+                    </cs>
+                </frag>
+                <frag len="1" so="3">
+                    <txt>- </txt>
+                    <lc lc="punct"/>
+                </frag>
+                <frag cccfmp="0.491" cccmp="0.410" ccfmp="0.291" len="1" so="4">
+                    <txt>Wikipedia</txt>
+                    <cs pb="1.000" pc="0.903" sk="Wikipedia/C1" so="4">
+                        <fs pb="1.000" pc="0.903" sk="Wikipedia/N1" so="4"/>
+                    </cs>
+                </frag>
+                <frag len="1" so="5">
+                    <txt>, </txt>
+                    <lc lc="punct"/>
+                </frag>
+                <frag len="1" so="6">
+                    <txt>the </txt>
+                    <lc lc="det"/>
+                </frag>
+                <frag cccfmp="0.967" cccmp="0.952" ccfmp="0.949" len="1" so="7">
+                    <txt>free </txt>
+                    <cs pb="1.000" pc="0.987" sk="free/C4" so="7">
+                        <fs pb="1.000" pc="0.993" sk="free/J3" so="7"/>
+                    </cs>
+                    <dep c="0.959" dest="encyclopedia" destLc="noun" role="modifier" src="free" srcLc="adj"/>
+                </frag>
+                <frag cccfmp="0.809" cccmp="0.808" ccfmp="0.709" len="1" so="8">
+                    <txt>encyclopedia </txt>
+                    <cs pb="1.000" pc="0.975" sk="encyclopedia/C12" so="8">
+                        <fs pb="1.000" pc="0.975" sk="encyclopedia/N1" so="8"/>
+                    </cs>
+                    <dep c="0.959" dest="free" destLc="adj" role="head" src="encyclopedia" srcLc="noun"/>
+                </frag>
+            </sent>
+        </para>
+        <para len="3" so="9">
+            <sent len="3" so="9">
+                <frag cccfmp="0.856" cccmp="0.896" ccfmp="0.775" len="3" so="9" sol="1">
+                    <txt>World War I </txt>
+                    <cs len="3" pb="1.000" pc="1.000" sk="World_War_I/C5" so="9">
+                        <fs len="3" pb="1.000" pc="1.000" sk="World_War_I/N1" so="9"/>
+                    </cs>
+                </frag>
+            </sent>
+        </para>
+        <para len="6" so="12">
+            <sent len="6" so="12">
+                <frag len="1" so="12" sol="1">
+                    <txt>From </txt>
+                    <lc lc="prep"/>
+                </frag>
+                <frag cccfmp="0.458" cccmp="0.481" ccfmp="0.424" len="1" so="13">
+                    <txt>Wikipedia</txt>
+                    <cs pb="1.000" pc="0.903" sk="Wikipedia/C2300" so="13">
+                        <fs pb="1.000" pc="0.903" sk="Wikipedia/N2300" so="13"/>
+                    </cs>
+                </frag>
+                <frag len="1" so="14">
+                    <txt>, </txt>
+                    <lc lc="punct"/>
+                </frag>
+                <frag len="1" so="15">
+                    <txt>the </txt>
+                    <lc lc="det"/>
+                </frag>
+                <frag cccfmp="0.766" cccmp="0.782" ccfmp="0.811" len="1" so="16">
+                    <txt>free </txt>
+                    <cs pb="1.000" pc="0.988" sk="free/C4" so="16">
+                        <fs pb="1.000" pc="0.992" sk="free/J3" so="16"/>
+                    </cs>
+                    <dep c="0.934" dest="encyclopedia" destLc="noun" role="modifier" src="free" srcLc="adj"/>
+                </frag>
+                <frag cccfmp="0.718" cccmp="0.685" ccfmp="0.687" len="1" so="17">
+                    <txt>encyclopedia </txt>
+                    <cs pb="1.000" pc="0.975" sk="encyclopedia/C12" so="17">
+                        <fs pb="1.000" pc="0.975" sk="encyclopedia/N1" so="17"/>
+                    </cs>
+                    <dep c="0.934" dest="free" destLc="adj" role="head" src="encyclopedia" srcLc="noun"/>
+                </frag>
+            </sent>
+        </para>
+    </doc>
+</docs>
