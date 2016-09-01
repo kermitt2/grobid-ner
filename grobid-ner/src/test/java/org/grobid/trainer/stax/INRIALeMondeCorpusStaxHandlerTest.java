@@ -41,6 +41,33 @@ public class INRIALeMondeCorpusStaxHandlerTest {
         assertThat(splitted[0], is("-DOCSTART- id248980"));
         assertThat(splitted[1], is("zzbbzb\tO"));
         assertThat(splitted[2], is(",\tO"));
+
+        assertThat(splitted[52], is(""));
     }
 
+    @Test
+    public void testTranslate_Organisation() throws Exception {
+        assertThat(target.translate("organization", ""), is("ORGANISATION"));
+    }
+
+    @Test
+    public void testTranslate_Location() throws Exception {
+        assertThat(target.translate("location", ""), is("LOCATION"));
+    }
+
+    @Test
+    public void testTranslate_Null() throws Exception {
+        assertThat(target.translate("", ""), is("O"));
+        assertThat(target.translate(null, ""), is("O"));
+    }
+
+    @Test
+    public void testTranslate_MediaCompany() throws Exception {
+        assertThat(target.translate("organization", "MediaCompany"), is("BUSINESS"));
+    }
+
+    @Test
+    public void testTranslate_FictionCharacter() throws Exception {
+        assertThat(target.translate("FictionCharacter", ""), is("PERSON"));
+    }
 }

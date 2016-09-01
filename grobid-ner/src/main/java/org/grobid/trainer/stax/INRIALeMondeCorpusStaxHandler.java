@@ -4,6 +4,7 @@ import com.ctc.wstx.stax.WstxInputFactory;
 import org.apache.commons.lang3.StringUtils;
 import org.codehaus.stax2.XMLStreamReader2;
 import org.grobid.core.data.TextBlocks;
+import org.grobid.core.lexicon.NERLexicon;
 
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLEventWriter;
@@ -56,6 +57,9 @@ public class INRIALeMondeCorpusStaxHandler implements StaxParserContentHandler {
 
     }
 
+    /**
+     * -DOCSTART- followed by the document id is appended to define the start of a new document
+     */
     @Override
     public void onStartElement(XMLStreamReader2 reader) {
         final String localName = reader.getName().getLocalPart();
@@ -71,26 +75,33 @@ public class INRIALeMondeCorpusStaxHandler implements StaxParserContentHandler {
     }
 
     private void readOtherAttributes(XMLStreamReader2 reader) {
-        entityType = reader.getAttributeValue("", "type");
+        entityType = getAttributeFiltered(reader, "type");
         if (isNotBlank(entityType)) {
-            uri = reader.getAttributeValue("", "uri");
-            entitySubType = reader.getAttributeValue("", "sub_type");
-            disambiguatedName = reader.getAttributeValue("", "name");
+            uri = getAttributeFiltered(reader, "uri");
+            entitySubType = getAttributeFiltered(reader, "sub_type");
+            disambiguatedName = getAttributeFiltered(reader, "name");
 
 //            if (StringUtils.equals(entityType, "Person")) {
-//                gender = reader.getAttributeValue("", "gender");
+//                gender = getAttributeFiltered(reader, "gender");
 //            }
         }
 
     }
 
+    private String getAttributeFiltered(XMLStreamReader2 reader, String name) {
+        return StringUtils.equals(reader.getAttributeValue("", name), "null") ? null : reader.getAttributeValue("", name);
+    }
+
+
+    /**
+     * When the sentence is closed, add an empty line as sentence separator.
+     */
     @Override
     public void onEndElement(XMLStreamReader2 reader) {
         if (reader.getName().getLocalPart().equals("sentence")) {
             inSentence = false;
-
             try {
-                writer.write(sb.toString());
+                writer.write(sb.append("\n").toString());
             } catch (IOException e) {
                 throw new RuntimeException();
             }
@@ -98,6 +109,7 @@ public class INRIALeMondeCorpusStaxHandler implements StaxParserContentHandler {
         } else if (reader.getName().getLocalPart().equals("ENAMEX")) {
             inNamedEntity = false;
             entityType = null;
+            entitySubType = null;
         }
     }
 
@@ -114,9 +126,10 @@ public class INRIALeMondeCorpusStaxHandler implements StaxParserContentHandler {
 
             for (String textBlock : textBlocks.getTextBlocks()) {
                 String textBlockCleaned = StringUtils.replace(textBlock, TextBlocks.SUFFIX_NER, "");
+
                 if ((inNamedEntity) && (isNotEmpty(entityType))) {
-                    sb.append(textBlockCleaned).append("\t").append(entityType.toUpperCase());
-                    if (isNotBlank(entitySubType)) {
+                    sb.append(textBlockCleaned).append("\t").append(translate(entityType, entitySubType));
+                    if (isNotEmpty(entitySubType)) {
                         sb.append("\t").append(entitySubType);
                     }
 
@@ -150,13 +163,45 @@ public class INRIALeMondeCorpusStaxHandler implements StaxParserContentHandler {
         return data;
     }
 
+    protected String translate(String type, String subType) {
+        //default
+        String labelOutput = "O";
+        String senseOutput = "";
+
+        if (StringUtils.equalsIgnoreCase(type, "Company")) {
+            labelOutput = NERLexicon.NER_Type.BUSINESS.getName();
+            senseOutput = "business/N1";
+        } else if (StringUtils.equalsIgnoreCase(type, "FictionCharacter")) {
+            labelOutput = NERLexicon.NER_Type.PERSON.getName();
+        } else if (StringUtils.equalsIgnoreCase(type, "organization")) {
+            if (StringUtils.equalsIgnoreCase(subType, "InstitutionalOrganization")) {
+                labelOutput = NERLexicon.NER_Type.INSTITUTION.getName();
+            } else if (StringUtils.endsWithIgnoreCase(subType, "company")) {
+                labelOutput = NERLexicon.NER_Type.BUSINESS.getName();
+            } else {
+                labelOutput = NERLexicon.NER_Type.ORGANISATION.getName();
+            }
+
+        } else if (StringUtils.equalsIgnoreCase(type, "Person")) {
+            labelOutput = NERLexicon.NER_Type.PERSON.getName();
+        } else if (StringUtils.equalsIgnoreCase(type, "Location")) {
+            labelOutput = NERLexicon.NER_Type.LOCATION.getName();
+        } else if (StringUtils.equalsIgnoreCase(type, "Poi")) {
+            labelOutput = NERLexicon.NER_Type.LOCATION.getName();
+        } else if (StringUtils.equalsIgnoreCase(type, "Product")) {
+            labelOutput = NERLexicon.NER_Type.ARTIFACT.getName();
+        }
+
+        return labelOutput;
+    }
+
 
     /**
      * How to use it
-     *
+     * <p>
      * This class require a single parameter which is the input file containng the french
      * corpus from Le Monde manually annotated.
-     *
+     * <p>
      * The class will output the cONLL 2013 format in a file having the same name as the input
      * suffixed with .output.
      */
