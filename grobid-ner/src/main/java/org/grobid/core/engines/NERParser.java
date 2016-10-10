@@ -4,11 +4,12 @@ import org.apache.commons.io.FileUtils;
 import org.grobid.core.GrobidModels;
 import org.grobid.core.data.Entity;
 import org.grobid.core.data.Sense;
-import org.grobid.core.data.TextBlocks;
 import org.grobid.core.engines.tagging.GenericTaggerUtils;
 import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.features.FeaturesVectorNER;
 import org.grobid.core.lexicon.Lexicon;
+import org.grobid.core.lang.Language;
+import org.grobid.core.analyzers.GrobidAnalyzer;
 import org.grobid.core.lexicon.LexiconPositionsIndexes;
 import org.grobid.core.utilities.Pair;
 import org.slf4j.Logger;
@@ -41,39 +42,57 @@ public class NERParser extends AbstractParser {
 
     /**
      * Extract all occurrences of named entity from a simple piece of text.
+	 * Default language is English...
      */
-    public List<Entity> extractNE(String text) {
+	public List<Entity> extractNE(String text) {	
+		return extractNE(new Language(Language.EN, 1.0), text);
+	}
+	
+    public List<Entity> extractNE(Language lang, String text) {
         if (isEmpty(text))
             return null;
 
-        text = text.replace("\n", " ");
-
-        TextBlocks blocks = TextBlocks.getTextBlocks(text);
+		if ( (!lang.getLangId().equals(Language.EN)) && (!lang.getLangId().equals(Language.FR)) ) {
+			// this language is not supported
+			throw new GrobidException("Language not supported by grobid-ner: " + lang.toString());
+		}
+			 
+        //text = text.replace("\n", " ");
+		List<String> tokens = null;
+		try {
+			tokens = GrobidAnalyzer.getInstance().tokenize(lang, text);
+		} catch(Exception e) {
+			LOGGER.error("Tokenization failed", e);
+		}
+		if (tokens == null)
+			return null;
+		
         LexiconPositionsIndexes positionsIndexes = new LexiconPositionsIndexes(lexicon);
         positionsIndexes.computeIndexes(text);
 
-        String res = toFeatureVector(blocks, positionsIndexes);
+        String res = toFeatureVector(tokens, positionsIndexes);
         String result = label(res);
         List<Pair<String, String>> labeled = GenericTaggerUtils.getTokensAndLabels(result);
 
-        List<Entity> entities = resultExtraction(text, labeled, blocks.getTokens());
+        List<Entity> entities = resultExtraction(text, labeled, tokens);
 
         // we use now the sense tagger for the recognized named entity
-        List<Sense> senses = senseTagger.extractSenses(text, labeled, blocks.getTokens(), positionsIndexes);
+        List<Sense> senses = senseTagger.extractSenses(text, labeled, tokens, positionsIndexes);
 
         merge(entities, senses);
 
         return entities;
     }
 
-    public String toFeatureVector(TextBlocks blocks, LexiconPositionsIndexes positionsIndexes) {
+    public String toFeatureVector(List<String> tokens, LexiconPositionsIndexes positionsIndexes) {
         StringBuffer ress = new StringBuffer();
         int posit = 0; // keep track of the position index in the list of positions
 
-        int currentPosition = 0;
-
-        for (String block : blocks.getTextBlocks()) {
-            currentPosition += blocks.getTextBlocksPositions().get(posit);
+        for (String token : tokens) {
+			if (token.equals(" ") || token.equals("\t") || token.equals("\n") || token.equals("\r")) {
+				//posit++;
+				continue;
+			}
 
             // check if the token is a known NE
             // do we have a NE at position posit?
@@ -87,7 +106,7 @@ public class NERParser extends AbstractParser {
                     .isTokenInLexicon(positionsIndexes.getLocalOrgFormPositions(), posit);
 
             ress.append(FeaturesVectorNER
-                    .addFeaturesNER(block,
+                    .addFeaturesNER(token,
                             isLocationToken, isPersonTitleToken, isOrganisationToken, isOrgFormToken)
                     .printVector());
             ress.append("\n");
@@ -250,23 +269,39 @@ public class NERParser extends AbstractParser {
     }
 
     protected String createTrainingText(File file) throws IOException {
-        String text = FileUtils.readFileToString(file);
-
-        return createTrainingFromText(text, file.getName());
+		// default language is English
+        return createTrainingText(file, new Language(Language.EN, 1.0));
     }
 
-    protected String createTrainingFromText(String text, String fileLabel) {
+    protected String createTrainingText(File file, Language lang) throws IOException {
+        String text = FileUtils.readFileToString(file);
+
+        return createTrainingFromText(text, file.getName(), lang);
+    }
+
+	protected String createTrainingFromText(String text, String fileLabel) {
+		// default language is English
+		return createTrainingFromText(text, fileLabel, new Language(Language.EN, 1.0));
+	}
+
+    protected String createTrainingFromText(String text, String fileLabel, Language lang) {
         if (isEmpty(text))
             return null;
 
         //TODO: find a solution to avoid loosing the sentence delimiters
         text = text.replace("\n", " ");
 
-        TextBlocks blocks = TextBlocks.getTextBlocks(text);
+		List<String> tokens = null;
+		try {
+			tokens =  GrobidAnalyzer.getInstance().tokenize(lang, text);
+		} catch(Exception e) {
+			LOGGER.error("Tokenization failed", e);
+			return null;
+		}
         LexiconPositionsIndexes positionsIndexes = new LexiconPositionsIndexes(lexicon);
         positionsIndexes.computeIndexes(text);
 
-        String featuresVector = toFeatureVector(blocks, positionsIndexes);
+        String featuresVector = toFeatureVector(tokens, positionsIndexes);
         String res = label(featuresVector);
 
         List<Pair<String, String>> labeledEntries = GenericTaggerUtils.getTokensAndLabels(res);

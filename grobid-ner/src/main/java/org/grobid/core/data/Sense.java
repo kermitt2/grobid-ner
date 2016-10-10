@@ -1,6 +1,7 @@
 package org.grobid.core.data;
 
 import org.grobid.core.utilities.OffsetPosition;
+import org.grobid.core.layout.BoundingBox;
 
 /**
  * Common representation of a sense.
@@ -29,6 +30,9 @@ public class Sense {
 	// relative offset positions in context, if defined
 	private OffsetPosition offsets = null;
 
+	// optional bounding box in the source document
+	private BoundingBox box = null;
+	
     public Sense() {
 		this.offsets = new OffsetPosition();
     }

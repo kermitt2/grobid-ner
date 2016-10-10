@@ -42,7 +42,7 @@ public class INRIALeMondeCorpusStaxHandlerTest {
         assertThat(splitted[1], is("zzbbzb\tO"));
         assertThat(splitted[2], is(",\tO"));
 
-        assertThat(splitted[52], is(""));
+        assertThat(splitted[50], is(""));
     }
 
     @Test

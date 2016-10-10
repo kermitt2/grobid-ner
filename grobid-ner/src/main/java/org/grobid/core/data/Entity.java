@@ -2,6 +2,7 @@ package org.grobid.core.data;
 
 import org.grobid.core.utilities.OffsetPosition;
 import org.grobid.core.lexicon.NERLexicon;
+import org.grobid.core.layout.BoundingBox;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,6 +39,9 @@ public class Entity implements Comparable<Entity> {
 	// all the sense information related to the entity
 	private Sense sense = null;
 	
+	// optional bounding box in the source document
+	private BoundingBox box = null;
+		
 	// orign of the entity definition
 	public static int GROBID = 0;
 	public static int USER = 1;

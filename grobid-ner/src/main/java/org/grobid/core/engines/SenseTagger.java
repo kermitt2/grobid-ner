@@ -9,9 +9,14 @@ import org.grobid.core.features.FeaturesVectorNERSense;
 import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.lexicon.LexiconPositionsIndexes;
 import org.grobid.core.lexicon.NERLexicon;
+import org.grobid.core.lang.Language;
+import org.grobid.core.analyzers.GrobidAnalyzer;
 import org.grobid.core.utilities.OffsetPosition;
 import org.grobid.core.utilities.Pair;
 import org.grobid.core.utilities.TextUtilities;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +28,9 @@ import java.util.StringTokenizer;
  * @author Patrice Lopez
  */
 public class SenseTagger extends AbstractParser {
-
+	
+	private static Logger LOGGER = LoggerFactory.getLogger(SenseTagger.class);
+	
 	protected NERLexicon nerLexicon = NERLexicon.getInstance();
 	protected Lexicon lexicon = Lexicon.getInstance();
 	
@@ -35,32 +42,49 @@ public class SenseTagger extends AbstractParser {
      * Extract all occurences of NER senses from a simple piece of text.
      */
     public List<Sense> extractSenses(String text) throws Exception {
+		// default language is English
+		return extractSenses(text, new Language(Language.EN, 1.0));
+	}
+
+    /**
+     * Extract all occurences of NER senses from a simple piece of text.
+     */
+    public List<Sense> extractSenses(String text, Language lang) throws Exception {
         if (text == null)
             return null;
         if (text.length() == 0)
             return null;
         List<Sense> senses = null;
         try {
-            text = text.replace("\n", " ");
+            //text = text.replace("\n", " ");
 			int sentence = 0;
 			List<OffsetPosition> localLocationPositions = lexicon.inLocationNames(text);
 			List<OffsetPosition> localPersonTitlePositions = lexicon.inPersonTitleNames(text);
 			List<OffsetPosition> localOrganisationPositions = lexicon.inOrganisationNames(text);
 			List<OffsetPosition> localOrgFormPositions = lexicon.inOrgFormNames(text);
 			int currentPosition = 0;
-            StringTokenizer st = new StringTokenizer(text, TextUtilities.fullPunctuations, true);
+            //StringTokenizer st = new StringTokenizer(text, TextUtilities.fullPunctuations, true);
+			List<String> tokenizations = null;
+			try {
+				tokenizations = GrobidAnalyzer.getInstance().tokenize(lang, text);
+			} catch(Exception e) {
+				LOGGER.error("Tokenization failed", e);
+			}
+			if (tokenizations == null)
+				return null;
 			
-            if (st.countTokens() == 0)
-                return null;
+            //if (st.countTokens() == 0)
+            //    return null;
 			
             List<String> textBlocks = new ArrayList<String>();
-            List<String> tokenizations = new ArrayList<String>();
+            //List<String> tokenizations = new ArrayList<String>();
 			int pos = 0; // current offset
 			List<Integer> positions = new ArrayList<Integer>();
-            while (st.hasMoreTokens()) {
-                String tok = st.nextToken();
-                tokenizations.add(tok);
-                if (!tok.equals(" ")) {
+            //while (st.hasMoreTokens()) {
+			for(String tok : tokenizations) {	
+                //String tok = st.nextToken();
+                //tokenizations.add(tok);
+				if (!tok.equals(" ") && !tok.equals("\t") && !tok.equals("\n") && !tok.equals("\r")) {	
                 	textBlocks.add(tok + "\t<sense>");
 					positions.add(pos);
             	}
