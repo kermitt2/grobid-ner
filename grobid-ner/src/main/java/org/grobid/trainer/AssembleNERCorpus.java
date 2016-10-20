@@ -2,6 +2,7 @@ package org.grobid.trainer;
 
 import org.apache.commons.io.FileUtils;
 import org.grobid.core.engines.NERParser;
+import org.grobid.core.engines.NEREnParser;
 import org.grobid.core.engines.SenseTagger;
 import org.grobid.core.features.FeaturesVectorNER;
 import org.grobid.core.features.FeaturesVectorNERSense;
@@ -83,14 +84,14 @@ public class AssembleNERCorpus {
 	 */
 	public void assembleCoNLL() {
 		String reutersSelectionPath = "resources/dataset/ner/corpus/reuters.txt";
-		NERParser parserNER = null;
+		NEREnParser parserNER = null;
 		SenseTagger parserSense = null;
 		String pGrobidHome = "../grobid-home";
 		String pGrobidProperties = "../grobid-home/config/grobid.properties";
 		try {
 			GrobidProperties.getInstance();
 			LibraryLoader.load();		
-			parserNER = new NERParser();
+			parserNER = new NEREnParser();
 			parserSense = new SenseTagger();	
 		}
 		catch(Exception e) {

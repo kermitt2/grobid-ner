@@ -98,18 +98,19 @@ public class INRIALeMondeCorpusStaxHandler implements StaxParserContentHandler {
 
 
     /**
-     * When the sentence is closed, add an empty line as sentence separator.
+     * When the document is closed, add an empty line as document separator.
      */
     @Override
     public void onEndElement(XMLStreamReader2 reader) {
-        if (reader.getName().getLocalPart().equals("sentence")) {
-            inSentence = false;
+        if (reader.getName().getLocalPart().equals("document")) {
             try {
                 writer.write(sb.append("\n").toString());
             } catch (IOException e) {
                 throw new RuntimeException();
             }
             sb = new StringBuilder();
+        } else if (reader.getName().getLocalPart().equals("sentence")) {
+            inSentence = false;
         } else if (reader.getName().getLocalPart().equals("ENAMEX")) {
             inNamedEntity = false;
             entityType = null;

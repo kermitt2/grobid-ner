@@ -15,11 +15,11 @@ import java.util.List;
  */
 public class NERParserTest extends EngineMockTest {
 
-    NERParser target;
+    NERParsers target;
 
     @Before
     public void setUp() throws Exception {
-        target = new NERParser();
+        target = new NERParsers();
     }
 
     public File getResourceDir(String resourceDir) {
@@ -33,8 +33,8 @@ public class NERParserTest extends EngineMockTest {
     }
 
     @Test
-    public void testExtractNE() throws Exception {
-        String text = IOUtils.toString(this.getClass().getResourceAsStream("/test.txt"));
+    public void testExtractNE_en() throws Exception {
+        String text = IOUtils.toString(this.getClass().getResourceAsStream("/test.en.txt"));
         List<Entity> entities = target.extractNE(text);
 
         System.out.println("\n" + text);
@@ -49,11 +49,28 @@ public class NERParserTest extends EngineMockTest {
         System.out.println("\n");
     }
 
+    @Test
+    public void testExtractNE_fr() throws Exception {
+        String text = IOUtils.toString(this.getClass().getResourceAsStream("/test.fr.txt"));
+        List<Entity> entities = target.extractNE(text);
+
+        System.out.println("\n" + text);
+        if (entities != null) {
+            for (Entity entity : entities) {
+                System.out.print(text.substring(entity.getOffsetStart(), entity.getOffsetEnd()) + "\t");
+                System.out.println(entity.toString());
+            }
+        } else {
+            System.out.println("No entity found.");
+        }
+        System.out.println("\n");
+    }
 
     @Test
     public void testCreateTrainingTest_simpleParagraph() throws Exception {
-        String text = IOUtils.toString(this.getClass().getResourceAsStream("/test.txt"));
-        String test = target.createTrainingFromText(text, "bao");
+        String text = IOUtils.toString(this.getClass().getResourceAsStream("/test.en.txt"));
+        NERParser englishNER =  target.getParser("en");
+        String test = englishNER.createTrainingFromText(text);
 
         System.out.println("\n" + test);
     }

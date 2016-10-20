@@ -36,13 +36,14 @@ public class INRIALeMondeCorpusStaxHandlerTest {
         StaxUtils.traverse(reader, target);
 
         String output = writer.toString();
+      
         String splitted[] = output.split("\n");
 
         assertThat(splitted[0], is("-DOCSTART- id248980"));
         assertThat(splitted[1], is("zzbbzb\tO"));
         assertThat(splitted[2], is(",\tO"));
 
-        assertThat(splitted[50], is(""));
+        assertThat(splitted[51], is("zbb\tO"));
     }
 
     @Test

@@ -2,6 +2,8 @@ package org.grobid.trainer;
 
 import org.grobid.core.GrobidModels;
 import org.grobid.core.engines.NERParser;
+import org.grobid.core.engines.NEREnParser;
+import org.grobid.core.engines.NERParsers;
 import org.grobid.core.lexicon.NERLexicon;
 import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.exceptions.GrobidResourceException;
@@ -77,7 +79,7 @@ public class NEREvaluation {
 		StringBuffer report = new StringBuffer();
 		try {
 			GrobidFactory.getInstance();
-			NERParser parser = new NERParser();
+			NERParsers parsers = new NERParsers();
 			
 			File evalDataF = GrobidProperties.getInstance().getEvalCorpusPath(
 				new File(new File("resources").getAbsolutePath()), model);
@@ -97,21 +99,21 @@ public class NEREvaluation {
 					"Cannot start evaluation, because corpus resource path for CoNLL file " +
 					" is not correctly set : " + evalDataF.getPath() + "/eng.train");
 			}
-			report.append(evaluate_reutersSet(parser, evalTrain, tmpEvalPath));
+			report.append(evaluate_reutersSet(parsers, evalTrain, tmpEvalPath));
 			
 			if (!evalA.exists()) {
 				throw new GrobidException(
 					"Cannot start evaluation, because corpus resource path for CoNLL file " +
 					" is not correctly set : " + evalDataF.getPath() + "/eng.testa");
 			}
-			report.append(evaluate_reutersSet(parser, evalA, tmpEvalPath));
+			report.append(evaluate_reutersSet(parsers, evalA, tmpEvalPath));
 			
 			if (!evalB.exists()) {
 				throw new GrobidException(
 					"Cannot start evaluation, because corpus resource path for CoNLL file " +
 					" is not correctly set : " + evalDataF.getPath() + "/eng.testb");
 			}
-			report.append(evaluate_reutersSet(parser, evalB, tmpEvalPath));
+			report.append(evaluate_reutersSet(parsers, evalB, tmpEvalPath));
 		}	
 		catch (Exception e) {
             throw new GrobidException("An exception occured while running Grobid Reuters evaluation.", e);
@@ -122,11 +124,14 @@ public class NEREvaluation {
 		return report.toString();
 	}
 	
-	private String evaluate_reutersSet(NERParser parser, File evalSet, File tmpEvalPath) {
+	private String evaluate_reutersSet(NERParsers parsers, File evalSet, File tmpEvalPath) {
 		StringBuffer report = new StringBuffer();
 		BufferedReader bufReader = null;
 		Writer writer = null;
 		try {
+			NEREnParser parser = new NEREnParser();
+			if (parser == null)
+				throw new GrobidException("Instance of English NER not available.");
 			report.append("\n" + evalSet.getPath());
 			// the data need to be re-tokenized according to the Grobid NER tokenization level
 			createCRFPPDataCoNLL(evalSet, tmpEvalPath);			

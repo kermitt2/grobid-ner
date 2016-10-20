@@ -28,7 +28,7 @@ public class SenseTaggerTest extends EngineMockTest {
     @Test
     public void testSenseTagger() throws Exception {
         File textFile =
-                new File(this.getResourceDir("./src/test/resources/").getAbsoluteFile() + "/test.txt");
+                new File(this.getResourceDir("./src/test/resources/").getAbsoluteFile() + "/test.en.txt");
         if (!textFile.exists()) {
             throw new GrobidException("Cannot start test, because test resource folder is not correctly set.");
         }

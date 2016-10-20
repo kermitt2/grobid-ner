@@ -14,6 +14,22 @@ import java.util.List;
  *
  */
 public class Entity implements Comparable<Entity> {   
+
+	// Orign of the entity definition
+	public enum Origin {
+		GROBID	("grobid"),
+		USER	("user");
+		
+		private String name;
+
+		private Origin(String name) {
+          	this.name = name;
+		}
+
+		public String getName() {
+			return name;
+		}
+	};
 	
 	// name of the entity = entity type                   
 	private String rawName = null;
@@ -32,7 +48,7 @@ public class Entity implements Comparable<Entity> {
 	
 	// probability of the entity in context, if defined
 	private double prob = 1.0;
-	
+
 	// confidence score of the entity in context, if defined
 	private double conf = 0.8;
 	
@@ -43,9 +59,7 @@ public class Entity implements Comparable<Entity> {
 	private BoundingBox box = null;
 		
 	// orign of the entity definition
-	public static int GROBID = 0;
-	public static int USER = 1;
-	private int origin = 0;
+	private Origin origin = Origin.GROBID;
 	
     public Entity() {
 		this.offsets = new OffsetPosition();
@@ -160,11 +174,11 @@ public class Entity implements Comparable<Entity> {
 		this.sense = sense;
 	}
 	
-	public int getOrigin() {
+	public Origin getOrigin() {
 		return origin;
 	}
 	
-	public void setOrigin(int origin) {
+	public void setOrigin(Origin origin) {
 		this.origin = origin;
 	}
 	

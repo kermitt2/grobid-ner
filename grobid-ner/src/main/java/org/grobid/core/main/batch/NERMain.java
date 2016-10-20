@@ -1,6 +1,6 @@
 package org.grobid.core.main.batch;
 
-import org.grobid.core.engines.NERParser;
+import org.grobid.core.engines.NERParsers;
 import org.grobid.core.main.LibraryLoader;
 import org.grobid.core.mock.MockContext;
 import org.grobid.core.utilities.GrobidProperties;
@@ -25,7 +25,7 @@ public class NERMain {
     /**
      * Arguments of the batch.
      */
-    private static GrobidMainArgs gbdArgs;
+    private static GrobidNERMainArgs gbdArgs;
 
     /**
      * Build the path to grobid.properties from the path to grobid-home.
@@ -75,6 +75,7 @@ public class NERMain {
         help.append("-dOut: gives the path to the directory where the result files will be saved. The default output directory is the curent directory.\n");
         help.append("-s: is the parameter used for process using string as input and not file.\n");
         help.append("-r: recursive directory processing, default processing is not recursive.\n");
+        help.append("-l: language to be used, as ISO code (e.g. [en, fr]).\n");
         help.append("-exe: gives the command to execute. The value should be one of these:\n");
         help.append("\t" + availableCommands + "\n");
         return help.toString();
@@ -123,6 +124,13 @@ public class NERMain {
                     i++;
                     continue;
                 }
+                if (currArg.equals("-l")) {
+                    if (pArgs[i + 1] != null) {
+                        gbdArgs.setLang(pArgs[i + 1]);
+                    }
+                    i++;
+                    continue;
+                }
                 if (currArg.equals("-dOut")) {
                     if (pArgs[i + 1] != null) {
                         gbdArgs.setPath2Output(pArgs[i + 1]);
@@ -152,7 +160,7 @@ public class NERMain {
     }
 
     public static void main(final String[] args) throws Exception {
-        gbdArgs = new GrobidMainArgs();
+        gbdArgs = new GrobidNERMainArgs();
 
         if (processArgs(args) && (gbdArgs.getProcessMethodName() != null)) {
             inferParamsNotSet();
@@ -162,8 +170,8 @@ public class NERMain {
             long time = System.currentTimeMillis();
 
             if (gbdArgs.getProcessMethodName().equals(COMMAND_CREATE_TRAINING_NER)) {
-                NERParser nerParser = new NERParser();
-                nb = nerParser.createTrainingBatch(gbdArgs.getPath2Input(), gbdArgs.getPath2Output());
+                NERParsers nerParsers = new NERParsers();
+                nb = nerParsers.createTrainingBatch(gbdArgs.getPath2Input(), gbdArgs.getPath2Output(), gbdArgs.getLang());
             } else if (gbdArgs.getProcessMethodName().equals(COMMAND_CREATE_TRAINING_SENSE)) {
                 throw new RuntimeException("Not yet implemented. ");
             }
