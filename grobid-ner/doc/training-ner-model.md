@@ -2,6 +2,8 @@
 
 ## Datasets
   
+### English
+
 grobid-ner project includes the following dataset:
 
 - manually annotated extract of the *Wikipedia article on World War 1* (approximately 10k words, 26 classes). This data, as the whole Wikipedia content, is available under the licence [Creative Commons Attribution-ShareAlike License](https://creativecommons.org/licenses/by-sa/3.0/). 
@@ -14,13 +16,14 @@ In addition to these datasets, the CRF models shipped with Grobid NER has been a
 
  - A large set of Wikipedia articles automatically annotated by Idilia. This data can be downloaded from [IDILIA download page](http://download.idilia.com/datasets/wikipedia/index.html). We use a part of this dataset in a semi-supervised training step as a complement to the supervised training based on the manually annotated corpus.
 
+### French
 
-## Training NER Model
+It is possible to train grobid-ner with _Le Monde corpus_, a specific XML parser is included.
+
+## Training NER Models
 
 ### Training data
 Since the training data are not freely available, it is necessarily to assembly them beforehand.
-
-TBD
 
 
 ### Train the NER model 
@@ -38,9 +41,17 @@ To start the training:
 mvn generate-resources -Ptrain_ner
 ```
 
-The process is pretty heavy and it will require several days, depending on the hardware available.  
+Due to the semi-supervised training, the process is pretty heavy and it will require several days, depending on the hardware available.  
+
+The French NER can be trained as follow:
+
+> mvn generate-resources -Ptrain_nerfr
 
 
 ### Train the Sense model 
 
-TBD
+To start the training: 
+
+```
+mvn generate-resources -Ptrain_nersense
+```
