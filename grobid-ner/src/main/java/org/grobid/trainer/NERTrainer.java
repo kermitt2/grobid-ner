@@ -45,6 +45,10 @@ public class NERTrainer extends AbstractTrainer {
     public NERTrainer() {
         super(GrobidModels.ENTITIES_NER);
 
+        // adjusting CRF training parameters for this model
+		epsilon = 0.000001;
+		window = 20;
+
 		// read additional properties for this sub-project to get the paths to the resources
 		Properties prop = new Properties();
 		InputStream input = null;
@@ -688,19 +692,6 @@ System.out.println(fileName);
         }
     }
 
-	/**
-	 *  Standard evaluation via the the usual Grobid evaluation framework.
-	 */
-	public String evaluate() {
-		File evalDataF = GrobidProperties.getInstance().getEvalCorpusPath(
-			new File(new File("resources").getAbsolutePath()), model);
-		
-		File tmpEvalPath = getTempEvaluationDataPath();		
-		createCRFPPData(evalDataF, tmpEvalPath);
-
-        return EvaluationUtilities.evaluateStandard(tmpEvalPath.getAbsolutePath(), getTagger());
-	}
-
     /**
      * Command line execution.
      *
@@ -717,7 +708,7 @@ System.out.println(fileName);
 	        NERTrainer trainer = new NERTrainer();
 	
 	        AbstractTrainer.runTraining(trainer);
-	        //AbstractTrainer.runEvaluation(trainer);
+	        AbstractTrainer.runEvaluation(trainer);
 		}
 		catch (Exception e) {
 		    e.printStackTrace();

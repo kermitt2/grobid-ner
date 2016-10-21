@@ -151,9 +151,7 @@ public class NERParserCommon {
                             currentEntity.setOffsetStart(offset);
                         currentEntity.setOffsetEnd(offset + addedOffset);
                     }
-                }
-                //else if (label.startsWith("I-")) {
-                else if (!label.equals("O") && !label.equals("other")) {
+                } else if (!label.equals("O") && !label.equals("other")) {
                     if (label.length() > 1) {
                         //String subtag = label.substring(2,label.length()).toLowerCase();
                         String subtag = label.toLowerCase();

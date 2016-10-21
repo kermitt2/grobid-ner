@@ -47,6 +47,17 @@ The French NER can be trained as follow:
 
 > mvn generate-resources -Ptrain_nerfr
 
+### Train and evaluation of the NER model 
+
+The following commands will split automatically and randomly the available annotated data into a training set and an evaluation set, train a model based on the first set and launch an evaluation based on the second set. 
+
+For the English NER model:
+> mvn compile exec:exec -Ptrain_eval_ner
+
+For the French NER model:
+> mvn compile exec:exec -Ptrain_eval_nerfr
+
+In this mode, by default, 80% of the available data is used for training and the remaining for evaluation. This ratio can be changed by editing the corresponding exec profile in the pom.xml file. 
 
 ### Train the Sense model 
 

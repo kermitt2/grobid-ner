@@ -43,6 +43,11 @@ public class NERFrenchTrainer extends AbstractTrainer {
     public NERFrenchTrainer() {
         super(GrobidModels.ENTITIES_NERFR);
 
+        // adjusting CRF training parameters for this model
+		epsilon = 0.000001;
+		window = 20;
+		nbMaxIterations = 1000;
+
 		// read additional properties for this sub-project to get the paths to the resources
 		Properties prop = new Properties();
 		InputStream input = null;
@@ -452,25 +457,12 @@ public class NERFrenchTrainer extends AbstractTrainer {
         }
     }
 
-	/**
-	 *  Standard evaluation via the the usual Grobid evaluation framework.
-	 */
-	public String evaluate() {
-		File evalDataF = GrobidProperties.getInstance().getEvalCorpusPath(
-			new File(new File("resources").getAbsolutePath()), model);
-		
-		File tmpEvalPath = getTempEvaluationDataPath();		
-		createCRFPPData(evalDataF, tmpEvalPath);
-
-        return EvaluationUtilities.evaluateStandard(tmpEvalPath.getAbsolutePath(), getTagger());
-	}
-
     /**
      * Command line execution.
      *
      * @param args Command line arguments.
      */
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
 		try {
 			String pGrobidHome = "../grobid-home";
 			String pGrobidProperties = "../grobid-home/config/grobid.properties";
@@ -481,7 +473,7 @@ public class NERFrenchTrainer extends AbstractTrainer {
 	        NERFrenchTrainer trainer = new NERFrenchTrainer();
 	
 	        AbstractTrainer.runTraining(trainer);
-	        //AbstractTrainer.runEvaluation(trainer);
+	        AbstractTrainer.runEvaluation(trainer);
 		}
 		catch (Exception e) {
 		    e.printStackTrace();
@@ -494,5 +486,19 @@ public class NERFrenchTrainer extends AbstractTrainer {
 				e.printStackTrace();
 			}
 		}
+    }*/
+
+    /**
+     * Command line execution.
+     *
+     * @param args Command line arguments.
+     * @throws Exception
+     */
+    public static void main(String[] args) throws Exception {
+        MockContext.setInitialContext();
+        GrobidProperties.getInstance();
+        AbstractTrainer.runTraining(new NERFrenchTrainer());
+        AbstractTrainer.runEvaluation(new NERFrenchTrainer());
+        MockContext.destroyInitialContext();
     }
 }
