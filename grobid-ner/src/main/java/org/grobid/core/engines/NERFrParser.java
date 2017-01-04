@@ -1,26 +1,16 @@
 package org.grobid.core.engines;
 
-import org.apache.commons.io.FileUtils;
 import org.grobid.core.GrobidModels;
+import org.grobid.core.analyzers.GrobidAnalyzer;
 import org.grobid.core.data.Entity;
-import org.grobid.core.data.Sense;
-import org.grobid.core.exceptions.GrobidResourceException;
 import org.grobid.core.engines.tagging.GenericTaggerUtils;
-import org.grobid.core.exceptions.GrobidException;
-import org.grobid.core.features.FeaturesVectorNER;
+import org.grobid.core.lang.Language;
 import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.lexicon.LexiconPositionsIndexes;
-import org.grobid.core.lang.Language;
-import org.grobid.core.analyzers.GrobidAnalyzer;
 import org.grobid.core.utilities.Pair;
-import org.grobid.core.utilities.LanguageUtilities;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.File;
-import java.io.FilenameFilter;
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 import static org.apache.commons.lang3.StringUtils.isEmpty;
@@ -48,13 +38,13 @@ public class NERFrParser extends AbstractParser implements NERParser {
     public List<Entity> extractNE(String text) {
         List<String> tokens = null;
         try {
-            tokens = GrobidAnalyzer.getInstance().tokenize(new Language(LANG_ID, 1.0), text);
-        } catch(Exception e) {
+            tokens = GrobidAnalyzer.getInstance().tokenize(text, new Language(LANG_ID, 1.0));
+        } catch (Exception e) {
             LOGGER.error("Tokenization failed", e);
         }
         if (tokens == null)
             return null;
-        
+
         LexiconPositionsIndexes positionsIndexes = new LexiconPositionsIndexes(lexicon);
         positionsIndexes.computeIndexes(text);
 
@@ -75,8 +65,8 @@ public class NERFrParser extends AbstractParser implements NERParser {
 
         List<String> tokens = null;
         try {
-            tokens = GrobidAnalyzer.getInstance().tokenize(new Language(LANG_ID, 1.0), text);
-        } catch(Exception e) {
+            tokens = GrobidAnalyzer.getInstance().tokenize(text, new Language(LANG_ID, 1.0));
+        } catch (Exception e) {
             LOGGER.error("Tokenization failed", e);
         }
         LexiconPositionsIndexes positionsIndexes = new LexiconPositionsIndexes(lexicon);

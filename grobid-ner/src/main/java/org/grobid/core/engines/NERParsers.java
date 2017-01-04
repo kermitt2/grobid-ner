@@ -74,10 +74,10 @@ public class NERParsers {
             return extractNE(text);
         }
 
-        NERParser parser = parsers.get(lang.getLangId());
+        NERParser parser = parsers.get(lang.getLang());
         if (parser == null) {
             throw new GrobidResourceException("The automatically identified labnguage is currently not supported by grobid-ner: " + 
-                lang.getLangId());
+                lang.getLang());
         }
 
         return parser.extractNE(text);
