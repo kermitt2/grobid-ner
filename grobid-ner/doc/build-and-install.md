@@ -48,13 +48,12 @@ Or download directly the zip file:
 ```
 
 GROBID NER is actually a sub-project of GROBID. 
-Although GROBID NER might be merged with GROBID in the future, at this point the GROBID NER sub-module simply need to added manually. 
-In the main directory of GROBID NER:
+Although GROBID NER might be merged with GROBID in the future, at this point the GROBID NER sub-module simply needs to be added manually to the main directory of GROBID: 
 
 ```bash
 > cp -r grobid-ner /path/to/grobid/
 
-> cp -r grobid-home/models/* /path/to/grobid/grobid-home/
+> cp -r grobid-home/models/* /path/to/grobid/grobid-home/models/
 ```
 
 Then build the GROBID NER subproject:
