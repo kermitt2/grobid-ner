@@ -129,7 +129,7 @@ public class INRIALeMondeCorpusStaxHandler implements StaxParserContentHandler {
 
 			List<String> tokens = null;
 			try {
-				tokens = analyzer.tokenize(new Language(Language.FR, 1.0), text);
+				tokens = analyzer.tokenize(text, new Language(Language.FR, 1.0));
 			} catch(Exception e) {
 				LOGGER.error("Tokenization failed", e);
 			}
