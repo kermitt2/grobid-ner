@@ -3,10 +3,12 @@ package org.grobid.trainer.stax;
 import com.ctc.wstx.stax.WstxInputFactory;
 import org.apache.commons.lang3.StringUtils;
 import org.codehaus.stax2.XMLStreamReader2;
-import org.grobid.core.lexicon.NERLexicon;
 import org.grobid.core.analyzers.GrobidAnalyzer;
 import org.grobid.core.lang.Language;
-	
+import org.grobid.core.lexicon.NERLexicon;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLEventWriter;
 import javax.xml.stream.XMLStreamException;
@@ -14,16 +16,13 @@ import javax.xml.stream.events.XMLEvent;
 import java.io.*;
 import java.util.List;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import static org.apache.commons.lang3.StringUtils.*;
 
 /**
  * Created by lfoppiano on 29/08/16.
  */
 public class INRIALeMondeCorpusStaxHandler implements StaxParserContentHandler {
-	private static Logger LOGGER = LoggerFactory.getLogger(INRIALeMondeCorpusStaxHandler.class);
+    private static Logger LOGGER = LoggerFactory.getLogger(INRIALeMondeCorpusStaxHandler.class);
 
     private Writer writer;
     private StringBuilder sb;
@@ -41,7 +40,7 @@ public class INRIALeMondeCorpusStaxHandler implements StaxParserContentHandler {
     private String comment = null;
     private String gender = null;
 
-	private GrobidAnalyzer analyzer = GrobidAnalyzer.getInstance();
+    private GrobidAnalyzer analyzer = GrobidAnalyzer.getInstance();
 
     public INRIALeMondeCorpusStaxHandler() {
         this.sb = new StringBuilder();
