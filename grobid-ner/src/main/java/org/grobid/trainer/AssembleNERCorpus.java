@@ -1,6 +1,7 @@
 package org.grobid.trainer;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.IOUtils;
 import org.grobid.core.engines.NEREnParser;
 import org.grobid.core.engines.SenseTagger;
 import org.grobid.core.engines.tagging.GenericTaggerUtils;
@@ -10,8 +11,10 @@ import org.grobid.core.features.FeaturesVectorNER;
 import org.grobid.core.features.FeaturesVectorNERSense;
 import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.main.LibraryLoader;
-import org.grobid.core.mock.MockContext;
-import org.grobid.core.utilities.*;
+import org.grobid.core.utilities.GrobidProperties;
+import org.grobid.core.utilities.OffsetPosition;
+import org.grobid.core.utilities.Pair;
+import org.grobid.core.utilities.TextUtilities;
 import org.grobid.trainer.sax.ReutersSaxHandler;
 import org.grobid.trainer.sax.SemDocSaxHandler;
 import org.grobid.trainer.sax.TextSaxHandler;
@@ -84,7 +87,7 @@ public class AssembleNERCorpus {
      */
     public void assembleCoNLL() {
         String reutersSelectionPath = "resources/dataset/ner/corpus/reuters.txt";
-		NEREnParser parserNER = null;
+        NEREnParser parserNER = null;
         SenseTagger parserSense = null;
         String pGrobidHome = "../grobid-home";
         String pGrobidProperties = "../grobid-home/config/grobid.properties";
@@ -590,14 +593,10 @@ public class AssembleNERCorpus {
     /**
      * Launch the creation of training files based on a selection of Wikipedia articles.
      */
-    public void assembleWikipedia() {
+    public void assembleWikipedia(String outputDirectory) {
         String wikipediaSelectionPath = "resources/dataset/ner/corpus/wikipedia.txt";
         Writer writer = null;
         try {
-            // for the output
-            writer = new OutputStreamWriter(
-                    new FileOutputStream("resources/dataset/ner/corpus/wikipedia.ner26.train.work"), "UTF8");
-
             BufferedReader br = new BufferedReader(new InputStreamReader(
                     new DataInputStream(new FileInputStream(wikipediaSelectionPath))));
             String line = null;
@@ -606,12 +605,18 @@ public class AssembleNERCorpus {
                 if (isBlank(line) || line.startsWith("#")) {
                     continue;
                 }
+                System.out.println("Processing " + line);
+
                 String fullWikipediaPath = idiliaPath + "/wikipedia/" + line;
                 File semdocFile = new File(fullWikipediaPath);
                 if (!semdocFile.exists()) {
                     throw new GrobidException("Cannot start training, because corpus resource folder for semdoc file " +
                             " is not correctly set : " + semdocFile);
                 }
+
+                // for the output
+                writer = new OutputStreamWriter(
+                        new FileOutputStream(outputDirectory + File.separator + semdocFile.getName() + ".out"), "UTF8");
 
                 // to get a text vector representation first
                 TextSaxHandler textSax = new TextSaxHandler();
@@ -723,37 +728,7 @@ public class AssembleNERCorpus {
         } catch (Exception e) {
             throw new GrobidResourceException(e);
         } finally {
-            try {
-                writer.close();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+            IOUtils.closeQuietly(writer);
         }
     }
-
-
-    /**
-     * Command line execution.
-     *
-     * @param args Command line arguments.
-     */
-    public static void main(String[] args) {
-        try {
-            GrobidHome.findGrobidHome();
-            MockContext.setInitialContext();
-
-            AssembleNERCorpus assembler = new AssembleNERCorpus();
-            //assembler.assembleCoNLL();
-            assembler.assembleWikipedia();
-        } catch (Exception e) {
-
-        } finally {
-            try {
-                MockContext.destroyInitialContext();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
 }
