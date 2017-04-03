@@ -63,9 +63,9 @@ In this mode, by default, 80% of the available data is used for training and the
 
 To start the training: 
 
-```
-mvn generate-resources -Ptrain_nersense
-```
+
+> mvn generate-resources -Ptrain_nersense
+
 
 ## Generate training data
 
@@ -76,10 +76,12 @@ The training data generated from this corpus is quite handy because some annotat
 1. Download the data from [IDILIA download page](http://download.idilia.com/datasets/wikipedia/index.html) and unzip it on the hard drive
 2. Configure the path to this resource in the `grobid-nerd.properties`, in particular the entry `grobid.ner.reuters.idilia_path`. 
 3. Edit the file `resources/dataset/ner/corpus/wikipedia.txt` and add the wikipedia pages to be processed
-4. Build the project :
+4. Build the project:
+
 > mvn clean package
 
 5. Run the process: 
+
 > java -jar target/grobid-ner-<version>.one-jar.jar -dOut /my/output/directory -exe createTrainingIDILLIA
 
 6. The generated files will be located in `/my/output/directory/{inputFileName}.out'. Review the output and eventually correct missing / wrong labels.
@@ -89,4 +91,5 @@ The training data generated from this corpus is quite handy because some annotat
 The training data generation from text file is annotating the files and output them in CONLL format. The process requires an input and output directories.
 
 To generate the data: 
+
 > java -jar target/grobid-ner-<version>.one-jar.jar -dOut /my/output/directory -dIn /my/input/directory  -exe createTrainingNER
