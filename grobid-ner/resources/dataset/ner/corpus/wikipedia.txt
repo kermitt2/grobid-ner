@@ -1,6 +1,6 @@
-#32/20/World_War_I.semdoc.xml
-#79/11/World_War_II.semdoc.xml
-46/28/British_Hero_of_the_Holocaust.semdoc.xml
-95/11/Cambodian–Vietnamese_War.semdoc.xml
-54/71/America_in_Vietnam.semdoc.xml
+32/20/World_War_I.semdoc.xml
+79/11/World_War_II.semdoc.xml
+#46/28/British_Hero_of_the_Holocaust.semdoc.xml
+#95/11/Cambodian–Vietnamese_War.semdoc.xml
+#54/71/America_in_Vietnam.semdoc.xml
 
