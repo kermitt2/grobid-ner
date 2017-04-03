@@ -9,7 +9,7 @@ The following table describes the 26 named entity classes produced by the model.
 | Class name |  Description | Examples | 
 | ------------ | ----------- | ---------- | ------ |
 | PERSON | first, middle, last names and aliases of people and fictional characters | _John Smith_ | 
-| PERSON_TYPE | person type or role classified according to group membership | _African-American_, _Asian_ |
+| PERSON_TYPE | person type or role classified according to group membership | _African-American_, _Asian_, _Conservative_, _Liberal_ |
 | TITLE | personal title or honorific | _Mr._, _Dr._, _General_ |
 | LOCATION | physical location | _Los Angeles_, _Northern Madagascar_, _Southern Thailand_, _Channel Islands_ |
 | ORGANISATION | organized group of people | _Alcoholics Anonymous_ | 
