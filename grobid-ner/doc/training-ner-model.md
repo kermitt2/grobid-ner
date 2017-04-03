@@ -37,25 +37,31 @@ The required files are:
 
 To start the training: 
 
-```
-mvn generate-resources -Ptrain_ner
+```bash
+> mvn generate-resources -Ptrain_ner
 ```
 
 Due to the semi-supervised training, the process is pretty heavy and it will require several days, depending on the hardware available.  
 
 The French NER can be trained as follow:
 
+```bash
 > mvn generate-resources -Ptrain_nerfr
+```
 
 ### Train and evaluation of the NER model 
 
 The following commands will split automatically and randomly the available annotated data into a training set and an evaluation set, train a model based on the first set and launch an evaluation based on the second set. 
 
 For the English NER model:
+```bash
 > mvn compile exec:exec -Ptrain_eval_ner
+```
 
 For the French NER model:
+```bash
 > mvn compile exec:exec -Ptrain_eval_nerfr
+```
 
 In this mode, by default, 80% of the available data is used for training and the remaining for evaluation. This ratio can be changed by editing the corresponding exec profile in the pom.xml file. 
 
@@ -63,9 +69,9 @@ In this mode, by default, 80% of the available data is used for training and the
 
 To start the training: 
 
-
+```bash
 > mvn generate-resources -Ptrain_nersense
-
+```
 
 ## Generate training data
 
@@ -78,11 +84,15 @@ The training data generated from this corpus is quite handy because some annotat
 3. Edit the file `resources/dataset/ner/corpus/wikipedia.txt` and add the wikipedia pages to be processed
 4. Build the project:
 
+```bash
 > mvn clean package
+```
 
 5. Run the process: 
 
+```bash
 > java -jar target/grobid-ner-<version>.one-jar.jar -dOut /my/output/directory -exe createTrainingIDILLIA
+```
 
 6. The generated files will be located in `/my/output/directory/{inputFileName}.out'. Review the output and eventually correct missing / wrong labels.
 
@@ -92,4 +102,6 @@ The training data generation from text file is annotating the files and output t
 
 To generate the data: 
 
+```bash
 > java -jar target/grobid-ner-<version>.one-jar.jar -dOut /my/output/directory -dIn /my/input/directory  -exe createTrainingNER
+```
