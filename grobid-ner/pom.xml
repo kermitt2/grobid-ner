@@ -52,12 +52,6 @@
 			<version>0.4.2-SNAPSHOT</version>
 		</dependency>
 
-		<!--dependency>
-			<groupId>org.chasen</groupId>
-			<artifactId>crfpp</artifactId>
-			<version>1.0.2</version>
-		</dependency-->
-
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -133,6 +127,13 @@
             <artifactId>woodstox-core-asl</artifactId>
             <version>4.4.0</version>
         </dependency>
+        
+        <!-- TBD: update to the latest NLP4J! -->
+		<dependency>
+		    <groupId>com.googlecode.clearnlp</groupId>
+		    <artifactId>clearnlp</artifactId>
+		    <version>1.3.1</version>
+		</dependency>
 
     </dependencies>
 

@@ -55,7 +55,7 @@ public class NERFrParser extends AbstractParser implements NERParser {
         return entities;
     }
 
-    public String createTrainingFromText(String text) {
+    public String createCONNLTrainingFromText(String text) {
         if (isEmpty(text))
             return null;
 

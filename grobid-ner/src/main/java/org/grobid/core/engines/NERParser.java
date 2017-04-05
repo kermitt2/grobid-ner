@@ -13,7 +13,9 @@ public interface NERParser {
 
 	List<Entity> extractNE(String text);
 
-	String createTrainingFromText(String text);
+	String createCONNLTrainingFromText(String text);
+
+	//String createXMLTrainingFromText(String text, StringBuilder sb);
 
 	String label(String text);
 }

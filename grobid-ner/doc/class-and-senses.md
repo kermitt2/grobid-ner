@@ -1,4 +1,4 @@
-GROBID NER identifies named-entities and classifies them in 26 classes, as compared to the 4-classes or 7-classes model of most of the existing NER open source tools (usually using the Reuters/CoNLL 2003 annotated corpus, or the MUC annotated corpus). 
+GROBID NER identifies named-entities and classifies them in 27 classes, as compared to the 4-classes or 7-classes model of most of the existing NER open source tools (usually using the Reuters/CoNLL 2003 annotated corpus, or the MUC annotated corpus). 
 
 In addition the entities are often enriched with WordNet sense annotations to help further disambiguation and resolution of the entity. GROBID NER has been developed for the purposed of disambiguating and resolving entities against knowledge bases such as Wikipedia and FreeBase. Sense information can help to disambiguate the entity, because they refine based on contextual clues the entity class.
 
@@ -33,7 +33,7 @@ The following table describes the 27 named entity classes produced by the model.
 | INSTALLATION | structure built by humans | _Strasbourg Cathedral_, _Sforza Castle_ |
 | CONCEPT | abstract concept not included in another class | _English_ (as language) |
 | CONCEPTUAL | entity relating to a concept | _Greek_ myths, _European Union membership_ |
-| LEGAL | legal entities | _European Patent Convention_  |
+| LEGAL | legal mentions such as article of law, convention, cases, treaty. etc. | _European Patent Convention_,  _Article 52 (2) (c) and (3)_, _Roe v. Wade, 410 U.S. 113 (1973)_  |
 | UNKNOWN | entity not belonging to any previous classes|  |
 					
 ## Conventions

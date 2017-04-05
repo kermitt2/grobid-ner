@@ -23,7 +23,7 @@ public class NERMain {
     private static List<String> availableCommands = Arrays.asList(
             COMMAND_CREATE_TRAINING_NER,
             COMMAND_CREATE_TRAINING_SENSE,
-            COMMAND_CREATE_TRAINING_IDILLIA
+            COMMAND_CREATE_TRAINING_IDILIA
     );
 
     /**
