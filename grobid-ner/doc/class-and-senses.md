@@ -4,7 +4,7 @@ In addition the entities are often enriched with WordNet sense annotations to he
 
 ## Named entity classes
 
-The following table describes the 26 named entity classes produced by the model. 
+The following table describes the 27 named entity classes produced by the model. 
 
 | Class name |  Description | Examples | 
 | ------------ | ----------- | ---------- | ------ |
@@ -33,6 +33,7 @@ The following table describes the 26 named entity classes produced by the model.
 | INSTALLATION | structure built by humans | _Strasbourg Cathedral_, _Sforza Castle_ |
 | CONCEPT | abstract concept not included in another class | _English_ (as language) |
 | CONCEPTUAL | entity relating to a concept | _Greek_ myths, _European Union membership_ |
+| LEGAL | legal entities | _European Patent Convention_  |
 | UNKNOWN | entity not belonging to any previous classes|  |
 					
 ## Conventions

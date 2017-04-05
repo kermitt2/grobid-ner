@@ -1,7 +1,7 @@
 The	O
-United	B-LOCATION
-Kingdom	LOCATION
-European	B-EVENT
+United	B-EVENT
+Kingdom	EVENT
+European	EVENT
 Union	EVENT
 membership	EVENT
 referendum	EVENT
