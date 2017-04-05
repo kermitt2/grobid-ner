@@ -13,3 +13,4 @@ pages:
 - ['class-and-senses.md', 'User Manual', 'Class and Senses']
 - ['annotation-guidelines.md', 'User Manual', 'Annotation Guidelines']
 - ['training-ner-model.md', 'User Manual', 'Datasets and training']
+- ['generate-training-data.md', 'User Manual', 'Generate training data']
