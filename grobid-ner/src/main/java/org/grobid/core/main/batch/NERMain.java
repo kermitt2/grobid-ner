@@ -18,7 +18,7 @@ public class NERMain {
 
     private static final String COMMAND_CREATE_TRAINING_NER = "createTrainingNER";
     private static final String COMMAND_CREATE_TRAINING_SENSE = "createTrainingSense";
-    private static final String COMMAND_CREATE_TRAINING_IDILLIA = "createTrainingIDILLIA";
+    private static final String COMMAND_CREATE_TRAINING_IDILIA = "createTrainingIDILIA";
 
     private static List<String> availableCommands = Arrays.asList(
             COMMAND_CREATE_TRAINING_NER,
@@ -177,7 +177,7 @@ public class NERMain {
             } else if (gbdArgs.getProcessMethodName().equals(COMMAND_CREATE_TRAINING_SENSE)) {
                 throw new RuntimeException("Not yet implemented. ");
 
-            } else if (gbdArgs.getProcessMethodName().equals(COMMAND_CREATE_TRAINING_IDILLIA)) {
+            } else if (gbdArgs.getProcessMethodName().equals(COMMAND_CREATE_TRAINING_IDILIA)) {
                 new AssembleNERCorpus().assembleWikipedia(gbdArgs.getPath2Output());
                 LOGGER.info(nb + " files processed in " + (System.currentTimeMillis() - time) + " milliseconds");
             } else {
