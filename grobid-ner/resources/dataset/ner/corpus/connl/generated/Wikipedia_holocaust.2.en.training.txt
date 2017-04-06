@@ -1,6 +1,3 @@
-[	O
-68	O
-]	O
 Legal	O
 repression	O
 and	O
