@@ -1,9 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- Re-annotated by Elias (INRIA Office C311)
 Note : 
 - Archive can be pointed to an INSTITUTION label (name of a government office) or a ARTIFACT label (name of a database)
 - Period history written "the [first|second|third|current] period" in this document has labaled PERIOD
 -->
-<?xml version="1.0" encoding="UTF-8"?>
 <corpus>
 	<subcorpus>
 		<document name="EHRI_institutions_lt-002880.en">
