@@ -27,6 +27,8 @@ Annotated data will be always welcomed, if you like to contribute, you can conta
 
 * [Annotation guidelines](annotation-guidelines.md)
 
+* [Annotation examples](annotation-examples.md)
+
 * [Training NER models](training-ner-model.md)
 
 * [Generate training data](generate-training-data.md)
