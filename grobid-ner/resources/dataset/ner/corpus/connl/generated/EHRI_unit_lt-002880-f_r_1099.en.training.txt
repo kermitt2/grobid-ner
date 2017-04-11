@@ -54,12 +54,12 @@ of	O
 the	O
 staff	O
 ,	O
-chiefs	O
+chiefs	B-TITLE
 ,	O
-mayors	O
+mayors	B-TITLE
 and	O
 their	O
-assistants	O
+assistants	B-TITLE
 ,	O
 men	O
 who	O
@@ -70,22 +70,20 @@ in	O
 -	PERIOD
 1924	PERIOD
 ,	O
-war	O
-prisoners	O
+war	B-TITLE
+prisoners	TITLE
 ,	O
-war	O
-refugees	O
+war	B-TITLE
+refugees	TITLE
 from	O
 Russia	B-LOCATION
 ,	O
 people	O
 repatriated	O
 from	O
-# check if we should include area in the annotation
 Suvalkų	B-LOCATION
 area	O
 and	O
-# the whole or only the specific name?
 Pakruojis	B-LOCATION
 local	LOCATION
 rural	LOCATION
@@ -127,7 +125,6 @@ etc	O
 instructions	O
 for	O
 the	O
-# check if should be annotated
 auxiliary	B-ORGANISATION
 police	ORGANISATION
 ,	O

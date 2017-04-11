@@ -1,7 +1,3 @@
-P	O
-.	O
-37	O
--	O
 Archive	O
 of	O
 Benjamin	B-PERSON
