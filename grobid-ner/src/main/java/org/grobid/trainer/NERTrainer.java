@@ -685,6 +685,7 @@ System.out.println(fileName);
 				isLocationToken = false;
 				isPersonTitleToken = false;
 				isOrganisationToken = false;
+				isOrgFormToken = false;
             }
         } 
 		catch (Exception e) {
