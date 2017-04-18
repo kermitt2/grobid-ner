@@ -3,7 +3,9 @@ package org.grobid.core.main.batch;
 import org.grobid.core.engines.NERParsers;
 import org.grobid.core.main.LibraryLoader;
 import org.grobid.core.mock.MockContext;
+import org.grobid.core.utilities.GrobidHome;
 import org.grobid.core.utilities.GrobidProperties;
+import org.grobid.trainer.AssembleNERCorpus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,10 +18,12 @@ public class NERMain {
 
     private static final String COMMAND_CREATE_TRAINING_NER = "createTrainingNER";
     private static final String COMMAND_CREATE_TRAINING_SENSE = "createTrainingSense";
+    private static final String COMMAND_CREATE_TRAINING_IDILIA = "createTrainingIDILIA";
 
     private static List<String> availableCommands = Arrays.asList(
             COMMAND_CREATE_TRAINING_NER,
-            COMMAND_CREATE_TRAINING_SENSE
+            COMMAND_CREATE_TRAINING_SENSE,
+            COMMAND_CREATE_TRAINING_IDILIA
     );
 
     /**
@@ -50,12 +54,9 @@ public class NERMain {
         }
     }
 
-    /**
-     * Initialize the batch.
-     */
     protected static void initProcess() {
         try {
-            MockContext.setInitialContext(gbdArgs.getPath2grobidHome(), gbdArgs.getPath2grobidProperty());
+            GrobidHome.findGrobidHome();
             LibraryLoader.load();
         } catch (final Exception exp) {
             System.err.println("Grobid initialisation failed: " + exp);
@@ -172,12 +173,17 @@ public class NERMain {
             if (gbdArgs.getProcessMethodName().equals(COMMAND_CREATE_TRAINING_NER)) {
                 NERParsers nerParsers = new NERParsers();
                 nb = nerParsers.createTrainingBatch(gbdArgs.getPath2Input(), gbdArgs.getPath2Output(), gbdArgs.getLang());
+                LOGGER.info(nb + " files processed in " + (System.currentTimeMillis() - time) + " milliseconds");
             } else if (gbdArgs.getProcessMethodName().equals(COMMAND_CREATE_TRAINING_SENSE)) {
                 throw new RuntimeException("Not yet implemented. ");
+
+            } else if (gbdArgs.getProcessMethodName().equals(COMMAND_CREATE_TRAINING_IDILIA)) {
+                new AssembleNERCorpus().assembleWikipedia(gbdArgs.getPath2Output());
+                LOGGER.info(nb + " files processed in " + (System.currentTimeMillis() - time) + " milliseconds");
+            } else {
+                System.out.println("No command supplied.");
+                System.out.println(getHelp());
             }
-            LOGGER.info(nb + " files processed in " + (System.currentTimeMillis() - time) + " milliseconds");
         }
-
     }
-
 }

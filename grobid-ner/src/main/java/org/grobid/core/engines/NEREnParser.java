@@ -1,26 +1,19 @@
 package org.grobid.core.engines;
 
-import org.apache.commons.io.FileUtils;
 import org.grobid.core.GrobidModels;
+import org.grobid.core.analyzers.GrobidAnalyzer;
 import org.grobid.core.data.Entity;
 import org.grobid.core.data.Sense;
-import org.grobid.core.exceptions.GrobidResourceException;
 import org.grobid.core.engines.tagging.GenericTaggerUtils;
-import org.grobid.core.exceptions.GrobidException;
-import org.grobid.core.features.FeaturesVectorNER;
+import org.grobid.core.lang.Language;
 import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.lexicon.LexiconPositionsIndexes;
-import org.grobid.core.lang.Language;
-import org.grobid.core.analyzers.GrobidAnalyzer;
 import org.grobid.core.utilities.Pair;
-import org.grobid.core.utilities.LanguageUtilities;
+import org.grobid.core.utilities.OffsetPosition;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.File;
-import java.io.FilenameFilter;
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 import static org.apache.commons.lang3.StringUtils.isEmpty;
@@ -33,8 +26,6 @@ import static org.apache.commons.lang3.StringUtils.isEmpty;
 public class NEREnParser extends AbstractParser implements NERParser {
 
     private static Logger LOGGER = LoggerFactory.getLogger(NEREnParser.class);
-
-    public static String LANG_ID = "en";
 
     protected Lexicon lexicon = Lexicon.getInstance();
     protected SenseTagger senseTagger = null;
@@ -50,9 +41,9 @@ public class NEREnParser extends AbstractParser implements NERParser {
     public List<Entity> extractNE(String text) {
         List<String> tokens = null;
         try {
-            tokens = GrobidAnalyzer.getInstance().tokenize(text, new Language(LANG_ID, 1.0));
+            tokens = GrobidAnalyzer.getInstance().tokenize(text, new Language(Language.EN, 1.0));
         } catch(Exception e) {
-            LOGGER.error("Tokenization failed", e);
+            LOGGER.error("Tokenization failed. ", e);
         }
         if (tokens == null)
             return null;
@@ -74,7 +65,7 @@ public class NEREnParser extends AbstractParser implements NERParser {
         return entities;
     }
 
-    public String createTrainingFromText(String text) {
+    public String createCONNLTrainingFromText(String text) {
         if (isEmpty(text))
             return null;
 
@@ -82,7 +73,7 @@ public class NEREnParser extends AbstractParser implements NERParser {
 
         List<String> tokens = null;
         try {
-            tokens =  GrobidAnalyzer.getInstance().tokenize(text, new Language(LANG_ID, 1.0));
+            tokens =  GrobidAnalyzer.getInstance().tokenize(text, new Language(Language.EN, 1.0));
         } catch(Exception e) {
             LOGGER.error("Tokenization failed", e);
             return null;
@@ -121,5 +112,48 @@ public class NEREnParser extends AbstractParser implements NERParser {
         }
         return sb.toString();
     }
+
+    /*public StringBuilder createXMLTrainingFromText(String text, StringBuilder sb) {
+        if (isEmpty(text))
+            return null;
+
+        // lazy loading of the sentence segmenter, as it is used only for generating more readable 
+        // training
+        if (tokenizer == null) {
+            String dictionaryFile = "data/clearNLP/dictionary-1.3.1.zip";
+            tokenizer = EngineGetter.getTokenizer(language, new FileInputStream(dictionaryFile));
+        }
+
+        // let's segment in paragraphs, assuming we have one per paragraph per line
+        String[] paragraphs = text.split("\n");
+
+        for(int p=0; p<paragraphs.length; p++) {
+            String theText = paragraphs[p];
+            if (theText.trim().length() == 0)
+                continue;
+
+            sb.append("\t\t\t<p>\n");
+
+            // we process NER at paragraph level (as it is trained at this level and because 
+            // inter sentence features/template are used by the CFR)
+            List<Entity> entitites = parser.extractNE(theText);
+
+            // let's segment in sentences with ClearNLP (to be updated to the newest NLP4J !)
+            // this is only outputed for readability
+            List<Sentence> sentences = NERParserCommon.sentenceSegmentation(String text, AbstractReader.LANG_EN, tokenizer);
+            for(Sentence sentence : sentences) {
+
+                
+
+                for (Entity entity : entities) {
+
+                    // don't forget to encode the text for XML
+                }
+            }
+
+            sb.append("\t\t\t</p>\n");
+        }    
+        return sb;
+    }*/
 
 }

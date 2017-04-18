@@ -24,8 +24,6 @@ public class NERFrParser extends AbstractParser implements NERParser {
 
     private static Logger LOGGER = LoggerFactory.getLogger(NERFrParser.class);
 
-    public static String LANG_ID = "fr";
-
     protected Lexicon lexicon = Lexicon.getInstance();
 
     public NERFrParser() {
@@ -38,8 +36,8 @@ public class NERFrParser extends AbstractParser implements NERParser {
     public List<Entity> extractNE(String text) {
         List<String> tokens = null;
         try {
-            tokens = GrobidAnalyzer.getInstance().tokenize(text, new Language(LANG_ID, 1.0));
-        } catch (Exception e) {
+            tokens = GrobidAnalyzer.getInstance().tokenize(text, new Language(Language.FR, 1.0));
+        } catch(Exception e) {
             LOGGER.error("Tokenization failed", e);
         }
         if (tokens == null)
@@ -57,7 +55,7 @@ public class NERFrParser extends AbstractParser implements NERParser {
         return entities;
     }
 
-    public String createTrainingFromText(String text) {
+    public String createCONNLTrainingFromText(String text) {
         if (isEmpty(text))
             return null;
 
@@ -65,8 +63,8 @@ public class NERFrParser extends AbstractParser implements NERParser {
 
         List<String> tokens = null;
         try {
-            tokens = GrobidAnalyzer.getInstance().tokenize(text, new Language(LANG_ID, 1.0));
-        } catch (Exception e) {
+            tokens = GrobidAnalyzer.getInstance().tokenize(text, new Language(Language.FR, 1.0));
+        } catch(Exception e) {
             LOGGER.error("Tokenization failed", e);
         }
         LexiconPositionsIndexes positionsIndexes = new LexiconPositionsIndexes(lexicon);

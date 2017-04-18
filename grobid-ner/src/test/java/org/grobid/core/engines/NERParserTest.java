@@ -70,7 +70,7 @@ public class NERParserTest extends EngineMockTest {
     public void testCreateTrainingTest_simpleParagraph() throws Exception {
         String text = IOUtils.toString(this.getClass().getResourceAsStream("/test.en.txt"));
         NERParser englishNER =  target.getParser("en");
-        String test = englishNER.createTrainingFromText(text);
+        String test = englishNER.createCONNLTrainingFromText(text);
 
         System.out.println("\n" + test);
     }

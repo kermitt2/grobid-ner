@@ -126,18 +126,18 @@ public class INRIALeMondeCorpusStaxHandler implements StaxParserContentHandler {
                 return;
             }
 
-            List<String> tokens = null;
-            try {
-                tokens = analyzer.tokenize(text, new Language(Language.FR, 1.0));
-            } catch (Exception e) {
-                LOGGER.error("Tokenization failed", e);
-            }
-            if (tokens == null)
-                return;
-            for (String token : tokens) {
-                if (token.equals(" ") || token.equals("\t") || token.equals("\n") || token.equals("\r")) {
-                    continue;
-                }
+			List<String> tokens = null;
+			try {
+				tokens = analyzer.tokenize(text, new Language(Language.FR, 1.0));
+			} catch(Exception e) {
+				LOGGER.error("Tokenization failed", e);
+			}
+			if (tokens == null)
+				return;
+			for(String token : tokens) {
+				if (token.equals(" ") || token.equals("\t") || token.equals("\n") || token.equals("\r")) {
+					continue;
+				}
                 if ((inNamedEntity) && (isNotEmpty(entityType))) {
                     sb.append(token).append("\t").append(translate(entityType, entitySubType));
                     /*if (isNotEmpty(entitySubType)) {

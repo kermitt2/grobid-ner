@@ -4,6 +4,7 @@ import org.apache.commons.io.FileUtils;
 import org.grobid.core.GrobidModels;
 import org.grobid.core.data.Entity;
 import org.grobid.core.data.Sense;
+import org.grobid.core.data.Sentence;
 import org.grobid.core.exceptions.GrobidResourceException;
 import org.grobid.core.engines.tagging.GenericTaggerUtils;
 import org.grobid.core.exceptions.GrobidException;
@@ -13,14 +14,20 @@ import org.grobid.core.lexicon.LexiconPositionsIndexes;
 import org.grobid.core.lang.Language;
 import org.grobid.core.utilities.Pair;
 import org.grobid.core.utilities.LanguageUtilities;
+import org.grobid.core.utilities.TextUtilities;
+import org.grobid.core.utilities.OffsetPosition;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.File;
-import java.io.FilenameFilter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+
+import com.googlecode.clearnlp.component.AbstractComponent;
+import com.googlecode.clearnlp.segmentation.AbstractSegmenter;
+import com.googlecode.clearnlp.engine.EngineGetter;
+import com.googlecode.clearnlp.reader.AbstractReader;
+import com.googlecode.clearnlp.tokenization.AbstractTokenizer;
 
 import static org.apache.commons.lang3.StringUtils.isEmpty;
 
@@ -194,37 +201,131 @@ public class NERParserCommon {
      * <p>
      * Input file should be a text file. Each file is a paragraph entry that it's normally processed by NERD.
      */
-    static public void createTraining(String inputFile,
+    static public StringBuilder createTraining(String inputFile,
                                String outputPath,
-                               NERParser parser) throws Exception {
+                               String fileName,
+                               NERParser parser, 
+                               String lang,
+                               AbstractTokenizer tokenizer) throws Exception {
         File file = new File(inputFile);
         if (!file.exists()) {
             throw new GrobidException("Cannot create training data because input file can not be accessed: " + inputFile);
         }
 
-        String data = null;
+        StringBuilder sb = new StringBuilder();
         if (inputFile.endsWith(".txt") || inputFile.endsWith(".TXT")) {
-            data = createTrainingText(file, parser);
+            sb.append(xmlHeader);
+
+            // we use the name of the file as document ID, removing spaces, 
+            // note that it could lead to non wellformed XML for weird file names
+            sb.append("\t\t<document name=\"" + fileName.replace(" ", "_") + "\">\n");
+            createTrainingText(file, parser, lang, tokenizer, sb);
+            sb.append("\t\t</document>\n");
+
+            sb.append(xmlEnd);
         }
 
-        if (data != null) {
+        if (sb.length() > 0) {
             try {
-                FileUtils.writeStringToFile(new File(outputPath), data);
+                FileUtils.writeStringToFile(new File(outputPath), sb.toString());
             } catch (IOException e) {
                 throw new GrobidException("Cannot create training data because output file can not be accessed: " + outputPath, e);
             }
         }
+        return sb;
     }
 
-    static public String createTrainingText(File file, NERParser parser) throws IOException {
+    static public StringBuilder createTrainingText(File file, NERParser parser, String lang, AbstractTokenizer tokenizer, StringBuilder sb) throws IOException {
         String text = FileUtils.readFileToString(file);
 
-        return parser.createTrainingFromText(text);
+        if (isEmpty(text))
+            return null;
+
+        // let's segment in paragraphs, assuming we have one per paragraph per line
+        String[] paragraphs = text.split("\n");
+
+        for(int p=0; p<paragraphs.length; p++) {
+            String theText = paragraphs[p];
+            if (theText.trim().length() == 0)
+                continue;
+
+            sb.append("\t\t\t<p xml:lang=\"" + lang + "\" xml:id=\"P" + p + "\">\n");
+
+            // we process NER at paragraph level (as it is trained at this level and because 
+            // inter sentence features/template are used by the CFR)
+            List<Entity> entities = parser.extractNE(theText);
+            //int currentEntityIndex = 0;
+
+            // let's segment in sentences with ClearNLP (to be updated to the newest NLP4J !)
+            // this is only outputed for readability
+            List<Sentence> sentences = NERParserCommon.sentenceSegmentation(theText, lang, tokenizer);
+            int sentenceIndex = 0;
+            for(int s=0; s < sentences.size(); s++) {
+                Sentence sentence = sentences.get(s);
+                int sentenceStart = sentence.getOffsetStart();
+                int sentenceEnd = sentence.getOffsetEnd();
+
+                sb.append("\t\t\t\t<sentence xml:id=\"P" + p + "E" + sentenceIndex + "\">");
+
+                if ( (entities == null) || (entities.size() == 0) ) {
+                    // don't forget to encode the text for XML
+                    sb.append(TextUtilities.HTMLEncode(theText.substring(sentenceStart, sentenceEnd)));
+                } else {
+                    int index = sentenceStart;
+                    // smal adjustement to avoid sentence starting with a space
+                    if (theText.charAt(index) == ' ') 
+                        index++;
+                    for (Entity entity : entities) {
+                        if (entity.getOffsetEnd() < sentenceStart)
+                            continue;
+                        if (entity.getOffsetStart() >= sentenceEnd)
+                            break;
+
+                        int entityStart = entity.getOffsetStart();
+                        int entityEnd = entity.getOffsetEnd();
+
+                        // don't forget to encode the text for XML
+                        if (index < entityStart)
+                            sb.append(TextUtilities.HTMLEncode(theText.substring(index, entityStart)));
+                        sb.append("<ENAMEX type=\"" + entity.getType().getName() + "\">");
+                        sb.append(TextUtilities.HTMLEncode(theText.substring(entityStart, entityEnd)));
+                        sb.append("</ENAMEX>");
+
+                        index = entityEnd;
+
+                        while (index > sentenceEnd)  {
+                            // bad luck, the sentence segmentation or ner failed somehow and we have an 
+                            // entity across 2 sentences, so we merge on the fly these 2 sentences, which is
+                            // easier than it looks ;)
+                            s++;
+                            if (s >= sentences.size())
+                                break;
+                            sentence = sentences.get(s);
+                            sentenceStart = sentence.getOffsetStart();
+                            sentenceEnd = sentence.getOffsetEnd();
+                        }
+                    }
+
+                    if (index < sentenceEnd)
+                        sb.append(TextUtilities.HTMLEncode(theText.substring(index, sentenceEnd)));
+                    //else if (index > sentenceEnd)
+                        //System.out.println(theText.length() + " / / " + theText + "/ / " + index + " / / " + sentenceEnd);
+                }
+
+                sb.append("</sentence>\n");
+                sentenceIndex++;
+            }
+
+            sb.append("\t\t\t</p>\n");
+        }    
+        return sb;
     }
 
     static public int createTrainingBatch(String inputDirectory,
                                    String outputDirectory,
-                                   NERParser parser) throws IOException {
+                                   NERParser parser,
+                                   String lang) throws IOException {
+        // note that at the stage, we have already selected the NERParser according to the language
         try {
             File path = new File(inputDirectory);
             if (!path.exists()) {
@@ -248,10 +349,18 @@ public class NERParserCommon {
 
             LOGGER.info(refFiles.length + " files to be processed.");
 
+            // ClearParser components for sentence segmentation
+            // slow down a bit at launch, but it is used only for generating more readable training
+            String dictionaryFile = "data/clearNLP/dictionary-1.3.1.zip";
+            LOGGER.info("Loading dictionary file for sentence segmentation: " + dictionaryFile);
+            AbstractTokenizer tokenizer = EngineGetter.getTokenizer(lang, new FileInputStream(dictionaryFile));
+            LOGGER.info("End of loading dictionary file");
+
             for (final File file : refFiles) {
                 try {
-                    String outputPath = outputDirectory + "/" + file.getName().substring(0, file.getName().length() - 4) + ".training.txt";
-                    createTraining(file.getAbsolutePath(), outputPath, parser);
+                    String fileName = file.getName().substring(0, file.getName().length() - 4);
+                    String outputPath = outputDirectory + "/" + fileName + ".training.xml";
+                    createTraining(file.getAbsolutePath(), outputPath, fileName, parser, lang, tokenizer);
                 } catch (final Exception exp) {
                     LOGGER.error("An error occured while processing the following pdf: "
                             + file.getPath() + ": ", exp);
@@ -262,5 +371,54 @@ public class NERParserCommon {
         } catch (final Exception exp) {
             throw new GrobidException("An exception occured while running Grobid batch.", exp);
         }
+    }
+
+    // some pieces of XML for generating training data
+    public static String xmlHeader = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<corpus>\n\t<subcorpus>\n";
+    public static String xmlEnd = "\t</subcorpus>\n</corpus>\n";
+
+    public static List<Sentence> sentenceSegmentation(String text, String language, AbstractTokenizer tokenizer) {
+        AbstractSegmenter segmenter = EngineGetter.getSegmenter(language, tokenizer);
+        // convert String into InputStream
+        InputStream is = new ByteArrayInputStream(text.getBytes());
+        // read it with BufferedReader
+        BufferedReader br = new BufferedReader(new InputStreamReader(is));
+        List<List<String>> sentences = segmenter.getSentences(br);
+        List<Sentence> results = new ArrayList<Sentence>();
+        
+        if ( (sentences == null) || (sentences.size() == 0) ) {
+            // there is some text but not in a state so that a sentence at least can be
+            // identified by the sentence segmenter, so we parse it as a single sentence
+            Sentence sentence = new Sentence();
+            OffsetPosition pos = new OffsetPosition();
+            pos.start = 0;
+            pos.end = text.length();
+            sentence.setOffsets(pos);
+            results.add(sentence);
+            return results; 
+        }
+        
+        // we need to realign with the original sentences, so we have to match it from the text 
+        // to be parsed based on the tokenization
+        int offSetSentence = 0;  
+        //List<List<String>> trueSentences = new ArrayList<List<String>>();
+        for(List<String> theSentence : sentences) {  
+            int next = offSetSentence;
+            for(String token : theSentence) {                   
+                next = text.indexOf(token, next);
+                next = next+token.length();
+            } 
+            List<String> dummy = new ArrayList<String>();                    
+            //dummy.add(text.substring(offSetSentence, next));   
+            //trueSentences.add(dummy);   
+            Sentence sentence = new Sentence();
+            OffsetPosition pos = new OffsetPosition();
+            pos.start = offSetSentence;
+            pos.end = next;
+            sentence.setOffsets(pos);
+            results.add(sentence);
+            offSetSentence = next;
+        } 
+        return results; 
     }
 }
