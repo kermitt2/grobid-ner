@@ -41,11 +41,11 @@ The following table describes the 27 named entity classes produced by the model.
 ### Classes Specific guidelines
 #### ACRONYM
 Acronyms that don't belong to another class. For example:
-* _DIY_ ➡ ACRONYM
+* _**DIY**_ ➡ ACRONYM
 
 but
-* _the United Nations (UN)_ ➡ _United Nations_ and _UN_ are tagged EVENT
-* _WW1_ ➡ EVENT
+* _**the United Nations** (**UN**)_ ➡ _United Nations_ and _UN_ are tagged ORGANISATION
+* _**WW1**_ ➡ EVENT
 
 #20
 
@@ -80,6 +80,7 @@ but
 * vs. EVENT: an event defines a period, but a period is not necessarily an event ➡ annotation as EVENT, for example:
   * _during the time of the **Nazi occupation**_ ➡ EVENT
 
+#23
 
 #### PERSON
 #### PERSON_TYPE
