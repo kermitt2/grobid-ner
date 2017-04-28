@@ -41,16 +41,18 @@ The following table describes the 27 named entity classes produced by the model.
 ### Classes Specific guidelines
 #### ACRONYM
 Acronyms that don't belong to another class. For example:
+
 * _**DIY**_ ➡ ACRONYM
 
 but
+
 * _**the United Nations** (**UN**)_ ➡ _United Nations_ and _UN_ are tagged ORGANISATION
 * _**WW1**_ ➡ EVENT
 
-#20
-
+<!--- #20 insert link to issue 20 --->
+<!---
+TOFIX : hierarchy of the subparagraphs not showing in github, nested lists not working in github
 #### ANIMAL
-
 #### ARTIFACT
 #### AWARD
 #### BUSINESS
@@ -66,22 +68,24 @@ but
 #### MEASURE
 #### MEDIA
 #### NATIONAL 		
-#### ORGANISATION
+#### ORGANISATION --->
 #### PERIOD
+
 * Date, historical era or other time period.
 
 * Sometimes preceding elements must be included in the NE, but not always:
-  * _**since 1930**_ ➡ PERIOD, because _since_ qualifies the range of period and changes the period type.
-  * _**from 1930**_, _**from 1930 to 1945**_ ➡ both PERIOD
+   * _**since 1930**_ ➡ PERIOD, because _since_ qualifies the range of period and changes the period type.
+   * _**from 1930**_, _**from 1930 to 1945**_ ➡ both PERIOD
 but
-  * _as early as the **1930s**_ ➡ only _**1930s**_ is tagged PERIOD, because _as early as_ doesn't change the period (the 1930s).
-  * _during **1930**_ and _in **1930**_ ➡ the prepositions don't change the period interval, only _**1930**_ is tagged PERIOD.
+   * _as early as the **1930s**_ ➡ only _**1930s**_ is tagged PERIOD, because _as early as_ doesn't change the period (the 1930s).
+   * _during **1930**_ and _in **1930**_ ➡ the prepositions don't change the period interval, only _**1930**_ is tagged PERIOD.
 
 * vs. EVENT: an event defines a period, but a period is not necessarily an event ➡ annotation as EVENT, for example:
-  * _during the time of the **Nazi occupation**_ ➡ EVENT
+   * _during the time of the **Nazi occupation**_ ➡ EVENT
 
-#23
+<!--- insert link to issue #23 --->
 
+<!--- same as above
 #### PERSON
 #### PERSON_TYPE
 #### PLANT
@@ -90,7 +94,7 @@ but
 #### TITLE
 #### UNKNOWN
 #### WEBSITE
-
+--->
 ## Conventions
 
 For the class assignation to entities, GROBID NER follows the longest match convention. For instance, the entity _University of Minnesota_ as a whole (longest match) will belong to the class INSTITUTION. Its component _Minnesota_ is a LOCATION, but as it is part of a larger entity chunk, it will not be identified.
