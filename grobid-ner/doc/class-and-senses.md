@@ -73,12 +73,14 @@ TOFIX : hierarchy of the subparagraphs not showing in github, nested lists not w
 
 * Date, historical era or other time period.
 
+
 * Sometimes preceding elements must be included in the NE, but not always:
-     * _**since 1930**_ ➡ PERIOD, because _since_ qualifies the range of period and changes the period type.
-     * _**from 1930**_, _**from 1930 to 1945**_ ➡ both PERIOD
-but
+     * _**since 1930**_ ➡ all PERIOD, because _since_ qualifies the range of period and changes the period type.
+     * _**from 1930**_, _**from 1930 to 1945**_ ➡ both all PERIOD
+    but
      * _as early as the **1930s**_ ➡ only _**1930s**_ is tagged PERIOD, because _as early as_ doesn't change the period (the 1930s).
      * _during **1930**_ and _in **1930**_ ➡ the prepositions don't change the period interval, only _**1930**_ is tagged PERIOD.
+
 
 * vs. EVENT: an event defines a period, but a period is not necessarily an event ➡ annotation as EVENT, for example:
      * _during the time of the **Nazi occupation**_ ➡ EVENT
