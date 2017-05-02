@@ -49,7 +49,8 @@ but
 * _**the United Nations** (**UN**)_ ➡ _United Nations_ and _UN_ are tagged ORGANISATION
 * _**WW1**_ ➡ EVENT
 
-<!--- #20 insert link to issue 20 --->
+https://github.com/kermitt2/grobid-ner/issues/20
+
 <!---
 TOFIX : hierarchy of the subparagraphs not showing in github, nested lists not working in github
 #### ANIMAL
@@ -71,21 +72,22 @@ TOFIX : hierarchy of the subparagraphs not showing in github, nested lists not w
 #### ORGANISATION --->
 #### PERIOD
 
-* Date, historical era or other time period.
+. Date, historical era or other time period.
+
+. Sometimes preceding elements must be included in the NE, but not always:
+* _**since 1930**_ ➡ all PERIOD, because _since_ qualifies the range of period and changes the period type.
+* _**from 1930**_, _**from 1930 to 1945**_ ➡ both all PERIOD
+
+but
+
+* _as early as the **1930s**_ ➡ only _**1930s**_ is tagged PERIOD, because _as early as_ doesn't change the period (the 1930s).
+* _during **1930**_ and _in **1930**_ ➡ the prepositions don't change the period interval, only _**1930**_ is tagged PERIOD.
 
 
-* Sometimes preceding elements must be included in the NE, but not always:
-     * _**since 1930**_ ➡ all PERIOD, because _since_ qualifies the range of period and changes the period type.
-     * _**from 1930**_, _**from 1930 to 1945**_ ➡ both all PERIOD
-    but
-     * _as early as the **1930s**_ ➡ only _**1930s**_ is tagged PERIOD, because _as early as_ doesn't change the period (the 1930s).
-     * _during **1930**_ and _in **1930**_ ➡ the prepositions don't change the period interval, only _**1930**_ is tagged PERIOD.
+. PERIOD vs. EVENT: an event defines a period, but a period is not necessarily an event ➡ annotation as EVENT, for example:
+* _during the time of the **Nazi occupation**_ ➡ EVENT
 
-
-* vs. EVENT: an event defines a period, but a period is not necessarily an event ➡ annotation as EVENT, for example:
-     * _during the time of the **Nazi occupation**_ ➡ EVENT
-
-<!--- insert link to issue #23 --->
+https://github.com/kermitt2/grobid-ner/issues/13
 
 <!--- same as above
 #### PERSON
@@ -97,6 +99,10 @@ TOFIX : hierarchy of the subparagraphs not showing in github, nested lists not w
 #### UNKNOWN
 #### WEBSITE
 --->
+
+#### MISCELLANEOUS
+* Currencies alone (_pound sterling_, _US dollar_) should not be annotated. https://github.com/kermitt2/grobid-ner/issues/23
+
 ## Conventions
 
 For the class assignation to entities, GROBID NER follows the longest match convention. For instance, the entity _University of Minnesota_ as a whole (longest match) will belong to the class INSTITUTION. Its component _Minnesota_ is a LOCATION, but as it is part of a larger entity chunk, it will not be identified.
