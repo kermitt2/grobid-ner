@@ -165,12 +165,17 @@ but
 * _as early as the **1930s**_: only _**1930s**_ is tagged PERIOD, because _as early as_ doesn't change the period (the 1930s).
 * _during **1930**_ and _in **1930**_: the prepositions don't change the period interval, only _**1930**_ is tagged PERIOD.
 
+➡ some terms may be too vague to annotate them as PERIOD, for example the adjective _**prewar**_. We may annotate it with other elements, for example LOCATION in the following case:
+```xml
+<ENAMEX type="LOCATION">prewar Nazi Germany</ENAMEX>
+```
+
 ➡ PERIOD vs. EVENT: an event defines a period, but a period is not necessarily an event, so we annotate as EVENT, for example:
 
   * _during the time of the **Nazi occupation**_: EVENT
   * _during the **Czarist regime**_: EVENT
 
-[issue #13](https://github.com/kermitt2/grobid-ner/issues/13)
+issues [#13](https://github.com/kermitt2/grobid-ner/issues/13) and [#25](https://github.com/kermitt2/grobid-ner/issues/25)
 
 #### PERSON
 
