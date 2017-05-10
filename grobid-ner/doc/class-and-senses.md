@@ -152,10 +152,13 @@ For example:
 
 ➡ Date, historical era or other time period.
 
-➡ Sometimes preceding elements must be included in the NE, but not always:
+➡ Sometimes surrounding elements must be included in the NE, but not always:
 
 * _**since 1930**_: all PERIOD, because _since_ qualifies the range of period and changes the period type.
 * _**from 1930**_, _**from 1930 to 1945**_: both all PERIOD.
+* _**after 1930**_, _**before 1930**_: both all PERIOD.
+* _**next decade**_, _**last decade**_: both all PERIOD.
+* _**7 years after the war**_: all PERIOD
 
 but
 
@@ -165,6 +168,7 @@ but
 ➡ PERIOD vs. EVENT: an event defines a period, but a period is not necessarily an event, so we annotate as EVENT, for example:
 
   * _during the time of the **Nazi occupation**_: EVENT
+  * _during the **Czarist regime**_: EVENT
 
 [issue #13](https://github.com/kermitt2/grobid-ner/issues/13)
 
