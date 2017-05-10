@@ -75,7 +75,7 @@ public class NEREnParser extends AbstractParser implements NERParser {
         try {
             tokens =  GrobidAnalyzer.getInstance().tokenize(text, new Language(Language.EN, 1.0));
         } catch(Exception e) {
-            LOGGER.error("Tokenization failed", e);
+            LOGGER.error("Tokenization failed. ", e);
             return null;
         }
         LexiconPositionsIndexes positionsIndexes = new LexiconPositionsIndexes(lexicon);
