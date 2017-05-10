@@ -23,12 +23,14 @@ public class NERParsers {
     private static Logger LOGGER = LoggerFactory.getLogger(NERParsers.class);
 
     private Map<String, NERParser> parsers = null;
+    private NERParserCommon nerParserCommon;
 
     public NERParsers() {
         parsers = new HashMap<String, NERParser>();
         // supported languages
         parsers.put("en", new NEREnParser());
         parsers.put("fr", new NERFrParser());
+        nerParserCommon = new NERParserCommon();
     }
 
     /**
@@ -78,7 +80,7 @@ public class NERParsers {
             throw new GrobidResourceException("The automatically identified labnguage is currently not supported by grobid-ner: " + 
                 lang);
         }
-        return NERParserCommon.createTrainingBatch(inputDirectory, outputDirectory, parser, lang);
+        return nerParserCommon.createTrainingBatch(inputDirectory, outputDirectory, parser, lang);
     }
 
     public NERParser getParser(String lang) {

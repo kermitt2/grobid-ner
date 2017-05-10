@@ -204,7 +204,7 @@ public class NERParserCommon {
     static public StringBuilder createTraining(String inputFile,
                                String outputPath,
                                String fileName,
-                               NERParser parser, 
+                               NERParser parser,
                                String lang,
                                AbstractTokenizer tokenizer) throws Exception {
         File file = new File(inputFile);
@@ -216,7 +216,7 @@ public class NERParserCommon {
         if (inputFile.endsWith(".txt") || inputFile.endsWith(".TXT")) {
             sb.append(xmlHeader);
 
-            // we use the name of the file as document ID, removing spaces, 
+            // we use the name of the file as document ID, removing spaces,
             // note that it could lead to non wellformed XML for weird file names
             sb.append("\t\t<document name=\"" + fileName.replace(" ", "_") + "\">\n");
             createTrainingText(file, parser, lang, tokenizer, sb);
@@ -251,7 +251,7 @@ public class NERParserCommon {
 
             sb.append("\t\t\t<p xml:lang=\"" + lang + "\" xml:id=\"P" + p + "\">\n");
 
-            // we process NER at paragraph level (as it is trained at this level and because 
+            // we process NER at paragraph level (as it is trained at this level and because
             // inter sentence features/template are used by the CFR)
             List<Entity> entities = parser.extractNE(theText);
             //int currentEntityIndex = 0;
@@ -273,7 +273,7 @@ public class NERParserCommon {
                 } else {
                     int index = sentenceStart;
                     // smal adjustement to avoid sentence starting with a space
-                    if (theText.charAt(index) == ' ') 
+                    if (theText.charAt(index) == ' ')
                         index++;
                     for (Entity entity : entities) {
                         if (entity.getOffsetEnd() < sentenceStart)
@@ -294,7 +294,7 @@ public class NERParserCommon {
                         index = entityEnd;
 
                         while (index > sentenceEnd)  {
-                            // bad luck, the sentence segmentation or ner failed somehow and we have an 
+                            // bad luck, the sentence segmentation or ner failed somehow and we have an
                             // entity across 2 sentences, so we merge on the fly these 2 sentences, which is
                             // easier than it looks ;)
                             s++;
@@ -317,7 +317,7 @@ public class NERParserCommon {
             }
 
             sb.append("\t\t\t</p>\n");
-        }    
+        }
         return sb;
     }
 
