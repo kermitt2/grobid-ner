@@ -82,7 +82,7 @@ people	O
 repatriated	O
 from	O
 Suvalkų	B-LOCATION
-area	O
+area	LOCATION
 and	O
 Pakruojis	B-LOCATION
 local	LOCATION
