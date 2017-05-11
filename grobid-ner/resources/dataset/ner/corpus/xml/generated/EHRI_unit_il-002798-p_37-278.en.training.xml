@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<corpus>
+	<subcorpus>
+		<document name="EHRI_unit_il-002798-p_37-278.en">
+			<p xml:lang="en" xml:id="P0">
+				<sentence xml:id="P0E0">Articles from <ENAMEX type="NATIONAL">European</ENAMEX> <ENAMEX type="PERSON_NAME">Zionist</ENAMEX> newspapers, <ENAMEX type="PERIOD">1901-1931</ENAMEX> Section of the <ENAMEX type="MEDIA">L&apos;echo Sioniste newspaper</ENAMEX> with reports on <ENAMEX type="PERSON_TYPE">Jewish</ENAMEX> problems in <ENAMEX type="LOCATION">Bulgaria</ENAMEX>, <ENAMEX type="PERIOD">May 1901</ENAMEX>; Page from the <ENAMEX type="MEDIA">Die Arbeit</ENAMEX> newspaper of <ENAMEX type="ORGANISATION">Hapoel Hatzair</ENAMEX>, <ENAMEX type="PERIOD">15 February 1920</ENAMEX>; Issue of <ENAMEX type="MEDIA">Haolam</ENAMEX> newspaper with excerpts on <ENAMEX type="PERSON_NAME">Zionist</ENAMEX> events in <ENAMEX type="LOCATION">Europe</ENAMEX> at the time.</sentence>
+			</p>
+		</document>
+	</subcorpus>
+</corpus>
