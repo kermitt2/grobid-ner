@@ -8,8 +8,8 @@
 #  - An empty line in the input file is interpreted as a new sentence.
 #  - Since there is no information about the paragraph, the output will only contain a single one
 
-import sys
 import os
+import sys
 
 if len(sys.argv) < 2 or len(sys.argv) > 3:
     print("This tool requires one parameter. ")
@@ -29,9 +29,9 @@ isFirstSentenceToken = True
 
 
 def openTag(output, class2, sense):
-    output.write('<ENAMEX class="' + class2 + '"')
+    output.write('<ENAMEX type="' + class2 + '"')
     if sense != "N/A":
-        output.write(' sense="' + sense + '"')
+        output.write(' subtype="' + sense + '"')
     output.write('>')
 
 
@@ -49,7 +49,7 @@ output.write('<sentence xml:id="P0E' + str(sentenceCount) + '">')
 
 
 def addSpace(output, token):
-    punctuation = [':', ";", ".", ","]
+    punctuation = [':', ";", ".", ",", "\"", "(", ")", "[", "]"]
     if any(char in punctuation for char in token):
         output.write("")
     else:
@@ -85,7 +85,8 @@ with open(fname) as f:
 
             continue
 
-        class2 = split[1]
+        class2 = split[1].replace("B-", "")
+        beginning = split[1].startswith("B-")
         sense = "N/A"
         if nbColumns > 2:
             sense = split[2]
@@ -109,7 +110,7 @@ with open(fname) as f:
                 previousClass = class2
                 isFirstToken = True
             else:
-                if previousClass != class2:
+                if previousClass != class2 or beginning:
                     closeTag(output)
                     openTag(output, class2, sense)
                     previousClass = class2

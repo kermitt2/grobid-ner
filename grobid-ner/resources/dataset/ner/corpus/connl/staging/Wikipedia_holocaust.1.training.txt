@@ -62,6 +62,7 @@ six	B-MEASURE
 million	MEASURE
 Jews	B-PERSON_TYPE
 .	O
+
 [	O
 4	O
 ]	O
@@ -93,6 +94,7 @@ resided	O
 in	O
 Europe	B-LOCATION
 .	O
+
 [	O
 6	O
 ]	O
@@ -124,6 +126,7 @@ about	O
 11	B-MEASURE
 million	MEASURE
 .	O
+
 Killings	O
 took	O
 place	O
@@ -147,6 +150,7 @@ of	O
 Nazi	B-UNKNOWN
 Germany	B-LOCATION
 .	O
+
 From	B-PERIOD
 1941	PERIOD
 to	PERIOD
@@ -191,6 +195,7 @@ the	O
 Nazi	B-PERSON_TYPE
 regime	O
 .	O
+
 [	O
 8	O
 ]	O
@@ -232,6 +237,7 @@ of	O
 the	O
 genocide	O
 .	O
+
 Other	O
 victims	O
 of	O
@@ -269,6 +275,7 @@ and	O
 physically	O
 disabled	O
 .	O
+
 [	O
 9	O
 ]	O
@@ -311,6 +318,7 @@ human	O
 rights	O
 abuses	O
 .	O
+
 [	O
 12	O
 ]	O
@@ -327,6 +335,7 @@ been	O
 Holocaust	B-CONCEPT
 perpetrators	O
 .	O
+
 [	O
 13	O
 ]	O
@@ -369,6 +378,7 @@ Jews	B-PERSON_TYPE
 in	O
 Europe	B-LOCATION
 .	O
+
 Initially	O
 the	O
 German	B-NATIONAL
@@ -390,6 +400,7 @@ Laws	O
 of	O
 1935	B-PERIOD
 .	O
+
 Nazis	B-PERSON_TYPE
 established	O
 a	O
@@ -412,6 +423,7 @@ II	EVENT
 in	O
 1939	B-PERIOD
 .	O
+
 In	O
 1941	B-PERIOD
 ,	O
@@ -444,6 +456,7 @@ in	O
 mass	O
 shootings	O
 .	O
+
 By	O
 the	O
 end	O
@@ -477,6 +490,7 @@ in	O
 gas	O
 chambers	O
 .	O
+
 This	O
 continued	O
 until	O
@@ -494,12 +508,14 @@ April	B-PERIOD
 May	PERIOD
 1945	PERIOD
 .	O
+
 Jewish	B-NATIONAL
 armed	O
 resistance	O
 was	O
 limited	O
 .	O
+
 The	O
 most	O
 notable	O
@@ -531,6 +547,7 @@ for	O
 four	B-MEASURE
 weeks	O
 .	O
+
 An	O
 estimated	O
 20	B-MEASURE
@@ -554,6 +571,7 @@ in	O
 Eastern	B-LOCATION
 Europe	LOCATION
 .	O
+
 [	O
 14	O
 ]	O
@@ -583,6 +601,7 @@ Vichy	O
 French	O
 authorities	O
 .	O
+
 Over	O
 a	B-MEASURE
 hundred	MEASURE
@@ -592,6 +611,7 @@ uprisings	O
 took	O
 place	O
 .	O
+
 [	O
 16	O
 ]	O
@@ -642,6 +662,7 @@ burnt	O
 kaustos	O
 )	O
 .	O
+
 [	O
 17	O
 ]	O
@@ -681,6 +702,7 @@ term	O
 holocaustum	O
 "	O
 .	O
+
 [	O
 18	O
 ]	O
@@ -717,6 +739,7 @@ to	O
 denote	O
 massacres	O
 .	O
+
 [	O
 20	O
 ]	O
@@ -746,6 +769,7 @@ genocide	EVENT
 of	EVENT
 Jews	EVENT
 .	O
+
 [	O
 21	O
 ]	O
@@ -767,6 +791,7 @@ parlance	O
 after	O
 1978	B-PERIOD
 .	O
+
 [	O
 22	O
 ]	O
@@ -810,6 +835,7 @@ Europe	B-LOCATION
 and	O
 Israel	B-LOCATION
 .	O
+
 [	O
 23	O
 ]	O
@@ -844,6 +870,7 @@ Greek	B-CONCEPTUAL
 pagan	O
 custom	O
 .	O
+
 [	O
 24	O
 ]	O
@@ -882,6 +909,7 @@ of	O
 the	O
 Jews	B-PERSON_TYPE
 .	O
+
 Distinctive	O
 features	O
 Institutional	O
@@ -903,6 +931,7 @@ to	O
 extermination	O
 camps	O
 .	O
+
 Every	O
 arm	O
 of	O
@@ -942,6 +971,7 @@ genocidal	O
 state	O
 "	O
 .	O
+
 [	O
 25	O
 ]	O
@@ -961,6 +991,7 @@ the	O
 killing	O
 process	O
 .	O
+
 Parish	O
 churches	O
 and	O
@@ -1002,6 +1033,7 @@ disenfranchised	O
 Jewish	B-NATIONAL
 stockholders	O
 .	O
+
 The	O
 universities	O
 refused	O
@@ -1080,6 +1112,7 @@ of	O
 the	O
 killings	O
 .	O
+
 As	O
 prisoners	O
 entered	O
@@ -1112,6 +1145,7 @@ reused	O
 or	O
 recycled	O
 .	O
+
 Berenbaum	B-PERSON
 writes	O
 that	O
@@ -1131,14 +1165,18 @@ of	O
 the	O
 perpetrators	O
 .	O
+
 .	O
+
 .	O
+
 Germany	B-LOCATION
 '	O
 s	O
 greatest	O
 achievement	O
 .	O
+
 "	O
 [	O
 26	O
@@ -1160,6 +1198,7 @@ from	O
 the	O
 victims	O
 .	O
+
 Saul	B-PERSON
 Friedländer	PERSON
 writes	O
@@ -1195,6 +1234,7 @@ with	O
 the	O
 Jews	B-PERSON_TYPE
 .	O
+
 [	O
 27	O
 ]	O
@@ -1226,6 +1266,7 @@ to	O
 a	O
 point	O
 .	O
+
 Friedländer	B-PERIOD
 argues	O
 that	O
@@ -1275,6 +1316,7 @@ and	O
 lobby	O
 groups	O
 .	O
+
 [	O
 27	O
 ]	O
@@ -1290,6 +1332,7 @@ Antisemitism	O
 Yellowbadge	O
 logo	O
 .	O
+
 svg	O
 Part	O
 of	O
@@ -1319,6 +1362,7 @@ the	O
 genocide	O
 policy	O
 .	O
+
 Israeli	B-NATIONAL
 historian	O
 and	O
@@ -1365,6 +1409,7 @@ parallel	O
 Aryan	B-CONCEPT
 quest	O
 .	O
+
 No	O
 genocide	O
 to	O
@@ -1395,6 +1440,7 @@ rational	O
 pragmatic	O
 means	O
 .	O
+
 [	O
 28	O
 ]	O
@@ -1469,6 +1515,7 @@ of	O
 state	O
 power	O
 .	O
+
 [	O
 29	O
 ]	O
@@ -1495,6 +1542,7 @@ separate	O
 European	B-NATIONAL
 countries	O
 .	O
+
 [	O
 30	O
 ]	O
@@ -1520,6 +1568,7 @@ Jews	B-PERSON_TYPE
 in	O
 1939	B-PERIOD
 .	O
+
 About	O
 five	B-MEASURE
 million	MEASURE
@@ -1543,6 +1592,7 @@ the	O
 Soviet	B-LOCATION
 Union	LOCATION
 .	O
+
 Hundreds	B-MEASURE
 of	MEASURE
 thousands	MEASURE
@@ -1561,6 +1611,7 @@ Yugoslavia	B-LOCATION
 and	O
 Greece	B-LOCATION
 .	O
+
 The	O
 Wannsee	B-EVENT
 Protocol	EVENT
@@ -1605,6 +1656,7 @@ Portugal	B-LOCATION
 and	O
 Spain	B-LOCATION
 .	O
+
 [	O
 31	O
 ]	O
@@ -1622,6 +1674,7 @@ exterminated	O
 without	O
 exception	O
 .	O
+
 The	O
 Nazis	B-PERSON_TYPE
 envisioned	O
@@ -1651,6 +1704,7 @@ before	O
 January	PERIOD
 1871	PERIOD
 .	O
+
 [	O
 33	O
 ]	O
@@ -1693,6 +1747,7 @@ of	O
 the	O
 Holocaust	B-CONCEPT
 .	O
+
 These	O
 were	O
 established	O
@@ -1715,6 +1770,7 @@ Sobibór	B-LOCATION
 and	O
 Treblinka	B-LOCATION
 .	O
+
 They	O
 were	O
 built	O
@@ -1740,6 +1796,7 @@ under	O
 starvation	O
 conditions	O
 .	O
+
 [	O
 34	O
 ]	O
@@ -1771,6 +1828,7 @@ against	O
 mental	O
 patients	O
 .	O
+
 [	O
 35	O
 ]	O
@@ -1801,6 +1859,7 @@ medical	O
 "	O
 experiments	O
 .	O
+
 According	O
 to	O
 Raul	B-PERSON
@@ -1824,6 +1883,7 @@ of	O
 party	O
 membership	O
 .	O
+
 "	O
 [	O
 36	O
@@ -1848,6 +1908,7 @@ Natzweiler	B-LOCATION
 concentration	O
 camps	O
 .	O
+
 [	O
 37	O
 ]	O
@@ -1866,6 +1927,7 @@ worked	O
 in	O
 Auschwitz	B-LOCATION
 .	O
+
 His	O
 experiments	O
 included	O
@@ -1903,6 +1965,7 @@ and	O
 other	O
 surgeries	O
 .	O
+
 [	O
 37	O
 ]	O
@@ -1933,6 +1996,7 @@ Kaiser	B-INSTITUTION
 Wilhelm	INSTITUTION
 Institute	INSTITUTION
 .	O
+
 [	O
 38	O
 ]	O
@@ -1952,6 +2016,7 @@ dissected	O
 shortly	O
 afterwards	O
 .	O
+
 Mengele	B-PERSON
 worked	O
 extensively	O
@@ -1959,6 +2024,7 @@ with	O
 Romani	B-NATIONAL
 children	O
 .	O
+
 He	O
 would	O
 bring	O
@@ -1975,6 +2041,7 @@ the	O
 gas	O
 chamber	O
 .	O
+
 They	O
 would	O
 call	O
@@ -1987,6 +2054,7 @@ Uncle	O
 Mengele	B-PERSON
 "	O
 .	O
+
 [	O
 39	O
 ]	O
@@ -2024,6 +2092,7 @@ aged	O
 about	O
 four	B-MEASURE
 .	O
+
 One	O
 day	O
 ,	O
@@ -2032,6 +2101,7 @@ took	O
 them	O
 away	O
 .	O
+
 When	O
 they	O
 returned	O
@@ -2057,6 +2127,7 @@ like	O
 Siamese	B-CONCEPT
 twins	O
 .	O
+
 Their	O
 wounds	O
 were	O
@@ -2065,12 +2136,14 @@ and	O
 oozing	O
 pus	O
 .	O
+
 They	O
 screamed	O
 day	O
 and	O
 night	O
 .	O
+
 Then	O
 their	O
 parents—I	O
@@ -2098,6 +2171,7 @@ end	O
 their	O
 suffering	O
 .	O
+
 [	O
 39	O
 ]	O
@@ -2149,6 +2223,7 @@ Nazi	B-NATIONAL
 death	O
 camps	O
 .	O
+
 [	O
 40	O
 ]	O
@@ -2185,6 +2260,7 @@ Paul	B-PERSON
 de	PERSON
 Lagarde	PERSON
 .	O
+
 The	O
 movement	O
 presented	O
@@ -2214,6 +2290,7 @@ for	O
 world	O
 domination	O
 .	O
+
 [	O
 41	O
 ]	O
@@ -2241,6 +2318,7 @@ than	O
 a	O
 religion	O
 .	O
+
 [	O
 42	O
 ]	O
@@ -2310,6 +2388,7 @@ envy	O
 and	O
 hatred	O
 .	O
+
 In	O
 almost	O
 all	O
@@ -2348,6 +2427,7 @@ misfortune	O
 is	O
 spreading	O
 .	O
+
 —   O
 Friedrich	B-PERSON
 Nietzsche	PERSON
@@ -2390,6 +2470,7 @@ the	O
 German	B-NATIONAL
 people	O
 .	O
+
 [	O
 44	O
 ]	O
@@ -2445,6 +2526,7 @@ alien	O
 status	O
 )	O
 .	O
+
 [	O
 45	O
 ]	O
@@ -2484,6 +2566,7 @@ the	O
 liberal	O
 professions	O
 .	O
+
 [	O
 45	O
 ]	O
@@ -2520,6 +2603,7 @@ one	O
 Jewish	B-PERSON_TYPE
 grandparent	O
 .	O
+
 [	O
 45	O
 ]	O
@@ -2553,6 +2637,7 @@ and	EVENT
 Namaqua	EVENT
 Genocide	EVENT
 .	O
+
 It	O
 has	O
 been	O
@@ -2566,6 +2651,7 @@ for	O
 the	O
 Holocaust	B-CONCEPT
 .	O
+
 [	O
 46	O
 ]	O
@@ -2618,6 +2704,7 @@ of	O
 human	O
 inequality	O
 .	O
+
 [	O
 49	O
 ]	O
@@ -2652,6 +2739,7 @@ mainstream	O
 political	O
 parties	O
 .	O
+
 [	O
 48	O
 ]	O
@@ -2684,6 +2772,7 @@ adopted	O
 their	O
 antisemitism	O
 .	O
+
 [	O
 50	O
 ]	O
@@ -2754,10 +2843,14 @@ existence	O
 of	O
 Auschwitz	B-LOCATION
 .	O
+
 [	O
 .	O
+
 .	O
+
 .	O
+
 ]	O
 Thoughts	O
 about	O
@@ -2780,6 +2873,7 @@ and	O
 his	O
 satraps	O
 .	O
+
 Many	O
 of	O
 these	O
@@ -2820,6 +2914,7 @@ Pan	B-ORGANISATION
 German	ORGANISATION
 Union	ORGANISATION
 .	O
+
 [	O
 51	O
 ]	O
@@ -2864,6 +2959,7 @@ could	O
 be	O
 solved	O
 .	O
+
 [	O
 52	O
 ]	O
@@ -2896,6 +2992,7 @@ others	O
 was	O
 common	O
 .	O
+
 [	O
 53	O
 ]	O
@@ -2942,6 +3039,7 @@ led	O
 to	O
 genocide	O
 .	O
+
 [	O
 54	O
 ]	O
@@ -3004,6 +3102,7 @@ be	O
 written	O
 off	O
 .	O
+
 [	O
 55	O
 ]	O
@@ -3025,6 +3124,7 @@ of	O
 Jewish	B-PERSON_TYPE
 businesses	O
 .	O
+
 Here	O
 they	O
 are	O
@@ -3037,6 +3137,7 @@ Store	INSTITUTION
 in	O
 Berlin	B-LOCATION
 .	O
+
 The	O
 signs	O
 read	O
@@ -3054,6 +3155,7 @@ buy	O
 from	O
 Jews	B-PERSON_TYPE
 .	O
+
 "	O
 (	O
 "	O
@@ -3092,6 +3194,7 @@ non	B-PERSON_TYPE
 Jewish	PERSON_TYPE
 family	O
 .	O
+
 The	O
 political	O
 situation	O
@@ -3111,6 +3214,7 @@ to	O
 virulent	O
 antisemitism	O
 .	O
+
 Many	O
 Germans	B-PERSON_TYPE
 did	O
@@ -3138,6 +3242,7 @@ the	O
 back	O
 myth	O
 .	O
+
 The	O
 myth	O
 insinuated	O
@@ -3159,6 +3264,7 @@ Germany	B-LOCATION
 s	O
 surrender	O
 .	O
+
 Inflaming	O
 the	O
 anti	O
@@ -3220,6 +3326,7 @@ of	O
 Jewish	B-PERSON_TYPE
 Bolshevism	B-PERSON_TYPE
 .	O
+
 [	O
 57	O
 ]	O
@@ -3268,6 +3375,7 @@ for	O
 the	O
 curable	O
 .	O
+
 [	O
 58	O
 ]	O
@@ -3310,6 +3418,7 @@ racially	O
 undesirable	O
 "	O
 .	O
+
 [	O
 59	O
 ]	O
@@ -3333,6 +3442,7 @@ hatred	O
 of	O
 them	O
 .	O
+
 Although	O
 the	O
 origin	O
@@ -3352,6 +3462,7 @@ matter	O
 of	O
 debate	O
 .	O
+
 [	O
 60	O
 ]	O
@@ -3372,6 +3483,7 @@ Semite	O
 in	O
 Vienna	B-LOCATION
 .	O
+
 [	O
 61	O
 ]	O
@@ -3398,6 +3510,7 @@ and	O
 cultural	O
 life	O
 .	O
+
 From	O
 the	O
 early	B-PERIOD
@@ -3448,6 +3561,7 @@ the	O
 Jew	B-PERSON_TYPE
 "	O
 .	O
+
 [	O
 62	O
 ]	O
@@ -3488,6 +3602,7 @@ poisoners	O
 are	O
 exterminated	O
 .	O
+
 "	O
 [	O
 62	O
@@ -3564,6 +3679,7 @@ in	O
 vain	O
 "	O
 .	O
+
 [	O
 62	O
 ]	O
@@ -3588,6 +3704,7 @@ Jewish	B-PERSON_TYPE
 Marxism	B-CONCEPT
 "	O
 .	O
+
 [	O
 63	O
 ]	O
@@ -3634,6 +3751,7 @@ of	O
 solving	O
 it	O
 .	O
+
 Hitler	B-PERSON
 believed	O
 the	O
@@ -3661,6 +3779,7 @@ world	O
 plague	O
 "	O
 .	O
+
 [	O
 64	O
 ]	O
@@ -3681,6 +3800,7 @@ inherently	O
 genocidal	O
 nature	O
 .	O
+
 [	O
 62	O
 ]	O
@@ -3720,6 +3840,7 @@ of	O
 the	O
 Jews	B-PERSON_TYPE
 .	O
+
 As	O
 soon	O
 as	O
@@ -3750,6 +3871,7 @@ as	O
 traffic	O
 allows	O
 .	O
+
 Then	O
 the	O
 Jews	B-PERSON_TYPE
@@ -3780,6 +3902,7 @@ of	O
 hygiene	O
 permit	O
 .	O
+
 As	O
 soon	O
 as	O
@@ -3813,6 +3936,7 @@ has	O
 been	O
 exterminated	O
 .	O
+
 Other	O
 cities	O
 will	O
@@ -3834,6 +3958,7 @@ cleansed	O
 of	O
 Jews	B-PERSON_TYPE
 .	O
+
 [	O
 65	O
 ]	O
@@ -3859,6 +3984,7 @@ newspaper	O
 Der	B-MEDIA
 Stürmer	MEDIA
 .	O
+
 [	O
 66	O
 ]	O
@@ -3878,6 +4004,7 @@ the	O
 Jewish	B-PERSON_TYPE
 race	O
 .	O
+
 [	O
 67	O
 ]	O
@@ -3952,6 +4079,7 @@ the	O
 Catholic	B-ORGANISATION
 Church	ORGANISATION
 .	O
+
 The	O
 cultural	O
 antisemitism	O
