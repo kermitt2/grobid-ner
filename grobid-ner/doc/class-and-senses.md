@@ -269,6 +269,34 @@ issues [#12](https://github.com/kermitt2/grobid-ner/issues/12) and [#33](https:/
 
 ### Miscellaneous
 
+➡ the classes may apply to fictive entities, for example:
+```xml
+- a multipurpose hand tool, the <ENAMEX type="ARTIFACT">"Lobotomizer"</ENAMEX> or <ENAMEX type="ARTIFACT">"Lobo"</ENAMEX> (...), for close-quarters combat.
+- a tactic re-invented (...) during the "<ENAMEX type="EVENT">Great Panic</ENAMEX>"
+```
+[issue #24](https://github.com/kermitt2/grobid-ner/issues/24)
+
+
+
+## Conventions
+
+➡ For the class assignation to entities, GROBID NER follows the longest match convention. For instance, the entity _University of Minnesota_ as a whole (longest match) will belong to the class INSTITUTION. Its component _Minnesota_ is a LOCATION, but as it is part of a larger entity chunk, it will not be identified.
+
+<!-- TODO
+/!\ ATTENTION LE PRINCIPE DE LARGEST ENTITY MATCH A AUSSI UN PARAGRAPHE DANS "ANNOTATION GUIDELINES" !!! À UNIFIER
+
+à ajouter dans largest entity match :
+- examples:
+issue #7 .
+German South-West Africa -> all LOCATION
+American Jewish Holocaust survivors -> PERSON_TYPE
+
+- noter qu'il y a une exception au largest entity match bidule : la classe MEASURE lorsque c'est devant, etc., cf issue 32
+-->
+
+➡ There is no specific class for foreign words. They are annotated in one of the existing classes, if relevant, otherwise they are not annotated. In all cases, they are identified in parallel by another attribute.
+
+
 ➡ Punctuation (like quotation marks) are to be left outside the tags, for example: `"<ENAMEX type="PERSON_TYPE">socialists</ENAMEX>"` [(issue #26)](https://github.com/kermitt2/grobid-ner/issues/26).
 
 ➡ **Currencies** alone (_pound sterling_, _US dollar_) should not be annotated [(issue #23)](https://github.com/kermitt2/grobid-ner/issues/23).
@@ -278,28 +306,6 @@ issues [#12](https://github.com/kermitt2/grobid-ner/issues/12) and [#33](https:/
 <ENAMEX type="AWARD">Nobel prize</ENAMEX>-winning economist
 ```
 
-➡ the classes may apply to fictive entities, for example:
-```xml
-- a multipurpose hand tool, the <ENAMEX type="ARTIFACT">"Lobotomizer"</ENAMEX> or <ENAMEX type="ARTIFACT">"Lobo"</ENAMEX> (...), for close-quarters combat.
-- a tactic re-invented (...) during the "<ENAMEX type="EVENT">Great Panic</ENAMEX>"
-```
-[issue #24](https://github.com/kermitt2/grobid-ner/issues/24)
-
-
-## Conventions
-
-For the class assignation to entities, GROBID NER follows the longest match convention. For instance, the entity _University of Minnesota_ as a whole (longest match) will belong to the class INSTITUTION. Its component _Minnesota_ is a LOCATION, but as it is part of a larger entity chunk, it will not be identified.
-
-<!-- TODO
-/!\ ATTENTION LE PRINCIPE DE LARGEST ENTITY MATCH A AUSSI UN PARAGRAPHE DANS "ANNOTATION GUIDELINES" !!! À UNIFIER
-- examples:
-issue #7 .
-German South-West Africa -> all LOCATION
-American Jewish Holocaust survivors -> PERSON_TYPE
-
-- noter qu'il y a une exception au largest entity match bidule : la classe MEASURE lorsque c'est devant, etc., cf issue 32
-
--->
 
 ## Sense information
 
