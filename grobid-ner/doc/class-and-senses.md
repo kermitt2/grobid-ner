@@ -232,13 +232,13 @@ These entities are annotated PERSON_TYPE as long as they can be substituted for 
 ---
 #### TITLE
 
-<!-- TODO
-compléter avec les derniers commentaires de l'issue #12
--->
+➡ Personal or honorific title, with a relatively loose definition. The [Wikipedia page](https://en.wikipedia.org/wiki/Title) examples can be useful. For example the following entities are annotated as TITLE: _**chairman**_, _**member**_, _**founder**_.
 
-➡ Personal or honorific title, with a relatively loose definition. For example the following entities are annotated as TITLE: _**chairman**_, _**member**_, _**founder**_.
+➡ For some terms, the context will determine the annotation. The term `engineer` for example can be a TITLE or not depending on the country:
 
-➡ The [Wikipedia page](https://en.wikipedia.org/wiki/Title) examples can be useful.
+*  In France or Germany it is linked with a specific diploma so it's annotated as TITLE if the term is linked to these countries.
+
+* In UK or USA, it refers to the job, so it's **not** annotated.
 
 ➡ To decide between TITLE and PERSON:
 
@@ -251,6 +251,11 @@ compléter avec les derniers commentaires de l'issue #12
 <br />
 
 * In case of the largest entity match of TITLE + PERSON, the priority goes to PERSON. For example _**The President of the United States Barack Obama**_ as a whole is annotated PERSON.
+
+➡ The same principle applies between TITLE and PERSON_TYPE, for example this case of the largest entity match of TITLE + PERSON_TYPE:
+```xml
+<ENAMEX type="PERSON_TYPE">Members of the British Royal Family</ENAMEX> had fled.
+```
 
 issues [#12](https://github.com/kermitt2/grobid-ner/issues/12) and [#33](https://github.com/kermitt2/grobid-ner/issues/33)
 
