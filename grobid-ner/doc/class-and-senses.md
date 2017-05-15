@@ -15,7 +15,7 @@ The following table describes the 27 named entity classes produced by the model.
 | <a style="text-decorations:none; #color:#265C83" href=#artifact> ARTIFACT | human-made object, including softwares | _FIAT 634_, _Microsoft Word_ |
 | AWARD | award for art, science, sport, etc. | _Balon d'or_, _Nobel prize_|
 | BUSINESS | company / commercial organisation | _Air Canada_, _Microsoft_ |
-| CONCEPT | abstract concept not included in another class | _English_ (as language) |
+| CONCEPT | abstract concept not included in another class | _English_ (as language), _Communism_, _Zionism_ |
 | CONCEPTUAL | entity relating to a concept | _Greek_ myths, _European Union membership_ |
 | <a style="text-decorations:none; #color:#265C83" href=#creation> CREATION | artistic creation, such as song, movie, book, TV show, etc. | _Monna Lisa_, _Mullaholland drive_, _Kitchen Nightmares_, _EU Referendum: The Great Debate_, _Europe: The Final Debate_ |
 | EVENT | event | _World War 2_, _Battle of France_ |
@@ -23,14 +23,14 @@ The following table describes the 27 named entity classes produced by the model.
 | INSTALLATION | structure built by humans | _Strasbourg Cathedral_, _Sforza Castle_ |
 | INSTITUTION | organization of people and a location or structure that share the same name | _Yale University_, the _European Patent Office_, the _British government_ |
 | <a style="text-decorations:none; color:#08c" href=#legal> LEGAL | legal mentions such as article of law, convention, cases, treaty., etc. | _European Patent Convention_;  _Maastricht Treaty_; _Article 52(2)(c) and (3)_; _Roe v. Wade, 410 U.S. 113 (1973)_; _European Union Referendum Act 2015_ |
-| LOCATION | physical location, including planets and galaxies. | _Los Angeles_, _Northern Madagascar_, _Southern Thailand_, _Channel Islands_, _Earth_, _Milky Way_ |
+| <a style="text-decorations:none; color:#08c" href=#location> LOCATION | physical location, including planets and galaxies. | _Los Angeles_, _Northern Madagascar_, _Southern Thailand_, _Channel Islands_, _Earth_, _Milky Way_, _West Mountain_ |
 | <a style="text-decorations:none; color:#08c" href=#measure> MEASURE | numerical amount, including an optional unit of measure | _1,500_, _six million_, _72%_,  |
 | MEDIA | media organization or publication | _Le monde_, _The New York Times_ |
-| NATIONAL | relating to a location | _North American_, _German_, _Britain_ |		
+| NATIONAL | relating to a location | _North American_, _German_, _British_ |		
 | ORGANISATION | organized group of people | _Alcoholics Anonymous_ |
 | <a style="text-decorations:none; color:#08c" href=#period> PERIOD | date, historical era or other time period, time expressions | _January_, the _2nd half of 2010_, _1985-1989_, _from 1930 to 1945_, _since 1918_, the _first four years_ |
 | PERSON | first, middle, last names and aliases of people and fictional characters | _John Smith_ |
-| <a style="text-decorations:none; color:#08c" href=#person_type> PERSON_TYPE | person type or role classified according to group membership | _African-American_, _Asian_, _Conservative_, _Liberal_, _Jews_ |
+| <a style="text-decorations:none; color:#08c" href=#person_type> PERSON_TYPE | person type or role classified according to group membership | _African-American_, _Asian_, _Conservative_, _Liberal_, _Jews_, _Communist_ |
 | PLANT | name of a plant | _Ficus religiosa_ |
 | SPORT_TEAM | sport group or organisation | _The Yankees_ |
 | SUBSTANCE | natural substance | |
@@ -105,6 +105,19 @@ Human-made object, including softwares.
 
 ---
 #### LOCATION
+➡ When there are modifiers along the location, they are included in the entity, for example:
+```xml
+- <ENAMEX type="LOCATION">Suvalkų area</ENAMEX>
+- <ENAMEX type="LOCATION">Pakruojis local rural district</ENAMEX>
+- <ENAMEX type="LOCATION">coast of Honolulu</ENAMEX>
+```
+➡ The articles and prepositions (_from_, _the_) are not included in the entity.
+
+➡ In some cases surrounding elements are not included in the entity, for example _"west of the"_ in:
+```xml
+They established safe zones west of the <ENAMEX type="LOCATION">Rocky Mountains</ENAMEX>.
+```
+[issue #21](https://github.com/kermitt2/grobid-ner/issues/21)
 
 ---
 #### MEASURE
@@ -181,7 +194,31 @@ issues [#13](https://github.com/kermitt2/grobid-ner/issues/13) and [#25](https:/
 
 ---
 #### PERSON_TYPE
+
 ➡ Even though it's an approximation, entities like _**Jewry**_ (which means Jewish community) are included in this class. [(issue #28)](https://github.com/kermitt2/grobid-ner/issues/28)
+
+<!-- TODO
+
+➡ **PERSON_TYPE vs. NATIONAL**
+Sometimes the context determines if an
+
+➡ **PERSON_TYPE vs. CONCEPTUAL**
+
+* Even if the entity doesn't modify a person, it's annotated as PERSON_TYPE, for example:
+```xml
+<ENAMEX type="PERSON_TYPE">Zionist</ENAMEX> events
+<ENAMEX type="PERSON_TYPE">Jewish</ENAMEX> problems
+```
+These entities are annotated PERSON_TYPE as long as they can be substituted for another group of people. For example with `communist, liberal, blond people, diabetic, muffin lovers` **<span style="color:red">/!\ TO CHECK /!\ </span>**.
+
+* Examples where the entity is included in a larger entity:
+```xml
+<ENAMEX type="ORGANISATION">Zionist movement</ENAMEX>
+<ENAMEX type="ORGANISATION">Central Committee of the Zionist Union</ENAMEX>
+```
+[(issue #15)](https://github.com/kermitt2/grobid-ner/issues/15)
+
+-->
 
 ---
 #### PLANT
@@ -194,9 +231,14 @@ issues [#13](https://github.com/kermitt2/grobid-ner/issues/13) and [#25](https:/
 
 ---
 #### TITLE
-➡ Personal or honorific title, with a relatively loose definition. For example the following entities are annotated as TITLE: _**chairman**_, _**member**_, _**founder**_.
 
-➡ The [Wikipedia page](https://en.wikipedia.org/wiki/Title) examples can be useful.
+➡ Personal or honorific title, with a relatively loose definition. The [Wikipedia page](https://en.wikipedia.org/wiki/Title) examples can be useful. For example the following entities are annotated as TITLE: _**chairman**_, _**member**_, _**founder**_.
+
+➡ For some terms, the context will determine the annotation. The term `engineer` for example can be a TITLE or not depending on the country:
+
+*  In France or Germany it is linked with a specific diploma so it's annotated as TITLE if the term is linked to these countries.
+
+* In UK or USA, it refers to the job, so it's **not** annotated.
 
 ➡ To decide between TITLE and PERSON:
 
@@ -210,6 +252,11 @@ issues [#13](https://github.com/kermitt2/grobid-ner/issues/13) and [#25](https:/
 
 * In case of the largest entity match of TITLE + PERSON, the priority goes to PERSON. For example _**The President of the United States Barack Obama**_ as a whole is annotated PERSON.
 
+➡ The same principle applies between TITLE and PERSON_TYPE, for example this case of the largest entity match of TITLE + PERSON_TYPE:
+```xml
+<ENAMEX type="PERSON_TYPE">Members of the British Royal Family</ENAMEX> had fled.
+```
+
 issues [#12](https://github.com/kermitt2/grobid-ner/issues/12) and [#33](https://github.com/kermitt2/grobid-ner/issues/33)
 
 ---
@@ -222,6 +269,34 @@ issues [#12](https://github.com/kermitt2/grobid-ner/issues/12) and [#33](https:/
 
 ### Miscellaneous
 
+➡ the classes may apply to fictive entities, for example:
+```xml
+- a multipurpose hand tool, the <ENAMEX type="ARTIFACT">"Lobotomizer"</ENAMEX> or <ENAMEX type="ARTIFACT">"Lobo"</ENAMEX> (...), for close-quarters combat.
+- a tactic re-invented (...) during the "<ENAMEX type="EVENT">Great Panic</ENAMEX>"
+```
+[issue #24](https://github.com/kermitt2/grobid-ner/issues/24)
+
+
+
+## Conventions
+
+➡ For the class assignation to entities, GROBID NER follows the longest match convention. For instance, the entity _University of Minnesota_ as a whole (longest match) will belong to the class INSTITUTION. Its component _Minnesota_ is a LOCATION, but as it is part of a larger entity chunk, it will not be identified.
+
+<!-- TODO
+/!\ ATTENTION LE PRINCIPE DE LARGEST ENTITY MATCH A AUSSI UN PARAGRAPHE DANS "ANNOTATION GUIDELINES" !!! À UNIFIER
+
+à ajouter dans largest entity match :
+- examples:
+issue #7 .
+German South-West Africa -> all LOCATION
+American Jewish Holocaust survivors -> PERSON_TYPE
+
+- noter qu'il y a une exception au largest entity match bidule : la classe MEASURE lorsque c'est devant, etc., cf issue 32
+-->
+
+➡ There is no specific class for foreign words. They are annotated in one of the existing classes, if relevant, otherwise they are not annotated. In all cases, they are identified in parallel by another attribute.
+
+
 ➡ Punctuation (like quotation marks) are to be left outside the tags, for example: `"<ENAMEX type="PERSON_TYPE">socialists</ENAMEX>"` [(issue #26)](https://github.com/kermitt2/grobid-ner/issues/26).
 
 ➡ **Currencies** alone (_pound sterling_, _US dollar_) should not be annotated [(issue #23)](https://github.com/kermitt2/grobid-ner/issues/23).
@@ -231,28 +306,6 @@ issues [#12](https://github.com/kermitt2/grobid-ner/issues/12) and [#33](https:/
 <ENAMEX type="AWARD">Nobel prize</ENAMEX>-winning economist
 ```
 
-➡ the classes may apply to fictive entities, for example:
-```xml
-- a multipurpose hand tool, the <ENAMEX type="ARTIFACT">"Lobotomizer"</ENAMEX> or <ENAMEX type="ARTIFACT">"Lobo"</ENAMEX> (...), for close-quarters combat.
-- a tactic re-invented (...) during the "<ENAMEX type="EVENT">Great Panic</ENAMEX>"
-```
-[issue #24](https://github.com/kermitt2/grobid-ner/issues/24)
-
-
-## Conventions
-
-For the class assignation to entities, GROBID NER follows the longest match convention. For instance, the entity _University of Minnesota_ as a whole (longest match) will belong to the class INSTITUTION. Its component _Minnesota_ is a LOCATION, but as it is part of a larger entity chunk, it will not be identified.
-
-<!-- TODO
-/!\ ATTENTION LE PRINCIPE DE LARGEST ENTITY MATCH A AUSSI UN PARAGRAPHE DANS "ANNOTATION GUIDELINES" !!! À UNIFIER
-- examples:
-issue #7 .
-German South-West Africa -> all LOCATION
-American Jewish Holocaust survivors -> PERSON_TYPE
-
-- noter qu'il y a une exception au largest entity match bidule : la classe MEASURE lorsque c'est devant, etc., cf issue 32
-
--->
 
 ## Sense information
 
