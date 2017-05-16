@@ -37,6 +37,7 @@ public class NERLexicon {
         CONCEPTUAL("CONCEPTUAL"),
         CREATION("CREATION"),
         EVENT("EVENT"),
+        LEGAL("LEGAL"),
         IDENTIFIER("IDENTIFIER"),
         INSTALLATION("INSTALLATION"),
         MEDIA("MEDIA"),
@@ -161,5 +162,18 @@ public class NERLexicon {
 
     public String getDescription(String label) {
         return descriptions.get(label);
+    }
+
+    public static final String START_ENTITY_LABEL_PREFIX = "B-";
+
+    public static String getPlainLabel(String label) {
+        if (label.startsWith(START_ENTITY_LABEL_PREFIX))
+            return label.substring(2);
+        else 
+            return label;
+    }
+
+    public static boolean isBeginningOfEntity(String label) {
+        return label.startsWith(START_ENTITY_LABEL_PREFIX);
     }
 }

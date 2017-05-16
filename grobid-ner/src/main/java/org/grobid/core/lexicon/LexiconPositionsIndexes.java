@@ -3,9 +3,14 @@ package org.grobid.core.lexicon;
 import org.apache.commons.collections4.CollectionUtils;
 import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.utilities.OffsetPosition;
+import org.grobid.core.layout.LayoutToken;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static org.apache.commons.lang3.StringUtils.isBlank;
+import static org.apache.commons.lang3.StringUtils.isNotEmpty;
+import static org.apache.commons.lang3.StringUtils.trim;
 
 public class LexiconPositionsIndexes {
 
@@ -25,6 +30,15 @@ public class LexiconPositionsIndexes {
         localPersonTitlePositions = lexicon.inPersonTitleNames(text);
         localOrganisationPositions = lexicon.inOrganisationNames(text);
         localOrgFormPositions = lexicon.inOrgFormNames(text);
+    }
+
+    public void computeIndexes(List<LayoutToken> tokens) {
+        // we should extend the methods to avoid a copy of the strings here
+        List<String> strings = getTexts(tokens);
+        localLocationPositions = lexicon.inLocationNames(strings);
+        localPersonTitlePositions = lexicon.inPersonTitleNames(strings);
+        localOrganisationPositions = lexicon.inOrganisationNames(strings);
+        localOrgFormPositions = lexicon.inOrgFormNames(strings);
     }
 
     /**
@@ -78,5 +92,23 @@ public class LexiconPositionsIndexes {
 
     public void setLocalOrgFormPositions(List<OffsetPosition> localOrgFormPositions) {
         this.localOrgFormPositions = localOrgFormPositions;
+    }
+
+    /**
+     * Give the list of textual tokens from a list of LayoutToken
+     */
+    private static List<String> getTexts(List<LayoutToken> tokenizations) {
+        List<String> texts = new ArrayList<String>();
+        for (LayoutToken token : tokenizations) {
+            if (isNotEmpty(trim(token.getText())) && 
+                !token.getText().equals(" ") &&
+                !token.getText().equals("\n") && 
+                !token.getText().equals("\r") &&  
+                !token.getText().equals("\t") && 
+                !token.getText().equals("\u00A0")) {
+                    texts.add(token.getText());
+            }
+        }
+        return texts;
     }
 }

@@ -76,6 +76,7 @@ public class AssembleNERCorpus {
                 }
             }
         }
+
     }
 
     /**
@@ -663,18 +664,18 @@ public class AssembleNERCorpus {
 
                     if (semdocSax.getAnnotatedTextVector() != null) {
                         for (; indexSemdoc < semdocSax.getAnnotatedTextVector().size(); indexSemdoc++) {
-                            String line2 = semdocSax.getAnnotatedTextVector().get(indexSemdoc);
+                            String linee = semdocSax.getAnnotatedTextVector().get(indexSemdoc);
 
-                            if (line2.trim().length() == 0) {
+                            if (linee.trim().length() == 0) {
                                 // new doc
                                 continue;
                             }
-                            if (line2.trim().equals("@newline")) {
+                            if (linee.trim().equals("@newline")) {
                                 // new sentence
                                 writer.write("\n");
                                 continue;
                             }
-                            String[] pieces = line2.split("\t");
+                            String[] pieces = linee.split("\t");
                             lineToken = pieces[0];
                             String currentLabel = pieces[1];
                             if (currentLabel.startsWith("B-") || currentLabel.startsWith("I-")) {
