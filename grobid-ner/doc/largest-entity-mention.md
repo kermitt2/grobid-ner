@@ -126,6 +126,9 @@ Indeed, a person stays the same person, whereas its title may change. Also, a ti
 
 - <ENAMEX type="PERSON_TYPE">American Jewish Holocaust survivors</ENAMEX>
 
+- <ENAMEX type="TITLE">chairman of the Central Committee of the World Sephardi
+Federation and a member of the Knesset</ENAMEX>
+
 ```
 
 [issue#32](https://github.com/kermitt2/grobid-ner/issues/32)
