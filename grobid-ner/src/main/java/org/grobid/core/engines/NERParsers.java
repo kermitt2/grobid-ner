@@ -4,6 +4,8 @@ import org.grobid.core.data.Entity;
 import org.grobid.core.exceptions.GrobidResourceException;
 import org.grobid.core.lang.Language;
 import org.grobid.core.utilities.LanguageUtilities;
+import org.grobid.core.utilities.LayoutTokensUtil;
+import org.grobid.core.layout.LayoutToken;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,14 +25,12 @@ public class NERParsers {
     private static Logger LOGGER = LoggerFactory.getLogger(NERParsers.class);
 
     private Map<String, NERParser> parsers = null;
-    private NERParserCommon nerParserCommon;
 
     public NERParsers() {
         parsers = new HashMap<String, NERParser>();
         // supported languages
         parsers.put("en", new NEREnParser());
         parsers.put("fr", new NERFrParser());
-        nerParserCommon = new NERParserCommon();
     }
 
     /**
@@ -47,6 +47,22 @@ public class NERParsers {
         }
 
         return extractNE(text, resultLang);
+    }
+
+    /**
+     * Extract all occurrences of named entity from list of LayoutToken of unknown language.
+     * A language identifier is used to determine the language, and the token sequence is 
+     * processed if the identified language is supported.
+     */
+    public List<Entity> extractNE(List<LayoutToken> tokens) throws GrobidResourceException {
+        // run language identifier
+        LanguageUtilities languageIdentifier = LanguageUtilities.getInstance();                     
+        Language resultLang = null;
+        synchronized (languageIdentifier) {       
+            resultLang = languageIdentifier.runLanguageId(LayoutTokensUtil.toText(tokens), 2000); 
+        }
+
+        return extractNE(tokens, resultLang);
     }
 
     /**
@@ -72,6 +88,29 @@ public class NERParsers {
         return parser.extractNE(text);
     }
 
+    /**
+     * Extract all occurrences of named entity from a list of LayoutToken and a given language.
+     */
+    public List<Entity> extractNE(List<LayoutToken> tokens, Language lang) throws GrobidResourceException {
+
+        if ((tokens == null) || (tokens.size() == 0))
+            return null;
+
+        //text = text.replace("\n", " ");
+
+        if (lang == null) {
+            return extractNE(tokens);
+        }
+
+        NERParser parser = parsers.get(lang.getLang());
+        if (parser == null) {
+            throw new GrobidResourceException("The automatically identified language is currently not supported by grobid-ner: " +
+                lang.getLang());
+        }
+
+        return parser.extractNE(tokens);
+    }
+
     public int createTrainingBatch(String inputDirectory,
                                    String outputDirectory,
                                    String lang) throws Exception {
@@ -80,7 +119,7 @@ public class NERParsers {
             throw new GrobidResourceException("The automatically identified labnguage is currently not supported by grobid-ner: " + 
                 lang);
         }
-        return nerParserCommon.createTrainingBatch(inputDirectory, outputDirectory, parser, lang);
+        return NERParserCommon.createTrainingBatch(inputDirectory, outputDirectory, parser, lang);
     }
 
     public NERParser getParser(String lang) {

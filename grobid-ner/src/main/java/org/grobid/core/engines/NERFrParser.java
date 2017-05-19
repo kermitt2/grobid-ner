@@ -8,6 +8,8 @@ import org.grobid.core.lang.Language;
 import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.lexicon.LexiconPositionsIndexes;
 import org.grobid.core.utilities.Pair;
+import org.grobid.core.layout.LayoutToken;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -32,6 +34,8 @@ public class NERFrParser extends AbstractParser implements NERParser {
 
     /**
      * Extract all occurrences of named entity from a simple piece of text.
+     * The positions of the recognized entities are given as character offsets 
+     * (following Java specification of characters).
      */
     public List<Entity> extractNE(String text) {
         List<String> tokens = null;
@@ -53,6 +57,18 @@ public class NERFrParser extends AbstractParser implements NERParser {
         List<Entity> entities = NERParserCommon.resultExtraction(text, labeled, tokens);
 
         return entities;
+    }
+
+    /**
+     * Extract all occurrences of named entities from a list of LayoutToken
+     * coming from a document with fixed/preserved layout, e.g. PDF. 
+     * The positions of the recognized entities are given with coordinates in 
+     * the input document.
+     */
+    public List<Entity> extractNE(List<LayoutToken> tokens) {
+        
+
+        return null;
     }
 
     public String createCONNLTrainingFromText(String text) {
