@@ -4,6 +4,8 @@ repo_name: GitHub
 theme: readthedocs
 site_description: Documentation for GROBID NER
 docs_dir: grobid-ner/doc
+extra_css:
+  - 'custom.css'
 include_search: true
 pages:
 - Home: 'index.md'
@@ -12,8 +14,9 @@ pages:
 - User Manual:
   - 'Build and Install': 'build-and-install.md'
   - 'Using GROBID NER': 'using-grobid-ner.md'
-  - 'Class and Senses': 'class-and-senses.md'
   - 'Annotation Guidelines': 'annotation-guidelines.md'
+  - 'Classes and Senses': 'class-and-senses.md'
+  - 'Largest entity mention': 'largest-entity-mention.md'
   - 'Annotation examples': 'annotation-examples.md'
   - 'Datasets and training': 'training-ner-model.md'
   - 'Generate training data': 'generate-training-data.md'

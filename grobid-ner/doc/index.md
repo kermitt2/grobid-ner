@@ -1,4 +1,4 @@
-# GROBID Named Entity Recognition Documentation
+<h1>GROBID Named Entity Recognition Documentation</h1>
 
 ## Purposes
 
@@ -23,9 +23,11 @@ Annotated data will be always welcomed, if you like to contribute, you can conta
 
 * [Using GROBID NER](using-grobid-ner.md)
 
+* [Annotation guidelines](annotation-guidelines.md)
+
 * [Classes and senses](class-and-senses.md)
 
-* [Annotation guidelines](annotation-guidelines.md)
+* [Largest entity mention](largest-entity-mention.md)
 
 * [Annotation examples](annotation-examples.md)
 

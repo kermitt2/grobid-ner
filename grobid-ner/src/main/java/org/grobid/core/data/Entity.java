@@ -56,8 +56,12 @@ public class Entity implements Comparable<Entity> {
 	private Sense sense = null;
 	
 	// optional bounding box in the source document
-	private BoundingBox box = null;
+	private List<BoundingBox> boundingBoxes = null;
 		
+	// potition in the global tokenization
+	//private int startTokenPos = -1;
+	//private int endTokenPos = -1;
+
 	// orign of the entity definition
 	private Origin origin = Origin.GROBID;
 	
@@ -80,6 +84,9 @@ public class Entity implements Comparable<Entity> {
 		conf = ent.conf;
 		sense = ent.sense;
 		origin = ent.origin;
+		boundingBoxes = ent.boundingBoxes;
+		//startTokenPos = ent.startTokenPos;
+		//endTokenPos = ent.startTokenPos;
 	}
 
     public String getRawName() {
@@ -186,15 +193,55 @@ public class Entity implements Comparable<Entity> {
 		// TBD
 	}
 	
+	/*public int getStartTokenPos() {
+		return startTokenPos;
+	}
+
+	public void setStartTokenPos(int startTokenPos) {
+		this.startTokenPos = startTokenPos;
+	}
+
+	public int getEndTokenPos() {
+		return endTokenPos;
+	}
+
+	public void setEndTokenPos(int endTokenPos) {
+		this.endTokenPos = endTokenPos;
+	}*/
+
+	public void setBoundingBoxes(List<BoundingBox> boundingBoxes) {
+		this.boundingBoxes = boundingBoxes;
+	}
+
+	public List<BoundingBox> getBoundingBoxes() {
+		return boundingBoxes;
+	}
+
+	public void addBoundingBoxes(BoundingBox boundingBox) {
+		if (this.boundingBoxes == null)
+			this.boundingBoxes = new ArrayList<BoundingBox>();
+		this.boundingBoxes.add(boundingBox);
+	}
+
 	@Override
 	public boolean equals(Object object) {
 		boolean result = false;
 		if ( (object != null) && object instanceof Entity) {
 			int start = ((Entity)object).getOffsetStart();
 			int end = ((Entity)object).getOffsetEnd();
-			if ( (start == offsets.start) && (end == offsets.end) ) {
-				result = true;
-			}
+			if ( (start != -1) && (end != -1) ) {
+				if ( (start == offsets.start) && (end == offsets.end) ) {
+					result = true;
+				}
+			} /*else {
+				int startToken = ((Entity)object).getStartTokenPos();
+				int endToken = ((Entity)object).getEndTokenPos();
+				if ( (startToken != -1) && (endToken != -1) ) {
+					if ( (startToken == startTokenPos) && (endToken == endTokenPos) ) {
+						result = true;
+					}
+				}
+			}*/
 		}
 		return result;
 	}
@@ -204,10 +251,26 @@ public class Entity implements Comparable<Entity> {
 		int start = theEntity.getOffsetStart();
 		int end = theEntity.getOffsetEnd();
 		
-		if (offsets.start != start) 
-			return offsets.start - start;
-		else 
-			return offsets.end - end;
+		//if ((start != -1) && (end != -1)) {
+			if (offsets.start != start) 
+				return offsets.start - start;
+			else 
+				return offsets.end - end;
+		/*} else {
+			int startToken = theEntity.getStartTokenPos();
+			int endToken =theEntity.getEndTokenPos();
+			if ( (startToken != -1) && (endToken != -1) ) {
+				if (startToken != startTokenPos) 
+					return startTokenPos - startToken;
+				else 
+					return endTokenPos - endToken;
+			} else {
+				// it's too underspecified to be comparable, and for 
+				// sure it's not equal
+				// throw an exception ?
+				return -1;
+			}
+		}*/
 	}
 	
 	public String toJson() {
@@ -234,9 +297,27 @@ public class Entity implements Comparable<Entity> {
 			buffer.append(" ] \"");
 		}
 			
-		buffer.append(", \"offsetStart\" : " + offsets.start);
-		buffer.append(", \"offsetEnd\" : " + offsets.end);	
-		
+		if ( (offsets != null) && (offsets.start != -1) && (offsets.end != -1) ) {
+			buffer.append(", \"offsetStart\" : " + offsets.start);
+			buffer.append(", \"offsetEnd\" : " + offsets.end);	
+		}
+
+		// start and end token index not to be outputed 
+
+		if ( (boundingBoxes != null) && (boundingBoxes.size() > 0) ) {
+			buffer.append(", \"pos\" : [");
+			boolean start = true; 
+			for(BoundingBox box : boundingBoxes) {
+				if (start) {
+					buffer.append("{").append(box.toJson()).append("}");
+					start = false;
+				} else {
+					buffer.append(", {").append(box.toJson()).append("}");
+				}
+			}
+			buffer.append("]");
+		}
+
 		buffer.append(", \"conf\" : \"" + conf + "\"");
 		buffer.append(", \"prob\" : \"" + prob + "\"");
 		
