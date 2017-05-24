@@ -3,18 +3,18 @@
 	<subcorpus>
 		<document name="Wikipedia_brexit.2">
 			<p xml:lang="en" xml:id="P0">
-				<sentence xml:id="P0E0"><ENAMEX type="EVENT">Brexit</ENAMEX> is the forthcoming withdrawal of the <ENAMEX type="LOCATION">United Kingdom</ENAMEX> (<ENAMEX type="LOCATION">UK</ENAMEX>) from the <ENAMEX type="INSTITUTION">European Union</ENAMEX> (<ENAMEX type="INSTITUTION">EU</ENAMEX>).</sentence>
+				<sentence xml:id="P0E0"><ENAMEX type="EVENT">Brexit</ENAMEX> is the forthcoming withdrawal of the <ENAMEX type="LOCATION">United Kingdom</ENAMEX> (<ENAMEX type="LOCATION">UK</ENAMEX>) from the <ENAMEX type="INSTITUTION">European Union (EU)</ENAMEX>.</sentence>
 				<sentence xml:id="P0E1">In the <ENAMEX type="PERIOD">June 2016</ENAMEX> referendum, <ENAMEX type="MEASURE">52%</ENAMEX> voted to leave the <ENAMEX type="INSTITUTION">EU</ENAMEX>, leading into a complex separation process implying political and economic changes for the <ENAMEX type="LOCATION">UK</ENAMEX> and other countries.</sentence>
 				<sentence xml:id="P0E2">The timetable for withdrawal has not yet been firmly established.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P1">
-				<sentence xml:id="P1E0">Withdrawal from the <ENAMEX type="INSTITUTION">European Union</ENAMEX> has been a right under <ENAMEX type="LEGAL">Article 50</ENAMEX> of the <ENAMEX type="LEGAL">Treaty</ENAMEX> on <ENAMEX type="INSTITUTION">European Union</ENAMEX> of</ENAMEX> <ENAMEX type="TITLE">EU member states</ENAMEX>  <ENAMEX type="PERIOD">since 2007</ENAMEX>.</sentence>
+				<sentence xml:id="P1E0">Withdrawal from the <ENAMEX type="INSTITUTION">European Union</ENAMEX> has been a right under <ENAMEX type="LEGAL">Article 50 of the Treaty</ENAMEX> on <ENAMEX type="INSTITUTION">European Union</ENAMEX> of</ENAMEX> <ENAMEX type="TITLE">EU member states</ENAMEX>  <ENAMEX type="PERIOD">since 2007</ENAMEX>.</sentence>
 				<sentence xml:id="P1E1">The details of the process for the <ENAMEX type="LOCATION">UK</ENAMEX>&apos;s withdrawal are uncertain under <ENAMEX type="LEGAL">UE law – Article 50</ENAMEX>, which now governs the withdrawal, has never been used before.</sentence>
-				<sentence xml:id="P1E2">[a] Unless extensions are agreed, the timing for leaving under the article is <ENAMEX type="PERIOD">two years from when</ENAMEX> <ENAMEX type="LOCATION">Britain</ENAMEX> gives official notice, but this official notice was not given immediately following the referendum in <ENAMEX type="PERIOD">June 2016</ENAMEX>.</sentence>
+				<sentence xml:id="P1E2">[a] Unless extensions are agreed, the timing for leaving under the article is <ENAMEX type="PERIOD">two years</ENAMEX> from when <ENAMEX type="LOCATION">Britain</ENAMEX> gives official notice, but this official notice was not given immediately following the referendum in <ENAMEX type="PERIOD">June 2016</ENAMEX>.</sentence>
 				<sentence xml:id="P1E3">The assumption is that <ENAMEX type="PERIOD">during the two-year window</ENAMEX> new agreements will be negotiated, but there is no requirement that there be new agreements.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P2">
-				<sentence xml:id="P2E0">Withdrawal has been the goal of various individuals, advocacy groups, and political parties since the <ENAMEX type="LOCATION">UK</ENAMEX> joined the <ENAMEX type="INSTITUTION">European Economic Community</ENAMEX> (<ENAMEX type="INSTITUTION">EEC</ENAMEX>), the predecessor of the <ENAMEX type="INSTITUTION">EU</ENAMEX>, in <ENAMEX type="PERIOD">1973</ENAMEX>, though continued membership of the <ENAMEX type="INSTITUTION">EEC</ENAMEX> was approved in a <ENAMEX type="LEGAL">1975 referendum</ENAMEX> by <ENAMEX type="MEASURE">67%</ENAMEX> of voters.</sentence>
+				<sentence xml:id="P2E0">Withdrawal has been the goal of various individuals, advocacy groups, and political parties since the <ENAMEX type="LOCATION">UK</ENAMEX> joined the <ENAMEX type="INSTITUTION">European Economic Community (EEC)</ENAMEX>, the predecessor of the <ENAMEX type="INSTITUTION">EU</ENAMEX>, in <ENAMEX type="PERIOD">1973</ENAMEX>, though continued membership of the <ENAMEX type="INSTITUTION">EEC</ENAMEX> was approved in a <ENAMEX type="LEGAL">1975 referendum</ENAMEX> by <ENAMEX type="MEASURE">67%</ENAMEX> of voters.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P3">
 				<sentence xml:id="P3E0">Background</sentence>
@@ -26,7 +26,7 @@
 			<p xml:lang="en" xml:id="P5">
 				<sentence xml:id="P5E0">Once <ENAMEX type="PERSON">de Gaulle</ENAMEX> had relinquished the <ENAMEX type="NATIONAL">French</ENAMEX> presidency, the <ENAMEX type="LOCATION">UK</ENAMEX> made a third application for membership, which was successful.</sentence>
 				<sentence xml:id="P5E1">Under the <ENAMEX type="PERSON_TYPE">Conservative</ENAMEX> <ENAMEX type="PERSON">Prime Minister Edward Heath</ENAMEX> the <ENAMEX type="LEGAL">European Communities Act 1972</ENAMEX> was enacted.</sentence>
-				<sentence xml:id="P5E2">On <ENAMEX type="PERIOD">1 January 1973</ENAMEX> the <ENAMEX type="LOCATION">United Kingdom</ENAMEX> joined the <ENAMEX type="INSTITUTION">EEC</ENAMEX>, or &quot;<ENAMEX type="CREATION">Common Market</ENAMEX>&quot;.</sentence>
+				<sentence xml:id="P5E2">On <ENAMEX type="PERIOD">1 January 1973</ENAMEX> the <ENAMEX type="LOCATION">United Kingdom</ENAMEX> joined the <ENAMEX type="INSTITUTION">EEC</ENAMEX>, or &quot;<ENAMEX type="LEGAL">Common Market</ENAMEX>&quot;.</sentence>
 				<sentence xml:id="P5E3">[4] The opposition <ENAMEX type="ORGANISATION">Labour Party</ENAMEX>, led by <ENAMEX type="PERSON">Harold Wilson</ENAMEX>, contested the <ENAMEX type="PERIOD">October 1974</ENAMEX> general election with a commitment to renegotiate <ENAMEX type="LOCATION">Britain</ENAMEX>&apos;s terms of membership of the <ENAMEX type="INSTITUTION">EEC</ENAMEX> and then hold a referendum on whether to remain in the <ENAMEX type="INSTITUTION">EEC</ENAMEX> on the new terms.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P6">
@@ -43,7 +43,7 @@
 				<sentence xml:id="P8E4"><ENAMEX type="MEAURE">Seven of the twenty-three</ENAMEX> <ENAMEX type="TITLE">members</ENAMEX> of the cabinet opposed <ENAMEX type="INSTITUTION">EEC</ENAMEX> membership.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P9">
-				<sentence xml:id="P9E0">On <ENAMEX type="PERIOD">5 June 1975</ENAMEX>, the electorate were asked to vote yes or no on the question: &quot;Do you think the <ENAMEX type="LOCATION">UK</ENAMEX> should stay in the <ENAMEX type="INSTITUTION">European Community</ENAMEX> (<ENAMEX type="CREATION">Common Market</ENAMEX>)?&quot;</sentence>
+				<sentence xml:id="P9E0">On <ENAMEX type="PERIOD">5 June 1975</ENAMEX>, the electorate were asked to vote yes or no on the question: &quot;Do you think the <ENAMEX type="LOCATION">UK</ENAMEX> should stay in the <ENAMEX type="INSTITUTION">European Community (Common Market)</ENAMEX>?&quot;</sentence>
 				<sentence xml:id="P9E1">Every administrative county in the <ENAMEX type="LOCATION">UK</ENAMEX> had a majority of &quot;Yes&quot;, except the <ENAMEX type="LOCATION">Shetland Islands</ENAMEX> and the <ENAMEX type="LOCATION">Outer Hebrides</ENAMEX>.</sentence>
 				<sentence xml:id="P9E2">In line with the outcome of the vote, <ENAMEX type="MEASURE">67%</ENAMEX> in favour of staying in, the <ENAMEX type="LOCATION">United Kingdom</ENAMEX> remained a member of the <ENAMEX type="INSTITUTION">EEC</ENAMEX>.</sentence>
 			</p>
@@ -86,7 +86,7 @@
 				<sentence xml:id="P20E2">[11] It failed to win a single parliamentary seat as its vote was spread out, losing its deposit (funded by <ENAMEX type="PERSON">Goldsmith</ENAMEX>) in <ENAMEX type="MEASURE">505</ENAMEX> constituencies.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P21">
-				<sentence xml:id="P21E0">The <ENAMEX type="ORGANISATION">UK Independence Party</ENAMEX> (<ENAMEX type="ORGANISATION">UKIP</ENAMEX>), a <ENAMEX type="ORGANISATION">Eurosceptic political party</ENAMEX>, was also formed in <ENAMEX type="PERIOD">1993</ENAMEX>.</sentence>
+				<sentence xml:id="P21E0">The <ENAMEX type="ORGANISATION">UK Independence Party (UKIP), a Eurosceptic political party</ENAMEX>, was also formed in <ENAMEX type="PERIOD">1993</ENAMEX>.</sentence>
 				<sentence xml:id="P21E1">It achieved third place in the <ENAMEX type="LOCATION">UK</ENAMEX> during the <ENAMEX type="PERIOD">2004</ENAMEX> <ENAMEX type="NATIONAL">European</ENAMEX> elections, second place in the <ENAMEX type="PERIOD">2009</ENAMEX> <ENAMEX type="NATIONAL">European</ENAMEX> elections and first place in the <ENAMEX type="PERIOD">2014</ENAMEX> <ENAMEX type="NATIONAL">European</ENAMEX> elections, with <ENAMEX type="MEASURE">27.5%</ENAMEX> of the total vote.</sentence>
 				<sentence xml:id="P21E2">This was the first time <ENAMEX type="PERIOD">since the 1910</ENAMEX> general election that any party other than the <ENAMEX type="ORGANISATION">Labour or Conservative parties</ENAMEX> had taken the largest share of the vote in a nationwide election.</sentence>
 			</p>
@@ -107,13 +107,13 @@
 				<sentence xml:id="P25E0"><ENAMEX type="PERIOD">2016</ENAMEX> referendum</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P26">
-				<sentence xml:id="P26E0">Main article: <ENAMEX type="LEGAL">United Kingdom European Union membership referendum</ENAMEX>, <ENAMEX type="PERIOD">2016</ENAMEX></sentence>
+				<sentence xml:id="P26E0">Main article: <ENAMEX type="LEGAL">United Kingdom European Union membership referendum, 2016</ENAMEX></sentence>
 			</p>
 			<p xml:lang="en" xml:id="P27">
-				<sentence xml:id="P27E0">See also: Aftermath of the <ENAMEX type="LEGAL">United Kingdom European Union membership referendum</ENAMEX>, <ENAMEX type="PERIOD">2016</ENAMEX></sentence>
+				<sentence xml:id="P27E0">See also: Aftermath of the <ENAMEX type="LEGAL">United Kingdom European Union membership referendum, 2016</ENAMEX></sentence>
 			</p>
 			<p xml:lang="en" xml:id="P28">f
-				<sentence xml:id="P28E0">	This section should include only a brief summary of <ENAMEX type="LEGAL">United Kingdom European Union membership referendum</ENAMEX>, <ENAMEX type="PERIOD">2016</ENAMEX>.</sentence>
+				<sentence xml:id="P28E0">	This section should include only a brief summary of <ENAMEX type="LEGAL">United Kingdom European Union membership referendum, 2016</ENAMEX>.</sentence>
 				<sentence xml:id="P28E1">See <ENAMEX type="WEBSITE">Wikipedia</ENAMEX>:Summary style for information on how to properly incorporate it into this article&apos;s main text.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P29">
@@ -126,7 +126,7 @@
 			<p xml:lang="en" xml:id="P31">
 				<sentence xml:id="P31E0">The <ENAMEX type="ORGANISATION">Conservative Party</ENAMEX> unexpectedly won the <ENAMEX type="PERIOD">2015</ENAMEX> general election with a majority.</sentence>
 				<sentence xml:id="P31E1">Soon afterwards the <ENAMEX type="LEGAL">European Union Referendum Act 2015</ENAMEX> was introduced into <ENAMEX type="INSTITUTION">Parliament</ENAMEX> to enable the referendum.</sentence>
-				<sentence xml:id="P31E2">Despite being in favour of remaining in a reformed <ENAMEX type="INSTITUTION">European Union</ENAMEX> himself,[22] <ENAMEX type="PERSON">Cameron</ENAMEX> announced that <ENAMEX type="PERSON_TYPE">Conservative</ENAMEX> <ENAMEX type="TITLE">Ministers</ENAMEX> and <ENAMEX type="TITLE">MPs</ENAMEX> were free to campaign in favour of remaining in the <ENAMEX type="INSTITUTION">EU</ENAMEX> or leaving it, according to their conscience.</sentence>
+				<sentence xml:id="P31E2">Despite being in favour of remaining in a reformed <ENAMEX type="INSTITUTION">European Union</ENAMEX> himself,[22] <ENAMEX type="PERSON">Cameron</ENAMEX> announced that <ENAMEX type="PERSON_TYPE">Conservative</ENAMEX> Ministers and <ENAMEX type="TITLE">MPs</ENAMEX> were free to campaign in favour of remaining in the <ENAMEX type="INSTITUTION">EU</ENAMEX> or leaving it, according to their conscience.</sentence>
 				<sentence xml:id="P31E3">This decision came after mounting pressure for a free vote for <ENAMEX type="TITLE">ministers</ENAMEX>.</sentence>
 				<sentence xml:id="P31E4">[23] In an exception to the usual rule of <ENAMEX type="LEGAL">cabinet collective responsibility</ENAMEX>, <ENAMEX type="PERSON">Cameron</ENAMEX> allowed <ENAMEX type="LEGAL">cabinet minister</ENAMEX>s to campaign publicly for <ENAMEX type="INSTITUTION">EU</ENAMEX> withdrawal.</sentence>
 			</p>
