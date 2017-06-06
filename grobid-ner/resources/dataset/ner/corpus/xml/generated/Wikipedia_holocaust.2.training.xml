@@ -997,43 +997,44 @@
 				<sentence xml:id="P264E0"><ENAMEX type="PERSON_TYPE">Jewish</ENAMEX> women and children from <ENAMEX type="BUSINESS">Carpatho-Ruthenia</ENAMEX> after their arrival at the <ENAMEX type="LOCATION">Auschwitz</ENAMEX> death camp.</sentence>
 				<sentence xml:id="P264E1"><ENAMEX type="PERIOD">May/June 1944</ENAMEX>.</sentence>
 			</p>
+			<!--DEBUT ELIAS-->
 			<p xml:lang="en" xml:id="P265">
-				<sentence xml:id="P265E0">The audience for this speech included Admiral <ENAMEX type="PERSON">Karl Dönitz</ENAMEX> and <ENAMEX type="PERSON">Armaments Minister Albert Speer</ENAMEX>.</sentence>
-				<sentence xml:id="P265E1"><ENAMEX type="PERSON">Dönitz</ENAMEX> successfully claimed at the <ENAMEX type="LOCATION">Nuremberg</ENAMEX> trials that he had had no knowledge of the Final Solution.</sentence>
+				<sentence xml:id="P265E0">The audience for this speech included <ENAMEX type="PERSON">Admiral Karl Dönitz and Armaments Minister Albert Speer</ENAMEX>.</sentence>
+				<sentence xml:id="P265E1"><ENAMEX type="PERSON">Dönitz</ENAMEX> successfully claimed at the <ENAMEX type="LOCATION">Nuremberg</ENAMEX> trials that he had had no knowledge of <ENAMEX type="CONCEPT">the Final Solution</ENAMEX>.</sentence>
 				<sentence xml:id="P265E2"><ENAMEX type="PERSON">Speer</ENAMEX> declared at the trial and in a subsequent interview that &quot;If I didn&apos;t see it, then it was because I didn&apos;t want to see it.&quot;</sentence>
-				<sentence xml:id="P265E3">[258] The text of this speech was not known at the time of their post-war trials.</sentence>
+				<sentence xml:id="P265E3">[258] The text of this speech was not known at the time of their <ENAMEX type="PERIOD">post-war</ENAMEX> trials.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P266">
-				<sentence xml:id="P266E0">The scale of extermination slackened somewhat at the beginning of <ENAMEX type="PERIOD">1944</ENAMEX> once the ghettos in occupied <ENAMEX type="LOCATION">Poland</ENAMEX> were emptied, but on <ENAMEX type="PERIOD">19 March 1944</ENAMEX>, <ENAMEX type="PERSON">Hitler</ENAMEX> ordered the military occupation of <ENAMEX type="LOCATION">Hungary</ENAMEX>, and <ENAMEX type="PERSON">Eichmann</ENAMEX> was dispatched to <ENAMEX type="LOCATION">Budapest</ENAMEX> to supervise the deportation of <ENAMEX type="LOCATION">Hungary</ENAMEX>&apos;s <ENAMEX type="MEASURE">800,000</ENAMEX> Jews.</sentence>
+				<sentence xml:id="P266E0">The scale of extermination slackened somewhat at the beginning of <ENAMEX type="PERIOD">1944</ENAMEX> once the ghettos in occupied <ENAMEX type="LOCATION">Poland</ENAMEX> were emptied, but on <ENAMEX type="PERIOD">19 March 1944</ENAMEX>, <ENAMEX type="PERSON">Hitler</ENAMEX> ordered the military occupation of <ENAMEX type="LOCATION">Hungary</ENAMEX>, and <ENAMEX type="PERSON">Eichmann</ENAMEX> was dispatched to <ENAMEX type="LOCATION">Budapest</ENAMEX> to supervise the deportation of <ENAMEX type="LOCATION">Hungary</ENAMEX>&apos;s <ENAMEX type="MEASURE">800,000</ENAMEX> <ENAMEX type="PERSON_TYPE">Jews</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P267">
-				<sentence xml:id="P267E0"><ENAMEX type="LOCATION">  Hungary</ENAMEX> did nothing in the matter of the <ENAMEX type="PERSON_TYPE">Jewish</ENAMEX> problem, and was not prepared to settle accounts with the large <ENAMEX type="PERSON_TYPE">Jewish</ENAMEX> population in <ENAMEX type="LOCATION">Hungary</ENAMEX>.</sentence>
+				<sentence xml:id="P267E0"><ENAMEX type="LOCATION">Hungary</ENAMEX> did nothing in the matter of the <ENAMEX type="PERSON_TYPE">Jewish</ENAMEX> problem, and was not prepared to settle accounts with the large <ENAMEX type="PERSON_TYPE">Jewish</ENAMEX> population in <ENAMEX type="LOCATION">Hungary</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P268">
 				<sentence xml:id="P268E0"><ENAMEX type="MEASURE">More than half</ENAMEX> of them were shipped to <ENAMEX type="INSTALLATION">Auschwitz</ENAMEX> after the occupation.</sentence>
-				<sentence xml:id="P268E1">The commandant, <ENAMEX type="PERSON">Rudolf Höss</ENAMEX>, said at his trial that he killed <ENAMEX type="MEASURE">400,000</ENAMEX> <ENAMEX type="PERSON_TYPE">Hungarian Jews</ENAMEX> in three months.</sentence>
+				<sentence xml:id="P268E1">The commandant, <ENAMEX type="PERSON">Rudolf Höss</ENAMEX>, said at his trial that he killed <ENAMEX type="MEASURE">400,000</ENAMEX> <ENAMEX type="PERSON_TYPE">Hungarian Jews</ENAMEX> in <ENAMEX type="PERIOD">three months</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P269">
-				<sentence xml:id="P269E0">&quot;Blood for goods&quot;</sentence>
+				<sentence xml:id="P269E0">&quot;<ENAMEX type="CONCEPT">Blood for goods</ENAMEX>&quot;</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P270">
-				<sentence xml:id="P270E0">The operation to kill <ENAMEX type="LOCATION">Hungarian Jews</ENAMEX> met strong opposition within the <ENAMEX type="PERSON_TYPE">Nazi</ENAMEX> hierarchy, and there were some suggestions that <ENAMEX type="PERSON">Hitler</ENAMEX> should offer the Allies a deal where they would be spared in exchange for a favorable peace settlement.</sentence>
-				<sentence xml:id="P270E1">There were unofficial negotiations in <ENAMEX type="LOCATION">Istanbul</ENAMEX> between <ENAMEX type="PERSON">Himmler</ENAMEX>&apos;s agents, <ENAMEX type="NATIONAL">British</ENAMEX> agents, and representatives of <ENAMEX type="PERSON_TYPE">Jewish</ENAMEX> organizations; at one point an attempt by <ENAMEX type="ORGANISATION">Eichmann to exchange one million Jews</ENAMEX> for <ENAMEX type="MEASURE">10,000 trucks—the</ENAMEX> so-called &quot;blood for goods&quot; proposal—but there was no real possibility of such a deal being struck on this scale.</sentence>
-				<sentence xml:id="P270E2">[261] During <ENAMEX type="PERSON_TYPE">Eichman</ENAMEX>&apos;s trial in <ENAMEX type="LOCATION">Jerusalem</ENAMEX>, he denied having knowledge of this attempt to blackmail the Allies in this manner but the evidence showed otherwise.</sentence>
+				<sentence xml:id="P270E0">The operation to kill <ENAMEX type="LOCATION">Hungarian Jews</ENAMEX> met strong opposition within the <ENAMEX type="PERSON_TYPE">Nazi</ENAMEX> hierarchy, and there were some suggestions that <ENAMEX type="PERSON">Hitler</ENAMEX> should offer the <ENAMEX type="INSTITUTION">Allies</ENAMEX> a deal where they would be spared in exchange for a favorable peace settlement.</sentence>
+				<sentence xml:id="P270E1">There were unofficial negotiations in <ENAMEX type="LOCATION">Istanbul</ENAMEX> between <ENAMEX type="PERSON">Himmler</ENAMEX>&apos;s agents, <ENAMEX type="NATIONAL">British</ENAMEX> agents, and representatives of <ENAMEX type="PERSON_TYPE">Jewish</ENAMEX> organizations; at one point an attempt by <ENAMEX type="PERSON">Eichmann</ENAMEX> to exchange <ENAMEX type="MEASURE">one million</ENAMEX> <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> for <ENAMEX type="MEASURE">10,000</ENAMEX> trucks—the so-called &quot;<ENAMEX type="CONCEPT">blood for goods</ENAMEX>&quot; proposal—but there was no real possibility of such a deal being struck on this scale.</sentence>
+				<sentence xml:id="P270E2">[261] During <ENAMEX type="PERSON">Eichman</ENAMEX>&apos;s trial in <ENAMEX type="LOCATION">Jerusalem</ENAMEX>, he denied having knowledge of this attempt to blackmail the <ENAMEX type="INSTITUTION">Allies</ENAMEX> in this manner but the evidence showed otherwise.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P271">
 				<sentence xml:id="P271E0">Escapes, publication of existence (<ENAMEX type="PERIOD">April–June 1944</ENAMEX>)</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P272">
 				<sentence xml:id="P272E0"><ENAMEX type="LOCATION">Bratislava</ENAMEX>, <ENAMEX type="PERIOD">June–July 1944</ENAMEX>.</sentence>
-				<sentence xml:id="P272E1"><ENAMEX type="PERSON">Rudolf Vrba</ENAMEX> (right) escaped from <ENAMEX type="LOCATION">Auschwitz</ENAMEX> on <ENAMEX type="PERIOD">April 7, 1944</ENAMEX>, bringing the first credible news to the world of the mass murder that was taking place there.</sentence>
-				<sentence xml:id="P272E2">Arnost Rosin (left), escaped on <ENAMEX type="PERIOD">27 May 1944</ENAMEX>.</sentence>
+				<sentence xml:id="P272E1"><ENAMEX type="PERSON">Rudolf Vrba</ENAMEX> (right) escaped from <ENAMEX type="LOCATION">Auschwitz</ENAMEX> on <ENAMEX type="PERIOD">April 7, 1944</ENAMEX>, bringing the <ENAMEX type="MEASURE">first</ENAMEX> credible news to the world of the mass murder that was taking place there.</sentence>
+				<sentence xml:id="P272E2"><ENAMEX type="PERSON">Arnost Rosin</ENAMEX> (left), escaped on <ENAMEX type="PERIOD">27 May 1944</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P273">
-				<sentence xml:id="P273E0">&quot;<ENAMEX type="CREATION">The Mass Extermination of Jews in German Occupied Poland</ENAMEX>&quot;, by the <ENAMEX type="NATIONAL">Polish</ENAMEX> government-in-exile addressed to the wartime allies of the then-<ENAMEX type="ORGANISATION">United Nations</ENAMEX>, <ENAMEX type="PERIOD">1942</ENAMEX>.</sentence>
+				<sentence xml:id="P273E0">&quot;<ENAMEX type="CREATION">The Mass Extermination of Jews in German Occupied Poland</ENAMEX>&quot;, by the <ENAMEX type="CREATION">Polish government</ENAMEX>-in-exile addressed to the wartime allies of the then-<ENAMEX type="ORGANISATION">United Nations</ENAMEX>, <ENAMEX type="PERIOD">1942</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P274">
-				<sentence xml:id="P274E0"><ENAMEX type="BUSINESS">Conspiratorial</ENAMEX> reportage about <ENAMEX type="LOCATION">Auschwitz</ENAMEX> &quot;Camp of death&quot; written by <ENAMEX type="PERSON">Natalia Zarembina</ENAMEX> in <ENAMEX type="PERIOD">1942</ENAMEX>.</sentence>
+				<sentence xml:id="P274E0">Conspiratorial reportage about <ENAMEX type="INSTALLATION">Auschwitz</ENAMEX> &quot;<ENAMEX type="INSTALLATION">Camp of death</ENAMEX>&quot; written by <ENAMEX type="PERSON">Natalia Zarembina</ENAMEX> in <ENAMEX type="PERIOD">1942</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P275">
 				<sentence xml:id="P275E0">Escapes from the camps were few, but not unknown.</sentence>
