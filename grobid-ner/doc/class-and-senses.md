@@ -122,7 +122,7 @@ For example British in isolation can be labelled:
 
 ---
 ### INSTALLATION
-➡ Sometimes a LOCATION name refers to an INSTALLATION name. In that case it's annotated as INSTALLATION. For example Nazi camps:
+➡ Sometimes a LOCATION name refers to an INSTALLATION name. In that case it's annotated as INSTALLATION. For example Nazi camps [(issue #42)](https://github.com/kermitt2/grobid-ner/issues/42):
 ```xml
 - <ENAMEX type="INTALLATION">Auschwitz</ENAMEX>
 - <ENAMEX type="INTALLATION">Lager Nordhausen</ENAMEX>
@@ -171,9 +171,15 @@ They established safe zones west of the <ENAMEX type="LOCATION">Rocky Mountains<
 
 ---
 ### MEASURE
+➡ Markers of intervals like _**over**_ or _**more**_ are included in the MEASURE tag, example [(issue #43)](https://github.com/kermitt2/grobid-ner/issues/43):
+```xml
+<ENAMEX type="MEASURE">Over 7,000</ENAMEX> shops and <ENAMEX type="MEASURE">more
+than 1,200</ENAMEX> synagogues were damaged or destroyed.
+```
+
 ➡ MEASURE is an exception to the Longest Entity Match convention [(issue #32)](https://github.com/kermitt2/grobid-ner/issues/32): a MEASURE entity is annotated separately only if it is at the beginning of the noun phrase, for example:
 ```xml
-- <ENAMEX type="MEASURE">45</ENAMEX><ENAMEX type="PERSON">presidents of the United States</ENAMEX>
+- <ENAMEX type="MEASURE">45</ENAMEX><ENAMEX type="PERSON">presidents of the USA</ENAMEX>
 - <ENAMEX type="MEASURE">900</ENAMEX><ENAMEX type="PERSON_TYPE">Jews</ENAMEX>
 ```
 ➡ **Ordinals (ex. _first, second_)**
@@ -187,8 +193,6 @@ For example, in:
 
 * But referring expressions, or ordinals not really ordering or quantifying, should **not** be annotated MEASURE.
 For example:
-
-  > _of the two courses on linguistics, the **first** is less boring_ <span style="color:black">(referring expression)</span>
 
   > _there occurred a boycott of Jewish businesses, which was the **first** national antisemitic campaign_ <span style="color:black">(here **_first_** is more a synonym of _"for the first time"_ than an ordinal)</span>
 
