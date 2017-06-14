@@ -27,7 +27,7 @@ The following table describes the 27 named entity classes produced by the model.
 | <a style="text-decorations:none; color:#265C83" href=#institution> INSTITUTION | organization of people and a location or structure that share the same name | _Yale University_, _European Patent Office_, the _British government_, _European Union_, _City Police_ |
 | <a style="text-decorations:none; color:#265C83" href=#legal> LEGAL | legal mentions such as article of law, convention, cases, treaty., etc. | _European Patent Convention_;  _Maastricht Treaty_; _Article 52(2)(c) and (3)_; _Roe v. Wade, 410 U.S. 113 (1973)_; _European Union Referendum Act 2015_ |
 | <a style="text-decorations:none; color:#265C83" href=#location> LOCATION | physical location, including planets and galaxies. | _Los Angeles_, _Northern Madagascar_, _Southern Thailand_, _Channel Islands_, _Earth_, _Milky Way_, _West Mountain_, _Warsaw Ghetto_ |
-| <a style="text-decorations:none; color:#265C83" href=#measure> MEASURE | numerical amount, including an optional unit of measure | _1,500_, _six million_, _72%_,  |
+| <a style="text-decorations:none; color:#265C83" href=#measure> MEASURE | numerical amount, including an optional unit of measure | _1,500_, _six million_, _72%_, _50°2′9″N 19°10′42″E_ |
 | MEDIA | media organization or publication | _Le monde_, _The New York Times_ |
 | <a style="text-decorations:none; color:#265C83" href=#national> NATIONAL | relating to a location | _North American_, _German_, _British_ |		
 | <a style="text-decorations:none; color:#265C83" href=#organisation> ORGANISATION | organized group of people, with some sort of legal entity and concrete membership | _Alcoholics Anonymous_ |
@@ -182,7 +182,7 @@ than 1,200</ENAMEX> synagogues were damaged or destroyed.
 - <ENAMEX type="MEASURE">45</ENAMEX><ENAMEX type="PERSON">presidents of the USA</ENAMEX>
 - <ENAMEX type="MEASURE">900</ENAMEX><ENAMEX type="PERSON_TYPE">Jews</ENAMEX>
 ```
-➡ **Ordinals (ex. _first, second_)**
+➡ **Ordinals (ex. _first, second_)** [(issue #14)](https://github.com/kermitt2/grobid-ner/issues/14)
 
 * They should be annotated as MEASURE, as long as they indicate a numerical order in a scale or quantify something (size, date, etc.).
 For example, in:
@@ -196,13 +196,11 @@ For example:
 
   > _there occurred a boycott of Jewish businesses, which was the **first** national antisemitic campaign_ <span style="color:black">(here **_first_** is more a synonym of _"for the first time"_ than an ordinal)</span>
 
-➡ Expressions measuring nothing are not to be annotated, for example:
+➡ Expressions measuring nothing are not to be annotated, for example [(issue #14)](https://github.com/kermitt2/grobid-ner/issues/14):
 
 > _**One** of the founders of the Revisionist movement_
 
-[issue #14](https://github.com/kermitt2/grobid-ner/issues/14)
-
-
+➡ GPS coordinates are a MEASURE (numerical amounts + units), example `50°2′9″N 19°10′42″E`. [(issue #44)](https://github.com/kermitt2/grobid-ner/issues/44)
 
 ---
 ### MEDIA
