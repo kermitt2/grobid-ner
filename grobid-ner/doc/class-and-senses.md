@@ -23,10 +23,10 @@ The following table describes the 27 named entity classes produced by the model.
 | <a style="text-decorations:none; color:#265C83" href=#creation> CREATION | artistic creation, such as song, movie, book, TV show, etc. | _Monna Lisa_, _Mullaholland drive_, _Kitchen Nightmares_, _EU Referendum: The Great Debate_, _Europe: The Final Debate_ |
 | <a style="text-decorations:none; color:#265C83" href=#event> EVENT | event | _World War 2_, _Battle of France_, _Brexit referendum_|
 | IDENTIFIER | systematized identifier such as phone number, email address, ISBN |  |
-| INSTALLATION | structure built by humans | _Strasbourg Cathedral_, _Sforza Castle_ |
+| <a style="text-decorations:none; color:#265C83" href=#installation>INSTALLATION | structure built by humans | _Strasbourg Cathedral_, _Sforza Castle_, _Auschwitz camp_ |
 | <a style="text-decorations:none; color:#265C83" href=#institution> INSTITUTION | organization of people and a location or structure that share the same name | _Yale University_, _European Patent Office_, the _British government_, _European Union_, _City Police_ |
 | <a style="text-decorations:none; color:#265C83" href=#legal> LEGAL | legal mentions such as article of law, convention, cases, treaty., etc. | _European Patent Convention_;  _Maastricht Treaty_; _Article 52(2)(c) and (3)_; _Roe v. Wade, 410 U.S. 113 (1973)_; _European Union Referendum Act 2015_ |
-| <a style="text-decorations:none; color:#265C83" href=#location> LOCATION | physical location, including planets and galaxies. | _Los Angeles_, _Northern Madagascar_, _Southern Thailand_, _Channel Islands_, _Earth_, _Milky Way_, _West Mountain_ |
+| <a style="text-decorations:none; color:#265C83" href=#location> LOCATION | physical location, including planets and galaxies. | _Los Angeles_, _Northern Madagascar_, _Southern Thailand_, _Channel Islands_, _Earth_, _Milky Way_, _West Mountain_, _Warsaw Ghetto_ |
 | <a style="text-decorations:none; color:#265C83" href=#measure> MEASURE | numerical amount, including an optional unit of measure | _1,500_, _six million_, _72%_,  |
 | MEDIA | media organization or publication | _Le monde_, _The New York Times_ |
 | <a style="text-decorations:none; color:#265C83" href=#national> NATIONAL | relating to a location | _North American_, _German_, _British_ |		
@@ -122,6 +122,13 @@ For example British in isolation can be labelled:
 
 ---
 ### INSTALLATION
+➡ Sometimes a LOCATION name refers to an INSTALLATION name. In that case it's annotated as INSTALLATION. For example Nazi camps:
+```xml
+- <ENAMEX type="INTALLATION">Auschwitz</ENAMEX>
+- <ENAMEX type="INTALLATION">Lager Nordhausen</ENAMEX>
+- <ENAMEX type="INTALLATION">Mittelbau-Dora</ENAMEX>
+- <ENAMEX type="INTALLATION">Mauthausen-Gusen concentration camp</ENAMEX>
+```
 
 ---
 ### INSTITUTION
@@ -240,7 +247,7 @@ For example British in isolation can be labelled:
 ---
 ### PERIOD
 
-➡ Date, historical era or other time period.
+➡ Date, historical era or other time period, including time measurements like **_a week_**, **_one day_**, which are quantified measures of time (a PERIOD is a MEASURE but the opposite is not always true, so PERIOD, more specific, wins). [(issue #41)](https://github.com/kermitt2/grobid-ner/issues/41)
 
 ➡ The PERIOD may include precise elements like:
 ```xml
@@ -396,7 +403,7 @@ issues [#12](https://github.com/kermitt2/grobid-ner/issues/12) and [#33](https:/
 ```
 [issue #24](https://github.com/kermitt2/grobid-ner/issues/24)
 
-➡ There is no specific class for foreign words. They are annotated in one of the existing classes, if relevant, otherwise they are not annotated. In all cases, they are identified in parallel by another attribute, orthogonal to the entity class [(issue #37)](https://github.com/kermitt2/grobid-ner/issues/37).
+➡ There is no specific class for foreign words. They are **annotated in one of the existing classes, if relevant (whether they are written in latin or non-latin characters)**. Otherwise they are not annotated. In all cases, they are identified in parallel by another attribute, orthogonal to the entity class [(issue #37)](https://github.com/kermitt2/grobid-ner/issues/37).
 
 ➡ Punctuation (like quotation marks) are to be left outside the tags, for example: `"<ENAMEX type="PERSON_TYPE">socialists</ENAMEX>"` [(issue #26)](https://github.com/kermitt2/grobid-ner/issues/26).
 
