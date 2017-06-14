@@ -21,7 +21,7 @@ The following table describes the 27 named entity classes produced by the model.
 | <a style="text-decorations:none; color:#265C83" href=#concept> CONCEPT | abstract concept not included in another class | _English_ (as language), _Communism_, _Zionism_ |
 | CONCEPTUAL | entity relating to a concept | _Greek_ myths, _European Union membership_ |
 | <a style="text-decorations:none; color:#265C83" href=#creation> CREATION | artistic creation, such as song, movie, book, TV show, etc. | _Monna Lisa_, _Mullaholland drive_, _Kitchen Nightmares_, _EU Referendum: The Great Debate_, _Europe: The Final Debate_ |
-| EVENT | event | _World War 2_, _Battle of France_, _Brexit referendum_|
+| <a style="text-decorations:none; color:#265C83" href=#event> EVENT | event | _World War 2_, _Battle of France_, _Brexit referendum_|
 | IDENTIFIER | systematized identifier such as phone number, email address, ISBN |  |
 | INSTALLATION | structure built by humans | _Strasbourg Cathedral_, _Sforza Castle_ |
 | <a style="text-decorations:none; color:#265C83" href=#institution> INSTITUTION | organization of people and a location or structure that share the same name | _Yale University_, _European Patent Office_, the _British government_, _European Union_, _City Police_ |
@@ -108,6 +108,14 @@ For example British in isolation can be labelled:
 
 ---
 ### EVENT
+
+
+➡ PERIOD vs. EVENT: an event defines a period, but a period is not necessarily an event, so we annotate as EVENT, for example:
+
+  * _during the time of the **Nazi occupation**_: EVENT
+  * _during the **Czarist regime**_: EVENT
+
+[issue #13](https://github.com/kermitt2/grobid-ner/issues/13)
 
 ---
 ### IDENTIFIER
@@ -234,6 +242,10 @@ For example British in isolation can be labelled:
 
 ➡ Date, historical era or other time period.
 
+➡ The PERIOD may include precise elements like:
+```xml
+<ENAMEX type="PERIOD">mid afternoon on 27 June 2016</ENAMEX>
+```
 ➡ Surrounding elements must be included in the NE only if they qualify the range of period or/and change the period type:
 
 * _**since 1930**_: all PERIOD.
@@ -247,10 +259,28 @@ but
 
 * _as early as the **1930s**_: only _**1930s**_ is tagged PERIOD, because _as early as_ doesn't change the period (the 1930s).
 * _during **1930**_ and _in **1930**_: the prepositions don't change the period interval, only _**1930**_ is tagged PERIOD.
+* _**seven-year** low_: only _**seven-year**_ is tagged PERIOD, since _low_ has no impact on the PERIOD
 
 ➡ some terms may be too vague to annotate them as PERIOD, for example the adjective _**prewar**_. We may annotate it with other elements, for example LOCATION in the following case:
 ```xml
 <ENAMEX type="LOCATION">prewar Nazi Germany</ENAMEX>
+```
+
+➡ Intervals of time defined with surrounding elements like _after_ or _since_ are only considered PERIODs **if they are defined regarding to an EVENT**. For example these entities are all PERIODs (surrounding element + EVENT):
+```xml
+- <ENAMEX type="PERIOD">7 years after the war</ENAMEX> there was a great boom
+
+- <ENAMEX type="PERIOD">Ten years after the official end of the zombie war</ENAMEX>
+```
+but these aren't (surrounding element and its dependencies excluded):
+```xml
+- withhold social benefits to new immigrants for the <ENAMEX type="PERIOD">first
+ four years</ENAMEX> after they arrived
+
+- The Treaties shall cease to apply to the State in question (...) <ENAMEX type="PERIOD">two
+years</ENAMEX>after the notification referred to in paragraph 2
+
+- <ENAMEX type="PERIOD">Seven years</ENAMEX> after the outbreak began
 ```
 
 ➡ PERIOD vs. EVENT: an event defines a period, but a period is not necessarily an event, so we annotate as EVENT, for example:
