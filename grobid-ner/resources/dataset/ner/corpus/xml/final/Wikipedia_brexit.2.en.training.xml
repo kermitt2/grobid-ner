@@ -50,24 +50,6 @@
 			<p xml:lang="en" xml:id="P10">
 				<sentence xml:id="P10E0"><ENAMEX type="EVENT">United Kingdom European Community (Common Market) Membership Referendum 1975</ENAMEX></sentence>
 			</p>
-			<p xml:lang="en" xml:id="P11">
-				<sentence xml:id="P11E0">Choice 	Votes 	 %</sentence>
-			</p>
-			<p xml:lang="en" xml:id="P12">
-				<sentence xml:id="P12E0">Referendum passed Yes 	<ENAMEX type="MEAURE">17,378,581</ENAMEX> 	<ENAMEX type="MEAURE">67.2</ENAMEX></sentence>
-			</p>
-			<p xml:lang="en" xml:id="P13">
-				<sentence xml:id="P13E0">No <ENAMEX type="MEASURE">	8,470,073</ENAMEX> 	<ENAMEX type="MEAURE">32.8</ENAMEX></sentence>
-			</p>
-			<p xml:lang="en" xml:id="P14">
-				<sentence xml:id="P14E0">Valid votes <ENAMEX type="MEASURE">	25,848,654</ENAMEX> 	<ENAMEX type="MEAURE">99.79</ENAMEX></sentence>
-			</p>
-			<p xml:lang="en" xml:id="P15">
-				<sentence xml:id="P15E0">Invalid or blank votes <ENAMEX type="MEASURE">	54,540</ENAMEX> 	<ENAMEX type="MEAURE">0.21</ENAMEX></sentence>
-			</p>
-			<p xml:lang="en" xml:id="P16">
-				<sentence xml:id="P16E0">Total votes <ENAMEX type="MEASURE">	25,903,194</ENAMEX> 	<ENAMEX type="MEAURE">100.00</ENAMEX></sentence>
-			</p>
 			<p xml:lang="en" xml:id="P17">
 				<sentence xml:id="P17E0">Between referendums</sentence>
 			</p>
@@ -160,42 +142,6 @@
 			</p>
 			<p xml:lang="en" xml:id="P40">
 				<sentence xml:id="P40E0"><ENAMEX type="EVENT">United Kingdom European Union membership referendum, 2016</ENAMEX></sentence>
-			</p>
-			<p xml:lang="en" xml:id="P41">
-				<sentence xml:id="P41E0">Choice 	Votes 	 %</sentence>
-			</p>
-			<p xml:lang="en" xml:id="P42">
-				<sentence xml:id="P42E0">Leave 	<ENAMEX type="MEASURE">17,410,742</ENAMEX> 	<ENAMEX type="MEASURE">51.89</ENAMEX></sentence>
-			</p>
-			<p xml:lang="en" xml:id="P43">
-				<sentence xml:id="P43E0">Remain <ENAMEX type="MEASURE">	16,141,241</ENAMEX> 	<ENAMEX type="MEASURE">48.11</ENAMEX></sentence>
-			</p>
-			<p xml:lang="en" xml:id="P44">
-				<sentence xml:id="P44E0">Valid votes <ENAMEX type="MEASURE">	33,551,983</ENAMEX> 	<ENAMEX type="MEASURE">99.92</ENAMEX></sentence>
-			</p>
-			<p xml:lang="en" xml:id="P45">
-				<sentence xml:id="P45E0">Invalid or blank votes <ENAMEX type="MEASURE">	25,359</ENAMEX> 	<ENAMEX type="MEASURE">0.08</ENAMEX></sentence>
-			</p>
-			<p xml:lang="en" xml:id="P46">
-				<sentence xml:id="P46E0">Total votes <ENAMEX type="MEASURE">	33,577,342</ENAMEX> 	<ENAMEX type="MEASURE">100.00</ENAMEX></sentence>
-			</p>
-			<p xml:lang="en" xml:id="P47">
-				<sentence xml:id="P47E0">Registered voters and turnout <ENAMEX type="MEASURE">	46,500,001</ENAMEX> 	<ENAMEX type="MEASURE">72.21</ENAMEX></sentence>
-			</p>
-			<p xml:lang="en" xml:id="P48">
-				<sentence xml:id="P48E0">Source: <ENAMEX type="INSTITUTION">Electoral Commission</ENAMEX>[42]</sentence>
-			</p>
-			<p xml:lang="en" xml:id="P49">
-				<sentence xml:id="P49E0">Referendum results (without spoiled ballots) Leave:</sentence>
-			</p>
-			<p xml:lang="en" xml:id="P50">
-				<sentence xml:id="P50E0"><ENAMEX type="MEASURE">17,410,742</ENAMEX> (<ENAMEX type="MEASURE">51.9%</ENAMEX>) 	Remain:</sentence>
-			</p>
-			<p xml:lang="en" xml:id="P51">
-				<sentence xml:id="P51E0"><ENAMEX type="MEASURE">16,141,241</ENAMEX> (<ENAMEX type="MEASURE">48.1%</ENAMEX>)</sentence>
-			</p>
-			<p xml:lang="en" xml:id="P52">
-				<sentence xml:id="P52E0">▲</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P53">
 				<sentence xml:id="P53E0">Results by region (left) and by local council district (right)</sentence>
