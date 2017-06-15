@@ -38,7 +38,7 @@ The following table describes the 27 named entity classes produced by the model.
 | SPORT_TEAM | sport group or organisation | _The Yankees_ |
 | SUBSTANCE | natural substance | |
 | <a style="text-decorations:none; color:#265C83" href=#title> TITLE | personal or honorific title | _Mr._, _Dr._, _General_, _President_, _chairman_, _doctor_, _member_, _founder_|
-| UNKNOWN | entity not belonging to any previous classes|  |
+| <a style="text-decorations:none; color:#265C83" href=#unknown> UNKNOWN | entity not belonging to any previous classes| _Plan Marshall_, _ParSiTi_, _Horizon 2020_ |
 | WEBSITE | website URL or name | _Wikipedia_, http://www.inria.fr |
 
 ## Classes Specific guidelines
@@ -390,6 +390,17 @@ issues [#12](https://github.com/kermitt2/grobid-ner/issues/12) and [#33](https:/
 
 ---
 ### UNKNOWN
+➡ Entities not covered by another class.
+
+➡ Examples:
+
+* _**Plan Marshall**_
+* _**Horizon 2020**_ (a funding programme)
+* _**Antisemitism Yellowbadge logo**_
+* _**Yellow badge**_
+* _**Aktion T4 euthanasia programme**_
+* _**Aktion T4**_
+
 
 ---
 ### WEBSITE
@@ -415,6 +426,12 @@ issues [#12](https://github.com/kermitt2/grobid-ner/issues/12) and [#33](https:/
 ```xml
 <ENAMEX type="AWARD">Nobel prize</ENAMEX>-winning economist
 ```
+## Out of scope
+
+➡ Specific but common concepts already enumerated in Wikipedia, for example **_patient zero_**. Indeed, named entity classes correspond more to particular classes of entities that cannot be enumerated exhaustively in advance.
+
+➡ Specialist terminology (biomedical, for example). Other specialized NER are used.
+
 
 ## Sense information
 
