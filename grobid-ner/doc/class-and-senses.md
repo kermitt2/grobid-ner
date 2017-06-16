@@ -19,7 +19,7 @@ The following table describes the 27 named entity classes produced by the model.
 | AWARD | award for art, science, sport, etc. | _Balon d'or_, _Nobel prize_|
 | BUSINESS | company / commercial organisation | _Air Canada_, _Microsoft_ |
 | <a style="text-decorations:none; color:#265C83" href=#concept> CONCEPT | abstract concept not included in another class | _English_ (as language), _Communism_, _Zionism_ |
-| CONCEPTUAL | entity relating to a concept | _Greek_ myths, _European Union membership_ |
+| <a style="text-decorations:none; color:#265C83" href=#conceptual> CONCEPTUAL | entity relating to a concept | _Greek_ myths, _eurosceptic_ doctrine |
 | <a style="text-decorations:none; color:#265C83" href=#creation> CREATION | artistic creation, such as song, movie, book, TV show, etc. | _Monna Lisa_, _Mullaholland drive_, _Kitchen Nightmares_, _EU Referendum: The Great Debate_, _Europe: The Final Debate_ |
 | <a style="text-decorations:none; color:#265C83" href=#event> EVENT | event | _World War 2_, _Battle of France_, _Brexit referendum_|
 | IDENTIFIER | systematized identifier such as phone number, email address, ISBN |  |
@@ -71,32 +71,21 @@ Human-made object, including softwares.
 
 ---
 ### CONCEPT
-➡ ** CONCEPT vs. PERSON_TYPE / NATIONAL** <br/>
-Depending on the context, an entity may belong to the classes:
-
-* NATIONAL when introducing a relation to a LOCATION.
-* PERSON_TYPE when it is clear that it refers to the folks, not just in relation to a location.
-* CONCEPT when refering to a language.
-
-For example British in isolation can be labelled:
-
-* NATIONAL: when related to the Great-Britain (LOCATION):
-```xml
-    a <ENAMEX type="NATIONAL">British</ENAMEX> historian
-```
-* PERSON_TYPE: for the British people, for example:
-```xml
-    the <ENAMEX type="PERSON_TYPE">British</ENAMEX> are great people.
-    the <ENAMEX type="PERSON_TYPE">British</ENAMEX> emigrants
-    the <ENAMEX type="PERSON_TYPE">British</ENAMEX> people are not great
-```
-
-* CONCEPT: if the entity refers to the British English language
-
-[issue #30](https://github.com/kermitt2/grobid-ner/issues/30)
+➡ Sometimes an entity, in isolation, can be ambiguous, for example _**British**_. When it refers to the British English language, it's annotated CONCEPT. (issues [#29](https://github.com/kermitt2/grobid-ner/issues/29) and [#30](https://github.com/kermitt2/grobid-ner/issues/30)).
 
 ---
 ### CONCEPTUAL
+
+➡ entity relating to a concept
+
+➡ desambiguation between PERSON_TYPE and CONCEPTUAL
+
+  |  | PERSON_TYPE | CONCEPTUAL |
+  |  | ----------- | ---------- |
+  | Criteria | refers to people, a folk, a group of people | modify a common name |
+  | Examples | _the **eurosceptics** held a protest_ <br/> _the **Communists** held a protest_ <br/> _the **Jewish** held a protest_ | _the **eurosceptic** doctrine  <br/> the **communist** doctrine <br/> **Zionist** newspapers <br/> **Greek** myths <br/> **Christian** newspapers_ |
+
+  [issue #29](https://github.com/kermitt2/grobid-ner/issues/29)
 
 ---
 ### CREATION
@@ -132,6 +121,7 @@ For example British in isolation can be labelled:
 
 ---
 ### INSTITUTION
+
 ➡ Criteria to distinguish between ORGANISATION and INSTITUTION:
 
 |  ORGANISATION | INSTITUTION |
@@ -141,6 +131,18 @@ For example British in isolation can be labelled:
 | random subset of an organization/institution | something established with some autonomy (ex. _city police_, _train police_, _auxiliary police_) |
 
   [issue #22](https://github.com/kermitt2/grobid-ner/issues/22)
+
+➡ INSTITUTION vs LOCATION: an INSTITUTION entity is defined as a set of legal entities and not a fixed location. Example:
+
+ **_European Union_**, which is not defined by a (fixed) location, but as a set of legal entities with a treaty and particular instances. It may become a fixed location after a long time of integration (like the USA, where the Federal State is an institution).
+
+[issue #29](https://github.com/kermitt2/grobid-ner/issues/29)
+
+➡ There is no ambiguity between INSTITUTION and PERSON_TYPE. Therefore, even if an INSTITUTION entity applies to a group of people, it won't be annotated PERSON_TYPE, for example:
+```xml
+<ENAMEX type="INSTITUTION">European Union</ENAMEX> citizens
+```
+[issue #30](https://github.com/kermitt2/grobid-ner/issues/30)
 
 ---
 ### LEGAL
@@ -155,6 +157,13 @@ For example British in isolation can be labelled:
 
 ---
 ### LOCATION
+➡ LOCATION vs INSTITUTION: an INSTITUTION entity is defined as a set of legal entities and not a fixed location [(issue #29)](https://github.com/kermitt2/grobid-ner/issues/29).
+
+➡ There is no disambiguation at this level between the different uses of country names (as location, government, army, etc.) [(issue #29)](https://github.com/kermitt2/grobid-ner/issues/29). For example in:
+> _**Austria** invaded **Italy**_
+
+they're both annotated LOCATION event though here _Austria_ refers to _Austria's army_ and _Italy_ to the location.
+
 ➡ When there are modifiers along the location, they are included in the entity, for example:
 ```xml
 - <ENAMEX type="LOCATION">Suvalkų area</ENAMEX>
@@ -208,29 +217,14 @@ For example:
 ---
 ### NATIONAL
 
-➡ ** NATIONAL vs. PERSON_TYPE / CONCEPT** <br/>
-Depending on the context, an entity may belong to the classes:
+➡ desambiguation between PERSON_TYPE and NATIONAL
 
-* NATIONAL when introducing a relation to a LOCATION.
-* PERSON_TYPE when it is clear that it refers to the folks, not just in relation to a location.
-* CONCEPT when refering to a language.
+  |  | PERSON_TYPE | NATIONAL |
+  |  | ----------- | ---------- |
+  | Criteria | refers to people, a folk, a group of people | refers to a LOCATION |
+  | Examples | _the **British** are great people. <br/> the **British** emigrants <br/> the **British** people are not great_ | _a **British** newspaper <br/> a **British** historian_ |
 
-For example British in isolation can be labelled:
-
-* NATIONAL: when related to the Great-Britain (LOCATION):
-```xml
-    a <ENAMEX type="NATIONAL">British</ENAMEX> historian
-```
-* PERSON_TYPE: for the British people, for example:
-```xml
-    the <ENAMEX type="PERSON_TYPE">British</ENAMEX> are great people.
-    the <ENAMEX type="PERSON_TYPE">British</ENAMEX> emigrants
-    the <ENAMEX type="PERSON_TYPE">British</ENAMEX> people are not great
-```
-
-* CONCEPT: if the entity refers to the British English language
-
-[issue #30](https://github.com/kermitt2/grobid-ner/issues/30)
+  [issue #30](https://github.com/kermitt2/grobid-ner/issues/30)
 
 ---
 ### ORGANISATION
@@ -245,6 +239,13 @@ For example British in isolation can be labelled:
   | random subset of an organization/institution | something established with some autonomy (ex. _city police_, _train police_, _auxiliary police_) |
 
   [issue #22](https://github.com/kermitt2/grobid-ner/issues/22)
+
+➡ Sometimes another entity type is included in the ORGANISATION, according to the largest entity match principle, for example:
+  ```xml
+  <ENAMEX type="ORGANISATION">Zionist movement</ENAMEX>
+  <ENAMEX type="ORGANISATION">Central Committee of the Zionist Union</ENAMEX>
+  ```
+  [(issue #15)](https://github.com/kermitt2/grobid-ner/issues/15)
 
 ---
 ### PERIOD
@@ -306,48 +307,52 @@ issues [#13](https://github.com/kermitt2/grobid-ner/issues/13) and [#25](https:/
 
 ➡ Even though it's an approximation, entities like _**Jewry**_ (which means Jewish community) are included in this class. [(issue #28)](https://github.com/kermitt2/grobid-ner/issues/28)
 
-➡ **PERSON_TYPE vs. NATIONAL / CONCEPT** <br/>
-Depending on the context, an entity may belong to the classes:
+➡ Some entities, in isolation, may belong to several classes, depending on the context. For example British in isolation can be labelled:
 
-* NATIONAL when introducing a relation to a LOCATION.
-* PERSON_TYPE when it is clear that it refers to the folks, not just in relation to a location.
-* CONCEPT when refering to a language.
-
-For example British in isolation can be labelled:
-
-* NATIONAL: when related to the Great-Britain (LOCATION):
+* NATIONAL when introducing a relation to Great Britain (LOCATION):
 ```xml
-    a <ENAMEX type="NATIONAL">British</ENAMEX> historian
+    A <ENAMEX type="NATIONAL">British</ENAMEX> historian
 ```
-* PERSON_TYPE: for the British people, for example:
+* PERSON_TYPE when it is clear that it refers to the folks, not just in relation to a location:
 ```xml
-    the <ENAMEX type="PERSON_TYPE">British</ENAMEX> are great people.
-    the <ENAMEX type="PERSON_TYPE">British</ENAMEX> emigrants
-    the <ENAMEX type="PERSON_TYPE">British</ENAMEX> people are not great
+    The <ENAMEX type="PERSON_TYPE">British</ENAMEX> are great people.
+    The <ENAMEX type="PERSON_TYPE">British</ENAMEX> emigrants
+    The <ENAMEX type="PERSON_TYPE">British</ENAMEX> people are not great
 ```
+* CONCEPT when refering to the British language
 
-* CONCEPT: if the entity refers to the British English language
-
+* CONCEPTUAL when refering to a CONCEPT, for example here the British culture:
+```xml
+    The <ENAMEX type="CONCEPTUAL">British</ENAMEX> folklore.
+```
 [issue #30](https://github.com/kermitt2/grobid-ner/issues/30)
 
-<!-- TODO
-➡ **PERSON_TYPE vs. CONCEPTUAL**
+➡ desambiguation between PERSON_TYPE and NATIONAL
 
-* Even if the entity doesn't modify a person, it's annotated as PERSON_TYPE, for example:
+  |  | PERSON_TYPE | NATIONAL |
+  |  | ----------- | ---------- |
+  | Criteria | refers to people, a folk, a group of people | refers to a LOCATION |
+  | Examples | _the **British** are great people. <br/> the **British** emigrants <br/> the **British** people are not great_ | _a **British** newspaper <br/> a **British** historian_ |
+
+  [issue #30](https://github.com/kermitt2/grobid-ner/issues/30)
+
+➡ desambiguation between PERSON_TYPE and CONCEPTUAL
+
+  |  | PERSON_TYPE | CONCEPTUAL |
+  |  | ----------- | ---------- |
+  | Criteria | refers to people, a folk, a group of people | modify a common name |
+  | Examples | _the **eurosceptics** held a protest_ <br/> _the **Communists** held a protest_ <br/> _the **Jewish** held a protest_ | _the **eurosceptic** doctrine  <br/> the **communist** doctrine <br/> **Zionist** newspapers <br/> **Greek** myths <br/> **Christian** newspapers_ |
+
+  [issue #29](https://github.com/kermitt2/grobid-ner/issues/29)
+
+
+
+➡ If an entity in isolation cannot be PERSON_TYPE, it's not annotated PERSON_TYPE even if it fits the criteria above. For example the INSTITUTION _**European Union**_ cannot be PERSON_TYPE when alone, so **_EU citizens_** is annotated:
 ```xml
-<ENAMEX type="PERSON_TYPE">Zionist</ENAMEX> events
-<ENAMEX type="PERSON_TYPE">Jewish</ENAMEX> problems
+<ENAMEX type="INSTITUTION">EU</ENAMEX> citizens
 ```
-These entities are annotated PERSON_TYPE as long as they can be substituted for another group of people. For example with `communist, liberal, blond people, diabetic, muffin lovers` **<span style="color:red">/!\ TO CHECK /!\ </span>**.
+[issue #30](https://github.com/kermitt2/grobid-ner/issues/30)
 
-* Examples where the entity is included in a larger entity:
-```xml
-<ENAMEX type="ORGANISATION">Zionist movement</ENAMEX>
-<ENAMEX type="ORGANISATION">Central Committee of the Zionist Union</ENAMEX>
-```
-[(issue #15)](https://github.com/kermitt2/grobid-ner/issues/15)
-
--->
 
 ---
 ### PLANT
@@ -401,6 +406,7 @@ issues [#12](https://github.com/kermitt2/grobid-ner/issues/12) and [#33](https:/
 * _**Aktion T4 euthanasia programme**_
 * _**Aktion T4**_
 
+[issue #39](https://github.com/kermitt2/grobid-ner/issues/39)
 
 ---
 ### WEBSITE
@@ -432,6 +438,7 @@ issues [#12](https://github.com/kermitt2/grobid-ner/issues/12) and [#33](https:/
 
 ➡ Specialist terminology (biomedical, for example). Other specialized NER are used.
 
+➡ Tables from Wikipedia have been removed from the annotated corpus (issues [#49](https://github.com/kermitt2/grobid-ner/issues/49) and [#50](https://github.com/kermitt2/grobid-ner/issues/50)).
 
 ## Sense information
 
