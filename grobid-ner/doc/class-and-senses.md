@@ -30,7 +30,7 @@ The following table describes the 27 named entity classes produced by the model.
 | <a style="text-decorations:none; color:#265C83" href=#measure> MEASURE | numerical amount, including an optional unit of measure | _1,500_, _six million_, _72%_, _50°2′9″N 19°10′42″E_ |
 | MEDIA | media organization or publication | _Le monde_, _The New York Times_ |
 | <a style="text-decorations:none; color:#265C83" href=#national> NATIONAL | relating to a location | _North American_, _German_, _British_ |		
-| <a style="text-decorations:none; color:#265C83" href=#organisation> ORGANISATION | organized group of people, with some sort of legal entity and concrete membership | _Alcoholics Anonymous_ |
+| <a style="text-decorations:none; color:#265C83" href=#organisation> ORGANISATION | organized group of people, with some sort of legal entity and concrete membership | _Alcoholics Anonymous_, _Jewish resistance_, _Polish undergound_ |
 | <a style="text-decorations:none; color:#265C83" href=#period> PERIOD | date, historical era or other time period, time expressions | _January_, the _2nd half of 2010_, _1985-1989_, _from 1930 to 1945_, _since 1918_, the _first four years_ |
 | PERSON | first, middle, last names and aliases of people and fictional characters | _John Smith_ |
 | <a style="text-decorations:none; color:#265C83" href=#person_type> PERSON_TYPE | person type or role classified according to group membership | _African-American_, _Asian_, _Conservative_, _Liberal_, _Jews_, _Communist_ |
