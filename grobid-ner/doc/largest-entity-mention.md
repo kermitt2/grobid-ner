@@ -55,10 +55,8 @@ This applies **only if the MEASURE entity is at the beginning of the NE**. If th
 
 Non-NEs lexical words are not included in large named entities. Only functional words (like articles or prepositions) can be a part of a large entity. Therefore the largest entity match principle may not apply in certain cases. For example:
 ```xml
-- <ENAMEX type="NATIONAL">German</ENAMEX>-occupied <ENAMEX type="LOCATION">Poland</ENAMEX>
-
-- <ENAMEX type="PERSON_TYPE">Republican</ENAMEX> presidential candidate<ENAMEX type="PERSON">
-Donald Trump</ENAMEX>
+<ENAMEX type="PERSON_TYPE">Republican</ENAMEX> candidate <ENAMEX type="PERSON">Donald
+ Trump</ENAMEX>
 ```
 
 # Coordination
@@ -94,6 +92,9 @@ down after his party's long-term ambition had been accomplished.
 - Meanwhile, the <ENAMEX type="PERSON">leader of the anti-EU UKIP Nigel Farage</ENAMEX> stood
 down after his party's long-term ambition had been accomplished.
 ```
+
+# Parenthesis
+
 
 # Choosing between PERSON and TITLE
 

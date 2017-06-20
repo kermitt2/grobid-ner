@@ -36,6 +36,9 @@ The list of NER classes with examples are given in the [classes page](class-and-
 
 Entities with more than one token can embed sub-entities. The approach currently followed by grobid-ner is to annotate only the largest entity mention and not the sub-entities. See the [**"largest entity mention"** section](largest-entity-mention.md).
 
+# Miscellaneous
+
+See [misc page](miscellaneous.md).
 
 # Practical example of correction
 
