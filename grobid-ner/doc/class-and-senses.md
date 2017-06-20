@@ -193,17 +193,20 @@ than 1,200</ENAMEX> synagogues were damaged or destroyed.
 ```
 ➡ **Ordinals (ex. _first, second_)** [(issue #14)](https://github.com/kermitt2/grobid-ner/issues/14)
 
-* They should be annotated as MEASURE, as long as they indicate a numerical order in a scale or quantify something (size, date, etc.).
-For example, in:
+* They should be annotated as MEASURE, as long as they indicate a numerical order in a scale or quantify something (size, date, etc.) that we can **enumerate**. For example:
 
-  > _The history can be divided into four periods: the **first**, from 1919 to 1940_ </br>
-  => **_first_** is annotated `<ENAMEX type="MEASURE">first</ENAMEX>`
+      * <span style="color:#848484">_The history can be divided into four periods: the_</span> **_first_**<span style="color:#848484">, _from 1919 to 1940_</span> <br/>
 
+      * <span style="color:#848484">_there occurred a boycott of Jewish businesses, which was the_</span> **_first_** <span style="color:#848484">_national antisemitic campaign_</span> (the "first campaign" is the boycott) <br/> <br/>
 
 * But referring expressions, or ordinals not really ordering or quantifying, should **not** be annotated MEASURE.
 For example:
 
-  > _there occurred a boycott of Jewish businesses, which was the **first** national antisemitic campaign_ <span style="color:black">(here **_first_** is more a synonym of _"for the first time"_ than an ordinal)</span>
+      * Phrases like <span style="color:#848484">_among the first to be sent to concentration camps_</span>, or <span style="color:#848484">_one of the first_</span> where there is no notion of scale but rather of "beginning".
+
+      * Plurals like in <span style="color:#848484">_the first jews to be deported_</span>.
+
+        => in these examples it's impossible to enumerate precisely what is « first ».
 
 ➡ Expressions measuring nothing are not to be annotated, for example [(issue #14)](https://github.com/kermitt2/grobid-ner/issues/14):
 
