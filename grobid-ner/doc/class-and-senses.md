@@ -157,19 +157,23 @@ Human-made object, including softwares.
 
 ---
 ### LOCATION
-➡ LOCATION vs INSTITUTION: an INSTITUTION entity is defined as a set of legal entities and not a fixed location [(issue #29)](https://github.com/kermitt2/grobid-ner/issues/29).
+➡ LOCATION vs INSTITUTION: an INSTITUTION entity is defined as a set of legal entities (for example **_European Union_**) and not a fixed location [(issue #29)](https://github.com/kermitt2/grobid-ner/issues/29).
 
 ➡ There is no disambiguation at this level between the different uses of country names (as location, government, army, etc.) [(issue #29)](https://github.com/kermitt2/grobid-ner/issues/29). For example in:
 > _**Austria** invaded **Italy**_
 
 they're both annotated LOCATION event though here _Austria_ refers to _Austria's army_ and _Italy_ to the location.
 
-➡ When there are modifiers along the location, they are included in the entity, for example:
+➡ When there are modifiers (geographical, political, etc.) along the location, they are included in the entity, as long as the result refers to a territory. For example:
 ```xml
 - <ENAMEX type="LOCATION">Suvalkų area</ENAMEX>
 - <ENAMEX type="LOCATION">Pakruojis local rural district</ENAMEX>
 - <ENAMEX type="LOCATION">coast of Honolulu</ENAMEX>
+- <ENAMEX type="LOCATION">German-occupied Poland</ENAMEX>
+- <ENAMEX type="LOCATION">Nazi Germany</ENAMEX>
 ```
+issues [#21](https://github.com/kermitt2/grobid-ner/issues/21) and [#32](https://github.com/kermitt2/grobid-ner/issues/32)
+
 ➡ The articles and prepositions (_from_, _the_) are not included in the entity.
 
 ➡ In some cases surrounding elements are not included in the entity, for example _"west of the"_ in:
@@ -431,12 +435,22 @@ issues [#12](https://github.com/kermitt2/grobid-ner/issues/12) and [#33](https:/
 
 ➡ the classes may apply to fictive entities, for example:
 ```xml
-- a multipurpose hand tool, the <ENAMEX type="ARTIFACT">"Lobotomizer"</ENAMEX> or <ENAMEX type="ARTIFACT">"Lobo"</ENAMEX> (...), for close-quarters combat.
+- a multipurpose hand tool, the <ENAMEX type="ARTIFACT">"Lobotomizer"</ENAMEX> or
+ <ENAMEX type="ARTIFACT">"Lobo"</ENAMEX> (...), for close-quarters combat.
+
 - a tactic re-invented (...) during the "<ENAMEX type="EVENT">Great Panic</ENAMEX>"
 ```
 [issue #24](https://github.com/kermitt2/grobid-ner/issues/24)
 
 ➡ There is no specific class for foreign words. They are **annotated in one of the existing classes, if relevant (whether they are written in latin or non-latin characters)**. Otherwise they are not annotated. In all cases, they are identified in parallel by another attribute, orthogonal to the entity class [(issue #37)](https://github.com/kermitt2/grobid-ner/issues/37).
+
+➡ Generic terms in referring expressions are **not annotated**, even if they refer to a named entity. Example:
+
+  * _Germany was losing the **war**_ (refers to an EVENT)
+  * _broader trends in **world** history_ (refers to a LOCATION)
+  * _bringing the first credible news to the **world** of the mass murder that was taking place there_ (refers to a LOCATION)
+
+  [issue #45](https://github.com/kermitt2/grobid-ner/issues/45)
 
 ➡ Punctuation (like quotation marks) are to be left outside the tags, for example: `"<ENAMEX type="PERSON_TYPE">socialists</ENAMEX>"` [(issue #26)](https://github.com/kermitt2/grobid-ner/issues/26).
 
