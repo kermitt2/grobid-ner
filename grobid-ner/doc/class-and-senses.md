@@ -1,4 +1,4 @@
-
+mai
 GROBID NER identifies named-entities and classifies them in 27 classes, as compared to the 4-classes or 7-classes model of most of the existing NER open source tools (usually using the Reuters/CoNLL 2003 annotated corpus, or the MUC annotated corpus).
 
 In addition the entities are often enriched with WordNet sense annotations to help further disambiguation and resolution of the entity. GROBID NER has been developed for the purposed of disambiguating and resolving entities against knowledge bases such as Wikipedia and FreeBase. Sense information can help to disambiguate the entity, because they refine based on contextual clues the entity class.
@@ -37,7 +37,7 @@ The following table describes the 27 named entity classes produced by the model.
 | PLANT | name of a plant | _Ficus religiosa_ |
 | SPORT_TEAM | sport group or organisation | _The Yankees_ |
 | SUBSTANCE | natural substance | |
-| <a style="text-decorations:none; color:#265C83" href=#title> TITLE | personal or honorific title | _Mr._, _Dr._, _General_, _President_, _chairman_, _doctor_, _member_, _founder_|
+| <a style="text-decorations:none; color:#265C83" href=#title> TITLE | personal or honorific title, for a person | _Mr._, _Dr._, _General_, _President_, _chairman_, _doctor_, _Secretary of State_, _MP_, _Prime Minister_ |
 | <a style="text-decorations:none; color:#265C83" href=#unknown> UNKNOWN | entity not belonging to any previous classes| _Plan Marshall_, _ParSiTi_, _Horizon 2020_ |
 | WEBSITE | website URL or name | _Wikipedia_, http://www.inria.fr |
 
@@ -366,9 +366,9 @@ issues [#13](https://github.com/kermitt2/grobid-ner/issues/13) and [#25](https:/
 ---
 ### TITLE
 
-➡ Personal or honorific title, with a relatively loose definition. The [Wikipedia page](https://en.wikipedia.org/wiki/Title) examples can be useful. For example the following entities are annotated as TITLE: _**chairman**_, _**member**_, _**founder**_.
+➡ Personal or honorific title, **applied to a person**, with a relatively loose definition. The [Wikipedia page](https://en.wikipedia.org/wiki/Title) examples can be useful. For example the following entities are annotated as TITLE: _**chairman**_, _**president**_, _**captain**_ .
 
-➡ For some terms, the context will determine the annotation. The term `engineer` for example can be a TITLE or not depending on the country:
+➡ Generally, the job names (ex. _**economist**_, _**carpenter**_) are not annotated. For some terms, the context will determine the annotation. _**engineer**_ for example can be a TITLE or not depending on the country:
 
 *  In France or Germany it is linked with a specific diploma so it's annotated as TITLE if the term is linked to these countries.
 
@@ -386,10 +386,21 @@ issues [#13](https://github.com/kermitt2/grobid-ner/issues/13) and [#25](https:/
 
 * In case of the largest entity match of TITLE + PERSON, the priority goes to PERSON. For example _**The President of the United States Barack Obama**_ as a whole is annotated PERSON.
 
-➡ The same principle applies between TITLE and PERSON_TYPE, for example this case of the largest entity match of TITLE + PERSON_TYPE:
+➡ Various examples
+
 ```xml
-<ENAMEX type="PERSON_TYPE">Members of the British Royal Family</ENAMEX> had fled.
+- under the direction of the <ENAMEX type="TITLE">National State Archivist</ENAMEX>
+(who holds his office in the <ENAMEX type="INSTITUTION">National Archives</ENAMEX>)
+
+- <ENAMEX type="TITLE">Wehrmacht officer</ENAMEX>
+- <ENAMEX type="TITLE">Wehrmacht officers</ENAMEX>
+- <ENAMEX type="TITLE">German SS officers</ENAMEX>
+- <ENAMEX type="TITLE">senior military officers</ENAMEX>
 ```
+| | TITLE | not TITLE |
+| | ----- | --------- |
+| member | - Member of Parliament <br/> - Member of Congress <br/> - Board member | - members of the British Royal Family <br/> - the Eurozone members <br/> - members of the SS <br/> - party member |
+| leader | - Great Leader of North Korea <br/> - Supreme Leader of Iran <br/> | - leader of the Zionist movement <br/> - Nazi leader <br/> - council leaders of the ghetto <br/> - Jewish resistance leaders |
 
 issues [#12](https://github.com/kermitt2/grobid-ner/issues/12) and [#33](https://github.com/kermitt2/grobid-ner/issues/33)
 
