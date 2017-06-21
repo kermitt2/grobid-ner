@@ -95,6 +95,19 @@ down after his party's long-term ambition had been accomplished.
 
 # Parenthesis
 
+One of the entities in a large match entity may be between parentheses. There are different cases, for example:
+
+* The entity between parentheses does not refer to the others entities in the large match. Example:
+```xml
+  <ENAMEX type="EVENT">Kristallnacht (1938)</ENAMEX>
+```
+Here, the date is an adjunct to the event.
+
+* Both have the same referent. Examples:
+```xml
+  run by the <ENAMEX type="INSTITUTION">Sturmabteilung (SA)</ENAMEX> and the
+  <ENAMEX type="INSTITUTION">Schutzstaffel (SS)</ENAMEX>
+```
 
 # Choosing between PERSON and TITLE
 
