@@ -93,7 +93,7 @@ down after his party's long-term ambition had been accomplished.
 down after his party's long-term ambition had been accomplished.
 ```
 
-# Parenthesis
+# Parentheses
 
 One of the entities in a large match entity may be between parentheses. There are different cases, for example:
 
