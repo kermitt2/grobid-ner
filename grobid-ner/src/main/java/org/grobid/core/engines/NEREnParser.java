@@ -31,11 +31,11 @@ public class NEREnParser extends AbstractParser implements NERParser {
     private static Logger LOGGER = LoggerFactory.getLogger(NEREnParser.class);
 
     protected Lexicon lexicon = Lexicon.getInstance();
-    protected SenseTagger senseTagger = null;
+    //protected SenseTagger senseTagger = null;
 
     public NEREnParser() {
         super(GrobidModels.ENTITIES_NER);
-        senseTagger = new SenseTagger();
+        //senseTagger = new SenseTagger();
     }
 
     /**
@@ -63,9 +63,9 @@ public class NEREnParser extends AbstractParser implements NERParser {
         List<Entity> entities = NERParserCommon.resultExtraction(text, labeled, tokens);
 
         // we use now the sense tagger for the recognized named entity
-        List<Sense> senses = senseTagger.extractSenses(text, labeled, tokens, positionsIndexes);
+        //List<Sense> senses = senseTagger.extractSenses(text, labeled, tokens, positionsIndexes);
 
-        NERParserCommon.merge(entities, senses);
+        //NERParserCommon.merge(entities, senses);
 
         return entities;
     }
