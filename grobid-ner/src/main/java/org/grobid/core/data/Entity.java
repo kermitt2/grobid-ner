@@ -64,6 +64,9 @@ public class Entity implements Comparable<Entity> {
 
 	// orign of the entity definition
 	private Origin origin = Origin.GROBID;
+
+	// if the entity is an acronym; if true, the normalisedName will give the found expended form
+    private boolean isAcronym = false;
 	
     public Entity() {
 		this.offsets = new OffsetPosition();
@@ -85,6 +88,7 @@ public class Entity implements Comparable<Entity> {
 		sense = ent.sense;
 		origin = ent.origin;
 		boundingBoxes = ent.boundingBoxes;
+		isAcronym = ent.isAcronym;
 		//startTokenPos = ent.startTokenPos;
 		//endTokenPos = ent.startTokenPos;
 	}
@@ -222,6 +226,14 @@ public class Entity implements Comparable<Entity> {
 			this.boundingBoxes = new ArrayList<BoundingBox>();
 		this.boundingBoxes.add(boundingBox);
 	}
+
+	public boolean getIsAcronym() {
+    	return this.isAcronym;
+    }
+
+    public void setIsAcronym(boolean acronym) {
+        this.isAcronym = acronym;
+    }
 
 	@Override
 	public boolean equals(Object object) {
@@ -378,7 +390,7 @@ public class Entity implements Comparable<Entity> {
 	/** 
 	 * Export of entity annotation in TEI standoff format 
 	 */	 
-	public String toTEI(String id, int n) {
+	/*public String toTEI(String id, int n) {
 		StringBuffer buffer = new StringBuffer();
 		buffer.append("<stf xml:id=\"" + "ner-" + n + "\" type=\"ne\" who=\"nerd\" when=\"\">");
 		buffer.append("<ptr target=\"id," + offsets.start + "," + offsets.end + "\" />");
@@ -387,5 +399,5 @@ public class Entity implements Comparable<Entity> {
 		}
 		buffer.append("</stf>");
 		return buffer.toString();
-	}
+	}*/
 }
