@@ -76,19 +76,18 @@ public class NERFrenchTrainer extends AbstractTrainer {
 		}
     }
 
-
-	/**
-	 * Add the selected features to the training data for the NER model
-	 */
 	@Override
-	public int createCRFPPData(File sourcePathLabel,
-							   File outputPath) {
+	/**
+     * Add the selected features to the training data for the NER model
+     */
+    public int createCRFPPData(File sourcePathLabel,
+                               File outputPath) {
 		return createCRFPPData(sourcePathLabel, outputPath, null, 1.0);
 	}
-
+	
 	/**
-	 * Add the selected features to a NER example set
-	 *
+	 * Add the selected features to a NER example set 
+	 * 
 	 * @param corpusDir
 	 *            a path where corpus files are located
 	 * @param trainingOutputPath
@@ -96,13 +95,13 @@ public class NERFrenchTrainer extends AbstractTrainer {
 	 * @param evalOutputPath
 	 *            path where to store the temporary evaluation data
 	 * @param splitRatio
-	 *            ratio to consider for separating training and evaluation data, e.g. 0.8 for 80%
-	 * @return the total number of used corpus items
+	 *            ratio to consider for separating training and evaluation data, e.g. 0.8 for 80% 
+	 * @return the total number of used corpus items 
 	 */
 	@Override
-	public int createCRFPPData(final File corpusDir,
-							final File trainingOutputPath,
-							final File evalOutputPath,
+	public int createCRFPPData(final File corpusDir, 
+							final File trainingOutputPath, 
+							final File evalOutputPath, 
 							double splitRatio) {
         int totalExamples = 0;
         try {
@@ -143,14 +142,14 @@ public class NERFrenchTrainer extends AbstractTrainer {
 				if (files[i].getName().indexOf(".xml") != -1)
 					totalExamples += processLeMonde(files[i], writer2, writer3, splitRatio);
 			}
-
+			
 			if (writer2 != null) {
 				writer2.close();
 			}
 			if (os2 != null) {
 				os2.close();
 			}
-
+			
 			if (writer3 != null) {
 				writer3.close();
 			}
@@ -167,15 +166,15 @@ public class NERFrenchTrainer extends AbstractTrainer {
 	private int processLeMonde(final File corpusFile, Writer writerTraining, Writer writerEvaluation, double splitRatio) {
 		int res = 0;
 		try {
-			// the "core" set is a the set of files corresponding to Lemonde corpus, but with
+			// the "core" set is a the set of files corresponding to Lemonde corpus, but with 
 			// the default class annotations manually corrected
 			System.out.println("Path to French corpus CoNLL training: " + corpusFile.getPath());
 			if (!corpusFile.exists()) {
-				throw new
-					GrobidException("Cannot start training, because corpus resource file is not correctly set : "
+				throw new 
+					GrobidException("Cannot start training, because corpus resource file is not correctly set : " 
 					+ corpusFile.getPath());
 			}
-
+			
 			WstxInputFactory inputFactory = new WstxInputFactory();
 			Writer writer = new StringWriter();
 			INRIALeMondeCorpusStaxHandler target = new INRIALeMondeCorpusStaxHandler(writer);
@@ -191,7 +190,7 @@ public class NERFrenchTrainer extends AbstractTrainer {
 			// to store unit term positions
             List<List<OffsetPosition>> locationPositions = new ArrayList<List<OffsetPosition>>();
             List<List<OffsetPosition>> personTitlePositions = new ArrayList<List<OffsetPosition>>();
-            List<List<OffsetPosition>> organisationPositions = new ArrayList<List<OffsetPosition>>();
+            List<List<OffsetPosition>> organisationPositions = new ArrayList<List<OffsetPosition>>();		
 			List<List<OffsetPosition>> orgFormPositions = new ArrayList<List<OffsetPosition>>();
 			List<String> labeled = new ArrayList<String>();
 			String line = null;
@@ -201,22 +200,22 @@ public class NERFrenchTrainer extends AbstractTrainer {
 				// note that we work at sentence level
 				if (line.startsWith("-DOCSTART-") || line.startsWith("-X-")) {
 					// the balance of data between training and evaluation is realised
-					// at document level
+					// at document level 
 					if ( (writerTraining == null) && (writerEvaluation != null) )
 						writer = writerEvaluation;
 					if ( (writerTraining != null) && (writerEvaluation == null) )
 						writer = writerTraining;
-					else {
+					else {		
 						if (Math.random() <= splitRatio)
 							writer = writerTraining;
-						else
+						else 
 							writer = writerEvaluation;
 					}
 
 					continue;
 				}
 
-				// in the this line, we only keep what we are interested in for this model
+				// in the this line, we only keep what we are interested in for this model 
 				int ind = line.indexOf("\t");
 				if (ind != -1) {
 					ind = line.indexOf("\t", ind+1);
@@ -230,36 +229,36 @@ public class NERFrenchTrainer extends AbstractTrainer {
 					locationPositions.add(lexicon.inLocationNames(labeled));
 		            personTitlePositions.add(lexicon.inPersonTitleNames(labeled));
 		            organisationPositions.add(lexicon.inOrganisationNames(labeled));
-					orgFormPositions.add(lexicon.inOrgFormNames(labeled));
-
+					orgFormPositions.add(lexicon.inOrgFormNames(labeled));	
+				
 					// this is mandatory for the correct setting of features
 					labeled.add("@newline");
-
-					addFeatures(labeled, writer,
+				
+					addFeatures(labeled, writer, 
 						locationPositions, personTitlePositions, organisationPositions, orgFormPositions);
 					writer.write("\n");
-
-					locationPositions = new ArrayList<>();
-		            personTitlePositions = new ArrayList<>();
-		            organisationPositions = new ArrayList<>();
-					orgFormPositions = new ArrayList<>();
-
-					labeled = new ArrayList<>();
+				
+					locationPositions = new ArrayList<List<OffsetPosition>>();
+		            personTitlePositions = new ArrayList<List<OffsetPosition>>();
+		            organisationPositions = new ArrayList<List<OffsetPosition>>();		
+					orgFormPositions = new ArrayList<List<OffsetPosition>>();
+					
+					labeled = new ArrayList<String>();
 					res++;
-				}
-				else
-					labeled.add(line);
+				}		
+				else 
+					labeled.add(line);	
 			}
 		}
 		catch (Exception ex) {
 			throw new GrobidResourceException(
 				"An exception occured when accessing/reading Le Monde corpus files.", ex);
-		}
+		} 
 		finally {
 		}
 		return res;
 	}
-
+	
 
     @SuppressWarnings({"UnusedParameters"})
     static public void addFeatures(List<String> texts,

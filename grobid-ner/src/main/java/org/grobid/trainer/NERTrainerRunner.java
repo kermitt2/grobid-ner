@@ -4,8 +4,6 @@ import java.io.File;
 
 import org.grobid.core.mock.MockContext;
 import org.grobid.core.utilities.GrobidProperties;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * Training application for training a target model.
@@ -13,7 +11,6 @@ import org.slf4j.LoggerFactory;
  * @author Patrice Lopez
  */
 public class NERTrainerRunner {
-	private static Logger LOGGER = LoggerFactory.getLogger(NERTrainerRunner.class);
 
 	enum RunType {
 		TRAIN, EVAL, SPLIT;
@@ -28,12 +25,15 @@ public class NERTrainerRunner {
 			throw new IllegalStateException("Unsupported RunType with ordinal " + i);
 		}
 	}
-	
+
+	/**
+	 * Initialize the batch.
+	 */
 	protected static void initProcess(final String path2GbdHome, final String path2GbdProperties) {
 		try {
 			MockContext.setInitialContext(path2GbdHome, path2GbdProperties);
 		} catch (final Exception exp) {
-			LOGGER.error("Grobid initialisation failed: " + exp);
+			System.err.println("Grobid initialisation failed: " + exp);
 		}
 		GrobidProperties.getInstance();
 	}
@@ -41,7 +41,8 @@ public class NERTrainerRunner {
 	/**
 	 * Command line execution.
 	 * 
-	 * @param args Command line arguments.
+	 * @param args
+	 *            Command line arguments.
 	 */
 	public static void main(String[] args) {
 		if (args.length < 4) {
