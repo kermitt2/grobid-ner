@@ -23,31 +23,31 @@ public class FeaturesVectorNERSense {
     // one of NOPUNCT, OPENBRACKET, ENDBRACKET, DOT, COMMA, HYPHEN, QUOTE, PUNCT (default)
     // OPENQUOTE, ENDQUOTE 
 
-	// lexical features
+    // lexical features
     public boolean lastName = false;
     public boolean commonName = false;
     public boolean firstName = false;
-	public boolean year = false;
+    public boolean year = false;
     public boolean month = false;
-	public boolean cityName = false;
-	public boolean countryName = false;
+    public boolean cityName = false;
+    public boolean countryName = false;
 
-	public String shadowNumber = null; // Convert digits to “0” 
-	
-	public String wordShape = null; 
-	// Convert upper-case letters to "X", lower- case letters to "x", digits to "d" and other to "c"  
-	// there is also a trimmed variant where sequence of similar character shapes are reduced to one
-	// converted character shape
-	public String wordShapeTrimmed = null;
+    public String shadowNumber = null; // Convert digits to “0”
 
-	public boolean isLocationToken = false;
-	public boolean isPersonTitleToken = false;
-	public boolean isOrganisationToken = false;
-	public boolean isOrgFormToken = false;
+    public String wordShape = null;
+    // Convert upper-case letters to "X", lower- case letters to "x", digits to "d" and other to "c"
+    // there is also a trimmed variant where sequence of similar character shapes are reduced to one
+    // converted character shape
+    public String wordShapeTrimmed = null;
 
-	// propagated by the NER
-	public boolean isNER = false;
-	public String nerType = null;
+    public boolean isLocationToken = false;
+    public boolean isPersonTitleToken = false;
+    public boolean isOrganisationToken = false;
+    public boolean isOrgFormToken = false;
+
+    // propagated by the NER
+    public boolean isNER = false;
+    public String nerType = null;
 
     public FeaturesVectorNERSense() {
     }
@@ -63,76 +63,20 @@ public class FeaturesVectorNERSense {
         // lowercase string
         res.append(" " + string.toLowerCase());
 
-        // prefix (5)
-        res.append(" " + string.substring(0, 1));
+        //prefix
+        res.append(" " + TextUtilities.prefix(string, 1));
+        res.append(" " + TextUtilities.prefix(string, 2));
+        res.append(" " + TextUtilities.prefix(string, 3));
+        res.append(" " + TextUtilities.prefix(string, 4));
+        res.append(" " + TextUtilities.prefix(string, 5));
 
-        if (string.length() > 1)
-            res.append(" " + string.substring(0, 2));
-        else
-            res.append(" " + string.substring(0, 1));
+        //suffix
+        res.append(" " + TextUtilities.suffix(string, 1));
+        res.append(" " + TextUtilities.suffix(string, 2));
+        res.append(" " + TextUtilities.suffix(string, 3));
+        res.append(" " + TextUtilities.suffix(string, 4));
+        res.append(" " + TextUtilities.suffix(string, 5));
 
-        if (string.length() > 2)
-            res.append(" " + string.substring(0, 3));
-        else if (string.length() > 1)
-            res.append(" " + string.substring(0, 2));
-        else
-            res.append(" " + string.substring(0, 1));
-
-        if (string.length() > 3)
-            res.append(" " + string.substring(0, 4));
-        else if (string.length() > 2)
-            res.append(" " + string.substring(0, 3));
-        else if (string.length() > 1)
-            res.append(" " + string.substring(0, 2));
-        else
-            res.append(" " + string.substring(0, 1));
-
-		if (string.length() > 4)
-            res.append(" " + string.substring(0, 5));
-		else if (string.length() > 3)
-            res.append(" " + string.substring(0, 4));
-        else if (string.length() > 2)
-            res.append(" " + string.substring(0, 3));
-        else if (string.length() > 1)
-            res.append(" " + string.substring(0, 2));
-        else
-            res.append(" " + string.substring(0, 1));
-			
-        // suffix (5)
-        res.append(" " + string.charAt(string.length() - 1));
-
-        if (string.length() > 1)
-            res.append(" " + string.substring(string.length() - 2, string.length()));
-        else
-            res.append(" " + string.charAt(string.length() - 1));
-
-        if (string.length() > 2)
-            res.append(" " + string.substring(string.length() - 3, string.length()));
-        else if (string.length() > 1)
-            res.append(" " + string.substring(string.length() - 2, string.length()));
-        else
-            res.append(" " + string.charAt(string.length() - 1));
-
-        if (string.length() > 3)
-            res.append(" " + string.substring(string.length() - 4, string.length()));
-        else if (string.length() > 2)
-            res.append(" " + string.substring(string.length() - 3, string.length()));
-        else if (string.length() > 1)
-            res.append(" " + string.substring(string.length() - 2, string.length()));
-        else
-            res.append(" " + string.charAt(string.length() - 1));
-
-		if (string.length() > 4)
-            res.append(" " + string.substring(string.length() - 5, string.length()));
-		else if (string.length() > 3)
-            res.append(" " + string.substring(string.length() - 4, string.length()));
-        else if (string.length() > 2)
-            res.append(" " + string.substring(string.length() - 3, string.length()));
-        else if (string.length() > 1)
-            res.append(" " + string.substring(string.length() - 2, string.length()));
-        else
-            res.append(" " + string.charAt(string.length() - 1));
-		
         // capitalisation (1)
         if (digit.equals("ALLDIGIT"))
             res.append(" NOCAPS");
@@ -151,7 +95,7 @@ public class FeaturesVectorNERSense {
         // punctuation information (1)
         //res.append(" " + punctType); // in case the token is a punctuation (NO otherwise)
 
-		// lexical information (7)
+        // lexical information (7)
         if (lastName)
             res.append(" 1");
         else
@@ -172,7 +116,7 @@ public class FeaturesVectorNERSense {
         else
             res.append(" 0");
 
-		if (countryName)
+        if (countryName)
             res.append(" 1");
         else
             res.append(" 0");
@@ -187,54 +131,54 @@ public class FeaturesVectorNERSense {
         else
             res.append(" 0");
 
-		
-		// lexical feature: belongs to a known location (1)
-		if (isLocationToken)
-			res.append(" 1");
+
+        // lexical feature: belongs to a known location (1)
+        if (isLocationToken)
+            res.append(" 1");
         else
             res.append(" 0");
 
-		// lexical feature: belongs to a known person title (1)
-		if (isPersonTitleToken)
-			res.append(" 1");
+        // lexical feature: belongs to a known person title (1)
+        if (isPersonTitleToken)
+            res.append(" 1");
         else
             res.append(" 0");
 
-		// lexical feature: belongs to a known organisation (1)
-		if (isOrganisationToken)
-			res.append(" 1");
+        // lexical feature: belongs to a known organisation (1)
+        if (isOrganisationToken)
+            res.append(" 1");
         else
             res.append(" 0");
 
-		// lexical feature: belongs to a known organisation form (1)
-		if (isOrgFormToken)
-			res.append(" 1");
+        // lexical feature: belongs to a known organisation form (1)
+        if (isOrgFormToken)
+            res.append(" 1");
         else
             res.append(" 0");
 
         // token length (1)
         //res.append(" " + string.length()); // /
 
-		// shadow number (1)
-		//res.append(" " + shadowNumber); // /
-		
-		// word shape (1)
-		res.append(" " + wordShape);
-		
-		// word shape trimmed (1)
-		res.append(" " + wordShapeTrimmed);
-		
-		// indicate of the token is part of a named entity according to a NER (1)
-		if (isNER)
-			res.append(" 1");
+        // shadow number (1)
+        //res.append(" " + shadowNumber); // /
+
+        // word shape (1)
+        res.append(" " + wordShape);
+
+        // word shape trimmed (1)
+        res.append(" " + wordShapeTrimmed);
+
+        // indicate of the token is part of a named entity according to a NER (1)
+        if (isNER)
+            res.append(" 1");
         else
             res.append(" 0");
 
-		if (nerType != null) 
-			res.append(" " + nerType);
-		else 
-			res.append(" O");
-		
+        if (nerType != null)
+            res.append(" " + nerType);
+        else
+            res.append(" O");
+
         // label - for training data (1)
         if (label != null)
             res.append(" " + label + "");
@@ -248,10 +192,10 @@ public class FeaturesVectorNERSense {
      * Add the features for the NER model.
      */
     static public FeaturesVectorNERSense addFeatures(String line,
-                                                   boolean isLocationToken,
-												   boolean isPersonTitleToken, 
-												   boolean isOrganisationToken, 
-												   boolean isOrgFormToken) {
+                                                     boolean isLocationToken,
+                                                     boolean isPersonTitleToken,
+                                                     boolean isOrganisationToken,
+                                                     boolean isOrgFormToken) {
         FeatureFactory featureFactory = FeatureFactory.getInstance();
 
         FeaturesVectorNERSense featuresVector = new FeaturesVectorNERSense();
@@ -259,18 +203,18 @@ public class FeaturesVectorNERSense {
         if (st.hasMoreTokens()) {
             String word = st.nextToken();
             String label = "O";
-			String nerType = "O";
-            
-			if (st.hasMoreTokens())
+            String nerType = "O";
+
+            if (st.hasMoreTokens())
                 label = st.nextToken();
 
-			if (st.hasMoreTokens()) {
+            if (st.hasMoreTokens()) {
                 nerType = st.nextToken();
-				if (nerType.startsWith("B-") || nerType.startsWith("I-")) {
-					nerType = nerType.substring(2,nerType.length());
-				}
-			}
-			
+                if (nerType.startsWith("B-") || nerType.startsWith("I-")) {
+                    nerType = nerType.substring(2, nerType.length());
+                }
+            }
+
             featuresVector.string = word;
             featuresVector.label = label;
 
@@ -319,16 +263,16 @@ public class FeaturesVectorNERSense {
             if (featuresVector.punctType == null)
                 featuresVector.punctType = "NOPUNCT";
 
-			Matcher m2 = featureFactory.YEAR.matcher(word);
+            Matcher m2 = featureFactory.YEAR.matcher(word);
             if (m2.find()) {
                 featuresVector.year = true;
             }
 
-			if (featureFactory.test_common(word)) {
+            if (featureFactory.test_common(word)) {
                 featuresVector.commonName = true;
             }
 
-			if (featureFactory.test_first_names(word)) {
+            if (featureFactory.test_first_names(word)) {
                 featuresVector.firstName = true;
             }
 
@@ -340,42 +284,42 @@ public class FeaturesVectorNERSense {
                 featuresVector.month = true;
             }
 
-			if (featureFactory.test_city(word)) {
+            if (featureFactory.test_city(word)) {
                 featuresVector.cityName = true;
             }
 
-			if (featureFactory.test_country(word)) {
+            if (featureFactory.test_country(word)) {
                 featuresVector.countryName = true;
             }
 
-			featuresVector.isLocationToken = isLocationToken;
-			
-			featuresVector.isPersonTitleToken = isPersonTitleToken;
-			
-			featuresVector.isOrganisationToken = isOrganisationToken;
-			
-			featuresVector.isOrgFormToken = isOrgFormToken;
+            featuresVector.isLocationToken = isLocationToken;
 
-			featuresVector.shadowNumber = TextUtilities.shadowNumbers(word);
-			
-			featuresVector.wordShape = TextUtilities.wordShape(word);
-			
-			featuresVector.wordShapeTrimmed = TextUtilities.wordShapeTrimmed(word);
-			
-			if (nerType.equals("other") || nerType.equals("O"))
-				featuresVector.isNER = false;
-			else 
-				featuresVector.isNER = true;
-				
-			if (nerType.equals("other") || nerType.equals("O"))
-				featuresVector.nerType = "O";
-			else 
-				featuresVector.nerType = nerType;	
+            featuresVector.isPersonTitleToken = isPersonTitleToken;
+
+            featuresVector.isOrganisationToken = isOrganisationToken;
+
+            featuresVector.isOrgFormToken = isOrgFormToken;
+
+            featuresVector.shadowNumber = TextUtilities.shadowNumbers(word);
+
+            featuresVector.wordShape = TextUtilities.wordShape(word);
+
+            featuresVector.wordShapeTrimmed = TextUtilities.wordShapeTrimmed(word);
+
+            if (nerType.equals("other") || nerType.equals("O"))
+                featuresVector.isNER = false;
+            else
+                featuresVector.isNER = true;
+
+            if (nerType.equals("other") || nerType.equals("O"))
+                featuresVector.nerType = "O";
+            else
+                featuresVector.nerType = nerType;
         }
 
         return featuresVector;
     }
 
 }
-	
+
 	

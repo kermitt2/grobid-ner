@@ -140,9 +140,6 @@ public class INRIALeMondeCorpusStaxHandler implements StaxParserContentHandler {
 				}
                 if ((inNamedEntity) && (isNotEmpty(entityType))) {
                     sb.append(token).append("\t").append(translate(entityType, entitySubType));
-                    /*if (isNotEmpty(entitySubType)) {
-                        sb.append("\t").append(entitySubType);
-                    }*/
 
                     if (isNotBlank(disambiguatedName)) {
                         sb.append("\t").append(disambiguatedName);

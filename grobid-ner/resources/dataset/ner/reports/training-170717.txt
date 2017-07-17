@@ -1,0 +1,63 @@
+
+===== Token-level results =====
+
+
+label                accuracy     precision    recall       f1
+
+ARTIFACT             99.68        0            0            0
+BUSINESS             99.78        0            0            0
+CONCEPT              99.84        100          17.39        29.63
+CONCEPTUAL           99.87        83.33        25           38.46
+CREATION             99.83        10           40           16
+EVENT                96.76        76.78        43.89        55.86
+INSTALLATION         99.95        0            0            0
+INSTITUTION          97.82        46.27        24.41        31.96
+LEGAL                99.19        63.33        58.46        60.8
+LOCATION             96.92        80.04        81.95        80.98
+MEASURE              99.77        83.04        91.18        86.92
+MEDIA                99.86        0            0            0
+NATIONAL             98.91        74.25        57.94        65.09
+ORGANISATION         99.2         35.87        46.48        40.49
+PERIOD               98.81        83.61        83.02        83.31
+PERSON               98.4         42.37        83.89        56.31
+PERSON_TYPE          99.56        81.97        54.95        65.79
+TITLE                99.68        76.54        76.54        76.54
+UNKNOWN              99.91        0            0            0
+WEBSITE              99.97        0            0            0
+
+all fields           99.18        70.82        64.25        67.37   (micro average)
+                     99.14        49.34        41.32        41.48   (macro average)
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1
+
+ARTIFACT             99.51        0            0            0
+BUSINESS             99.75        0            0            0
+CONCEPT              99.66        100          15.38        26.67
+CONCEPTUAL           99.85        83.33        55.56        66.67
+CREATION             99.88        40           66.67        50
+EVENT                96.88        80.72        44.08        57.02
+INSTALLATION         99.94        0            0            0
+INSTITUTION          96.23        50.98        21.14        29.89
+LEGAL                99.16        58.82        60.61        59.7
+LOCATION             96.2         86.81        88.73        87.76
+MEASURE              99.26        74.6         85.45        79.66
+MEDIA                99.75        0            0            0
+NATIONAL             97.34        73.58        72.67        73.12
+ORGANISATION         98.89        29.63        32           30.77
+PERIOD               98.42        88.27        84.04        86.1
+PERSON               98.79        63.41        85.25        72.73
+PERSON_TYPE          98.89        80.95        54.84        65.38
+TITLE                99.6         63.64        43.75        51.85
+UNKNOWN              99.85        0            0            0
+WEBSITE              99.88        0            0            0
+
+all fields           98.88        77.88        69.1         73.23   (micro average)
+                     98.78        54.15        45.01        46.52   (macro average)
+
+===== Instance-level results =====
+
+Total expected instances:   430
+Correct instances:          140
+Instance-level recall:      32.56

@@ -1,5 +1,6 @@
 package org.grobid.core.lexicon;
 
+import org.apache.commons.lang3.StringUtils;
 import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.utilities.GrobidProperties;
 import org.slf4j.Logger;
@@ -116,6 +117,15 @@ public class NERLexicon {
             } else {
                 return NER_Type.UNKNOWN;
             }
+        }
+
+        public static NER_Type getTypeByValue(String value) {
+            for (NER_Type type: NER_Type.values()) {
+                if (StringUtils.equalsIgnoreCase(value, type.toString())) {
+                    return type;
+                }
+            }
+            return null;
         }
     }
 
