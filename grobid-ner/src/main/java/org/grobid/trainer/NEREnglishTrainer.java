@@ -13,6 +13,7 @@ import org.grobid.core.exceptions.GrobidResourceException;
 import org.grobid.core.features.FeaturesVectorNER;
 import org.grobid.core.lang.Language;
 import org.grobid.core.lexicon.Lexicon;
+import org.grobid.core.lexicon.NERLexicon;
 import org.grobid.core.mock.MockContext;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.OffsetPosition;
@@ -175,15 +176,15 @@ public class NEREnglishTrainer extends AbstractTrainer {
         List<OffsetPosition> organisationPositions = lexicon.getPositionsInOrganisationNames(sentence.getTokenisedValue());
         List<OffsetPosition> orgFormPositions = lexicon.getPositionsInOrgFormNames(sentence.getTokenisedValue());
 
-        List<Integer> locationIndexes = offsetToIndex(sentence, locationPositions);
-        List<Integer> personTitleIndexes = offsetToIndex(sentence, personTitlePositions);
-        List<Integer> organisationIndexes = offsetToIndex(sentence, organisationPositions);
-        List<Integer> orgFormIndexes = offsetToIndex(sentence, orgFormPositions);
+        //Getting the flat indexes of the OffsetPositions for each dictionary
+        List<Integer> locationIndexes = offsetToIndex(sentence.getTokenisedValue(), locationPositions);
+        List<Integer> personTitleIndexes = offsetToIndex(sentence.getTokenisedValue(), personTitlePositions);
+        List<Integer> organisationIndexes = offsetToIndex(sentence.getTokenisedValue(), organisationPositions);
+        List<Integer> orgFormIndexes = offsetToIndex(sentence.getTokenisedValue(), orgFormPositions);
 
         Integer previousEntityIndexForThisToken = null;
 
         for (int i = 0; i < sentence.getTokenisedValue().size(); i++) {
-            StringBuilder sb = new StringBuilder();
             String label = "O";
 
             final String token = sentence.getTokenisedValue().get(i);
@@ -196,8 +197,6 @@ public class NEREnglishTrainer extends AbstractTrainer {
             }
 
             previousEntityIndexForThisToken = entityIndexForThisToken;
-
-            sb.append(token).append("\t").append(label);
 
             if(isBlank(token) || isBlank(label)) {
                 continue;
@@ -221,16 +220,27 @@ public class NEREnglishTrainer extends AbstractTrainer {
 
     }
 
-    private List<Integer> offsetToIndex(Sentence sentence, List<OffsetPosition> locationPositions) {
+    /**
+     * Given a tokenised sentence and a list of OffsetPositions representing indexes offset position
+     * within the sentence, returns flat array of indexes:
+     *
+     * e.g. the sentence is "I walk in the Bronx", which is, tokenised "I, ,walk, ,in, ,the, ,bronx"
+     * with offsets [(2, 2), (6,8)] the result would be [2, 6, 7, 8]
+     *
+     * @param tokenisedSentence the sentence already tokenised 
+     * @param offsetPositions the list of index position within the tokenised sentence
+     * @return an index with explicit index definition
+     */
+    protected List<Integer> offsetToIndex(List<String> tokenisedSentence, List<OffsetPosition> offsetPositions) {
         List<Integer> indexList = new ArrayList<>();
 
         int indexStart = 0;
-        for (int i = 0; i < sentence.getTokenisedValue().size(); i++) {
-            String token = sentence.getTokenisedValue().get(i);
+        for (int i = 0; i < tokenisedSentence.size(); i++) {
+            String token = tokenisedSentence.get(i);
 
             out:
-            for (int locationIdx = indexStart; locationIdx < locationPositions.size(); locationIdx++) {
-                OffsetPosition pos = locationPositions.get(locationIdx);
+            for (int locationIdx = indexStart; locationIdx < offsetPositions.size(); locationIdx++) {
+                OffsetPosition pos = offsetPositions.get(locationIdx);
 
                 if (i >= pos.start && i <= pos.end) {
                     indexList.add(i);
