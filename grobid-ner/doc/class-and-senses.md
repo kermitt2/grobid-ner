@@ -201,7 +201,14 @@ than 1,200</ENAMEX> synagogues were damaged or destroyed.
 
       * <span style="color:#848484">_The history can be divided into four periods: the_</span> **_first_**<span style="color:#848484">, _from 1919 to 1940_</span> <br/>
 
-      * <span style="color:#848484">_there occurred a boycott of Jewish businesses, which was the_</span> **_first_** <span style="color:#848484">_national antisemitic campaign_</span> (the "first campaign" is the boycott) <br/> <br/>
+      * <span style="color:#848484">_there occurred a boycott of Jewish businesses, which was the_</span> **_first_** <span style="color:#848484">_national antisemitic campaign_</span> (the "first campaign" is the boycott) <br/>
+
+      * **_second_** <span style="color:#848484">_place in the 2009 European elections and_</span> **_first_** <span style="color:#848484">_place in the 2014 European elections_</span> <br/>
+
+      * <span style="color:#848484">_his was the_</span> **_first_** <span style="color:#848484">_time since the 1910 general election_</span> <br/>
+      
+      * <span style="color:#848484">_These were their_</span> **_first_** <span style="color:#848484">_elected MPs_</span> <br/> <br/>
+      
 
 * But referring expressions, or ordinals not really ordering or quantifying, should **not** be annotated MEASURE.
 For example:
@@ -210,7 +217,7 @@ For example:
 
       * Plurals like in <span style="color:#848484">_the first jews to be deported_</span>.
 
-        => in these examples it's impossible to enumerate precisely what is « first ».
+        => in these examples it's impossible to enumerate precisely what is « first ». Furthermore, it can't really be replaced by "second" or "third".
 
 ➡ Expressions measuring nothing are not to be annotated, for example [(issue #14)](https://github.com/kermitt2/grobid-ner/issues/14):
 
