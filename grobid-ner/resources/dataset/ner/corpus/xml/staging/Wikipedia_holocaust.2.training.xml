@@ -137,7 +137,7 @@
 			</p>
 			<p xml:lang="en" xml:id="P89">
 				<sentence xml:id="P89E0"><ENAMEX type="PERSON_TYPE">Nazi</ENAMEX> resettlement schemes entailed taking measures to prepare the way eastwards.</sentence>
-				<sentence xml:id="P89E1"><ENAMEX type="PERSON_TYPE">Ethnic Germans</ENAMEX> required more <ENAMEX type="CONCEPT">Lebensraum</ENAMEX> (&quot;living space&quot;) according to <ENAMEX type="CONCEPT">Nazi doctrine</ENAMEX> so population displacement (which included murder) and colonial settlement were intrinsically linked.</sentence>
+				<sentence xml:id="P89E1"><ENAMEX type="PERSON_TYPE">Ethnic Germans</ENAMEX> required more <ENAMEX type="CONCEPT">Lebensraum</ENAMEX> (&quot;living space&quot;) according to <ENAMEX type="CONCEPTUAL">Nazi</ENAMEX> doctrine so population displacement (which included murder) and colonial settlement were intrinsically linked.</sentence>
 				<sentence xml:id="P89E2"> Once the <ENAMEX type="PERSON_TYPE">Nazis</ENAMEX> embarked on their push eastwards through <ENAMEX type="LOCATION">Poland</ENAMEX> and later into <ENAMEX type="LOCATION">Russia</ENAMEX> with <ENAMEX type="EVENT">Operation Barbarossa</ENAMEX>, there was a radicalization in the speed and brutality of their methods.</sentence>
 				<sentence xml:id="P89E3">Winning land from the <ENAMEX type="PERSON_TYPE">Russian and Slavic</ENAMEX> peoples in the east it's complicated was more than just territorial aggrandizement for <ENAMEX type="PERSON">Hitler</ENAMEX>; it was part of the final reckoning with <ENAMEX type="CONCEPT">Jewish Bolshevism</ENAMEX>.</sentence>
 			</p>
