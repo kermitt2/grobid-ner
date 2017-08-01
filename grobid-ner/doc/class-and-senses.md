@@ -24,7 +24,7 @@ The following table describes the 27 named entity classes produced by the model.
 | <a style="text-decorations:none; color:#265C83" href=#event> EVENT | event | _World War 2_, _Battle of France_, _Brexit referendum_|
 | IDENTIFIER | systematized identifier such as phone number, email address, ISBN |  |
 | <a style="text-decorations:none; color:#265C83" href=#installation>INSTALLATION | structure built by humans | _Strasbourg Cathedral_, _Sforza Castle_, _Auschwitz camp_ |
-| <a style="text-decorations:none; color:#265C83" href=#institution> INSTITUTION | organization of people and a location or structure that share the same name | _Yale University_, _European Patent Office_, the _British government_, _European Union_, _City Police_ |
+| <a style="text-decorations:none; color:#265C83" href=#institution> INSTITUTION | organization of people and a location or structure that share the same name | _Yale University_, _European Patent Office_, the _British government_, _European Union_, _City Police_, _Eurozone_ |
 | <a style="text-decorations:none; color:#265C83" href=#legal> LEGAL | legal mentions such as article of law, convention, cases, treaty., etc. | _European Patent Convention_;  _Maastricht Treaty_; _Article 52(2)(c) and (3)_; _Roe v. Wade, 410 U.S. 113 (1973)_; _European Union Referendum Act 2015_ |
 | <a style="text-decorations:none; color:#265C83" href=#location> LOCATION | physical location, including planets and galaxies. | _Los Angeles_, _Northern Madagascar_, _Southern Thailand_, _Channel Islands_, _Earth_, _Milky Way_, _West Mountain_, _Warsaw Ghetto_ |
 | <a style="text-decorations:none; color:#265C83" href=#measure> MEASURE | numerical amount, including an optional unit of measure | _1,500_, _six million_, _72%_, _50°2′9″N 19°10′42″E_ |
@@ -132,11 +132,13 @@ Human-made object, including softwares.
 
   [issue #22](https://github.com/kermitt2/grobid-ner/issues/22)
 
-➡ INSTITUTION vs LOCATION: an INSTITUTION entity is defined as a set of legal entities and not a fixed location. Example:
+➡ INSTITUTION vs LOCATION: an INSTITUTION entity is defined as a set of legal entities and not a fixed location. Examples:
 
  **_European Union_**, which is not defined by a (fixed) location, but as a set of legal entities with a treaty and particular instances. It may become a fixed location after a long time of integration (like the USA, where the Federal State is an institution).
+ 
+**_Eurozone_**, which is a group of Nations binded by a treaty, a monetary union.
 
-[issue #29](https://github.com/kermitt2/grobid-ner/issues/29)
+issues [#29](https://github.com/kermitt2/grobid-ner/issues/29) and [#12](https://github.com/kermitt2/grobid-ner/issues/12)
 
 ➡ There is no ambiguity between INSTITUTION and PERSON_TYPE. Therefore, even if an INSTITUTION entity applies to a group of people, it won't be annotated PERSON_TYPE, for example:
 ```xml
