@@ -83,13 +83,13 @@ Coordinated words are annotated as one entity. For example:
 Two named entities in apposition are annotated as one NE. If there is a comma, its role is equivalent to a functional word and introduces an apposition, therefore it does not split the entity. For example:
 
 ```xml
-- Meanwhile, <ENAMEX type="PERSON">Nigel Farage, leader of the anti-EU UKIP</ENAMEX> stood
+- Meanwhile, <ENAMEX type="PERSON">Neil Hamilton, Chairman of the anti-EU UKIP</ENAMEX> stood
 down after his party's long-term ambition had been accomplished.
 
-- Meanwhile, the <ENAMEX type="PERSON">leader of the anti-EU UKIP, Nigel Farage</ENAMEX> stood
+- Meanwhile, the <ENAMEX type="PERSON">Chairman of the anti-EU UKIP, Neil Hamilton</ENAMEX> stood
 down after his party's long-term ambition had been accomplished.
 
-- Meanwhile, the <ENAMEX type="PERSON">leader of the anti-EU UKIP Nigel Farage</ENAMEX> stood
+- Meanwhile, the <ENAMEX type="PERSON">Chairman of the anti-EU UKIP Neil Hamilton</ENAMEX> stood
 down after his party's long-term ambition had been accomplished.
 ```
 
