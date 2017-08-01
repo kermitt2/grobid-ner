@@ -205,9 +205,7 @@ than 1,200</ENAMEX> synagogues were damaged or destroyed.
 
       * **_second_** <span style="color:#848484">_place in the 2009 European elections and_</span> **_first_** <span style="color:#848484">_place in the 2014 European elections_</span> <br/>
 
-      * <span style="color:#848484">_his was the_</span> **_first_** <span style="color:#848484">_time since the 1910 general election_</span> <br/>
-      
-      * <span style="color:#848484">_These were their_</span> **_first_** <span style="color:#848484">_elected MPs_</span> <br/> <br/>
+      * <span style="color:#848484">_his was the_</span> **_first_** <span style="color:#848484">_time since the 1910 general election_</span> <br/> <br/>
       
 
 * But referring expressions, or ordinals not really ordering or quantifying, should **not** be annotated MEASURE.
@@ -215,7 +213,7 @@ For example:
 
       * Phrases like <span style="color:#848484">_among the first to be sent to concentration camps_</span>, or <span style="color:#848484">_one of the first_</span> where there is no notion of scale but rather of "beginning".
 
-      * Plurals like in <span style="color:#848484">_the first jews to be deported_</span>.
+      * Plurals like in <span style="color:#848484">_the first jews to be deported_</span>, or <span style="color:#848484">_These were their_</span> **_first_** <span style="color:#848484">_elected MPs_</span> <br/>
 
         => in these examples it's impossible to enumerate precisely what is « first ». Furthermore, it can't really be replaced by "second" or "third".
 
