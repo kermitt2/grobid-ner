@@ -9,7 +9,7 @@ The current models shipped with the source uses 27 Named Entity [classes](class-
 
 * Manually annotated extract from the Wikipedia article on World War 1 (approximately 10k words, 27 classes),
 
-* Reuters NER [CONLL 2003](http://www.cnts.ua.ac.be/conll2003/ner/) manually annotated training data (10k words, 27 classes). This dataset is not public, so not shipped with the code. In order to obtain it.
+* Reuters NER [CONLL 2003](http://www.cnts.ua.ac.be/conll2003/ner/) manually annotated training data (10k words, 27 classes). This dataset is not public, so not shipped with the code. It's available by contacting NIST. If you are interested by the 27-classes manual annotations only, we can distribute them but you will need to combine these annotations with the Reuters corpus. 
 
 More training data is currently produced based on public data, Wikipedia and historical texts.
 
