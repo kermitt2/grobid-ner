@@ -12,4 +12,4 @@ Israel	LOCATION
 .	O
 ```
 
-Link to discussion [here](https://github.com/kermitt2/grobid-ner/issues/18).
+Link to discussion in  [issue 18](https://github.com/kermitt2/grobid-ner/issues/18).
