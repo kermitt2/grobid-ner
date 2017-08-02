@@ -89,10 +89,12 @@ I            EVENT
 
 Note that as the entity is not adjacent to any other entity, the ```B-``` marker is optional.
 
-2. __WWI__ is not maked as Named Entity and should be tagged as ACRONYM
+2. __WWI__ is not marked as Named Entity but it's an acronym for the previous Entity and should be tagged along with in the same EVENT:
 
 ```
-WWI        B-ACRONYM
+(          EVENT
+WWI        EVENT
+)          EVENT
 ```
 
 3. __Europe__ refers to the european continent, therefore the class LOCATION is correct.
@@ -119,9 +121,9 @@ The result is as following:
 World       B-EVENT
 War         EVENT
 I           EVENT
-(           O
-WWI         B-ACRONYM
-)           O
+(           EVENT
+WWI         EVENT
+)           EVENT
 was         O
 a           O
 global      O
