@@ -1,7 +1,7 @@
 
 GROBID NER identifies named-entities and classifies them in 27 classes, as compared to the 4-classes or 7-classes model of most of the existing NER open source tools (usually using the Reuters/CoNLL 2003 annotated corpus, or the MUC annotated corpus).
 
-In addition the entities are often enriched with WordNet sense annotations to help further disambiguation and resolution of the entity. GROBID NER has been developed for the purposed of disambiguating and resolving entities against knowledge bases such as Wikipedia and FreeBase. Sense information can help to disambiguate the entity, because they refine based on contextual clues the entity class.
+In addition the entities are often enriched with WordNet sense annotations to help further disambiguation and resolution of the entity. GROBID NER has been developed for the purpose of disambiguating and resolving entities against knowledge bases such as Wikipedia and FreeBase. Sense information can help to disambiguate the entity, because they refine the entity class based on contextual clues.
 
 <h1>Named entity classes</h1>
 
@@ -16,22 +16,22 @@ The following table describes the 27 named entity classes produced by the model.
 | <a style="text-decorations:none; color:#265C83" href=#acronym> ACRONYM | acronym that doesn't belong to another class | _DIY, BYOD, IMHO_ |
 | ANIMAL | individual name of an animal | _Hachikō_, _Jappeloup_ |
 | <a style="text-decorations:none; color:#265C83" href=#artifact> ARTIFACT | human-made object, including softwares | _FIAT 634_, _Microsoft Word_ |
-| AWARD | award for art, science, sport, etc. | _Balon d'or_, _Nobel prize_|
+| AWARD | award for art, science, sport, etc. | _Ballon d'or_, _Nobel prize_|
 | BUSINESS | company / commercial organisation | _Air Canada_, _Microsoft_ |
-| <a style="text-decorations:none; color:#265C83" href=#concept> CONCEPT | abstract concept not included in another class | _English_ (as language), _Communism_, _Zionism_ |
-| <a style="text-decorations:none; color:#265C83" href=#conceptual> CONCEPTUAL | entity relating to a concept | _Greek_ myths, _eurosceptic_ doctrine |
+| <a style="text-decorations:none; color:#265C83" href=#concept> CONCEPT | abstract concept not included in another class | _English_ <span style="color:#848484">(as language)</span>, _Communism_, _Zionism_ |
+| <a style="text-decorations:none; color:#265C83" href=#conceptual> CONCEPTUAL | entity relating to a concept | _Greek_ <span style="color:#848484">myths</span>, _eurosceptic_ <span style="color:#848484">doctrine</span> |
 | <a style="text-decorations:none; color:#265C83" href=#creation> CREATION | artistic creation, such as song, movie, book, TV show, etc. | _Monna Lisa_, _Mullaholland drive_, _Kitchen Nightmares_, _EU Referendum: The Great Debate_, _Europe: The Final Debate_ |
 | <a style="text-decorations:none; color:#265C83" href=#event> EVENT | event | _World War 2_, _Battle of France_, _Brexit referendum_|
-| IDENTIFIER | systematized identifier such as phone number, email address, ISBN |  |
+| IDENTIFIER | systematized identifier such as phone number, email address, ISBN | _2081396505_, _weirdturtle@gmail.com_ |
 | <a style="text-decorations:none; color:#265C83" href=#installation>INSTALLATION | structure built by humans | _Strasbourg Cathedral_, _Sforza Castle_, _Auschwitz camp_ |
-| <a style="text-decorations:none; color:#265C83" href=#institution> INSTITUTION | organization of people and a location or structure that share the same name | _Yale University_, _European Patent Office_, the _British government_, _European Union_, _City Police_, _Eurozone_ |
-| <a style="text-decorations:none; color:#265C83" href=#legal> LEGAL | legal mentions such as article of law, convention, cases, treaty., etc. | _European Patent Convention_;  _Maastricht Treaty_; _Article 52(2)(c) and (3)_; _Roe v. Wade, 410 U.S. 113 (1973)_; _European Union Referendum Act 2015_ |
+| <a style="text-decorations:none; color:#265C83" href=#institution> INSTITUTION | organization of people and a location or structure that share the same name | _Yale University_, _European Patent Office_, <span style="color:#848484">the</span> _British government_, _European Union_, _City Police_, _Eurozone_ |
+| <a style="text-decorations:none; color:#265C83" href=#legal> LEGAL | legal mentions such as article of law, convention, cases, treaty., etc. | _European Patent Convention_, &nbsp; &nbsp;  _Maastricht Treaty_, &nbsp; &nbsp; _Article 52(2)(c) and (3)_, &nbsp; &nbsp; _Roe v. Wade 410 U.S.113 (1973)_, &nbsp; &nbsp; _European Union Referendum Act 2015_ |
 | <a style="text-decorations:none; color:#265C83" href=#location> LOCATION | physical location, including planets and galaxies. | _Los Angeles_, _Northern Madagascar_, _Southern Thailand_, _Channel Islands_, _Earth_, _Milky Way_, _West Mountain_, _Warsaw Ghetto_ |
-| <a style="text-decorations:none; color:#265C83" href=#measure> MEASURE | numerical amount, including an optional unit of measure | _1,500_, _six million_, _72%_, _50°2′9″N 19°10′42″E_ |
+| <a style="text-decorations:none; color:#265C83" href=#measure> MEASURE | numerical amount, including an optional unit of measure | _1 500_, &nbsp; _six million_, &nbsp; _72%_, &nbsp; _50°2′9″N 19°10′42″E_ |
 | MEDIA | media organization or publication | _Le monde_, _The New York Times_ |
 | <a style="text-decorations:none; color:#265C83" href=#national> NATIONAL | relating to a location | _North American_, _German_, _British_ |		
 | <a style="text-decorations:none; color:#265C83" href=#organisation> ORGANISATION | organized group of people, with some sort of legal entity and concrete membership | _Alcoholics Anonymous_, _Jewish resistance_, _Polish undergound_ |
-| <a style="text-decorations:none; color:#265C83" href=#period> PERIOD | date, historical era or other time period, time expressions | _January_, the _2nd half of 2010_, _1985-1989_, _from 1930 to 1945_, _since 1918_, the _first four years_ |
+| <a style="text-decorations:none; color:#265C83" href=#period> PERIOD | date, historical era or other time period, time expressions | _January_, &nbsp; <span style="color:#848484">the</span> _2nd half of 2010_, &nbsp; _1985-1989_, &nbsp; _from 1930 to 1945_, &nbsp; _since 1918_, &nbsp; <span style="color:#848484">the</span> _first four years_ |
 | PERSON | first, middle, last names and aliases of people and fictional characters | _John Smith_ |
 | <a style="text-decorations:none; color:#265C83" href=#person_type> PERSON_TYPE | person type or role classified according to group membership | _African-American_, _Asian_, _Conservative_, _Liberal_, _Jews_, _Communist_ |
 | PLANT | name of a plant | _Ficus religiosa_ |
@@ -39,7 +39,7 @@ The following table describes the 27 named entity classes produced by the model.
 | SUBSTANCE | natural substance | |
 | <a style="text-decorations:none; color:#265C83" href=#title> TITLE | personal or honorific title, for a person | _Mr._, _Dr._, _General_, _President_, _chairman_, _doctor_, _Secretary of State_, _MP_, _Prime Minister_ |
 | <a style="text-decorations:none; color:#265C83" href=#unknown> UNKNOWN | entity not belonging to any previous classes| _Plan Marshall_, _ParSiTi_, _Horizon 2020_ |
-| WEBSITE | website URL or name | _Wikipedia_, http://www.inria.fr |
+| WEBSITE | website URL or name | _Wikipedia_, _http://www.inria.fr_ |
 
 ## Classes Specific guidelines
 ### ACRONYM
@@ -89,11 +89,9 @@ Human-made object, including softwares.
 
 ---
 ### CREATION
-➡ Artistic creation, such as song, movie, book, TV show, etc.
+➡ Artistic creation, such as song, movie, book, TV show, etc [(issue #19)](https://github.com/kermitt2/grobid-ner/issues/19).
 
-➡ Full bibliographical references are **not** annotated.
-
-[issue #19](https://github.com/kermitt2/grobid-ner/issues/19)
+➡ Full bibliographical references are **not** annotated [(issue #48)](https://github.com/kermitt2/grobid-ner/issues/48).
 
 ---
 ### EVENT
@@ -467,9 +465,6 @@ TRANSLATION NOT ANNOTATED
  - <ENAMEX type="INSTITUTION">Archives de l’État dans les Provinces (State Archives in the Provinces)</ENAMEX>
 ```
 
-
-
-
 ➡ Generic terms in referring expressions are **not annotated**, even if they refer to a named entity. Example:
 
   * _Germany was losing the **war**_ (refers to an EVENT)
@@ -493,6 +488,8 @@ TRANSLATION NOT ANNOTATED
 ➡ Specialist terminology (biomedical, for example). Other specialized NER are used.
 
 ➡ Tables from Wikipedia have been removed from the annotated corpus (issues [#49](https://github.com/kermitt2/grobid-ner/issues/49) and [#50](https://github.com/kermitt2/grobid-ner/issues/50)).
+
+➡ Wikipedia references are deleted, whether it be markers in the course of the article (example [44] or [112]) as long as full bibliographical strings at the end [(issue #48)](https://github.com/kermitt2/grobid-ner/issues/48).
 
 ## Sense information
 
