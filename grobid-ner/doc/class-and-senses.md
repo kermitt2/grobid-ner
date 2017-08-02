@@ -451,6 +451,25 @@ issues [#12](https://github.com/kermitt2/grobid-ner/issues/12) and [#33](https:/
 
 ➡ There is no specific class for foreign words. They are **annotated in one of the existing classes, if relevant (whether they are written in latin or non-latin characters)**. Otherwise they are not annotated. In all cases, they are identified in parallel by another attribute, orthogonal to the entity class [(issue #37)](https://github.com/kermitt2/grobid-ner/issues/37).
 
+➡ When foreign words entities are translated, the translation may be annotated with the original entity. It depends to what extent the translation is presented as a Named Entity or on the contrary is more explicative / descriptive [(issue #27)](https://github.com/kermitt2/grobid-ner/issues/27).
+A few examples:
+
+```xml
+TRANSLATION NOT ANNOTATED
+- the existence of a <ENAMEX type="CONCEPT">Volksgemeinschaft</ENAMEX> ("people's community")
+- they required more <ENAMEX type="CONCEPT">Lebensraum</ENAMEX> ("living space")
+- the politician was taken to the <ENAMEX type="INSTITUTION">Questura di Milano</ENAMEX> 
+ (central police station) for questioning
+ 
+ TRANSLATION ANNOTATED
+ - people use the <ENAMEX type="INSTITUTION">Securité Sociale (Social Security)</ENAMEX>
+ - The <ENAMEX type="INSTITUTION">Archives Générales du Royaume (National Archives of Belgium)</ENAMEX>
+ - <ENAMEX type="INSTITUTION">Archives de l’État dans les Provinces (State Archives in the Provinces)</ENAMEX>
+```
+
+
+
+
 ➡ Generic terms in referring expressions are **not annotated**, even if they refer to a named entity. Example:
 
   * _Germany was losing the **war**_ (refers to an EVENT)
