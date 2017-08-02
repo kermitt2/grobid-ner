@@ -4,7 +4,7 @@
 		<document name="Wikipedia_brexit.2">
 			<p xml:lang="en" xml:id="P0">
 				<sentence xml:id="P0E0"><ENAMEX type="EVENT">Brexit</ENAMEX> is the forthcoming withdrawal of the <ENAMEX type="LOCATION">United Kingdom (UK)</ENAMEX> from the <ENAMEX type="INSTITUTION">European Union (EU)</ENAMEX>.</sentence>
-				<sentence xml:id="P0E1">In the <ENAMEX type="PERIOD">June 2016</ENAMEX> referendum, <ENAMEX type="MEASURE">52%</ENAMEX> voted to leave the <ENAMEX type="INSTITUTION">EU</ENAMEX>, leading into a complex separation process implying political and economic changes for the <ENAMEX type="LOCATION">UK</ENAMEX> and other countries.</sentence>
+				<sentence xml:id="P0E1">In the <ENAMEX type="EVENT">June 2016 referendum</ENAMEX>, <ENAMEX type="MEASURE">52%</ENAMEX> voted to leave the <ENAMEX type="INSTITUTION">EU</ENAMEX>, leading into a complex separation process implying political and economic changes for the <ENAMEX type="LOCATION">UK</ENAMEX> and other countries.</sentence>
 				<sentence xml:id="P0E2">The timetable for withdrawal has not yet been firmly established.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P1">
@@ -14,7 +14,7 @@
 				<sentence xml:id="P1E3">The assumption is that during the <ENAMEX type="PERIOD">two-year</ENAMEX> window new agreements will be negotiated, but there is no requirement that there be new agreements.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P2">
-				<sentence xml:id="P2E0">Withdrawal has been the goal of various individuals, advocacy groups, and political parties since the <ENAMEX type="LOCATION">UK</ENAMEX> joined the <ENAMEX type="INSTITUTION">European Economic Community (EEC)</ENAMEX>, the predecessor of the <ENAMEX type="INSTITUTION">EU</ENAMEX>, in <ENAMEX type="PERIOD">1973</ENAMEX>, though continued membership of the <ENAMEX type="INSTITUTION">EEC</ENAMEX> was approved in a <ENAMEX type="LEGAL">1975 referendum</ENAMEX> by <ENAMEX type="MEASURE">67%</ENAMEX> of voters.</sentence>
+				<sentence xml:id="P2E0">Withdrawal has been the goal of various individuals, advocacy groups, and political parties since the <ENAMEX type="LOCATION">UK</ENAMEX> joined the <ENAMEX type="INSTITUTION">European Economic Community (EEC)</ENAMEX>, the predecessor of the <ENAMEX type="INSTITUTION">EU</ENAMEX>, in <ENAMEX type="PERIOD">1973</ENAMEX>, though continued membership of the <ENAMEX type="INSTITUTION">EEC</ENAMEX> was approved in a <ENAMEX type="EVENT">1975 referendum</ENAMEX> by <ENAMEX type="MEASURE">67%</ENAMEX> of voters.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P3">
 				<sentence xml:id="P3E0">Background</sentence>
@@ -86,7 +86,7 @@
 				<sentence xml:id="P24E2"> The term <ENAMEX type="EVENT">Brexit</ENAMEX> may have first been used in reference to a possible <ENAMEX type="LOCATION">UK</ENAMEX> withdrawal from the <ENAMEX type="INSTITUTION">EU</ENAMEX> by <ENAMEX type="PERSON">Peter Wilding</ENAMEX> in a <ENAMEX type="MEDIA">Euractiv</ENAMEX> blog post on <ENAMEX type="PERIOD">15 May 2012</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P25">
-				<sentence xml:id="P25E0"><ENAMEX type="PERIOD">2016</ENAMEX> referendum</sentence>
+				<sentence xml:id="P25E0"><ENAMEX type="EVENT">2016 referendum</ENAMEX></sentence>
 			</p>
 			<p xml:lang="en" xml:id="P26">
 				<sentence xml:id="P26E0">Main article: <ENAMEX type="EVENT">United Kingdom European Union membership referendum, 2016</ENAMEX></sentence>
@@ -165,7 +165,7 @@
 				<sentence xml:id="P58E0">Outside the <ENAMEX type="LOCATION">UK</ENAMEX> many <ENAMEX type="PERSON_TYPE">Eurosceptic</ENAMEX> leaders celebrated and expected others to follow the <ENAMEX type="LOCATION">UK</ENAMEX> example.</sentence>
 				<sentence xml:id="P58E1">However, opinion polls <ENAMEX type="PERIOD">a week after the Brexit</ENAMEX> vote showed strongly increased support for the <ENAMEX type="INSTITUTION">EU</ENAMEX> in most of <ENAMEX type="LOCATION">Europe</ENAMEX>.</sentence>
 				<sentence xml:id="P58E2">The right-wing <ENAMEX type="NATIONAL">Dutch</ENAMEX> populist <ENAMEX type="PERSON">Geert Wilders</ENAMEX> said that the <ENAMEX type="LOCATION">Netherlands</ENAMEX> should follow <ENAMEX type="LOCATION">Britain</ENAMEX>&apos;s example and hold a referendum on whether the <ENAMEX type="LOCATION">Netherlands</ENAMEX> should stay in the <ENAMEX type="INSTITUTION">European Union</ENAMEX>.</sentence>
-				<sentence xml:id="P58E3"> However, opinion polls in the fortnight following the <ENAMEX type="NATIONAL">British</ENAMEX> referendum show that the immediate reaction in the <ENAMEX type="LOCATION">Netherlands</ENAMEX> and other <ENAMEX type="NATIONAL">European</ENAMEX> countries was a decline in support for <ENAMEX type="ORGANISATION">Eurosceptic movements</ENAMEX>.</sentence>
+				<sentence xml:id="P58E3"> However, opinion polls in the fortnight following the <ENAMEX type="EVENT">British referendum</ENAMEX> show that the immediate reaction in the <ENAMEX type="LOCATION">Netherlands</ENAMEX> and other <ENAMEX type="NATIONAL">European</ENAMEX> countries was a decline in support for <ENAMEX type="ORGANISATION">Eurosceptic movements</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P59">
 				<sentence xml:id="P59E0">Petitions for a new referendum</sentence>
@@ -306,7 +306,7 @@
 				<sentence xml:id="P90E1"> Many supporters of <ENAMEX type="EVENT">Brexit</ENAMEX> want to restrict freedom of movement; however, an <ENAMEX type="LEGAL">EEA Agreement</ENAMEX> would include free movement for <ENAMEX type="INSTITUTION">EU</ENAMEX> and <ENAMEX type="ORGANISATION">EEA</ENAMEX> citizens, as passport systems allow <ENAMEX type="ORGANISATION">EEA</ENAMEX> institutions to access markets in <ENAMEX type="INSTITUTION">EU</ENAMEX> Member States, for the most part, without having to establish subsidiaries in each <ENAMEX type="INSTITUTION">EU</ENAMEX> Member State and incur the costs of full authorisation in those jurisdiction.</sentence>
 				<sentence xml:id="P90E2"> Others[who?]</sentence>
 				<sentence xml:id="P90E3">present ideas of a <ENAMEX type="NATIONAL">Swiss</ENAMEX> solution, that is tailor-made agreements between the <ENAMEX type="LOCATION">UK</ENAMEX> and the <ENAMEX type="INSTITUTION">EU</ENAMEX>, but <ENAMEX type="INSTITUTION">EU</ENAMEX> representatives have claimed they would not support such a solution.</sentence>
-				<sentence xml:id="P90E4">[citation needed] The <ENAMEX type="NATIONAL">Swiss</ENAMEX> agreements contain free movement for <ENAMEX type="INSTITUTION">EU</ENAMEX> citizens.</sentence>
+				<sentence xml:id="P90E4">The <ENAMEX type="NATIONAL">Swiss</ENAMEX> agreements contain free movement for <ENAMEX type="INSTITUTION">EU</ENAMEX> citizens.</sentence>
 				<sentence xml:id="P90E5"> (The <ENAMEX type="EVENT">Swiss immigration referendum, February 2014</ENAMEX> voted narrowly in favour of an end to the &apos;free movement&apos; agreement, by <ENAMEX type="PERIOD">February 2017</ENAMEX>.</sentence>
 				<sentence xml:id="P90E6">However, the bilateral treaties between <ENAMEX type="LOCATION">Switzerland</ENAMEX> and the <ENAMEX type="INSTITUTION">European Union</ENAMEX> are all co-dependent, if one is terminated then all are terminated.</sentence>
 				<sentence xml:id="P90E7">Consequently, should <ENAMEX type="LOCATION">Switzerland</ENAMEX> choose unilaterally to cancel the &apos;free movement&apos; agreement then all its agreements with the <ENAMEX type="INSTITUTION">EU</ENAMEX> will lapse unless a compromise is found – as of <ENAMEX type="PERIOD">July 2016</ENAMEX>, no such compromise was in sight).</sentence>
@@ -325,11 +325,11 @@
 			<p xml:lang="en" xml:id="P94">
 				<sentence xml:id="P94E0">A <ENAMEX type="PERSON">Conservative MEP representing South East England, Daniel Hannan</ENAMEX>, predicted on <ENAMEX type="CREATION">BBC Newsnight</ENAMEX> that immigration from the <ENAMEX type="INSTITUTION">European Union</ENAMEX> would not end after <ENAMEX type="EVENT">Brexit</ENAMEX>: &quot;Frankly, if people watching think that they have voted and there is now going to be zero immigration from the <ENAMEX type="INSTITUTION">EU</ENAMEX>, they are going to be disappointed.</sentence>
 				<sentence xml:id="P94E1">...</sentence>
-				<sentence xml:id="P94E2">you will look in vain for anything that the Leave campaign said at any point that ever suggested there would ever be any kind of border closure or drawing up of the drawbridge.&quot;</sentence>
+				<sentence xml:id="P94E2">you will look in vain for anything that the <ENAMEX type="ORGANISATION">Leave campaign</ENAMEX> said at any point that ever suggested there would ever be any kind of border closure or drawing up of the drawbridge.&quot;</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P95">
 				<sentence xml:id="P95E0">The <ENAMEX type="INSTITUTION">EU</ENAMEX> had offered <ENAMEX type="PERSON">David Cameron</ENAMEX> a so-called &quot;emergency brake&quot; which would have allowed the <ENAMEX type="LOCATION">UK</ENAMEX> to withhold social benefits to new immigrants for the <ENAMEX type="PERIOD">first four years</ENAMEX> after they arrived; this brake could have been applied <ENAMEX type="PERIOD">for a period of seven years</ENAMEX>.</sentence>
-				<sentence xml:id="P95E1"> That offer was still on the table at the time of the <ENAMEX type="EVENT">Brexit</ENAMEX> referendum but expired when the vote determined that the <ENAMEX type="LOCATION">UK</ENAMEX> would leave the <ENAMEX type="INSTITUTION">EU</ENAMEX>.</sentence>
+				<sentence xml:id="P95E1"> That offer was still on the table at the time of the <ENAMEX type="EVENT">Brexit referendum</ENAMEX> but expired when the vote determined that the <ENAMEX type="LOCATION">UK</ENAMEX> would leave the <ENAMEX type="INSTITUTION">EU</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P96">
 				<sentence xml:id="P96E0"> <ENAMEX type="PERIOD">In late July 2016</ENAMEX>, discussions were underway that might provide the <ENAMEX type="LOCATION">UK</ENAMEX> with an exemption from the <ENAMEX type="INSTITUTION">EU</ENAMEX> rules on refugees&apos; freedom of movement for up to <ENAMEX type="PERIOD">seven years</ENAMEX>.</sentence>
@@ -381,7 +381,7 @@
 				<sentence xml:id="P104E1"> The pound fell by <ENAMEX type="MEASURE">one cent</ENAMEX> against the dollar on the news.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P105">
-				<sentence xml:id="P105E0">On <ENAMEX type="PERIOD">29 July 2016</ENAMEX>, <ENAMEX type="MEDIA">The Guardian</ENAMEX> reported consumer confidence and confidence of manufacturers had both fallen sharply since the <ENAMEX type="EVENT">Brexit</ENAMEX> referendum.</sentence>
+				<sentence xml:id="P105E0">On <ENAMEX type="PERIOD">29 July 2016</ENAMEX>, <ENAMEX type="MEDIA">The Guardian</ENAMEX> reported consumer confidence and confidence of manufacturers had both fallen sharply since the <ENAMEX type="EVENT">Brexit referendum</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P106">
 				<sentence xml:id="P106E0"><ENAMEX type="LOCATION">The City of Berlin, Germany</ENAMEX>, started to actively encourage <ENAMEX type="LOCATION">UK</ENAMEX>-based start-ups to re-locate to <ENAMEX type="LOCATION">Berlin</ENAMEX> by sending invitation letters.</sentence>
@@ -409,13 +409,13 @@
 				<sentence xml:id="P112E0">Possible change in status: <ENAMEX type="LOCATION">Scotland, Northern Ireland, Gibraltar</ENAMEX></sentence>
 			</p>
 			<p xml:lang="en" xml:id="P113">
-				<sentence xml:id="P113E0">Before the referendum, leading figures with a range of opinions regarding <ENAMEX type="EVENT">Scottish independence</ENAMEX> suggested that in the event the <ENAMEX type="LOCATION">UK</ENAMEX> as a whole voted to leave the <ENAMEX type="INSTITUTION">EU</ENAMEX> but <ENAMEX type="LOCATION">Scotland</ENAMEX> as a whole voted to remain, a <ENAMEX type="MEASURE">second</ENAMEX> <ENAMEX type="EVENT">Scottish independence referendum</ENAMEX> might be precipitated.</sentence>
+				<sentence xml:id="P113E0">Before the referendum, leading figures with a range of opinions regarding <ENAMEX type="EVENT">Scottish independence</ENAMEX> suggested that in the event the <ENAMEX type="LOCATION">UK</ENAMEX> as a whole voted to leave the <ENAMEX type="INSTITUTION">EU</ENAMEX> but <ENAMEX type="LOCATION">Scotland</ENAMEX> as a whole voted to remain, a <ENAMEX type="MEASURE">second</ENAMEX> <ENAMEX type="NATIONAL">Scottish</ENAMEX> independence referendum might be precipitated.</sentence>
 				<sentence xml:id="P113E1"> <ENAMEX type="PERSON">Former Labour Scottish First Minister Henry McLeish</ENAMEX> asserted that he would support <ENAMEX type="EVENT">Scottish independence</ENAMEX> under such circumstances.</sentence>
 				<sentence xml:id="P113E2"> In <ENAMEX type="PERIOD">2013</ENAMEX>, <ENAMEX type="LOCATION">Scotland</ENAMEX> exported around <ENAMEX type="MEASURE">three and a half times</ENAMEX> more to the rest of the <ENAMEX type="LOCATION">UK</ENAMEX> than to the rest of the <ENAMEX type="INSTITUTION">EU</ENAMEX>.</sentence>
 				<sentence xml:id="P113E3"> The pro-union organisation <ENAMEX type="ORGANISATION">Scotland in Union</ENAMEX> has suggested that an independent <ENAMEX type="LOCATION">Scotland</ENAMEX> within the <ENAMEX type="INSTITUTION">EU</ENAMEX> would face trade barriers with a post-<ENAMEX type="EVENT">Brexit</ENAMEX> <ENAMEX type="LOCATION">UK</ENAMEX> and face additional costs for re-entry to the <ENAMEX type="INSTITUTION">EU</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P114">
-				<sentence xml:id="P114E0">With the outcome of the recent &apos;<ENAMEX type="EVENT">Brexit</ENAMEX>&apos; referendum being a majority vote for <ENAMEX type="LOCATION">Britain</ENAMEX> to leave the <ENAMEX type="INSTITUTION">European Union</ENAMEX>, the question of what happens to the border between <ENAMEX type="LOCATION">Northern Ireland and the Republic of Ireland</ENAMEX> has been raised.</sentence>
+				<sentence xml:id="P114E0">With the outcome of the recent <ENAMEX type="EVENT">&apos;Brexit&apos; referendum</ENAMEX> being a majority vote for <ENAMEX type="LOCATION">Britain</ENAMEX> to leave the <ENAMEX type="INSTITUTION">European Union</ENAMEX>, the question of what happens to the border between <ENAMEX type="LOCATION">Northern Ireland and the Republic of Ireland</ENAMEX> has been raised.</sentence>
 				<sentence xml:id="P114E1"> <ENAMEX type="PERSON">Enda Kenny, the Taoiseach of Ireland</ENAMEX>, has warned that a <ENAMEX type="LOCATION">UK</ENAMEX> exit from the <ENAMEX type="INSTITUTION">European Union</ENAMEX> could damage the <ENAMEX type="LOCATION">Northern Ireland</ENAMEX> peace process.</sentence>
 				<sentence xml:id="P114E2"> <ENAMEX type="PERSON">Northern Ireland Secretary Theresa Villiers</ENAMEX> denounced the suggestion as &quot;scaremongering of the worst possible kind&quot;.</sentence>
 				<sentence xml:id="P114E3"> It has been suggested by a member of <ENAMEX type="INSTITUTION">Germany&apos;s parliamentary finance committee</ENAMEX> that a &quot;bilateral solution&quot; between the <ENAMEX type="LOCATION">UK and Ireland</ENAMEX> could be negotiated quickly after a leave vote.</sentence>

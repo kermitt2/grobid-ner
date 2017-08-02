@@ -4,9 +4,9 @@
 		<document name="Wikipedia_brexit.1">
 			<p xml:lang="en" xml:id="P0">
 				<sentence xml:id="P0E0">The <ENAMEX type="EVENT">United Kingdom European Union membership referendum</ENAMEX>, known within the <ENAMEX type="LOCATION">United Kingdom</ENAMEX> as the <ENAMEX type="EVENT">EU referendum</ENAMEX> and the <ENAMEX type="EVENT">Brexit referendum</ENAMEX>, was a non-binding referendum that took place on <ENAMEX type="PERIOD">Thursday 23 June 2016</ENAMEX> in the <ENAMEX type="LOCATION">UK and Gibraltar</ENAMEX> to gauge support for the country&apos;s continued membership in the <ENAMEX type="INSTITUTION">European Union</ENAMEX>.</sentence>
-				<sentence xml:id="P0E1">The referendum resulted in an overall vote to leave the <ENAMEX type="INSTITUTION">EU</ENAMEX>, by <ENAMEX type="MEASURE">51.9%</ENAMEX> on a national turnout of <ENAMEX type="MEASURE">72%</ENAMEX> making it the highest ever for a <ENAMEX type="LOCATION">UK</ENAMEX>-wide referendum and also the highest turnout for any national vote since the <ENAMEX type="PERIOD">1992</ENAMEX> <ENAMEX type="EVENT">UK General Election</ENAMEX>.</sentence>
+				<sentence xml:id="P0E1">The referendum resulted in an overall vote to leave the <ENAMEX type="INSTITUTION">EU</ENAMEX>, by <ENAMEX type="MEASURE">51.9%</ENAMEX> on a national turnout of <ENAMEX type="MEASURE">72%</ENAMEX> making it the highest ever for a <ENAMEX type="LOCATION">UK</ENAMEX>-wide referendum and also the highest turnout for any national vote since the <ENAMEX type="EVENT">1992 UK General Election</ENAMEX>.</sentence>
 				<sentence xml:id="P0E2"> The result was split between the constituent countries of the <ENAMEX type="LOCATION">United Kingdom</ENAMEX>, with a majority in <ENAMEX type="LOCATION">England and Wales</ENAMEX> voting to leave, and a majority in <ENAMEX type="LOCATION">Scotland and Northern Ireland</ENAMEX>, as well as <ENAMEX type="LOCATION">Gibraltar</ENAMEX>, voting to remain.</sentence>
-				<sentence xml:id="P0E3">To start the process to leave the <ENAMEX type="INSTITUTION">EU</ENAMEX>, which is expected to take several years, the <ENAMEX type="INSTITUTION">British government</ENAMEX> will have to invoke <ENAMEX type="LEGAL">Article 50 of the Treaty on European Union</ENAMEX>, but it has not yet done so.</sentence>
+				<sentence xml:id="P0E3">To start the process to leave the <ENAMEX type="INSTITUTION">EU</ENAMEX>, which is expected to take <ENAMEX type="PERIOD">several years</ENAMEX>, the <ENAMEX type="INSTITUTION">British government</ENAMEX> will have to invoke <ENAMEX type="LEGAL">Article 50 of the Treaty on European Union</ENAMEX>, but it has not yet done so.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P1">
 				<sentence xml:id="P1E0">Membership of the <ENAMEX type="INSTITUTION">EU</ENAMEX> and its predecessors had long been a topic of debate in the <ENAMEX type="LOCATION">United Kingdom</ENAMEX>.</sentence>
@@ -15,7 +15,7 @@
 				<sentence xml:id="P1E3"> In accordance with a <ENAMEX type="ORGANISATION">Conservative Party</ENAMEX> manifesto commitment, the legal basis for a referendum was established by the <ENAMEX type="INSTITUTION">UK Parliament</ENAMEX> through the <ENAMEX type="LEGAL">European Union Referendum Act 2015</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P2">
-				<sentence xml:id="P2E0"><ENAMEX type="ORGANISATION">Britain Stronger in Europe</ENAMEX> was the official group campaigning for the <ENAMEX type="LOCATION">UK</ENAMEX> to remain in the <ENAMEX type="INSTITUTION">EU</ENAMEX>, and Vote Leave the official group campaigning for it to leave.</sentence>
+				<sentence xml:id="P2E0"><ENAMEX type="ORGANISATION">Britain Stronger in Europe</ENAMEX> was the official group campaigning for the <ENAMEX type="LOCATION">UK</ENAMEX> to remain in the <ENAMEX type="INSTITUTION">EU</ENAMEX>, and <ENAMEX type="ORGANISATION">Vote Leave</ENAMEX> the official group campaigning for it to leave.</sentence>
 				<sentence xml:id="P2E1">Other campaign groups, political parties, businesses, trade unions, newspapers and prominent individuals were also involved, and each side had supporters from across the political spectrum.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P3">
@@ -26,16 +26,16 @@
 			</p>
 			<p xml:lang="en" xml:id="P4">
 				<sentence xml:id="P4E0">Financial markets reacted negatively to the outcome.</sentence>
-				<sentence xml:id="P4E1"> Investors in worldwide stock markets lost more than the equivalent of <ENAMEX type="MEASURE">2 trillion</ENAMEX> <ENAMEX type="NATIONAL">United States</ENAMEX> dollars on <ENAMEX type="PERIOD">24 June 2016</ENAMEX>, making it the worst single-day loss in history, in absolute terms.</sentence>
-				<sentence xml:id="P4E2"> The market losses amounted to <ENAMEX type="MEASURE">3 trillion</ENAMEX> <ENAMEX type="NATIONAL">US</ENAMEX> dollars by <ENAMEX type="PERIOD">27 June</ENAMEX>.</sentence>
-				<sentence xml:id="P4E3"> The value of the pound sterling against the <ENAMEX type="NATIONAL">US</ENAMEX> dollar fell to a <ENAMEX type="MEASURE">31</ENAMEX>-year low.</sentence>
-				<sentence xml:id="P4E4"> The <ENAMEX type="LOCATION">UK</ENAMEX>&apos;s and the <ENAMEX type="INSTITUTION">EU</ENAMEX>&apos;s sovereign debt credit rating was also lowered by Standard &amp; Poor&apos;s.</sentence>
+				<sentence xml:id="P4E1"> Investors in worldwide stock markets lost more than the equivalent of <ENAMEX type="MEASURE">2 trillion</ENAMEX> <ENAMEX type="LOCATION">United States</ENAMEX> dollars on <ENAMEX type="PERIOD">24 June 2016</ENAMEX>, making it the worst single-day loss in history, in absolute terms.</sentence>
+				<sentence xml:id="P4E2"> The market losses amounted to <ENAMEX type="MEASURE">3 trillion</ENAMEX> <ENAMEX type="LOCATION">US</ENAMEX> dollars by <ENAMEX type="PERIOD">27 June</ENAMEX>.</sentence>
+				<sentence xml:id="P4E3"> The value of the pound sterling against the <ENAMEX type="LOCATION">US</ENAMEX> dollar fell to a <ENAMEX type="MEASURE">31</ENAMEX>-year low.</sentence>
+				<sentence xml:id="P4E4"> The <ENAMEX type="LOCATION">UK</ENAMEX>&apos;s and the <ENAMEX type="INSTITUTION">EU</ENAMEX>&apos;s sovereign debt credit rating was also lowered by <ENAMEX type="BUSINESS">Standard &amp; Poor&apos;s</ENAMEX>.</sentence>
 				<sentence xml:id="P4E5"> By <ENAMEX type="PERIOD">29 June</ENAMEX>, the markets had returned to growth and the value of the pound had begun to rise.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P5">
 				<sentence xml:id="P5E0">Immediately following the result, the <ENAMEX type="PERSON">Prime Minister David Cameron</ENAMEX> announced he would resign, having campaigned unsuccessfully for a &quot;remain&quot; vote on behalf of <ENAMEX type="ORGANISATION">Britain Stronger in Europe</ENAMEX> and <ENAMEX type="INSTITUTION">HM Government</ENAMEX>.</sentence>
 				<sentence xml:id="P5E1">He was succeeded by <ENAMEX type="PERSON">Theresa May</ENAMEX> on <ENAMEX type="PERIOD">13 July</ENAMEX>.</sentence>
-				<sentence xml:id="P5E2">The opposition <ENAMEX type="ORGANISATION">Labour Party</ENAMEX> also faces a leadership challenge as a result of the <ENAMEX type="LEGAL">EU referendum</ENAMEX>.</sentence>
+				<sentence xml:id="P5E2">The opposition <ENAMEX type="ORGANISATION">Labour Party</ENAMEX> also faces a leadership challenge as a result of the <ENAMEX type="EVENT">EU referendum</ENAMEX>.</sentence>
 				<sentence xml:id="P5E3"> In response to the result, the <ENAMEX type="INSTITUTION">Scottish Government</ENAMEX> announced that it would plan for a possible second referendum on independence from the <ENAMEX type="LOCATION">United Kingdom</ENAMEX>, and announced that it would like &quot;discussions with the <ENAMEX type="INSTITUTION">EU</ENAMEX> institutions and other member states to explore all the possible options to protect <ENAMEX type="LOCATION">Scotland</ENAMEX>&apos;s place in the <ENAMEX type="INSTITUTION">EU</ENAMEX>&quot;.</sentence>
 				<sentence xml:id="P5E4"> Meanwhile, <ENAMEX type="PERSON">Nigel Farage</ENAMEX>, leader of the anti-<ENAMEX type="INSTITUTION">EU</ENAMEX> <ENAMEX type="ORGANISATION">UKIP</ENAMEX> stood down after his party&apos;s long-term ambition had been accomplished.</sentence>
 			</p>
@@ -43,50 +43,50 @@
 				<sentence xml:id="P6E0">History</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P7">
-				<sentence xml:id="P7E0">See also: <ENAMEX type="LEGAL">European Communities Act 1972</ENAMEX> (<ENAMEX type="LOCATION">UK</ENAMEX>) and <ENAMEX type="LEGAL">European Union Act 2011</ENAMEX></sentence>
+				<sentence xml:id="P7E0">See also: <ENAMEX type="LEGAL">European Communities Act 1972 (UK) and European Union Act 2011</ENAMEX></sentence>
 			</p>
 			<p xml:lang="en" xml:id="P8">
 				<sentence xml:id="P8E0">The <ENAMEX type="INSTITUTION">European Economic Community (EEC)</ENAMEX> was formed in <ENAMEX type="PERIOD">1957</ENAMEX>.</sentence>
 				<sentence xml:id="P8E1"> The <ENAMEX type="LOCATION">United Kingdom (UK)</ENAMEX> first applied to join in <ENAMEX type="PERIOD">1961</ENAMEX>, but this was vetoed by <ENAMEX type="LOCATION">France</ENAMEX>.</sentence>
 				<sentence xml:id="P8E2"> A later application was successful and the <ENAMEX type="LOCATION">UK</ENAMEX> joined in <ENAMEX type="PERIOD">1973</ENAMEX>; a referendum <ENAMEX type="PERIOD">two years later</ENAMEX> on continuing membership resulted in <ENAMEX type="MEASURE">67%</ENAMEX> approval.</sentence>
-				<sentence xml:id="P8E3"> Political integration gained greater focus when the <ENAMEX type="LEGAL">Maastricht Treaty</ENAMEX> established the <ENAMEX type="INSTITUTION">European Union</ENAMEX> (<ENAMEX type="INSTITUTION">EU</ENAMEX>) in <ENAMEX type="PERIOD">1993</ENAMEX>, which incorporated (and after the <ENAMEX type="LEGAL">Treaty of Lisbon</ENAMEX>, succeeded) the <ENAMEX type="INSTITUTION">EEC</ENAMEX>.</sentence>
+				<sentence xml:id="P8E3"> Political integration gained greater focus when the <ENAMEX type="LEGAL">Maastricht Treaty</ENAMEX> established the <ENAMEX type="INSTITUTION">European Union (EU)</ENAMEX> in <ENAMEX type="PERIOD">1993</ENAMEX>, which incorporated (and after the <ENAMEX type="LEGAL">Treaty of Lisbon</ENAMEX>, succeeded) the <ENAMEX type="INSTITUTION">EEC</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P9">
 				<sentence xml:id="P9E0">In his <ENAMEX type="PERIOD">2015</ENAMEX> election campaign, <ENAMEX type="PERSON">David Cameron</ENAMEX> promised to renegotiate the <ENAMEX type="INSTITUTION">EU</ENAMEX> membership and later hold a referendum.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P10">
-				<sentence xml:id="P10E0">In the <ENAMEX type="EVENT">European Parliament election</ENAMEX>in <ENAMEX type="PERIOD">2014</ENAMEX>, the <ENAMEX type="ORGANISATION">UK Independence Party (UKIP)</ENAMEX> secured a (narrow) plurality of the popular vote leaving the <ENAMEX type="ORGANISATION">Conservative Party</ENAMEX> in <ENAMEX type="MEASURE">third</ENAMEX> place (<ENAMEX type="MEASURE">first</ENAMEX> time a party other than the <ENAMEX type="PERSON_TYPE">Conservatives</ENAMEX> or <ENAMEX type="PERSON_TYPE">Labour</ENAMEX> had topped a nationwide poll in <ENAMEX type="PERIOD">108 years</ENAMEX>).</sentence>
+				<sentence xml:id="P10E0">In the <ENAMEX type="EVENT">European Parliament election in 2014</ENAMEX>, the <ENAMEX type="ORGANISATION">UK Independence Party (UKIP)</ENAMEX> secured a (narrow) plurality of the popular vote leaving the <ENAMEX type="ORGANISATION">Conservative Party</ENAMEX> in <ENAMEX type="MEASURE">third</ENAMEX> place (<ENAMEX type="MEASURE">first</ENAMEX> time a party other than the <ENAMEX type="PERSON_TYPE">Conservatives or Labour</ENAMEX> had topped a nationwide poll in <ENAMEX type="PERIOD">108 years</ENAMEX>).</sentence>
 				<sentence xml:id="P10E1">Given the electoral system for the <ENAMEX type="INSTITUTION">European Parliament</ENAMEX> uses a Proportional Representation, <ENAMEX type="ORGANISATION">UKIP</ENAMEX> also gained the most <ENAMEX type="NATIONAL">British</ENAMEX> seats in the <ENAMEX type="INSTITUTION">European Parliament</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P11">
-				<sentence xml:id="P11E0">While attending the <ENAMEX type="EVENT">May 2012 NATO summit meeting</ENAMEX>, <ENAMEX type="PERSON">British Prime Minister David Cameron, William Hague and Ed Llewellyn</ENAMEX> discussed the idea of using a <ENAMEX type="LEGAL">European Union referendum</ENAMEX> as a concession to energise the <ENAMEX type="CONCEPTUAL">Eurosceptic</ENAMEX> wing of the <ENAMEX type="ORGANISATION">Conservative Party</ENAMEX>.</sentence>
+				<sentence xml:id="P11E0">While attending the <ENAMEX type="EVENT">May 2012 NATO summit meeting</ENAMEX>, <ENAMEX type="PERSON">British Prime Minister David Cameron, William Hague and Ed Llewellyn</ENAMEX> discussed the idea of using a <ENAMEX type="INSTITUTION">European Union</ENAMEX> referendum as a concession to energise the <ENAMEX type="CONCEPTUAL">Eurosceptic</ENAMEX> wing of the <ENAMEX type="ORGANISATION">Conservative Party</ENAMEX>.</sentence>
 				<sentence xml:id="P11E1"> In <ENAMEX type="PERIOD">January 2013</ENAMEX>, <ENAMEX type="PERSON">Cameron</ENAMEX> promised that, should his <ENAMEX type="ORGANISATION">Conservative Party</ENAMEX> win a parliamentary majority at the <ENAMEX type="EVENT">2015 general election</ENAMEX>, the <ENAMEX type="INSTITUTION">UK Government</ENAMEX> would negotiate more favourable arrangements for continuing <ENAMEX type="NATIONAL">British</ENAMEX> membership of the <ENAMEX type="INSTITUTION">EU</ENAMEX>, before holding a referendum on whether the <ENAMEX type="LOCATION">UK</ENAMEX> should remain in or leave the <ENAMEX type="INSTITUTION">EU</ENAMEX>.</sentence>
 				<sentence xml:id="P11E2"> In <ENAMEX type="PERIOD">May 2013</ENAMEX>, the <ENAMEX type="ORGANISATION">Conservative Party</ENAMEX> published a draft <ENAMEX type="LEGAL">EU Referendum Bill</ENAMEX> and outlined their plans for renegotiation and then an In-Out vote if returned to office in <ENAMEX type="PERIOD">2015</ENAMEX>.</sentence>
-				<sentence xml:id="P11E3"> The <ENAMEX type="LEGAL">draft Bill</ENAMEX> stated that the referendum must be held no later than <ENAMEX type="PERIOD">31 December 2017</ENAMEX>.</sentence>
+				<sentence xml:id="P11E3"> The draft Bill stated that the referendum must be held no later than <ENAMEX type="PERIOD">31 December 2017</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P12">
-				<sentence xml:id="P12E0">The draft legislation was taken forward as a <ENAMEX type="LEGAL">Private Member&apos;s Bill</ENAMEX> by <ENAMEX type="PERSON">Conservative MP James Wharton</ENAMEX>.</sentence>
+				<sentence xml:id="P12E0">The draft legislation was taken forward as a <ENAMEX type="TITLE">Private Member</ENAMEX>&apos;s Bill by <ENAMEX type="PERSON">Conservative MP James Wharton</ENAMEX>.</sentence>
 				<sentence xml:id="P12E1"> The bill&apos;s<ENAMEX type="MEASURE">First</ENAMEX> Reading in the <ENAMEX type="INSTITUTION">House of Commons</ENAMEX> took place on <ENAMEX type="PERIOD">19 June 2013</ENAMEX>.</sentence>
-				<sentence xml:id="P12E2"><ENAMEX type="PERSON">Cameron</ENAMEX> was said by a spokesperson to be &quot;very pleased&quot; and would ensure the <ENAMEX type="LEGAL">Bill</ENAMEX> was given &quot;the full support of the <ENAMEX type="ORGANISATION">Conservative Party</ENAMEX>&quot;.</sentence>
+				<sentence xml:id="P12E2"><ENAMEX type="PERSON">Cameron</ENAMEX> was said by a spokesperson to be &quot;very pleased&quot; and would ensure the Bill was given &quot;the full support of the <ENAMEX type="ORGANISATION">Conservative Party</ENAMEX>&quot;.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P13">
-				<sentence xml:id="P13E0">Regarding the ability of the <ENAMEX type="LEGAL">Bill</ENAMEX> to bind the <ENAMEX type="INSTITUTION">UK Governement</ENAMEX> in the <ENAMEX type="PERIOD">2015-20</ENAMEX> Parliament to holding such a referendum, a parliamentary research paper noted that:</sentence>
+				<sentence xml:id="P13E0">Regarding the ability of the Bill to bind the <ENAMEX type="INSTITUTION">UK Governement</ENAMEX> in the <ENAMEX type="INSTITUTION">2015-20 Parliament</ENAMEX> to holding such a referendum, a parliamentary research paper noted that:</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P14">
-				<sentence xml:id="P14E0">The <ENAMEX type="LEGAL">Bill</ENAMEX> simply provides for a referendum on continued <ENAMEX type="INSTITUTION">EU</ENAMEX> membership by the end of <ENAMEX type="PERIOD">December 2017</ENAMEX> and does not otherwise specify the timing, other than requiring the <ENAMEX type="TITLE">Secretary of State</ENAMEX> to bring forward orders by the end of <ENAMEX type="PERIOD">2016</ENAMEX>.</sentence>
+				<sentence xml:id="P14E0">The Bill simply provides for a referendum on continued <ENAMEX type="INSTITUTION">EU</ENAMEX> membership by the <ENAMEX type="PERIOD">end of December 2017</ENAMEX> and does not otherwise specify the timing, other than requiring the <ENAMEX type="TITLE">Secretary of State</ENAMEX> to bring forward orders by the <ENAMEX type="PERIOD">end of 2016</ENAMEX>.</sentence>
 				<sentence xml:id="P14E1">[...]</sentence>
-				<sentence xml:id="P14E2">If no party obtained a majority at the [next general election due in <ENAMEX type="PERIOD">2015</ENAMEX>], there might be some uncertainty about the passage of the orders in the next Parliament.</sentence>
+				<sentence xml:id="P14E2">If no party obtained a majority at the [next general election due in <ENAMEX type="PERIOD">2015</ENAMEX>], there might be some uncertainty about the passage of the orders in the next <ENAMEX type="INSTITUTION">Parliament</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P15">
-				<sentence xml:id="P15E0">The <ENAMEX type= "LEGAL">Bill</ENAMEX> received its <ENAMEX type="MEASURE">Second</ENAMEX> Reading on <ENAMEX type="PERIOD">5 July 2013</ENAMEX>, passing by <ENAMEX type="MEASURE">304</ENAMEX> votes to none after almost all <ENAMEX type="TITLE">Labour MPs</ENAMEX> and all <ENAMEX type="TITLE">Liberal Democrat MPs</ENAMEX> abstained, cleared the Commons in <ENAMEX type="PERIOD">November 2013</ENAMEX>, and was then introduced to the <ENAMEX type="ORGANISATION">House of Lords</ENAMEX> in <ENAMEX type="PERIOD">December 2013</ENAMEX>, where members voted to block the <ENAMEX type="LEGAL">bill</ENAMEX>.</sentence>
+				<sentence xml:id="P15E0">The Bill received its <ENAMEX type="MEASURE">Second</ENAMEX> Reading on <ENAMEX type="PERIOD">5 July 2013</ENAMEX>, passing by <ENAMEX type="MEASURE">304</ENAMEX> votes to none after almost all <ENAMEX type="TITLE">Labour MPs</ENAMEX> and all <ENAMEX type="TITLE">Liberal Democrat MPs</ENAMEX> abstained, cleared the <ENAMEX type="INSTITUTION">Commons</ENAMEX> in <ENAMEX type="PERIOD">November 2013</ENAMEX>, and was then introduced to the <ENAMEX type="INSTITUTION">House of Lords</ENAMEX> in <ENAMEX type="PERIOD">December 2013</ENAMEX>, where members voted to block the bill.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P16">
-				<sentence xml:id="P16E0"><ENAMEX type="PERSON">Conservative MP Bob Neill</ENAMEX> then introduced an Alternative <ENAMEX type="LEGAL">Referendum Bill</ENAMEX> to the <ENAMEX type="INSTITUTION">Commons</ENAMEX>.</sentence>
-				<sentence xml:id="P16E1"> After a debate on <ENAMEX type="PERIOD">17 October 2014</ENAMEX>, it passed to the <ENAMEX type="ORGANISATION">Public Bills Committee</ENAMEX>, but because the <ENAMEX type="PERIOD">Commons</ENAMEX> failed to pass a money resolution, the <ENAMEX type="LEGAL">Bill</ENAMEX> was unable to progress further before the <ENAMEX type="EVENT">Dissolution of Parliament on 27 March 2015</ENAMEX>.</sentence>
+				<sentence xml:id="P16E0"><ENAMEX type="PERSON">Conservative MP Bob Neill</ENAMEX> then introduced an <ENAMEX type="LEGAL">Alternative Referendum Bill</ENAMEX> to the <ENAMEX type="INSTITUTION">Commons</ENAMEX>.</sentence>
+				<sentence xml:id="P16E1"> After a debate on <ENAMEX type="PERIOD">17 October 2014</ENAMEX>, it passed to the <ENAMEX type="ORGANISATION">Public Bills Committee</ENAMEX>, but because the <ENAMEX type="INSTITUTION">Commons</ENAMEX> failed to pass a money resolution, the Bill was unable to progress further before the <ENAMEX type="EVENT">Dissolution of Parliament on 27 March 2015</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P17">
 				<sentence xml:id="P17E0">Under <ENAMEX type="PERSON">Ed Miliband</ENAMEX>&apos;s leadership <ENAMEX type="PERIOD">between 2010 and 2015</ENAMEX>, the <ENAMEX type="ORGANISATION">Labour Party</ENAMEX> ruled out an In-Out referendum unless and until a further transfer of powers from the <ENAMEX type="LOCATION">UK</ENAMEX> to the <ENAMEX type="INSTITUTION">EU</ENAMEX> were proposed.</sentence>
-				<sentence xml:id="P17E1"> In their manifesto for the <ENAMEX type="EVENT">2015 general election</ENAMEX> the <ENAMEX type="ORGANISATION">Liberal Democrats</ENAMEX> pledged to hold an In-Out referendum only in the event of there being a change in the <ENAMEX type="LEGAL">EU treaties</ENAMEX>.</sentence>
+				<sentence xml:id="P17E1"> In their manifesto for the <ENAMEX type="EVENT">2015 general election</ENAMEX> the <ENAMEX type="ORGANISATION">Liberal Democrats</ENAMEX> pledged to hold an In-Out referendum only in the event of there being a change in the <ENAMEX type="INSTITUTION">EU</ENAMEX> treaties.</sentence>
 				<sentence xml:id="P17E2"> <ENAMEX type="ORGANISATION">The UK Independence Party (UKIP), the British National Party (BNP), the Green Party, the Democratic Unionist Party and the Respect Party</ENAMEX> all supported the principle of a referendum.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P18">
@@ -99,24 +99,24 @@
 				<sentence xml:id="P20E0">Main article: <ENAMEX type="LOCATION">UK</ENAMEX> renegotiation of <ENAMEX type="INSTITUTION">EU</ENAMEX> membership, <ENAMEX type="PERIOD">2016</ENAMEX></sentence>
 			</p>
 			<p xml:lang="en" xml:id="P21">
-				<sentence xml:id="P21E0">In early <ENAMEX type="PERIOD">2014</ENAMEX>, <ENAMEX type="PERSON">Prime Minister David Cameron</ENAMEX> outlined the changes he aimed to bring about in the <ENAMEX type="INSTITUTION">EU</ENAMEX> and in the <ENAMEX type="LOCATION">UK</ENAMEX>&apos;s relationship with it.</sentence>
+				<sentence xml:id="P21E0">In <ENAMEX type="PERIOD">early 2014</ENAMEX>, <ENAMEX type="PERSON">Prime Minister David Cameron</ENAMEX> outlined the changes he aimed to bring about in the <ENAMEX type="INSTITUTION">EU</ENAMEX> and in the <ENAMEX type="LOCATION">UK</ENAMEX>&apos;s relationship with it.</sentence>
 				<sentence xml:id="P21E1"> These were: additional immigration controls, especially for new <ENAMEX type="INSTITUTION">EU</ENAMEX> members; tougher immigration rules for present <ENAMEX type="INSTITUTION">EU</ENAMEX> citizens; new powers for national parliaments collectively to veto proposed <ENAMEX type="INSTITUTION">EU</ENAMEX> laws; new free trade agreements and a reduction in bureaucracy for businesses; a lessening of the influence of the <ENAMEX type="INSTITUTION">European Court of Human Rights</ENAMEX> on <ENAMEX type="LOCATION">UK</ENAMEX> police and courts; more power for individual member states and less for the central <ENAMEX type="INSTITUTION">EU</ENAMEX>; and abandoning the <ENAMEX type="INSTITUTION">EU</ENAMEX> notion of &quot;ever closer union&quot;.</sentence>
 				<sentence xml:id="P21E2"> He intended to bring these about during a series of negotiations with other <ENAMEX type="INSTITUTION">EU</ENAMEX> leaders  and then, if re-elected, to announce a referendum.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P22">
-				<sentence xml:id="P22E0">In <ENAMEX type="PERIOD">November</ENAMEX> that year, <ENAMEX type="PERSON">Cameron</ENAMEX> gave an update on the negotiations and further details of his aims.</sentence>
+				<sentence xml:id="P22E0">In <ENAMEX type="PERIOD">November that year</ENAMEX>, <ENAMEX type="PERSON">Cameron</ENAMEX> gave an update on the negotiations and further details of his aims.</sentence>
 				<sentence xml:id="P22E1"> The key demands made of the <ENAMEX type="INSTITUTION">EU</ENAMEX> were: on economic governance, to recognise officially that <ENAMEX type="INSTITUTION">Eurozone</ENAMEX> laws would not necessarily apply to non-<ENAMEX type="INSTITUTION">Eurozone</ENAMEX> <ENAMEX type="INSTITUTION">EU</ENAMEX> members and the latter would not have to bail out troubled <ENAMEX type="INSTITUTION">Eurozone</ENAMEX> economies; on competitiveness, to expand the single market and to set a target for the reduction of bureaucracy for businesses; on sovereignty, for the <ENAMEX type="LOCATION">UK</ENAMEX> to be legally exempted from &quot;ever closer union&quot; and for national parliaments to be able collectively to veto proposed <ENAMEX type="INSTITUTION">EU</ENAMEX> laws; and, on immigration, for <ENAMEX type="INSTITUTION">EU</ENAMEX> citizens going to the <ENAMEX type="LOCATION">UK</ENAMEX> for work to be unable to claim social housing or in-work benefits until they had worked there for <ENAMEX type="PERIOD">four years</ENAMEX> and for them to be unable to send child benefit payments overseas.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P23">
 				<sentence xml:id="P23E0">The outcome of the renegotiations was announced in <ENAMEX type="PERIOD">February 2016</ENAMEX>.</sentence>
 				<sentence xml:id="P23E1"> The renegotiated terms were in addition to the <ENAMEX type="LOCATION">United Kingdom</ENAMEX>&apos;s existing opt-outs in the <ENAMEX type="INSTITUTION">European Union</ENAMEX> and the <ENAMEX type="LOCATION">UK</ENAMEX> rebate.</sentence>
 				<sentence xml:id="P23E2">There was no fundamental change to the <ENAMEX type="INSTITUTION">EU</ENAMEX>–<ENAMEX type="LOCATION">UK</ENAMEX> relationship.</sentence>
-				<sentence xml:id="P23E3">[citation needed] Some limits to in-work benefits for <ENAMEX type="INSTITUTION">EU</ENAMEX> immigrants were agreed, but these would apply on a sliding scale for <ENAMEX type="PERIOD">four years</ENAMEX> and be for new immigrants only; before they could be applied, a country would have to get permission from the <ENAMEX type="INSTITUTION">European Council</ENAMEX>.</sentence>
+				<sentence xml:id="P23E3">Some limits to in-work benefits for <ENAMEX type="INSTITUTION">EU</ENAMEX> immigrants were agreed, but these would apply on a sliding scale for <ENAMEX type="PERIOD">four years</ENAMEX> and be for new immigrants only; before they could be applied, a country would have to get permission from the <ENAMEX type="INSTITUTION">European Council</ENAMEX>.</sentence>
 				<sentence xml:id="P23E4"> Child benefit payments could still be made overseas, but these would be linked to the cost of living in the other country.</sentence>
 				<sentence xml:id="P23E5"> On sovereignty, the <ENAMEX type="LOCATION">UK</ENAMEX> was reassured that it would not be required to participate in &quot;ever closer union&quot;; these reassurances were &quot;in line with existing <ENAMEX type="INSTITUTION">EU</ENAMEX> law&quot;.</sentence>
 				<sentence xml:id="P23E6"> <ENAMEX type="PERSON">Cameron</ENAMEX>&apos;s demand to allow national parliaments to veto proposed <ENAMEX type="INSTITUTION">EU</ENAMEX> laws was modified to allow national parliaments collectively to object to proposed <ENAMEX type="INSTITUTION">EU</ENAMEX> laws, in which case the <ENAMEX type="INSTITUTION">European Council</ENAMEX> would reconsider the proposal before itself deciding what to do.</sentence>
 				<sentence xml:id="P23E7"> On economic governance, anti-discrimination regulations for non-<ENAMEX type="INSTITUTION">Eurozone</ENAMEX> members would be reinforced, but they would be unable to veto any legislation.</sentence>
-				<sentence xml:id="P23E8"> The final <ENAMEX type="MEASURE">two</ENAMEX> areas covered were proposals to &quot;exclude from the scope of free movement rights, <ENAMEX type="MEASURE">third</ENAMEX> country nationals who had no prior lawful residence in a Member State before marrying a Union citizen&quot; and to make it easier for member states to deport <ENAMEX type="INSTITUTION">EU</ENAMEX> nationals for public policy or public security reasons.</sentence>
+				<sentence xml:id="P23E8"> The final <ENAMEX type="MEASURE">two</ENAMEX> areas covered were proposals to &quot;exclude from the scope of free movement rights, <ENAMEX type="MEASURE">third</ENAMEX> country nationals who had no prior lawful residence in a Member State before marrying a <ENAMEX type="INSTITUTION">Union</ENAMEX> citizen&quot; and to make it easier for member states to deport <ENAMEX type="INSTITUTION">EU</ENAMEX> nationals for public policy or public security reasons.</sentence>
 				<sentence xml:id="P23E9"> The extent to which the various parts of the agreement would be legally binding is complex; no part of the agreement itself changed <ENAMEX type="INSTITUTION">EU</ENAMEX> law, but some parts could be enforceable in international law.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P24">
@@ -130,13 +130,13 @@
 				<sentence xml:id="P25E0">Legislation</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P26">
-				<sentence xml:id="P26E0">To enable the referendum to take place across the <ENAMEX type="LOCATION">United Kingdom</ENAMEX> and <ENAMEX type="LOCATION">Gibraltar</ENAMEX>, <ENAMEX type="MEASURE">two</ENAMEX> pieces of legislation were enacted.</sentence>
+				<sentence xml:id="P26E0">To enable the referendum to take place across the <ENAMEX type="LOCATION">United Kingdom and Gibraltar</ENAMEX>, <ENAMEX type="MEASURE">two</ENAMEX> pieces of legislation were enacted.</sentence>
 				<sentence xml:id="P26E1">The <ENAMEX type="MEASURE">first</ENAMEX> of these, the <ENAMEX type="LEGAL">European Union Referendum Act 2015</ENAMEX>, was passed by the <ENAMEX type="INSTITUTION">Parliament of the United Kingdom</ENAMEX> and received the <ENAMEX type= "LEGAL">Royal Assent</ENAMEX> on <ENAMEX type="PERIOD">17 December 2015</ENAMEX>.</sentence>
-				<sentence xml:id="P26E2">The <ENAMEX type="MEASURE">second</ENAMEX>, the <ENAMEX type="LEGAL">European Union (Referendum) Act 2016</ENAMEX>, was passed by the <ENAMEX type="INSTITUTION">Gibraltar Parliament </ENAMEX>  to allow the referendum to take place in <ENAMEX type="LOCATION">Gibraltar</ENAMEX> and received the <ENAMEX type="LEGAL">Royal Assent</ENAMEX> <ENAMEX type="PERIOD">on 28 January 2016</ENAMEX>.</sentence>
+				<sentence xml:id="P26E2">The <ENAMEX type="MEASURE">second</ENAMEX>, the <ENAMEX type="LEGAL">European Union (Referendum) Act 2016</ENAMEX>, was passed by the <ENAMEX type="INSTITUTION">Gibraltar Parliament </ENAMEX>  to allow the referendum to take place in <ENAMEX type="LOCATION">Gibraltar</ENAMEX> and received the <ENAMEX type="LEGAL">Royal Assent</ENAMEX> on <ENAMEX type="PERIOD">28 January 2016</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P27">
 				<sentence xml:id="P27E0">The planned referendum was included in the <ENAMEX type="EVENT">Queen &apos;s Speech on 27 May 2015</ENAMEX>.</sentence>
-				<sentence xml:id="P27E1"> It was suggested at the time that <ENAMEX type="PERSON">Cameron</ENAMEX> was planning to hold the referendum in <ENAMEX type="PERIOD">October 2016</ENAMEX>, but the <ENAMEX type="LEGAL">European Union Referendum Act 2015</ENAMEX>, which authorised it, went before the <ENAMEX type="INSTITUTION">House of Commons</ENAMEX> the following day, just <ENAMEX type="PERIOD">three weeks after the election</ENAMEX>.</sentence>
+				<sentence xml:id="P27E1"> It was suggested at the time that <ENAMEX type="PERSON">Cameron</ENAMEX> was planning to hold the referendum in <ENAMEX type="PERIOD">October 2016</ENAMEX>, but the <ENAMEX type="LEGAL">European Union Referendum Act 2015</ENAMEX>, which authorised it, went before the <ENAMEX type="INSTITUTION">House of Commons</ENAMEX> the <ENAMEX type="PERIOD">following day</ENAMEX>, just <ENAMEX type="PERIOD">three weeks after the election</ENAMEX>.</sentence>
 				<sentence xml:id="P27E2"> On the bill&apos;s <ENAMEX type="MEASURE">second</ENAMEX> reading on <ENAMEX type="PERIOD">9 June</ENAMEX>, members of the <ENAMEX type="INSTITUTION">House of Commons</ENAMEX> voted by <ENAMEX type="MEASURE">544</ENAMEX> to <ENAMEX type="MEASURE">53</ENAMEX> in favour of it, endorsing the principle of holding a referendum, with only the <ENAMEX type="ORGANISATION">Scottish National Party</ENAMEX> voting against.</sentence>
 				<sentence xml:id="P27E3"> In contrast to the <ENAMEX type="ORGANISATION">Labour Party</ENAMEX>&apos;s position prior to the <ENAMEX type="PERIOD">2015 general election</ENAMEX> under <ENAMEX type="PERSON">Miliband</ENAMEX>, acting <ENAMEX type="ORGANISATION">Labour</ENAMEX> leader <ENAMEX type="PERSON">Harriet Harman</ENAMEX> committed her party to supporting plans for an <ENAMEX type="INSTITUTION">EU</ENAMEX> referendum by <ENAMEX type="PERIOD">2017</ENAMEX>.</sentence>
 			</p>
@@ -154,8 +154,8 @@
 			</p>
 			<p xml:lang="en" xml:id="P31">
 				<sentence xml:id="P31E0">In <ENAMEX type="PERIOD">February 2016</ENAMEX>, <ENAMEX type="PERSON">Cameron</ENAMEX> announced that the Government was to recommend that the <ENAMEX type="LOCATION">UK</ENAMEX> should remain in the <ENAMEX type="INSTITUTION">EU</ENAMEX> and that the referendum would be held on <ENAMEX type="PERIOD">23 June</ENAMEX>, marking the official launch of the campaign.</sentence>
-				<sentence xml:id="P31E1">He also announced that Parliament would enact secondary legislation relating to the <ENAMEX type="LEGAL">European Union Referendum Act 2015</ENAMEX> on <ENAMEX type="PERIOD">22 February</ENAMEX>.</sentence>
-				<sentence xml:id="P31E2">With the official launch, ministers of the <ENAMEX type="INSTITUTION">UK Government</ENAMEX> were then free to campaign on either side of the argument in a rare exception to Cabinet collective responsibility.</sentence>
+				<sentence xml:id="P31E1">He also announced that <ENAMEX type="INSTITUTION">Parliament</ENAMEX> would enact secondary legislation relating to the <ENAMEX type="LEGAL">European Union Referendum Act 2015</ENAMEX> on <ENAMEX type="PERIOD">22 February</ENAMEX>.</sentence>
+				<sentence xml:id="P31E2">With the official launch, <ENAMEX type="TITLE">ministers</ENAMEX> of the <ENAMEX type="INSTITUTION">UK Government</ENAMEX> were then free to campaign on either side of the argument in a rare exception to <ENAMEX type="LEGAL">Cabinet collective responsibility</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P32">
 				<sentence xml:id="P32E0">Eligibility to vote</sentence>
@@ -165,31 +165,31 @@
 				<sentence xml:id="P33E1"> <ENAMEX type="PERSON_TYPE">British</ENAMEX> citizens who had been registered to vote in the <ENAMEX type="LOCATION">UK</ENAMEX> within the <ENAMEX type="PERIOD">last 15 years</ENAMEX> would also be eligible to vote.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P34">
-				<sentence xml:id="P34E0">The deadline to register to vote was initially midnight on <ENAMEX type="PERIOD">7 June 2016</ENAMEX> but this was extended by <ENAMEX type="PERIOD">48 hours</ENAMEX> because of technical problems with the official registration website on <ENAMEX type="PERIOD">7 June</ENAMEX> caused by unusually high web traffic.</sentence>
-				<sentence xml:id="P34E1">Some supporters of the <ENAMEX type="ORGANISATION">Leave campaign</ENAMEX>, including the <ENAMEX type="PERSON">Conservative MP Sir Gerald Howarth</ENAMEX>, criticised the government&apos;s decision to extend the deadline, alleging it gave Remain an advantage because many late registrants were young people who were considered to be more likely to vote for Remain.</sentence>
+				<sentence xml:id="P34E0">The deadline to register to vote was initially <ENAMEX type="PERIOD">midnight on 7 June 2016</ENAMEX> but this was extended by <ENAMEX type="PERIOD">48 hours</ENAMEX> because of technical problems with the official registration website on <ENAMEX type="PERIOD">7 June</ENAMEX> caused by unusually high web traffic.</sentence>
+				<sentence xml:id="P34E1">Some supporters of the <ENAMEX type="ORGANISATION">Leave campaign</ENAMEX>, including the <ENAMEX type="PERSON">Conservative MP Sir Gerald Howarth</ENAMEX>, criticised the government&apos;s decision to extend the deadline, alleging it gave <ENAMEX type="ORGANISATION">Remain</ENAMEX> an advantage because many late registrants were young people who were considered to be more likely to vote for <ENAMEX type="ORGANISATION">Remain</ENAMEX>.</sentence>
 				<sentence xml:id="P34E2"> Almost <ENAMEX type="MEASURE">46.5 million</ENAMEX> people were eligible to vote.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P35">
-				<sentence xml:id="P35E0">There was protest by some residents of the <ENAMEX type="LOCATION">Crown dependencies</ENAMEX> of the <ENAMEX type="LOCATION">Isle of Man, Jersey and Guernsey</ENAMEX> that they should have the opportunity to vote in the referendum, as (although not part of the <ENAMEX type="INSTITUTION">EU</ENAMEX>, unlike <ENAMEX type="LOCATION">Gibraltar</ENAMEX>) <ENAMEX type="INSTITUTION">EU</ENAMEX> membership also affected them.</sentence>
+				<sentence xml:id="P35E0">There was protest by some residents of the <ENAMEX type="LOCATION">Crown dependencies of the Isle of Man, Jersey and Guernsey</ENAMEX> that they should have the opportunity to vote in the referendum, as (although not part of the <ENAMEX type="INSTITUTION">EU</ENAMEX>, unlike <ENAMEX type="LOCATION">Gibraltar</ENAMEX>) <ENAMEX type="INSTITUTION">EU</ENAMEX> membership also affected them.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P36">
 				<sentence xml:id="P36E0">Procedure for a withdrawal</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P37">
 				<sentence xml:id="P37E0">There is no precedent for a sovereign member state leaving the <ENAMEX type="INSTITUTION">European Union</ENAMEX> or any of its predecessor organisations.</sentence>
-				<sentence xml:id="P37E1">However, <ENAMEX type="MEASURE">three</ENAMEX> territories of <ENAMEX type="INSTITUTION">EU</ENAMEX> member states have withdrawn: <ENAMEX type="LOCATION">Algeria</ENAMEX> (<ENAMEX type="PERIOD">1962</ENAMEX>, independence from <ENAMEX type="LOCATION">France</ENAMEX>), <ENAMEX type="LOCATION">Greenland</ENAMEX> (<ENAMEX type="PERIOD">1985</ENAMEX>) and <ENAMEX type="LOCATION">Saint Barthélemy</ENAMEX> (<ENAMEX type="PERIOD">2012</ENAMEX>), the latter <ENAMEX type="MEASURE">two</ENAMEX> becoming <ENAMEX type="LOCATION">Overseas Countries and Territories</ENAMEX> of the <ENAMEX type="INSTITUTION">European Union</ENAMEX>.</sentence>
+				<sentence xml:id="P37E1">However, <ENAMEX type="MEASURE">three</ENAMEX> territories of <ENAMEX type="INSTITUTION">EU</ENAMEX> member states have withdrawn: <ENAMEX type="LOCATION">Algeria</ENAMEX> (<ENAMEX type="EVENT">1962, independence from France</ENAMEX>), <ENAMEX type="LOCATION">Greenland</ENAMEX> (<ENAMEX type="PERIOD">1985</ENAMEX>) and <ENAMEX type="LOCATION">Saint Barthélemy</ENAMEX> (<ENAMEX type="PERIOD">2012</ENAMEX>), the latter <ENAMEX type="MEASURE">two</ENAMEX> becoming <ENAMEX type="LOCATION">Overseas Countries and Territories of the European Union</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P38">
-				<sentence xml:id="P38E0"><ENAMEX type="LEGAL">Article 49A</ENAMEX> of the <ENAMEX type="LEGAL">Treaty of Lisbon</ENAMEX>, which came into force on <ENAMEX type="PERIOD">1 December 2009</ENAMEX>, introduced for the <ENAMEX type="MEASURE">first</ENAMEX> time a procedure for a member state to withdraw voluntarily from the <ENAMEX type="INSTITUTION">EU</ENAMEX>.</sentence>
+				<sentence xml:id="P38E0"><ENAMEX type="LEGAL">Article 49A of the Treaty of Lisbon</ENAMEX>, which came into force on <ENAMEX type="PERIOD">1 December 2009</ENAMEX>, introduced for the <ENAMEX type="MEASURE">first</ENAMEX> time a procedure for a member state to withdraw voluntarily from the <ENAMEX type="INSTITUTION">EU</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P39">
-				<sentence xml:id="P39E0">Any Member State may decide to withdraw from the Union in accordance with its own constitutional requirements.</sentence>
+				<sentence xml:id="P39E0">Any Member State may decide to withdraw from the <ENAMEX type="INSTITUTION">Union</ENAMEX> in accordance with its own constitutional requirements.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P40">
 				<sentence xml:id="P40E0">A Member State which decides to withdraw shall notify the <ENAMEX type="INSTITUTION">European Council</ENAMEX> of its intention.</sentence>
-				<sentence xml:id="P40E1">In the light of the guidelines provided by the <ENAMEX type="INSTITUTION">European Council</ENAMEX>, the Union shall negotiate and conclude an agreement with that State, setting out the arrangements for its withdrawal, taking account of the framework for its future relationship with the <ENAMEX type="INSTITUTION">Union</ENAMEX>.</sentence>
+				<sentence xml:id="P40E1">In the light of the guidelines provided by the <ENAMEX type="INSTITUTION">European Council</ENAMEX>, the <ENAMEX type="INSTITUTION">Union</ENAMEX> shall negotiate and conclude an agreement with that State, setting out the arrangements for its withdrawal, taking account of the framework for its future relationship with the <ENAMEX type="INSTITUTION">Union</ENAMEX>.</sentence>
 				<sentence xml:id="P40E2">That agreement shall be negotiated in accordance with <ENAMEX type="LEGAL">Article 218 (3) of the Treaty on the Functioning of the European Union</ENAMEX>.</sentence>
-				<sentence xml:id="P40E3">It shall be concluded on behalf of the Union by the Council, acting by a qualified majority, after obtaining the consent of the <ENAMEX type="INSTITUTION">European Parliament</ENAMEX>.</sentence>
+				<sentence xml:id="P40E3">It shall be concluded on behalf of the <ENAMEX type="INSTITUTION">Union</ENAMEX> by the <ENAMEX type="INSTITUTION">Council</ENAMEX>, acting by a qualified majority, after obtaining the consent of the <ENAMEX type="INSTITUTION">European Parliament</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P41">
 				<sentence xml:id="P41E0">The Treaties shall cease to apply to the State in question from the date of entry into force of the withdrawal agreement or, failing that, <ENAMEX type="PERIOD">two years</ENAMEX> after the notification referred to in paragraph 2, unless the <ENAMEX type="INSTITUTION">European Council</ENAMEX>, in agreement with the Member State concerned, unanimously decides to extend this period.</sentence>
@@ -200,7 +200,7 @@
 				<sentence xml:id="P42E2">there seems to be no immediate legal means out of the stalemate.</sentence>
 				<sentence xml:id="P42E3">It is entirely up to the departing member state to trigger <ENAMEX type="LEGAL">article 50</ENAMEX>, by issuing formal notification of intention to leave: no one, in <ENAMEX type="LOCATION">Brussels, Berlin or Paris</ENAMEX>, can force it to.</sentence>
 				<sentence xml:id="P42E4">But equally, there is nothing in <ENAMEX type="LEGAL">article 50</ENAMEX> that obliges the <ENAMEX type="INSTITUTION">EU</ENAMEX> to start talks – including the informal talks the <ENAMEX type="EVENT">Brexit</ENAMEX> leaders want – before formal notification has been made. &quot;</sentence>
-				<sentence xml:id="P42E5">There is no mechanism to compel a state to withdraw from the <ENAMEX type="INSTITUTION">European Union</ENAMEX>,&quot; said <ENAMEX type="PERSON">Kenneth Armstrong</ENAMEX>, professor of European law at <ENAMEX type="INSTITUTION">Cambridge University</ENAMEX>.</sentence>
+				<sentence xml:id="P42E5">There is no mechanism to compel a state to withdraw from the <ENAMEX type="INSTITUTION">European Union</ENAMEX>,&quot; said <ENAMEX type="PERSON">Kenneth Armstrong, professor of European law at Cambridge University</ENAMEX>.</sentence>
 				<sentence xml:id="P42E6">... &quot;</sentence>
 				<sentence xml:id="P42E7">The notification of <ENAMEX type="LEGAL">article 50</ENAMEX> is a formal act and has to be done by the <ENAMEX type="INSTITUTION">British government</ENAMEX> to the <ENAMEX type="INSTITUTION">European council</ENAMEX>,&quot; an <ENAMEX type="INSTITUTION">EU</ENAMEX> official told <ENAMEX type="MEDIA">Reuters</ENAMEX>.&quot;</sentence>
 			</p>
@@ -209,7 +209,7 @@
 			</p>
 			<p xml:lang="en" xml:id="P44">
 				<sentence xml:id="P44E0">Some constitutional experts have argued that, under the <ENAMEX type="LEGAL">Scotland Act 1998</ENAMEX>, the <ENAMEX type="INSTITUTION">Scottish Parliament</ENAMEX> has to consent to measures that eliminate <ENAMEX type="INSTITUTION">EU</ENAMEX> law&apos;s application in <ENAMEX type="LOCATION">Scotland</ENAMEX>, which gives the <ENAMEX type="INSTITUTION">Scottish Parliament</ENAMEX> an effective veto over <ENAMEX type="LOCATION">UK</ENAMEX>withdrawal from the <ENAMEX type="INSTITUTION">EU</ENAMEX>, unless the <ENAMEX type="LEGAL">Scotland Act 1998</ENAMEX> is amended by the <ENAMEX type="INSTITUTION">UK Parliament</ENAMEX> to reduce the <ENAMEX type="INSTITUTION">Scottish Parliament</ENAMEX>&apos;s current powers.</sentence>
-				<sentence xml:id="P44E1"> After the Leave result was announced, on <ENAMEX type="PERIOD">26 June 2016</ENAMEX>, <ENAMEX type="PERSON">First Minister Nicola Sturgeon</ENAMEX> said she would &quot;of course&quot; ask the <ENAMEX type="INSTITUTION">Scottish Parliament</ENAMEX> to withhold consent and thus block the <ENAMEX type="LOCATION">UK</ENAMEX> from leaving the <ENAMEX type="INSTITUTION">EU</ENAMEX>.</sentence>
+				<sentence xml:id="P44E1"> After the <ENAMEX type="ORGANISATION">Leave</ENAMEX> result was announced, on <ENAMEX type="PERIOD">26 June 2016</ENAMEX>, <ENAMEX type="PERSON">First Minister Nicola Sturgeon</ENAMEX> said she would &quot;of course&quot; ask the <ENAMEX type="INSTITUTION">Scottish Parliament</ENAMEX> to withhold consent and thus block the <ENAMEX type="LOCATION">UK</ENAMEX> from leaving the <ENAMEX type="INSTITUTION">EU</ENAMEX>.</sentence>
 				<sentence xml:id="P44E2"> However, this interpretation of the <ENAMEX type="LEGAL">1998 Act</ENAMEX> is disputed.</sentence>
 				<sentence xml:id="P44E3">For example, <ENAMEX type="LEGAL">Section 28 (7) of the Act</ENAMEX> states that it &quot;does not affect the power of the <ENAMEX type="INSTITUTION">Parliament of the United Kingdom</ENAMEX> to make laws for <ENAMEX type="LOCATION">Scotland</ENAMEX>.&quot;</sentence>
 			</p>
@@ -230,20 +230,20 @@
 				<sentence xml:id="P48E0">Campaign</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P49">
-				<sentence xml:id="P49E0">Main article: Campaigning in the <ENAMEX type="LEGAL">United Kingdom European Union membership referendum, 2016</ENAMEX></sentence>
+				<sentence xml:id="P49E0">Main article: Campaigning in the <ENAMEX type="EVENT">United Kingdom European Union membership referendum, 2016</ENAMEX></sentence>
 			</p>
 			<p xml:lang="en" xml:id="P50">
 				<sentence xml:id="P50E0"><ENAMEX type="ORGANISATION">Britain Stronger in Europe</ENAMEX> campaigners, <ENAMEX type="LOCATION">London</ENAMEX>, <ENAMEX type="PERIOD">June 2016</ENAMEX></sentence>
 			</p>
 			<p xml:lang="en" xml:id="P51">
-				<sentence xml:id="P51E0">Referendum posters for both the Leave and Remain campaigns in <ENAMEX type="LOCATION">Pimlico</ENAMEX>, <ENAMEX type="LOCATION">London</ENAMEX></sentence>
+				<sentence xml:id="P51E0">Referendum posters for both the <ENAMEX type="ORGANISATION">Leave and Remain campaigns</ENAMEX> in <ENAMEX type="LOCATION">Pimlico</ENAMEX>, <ENAMEX type="LOCATION">London</ENAMEX></sentence>
 			</p>
 			<p xml:lang="en" xml:id="P52">
-				<sentence xml:id="P52E0">As of <ENAMEX type="PERIOD">October 2015</ENAMEX>, there was a cross-party, formal group campaigning for <ENAMEX type="LOCATION">Britain</ENAMEX> to remain a member, called <ENAMEX type="ORGANISATION">Britain Stronger in Europe</ENAMEX>, while there were <ENAMEX type="MEASURE">two</ENAMEX> groups promoting exit which sought to be the official Leave campaign: Leave.</sentence>
+				<sentence xml:id="P52E0">As of <ENAMEX type="PERIOD">October 2015</ENAMEX>, there was a cross-party, formal group campaigning for <ENAMEX type="LOCATION">Britain</ENAMEX> to remain a member, called <ENAMEX type="ORGANISATION">Britain Stronger in Europe</ENAMEX>, while there were <ENAMEX type="MEASURE">two</ENAMEX> groups promoting exit which sought to be the official Leave campaign: <ENAMEX type="ORGANISATION">Leave</ENAMEX>.</sentence>
 				<sentence xml:id="P52E1"><ENAMEX type="INSTITUTION">EU</ENAMEX> (supported by most of <ENAMEX type="ORGANISATION">UKIP</ENAMEX>, including <ENAMEX type="PERSON">Nigel Farage</ENAMEX>), and <ENAMEX type="ORGANISATION">Vote Leave</ENAMEX> (supported by <ENAMEX type="PERSON_TYPE">Conservative Party Eurosceptics</ENAMEX>).</sentence>
 				<sentence xml:id="P52E2"> The <ENAMEX type="ORGANISATION">Electoral Commission</ENAMEX> announced on <ENAMEX type="PERIOD">13 April 2016</ENAMEX> that <ENAMEX type="ORGANISATION">Vote Leave</ENAMEX> was the official leave campaign.</sentence>
 				<sentence xml:id="P52E3">This gave it the right to spend up to <ENAMEX type="MEASURE">£7m,</ENAMEX> a free mailshot, TV broadcasts and <ENAMEX type="MEASURE">£600,000</ENAMEX> in public funds.</sentence>
-				<sentence xml:id="P52E4"> Leave.</sentence>
+				<sentence xml:id="P52E4"> <ENAMEX type="ORGANISATION">Leave</ENAMEX>.</sentence>
 				<sentence xml:id="P52E5"><ENAMEX type="INSTITUTION">EU</ENAMEX> also had an umbrella group offshoot, the cross-party Grassroots Out.</sentence>
 				<sentence xml:id="P52E6"> The <ENAMEX type="INSTITUTION">UK government</ENAMEX>&apos;s official position was to support the remain option.</sentence>
 				<sentence xml:id="P52E7">A Government-backed campaign was launched in <ENAMEX type="PERIOD">April</ENAMEX>.</sentence>
@@ -274,7 +274,7 @@
 				<sentence xml:id="P76E2"> The <ENAMEX type="ORGANISATION">Women&apos;s Equality Party (WE)</ENAMEX> had no official position on the issue.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P77">
-				<sentence xml:id="P77E0">All parties represented in the <ENAMEX type="INSTITUTION">Gibraltar Parliament</ENAMEX> supported Remain: the <ENAMEX type="ORGANISATION">Gibraltar Social Democrats (GSD), the Gibraltar Socialist Labour Party (GSLP), and the Liberal Party of Gibraltar</ENAMEX>.</sentence>
+				<sentence xml:id="P77E0">All parties represented in the <ENAMEX type="INSTITUTION">Gibraltar Parliament</ENAMEX> supported <ENAMEX type="ORGANISATION">Remain</ENAMEX>: the <ENAMEX type="ORGANISATION">Gibraltar Social Democrats (GSD), the Gibraltar Socialist Labour Party (GSLP), and the Liberal Party of Gibraltar</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P78">
 				<sentence xml:id="P78E0">No party had decreed that its members should all follow the party line, resulting in public differences of view: <ENAMEX type="ORGANISATION">Conservative Party</ENAMEX> MPs in particular, and <ENAMEX type="PERSON_TYPE">Labour</ENAMEX> MPs to a lesser extent, taking different sides.</sentence>
@@ -284,7 +284,7 @@
 				<sentence xml:id="P79E0">Cabinet ministers</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P80">
-				<sentence xml:id="P80E0">For the positions of <ENAMEX type="TITLE">backbench MPs</ENAMEX> and other politicians, see Endorsements in the <ENAMEX type="LEGAL">United Kingdom European Union membership referendum 2016</ENAMEX>.</sentence>
+				<sentence xml:id="P80E0">For the positions of <ENAMEX type="TITLE">backbench MPs</ENAMEX> and other politicians, see Endorsements in the <ENAMEX type="EVENT">United Kingdom European Union membership referendum 2016</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P81">
 				<sentence xml:id="P81E0"><ENAMEX type="INSTITUTION">The Cabinet of the United Kingdom</ENAMEX> is a body responsible for making decisions on policy and organising governmental departments; it is chaired by the <ENAMEX type="TITLE">Prime Minister</ENAMEX> and contains most of the government&apos;s ministerial heads.</sentence>
@@ -296,7 +296,7 @@
 				<sentence xml:id="P82E0">Business</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P83">
-				<sentence xml:id="P83E0">See also: Opinion polling for the <ENAMEX type="LEGAL">United Kingdom European Union membership referendum</ENAMEX> § Business leaders</sentence>
+				<sentence xml:id="P83E0">See also: Opinion polling for the <ENAMEX type="EVENT">United Kingdom European Union membership referendum</ENAMEX> § Business leaders</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P84">
 				<sentence xml:id="P84E0">Various <ENAMEX type="LOCATION">UK</ENAMEX> multinationals have stated that they would not like the <ENAMEX type="LOCATION">UK</ENAMEX> to leave the <ENAMEX type="INSTITUTION">EU</ENAMEX> because of the uncertainty it would cause, such as <ENAMEX type="BUSINESS">Shell</ENAMEX>, <ENAMEX type="BUSINESS">BT</ENAMEX> and <ENAMEX type="BUSINESS">Vodafone</ENAMEX>, with some assessing the pros and cons of <ENAMEX type="LOCATION">Britain</ENAMEX> exiting.</sentence>
@@ -395,7 +395,7 @@
 			</p>
 			<p xml:lang="en" xml:id="P104">
 				<sentence xml:id="P104E0">In <ENAMEX type="PERIOD">February 2016</ENAMEX>, <ENAMEX type="PERSON">Christine Lagarde, the managing director of the International Monetary Fund</ENAMEX>, warned that the uncertainty over the outcome of the referendum would be bad &quot;in and of itself&quot; for the <ENAMEX type="NATIONAL">British</ENAMEX> economy.</sentence>
-				<sentence xml:id="P104E1"> In response, <ENAMEX type="PERSON">Leave campaigner Priti Patel</ENAMEX> said a previous warning from the <ENAMEX type="INSTITUTION">IMF</ENAMEX> regarding the coalition government&apos;s deficit plan for the <ENAMEX type="LOCATION">UK</ENAMEX> was proven incorrect and that the <ENAMEX type="INSTITUTION">IMF</ENAMEX> &quot;were wrong then and are wrong now&quot;.</sentence>
+				<sentence xml:id="P104E1"> In response, <ENAMEX type="ORGANISATION">Leave</ENAMEX> campaigner <ENAMEX type="PERSON">Priti Patel</ENAMEX> said a previous warning from the <ENAMEX type="INSTITUTION">IMF</ENAMEX> regarding the coalition government&apos;s deficit plan for the <ENAMEX type="LOCATION">UK</ENAMEX> was proven incorrect and that the <ENAMEX type="INSTITUTION">IMF</ENAMEX> &quot;were wrong then and are wrong now&quot;.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P105">
 				<sentence xml:id="P105E0"><ENAMEX type="LOCATION">United States</ENAMEX></sentence>
@@ -504,7 +504,7 @@
 			</p>
 			<p xml:lang="en" xml:id="P132">
 				<sentence xml:id="P132E0">Guidelines by the <ENAMEX type="ORGANISATION">Charity Commission for England and Wales</ENAMEX> that forbid political activity for registered charities have kept them silent on the <ENAMEX type="INSTITUTION">EU</ENAMEX> poll.</sentence>
-				<sentence xml:id="P132E1"> According to <ENAMEX type="PERSON">Simon Wessely, head of psychological medicine at the Institute of Psychiatry, King&apos;s College London</ENAMEX> – neither a special revision of the guidelines from <ENAMEX type="PERIOD">7 March 2016</ENAMEX>, nor <ENAMEX type="PERSON">Cameron</ENAMEX>&apos;s encouragement have made health organisations, most of which support the remain campaign, willing to speak out.</sentence>
+				<sentence xml:id="P132E1"> According to <ENAMEX type="PERSON">Simon Wessely, head of psychological medicine at the Institute of Psychiatry, King&apos;s College London</ENAMEX> – neither a special revision of the guidelines from <ENAMEX type="PERIOD">7 March 2016</ENAMEX>, nor <ENAMEX type="PERSON">Cameron</ENAMEX>&apos;s encouragement have made health organisations, most of which support the <ENAMEX type="ORGANISATION">remain campaign</ENAMEX>, willing to speak out.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P133">
 				<sentence xml:id="P133E0">Fishing industry</sentence>
@@ -533,7 +533,7 @@
 				<sentence xml:id="P139E0">Opinion polling</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P140">
-				<sentence xml:id="P140E0">Main article: Opinion polling for the <ENAMEX type="LEGAL">United Kingdom European Union membership referendum</ENAMEX></sentence>
+				<sentence xml:id="P140E0">Main article: Opinion polling for the <ENAMEX type="EVENT">United Kingdom European Union membership referendum</ENAMEX></sentence>
 			</p>
 			<p xml:lang="en" xml:id="P141">
 				<sentence xml:id="P141E0">Opinion polling on the referendum</sentence>
@@ -554,7 +554,7 @@
 				<sentence xml:id="P144E0">Issues</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P145">
-				<sentence xml:id="P145E0">Main article: Issues in the <ENAMEX type="LEGAL">United Kingdom European Union membership referendum, 2016</ENAMEX></sentence>
+				<sentence xml:id="P145E0">Main article: Issues in the <ENAMEX type="EVENT">United Kingdom European Union membership referendum, 2016</ENAMEX></sentence>
 			</p>
 			<p xml:lang="en" xml:id="P146">
 				<sentence xml:id="P146E0">The number of jobs lost or gained by a withdrawal was a dominant issue; the <ENAMEX type="MEDIA">BBC</ENAMEX>&apos;s outline of issues warned that a precise figure was difficult to find.</sentence>
@@ -586,7 +586,7 @@
 			</p>
 			<p xml:lang="en" xml:id="P150">
 				<sentence xml:id="P150E0">Although the <ENAMEX type="ORGANISATION">Remain</ENAMEX> side had not heavily publicised this aspect, the <ENAMEX type="INSTITUTION">EU</ENAMEX> had offered <ENAMEX type="PERSON">David Cameron</ENAMEX> a so-called &quot;emergency brake&quot; which would have allowed the <ENAMEX type="LOCATION">UK</ENAMEX> to withhold social benefits to new immigrants for the <ENAMEX type="PERIOD">first four years</ENAMEX> after they arrived; this brake could have been applied for a period of <ENAMEX type="PERIOD">seven years</ENAMEX>.</sentence>
-				<sentence xml:id="P150E1">&quot; That offer was still on the table at the time of the <ENAMEX type="EVENT">Brexit</ENAMEX> referendum but expired when the vote determined that the <ENAMEX type="LOCATION">UK</ENAMEX> would leave the <ENAMEX type="INSTITUTION">EU</ENAMEX>.</sentence>
+				<sentence xml:id="P150E1">&quot; That offer was still on the table at the time of the <ENAMEX type="EVENT">Brexit referendum</ENAMEX> but expired when the vote determined that the <ENAMEX type="LOCATION">UK</ENAMEX> would leave the <ENAMEX type="INSTITUTION">EU</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P151">
 				<sentence xml:id="P151E0">The possibility that the <ENAMEX type="LOCATION">UK</ENAMEX>&apos;s smaller constituent countries could vote to remain within the <ENAMEX type="INSTITUTION">EU</ENAMEX> but find themselves withdrawn from the <ENAMEX type="INSTITUTION">EU</ENAMEX> led to discussion about the risk to the unity of the <ENAMEX type="LOCATION">United Kingdom</ENAMEX>.</sentence>
@@ -653,9 +653,9 @@
 				<sentence xml:id="P165E2">The <ENAMEX type="MEASURE">382</ENAMEX> voting areas were grouped into <ENAMEX type="MEASURE">twelve</ENAMEX> regional counts and there was separate declarations for each of the regional counts.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P166">
-				<sentence xml:id="P166E0">In <ENAMEX type="LOCATION">England</ENAMEX>, as happened in the <ENAMEX type="LEGAL">2011 AV referendum</ENAMEX>, the <ENAMEX type="MEASURE">326</ENAMEX> districts were used as the local voting areas and the returns of these then fed into <ENAMEX type="MEASURE">nine</ENAMEX> <ENAMEX type="NATIONAL">English</ENAMEX> regional counts.</sentence>
+				<sentence xml:id="P166E0">In <ENAMEX type="LOCATION">England</ENAMEX>, as happened in the <ENAMEX type="EVENT">2011 AV referendum</ENAMEX>, the <ENAMEX type="MEASURE">326</ENAMEX> districts were used as the local voting areas and the returns of these then fed into <ENAMEX type="MEASURE">nine</ENAMEX> <ENAMEX type="NATIONAL">English</ENAMEX> regional counts.</sentence>
 				<sentence xml:id="P166E1">In <ENAMEX type="LOCATION">Scotland</ENAMEX> the local voting areas were the <ENAMEX type="MEASURE">32</ENAMEX> local councils which then fed their results into the <ENAMEX type="NATIONAL">Scottish</ENAMEX> national count, and in <ENAMEX type="LOCATION">Wales</ENAMEX> the <ENAMEX type="MEASURE">22</ENAMEX> local councils were their local voting areas before the results were then fed into the <ENAMEX type="NATIONAL">Welsh</ENAMEX> national count.</sentence>
-				<sentence xml:id="P166E2"><ENAMEX type="LOCATION">Northern Ireland</ENAMEX>, as was the case in the <ENAMEX type="LEGAL">AV referendum</ENAMEX>, was a single voting and national count area although local totals by <ENAMEX type="LOCATION">Westminster</ENAMEX> parliamentary constituency areas were announced.</sentence>
+				<sentence xml:id="P166E2"><ENAMEX type="LOCATION">Northern Ireland</ENAMEX>, as was the case in the <ENAMEX type="EVENT">AV referendum</ENAMEX>, was a single voting and national count area although local totals by <ENAMEX type="LOCATION">Westminster</ENAMEX> parliamentary constituency areas were announced.</sentence>
 				<sentence xml:id="P166E3"><ENAMEX type="LOCATION">Gibraltar</ENAMEX> was a single voting area and its result was fed into the <ENAMEX type="LOCATION">South West England</ENAMEX> regional count.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P167">
