@@ -4,7 +4,7 @@
 
 Creating annotated corpus for Named Entities Recognition suppose to identify Named Entities in a text and to classify these Named entities based on the context into a set of classes, 27 classes in the case of grobid-ner.
 
-Similarly as grobid's other CRF models, grobid-ner can bootstrap training data. grobid-ner can automatically generate training data from any text files ( [Link to Page] ), labeling tokens with the named entity classes based on the existing model. A human annotator then corrects the generated training data by modifying the labels produced for each token. This curated training data can be added to the existing training data and used to train a new improved model.
+Similarly as grobid's other CRF models, grobid-ner can bootstrap training data. grobid-ner can automatically [generate training data](generate-training-data.md) from any text files, labeling tokens with the named entity classes based on the existing model. A human annotator then corrects the generated training data by modifying the labels produced for each token. This curated training data can be added to the existing training data and used to train a new improved model.
 
 # Format
 
