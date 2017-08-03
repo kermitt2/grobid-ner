@@ -36,7 +36,7 @@ The following table describes the 27 named entity classes produced by the model.
 | <a style="text-decorations:none; color:#265C83" href=#person_type> PERSON_TYPE | person type or role classified according to group membership | _African-American_, _Asian_, _Conservative_, _Liberal_, _Jews_, _Communist_ |
 | PLANT | name of a plant | _Ficus religiosa_ |
 | SPORT_TEAM | sport group or organisation | _The Yankees_ |
-| SUBSTANCE | natural substance | |
+| SUBSTANCE | natural substance | _HCN_, _hydrogen cyanide_, _gold_, _asbestos_ |
 | <a style="text-decorations:none; color:#265C83" href=#title> TITLE | personal or honorific title, for a person | _Mr._, _Dr._, _General_, _President_, _chairman_, _doctor_, _Secretary of State_, _MP_, _Prime Minister_ |
 | <a style="text-decorations:none; color:#265C83" href=#unknown> UNKNOWN | entity not belonging to any previous classes| _Plan Marshall_, _ParSiTi_, _Horizon 2020_ |
 | WEBSITE | website URL or name | _Wikipedia_, _http://www.inria.fr_ |
