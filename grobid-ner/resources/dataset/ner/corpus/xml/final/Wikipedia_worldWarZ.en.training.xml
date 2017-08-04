@@ -5,7 +5,7 @@
 			<p xml:lang="en" xml:id="P0">
 				<sentence xml:id="P0E0"><ENAMEX type="CREATION">World War Z: An Oral History of the Zombie War (2006)</ENAMEX> is an apocalyptic horror novel by <ENAMEX type="PERSON">Max Brooks</ENAMEX>.</sentence>
 				<sentence xml:id="P0E1">The novel is a collection of individual accounts narrated by an agent of the <ENAMEX type="INSTITUTION">United Nations Postwar Commission</ENAMEX>, following the devastating global conflict against the zombie plague.</sentence>
-				<sentence xml:id="P0E2">Other passages record a decade-long desperate struggle, as experienced by people of various nationalities.</sentence>
+				<sentence xml:id="P0E2">Other passages record a <ENAMEX type="MEASURE">decade</ENAMEX>-long desperate struggle, as experienced by people of various nationalities.</sentence>
 				<sentence xml:id="P0E3">The personal accounts also describe the resulting social, political, religious, and environmental changes.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P1">
@@ -16,7 +16,7 @@
 			</p>
 			<p xml:lang="en" xml:id="P2">
 				<sentence xml:id="P2E0">Its audiobook version, performed by a full cast including <ENAMEX type="PERSON">Alan Alda, Mark Hamill, and John Turturro</ENAMEX>, won an <ENAMEX type="AWARD">Audie Award</ENAMEX> in <ENAMEX type="PERIOD">2007</ENAMEX>.</sentence>
-				<sentence xml:id="P2E1">A film inspired by the novel, directed by <ENAMEX type="PERSON">Marc Forster and starring Brad Pitt</ENAMEX>, was released in <ENAMEX type="PERIOD">2013</ENAMEX>.</sentence>
+				<sentence xml:id="P2E1">A film inspired by the novel, directed by <ENAMEX type="PERSON">Marc Forster</ENAMEX> and starring <ENAMEX type="PERSON">Brad Pitt</ENAMEX>, was released in <ENAMEX type="PERIOD">2013</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P3">
 				<sentence xml:id="P3E0">The story is told in the form of a series of interviews conducted by the narrator, <ENAMEX type="PERSON">Max Brooks</ENAMEX>, an agent of the <ENAMEX type="INSTITUTION">United Nations Postwar Commission</ENAMEX>.</sentence>
@@ -27,20 +27,20 @@
 			</p>
 			<p xml:lang="en" xml:id="P4">
 				<sentence xml:id="P4E0">As the infection spreads, <ENAMEX type="LOCATION">Israel</ENAMEX> abandons the <ENAMEX type="LOCATION">Palestinian territories</ENAMEX> and initiates a nationwide quarantine, closing its borders to everyone except uninfected <ENAMEX type="PERSON_TYPE">Jews and Palestinians</ENAMEX>.</sentence>
-				<sentence xml:id="P4E1">Its military then puts down an ultra-Orthodox uprising, which is later referred to as an <ENAMEX type="NATIONAL">Israeli</ENAMEX> civil war.</sentence>
+				<sentence xml:id="P4E1">Its military then puts down an <ENAMEX type="CONCEPTUAL">ultra-Orthodox uprising</ENAMEX>, which is later referred to as an <ENAMEX type="NATIONAL">Israeli</ENAMEX> civil war.</sentence>
 				<sentence xml:id="P4E2">The <ENAMEX type="LOCATION">United States</ENAMEX> does little to prepare because it is overconfident in its ability to suppress any threat.</sentence>
 				<sentence xml:id="P4E3">Although special forces teams contain initial outbreaks, a widespread effort never starts: the nation is deprived of political will by &quot;brushfire wars&quot;, and a widely distributed and marketed placebo vaccine creates a false sense of security.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P5">
 				<sentence xml:id="P5E0">As many more areas around the globe fall to infection, a period known as the &quot;<ENAMEX type="EVENT">Great Panic</ENAMEX>&quot; begins.</sentence>
 				<sentence xml:id="P5E1"><ENAMEX type="LOCATION">Pakistan and Iran</ENAMEX> destroy each other in a nuclear war, after the <ENAMEX type="INSTITUTION">Iranian government</ENAMEX> attempts to stem the flow of refugees fleeing through <ENAMEX type="LOCATION">Pakistan</ENAMEX> into <ENAMEX type="LOCATION">Iran</ENAMEX>.</sentence>
-				<sentence xml:id="P5E2">After zombies overrun <ENAMEX type="LOCATION">New York City</ENAMEX>, the <ENAMEX type="INSTITUTION">U.S. military</ENAMEX> sets up a high-profile defense in the nearby <ENAMEX type="LOCATION">city of Yonkers</ENAMEX>.</sentence>
+				<sentence xml:id="P5E2">After zombies overrun <ENAMEX type="LOCATION">New York City</ENAMEX>, the <ENAMEX type="INSTITUTION">U.S. military</ENAMEX> sets up a high-profile defense in the nearby city of <ENAMEX type="LOCATION">Yonkers</ENAMEX>.</sentence>
 				<sentence xml:id="P5E3">The &quot;<ENAMEX type="EVENT">Battle of Yonkers</ENAMEX>&quot; is a disaster; modern weapons and tactics prove ineffective against zombies, as the enemy has no self-preservation instincts and can only be stopped if shot through the head.</sentence>
 				<sentence xml:id="P5E4">The unprepared and demoralized soldiers are routed on live television.</sentence>
 				<sentence xml:id="P5E5">Other countries suffer similarly disastrous defeats, and human civilization teeters on the brink of destruction.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P6">
-				<sentence xml:id="P6E0">In <ENAMEX type="LOCATION">South Africa</ENAMEX>, the government adopts a contingency plan drafted by <ENAMEX type="PERSON">apartheid-era intelligence consultant Paul Redeker</ENAMEX>.</sentence>
+				<sentence xml:id="P6E0">In <ENAMEX type="LOCATION">South Africa</ENAMEX>, the government adopts a contingency plan drafted by <ENAMEX type="PERIOD">apartheid-era</ENAMEX> intelligence consultant <ENAMEX type="PERSON">Paul Redeker</ENAMEX>.</sentence>
 				<sentence xml:id="P6E1">It calls for the establishment of small sanctuaries, leaving large groups of survivors abandoned in special zones in order to distract the undead and allowing those within the main safe zone time to regroup and recuperate.</sentence>
 				<sentence xml:id="P6E2">Governments worldwide assume similar plans or relocate the populace to safer foreign territory, such as the attempted complete evacuation of the <ENAMEX type="LOCATION">Japanese archipelago</ENAMEX> to <ENAMEX type="LOCATION">Kamchatka</ENAMEX>.</sentence>
 				<sentence xml:id="P6E3">Because zombies freeze solid in severe cold, many civilians in <ENAMEX type="LOCATION">North America</ENAMEX> flee to the wildernesses of <ENAMEX type="LOCATION">northern Canada</ENAMEX> and the <ENAMEX type="LOCATION">Arctic</ENAMEX>, where <ENAMEX type="MEASURE">eleven million</ENAMEX> people die of starvation and hypothermia.</sentence>
@@ -72,16 +72,16 @@
 			</p>
 			<p xml:lang="en" xml:id="P10">
 				<sentence xml:id="P10E0">The situation in the <ENAMEX type="LOCATION">British Isles</ENAMEX> is not entirely clear in the novel, although <ENAMEX type="LOCATION">Ireland</ENAMEX> may have escaped the worst of the outbreak.</sentence>
-				<sentence xml:id="P10E1">Members of the <ENAMEX type="PERSON_TYPE">British Royal Family</ENAMEX> had fled to <ENAMEX type="LOCATION">Ireland</ENAMEX> and the <ENAMEX type="LOCATION">Isle of Man</ENAMEX>, following the military retreat to the <ENAMEX type="INSTALLATION">Antonine Wall</ENAMEX>, and now exports oil from a reserve under <ENAMEX type="INSTALLATION">Windsor Castle</ENAMEX> where the <ENAMEX type="TITLE">Queen</ENAMEX> held out for the war&apos;s duration, refusing to flee with her relatives.</sentence>
+				<sentence xml:id="P10E1">Members of the <ENAMEX type="PERSON_TYPE">British Royal Family</ENAMEX> had fled to <ENAMEX type="LOCATION">Ireland and the Isle of Man</ENAMEX>, following the military retreat to the <ENAMEX type="INSTALLATION">Antonine Wall</ENAMEX>, and now exports oil from a reserve under <ENAMEX type="INSTALLATION">Windsor Castle</ENAMEX> where the <ENAMEX type="TITLE">Queen</ENAMEX> held out for the war&apos;s duration, refusing to flee with her relatives.</sentence>
 				<sentence xml:id="P10E2"><ENAMEX type="INSTITUTION">The Papacy</ENAMEX> established a wartime refuge in the <ENAMEX type="INSTALLATION">Roman Catholic Archdiocese of Armagh</ENAMEX>.</sentence>
-				<sentence xml:id="P10E3"> In <ENAMEX type="LOCATION">France</ENAMEX>, the <ENAMEX type="INSTALLATION">Palace of Versailles</ENAMEX> was the site of a massacre and has been burned to the ground; military losses were particularly high while clearing <ENAMEX type="INSTALLATION">the catacombs</ENAMEX> underneath <ENAMEX type="LOCATION">Paris</ENAMEX> because <ENAMEX type="INSTALLATION">the catacombs</ENAMEX> housed nearly a quarter of a <ENAMEX type="MEASURE">million</ENAMEX> refugees during the early stages of the war, all of whom became zombies.</sentence>
+				<sentence xml:id="P10E3"> In <ENAMEX type="LOCATION">France</ENAMEX>, the <ENAMEX type="INSTALLATION">Palace of Versailles</ENAMEX> was the site of a massacre and has been burned to the ground; military losses were particularly high while clearing <ENAMEX type="INSTALLATION">the catacombs</ENAMEX> underneath <ENAMEX type="LOCATION">Paris</ENAMEX> because <ENAMEX type="INSTALLATION">the catacombs</ENAMEX> housed nearly <ENAMEX type="MEASURE">a quarter of a million</ENAMEX> refugees during the early stages of the war, all of whom became zombies.</sentence>
 				<sentence xml:id="P10E4"><ENAMEX type="LOCATION">Iceland</ENAMEX> has been completely depopulated and remains the world&apos;s most heavily infested country.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P11">
 				<sentence xml:id="P11E0">The <ENAMEX type="PERSON_TYPE">Israelis and Palestinians</ENAMEX> have made peace, and the former <ENAMEX type="LOCATION">occupied territories</ENAMEX> have been renamed &quot;<ENAMEX type="LOCATION">Unified Palestine</ENAMEX>&quot;.</sentence>
 				<sentence xml:id="P11E1"><ENAMEX type="LOCATION">Mexico</ENAMEX> is now known as &quot;<ENAMEX type="LOCATION">Aztlán</ENAMEX>&quot;.</sentence>
 				<sentence xml:id="P11E2">Several countries are described as having revised borders due to the &quot;dumping&quot; of convicts into infected zones; these convicts rose to command &quot;powerful fiefdoms&quot; that later became independent states.</sentence>
-				<sentence xml:id="P11E3">A so-called &quot;Pacific Continent&quot; appears to encompass previously uninhabited islands as well as ships rendered immobile due to lack of fuel.</sentence>
+				<sentence xml:id="P11E3">A so-called &quot;<ENAMEX type="LOCATION">Pacific Continent</ENAMEX>&quot; appears to encompass previously uninhabited islands as well as ships rendered immobile due to lack of fuel.</sentence>
 				<sentence xml:id="P11E4">For unknown reasons, the <ENAMEX type="PERSON_TYPE">Saudi Royal Family</ENAMEX> destroyed the oil fields in <ENAMEX type="LOCATION">Saudi Arabia</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P12">
@@ -96,16 +96,16 @@
 				<sentence xml:id="P13E4">Zombies usually reveal their presence by moaning.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P14">
-				<sentence xml:id="P14E0"><ENAMEX type="PERSON">Max Brooks</ENAMEX> (right) with <ENAMEX type="PERSON">George Romero</ENAMEX> at the <ENAMEX type="ORGANISATION">SDCC</ENAMEX> <ENAMEX type="PERIOD">2007</ENAMEX></sentence>
+				<sentence xml:id="P14E0"><ENAMEX type="PERSON">Max Brooks</ENAMEX> (right) with <ENAMEX type="PERSON">George Romero</ENAMEX> at the <ENAMEX type="EVENT">SDCC</ENAMEX> <ENAMEX type="PERIOD">2007</ENAMEX></sentence>
 			</p>
 			<p xml:lang="en" xml:id="P15">
 				<sentence xml:id="P15E0"><ENAMEX type="PERSON">Brooks</ENAMEX> discussed the cultural influences on the novel.</sentence>
 				<sentence xml:id="P15E1">He claimed inspiration from &quot;<ENAMEX type="CREATION">The Good War: An Oral History of World War Two&quot; (1984)</ENAMEX> by <ENAMEX type="PERSON">Studs Terkel</ENAMEX>, stating: &quot;[<ENAMEX type="PERSON">Terkel</ENAMEX>&apos;s book is] an oral history of <ENAMEX type="EVENT">World War II</ENAMEX>.</sentence>
 				<sentence xml:id="P15E2">I read it when I was a teenager and it&apos;s sat with me ever since.</sentence>
 				<sentence xml:id="P15E3">When I sat down to write <ENAMEX type="CREATION">World War Z: An Oral History of the Zombie War</ENAMEX>, I wanted it to be in the vein of an oral history.&quot;</sentence>
-				<sentence xml:id="P15E4"> <ENAMEX type="PERSON">Brooks</ENAMEX> also cited renowned zombie <ENAMEX type="PERSON">film director George A. Romero</ENAMEX> as an influence and criticized <ENAMEX type="CREATION">The Return of the Living Dead</ENAMEX> films: &quot;They cheapen zombies, make them silly and campy.</sentence>
+				<sentence xml:id="P15E4"> <ENAMEX type="PERSON">Brooks</ENAMEX> also cited renowned zombie film director <ENAMEX type="PERSON">George A. Romero</ENAMEX> as an influence and criticized <ENAMEX type="CREATION">The Return of the Living Dead</ENAMEX> films: &quot;They cheapen zombies, make them silly and campy.</sentence>
 				<sentence xml:id="P15E5">They&apos;ve done for <ENAMEX type="CREATION">the living dead</ENAMEX> what the old <ENAMEX type="CREATION">Batman</ENAMEX> TV show did for <ENAMEX type="CREATION">The Dark Knight</ENAMEX>.&quot;</sentence>
-				<sentence xml:id="P15E6"> <ENAMEX type="PERSON">Brooks</ENAMEX> acknowledged making several references to popular culture in the novel, including one to alien robot franchise Transformers, but declined to identify the others so that readers could discover them independently.</sentence>
+				<sentence xml:id="P15E6"> <ENAMEX type="PERSON">Brooks</ENAMEX> acknowledged making several references to popular culture in the novel, including one to alien robot franchise <ENAMEX type="CREATION">Transformers</ENAMEX>, but declined to identify the others so that readers could discover them independently.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P16">
 				<sentence xml:id="P16E0"><ENAMEX type="PERSON">Brooks</ENAMEX> conducted copious research while writing <ENAMEX type="CREATION">World War Z</ENAMEX>. The technology, politics, economics, culture, and military tactics were based on a variety of reference books and consultations with expert sources.</sentence>
