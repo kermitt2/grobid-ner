@@ -33,7 +33,7 @@ The following table describes the 27 named entity classes produced by the model.
 | <a style="text-decorations:none; color:#265C83" href=#organisation> ORGANISATION | organized group of people, with some sort of legal entity and concrete membership | _Alcoholics Anonymous_, _Jewish resistance_, _Polish undergound_ |
 | <a style="text-decorations:none; color:#265C83" href=#period> PERIOD | date, historical era or other time period, time expressions | _January_, &nbsp; <span style="color:#848484">the</span> _2nd half of 2010_, &nbsp; _1985-1989_, &nbsp; _from 1930 to 1945_, &nbsp; _since 1918_, &nbsp; <span style="color:#848484">the</span> _first four years_ |
 | PERSON | first, middle, last names and aliases of people and fictional characters | _John Smith_ |
-| <a style="text-decorations:none; color:#265C83" href=#person_type> PERSON_TYPE | person type or role classified according to group membership | _African-American_, _Asian_, _Conservative_, _Liberal_, _Jews_, _Communist_ |
+| <a style="text-decorations:none; color:#265C83" href=#person_type> PERSON_TYPE | person type or role classified according to group membership | _African-American_, _Asian_, _Conservative_, _Liberal_, _Jews_, _Communist_, <span style="color:#848484">the</span> _British_ <span style="color:#848484">people</span> |
 | PLANT | name of a plant | _Ficus religiosa_ |
 | SPORT_TEAM | sport group or organisation | _The Yankees_ |
 | SUBSTANCE | natural substance | _HCN_, _hydrogen cyanide_, _gold_, _asbestos_ |
