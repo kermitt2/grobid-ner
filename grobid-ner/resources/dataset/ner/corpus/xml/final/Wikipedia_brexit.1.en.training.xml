@@ -155,7 +155,7 @@
 			<p xml:lang="en" xml:id="P31">
 				<sentence xml:id="P31E0">In <ENAMEX type="PERIOD">February 2016</ENAMEX>, <ENAMEX type="PERSON">Cameron</ENAMEX> announced that the Government was to recommend that the <ENAMEX type="LOCATION">UK</ENAMEX> should remain in the <ENAMEX type="INSTITUTION">EU</ENAMEX> and that the referendum would be held on <ENAMEX type="PERIOD">23 June</ENAMEX>, marking the official launch of the campaign.</sentence>
 				<sentence xml:id="P31E1">He also announced that <ENAMEX type="INSTITUTION">Parliament</ENAMEX> would enact secondary legislation relating to the <ENAMEX type="LEGAL">European Union Referendum Act 2015</ENAMEX> on <ENAMEX type="PERIOD">22 February</ENAMEX>.</sentence>
-				<sentence xml:id="P31E2">With the official launch, <ENAMEX type="TITLE">ministers</ENAMEX> of the <ENAMEX type="INSTITUTION">UK Government</ENAMEX> were then free to campaign on either side of the argument in a rare exception to <ENAMEX type="LEGAL">Cabinet collective responsibility</ENAMEX>.</sentence>
+				<sentence xml:id="P31E2">With the official launch, ministers of the <ENAMEX type="INSTITUTION">UK Government</ENAMEX> were then free to campaign on either side of the argument in a rare exception to <ENAMEX type="LEGAL">Cabinet collective responsibility</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P32">
 				<sentence xml:id="P32E0">Eligibility to vote</sentence>
@@ -281,7 +281,7 @@
 				<sentence xml:id="P78E1">Most parties had splits in their members and supporters, with <ENAMEX type="ORGANISATION">Labour, Conservative, Liberal Democrat, UKIP, and Green</ENAMEX> supporters all taking different sides.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P79">
-				<sentence xml:id="P79E0">Cabinet ministers</sentence>
+				<sentence xml:id="P79E0"><ENAMEX type="TITLE">Cabinet ministers</ENAMEX></sentence>
 			</p>
 			<p xml:lang="en" xml:id="P80">
 				<sentence xml:id="P80E0">For the positions of <ENAMEX type="TITLE">backbench MPs</ENAMEX> and other politicians, see Endorsements in the <ENAMEX type="EVENT">United Kingdom European Union membership referendum 2016</ENAMEX>.</sentence>
@@ -304,7 +304,7 @@
 				<sentence xml:id="P84E2"> <ENAMEX type="BUSINESS">RBS</ENAMEX> has warned of potential damage to the economy.</sentence>
 				<sentence xml:id="P84E3"> Furthermore, <ENAMEX type="BUSINESS">HSBC</ENAMEX> and foreign-based banks <ENAMEX type="BUSINESS">JP Morgan and Deutsche Bank</ENAMEX> claim a <ENAMEX type="EVENT">Brexit</ENAMEX> might result in the banks&apos; changing domicile.</sentence>
 				<sentence xml:id="P84E4"> According to <ENAMEX type="BUSINESS">Goldman Sachs</ENAMEX> and the <ENAMEX type="LOCATION">City of London</ENAMEX>&apos;s policy chief, all such factors could impact on the <ENAMEX type="LOCATION">City of London</ENAMEX>&apos;s present status as a <ENAMEX type="NATIONAL">European</ENAMEX> and global market leader in financial services.</sentence>
-				<sentence xml:id="P84E5"> In <ENAMEX type="PERIOD">February 2016</ENAMEX>, leaders of <ENAMEX type="MEASURE">36</ENAMEX> of the <ENAMEX type="UNKNOWN">FTSE 100</ENAMEX> companies, including <ENAMEX type="BUSINESS">Shell, BAE Systems, BT and Rio Tinto</ENAMEX>, officially supported staying in the <ENAMEX type="INSTITUTION">EU</ENAMEX>.</sentence>
+				<sentence xml:id="P84E5"> In <ENAMEX type="PERIOD">February 2016</ENAMEX>, leaders of <ENAMEX type="MEASURE">36</ENAMEX> of the <ENAMEX type="CONCEPT">FTSE 100</ENAMEX> companies, including <ENAMEX type="BUSINESS">Shell, BAE Systems, BT and Rio Tinto</ENAMEX>, officially supported staying in the <ENAMEX type="INSTITUTION">EU</ENAMEX>.</sentence>
 				<sentence xml:id="P84E6"> Moreover, <ENAMEX type="MEASURE">60%</ENAMEX> of the <ENAMEX type="ORGANISATION">Institute of Directorsand</ENAMEX> the <ENAMEX type="ORGANISATION">EEF</ENAMEX> memberships supported staying.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P85">
@@ -341,26 +341,26 @@
 			</p>
 			<p xml:lang="en" xml:id="P91">
 				<sentence xml:id="P91E0">Uncertainty over the referendum result, together with several other factors – <ENAMEX type="LOCATION">US</ENAMEX> interest rates rising, low commodity prices, low <ENAMEX type="INSTITUTION">Eurozone</ENAMEX> growth and concerns over emerging markets such as <ENAMEX type="LOCATION">China</ENAMEX> – contributed to a high level of stock market volatility in <ENAMEX type="PERIOD">January and February 2016</ENAMEX>.</sentence>
-				<sentence xml:id="P91E1"> During this period, the <ENAMEX type="UNKNOWN">FTSE 100</ENAMEX> rose or fell by more than <ENAMEX type="MEASURE">1.5%</ENAMEX> on <ENAMEX type="PERIOD">16 days</ENAMEX>.</sentence>
-				<sentence xml:id="P91E2"> On <ENAMEX type="PERIOD">14 June</ENAMEX>, polls showing that a <ENAMEX type="EVENT">Brexit</ENAMEX> was more likely led to the <ENAMEX type="UNKNOWN">FTSE 100</ENAMEX> falling by <ENAMEX type="MEASURE">2%,</ENAMEX> lost £<ENAMEX type="MEASURE">98 billion</ENAMEX> in value.</sentence>
-				<sentence xml:id="P91E3"> After further polls suggested a move back towards <ENAMEX type="ORGANISATION">Remain</ENAMEX>, the pound and the <ENAMEX type="UNKNOWN">FTSE</ENAMEX> recovered.</sentence>
+				<sentence xml:id="P91E1"> During this period, the <ENAMEX type="CONCEPT">FTSE 100</ENAMEX> rose or fell by more than <ENAMEX type="MEASURE">1.5%</ENAMEX> on <ENAMEX type="PERIOD">16 days</ENAMEX>.</sentence>
+				<sentence xml:id="P91E2"> On <ENAMEX type="PERIOD">14 June</ENAMEX>, polls showing that a <ENAMEX type="EVENT">Brexit</ENAMEX> was more likely led to the <ENAMEX type="CONCEPT">FTSE 100</ENAMEX> falling by <ENAMEX type="MEASURE">2%,</ENAMEX> lost £<ENAMEX type="MEASURE">98 billion</ENAMEX> in value.</sentence>
+				<sentence xml:id="P91E3"> After further polls suggested a move back towards <ENAMEX type="ORGANISATION">Remain</ENAMEX>, the pound and the <ENAMEX type="CONCEPT">FTSE</ENAMEX> recovered.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P92">
-				<sentence xml:id="P92E0">On the day of the referendum, Sterling hit a <ENAMEX type="PERIOD">2016</ENAMEX> high and the <ENAMEX type="UNKNOWN">FTSE 100</ENAMEX> climbed to a <ENAMEX type="PERIOD">2016</ENAMEX> high of $<ENAMEX type="MEASURE">1.5018</ENAMEX> as a new poll suggested a win for the <ENAMEX type="ORGANISATION">Remain campaign</ENAMEX>.</sentence>
+				<sentence xml:id="P92E0">On the day of the referendum, Sterling hit a <ENAMEX type="PERIOD">2016</ENAMEX> high and the <ENAMEX type="CONCEPT">FTSE 100</ENAMEX> climbed to a <ENAMEX type="PERIOD">2016</ENAMEX> high of $<ENAMEX type="MEASURE">1.5018</ENAMEX> as a new poll suggested a win for the <ENAMEX type="ORGANISATION">Remain campaign</ENAMEX>.</sentence>
 				<sentence xml:id="P92E1"> Initial results suggested a vote for &apos;remain&apos; and the value of the pound held its value.</sentence>
 				<sentence xml:id="P92E2">However, when the result for <ENAMEX type="LOCATION">Sunderland</ENAMEX> was announced, it indicated an unexpected swing to &apos;leave&apos;.</sentence>
 				<sentence xml:id="P92E3">Subsequent results appeared to confirm this swing and sterling fell in value to $<ENAMEX type="MEASURE">1.3777</ENAMEX>, its lowest level <ENAMEX type="PERIOD">since 1985</ENAMEX>.</sentence>
 				<sentence xml:id="P92E4">However, the <ENAMEX type="PERIOD">following Monday</ENAMEX> when the markets opened, Sterling fell to a new low of $<ENAMEX type="MEASURE">1.32</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P93">
-				<sentence xml:id="P93E0">When the <ENAMEX type="BUSINESS">London Stock Exchange</ENAMEX> opened on the <ENAMEX type="PERIOD">morning of 24 June</ENAMEX>, the <ENAMEX type="UNKNOWN">FTSE 100</ENAMEX> fell from <ENAMEX type="MEASURE">6338.10</ENAMEX> to <ENAMEX type="MEASURE">5806.13</ENAMEX> in the <ENAMEX type="PERIOD">first ten minutes</ENAMEX> of trading.</sentence>
+				<sentence xml:id="P93E0">When the <ENAMEX type="BUSINESS">London Stock Exchange</ENAMEX> opened on the <ENAMEX type="PERIOD">morning of 24 June</ENAMEX>, the <ENAMEX type="CONCEPT">FTSE 100</ENAMEX> fell from <ENAMEX type="MEASURE">6338.10</ENAMEX> to <ENAMEX type="MEASURE">5806.13</ENAMEX> in the <ENAMEX type="PERIOD">first ten minutes</ENAMEX> of trading.</sentence>
 				<sentence xml:id="P93E1">It recovered to <ENAMEX type="MEASURE">6091.27</ENAMEX> after a further <ENAMEX type="PERIOD">90 minutes</ENAMEX> before further recovering to <ENAMEX type="MEASURE">6162.97</ENAMEX> by the <ENAMEX type="PERIOD">end of the day</ENAMEX>&apos;s trading.</sentence>
-				<sentence xml:id="P93E2">When the markets reopened the <ENAMEX type="PERIOD">Following Monday</ENAMEX>, the <ENAMEX type="UNKNOWN">FTSE 100</ENAMEX> showed a steady decline losing <ENAMEX type="MEASURE">over 2%</ENAMEX> by <ENAMEX type="PERIOD">mid-afternoon</ENAMEX>.</sentence>
-				<sentence xml:id="P93E3"> Upon opening later on the <ENAMEX type="PERIOD">Friday after the referendum</ENAMEX>, the <ENAMEX type="UNKNOWN">US Dow Jones Industrial Average</ENAMEX> dropped nearly <ENAMEX type="MEASURE">450</ENAMEX> points or about <ENAMEX type="MEASURE">2½%</ENAMEX> in less than <ENAMEX type="PERIOD">half an hour</ENAMEX>.</sentence>
+				<sentence xml:id="P93E2">When the markets reopened the <ENAMEX type="PERIOD">Following Monday</ENAMEX>, the <ENAMEX type="CONCEPT">FTSE 100</ENAMEX> showed a steady decline losing <ENAMEX type="MEASURE">over 2%</ENAMEX> by <ENAMEX type="PERIOD">mid-afternoon</ENAMEX>.</sentence>
+				<sentence xml:id="P93E3"> Upon opening later on the <ENAMEX type="PERIOD">Friday after the referendum</ENAMEX>, the <ENAMEX type="CONCEPT">US Dow Jones Industrial Average</ENAMEX> dropped nearly <ENAMEX type="MEASURE">450</ENAMEX> points or about <ENAMEX type="MEASURE">2½%</ENAMEX> in less than <ENAMEX type="PERIOD">half an hour</ENAMEX>.</sentence>
 				<sentence xml:id="P93E4">The <ENAMEX type="MEDIA">Associated Press</ENAMEX> called the sudden worldwide stock market decline a stock market crash.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P94">
-				<sentence xml:id="P94E0">By <ENAMEX type="PERIOD">mid afternoon on 27 June 2016</ENAMEX>, the sterling was at a <ENAMEX type="MEASURE">31</ENAMEX>-year low, having fallen <ENAMEX type="MEASURE">11%</ENAMEX> in <ENAMEX type="MEASURE">two</ENAMEX> trading days and the <ENAMEX type="UNKNOWN">FTSE 100</ENAMEX> had surrendered £<ENAMEX type="MEASURE">85 billion</ENAMEX>, though by <ENAMEX type="PERIOD">29 June</ENAMEX> it had recovered all its losses since the markets closed on polling day.</sentence>
+				<sentence xml:id="P94E0">By <ENAMEX type="PERIOD">mid afternoon on 27 June 2016</ENAMEX>, the sterling was at a <ENAMEX type="MEASURE">31</ENAMEX>-year low, having fallen <ENAMEX type="MEASURE">11%</ENAMEX> in <ENAMEX type="MEASURE">two</ENAMEX> trading days and the <ENAMEX type="CONCEPT">FTSE 100</ENAMEX> had surrendered £<ENAMEX type="MEASURE">85 billion</ENAMEX>, though by <ENAMEX type="PERIOD">29 June</ENAMEX> it had recovered all its losses since the markets closed on polling day.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P95">
 				<sentence xml:id="P95E0"><ENAMEX type="NATIONAL">European</ENAMEX> responses</sentence>
@@ -435,7 +435,7 @@
 			</p>
 			<p xml:lang="en" xml:id="P115">
 				<sentence xml:id="P115E0"><ENAMEX type="PERSON">Russian President Vladimir Putin</ENAMEX> said: &quot;I want to say it is none of our business, it is the business of the people of the <ENAMEX type="LOCATION">UK</ENAMEX>.&quot;</sentence>
-				<sentence xml:id="P115E1"> <ENAMEX type="PERSON">Maria Zakharova, the official Russian foreign ministry spokesperson</ENAMEX>, said: &quot;<ENAMEX type="LOCATION">Russia</ENAMEX> has nothing to do with <ENAMEX type="EVENT">Brexit</ENAMEX>.</sentence>
+				<sentence xml:id="P115E1"> <ENAMEX type="PERSON">Maria Zakharova</ENAMEX>, the official <ENAMEX type="TITLE">Russian foreign ministry</ENAMEX> spokesperson, said: &quot;<ENAMEX type="LOCATION">Russia</ENAMEX> has nothing to do with <ENAMEX type="EVENT">Brexit</ENAMEX>.</sentence>
 				<sentence xml:id="P115E2">We are not involved in this process in any way.</sentence>
 				<sentence xml:id="P115E3">We don’t have any interest in it.&quot;</sentence>
 			</p>
