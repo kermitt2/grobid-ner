@@ -38,7 +38,7 @@ public class NERParserTest extends EngineMockTest {
 
     @Test
     public void testExtractNE_fr() throws Exception {
-        String text = IOUtils.toString(this.getClass().getResourceAsStream("/test.fr.txt"));
+        String text = IOUtils.toString(this.getClass().getResourceAsStream("/test.fr.txt"), UTF_8);
         List<Entity> entities = target.extractNE(text);
 
         System.out.println("\n" + text);
@@ -55,7 +55,7 @@ public class NERParserTest extends EngineMockTest {
 
     @Test
     public void testCreateTrainingTest_simpleParagraph() throws Exception {
-        String text = IOUtils.toString(this.getClass().getResourceAsStream("/test.en.txt"));
+        String text = IOUtils.toString(this.getClass().getResourceAsStream("/test.en.txt"), UTF_8);
         NERParser englishNER =  target.getParser("en");
         String test = englishNER.createCONNLTrainingFromText(text);
 

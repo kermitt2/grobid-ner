@@ -29,6 +29,7 @@ import java.util.List;
 import java.util.Properties;
 import java.util.StringTokenizer;
 
+import static java.nio.charset.StandardCharsets.UTF_8;
 import static org.apache.commons.lang3.StringUtils.isBlank;
 import static org.apache.commons.lang3.StringUtils.trim;
 
@@ -230,7 +231,7 @@ public class AssembleNERCorpus {
                     LOGGER.error("Invalid file path: " + reutersFileTxt);
                     continue;
                 }
-                String content = FileUtils.readFileToString(reutersFileTxt, "UTF-8");
+                String content = FileUtils.readFileToString(reutersFileTxt, UTF_8);
                 //System.out.println(content);
 
                 try {

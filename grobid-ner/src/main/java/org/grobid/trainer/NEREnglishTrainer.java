@@ -15,6 +15,7 @@ import org.grobid.core.lang.Language;
 import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.lexicon.NERLexicon;
 import org.grobid.core.mock.MockContext;
+import org.grobid.core.utilities.GrobidHome;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.OffsetPosition;
 import org.grobid.trainer.stax.CustomEMEXFormatStaxHandler;
@@ -22,6 +23,8 @@ import org.grobid.trainer.stax.StaxUtils;
 
 import javax.xml.stream.XMLStreamException;
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.*;
 
 import static org.apache.commons.lang3.StringUtils.isBlank;
@@ -56,9 +59,12 @@ public class NEREnglishTrainer extends AbstractTrainer {
         Properties prop = new Properties();
         InputStream input = null;
         try {
-            input = new FileInputStream("src/main/resources/grobid-ner.properties");
+            input = this.getClass().getResourceAsStream("/grobid-ner.properties");
             prop.load(input);
             nerCorpusPath = prop.getProperty("grobid.ner.corpus.path");
+            if(!Files.exists(Paths.get(nerCorpusPath))){
+                throw new GrobidResourceException("Corpus path doesn't exists.");
+            }
         } catch (IOException ex) {
             throw new GrobidResourceException("An exception occurred when accessing/reading the grobid-ner property file.", ex);
         } finally {
@@ -288,10 +294,11 @@ public class NEREnglishTrainer extends AbstractTrainer {
      */
     public static void main(String[] args) {
         try {
-            String pGrobidHome = "../../grobid-home";
-            String pGrobidProperties = "../../grobid-home/config/grobid.properties";
 
-            MockContext.setInitialContext(pGrobidHome, pGrobidProperties);
+            GrobidHome.findGrobidHome();
+
+            MockContext.setInitialContext(GrobidProperties.getGrobidHomePath().getAbsolutePath(),
+                    GrobidProperties.getGrobidPropertiesPath().getAbsolutePath());
             GrobidProperties.getInstance();
 
             NEREnglishTrainer trainer = new NEREnglishTrainer();

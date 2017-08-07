@@ -1,28 +1,23 @@
 package org.grobid.core.engines;
 
+import edu.emory.mathcs.nlp.component.tokenizer.EnglishTokenizer;
+import edu.emory.mathcs.nlp.component.tokenizer.Tokenizer;
+import edu.emory.mathcs.nlp.component.tokenizer.token.Token;
+import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.io.FileUtils;
 import org.grobid.core.GrobidModels;
 import org.grobid.core.data.Entity;
 import org.grobid.core.data.Sense;
 import org.grobid.core.data.Sentence;
-import org.grobid.core.exceptions.GrobidResourceException;
-import org.grobid.core.engines.tagging.GenericTaggerUtils;
+import org.grobid.core.engines.label.TaggingLabel;
 import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.features.FeaturesVectorNER;
-import org.grobid.core.lexicon.Lexicon;
+import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.lexicon.LexiconPositionsIndexes;
 import org.grobid.core.lexicon.NERLexicon;
-import org.grobid.core.lang.Language;
-import org.grobid.core.utilities.Pair;
-import org.grobid.core.utilities.LanguageUtilities;
-import org.grobid.core.utilities.TextUtilities;
-import org.grobid.core.utilities.OffsetPosition;
-import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.tokenization.TaggingTokenCluster;
 import org.grobid.core.tokenization.TaggingTokenClusteror;
-import org.grobid.core.utilities.LayoutTokensUtil;
-import org.grobid.core.utilities.BoundingBoxCalculator;
-import org.grobid.core.engines.label.TaggingLabel;
+import org.grobid.core.utilities.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -30,12 +25,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.googlecode.clearnlp.component.AbstractComponent;
-import com.googlecode.clearnlp.segmentation.AbstractSegmenter;
-import com.googlecode.clearnlp.engine.EngineGetter;
-import com.googlecode.clearnlp.reader.AbstractReader;
-import com.googlecode.clearnlp.tokenization.AbstractTokenizer;
-
+import static java.nio.charset.StandardCharsets.UTF_8;
 import static org.apache.commons.lang3.StringUtils.isEmpty;
 
 /**
@@ -47,7 +37,11 @@ public class NERParserCommon {
 
     private static Logger LOGGER = LoggerFactory.getLogger(NERParserCommon.class);
 
-    static public String toFeatureVector(List<String> tokens, LexiconPositionsIndexes positionsIndexes) {
+    // some pieces of XML for generating training data
+    public final static String XML_OUTPUT_HEADER = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<corpus>\n\t<subcorpus>\n";
+    public final static String XML_OUTPUT_FOOTER = "\t</subcorpus>\n</corpus>\n";
+
+    public static String toFeatureVector(List<String> tokens, LexiconPositionsIndexes positionsIndexes) {
         StringBuffer ress = new StringBuffer();
         int posit = 0; // keep track of the position index in the list of positions
 
@@ -83,7 +77,7 @@ public class NERParserCommon {
         return ress.toString();
     }
 
-    static public String toFeatureVectorLayout(List<LayoutToken> tokens, LexiconPositionsIndexes positionsIndexes) {
+    public static String toFeatureVectorLayout(List<LayoutToken> tokens, LexiconPositionsIndexes positionsIndexes) {
         StringBuffer ress = new StringBuffer();
         int posit = 0; // keep track of the position index in the list of positions
 
@@ -169,14 +163,8 @@ public class NERParserCommon {
             currentEntity = new Entity();
             currentEntity.setRawName(clusterContent);
             currentEntity.setTypeFromString(NERLexicon.getPlainLabel(clusterLabel.getLabel()));
-            //currentEntity.setStartTokenPos();
-            //currentEntity.setEndTokenPos();
             currentEntity.setBoundingBoxes(BoundingBoxCalculator.calculate(cluster.concatTokens()));
             entities.add(currentEntity);
-
-            /*else {
-                LOGGER.error("Warning: unexpected figure model label - " + clusterLabel + " for " + clusterContent);
-            }*/
         }
 
         return entities;
@@ -290,12 +278,12 @@ public class NERParserCommon {
      * <p>
      * Input file should be a text file. Each file is a paragraph entry that it's normally processed by NERD.
      */
-    static public StringBuilder createTraining(String inputFile,
+    public StringBuilder createTraining(String inputFile,
                                String outputPath,
                                String fileName,
                                NERParser parser, 
                                String lang,
-                               AbstractTokenizer tokenizer) throws Exception {
+                               Tokenizer tokenizer) throws Exception {
         File file = new File(inputFile);
         if (!file.exists()) {
             throw new GrobidException("Cannot create training data because input file can not be accessed: " + inputFile);
@@ -303,7 +291,7 @@ public class NERParserCommon {
 
         StringBuilder sb = new StringBuilder();
         if (inputFile.endsWith(".txt") || inputFile.endsWith(".TXT")) {
-            sb.append(xmlHeader);
+            sb.append(XML_OUTPUT_HEADER);
 
             // we use the name of the file as document ID, removing spaces, 
             // note that it could lead to non wellformed XML for weird file names
@@ -311,12 +299,12 @@ public class NERParserCommon {
             createTrainingText(file, parser, lang, tokenizer, sb);
             sb.append("\t\t</document>\n");
 
-            sb.append(xmlEnd);
+            sb.append(XML_OUTPUT_FOOTER);
         }
 
         if (sb.length() > 0) {
             try {
-                FileUtils.writeStringToFile(new File(outputPath), sb.toString());
+                FileUtils.writeStringToFile(new File(outputPath), sb.toString(), UTF_8);
             } catch (IOException e) {
                 throw new GrobidException("Cannot create training data because output file can not be accessed: " + outputPath, e);
             }
@@ -324,8 +312,8 @@ public class NERParserCommon {
         return sb;
     }
 
-    static public StringBuilder createTrainingText(File file, NERParser parser, String lang, AbstractTokenizer tokenizer, StringBuilder sb) throws IOException {
-        String text = FileUtils.readFileToString(file);
+    public StringBuilder createTrainingText(File file, NERParser parser, String lang, Tokenizer tokenizer, StringBuilder sb) throws IOException {
+        String text = FileUtils.readFileToString(file, UTF_8);
 
         if (isEmpty(text))
             return null;
@@ -345,9 +333,7 @@ public class NERParserCommon {
             List<Entity> entities = parser.extractNE(theText);
             //int currentEntityIndex = 0;
 
-            // let's segment in sentences with ClearNLP (to be updated to the newest NLP4J !)
-            // this is only outputed for readability
-            List<Sentence> sentences = NERParserCommon.sentenceSegmentation(theText, lang, tokenizer);
+            List<Sentence> sentences = sentenceSegmentation(theText, tokenizer);
             int sentenceIndex = 0;
             for(int s=0; s < sentences.size(); s++) {
                 Sentence sentence = sentences.get(s);
@@ -410,7 +396,7 @@ public class NERParserCommon {
         return sb;
     }
 
-    static public int createTrainingBatch(String inputDirectory,
+    public int createTrainingBatch(String inputDirectory,
                                    String outputDirectory,
                                    NERParser parser,
                                    String lang) throws IOException {
@@ -438,12 +424,7 @@ public class NERParserCommon {
 
             LOGGER.info(refFiles.length + " files to be processed.");
 
-            // ClearParser components for sentence segmentation
-            // slow down a bit at launch, but it is used only for generating more readable training
-            String dictionaryFile = "data/clearNLP/dictionary-1.3.1.zip";
-            LOGGER.info("Loading dictionary file for sentence segmentation: " + dictionaryFile);
-            AbstractTokenizer tokenizer = EngineGetter.getTokenizer(lang, new FileInputStream(dictionaryFile));
-            LOGGER.info("End of loading dictionary file");
+            Tokenizer tokenizer = new EnglishTokenizer();
 
             for (final File file : refFiles) {
                 try {
@@ -462,51 +443,29 @@ public class NERParserCommon {
         }
     }
 
-    // some pieces of XML for generating training data
-    public static String xmlHeader = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<corpus>\n\t<subcorpus>\n";
-    public static String xmlEnd = "\t</subcorpus>\n</corpus>\n";
-
-    public static List<Sentence> sentenceSegmentation(String text, String language, AbstractTokenizer tokenizer) {
-        AbstractSegmenter segmenter = EngineGetter.getSegmenter(language, tokenizer);
-        // convert String into InputStream
-        InputStream is = new ByteArrayInputStream(text.getBytes());
-        // read it with BufferedReader
-        BufferedReader br = new BufferedReader(new InputStreamReader(is));
-        List<List<String>> sentences = segmenter.getSentences(br);
-        List<Sentence> results = new ArrayList<Sentence>();
+    public List<Sentence> sentenceSegmentation(String text, Tokenizer tokenizer) {
+        List<List<Token>> sentences = tokenizer.segmentize(text);
+        List<Sentence> results = new ArrayList<>();
         
-        if ( (sentences == null) || (sentences.size() == 0) ) {
-            // there is some text but not in a state so that a sentence at least can be
-            // identified by the sentence segmenter, so we parse it as a single sentence
+        if (CollectionUtils.isEmpty(sentences)) {
+            // The text is not identified into any sentences, return it as a single sentence
             Sentence sentence = new Sentence();
-            OffsetPosition pos = new OffsetPosition();
-            pos.start = 0;
-            pos.end = text.length();
-            sentence.setOffsets(pos);
+            sentence.setOffsets(new OffsetPosition(0, text.length()));
             results.add(sentence);
             return results; 
         }
         
         // we need to realign with the original sentences, so we have to match it from the text 
         // to be parsed based on the tokenization
-        int offSetSentence = 0;  
-        //List<List<String>> trueSentences = new ArrayList<List<String>>();
-        for(List<String> theSentence : sentences) {  
-            int next = offSetSentence;
-            for(String token : theSentence) {                   
-                next = text.indexOf(token, next);
-                next = next+token.length();
-            } 
-            List<String> dummy = new ArrayList<String>();                    
-            //dummy.add(text.substring(offSetSentence, next));   
-            //trueSentences.add(dummy);   
-            Sentence sentence = new Sentence();
-            OffsetPosition pos = new OffsetPosition();
-            pos.start = offSetSentence;
-            pos.end = next;
-            sentence.setOffsets(pos);
-            results.add(sentence);
-            offSetSentence = next;
+
+        for(List<Token> sentence : sentences) {
+            Token firstToken = sentence.get(0);
+            Token lastToken = sentence.get(sentence.size()-1);
+
+            Sentence outputSentence = new Sentence();
+
+            outputSentence.setOffsets(new OffsetPosition(firstToken.getStartOffset(), lastToken.getEndOffset()));
+            results.add(outputSentence);
         } 
         return results; 
     }

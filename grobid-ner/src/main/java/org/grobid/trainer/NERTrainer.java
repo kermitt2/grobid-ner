@@ -1,5 +1,6 @@
 package org.grobid.trainer;
 
+import org.apache.commons.io.IOUtils;
 import org.grobid.core.GrobidModels;
 import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.exceptions.GrobidResourceException;
@@ -68,14 +69,7 @@ public class NERTrainer extends AbstractTrainer {
 				"An exception occured when accessing/reading the grobid-ner property file.", ex);
 		} 
 		finally {
-			if (input != null) {
-				try {
-					input.close();
-				} 
-				catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
+			IOUtils.closeQuietly(input);
 		}
     }
 
@@ -353,62 +347,6 @@ public class NERTrainer extends AbstractTrainer {
 	}
 	
 
-	private int processReutersCorpus(Writer writerTraining, Writer writerEvaluation, double splitRatio) {
-		int res = 0;
-		try {
-			File corpusDir = new File(reutersPath);
-			System.out.println("Path to Reuters corpus: " + reutersPath);
-			if (!corpusDir.exists()) {
-				throw new GrobidException("Cannot start training, because corpus resource folder is not correctly set : " 
-					+ reutersPath);
-			}
-			
-			File[] refFiles = corpusDir.listFiles(new FilenameFilter() {
-                public boolean accept(File dir, String name) {
-                    return (name.endsWith(".zip"));
-                }
-            });
-
-			System.out.println(refFiles.length + " reuters zip files");
-
-            if (refFiles == null) {
-                return 0;
-            }
-			for (File thefile : refFiles) {	
-				// we ignore the files in the core set
-				if (coreSet.contains(thefile.getName().replace(".zip", ""))) {
-					continue;
-				}
-				ZipFile zipFile = new ZipFile(thefile);
-				System.out.println(thefile.getPath());
-			    Enumeration<? extends ZipEntry> entries = zipFile.entries();
-			    while(entries.hasMoreElements()) {
-			        ZipEntry entry = entries.nextElement();
-			        InputStream xmlStream = zipFile.getInputStream(entry);
-			
-					res += processReutersCorpus(xmlStream, entry, writerTraining, writerEvaluation, splitRatio);
-					xmlStream.close();
-					
-					// as the number of files might be too important for development and debugging, 
-					// we introduce an optional limit 
-					if ( (LIMIT != -1) && (res > LIMIT) ) {
-						break;
-					}
-			    }
-				if ( (GLOBAL_LIMIT != -1) && (res > GLOBAL_LIMIT) ) {
-					break;
-				}
-			}	
-		}
-		catch (IOException ex) {
-			throw new GrobidResourceException(
-				"An exception occured when accessing/reading the Reuters corpus zip files.", ex);
-		} 
-		finally {
-		}
-		return res;
-	}
-	
 	private int processReutersCorpus(InputStream currentStream, 
 									 ZipEntry entry,
 									 Writer writerTraining, 
@@ -543,11 +481,6 @@ System.out.println(fileName);
 						localOrgFormPositions = orgFormPositions.get(sentence);
 				}
 				
-				/*int ind = line.indexOf("\t");
-				if (ind == -1) 
-				 	ind = line.indexOf(" ");
-				if (ind != -1) {		
-				}*/
 				
 				// do we have a unit term at position posit?
 				if ( (localLocationPositions != null) && (localLocationPositions.size() > 0) ) {
@@ -700,8 +633,8 @@ System.out.println(fileName);
      */
     public static void main(String[] args) {
 		try {
-			String pGrobidHome = "../grobid-home";
-			String pGrobidProperties = "../grobid-home/config/grobid.properties";
+			String pGrobidHome = "../../grobid-home";
+			String pGrobidProperties = "../../grobid-home/config/grobid.properties";
 		
 			MockContext.setInitialContext(pGrobidHome, pGrobidProperties);
 		    GrobidProperties.getInstance();

@@ -9,6 +9,8 @@ import org.junit.Test;
 import java.io.File;
 import java.util.List;
 
+import static java.nio.charset.StandardCharsets.UTF_8;
+
 /**
  * @author Patrice Lopez
  */
@@ -32,7 +34,7 @@ public class SenseTaggerTest extends EngineMockTest {
         if (!textFile.exists()) {
             throw new GrobidException("Cannot start test, because test resource folder is not correctly set.");
         }
-        String text = FileUtils.readFileToString(textFile);
+        String text = FileUtils.readFileToString(textFile, UTF_8);
 
         SenseTagger tagger = new SenseTagger();
 

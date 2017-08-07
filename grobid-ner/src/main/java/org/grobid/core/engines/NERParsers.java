@@ -119,7 +119,7 @@ public class NERParsers {
             throw new GrobidResourceException("The automatically identified labnguage is currently not supported by grobid-ner: " + 
                 lang);
         }
-        return NERParserCommon.createTrainingBatch(inputDirectory, outputDirectory, parser, lang);
+        return new NERParserCommon().createTrainingBatch(inputDirectory, outputDirectory, parser, lang);
     }
 
     public NERParser getParser(String lang) {
