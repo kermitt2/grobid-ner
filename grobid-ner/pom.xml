@@ -149,7 +149,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>org.grobid.trainer.TrainerRunner</mainClass>
+							<mainClass>org.grobid.core.main.batch.NERMain</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
