@@ -44,7 +44,7 @@
 		<dependency>
 			<groupId>org.grobid</groupId>
 			<artifactId>grobid-core</artifactId>
-			<version>0.4.2</version>
+			<version>0.4.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.grobid</groupId>
@@ -124,9 +124,9 @@
             <version>3.1.4</version>
         </dependency>
         <dependency>
-            <groupId>org.codehaus.woodstox</groupId>
-            <artifactId>woodstox-core-asl</artifactId>
-            <version>4.4.0</version>
+            <groupId>com.fasterxml.woodstox</groupId>
+            <artifactId>woodstox-core</artifactId>
+            <version>5.0.3</version>
         </dependency>
 
 		<dependency>

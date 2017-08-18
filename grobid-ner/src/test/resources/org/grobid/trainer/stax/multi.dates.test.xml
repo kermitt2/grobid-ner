@@ -1,0 +1,10 @@
+<dates>
+    <measure type="interval"><date from-iso="1943-05-01">May 1 1943</date> - <date to-iso="1944-06-30">July 30 1944</date></measure>
+    <measure type="value">"<date when="1943-09-28">September 28 1943</date></measure>
+    <measure type="list"><date when="1942-07-27">1942-07-27</date>; <date when="1944-09-04">1944-09-04</date></measure>
+    <measure type="interval">until <date to-iso="1946-11-21">23/01/1946</date></measure>
+    <measure type="interval">starting from <date from-iso="1946-11-21">23/01/1946</date></measure>
+    <measure type="value"><date>10-11-2012</date></measure>
+    <measure type="interval">from <date type="from">2012</date> to <date type="to">2013</date></measure>
+    <measure type="list">with the following years: <date>2012</date>, <date>2013</date>, <date>2015</date></measure>
+</dates>

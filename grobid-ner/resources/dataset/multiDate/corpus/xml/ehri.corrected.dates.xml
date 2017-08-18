@@ -1,0 +1,596 @@
+<dates>
+    <measure type="value">"<date>July 21 1943</date></measure>
+    <measure type="value"><date>March 3 1944</date></measure>
+    <measure type="value"><date>May 14 1943</date></measure>
+    <measure type="value"><date>September 9 1944</date></measure>
+    <measure type="value"><date>April 21 1945</date></measure>
+    <measure type="value"><date>April 27 1945</date></measure>
+    <measure type="value"><date>April 27 1945</date></measure>
+    <measure type="value">"<date>April 22 1945</date></measure>
+    <measure type="value"><date>April 16 1945</date></measure>
+    <measure type="value"><date>April 15 1945</date></measure>
+    <measure type="value"><date>April 1945</date></measure>
+    <measure type="value"><date>April 22 1945</date></measure>
+    <measure type="value"><date>April 23 1945</date></measure>
+    <measure type="value"><date>April 14 1945</date></measure>
+    <measure type="value"><date>April 21 1945</date></measure>
+    <measure type="value"><date>April 25 1945</date></measure>
+    <measure type="value">"<date>February 6 1943</date></measure>
+    <measure type="value"><date>April 15 1945</date></measure>
+    <measure type="value"><date>March 7 1944</date></measure>
+    <measure type="value"><date>April 24 1945</date></measure>
+    <measure type="value"><date>April 14 1945</date></measure>
+    <measure type="value"><date>April 21 1945</date></measure>
+    <measure type="value"><date>1944</date></measure>
+    <measure type="value"><date>1942</date></measure>
+    <measure type="interval"><date type="from">1900</date>-<date type="to">1950</date></measure>
+    <measure type="value">"<date>1941-11-25</date></measure>
+    <measure type="value"><date>1800-2000</date></measure>
+    <measure type="value">"<date>1941-11-25</date></measure>
+    <measure type="value">"<date>1941-11-25</date></measure>
+    <measure type="value"><date>1880-2000</date></measure>
+    <measure type="value">"<date>1940-10-28</date></measure>
+    <measure type="interval"><date type="from">1941</date>-<date type="to">1957</date></measure>
+    <measure type="value">"<date>1942-08-01</date></measure>
+    <measure type="value"><date>1850-1950</date></measure>
+    <measure type="list"><date>1942-07-27</date>; <date>1944-09-04</date></measure>
+    <measure type="list"><date>1940-10-28</date>; <date>1944-09-04</date></measure>
+    <measure type="interval">"(-<date type="to">1947</date>)</measure>
+    <measure type="interval">"(-<date type="to">1948</date></measure>
+    <measure type="interval">"(-<date type="to">1952</date>)</measure>
+    <measure type="interval">"(-<date type="to">1961</date>)</measure>
+    <measure type="interval">"(-<date type="to">1969</date>)</measure>
+    <measure type="interval">"(-<date type="to">1979</date>)</measure>
+    <measure type="interval">"(<date type="from">1806</date>-<date type="to">1807</date>)</measure>
+    <measure type="interval"><date type="from">1925</date>-<date type="to">1945</date></measure>
+    <measure type="interval">"(<date type="from">1811</date>-)</measure>
+    <measure type="value">"(<date>1822</date></measure>
+    <measure type="value">"(<date>1845</date>)</measure>
+    <measure type="interval"><date type="from">1870</date>-<date type="to">1950</date></measure>
+    <measure type="interval">"(<date type="from">1851</date>-<date type="to">1872</date>)</measure>
+    <measure type="interval"><date type="from">1933</date>-<date type="to">1943</date></measure>
+    <measure type="value">"(<date>1862</date>)</measure>
+    <measure type="interval"><date type="from">1878</date>-<date type="to">1945</date></measure>
+    <measure type="interval">"(<date type="from">1872</date>-<date type="to">1913)</date></measure>
+    <measure type="interval">"(<date type="from">1877</date>-<date type="to">1918)</date></measure>
+    <measure type="value">"(<date>1883</date>)</measure>
+    <measure type="interval">"(<date type="from">1893)</date>-)</measure>
+    <measure type="value">"(<date type="from">1902</date>-)</measure>
+    <measure type="value">"(<date>1900</date>)</measure>
+    <measure type="value">"(<date>1904</date>)</measure>
+    <measure type="value">"(<date>1908</date>)</measure>
+    <measure type="value">"(<date>1911</date>)</measure>
+    <measure type="value">"(<date>1914</date>)</measure>
+    <measure type="value">"(<date>1917</date>)</measure>
+    <measure type="value">"(<date>1920</date>)</measure>
+    <measure type="value">"(<date>1922</date>)</measure>
+    <measure type="value">(<date>1952</date></measure>
+    <measure type="interval"><date type="from">1923</date>-<date type="to">1948</date></measure>
+    <measure type="interval"><date type="from">1916</date>-<date type="to">1934</date></measure>
+    <measure type="interval"><date type="from">1933</date>-<date type="to">1945</date></measure>
+    <measure type="interval"><date type="from">1937</date>-<date type="to">1945</date></measure>
+    <measure type="interval"><date type="from">1936</date>-<date type="to">1945</date></measure>
+    <measure type="interval"><date type="from">1933</date>-<date type="to">1945</date></measure>
+    <measure type="interval"><date type="from">1929</date>-<date type="to">1939</date></measure>
+    <measure type="interval"><date type="from">1937</date>-<date type="to">1945</date></measure>
+    <measure type="interval">"<date type="from">1774</date>-<date type="to">1990</date></measure>
+    <measure type="interval">"<date type="from">1834</date>-<date type="to">1836</date></measure>
+    <measure type="interval">"<date type="from">1866</date>-<date type="to">1952</date></measure>
+    <measure type="interval">"<date type="from">1871</date>-<date type="to">1872</date></measure>
+    <measure type="interval">"<date type="from">1881</date>-<date type="to">1945</date></measure>
+    <measure type="interval">"<date type="from">1882</date>-<date type="to">nach</date></measure>
+    <measure type="interval">"<date type="from">1886</date>-<date type="to">1924</date></measure>
+    <measure type="interval">"<date type="from">1892</date>-<date type="to">1961</date></measure>
+    <measure type="interval">"<date type="from">1896</date>-<date type="to">1897</date></measure>
+    <measure type="interval">"(<date type="from">1904</date>-<date type="to">1918)</date></measure>
+    <measure type="interval">"(<date type="from">1908</date>-<date type="to">1910)</date></measure>
+    <measure type="interval">"(<date type="from">1914</date>-<date type="to">1916)</date></measure>
+    <measure type="interval">"(<date type="from">1914</date>-<date type="to">1918)</date></measure>
+    <measure type="interval">"(<date type="from">1937</date>-<date type="to">1939)</date></measure>
+    <measure type="interval">"(<date type="from">1938</date>-<date type="to">1941)</date></measure>
+    <measure type="interval">"(<date type="from">1946</date>-<date type="to">1947)</date></measure>
+    <measure type="interval">"(<date type="from">1946</date>-<date type="to">1948)</date></measure>
+    <measure type="interval">"(<date type="from">1946</date>-<date type="to">1980)</date></measure>
+    <measure type="interval">"(<date type="from">1927</date>-<date type="to">1932)</date></measure>
+    <measure type="interval">"(<date type="from">1933</date>-<date type="to">1937)</date></measure>
+    <measure type="interval">"(<date type="from">1947</date>/<date type="to">1948)</date></measure>
+    <measure type="value">"(<date type="from">1913</date>-)</measure>
+    <measure type="value">"(<date type="from">1924</date>-)</measure>
+    <measure type="value">"(<date type="from">1925</date>-)</measure>
+    <measure type="value">"(<date type="from">1926</date>-)</measure>
+    <measure type="value">"(<date type="from">1931</date>-)</measure>
+    <measure type="value">"(<date type="from">1933</date>-)</measure>
+    <measure type="value">"(<date type="from">1936</date>-)</measure>
+    <measure type="value">"(<date type="from">1938</date>-)</measure>
+    <measure type="interval"><date type="from">1926</date>-<date type="to">1944</date></measure>
+    <measure type="value">"(<date>1926</date>)</measure>
+    <measure type="value">"(<date>1926</date>)</measure>
+    <measure type="value">"(<date>1933</date>)</measure>
+    <measure type="value">"(<date>1939</date>)</measure>
+    <measure type="value">"(<date>1956</date>)</measure>
+    <measure type="value">"(<date>1958</date>)</measure>
+    <measure type="interval"><date type="from">1940</date>-<date type="to">1944</date></measure>
+    <measure type="interval">"(<date type="from">1947</date>-<date type="to">1955</date>)</measure>
+    <measure type="interval"><date type="from">1942</date>-<date type="to">1945</date></measure>
+    <measure type="interval">"<date type="from">03.</date>/<date type="to">04.01.42</date></measure>
+    <measure type="interval">"<date type="from">08.12.1942</date>-<date type="to">31.12.1942</date></measure>
+    <measure type="value">"<date>03.07.1944</date></measure>
+    <measure type="value">"<date>15-06-1942</date></measure>
+    <measure type="value">"<date>18.08.1944</date></measure>
+    <measure type="value">"<date>1846</date></measure>
+    <measure type="interval">"<date type="from">1863</date>-<date type="to">1944</date></measure>
+    <measure type="value">(<date>1966</date>)</measure>
+    <measure type="value">"<date>1873</date></measure>
+    <measure type="interval">(-<date type="to">1960</date>)</measure>
+    <measure type="interval">(-<date type="to">1965</date>)</measure>
+    <measure type="interval">(-<date type="to">1958</date>)</measure>
+    <measure type="value">"<date>19-05-1945</date></measure>
+    <measure type="value">"<date>19. Jh.-ca. 1947</date></measure>
+    <measure type="value">"<date>1902</date></measure>
+    <measure type="interval">"<date type="from">1879</date>-<date type="to">1945</date></measure>
+    <measure type="interval">"<date type="from">1901</date>-<date type="to">1917</date></measure>
+    <measure type="interval">"<date type="from">1902</date>-<date type="to">1906</date></measure>
+    <measure type="interval">"<date type="from">1904</date>-<date type="to">1935;</date></measure>
+    <measure type="interval">"<date type="from">1906</date>-<date type="to">1919</date></measure>
+    <measure type="interval">"<date type="from">1906</date>-<date type="to">1945</date></measure>
+    <measure type="interval">"<date type="from">1909</date>-<date type="to">1919</date></measure>
+    <measure type="interval">"<date type="from">1909</date>-<date type="to">1938</date></measure>
+    <measure type="interval">"<date type="from">1910</date>-<date type="to">1914</date>;</measure>
+    <measure type="interval">"<date type="from">1911</date>-<date type="to">1939</date></measure>
+    <measure type="interval">"<date type="from">1912</date>-<date type="to">1919</date></measure>
+    <measure type="interval">"<date type="from">1913</date>-<date type="to">1943</date></measure>
+    <measure type="interval">"<date type="from">1914</date>-<date type="to">1918)</date></measure>
+    <measure type="interval">"<date type="from">1918</date>-<date type="to">1939</date></measure>
+    <measure type="interval">"<date type="from">1919</date>-<date type="to">1945</date></measure>
+    <measure type="interval">"<date type="from">1920</date>-<date type="to">1927</date></measure>
+    <measure type="interval">"<date type="from">1925</date>-<date type="to">ca. 1945</date></measure>
+    <measure type="interval">"<date type="from">1925</date>-<date type="to">1945</date></measure>
+    <measure type="interval">"<date type="from">1928</date>-<date type="to">1945</date></measure>
+    <measure type="interval">"<date type="from">1929</date>-<date type="to">1955</date></measure>
+    <measure type="interval">"<date type="from">1930</date>-<date type="to">1945</date></measure>
+    <measure type="interval">"<date type="from">1931</date>-<date type="to">1945</date></measure>
+    <measure type="interval">"<date type="from">1933</date>-<date type="to">1935</date></measure>
+    <measure type="interval">"<date type="from">1933</date>-<date type="to">1945</date></measure>
+    <measure type="interval">(<date type="from">1950</date>-<date type="to">1952</date>)</measure>
+    <measure type="interval">(<date type="from">1946</date>-<date type="to">1960</date>)</measure>
+    <measure type="interval">(<date type="from">1947</date>-<date type="to">1953</date>)</measure>
+    <measure type="value">(<date>1955</date>)</measure>
+    <measure type="value">"<date>1916</date></measure>
+    <measure type="value">"<date>1919</date></measure>
+    <measure type="value">"<date>1930</date></measure>
+    <measure type="value">"<date>1931</date></measure>
+    <measure type="value">"<date>1932-01-01</date></measure>
+    <measure type="value">"<date>1933</date></measure>
+    <measure type="value">(<date>1949</date>)</measure>
+    <measure type="value"><data>1950</data></measure>
+    <measure type="value">"<date>1937</date></measure>
+    <measure type="value">"<date>1940</date></measure>
+    <measure type="value">"<date>1941</date></measure>
+    <measure type="value">"<date>1943</date></measure>
+    <measure type="value">"<date>1949</date>)</measure>
+    <measure type="value">"<date>1953</date>)</measure>
+    <measure type="interval">(-<date type="to">1968</date>)</measure>
+    <measure type="interval">(-<date type="to">1974</date>)</measure>
+    <measure type="interval">(-<date type="to">1950</date>)</measure>
+    <measure type="interval">(-<date type="to">1972</date>)</measure>
+    <measure type="interval">(-<date type="to">1972</date>)</measure>
+    <measure type="interval">(<date type="from">1952</date>-<date type="to">1953</date>)</measure>
+    <measure type="interval">(-<date type="to">1973</date>)</measure>
+    <measure type="interval"><date type="from">1941</date>-<date type="to">1945</date></measure>
+    <measure type="interval">"<date type="from">1933</date>-<date type="to">1945</date></measure>
+    <measure type="interval">"<date type="from">1933</date>-<date type="to">1945</date></measure>
+    <measure type="interval">"<date type="from">1933</date>-<date type="to">1954</date></measure>
+    <measure type="interval">"<date type="from">1934</date>-<date type="to">1939</date></measure>
+    <measure type="interval">"<date type="from">1934</date>-<date type="to">1959</date></measure>
+    <measure type="interval">"<date type="from">1935</date>-<date type="to">1936</date></measure>
+    <measure type="interval">"<date type="from">1935</date>-<date type="to">1945</date></measure>
+    <measure type="interval">"<date type="from">1935</date>-<date type="to">1948</date></measure>
+    <measure type="interval">"<date type="from">1936</date>-<date type="to">1945</date></measure>
+    <measure type="interval">"<date type="from">1937</date>-<date type="to">1939)</date></measure>
+    <measure type="interval">"<date type="from">1939</date>-<date type="to">1941</date></measure>
+    <measure type="interval">"<date type="from">1939</date>-<date type="to">1945</date></measure>
+    <measure type="interval">"<date type="from">1939</date>-<date type="to">1945</date></measure>
+    <measure type="interval">"<date type="from">1939</date>-<date type="to">1945)</date></measure>
+    <measure type="interval">"<date type="from">1939</date>-<date type="to">1946</date></measure>
+    <measure type="interval">"<date type="from">1939</date>-<date type="to">1952</date></measure>
+    <measure type="interval">"<date type="from">1940</date>-<date type="to">10-28</date></measure>
+    <measure type="interval">"<date type="from">1940</date>-<date type="to">1945</date></measure>
+    <measure type="interval">"<date type="from">1941</date>-<date type="to">11-25</date></measure>
+    <measure type="interval">"<date type="from">1941</date>-<date type="to">1945</date></measure>
+    <measure type="interval">"<date type="from">1942</date>-<date type="to">07-01</date></measure>
+    <measure type="interval">"<date type="from">1942</date>-<date type="to">08-01</date></measure>
+    <measure type="interval">"<date type="from">1942</date>-<date type="to">1945</date></measure>
+    <measure type="interval">"<date type="from">1945</date>-<date type="to">1954</date></measure>
+    <measure type="value">"<date>1980-01-01</date></measure>
+    <measure type="value">"<date>20. Jahrhundert </date>(Bratislava</measure>
+    <measure type="value">"<date>30.08.1941</date></measure>
+    <measure type="value">"<date>April 10 1942</date></measure>
+    <measure type="value">"<date>April 10 1944</date></measure>
+    <measure type="value">"<date>April 13 1944</date></measure>
+    <measure type="value">"<date>April 13 1945</date></measure>
+    <measure type="value">"<date>April 14 1945</date></measure>
+    <measure type="value">"<date>April 14 1947</date></measure>
+    <measure type="value">"<date>April 15 1943</date></measure>
+    <measure type="value">"<date>April 1944</date></measure>
+    <measure type="value">"<date>April 1945</date></measure>
+    <measure type="value">"<date>April 20 1945</date></measure>
+    <measure type="value">"<date>April 21 1944</date></measure>
+    <measure type="value">"<date>April 22 1945</date></measure>
+    <measure type="value">"<date>April 23 1944</date></measure>
+    <measure type="value">"<date>April 23 1945</date></measure>
+    <measure type="value">"<date>April 24 1943</date></measure>
+    <measure type="value">"<date>April 24 1944</date></measure>
+    <measure type="value">"<date>April 27 1939</date></measure>
+    <measure type="value">"<date>April 27 1944</date></measure>
+    <measure type="value">"<date>April 27 1945</date></measure>
+    <measure type="value">"<date>April 30 1943</date></measure>
+    <measure type="value">"<date>April 4 1942</date></measure>
+    <measure type="value">"<date>April 4 1944</date></measure>
+    <measure type="value">"<date>April 5 1945</date></measure>
+    <measure type="value">"<date>April 6 1942</date></measure>
+    <measure type="value">"<date>April 7 1945</date></measure>
+    <measure type="value">"<date>April 8 1942</date></measure>
+    <measure type="value">"<date>August 11 1940</date></measure>
+    <measure type="value">"<date>August 11 1945</date></measure>
+    <measure type="value">"<date>August 13 1939</date></measure>
+    <measure type="value">"<date>August 13 1942</date></measure>
+    <measure type="value">"<date>August 13 1943</date></measure>
+    <measure type="value">"<date>August 16 1944</date></measure>
+    <measure type="value">"<date>August 18 1942</date></measure>
+    <measure type="value">"<date>August 18 1944</date></measure>
+    <measure type="value">"<date>August 19 1942</date></measure>
+    <measure type="value">"<date>August 19 1943</date></measure>
+    <measure type="value">"<date>August 19 1944</date></measure>
+    <measure type="value">"<date>August 21 1942</date></measure>
+    <measure type="value">"<date>August 21 1943</date></measure>
+    <measure type="value">"<date>August 21 1946</date></measure>
+    <measure type="value">"<date>August 22 1941</date></measure>
+    <measure type="value">"<date>August 22 1943</date></measure>
+    <measure type="value">"<date>August 24 1944</date></measure>
+    <measure type="value">"<date>August 24 1945</date></measure>
+    <measure type="value">"<date>August 25 1942</date></measure>
+    <measure type="value">"<date>August 25 1944</date></measure>
+    <measure type="value">"<date>August 25 1945</date></measure>
+    <measure type="value">"<date>August 26 1944</date></measure>
+    <measure type="value">"<date>August 28 1946</date></measure>
+    <measure type="value">"<date>August 29 1944</date></measure>
+    <measure type="value">"<date>August 5 1943</date></measure>
+    <measure type="value">"<date>August 5 1944</date></measure>
+    <measure type="value">"<date>August 7 1942</date></measure>
+    <measure type="value">"<date>August 7 1944</date></measure>
+    <measure type="value">"<date>August 8 1944</date></measure>
+    <measure type="value">"<date>August 9 1943</date></measure>
+    <measure type="value">"<date>December 1 1942</date></measure>
+    <measure type="value">"<date>December 12 1943</date></measure>
+    <measure type="value">"<date>December 16 1942</date></measure>
+    <measure type="value">"<date>December 16 1944</date></measure>
+    <measure type="value">"<date>December 17 1943</date></measure>
+    <measure type="value">"<date>December 17 1945</date></measure>
+    <measure type="value">"<date>February 1 1944</date></measure>
+    <measure type="value">"<date>February 1 1945</date></measure>
+    <measure type="value">"<date>December 1943</date></measure>
+    <measure type="value">"<date>December 21 1941</date></measure>
+    <measure type="value">"<date>December 21 1942</date></measure>
+    <measure type="value">"<date>December 21 1944</date></measure>
+    <measure type="value">"<date>December 21 1945</date></measure>
+    <measure type="value">"<date>December 22 1944</date></measure>
+    <measure type="value">"<date>December 24 1943</date></measure>
+    <measure type="value">"<date>December 3 1946</date></measure>
+    <measure type="value">"<date>December 3 1947</date></measure>
+    <measure type="value">"<date>December 30 1943</date></measure>
+    <measure type="value">"<date>December 31 1943</date></measure>
+    <measure type="value">"<date>December 31 1944</date></measure>
+    <measure type="value">"<date>December 4 1942</date></measure>
+    <measure type="value">"<date>December 4 1944</date></measure>
+    <measure type="value">"<date>December 5 1941</date></measure>
+    <measure type="value">"<date>December 9 1943</date></measure>
+    <measure type="value">"<date>February 10 1948</date></measure>
+    <measure type="value">"<date>February 11 1942</date></measure>
+    <measure type="value">"<date>February 11 1944</date></measure>
+    <measure type="value">"<date>February 11 1945</date></measure>
+    <measure type="value">"<date>February 16 1944</date></measure>
+    <measure type="value">"<date>February 19 1943</date></measure>
+    <measure type="value">"<date>February 19 1944</date></measure>
+    <measure type="value">"<date>February 1942</date></measure>
+    <measure type="value">"<date>February 1943</date></measure>
+    <measure type="value">"<date>February 2 1948</date></measure>
+    <measure type="value">"<date>February 20 1944</date></measure>
+    <measure type="value">"<date>February 20 1945</date></measure>
+    <measure type="value">"<date>February 22 1942</date></measure>
+    <measure type="value">"<date>February 22 1943</date></measure>
+    <measure type="value">"<date>February 22 1945</date></measure>
+    <measure type="value">"<date>February 25 1944</date></measure>
+    <measure type="value">"<date>February 26 1942</date></measure>
+    <measure type="value">"<date>February 26 1945</date></measure>
+    <measure type="value">"<date>February 27 1943</date></measure>
+    <measure type="value">"<date>February 28 1942</date></measure>
+    <measure type="value">"<date>February 29 1944</date></measure>
+    <measure type="value">"<date>February 3 1942</date></measure>
+    <measure type="value">"<date>February 4 1942</date></measure>
+    <measure type="value">"<date>20. Jahrhundert</date></measure>
+    <measure type="value">(<date>15.04.1944</date> aut 394</measure>
+    <measure type="value">(<date>20.02.1944</date></measure>
+    <measure type="value">"<date>20. Jahrhundert</date> (Bratislava</measure>
+    <measure type="value">"<date>24 November 1949</date></measure>
+    <measure type="value">"<date>25. M??rz 1933</date></measure>
+    <measure type="interval">"<date type="from">April 2</date> - <date type="to">April 3 1945</date></measure>
+    <measure type="interval">"<date type="from">December 18</date>-<date type="to">December 24 1944</date></measure>
+    <measure type="list">"<date>Ende Sept. 1944</date> und <date>Januar 1945</date></measure>
+    <measure type="value"><date>01.12.1947</date></measure>
+    <measure type="value"><date>01.1942</date></measure>
+    <measure type="value"><date>01.1943</date></measure>
+    <measure type="value"><date>01.1945</date></measure>
+    <measure type="interval"><date type="from">01.1945</date> - <date type="to">02.1945</date></measure>
+    <measure type="interval"><date type="from">01.1945</date> - <date type="to">04.1945</date></measure>
+    <measure type="value"><date>01.1947</date></measure>
+    <measure type="interval"><date type="from">01/01/01</date>-<date type="to">01/01/01</date></measure>
+    <measure type="interval"><date type="from">01/01/01</date>-<date type="to">10/04/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1111</date>-<date type="to">01/01/1111</date></measure>
+    <measure type="interval"><date type="from">01/01/1850</date>-<date type="to">31/12/1980</date></measure>
+    <measure type="interval"><date type="from">01/01/1850</date>-<date type="to">31/12/1981</date></measure>
+    <measure type="interval"><date type="from">01/01/1872</date></measure>-
+    <measure type="interval"><date type="from">01/01/1875</date>-<date type="to">31/05/1882</date></measure>
+    <measure type="interval"><date type="from">01/01/1878</date>-<date type="to">31/12/1946</date></measure>
+    <measure type="interval"><date type="from">01/01/1879</date>-<date type="to">31/12/1879</date></measure>
+    <measure type="interval"><date type="from">01/01/1880</date></measure>-
+    <measure type="interval"><date type="from">01/01/1880</date>-<date type="to">31/12/1880</date></measure>
+    <measure type="interval"><date type="from">01/01/1887</date>-<date type="to">31/12/1920</date></measure>
+    <measure type="interval"><date type="from">01/01/1888</date>-<date type="to">31/12/1962</date></measure>
+    <measure type="interval"><date type="from">01/01/1889</date>-<date type="to">30/06/1943</date></measure>
+    <measure type="interval"><date type="from">01/01/1890</date>-<date type="to">31/12/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1892</date>-<date type="to">30/06/1964</date></measure>
+    <measure type="interval"><date type="from">01/01/1893</date>-<date type="to">03/04/1971</date></measure>
+    <measure type="interval"><date type="from">01/01/1895</date>-<date type="to">31/12/1896</date></measure>
+    <measure type="interval"><date type="from">01/01/1895</date>-<date type="to">31/12/1948</date></measure>
+    <measure type="interval"><date type="from">01/01/1900</date> - <date type="to">12/09/1900</date></measure>
+    <measure type="interval"><date type="from">01/01/1900</date> - <date type="to">31/07/1900</date></measure>
+    <measure type="interval"><date type="from">01/01/1900</date>-<date type="to">06/09/1964</date></measure>
+    <measure type="interval"><date type="from">01/01/1902</date>-<date type="to">31/12/1954</date></measure>
+    <measure type="interval"><date type="from">01/01/1903</date>-<date type="to">27/06/1936</date></measure>
+    <measure type="interval"><date type="from">01/01/1908</date>-<date type="to">31/12/1973</date></measure>
+    <measure type="interval"><date type="from">01/01/1914</date>-<date type="to">31/12/1941</date></measure>
+    <measure type="interval"><date type="from">01/01/1915</date>-<date type="to">01/01/1939</date></measure>
+    <measure type="interval"><date type="from">01/01/1915</date>-<date type="to">01/01/1975</date></measure>
+    <measure type="interval"><date type="from">01/01/1915</date>-<date type="to">01/12/1944</date></measure>
+    <measure type="interval"><date type="from">01/01/1918</date> - <date type="to">05/07/1920</date></measure>
+    <measure type="interval"><date type="from">01/01/1918</date>-<date type="to">31/07/1962</date></measure>
+    <measure type="interval"><date type="from">01/01/1920</date>-<date type="to">13/08/1972</date></measure>
+    <measure type="interval"><date type="from">01/01/1920</date>-<date type="to">31/12/1939</date></measure>
+    <measure type="interval"><date type="from">01/01/1920</date>-<date type="to">31/12/1962</date></measure>
+    <measure type="interval"><date type="from">01/01/1920</date>-<date type="to">31/12/1970</date></measure>
+    <measure type="interval"><date type="from">01/01/1921</date>-<date type="to">31/12/1950</date></measure>
+    <measure type="interval"><date type="from">01/01/1926</date>-<date type="to">29/07/1967</date></measure>
+    <measure type="interval"><date type="from">01/01/1927</date>-<date type="to">12/07/1927</date></measure>
+    <measure type="interval"><date type="from">01/01/1927</date>-<date type="to">26/12/1972</date></measure>
+    <measure type="interval"><date type="from">01/01/1927</date>-<date type="to">31/12/1937</date></measure>
+    <measure type="interval"><date type="from">01/01/1927</date>-<date type="to">31/12/1976</date></measure>
+    <measure type="interval"><date type="from">01/01/1929</date>-<date type="to">26/01/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1929</date>-<date type="to">31/12/1932</date></measure>
+    <measure type="interval"><date type="from">01/01/1930</date>-<date type="to">29/04/1949</date></measure>
+    <measure type="interval"><date type="from">01/01/1930</date>-<date type="to">31/12/1939</date></measure>
+    <measure type="interval"><date type="from">01/01/1932</date>-<date type="to">31/12/1938</date></measure>
+    <measure type="interval"><date type="from">01/01/1933</date>-<date type="to">01/01/1933</date></measure>
+    <measure type="interval"><date type="from">01/01/1933</date>-<date type="to">14/06/1959</date></measure>
+    <measure type="interval"><date type="from">01/01/1933</date>-<date type="to">18/11/1941</date></measure>
+    <measure type="interval"><date type="from">01/01/1933</date>-<date type="to">21/10/1958</date></measure>
+    <measure type="interval"><date type="from">01/01/1935</date>-<date type="to">21/06/1947</date></measure>
+    <measure type="interval"><date type="from">01/01/1935</date>-<date type="to">31/12/1949</date></measure>
+    <measure type="interval"><date type="from">01/01/1936</date>-<date type="to">01/03/1939</date></measure>
+    <measure type="interval"><date type="from">01/01/1938</date>-<date type="to">01/01/1938</date></measure>
+    <measure type="interval"><date type="from">01/01/1938</date>-<date type="to">01/01/1939</date></measure>
+    <measure type="interval"><date type="from">01/01/1938</date>-<date type="to">01/01/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1938</date>-<date type="to">01/01/1951</date></measure>
+    <measure type="interval"><date type="from">01/01/1939</date>-<date type="to">01/01/1939</date></measure>
+    <measure type="interval"><date type="from">01/01/1939</date>-<date type="to">01/01/1944</date></measure>
+    <measure type="interval"><date type="from">01/01/1939</date>-<date type="to">02/06/1943</date></measure>
+    <measure type="interval"><date type="from">01/01/1939</date>-<date type="to">11/02/1965</date></measure>
+    <measure type="interval"><date type="from">01/01/1939</date>-<date type="to">31/01/1942</date></measure>
+    <measure type="interval"><date type="from">01/01/1939</date>-<date type="to">31/12/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1940</date>-<date type="to">01/01/1940</date></measure>
+    <measure type="interval"><date type="from">01/01/1940</date>-<date type="to">01/03/1941</date></measure>
+    <measure type="interval"><date type="from">01/01/1940</date>-<date type="to">01/06/1942</date></measure>
+    <measure type="interval"><date type="from">01/01/1940</date>-<date type="to">01/12/1943</date></measure>
+    <measure type="interval"><date type="from">01/01/1940</date>-<date type="to">01/12/1972</date></measure>
+    <measure type="interval"><date type="from">01/01/1940</date>-<date type="to">10/05/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1940</date>-<date type="to">15/07/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1940</date>-<date type="to">30/12/1942</date></measure>
+    <measure type="interval"><date type="from">01/01/1940</date>-<date type="to">31/12/1943</date></measure>
+    <measure type="interval"><date type="from">01/01/1941</date> - <date type="to">30/01/1942</date></measure>
+    <measure type="interval"><date type="from">01/01/1941</date> - <date type="to">30/06/1941</date></measure>
+    <measure type="interval"><date type="from">01/01/1941</date>-<date type="to">01/01/1941</date></measure>
+    <measure type="interval"><date type="from">01/01/1941</date>-<date type="to">01/01/1943</date></measure>
+    <measure type="interval"><date type="from">01/01/1941</date>-<date type="to">01/04/1942</date></measure>
+    <measure type="interval"><date type="from">01/01/1941</date>-<date type="to">01/04/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1941</date>-<date type="to">01/06/1941</date></measure>
+    <measure type="interval"><date type="from">01/01/1941</date>-<date type="to">01/06/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1941</date>-<date type="to">01/08/1941</date></measure>
+    <measure type="interval"><date type="from">01/01/1941</date>-<date type="to">01/08/1944</date></measure>
+    <measure type="interval"><date type="from">01/01/1941</date>-<date type="to">01/10/1941</date></measure>
+    <measure type="interval"><date type="from">01/01/1941</date>-<date type="to">01/11/1943</date></measure>
+    <measure type="interval"><date type="from">01/01/1941</date>-<date type="to">01/12/1943</date></measure>
+    <measure type="interval"><date type="from">01/01/1941</date>-<date type="to">01/12/1947</date></measure>
+    <measure type="interval"><date type="from">01/01/1941</date>-<date type="to">05/05/1944</date></measure>
+    <measure type="interval"><date type="from">01/01/1941</date>-<date type="to">18/08/1942</date></measure>
+    <measure type="interval"><date type="from">01/01/1941</date>-<date type="to">20/08/1943</date></measure>
+    <measure type="interval"><date type="from">01/01/1941</date>-<date type="to">24/11/1943</date></measure>
+    <measure type="interval"><date type="from">01/01/1941</date>-<date type="to">25/10/1964</date></measure>
+    <measure type="interval"><date type="from">01/01/1941</date>-<date type="to">30/06/1941</date></measure>
+    <measure type="interval"><date type="from">01/01/1941</date>-<date type="to">30/06/1943</date></measure>
+    <measure type="interval"><date type="from">01/01/1941</date>-<date type="to">30/09/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1941</date>-<date type="to">30/12/1942</date></measure>
+    <measure type="interval"><date type="from">01/01/1941</date>-<date type="to">31/12/1941</date></measure>
+    <measure type="interval"><date type="from">01/01/1941</date>-<date type="to">31/12/1942</date></measure>
+    <measure type="interval"><date type="from">01/01/1941</date>-<date type="to">31/12/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1942</date> - <date type="to">31/05/1943</date></measure>
+    <measure type="interval"><date type="from">01/01/1942</date>-<date type="to">01/01/1942</date></measure>
+    <measure type="interval"><date type="from">01/01/1942</date>-<date type="to">01/01/1943</date></measure>
+    <measure type="interval"><date type="from">01/01/1942</date>-<date type="to">01/01/1944</date></measure>
+    <measure type="interval"><date type="from">01/01/1942</date>-<date type="to">01/01/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1942</date>-<date type="to">01/07/1944</date></measure>
+    <measure type="interval"><date type="from">01/01/1942</date>-<date type="to">01/10/1942</date></measure>
+    <measure type="interval"><date type="from">01/01/1942</date>-<date type="to">01/12/1942</date></measure>
+    <measure type="interval"><date type="from">01/01/1942</date>-<date type="to">21/03/1943</date></measure>
+    <measure type="interval"><date type="from">01/01/1942</date>-<date type="to">21/06/1963</date></measure>
+    <measure type="interval"><date type="from">01/01/1942</date>-<date type="to">28/02/1942</date></measure>
+    <measure type="interval"><date type="from">01/01/1942</date>-<date type="to">31/12/1944</date></measure>
+    <measure type="interval"><date type="from">01/01/1942</date>-<date type="to">31/12/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1943</date></measure>-
+    <measure type="interval"><date type="from">01/01/1943</date>-<date type="to">01/01/1943</date></measure>
+    <measure type="interval"><date type="from">01/01/1943</date>-<date type="to">01/01/1944</date></measure>
+    <measure type="interval"><date type="from">01/01/1943</date>-<date type="to">01/01/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1943</date>-<date type="to">01/01/1946</date></measure>
+    <measure type="interval"><date type="from">01/01/1943</date>-<date type="to">01/03/1943</date></measure>
+    <measure type="interval"><date type="from">01/01/1943</date>-<date type="to">01/05/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1943</date>-<date type="to">01/06/1943</date></measure>
+    <measure type="interval"><date type="from">01/01/1943</date>-<date type="to">01/07/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1943</date>-<date type="to">01/08/1944</date></measure>
+    <measure type="interval"><date type="from">01/01/1943</date>-<date type="to">01/12/1943</date></measure>
+    <measure type="interval"><date type="from">01/01/1943</date>-<date type="to">01/12/1944</date></measure>
+    <measure type="interval"><date type="from">01/01/1943</date>-<date type="to">16/06/1962</date></measure>
+    <measure type="interval"><date type="from">01/01/1943</date>-<date type="to">19/12/1943</date></measure>
+    <measure type="interval"><date type="from">01/01/1943</date>-<date type="to">30/10/1944</date></measure>
+    <measure type="interval"><date type="from">01/01/1943</date>-<date type="to">31/01/1944</date></measure>
+    <measure type="interval"><date type="from">01/01/1943</date>-<date type="to">31/03/1943</date></measure>
+    <measure type="interval"><date type="from">01/01/1943</date>-<date type="to">31/07/1943</date></measure>
+    <measure type="interval"><date type="from">01/01/1944</date> - <date type="to">31/05/1944</date></measure>
+    <measure type="interval"><date type="from">01/01/1944</date> - <date type="to">31/05/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1944</date>-<date type="to">01/01/1944</date></measure>
+    <measure type="interval"><date type="from">01/01/1944</date>-<date type="to">01/01/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1944</date>-<date type="to">01/01/1961</date></measure>
+    <measure type="interval"><date type="from">01/01/1944</date>-<date type="to">01/01/2004</date></measure>
+    <measure type="interval"><date type="from">01/01/1944</date>-<date type="to">01/02/1944</date></measure>
+    <measure type="interval"><date type="from">01/01/1944</date>-<date type="to">01/04/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1944</date>-<date type="to">01/05/1944</date></measure>
+    <measure type="interval"><date type="from">01/01/1944</date>-<date type="to">01/05/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1944</date>-<date type="to">01/06/1944</date></measure>
+    <measure type="interval"><date type="from">01/01/1944</date>-<date type="to">01/06/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1944</date>-<date type="to">01/07/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1944</date>-<date type="to">01/09/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1944</date>-<date type="to">01/10/1944</date></measure>
+    <measure type="interval"><date type="from">01/01/1944</date>-<date type="to">01/10/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1944</date>-<date type="to">01/12/1944</date></measure>
+    <measure type="interval"><date type="from">01/01/1944</date>-<date type="to">01/12/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1944</date>-<date type="to">03/12/1986</date></measure>
+    <measure type="interval"><date type="from">01/01/1944</date>-<date type="to">19/10/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1944</date>-<date type="to">23/08/1944</date></measure>
+    <measure type="interval"><date type="from">01/01/1944</date>-<date type="to">31/03/1944</date></measure>
+    <measure type="interval"><date type="from">01/01/1944</date>-<date type="to">31/05/1944</date></measure>
+    <measure type="interval"><date type="from">01/01/1944</date>-<date type="to">31/12/1944</date></measure>
+    <measure type="interval"><date type="from">01/01/1945</date> - <date type="to">30/10/1946</date></measure>
+    <measure type="interval"><date type="from">01/01/1945</date>-</measure>
+    <measure type="interval"><date type="from">01/01/1945</date>-<date type="to">01/01/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1945</date>-<date type="to">01/01/1946</date></measure>
+    <measure type="interval"><date type="from">01/01/1945</date>-<date type="to">01/06/1945</date></measure>
+    <measure type="interval"><date type="from">01/01/1945</date>-<date type="to">02/1946</date></measure>
+    <measure type="interval"><date type="from">01/01/1945</date>-<date type="to">03/1946</date></measure>
+    <measure type="interval"><date type="from">01/01/1945</date>-<date type="to">12/03/1946</date></measure>
+    <measure type="interval"><date type="from">01/01/1945</date>-<date type="to">15/01/1947</date></measure>
+    <measure type="interval"><date type="from">01/01/1945</date>-<date type="to">28/02/1948</date></measure>
+    <measure type="interval"><date type="from">01/01/1945</date>-<date type="to">30/09/1946</date></measure>
+    <measure type="interval"><date type="from">01/01/1945</date>-<date type="to">31/03/1948</date></measure>
+    <measure type="interval"><date type="from">01/01/1946</date>-<date type="to">01/01/1946</date></measure>
+    <measure type="interval"><date type="from">01/01/1946</date>-<date type="to">01/02/1946</date></measure>
+    <measure type="interval"><date type="from">01/01/1946</date>-<date type="to">01/03/1946</date></measure>
+    <measure type="interval"><date type="from">01/01/1946</date>-<date type="to">01/04/1946</date></measure>
+    <measure type="interval"><date type="from">01/01/1946</date>-<date type="to">25/11/1946</date></measure>
+    <measure type="interval"><date type="from">01/01/1946</date>-<date type="to">29/08/1966</date></measure>
+    <measure type="interval"><date type="from">01/01/1946</date>-<date type="to">31/12/1969</date></measure>
+    <measure type="interval"><date type="from">01/01/1946</date>-<date type="to">31/12/1970</date></measure>
+    <measure type="interval"><date type="from">01/01/1947</date>-<date type="to">01/01/1947</date></measure>
+    <measure type="interval"><date type="from">01/01/1947</date>-<date type="to">01/01/1952</date></measure>
+    <measure type="interval"><date type="from">01/01/1947</date>-<date type="to">31/12/1947</date></measure>
+    <measure type="interval"><date type="from">01/01/1947</date>-<date type="to">31/12/1951</date></measure>
+    <measure type="interval"><date type="from">01/01/1948</date>-<date type="to">31/12/1970</date></measure>
+    <measure type="interval"><date type="from">01/01/1949</date>-<date type="to">01/01/1951</date></measure>
+    <measure type="interval"><date type="from">01/01/1950</date> -<date type="to">31/12/1975</date></measure>
+    <measure type="interval"><date type="from">01/01/1950</date>-<date type="to">01/12/1951</date></measure>
+    <measure type="interval"><date type="from">01/01/1950</date>-<date type="to">23/06/1971</date></measure>
+    <measure type="interval"><date type="from">01/01/1950</date>-<date type="to">31/12/1962</date></measure>
+    <measure type="interval"><date type="from">01/01/1950</date>-<date type="to">31/12/1965</date></measure>
+    <measure type="interval"><date type="from">01/01/1950</date>-<date type="to">31/12/1967</date></measure>
+    <measure type="interval"><date type="from">01/01/1950</date>-<date type="to">31/12/1968</date></measure>
+    <measure type="interval"><date type="from">01/01/1950</date>-<date type="to">31/12/1970</date></measure>
+    <measure type="interval"><date type="from">01/01/1951</date>-<date type="to">01/12/1951</date></measure>
+    <measure type="interval"><date type="from">01/01/1951</date>-<date type="to">31/12/1971</date></measure>
+    <measure type="interval"><date type="from">01/01/1953</date>-<date type="to">31/12/1953</date></measure>
+    <measure type="interval"><date type="from">01/01/1954</date>-<date type="to">30/08/1955</date></measure>
+    <measure type="interval"><date type="from">01/01/1954</date>-<date type="to">31/12/1964</date></measure>
+    <measure type="interval"><date type="from">01/01/1956</date>-<date type="to">31/12/1961</date></measure>
+    <measure type="interval"><date type="from">01/01/1958</date>-<date type="to">01/01/1960</date></measure>
+    <measure type="interval"><date type="from">01/01/1958</date>-<date type="to">01/01/1969</date></measure>
+    <measure type="interval"><date type="from">01/01/1958</date>-<date type="to">28/10/1998</date></measure>
+    <measure type="interval"><date type="from">01/01/1959</date>-<date type="to">01/01/1961</date></measure>
+    <measure type="interval"><date type="from">01/01/1959</date>-<date type="to">03/09/1972</date></measure>
+    <measure type="interval"><date type="from">01/01/1960</date>-<date type="to">01/02/1961</date></measure>
+    <measure type="interval"><date type="from">01/01/1961</date>-<date type="to">29/05/1961</date></measure>
+    <measure type="interval"><date type="from">01/01/1962</date>-<date type="to">01/01/1962</date></measure>
+    <measure type="interval"><date type="from">01/01/1962</date>-<date type="to">01/11/1931</date></measure>
+    <measure type="interval"><date type="from">01/01/1964</date>-<date type="to">01/01/1964</date></measure>
+    <measure type="interval"><date type="from">01/01/1966</date>-<date type="to">01/01/1966</date></measure>
+    <measure type="interval"><date type="from">01/01/1968</date>-<date type="to">17/03/1968</date></measure>
+    <measure type="interval"><date type="from">01/01/1970</date>-<date type="to">28/04/2002</date></measure>
+    <measure type="interval"><date type="from">01/01/1987</date>-<date type="to">01/01/1990</date></measure>
+    <measure type="interval"><date type="from">01/01/1990</date>-<date type="to">01/01/1990</date></measure>
+    <measure type="interval"><date type="from">01/01/1991</date>-<date type="to">15/01/1991</date></measure>
+    <measure type="interval"><date type="from">01/01/1993</date>-<date type="to">31/12/2002</date></measure>
+    <measure type="interval"><date type="from">01/01/2000</date>-<date type="to">31/12/2000</date></measure>
+    <measure type="interval"><date type="from">01/01/2001</date>-<date type="to">01/01/2001</date></measure>
+    <measure type="interval"><date type="from">01/01/2002</date>-<date type="to">01/01/2002</date></measure>
+    <measure type="interval"><date type="from">01/01/2003</date>-<date type="to">01/01/2003</date></measure>
+    <measure type="interval"><date type="from">01/01/2004</date>-<date type="to">01/01/2004</date></measure>
+    <measure type="interval"><date type="from">01/01/2004</date>-<date type="to">01/01/2005</date></measure>
+    <measure type="interval"><date type="from">01/02/1896</date> - <date type="to">01/10/1896</date></measure>
+    <measure type="interval"><date type="from">01/02/1933</date>-<date type="to">21/01/1975</date></measure>
+    <measure type="interval"><date type="from">01/02/1936</date>-<date type="to">28/02/1971</date></measure>
+    <measure type="interval"><date type="from">01/02/1938</date>-<date type="to">01/02/1938</date></measure>
+    <measure type="interval"><date type="from">01/02/1939</date> - <date type="to">14/08/1939</date></measure>
+    <measure type="interval"><date type="from">01/02/1939</date> - <date type="to">30/06/1939</date></measure>
+    <measure type="interval"><date type="from">01/02/1939</date>-<date type="to">01/02/1939</date></measure>
+    <measure type="interval"><date type="from">01/02/1940</date>-<date type="to">01/02/1940</date></measure>
+    <measure type="interval"><date type="from">01/02/1940</date>-<date type="to">30/08/1946</date></measure>
+    <measure type="interval"><date type="from">01/02/1941</date>-<date type="to">01/02/1941</date></measure>
+    <measure type="interval"><date type="from">01/02/1941</date>-<date type="to">01/11/1944</date></measure>
+    <measure type="interval"><date type="from">01/02/1941</date>-<date type="to">01/1943</date></measure>
+    <measure type="interval"><date type="from">01/02/1941</date>-<date type="to">07/02/1941</date></measure>
+    <measure type="interval"><date type="from">01/02/1941</date>-<date type="to">30/06/1942</date></measure>
+    <measure type="interval"><date type="from">01/02/1942</date>-<date type="to">01/01/1943</date></measure>
+    <measure type="interval"><date type="from">01/02/1942</date>-<date type="to">01/02/1942</date></measure>
+    <measure type="interval"><date type="from">01/02/1942</date>-<date type="to">01/03/1945</date></measure>
+    <measure type="interval"><date type="from">01/02/1942</date>-<date type="to">01/06/1944</date></measure>
+    <measure type="interval"><date type="from">01/02/1942</date>-<date type="to">01/07/1945</date></measure>
+    <measure type="interval"><date type="from">01/02/1942</date>-<date type="to">01/11/1944</date></measure>
+    <measure type="interval"><date type="from">01/02/1942</date>-<date type="to">31/05/1944</date></measure>
+    <measure type="interval"><date type="from">01/02/1943</date>-<date type="to">01/02/1943</date></measure>
+    <measure type="interval"><date type="from">01/02/1943</date>-<date type="to">01/04/1943</date></measure>
+    <measure type="interval"><date type="from">01/02/1944</date>-<date type="to">01/01/1945</date></measure>
+    <measure type="interval"><date type="from">01/02/1944</date>-<date type="to">01/02/1944</date></measure>
+    <measure type="interval"><date type="from">01/02/1944</date>-<date type="to">01/08/1944</date></measure>
+    <measure type="interval"><date type="from">01/02/1945</date>-<date type="to">01/02/1945</date></measure>
+    <measure type="interval"><date type="from">01/02/1945</date>-<date type="to">01/03/1945</date></measure>
+    <measure type="interval"><date type="from">01/02/1945</date>-<date type="to">01/07/1946</date></measure>
+    <measure type="interval"><date type="from">01/02/1945</date>-<date type="to">01/12/1945</date></measure>
+    <measure type="interval"><date type="from">01/02/1945</date>-<date type="to">22/02/1945</date></measure>
+    <measure type="interval"><date type="from">01/02/1946</date>-<date type="to">01/02/1946</date></measure>
+    <measure type="interval"><date type="from">01/02/1946</date>-<date type="to">01/07/1947</date></measure>
+    <measure type="interval"><date type="from">01/02/1946</date>-<date type="to">02/12/1948</date></measure>
+    <measure type="interval"><date type="from">01/02/1946</date>-<date type="to">28/05/1947</date></measure>
+    <measure type="interval"><date type="from">01/02/1948</date>-<date type="to">06/02/1948</date></measure>
+    <measure type="interval"><date type="from">01/02/1949</date>-<date type="to">02/02/1949</date></measure>
+    <measure type="interval"><date type="from">01/02/1949</date>-<date type="to">07/02/1949</date></measure>
+    <measure type="interval"><date type="from">01/02/1949</date>-<date type="to">18/09/1965</date></measure>
+    <measure type="interval"><date type="from">01/02/1950</date>-<date type="to">01/02/1950</date></measure>
+    <measure type="interval"><date type="from">01/02/1952</date>-<date type="to">07/02/1962</date></measure>
+    <measure type="interval"><date type="from">01/02/1953</date>-<date type="to">01/03/1953</date></measure>
+    <measure type="interval"><date type="from">01/02/1953</date>-<date type="to">01/08/1954</date></measure>
+    <measure type="interval"><date type="from">01/02/1955</date>-<date type="to">01/02/1955</date></measure>
+    <measure type="interval"><date type="from">01/02/1963</date>-<date type="to">01/02/1963</date></measure>
+    <measure type="interval"><date type="from">01/02/1964</date>-<date type="to">01/02/1964</date></measure>
+    <measure type="interval"><date type="from">01/02/1985</date>-<date type="to">01/02/1985</date></measure>
+    <measure type="interval"><date type="from">01/02/1999</date>-<date type="to">01/02/1999</date></measure>
+    <measure type="interval"><date type="from">01/03/1937</date>-<date type="to">23/07/1943</date></measure>
+    <measure type="interval"><date type="from">01/03/1938</date>-<date type="to">01/03/1938</date></measure>
+    <measure type="interval"><date type="from">01/03/1938</date>-<date type="to">01/04/1938</date></measure>
+    <measure type="interval"><date type="from">01/03/1939</date>-<date type="to">01/12/1939</date></measure>
+    <measure type="interval"><date type="from">01/03/1939</date>-<date type="to">31/03/1939</date></measure>
+    <measure type="value"><date>01/03/1940</date></measure>
+</dates>

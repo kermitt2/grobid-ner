@@ -15,10 +15,6 @@ public interface NERParser {
 	List<Entity> extractNE(String text);
 
 	List<Entity> extractNE(List<LayoutToken> tokens);
-
-	String createCONNLTrainingFromText(String text);
-
-	//String createXMLTrainingFromText(String text, StringBuilder sb);
-
+	
 	String label(String text);
 }

@@ -286,12 +286,7 @@ public class NEREnglishTrainer extends AbstractTrainer {
         return writer;
     }
 
-
-    /**
-     * Command line execution.
-     *
-     * @param args Command line arguments.
-     */
+    
     public static void main(String[] args) {
         try {
 

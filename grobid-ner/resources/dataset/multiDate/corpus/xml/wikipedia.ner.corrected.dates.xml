@@ -1,0 +1,437 @@
+<dates>
+    <measure type="value"><date>20 July</date></measure>
+    <measure type="value"><date>1 April 1933</date></measure>
+    <measure type="value"><date>1 December 2009</date></measure>
+    <measure type="value"><date>1 February</date></measure>
+    <measure type="value"><date>1 January 1973</date></measure>
+    <measure type="value"><date>1 November 1993</date></measure>
+    <measure type="value"><date>1 September 1939</date></measure>
+    <measure type="value"><date>10 August</date></measure>
+    <measure type="value"><date>10 February 1942</date></measure>
+    <measure type="value"><date>10 June 1943</date></measure>
+    <measure type="value"><date>10 November 1938</date></measure>
+    <measure type="value"><date>10 October 1941</date></measure>
+    <!--<measure type="value"><date>10 to 15 years</date></measure>-->
+    <!--<measure type="value"><date>108 years</date></measure>-->
+    <measure type="value"><date>11 April</date></measure>
+    <measure type="value"><date>11 January</date></measure>
+    <measure type="value"><date>11 June 2016</date></measure>
+    <measure type="value"><date>12 April 1945</date></measure>
+    <measure type="value"><date>12 September 1941</date></measure>
+    <!--<measure type="value"><date>12-to 14-hour</date></measure>-->
+    <measure type="value"><date>12th-century</date></measure>
+    <measure type="value"><date>13 April 2016</date></measure>
+    <measure type="value"><date>13 July</date></measure>
+    <measure type="value"><date>13 September 1944</date></measure>
+    <measure type="value"><date>14 June</date></measure>
+    <measure type="value"><date>14 November 2001</date></measure>
+    <measure type="value"><date>14 October 1942</date></measure>
+    <measure type="value"><date>14 years</date></measure>
+    <measure type="value"><date>15 April</date></measure>
+    <measure type="value"><date>15 February 1920</date></measure>
+    <measure type="value"><date>15 July 2016</date></measure>
+    <measure type="value"><date>15 June 2016</date></measure>
+    <measure type="list"><date>15 June</date>, <date>20 June</date>, <date>3 July</date> and <date>6 July 1944</date></measure>
+    <measure type="value"><date>15 March 1942</date></measure>
+    <measure type="value"><date>15 March 2016</date></measure>
+    <measure type="value"><date>15 May 2012</date></measure>
+    <measure type="value"><date>15 November 1943</date></measure>
+    <measure type="interval"><date type="from">15</date>-<date type="to">17 December 1941</date></measure>
+    <measure type="value"><date>16 August 1943</date></measure>
+    <measure type="value"><date>16 December 1942</date></measure>
+    <measure type="value"><date>16 June</date></measure>
+    <measure type="value"><date>16 May</date></measure>
+    <measure type="value"><date>16 days</date></measure>
+    <measure type="value"><date>1658</date></measure>
+    <measure type="value"><date>17 December 2015</date></measure>
+    <measure type="value"><date>17 October 2014</date></measure>
+    <measure type="value"><date>18 March 1933</date></measure>
+    <measure type="value"><date>18 October 1939</date></measure>
+    <measure type="value"><date>1831</date></measure>
+    <measure type="interval"><date type="from">1850</date>-<date type="to">1964</date></measure>
+    <measure type="value"><date>1851</date></measure>
+    <measure type="value"><date>1871</date></measure>
+    <measure type="value"><date>1886</date></measure>
+    <measure type="value"><date>1895</date></measure>
+    <measure type="value"><date>1897</date></measure>
+    <measure type="value"><date>19 July 1942</date></measure>
+    <measure type="value"><date>19 July 2016</date></measure>
+    <measure type="value"><date>19 June</date></measure>
+    <measure type="value"><date>19 June 2013</date></measure>
+    <measure type="value"><date>19 March</date></measure>
+    <measure type="value"><date>19 March 1944</date></measure>
+    <measure type="interval"><date type="from">1901</date>-<date type="to">1931</date></measure>
+    <measure type="value"><date>1907</date></measure>
+    <!--<measure type="interval"><date type="from">1910s</date>– <date type="to">to date</date></measure>-->
+    <measure type="value"><date>1912</date></measure>
+    <!--<measure type="value"><date>1916/17</date></measure>-->
+    <measure type="interval"><date type="from">1919</date>-<date type="to">1923</date></measure>
+    <measure type="interval"><date type="from">1919</date>-<date type="to">1924</date></measure>
+    <measure type="value"><date>1920</date></measure>
+    <measure type="value"><date>1921</date></measure>
+    <measure type="value"><date>1922</date></measure>
+    <measure type="value"><date>1930s</date></measure>
+    <measure type="value"><date>1933</date></measure>
+    <measure type="interval"><date type="from">1933</date>–<date type="to">1945</date></measure>
+    <measure type="value"><date>1935</date></measure>
+    <measure type="value"><date>1936</date></measure>
+    <measure type="value"><date>1937</date></measure>
+    <measure type="value"><date>1938</date></measure>
+    <measure type="value"><date>1939</date></measure>
+    <measure type="interval"><date type="from">1939</date>-<date type="to">1944</date></measure>
+    <measure type="interval"><date type="from">1939</date>–<date type="to">1942</date></measure>
+    <measure type="interval"><date type="from">1939</date>–<date type="to">1945</date></measure>
+    <measure type="value"><date>1940</date></measure>
+    <measure type="list"><date>1940</date> and <date>1941</date></measure>
+    <measure type="value"><date>1940s</date></measure>
+    <measure type="value"><date>1941</date></measure>
+    <measure type="interval"><date type="from">1941</date>-<date type="to">1942</date></measure>
+    <measure type="interval"><date type="from">1941</date>–<date type="to">1943</date></measure>
+    <measure type="interval"><date type="from">1941</date>–<date type="to">42</date></measure>
+    <measure type="value"><date>1942</date></measure>
+    <!--<measure type="value"><date>1942/43</date></measure>-->
+    <measure type="value"><date>1943</date></measure>
+    <measure type="list"><date>1943</date> and <date>1944</date></measure>
+    <measure type="value"><date>1944</date></measure>
+    <measure type="value"><date>1945</date></measure>
+    <measure type="interval"><date type="from">1946</date>–<date type="to">1990</date></measure>
+    <measure type="interval"><date type="from">1947</date>-<date type="to">1949</date></measure>
+    <measure type="value"><date>1948</date></measure>
+    <measure type="value"><date>1949</date></measure>
+    <measure type="value"><date>1952</date></measure>
+    <measure type="value"><date>1957</date></measure>
+    <measure type="value"><date>1960</date></measure>
+    <measure type="value"><date>1960s</date></measure>
+    <measure type="value"><date>1961</date></measure>
+    <measure type="value"><date>1963</date></measure>
+    <measure type="value"><date>1965</date></measure>
+    <measure type="value"><date>1967</date></measure>
+    <measure type="value"><date>1973</date></measure>
+    <measure type="value"><date>1975</date></measure>
+    <measure type="value"><date>1982</date></measure>
+    <measure type="value"><date>1983</date></measure>
+    <measure type="value"><date>1985</date></measure>
+    <measure type="value"><date>1986</date></measure>
+    <measure type="value"><date>1988</date></measure>
+    <measure type="value"><date>1989</date></measure>
+    <measure type="value"><date>1990s</date></measure>
+    <measure type="value"><date>1992</date></measure>
+    <measure type="value"><date>1993</date></measure>
+    <measure type="value"><date>1994</date></measure>
+    <measure type="value"><date>1995</date></measure>
+    <measure type="value"><date>1998</date></measure>
+    <measure type="value"><date>1999</date></measure>
+    <measure type="value"><date>2 June 1948</date></measure>
+    <!--<measure type="value"><date>2-year</date></measure>-->
+    <measure type="value"><date>20 January 1942</date></measure>
+    <measure type="value"><date>20 January 1945</date></measure>
+    <measure type="value"><date>20 June</date></measure>
+    <measure type="value"><date>20 June 1942</date></measure>
+    <!--<measure type="value"><date>20 minutes</date></measure>-->
+    <measure type="value"><date>2007</date></measure>
+    <measure type="value"><date>2009</date></measure>
+    <measure type="value"><date>2010</date></measure>
+    <measure type="value"><date>2011</date></measure>
+    <measure type="value"><date>2012</date></measure>
+    <measure type="value"><date>2013</date></measure>
+    <measure type="value"><date>2014</date></measure>
+    <measure type="value"><date>2015</date></measure>
+    <measure type="value"><date>2015 General Election</date></measure>
+    <measure type="value"><date>2015 general election</date></measure>
+    <measure type="value"><date>2016</date></measure>
+    <measure type="value"><date>2017</date></measure>
+    <measure type="value"><date>2030</date></measure>
+    <measure type="interval"><date type="from">20</date>-<date type="to">22 October 1944</date></measure>
+    <!--<measure type="interval"><date type="from">20</date>–<date type="to">30 years</date></measure>-->
+    <measure type="value"><date>21 June</date></measure>
+    <measure type="value"><date>22 August 1939</date></measure>
+    <measure type="value"><date>22 February</date></measure>
+    <measure type="value"><date>22 February 2016</date></measure>
+    <measure type="value"><date>22 July 2016</date></measure>
+    <measure type="value"><date>23 July 1942</date></measure>
+    <measure type="value"><date>23 July 1944</date></measure>
+    <measure type="value"><date>23 June</date></measure>
+    <measure type="value"><date>23 June 2016</date></measure>
+    <measure type="value"><date>24 August 1941</date></measure>
+    <measure type="value"><date>24 June 2016</date></measure>
+    <measure type="value"><date>24 March 1940</date></measure>
+    <measure type="value"><date>24 November 1941</date></measure>
+    <measure type="value"><date>25 June 2016</date></measure>
+    <measure type="value"><date>25 May 1940</date></measure>
+    <measure type="value"><date>25 May 1948</date></measure>
+    <measure type="value"><date>25 November 1944</date></measure>
+    <measure type="value"><date>26 April</date></measure>
+    <measure type="value"><date>26 April 1975</date></measure>
+    <measure type="value"><date>26 June 2016</date></measure>
+    <measure type="value"><date>27 April 1938</date></measure>
+    <measure type="value"><date>27 January 1945</date></measure>
+    <measure type="value"><date>27 June</date></measure>
+    <measure type="value"><date>27 June 2016</date></measure>
+    <measure type="value"><date>27 May 1944</date></measure>
+    <measure type="value"><date>27 September 1943</date></measure>
+    <measure type="value"><date>28 January 2016</date></measure>
+    <measure type="value"><date>28 June 2016</date></measure>
+    <measure type="value"><date>28 September 1939</date></measure>
+    <measure type="value"><date>29 April</date></measure>
+    <measure type="value"><date>29 January 1943</date></measure>
+    <measure type="value"><date>29 July 2016</date></measure>
+    <measure type="value"><date>29 June</date></measure>
+    <measure type="value"><date>29 September</date></measure>
+    <measure type="value"><date>29 September 1939</date></measure>
+    <measure type="interval"><date type="from">29</date>-<date type="to">30 September 1941</date></measure>
+    <measure type="value"><date>3 June</date></measure>
+    <measure type="value"><date>30 January 1933</date></measure>
+    <measure type="value"><date>30 January 1940</date></measure>
+    <measure type="value"><date>30 June</date></measure>
+    <measure type="value"><date>30 March 1941</date></measure>
+    <measure type="value"><date>30 years</date></measure>
+    <measure type="value"><date>31 December 2017</date></measure>
+    <measure type="value"><date>4 July</date></measure>
+    <measure type="value"><date>48 hours</date></measure>
+    <measure type="value"><date>4 August 2016</date></measure>
+    <measure type="value"><date>5 July 2013</date></measure>
+    <measure type="value"><date>5 June 1975</date></measure>
+    <measure type="value"><date>5 May</date></measure>
+    <measure type="value"><date>5 May 1945</date></measure>
+    <measure type="value"><date>5:00 pm</date></measure>
+    <measure type="value"><data>6 June</data></measure>
+    <measure type="list"><date>6</date>, <date>8</date>, <date>10</date> and <date>17 May</date></measure>
+    <measure type="value"><data>7 June</data></measure>
+    <measure type="value"><date>5 September 2016</date></measure>
+    <measure type="value"><date>6 April</date></measure>
+    <measure type="list"><date>6 April 1942</date>, <date>the second day of Passover</date></measure>
+    <measure type="value"><date>7 December 1941</date></measure>
+    <measure type="value"><date>7 March 2016</date></measure>
+    <measure type="value"><date>7 November 1938</date></measure>
+    <measure type="value"><date>7 October 1944</date></measure>
+    <measure type="value"><date>8 May</date></measure>
+    <measure type="value"><date>9 July</date></measure>
+    <measure type="value"><date>9 June</date></measure>
+    <measure type="value"><date>9 March 1933</date></measure>
+    <measure type="value"><date>9 October 1942</date></measure>
+    <!--<measure type="value"><date>90 minutes</date></measure>-->
+    <measure type="interval">After <date type="from">1939</date></measure>
+    <measure type="value"><date>Ancien Régime</date></measure>
+    <measure type="value"><date>April</date></measure>
+    <measure type="value"><date>April 1942</date></measure>
+    <measure type="value"><date>April 1944</date></measure>
+    <measure type="value"><date>April 2016</date></measure>
+    <measure type="value"><date>April 7, 1944</date></measure>
+    <measure type="interval"><date type="from">April</date> – <date type="to">May 1945</date></measure>
+    <measure type="interval"><date type="from">April</date>–<date type="to">June 1944</date></measure>
+    <measure type="value">As of <date>October 2015</date></measure>
+    <measure type="value"><date>August 1920</date></measure>
+    <measure type="value"><date>August 1941</date></measure>
+    <measure type="value"><date>August 1942</date></measure>
+    <measure type="value"><date>August 1943</date></measure>
+    <measure type="interval">Between <date type="from">1939</date> and <date type="to">1941</date></measure>
+    <measure type="interval">Between <date type="from">1940</date> and <date type="to">1942</date></measure>
+    <measure type="value"><date>December 1939</date></measure>
+    <measure type="value"><date>December 1941</date></measure>
+    <measure type="value"><date>December 1942</date></measure>
+    <measure type="value"><date>December 1946</date></measure>
+    <measure type="value"><date>December 2013</date></measure>
+    <measure type="value"><date>December 2015</date></measure>
+    <measure type="value"><date>February</date></measure>
+    <measure type="value"><date>February 1942</date></measure>
+    <measure type="value"><date>February 1943</date></measure>
+    <measure type="value"><date>February 2016</date></measure>
+    <measure type="value"><date>February 2017</date></measure>
+    <!--Following Monday-->
+    <!--<measure type="value">Friday <date>after the referendum</date></measure>-->
+    <!--Friedländer-->
+    <measure type="interval">From <date type="from">1941</date> to <date type="to">1945</date></measure>
+    <measure type="interval">From <date type="from">the early 1920s</date></measure>
+    <!--Interwar period-->
+    <measure type="value"><date>January 1939</date></measure>
+    <measure type="value"><date>January 1942</date></measure>
+    <measure type="value"><date>January 1943</date></measure>
+    <measure type="value"><date>January 1945</date></measure>
+    <measure type="value"><date>January 1991</date></measure>
+    <measure type="value"><date>January 2013</date></measure>
+    <measure type="list"><date>January</date> and <date>February 2016</date></measure>
+    <measure type="interval"><date type="from">January</date>-<date type="to">March 1942</date></measure>
+    <measure type="value"><date>July</date></measure>
+    <measure type="value"><date>July 1933</date></measure>
+    <measure type="value"><date>July 1940</date></measure>
+    <measure type="value"><date>July 1941</date></measure>
+    <measure type="value"><date>July 1943</date></measure>
+    <measure type="value"><date>July 2013</date></measure>
+    <measure type="value"><date>July 2015</date></measure>
+    <measure type="value"><date>July 2016</date></measure>
+    <measure type="value"><date>June</date></measure>
+    <measure type="value"><date>June 1942</date></measure>
+    <measure type="value"><date>June 2015</date></measure>
+    <measure type="value"><date>June 2016</date></measure>
+    <measure type="interval"><date type="from">June</date>–<date type="to">July 1944</date></measure>
+    <measure type="value"><date>March 1939</date></measure>
+    <measure type="value"><date>March 1951</date></measure>
+    <measure type="value"><date>March 2014</date></measure>
+    <measure type="value"><date>March 2016</date></measure>
+    <measure type="value"><date>May 1901</date></measure>
+    <measure type="value"><date>May 1939</date></measure>
+    <measure type="value"><date>May 1942</date></measure>
+    <measure type="value"><date>May 2013</date></measure>
+    <measure type="value"><date>May 2016</date></measure>
+    <measure type="interval"><date type="from">May</date>/<date type="to">June 1944</date></measure>
+    <measure type="value"><date>Nazi period</date></measure>
+    <!--Nine days-->
+    <measure type="value"><date>November 19, 1945</date></measure>
+    <measure type="value"><date>November 1939</date></measure>
+    <measure type="value"><date>November 1942</date></measure>
+    <measure type="value"><date>November 1943</date></measure>
+    <measure type="value"><date>November 2012</date></measure>
+    <measure type="value"><date>November 2013</date></measure>
+    <measure type="value"><date>November 2015</date></measure>
+    <!--<measure type="value"><date>November that year</date></measure>-->
+    <measure type="value"><date>October</date></measure>
+    <measure type="value"><date>October 1937</date></measure>
+    <measure type="value"><date>October 1939</date></measure>
+    <measure type="value"><date>October 1940</date></measure>
+    <measure type="value"><date>October 1943</date></measure>
+    <measure type="value"><date>October 1944</date></measure>
+    <measure type="value"><date>October 2015</date></measure>
+    <measure type="value"><date>October 2016</date></measure>
+    <measure type="value"><date>September</date></measure>
+    <measure type="value"><date>September 1939</date></measure>
+    <measure type="value"><date>September 1940</date></measure>
+    <measure type="value"><date>September 1942</date></measure>
+    <measure type="value"><date>September 1943</date></measure>
+    <measure type="value"><date>September 2015</date></measure>
+    <!--<measure type="value"><date>Seven years after the outbreak</date></measure>-->
+    <measure type="interval">Since <date type="from">1945</date></measure>
+    <!--Soviet period-->
+    <!--<measure type="value"><date>Ten years after the official end of the zombie war</date></measure>-->
+    <measure type="value"><date>Thursday 23 June 2016</date></measure>
+    <!--Two days-->
+    <!--<measure type="value"><date>Two weeks later</date></measure>-->
+    <!--<measure type="value"><date>Two years later</date></measure>-->
+    <!--Yiddish Renaissance-->
+    <measure type="value"><date>a millennium and a half</date></measure>
+    <!--a month-->
+    <!--a week-->
+    <!--<measure type="value"><date>a week after the Brexit</date></measure>-->
+    <!--<measure type="value">a <date>week before the onset of war</date></measure>-->
+    <!--a year-->
+    <measure type="interval">after <date type="from">1944</date></measure>
+    <measure type="interval">after <date type="from">1978</date></measure>
+    <measure type="interval">after <date type="from">World War I</date></measure>
+    <measure type="interval">after <date type="from">World War II</date></measure>
+    <!--<measure type="value"><date>after three months</date></measure>-->
+    <measure type="value"><date>apartheid-era</date></measure>
+    <measure type="interval">before <date type="to">18 January 1871</date></measure>
+    <measure type="interval">before <date type="to">1939</date></measure>
+    <measure type="interval">before <date type="to">the 1940s</date></measure>
+    <measure type="interval">before <date type="to">the end of 2017</date></measure>
+    <measure type="value"><date>beginning of World War II</date></measure>
+    <measure type="interval">between <date type="from">15</date> and <date type="to">27 May 1944</date></measure>
+
+    <measure type="interval">between <date type="from">1918</date> and <date type="to">1990</date></measure>
+    <measure type="interval">between <date type="from">1933</date> and <date type="to">1944</date></measure>
+    <measure type="interval">between <date type="from">1941</date> and <date type="to">1945</date></measure>
+    <measure type="interval">between <date type="from">1993</date> and <date type="to">2009</date></measure>
+    <measure type="interval">between <date type="from">20 November 1945</date> and <date type="to">1 October 1946</date></measure>
+    <measure type="interval">between <date type="from">2010</date> and <date type="to">2015</date></measure>
+    <measure type="interval">between <date type="from">30 June</date> and <date type="to">29 July 1941</date></measure>
+    <measure type="interval">between <date type="from">June 1941</date> and <date type="to">May 1945</date></measure>
+    <measure type="interval">between <date type="from">September</date> and <date type="to">November 1942</date></measure>
+    <measure type="interval">by <date type="to">mid-1944</date></measure>
+    <!--centuries-->
+    <measure type="value"><date>couple of hours</date></measure>
+    <!--days-->
+    <measure type="value"><date>early 1942</date></measure>
+    <measure type="value"><date>early 1943</date></measure>
+    <measure type="value"><date>early 2014</date></measure>
+    <!--early months-->
+    <measure type="value"><date>early nineteenth century</date></measure>
+    <!--eight days-->
+    <!--<measure type="value"><date>eight days later</date></measure>-->
+    <measure type="value"><date>end of 1941</date></measure>
+    <measure type="value"><date>end of 1942</date></measure>
+    <measure type="value"><date>end of 1943</date></measure>
+    <measure type="value"><date>end of 2016</date></measure>
+    <measure type="value"><date>end of 2017</date></measure>
+    <measure type="value"><date>end of December 2017</date></measure>
+    <measure type="value"><date>end of World War II</date></measure>
+    <!--<measure type="value">end <date>of the day</date></measure>-->
+    <!--<measure type="value">few <date>days and weeks</date></measure>-->
+    <!--<measure type="value"><date>first four years</date></measure>-->
+    <!--<measure type="value"><date>first ten minutes</date></measure>-->
+    <!--following Monday-->
+    <!--following day-->
+    <!--four hours-->
+    <!--four weeks-->
+    <!--four years-->
+    <measure type="interval">from <date type="from">0700 BST</date> until <date type="to">2200 BST</date></measure>
+    <measure type="interval">(<date type="from">0600</date> to <date type="to">2100 BST</date> in Gibraltar)</measure>
+    <measure type="interval">from <date type="from">18 August 1942</date> to <date type="to">7 June 1943</date></measure>
+    <measure type="interval">from <date type="from">1916</date>-<date type="to">1949</date></measure>
+    <measure type="interval">from <date type="from">1918</date> until <date type="to">1990</date></measure>
+    <measure type="interval">from <date type="from">1918</date>–<date type="to">1940</date></measure>
+    <measure type="interval">from <date type="from">1919</date>-<date type="to">1940</date></measure>
+    <measure type="interval">from <date type="from">1925</date>-<date type="to">1935</date></measure>
+    <measure type="interval">from <date type="from">1933</date> to <date type="to">1945</date></measure>
+    <measure type="interval">from <date type="from">1941</date>-<date type="to">1944</date></measure>
+    <measure type="interval">from <date type="from">1944</date>-<date type="to">1991</date></measure>
+    <measure type="interval">from <date type="from">1991</date> to <date type="to">the present</date></measure>
+    <measure type="interval">from <date type="from">November 1941</date></measure>
+    <measure type="interval">from <date type="from">September 1941</date></measure>
+    <!--from the Middle Ages-->
+    <measure type="interval">from the <date type="from">late 19th century</date> until the&quot;<date type="to">Great Aliya</date>&quot;, </measure>
+    <measure type="interval"><date type="from">1948</date>-<date type="to">1949</date></measure>
+    <measure type="value">from the <date type="from">mid-1930s</date></measure>
+    <!--<measure type="value"><date>half an hour</date></measure>-->
+    <!--<measure type="value"><date>last 15 years</date></measure>-->
+    <!--last century-->
+    <!--last days-->
+    <!--<measure type="value"><date>last weeks of the war</date></measure>-->
+    <measure type="value"><date>late 1941</date></measure>
+    <measure type="list"><date>late 19th</date> and <date>early 20th centuries</date></measure>
+    <measure type="value"><date>late May 2016</date></measure>
+    <measure type="value"><date>mid afternoon on 27 June 2016</date></measure>
+    <measure type="value"><date>mid-1934</date></measure>
+    <measure type="value"><date>mid-1941</date></measure>
+    <measure type="value"><date>mid-1944</date></measure>
+    <measure type="value"><date>mid-afternoon</date></measure>
+    <measure type="value"><date>middle of the 19th c</date></measure>
+    <measure type="value"><date>midnight on 7 June 2016</date></measure>
+    <!--<measure type="value"><date>months or years</date></measure>-->
+    <measure type="value"><date>morning of 24 June</date></measure>
+    <!--next decade-->
+    <!--<measure type="value"><date>next two weeks</date></measure>-->
+    <!--next year-->
+    <!--one day-->
+    <!--<measure type="value"><date>one day later</date></measure>-->
+    <!--<measure type="value">one <date>month after Brexit</date></measure>-->
+    <!--<measure type="value"><date>one-day</date></measure>-->
+    <!--<measure type="value"><date>post-war</date></measure>-->
+    <!--previous decades-->
+    <!--previous month-->
+    <!--<measure type="value"><date>previous six months</date></measure>-->
+    <measure type="value"><date>second half of the 19th century</date></measure>
+    <!--seven years-->
+    <!--<measure type="value"><date>several months before</date></measure>-->
+    <!--several weeks-->
+    <!--several years-->
+    <measure type="interval">since <date type="from">1850&apos;s</date></measure>
+    <measure type="interval">since <date type="from">1919</date></measure>
+    <measure type="interval">since <date type="from">1950</date></measure>
+    <measure type="interval">since <date type="from">1985</date></measure>
+    <measure type="interval">since <date type="from">1988</date> until <date type="to">the present day</date></measure>
+    <measure type="interval">since <date type="from">2007</date></measure>
+    <measure type="interval">since <date type="from">before  1973</date></measure>
+    <measure type="value"><date>spring of 1944</date></measure>
+    <measure type="value">the <date>end of April</date></measure>
+    <measure type="value"><date>the night of 22-23 October 1940</date></measure>
+    <!--<measure type="value"><date>the year before</date></measure>-->
+    <!--<measure type="value"><date>three days later, on 22 July</date></measure>-->
+    <!--<measure type="value"><date>three weeks after the election</date></measure>-->
+    <!--<measure type="value"><date>three-year</date></measure>-->
+    <!--<measure type="value"><date>two more years</date></measure>-->
+    <!--<measure type="value"><date>two years earlier</date></measure>-->
+    <!--<measure type="value"><date>two years later</date></measure>-->
+    <!--<measure type="value"><date>two-thirds</date></measure>-->
+    <!--<measure type="value"><date>two-year</date></measure>-->
+    <measure type="value">until <date type="to">1938</date></measure>
+    <measure type="list">until <date type="to">World War II</date></measure>
+</dates>

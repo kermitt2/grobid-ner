@@ -252,6 +252,8 @@ public class FeaturesVectorNERSense {
                 featuresVector.punctType = "HYPHEN";
             } else if (word.equals("\"") | word.equals("\'") | word.equals("`")) {
                 featuresVector.punctType = "QUOTE";
+            } else if(word.equals("\\") || word.equals("/")) {
+                featuresVector.punctType = "SLASH";
             }
 
             if (featuresVector.capitalisation == null)

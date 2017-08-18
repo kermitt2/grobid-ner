@@ -9,9 +9,6 @@ import javax.xml.stream.XMLStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by ac86559 on 04/09/14.
- */
 public class StaxUtils {
 
     public static void traverse(XMLStreamReader2 reader, final StaxParserContentHandler contentHandler) throws XMLStreamException {

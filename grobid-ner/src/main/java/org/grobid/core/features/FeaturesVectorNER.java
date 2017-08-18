@@ -212,9 +212,9 @@ public class FeaturesVectorNER {
             featuresVector.singleChar = true;
         }
 
-        if (featureFactory.test_all_capital(token))
+        if (featureFactory.test_all_capital(token)) {
             featuresVector.capitalisation = "ALLCAPS";
-        else if (featureFactory.test_first_capital(token))
+        } else if (featureFactory.test_first_capital(token))
             featuresVector.capitalisation = "INITCAP";
         else
             featuresVector.capitalisation = "NOCAPS";

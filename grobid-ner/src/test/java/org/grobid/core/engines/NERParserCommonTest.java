@@ -1,7 +1,6 @@
 package org.grobid.core.engines;
 
 import edu.emory.mathcs.nlp.component.tokenizer.EnglishTokenizer;
-import edu.emory.mathcs.nlp.component.tokenizer.token.Token;
 import org.grobid.core.data.Sentence;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,7 +9,7 @@ import java.util.List;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
 public class NERParserCommonTest {
 

@@ -14,7 +14,6 @@ import org.slf4j.LoggerFactory;
 import static org.apache.commons.lang3.StringUtils.isEmpty;
 
 public abstract class EngineMockTest {
-    private static Logger LOGGER = LoggerFactory.getLogger(EngineMockTest.class);
     protected static Engine engine;
 
     @AfterClass

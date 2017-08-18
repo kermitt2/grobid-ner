@@ -1,0 +1,36 @@
+<dates>
+    <measure type="interval"><date from-iso="1943-05-01">May 1 1943</date> - <date to-iso="1944-07-31">July 31 1944</date></measure>
+    <measure type="interval"><date from-iso="1942-10-01">October 1 1942</date> - <date to-iso="1943-06-30">July 30 1943</date></measure>
+    <measure type="value"><date when="1943-03-21">March 21 1943</date></measure>
+    <measure type="value"><date when="1943-06-09">June 9 1943</date></measure>
+    <measure type="value"><date when="1941-09-21">September 21 1941</date></measure>
+    <measure type="value"><date when="1941-10-10">October 10 1941</date></measure>
+    <measure type="value"><date when="1941-10-19">October 19 1941</date></measure>
+    <measure type="value"><date when="1941-11-06">November 6 1941</date></measure>
+    <measure type="value"><date when="1941-11-08">November 8 1941</date></measure>
+    <measure type="value"><date when="1941-11-10">November 10 1941</date></measure>
+    <measure type="value"><date when="1941-11-19">November 19 1941</date></measure>
+    <measure type="value"><date when="1941-11-20">November 20 1941</date></measure>
+    <measure type="value"><date when="1941-11-25">November 25 1941</date></measure>
+    <measure type="value"><date when="1941-11-27">November 27 1941</date></measure>
+    <measure type="value"><date when="1941-12-01">December 1 1941</date></measure>
+    <measure type="interval"><date from-iso="1942-02-10">February 10</date> - <date to-iso="1942-02-28">February 28 1942</date></measure>
+    <measure type="value">"<date when="1942-02-09">February 9 1942</date></measure>
+    <measure type="value"><date when="1944-07-15">July 15 1944</date></measure>
+    <measure type="value"><date when="1942-03-16">March 16 1942</date></measure>
+    <measure type="value">"<date when="1943-09-28">September 28 1943</date></measure>
+    <measure type="list"><date when="1942-07-27">1942-07-27</date>; <date when="1944-09-04">1944-09-04</date></measure>
+    <measure type="list"><date when="1940-10-28">1940-10-28</date>; <date when="1944-09-04">1944-09-04</date></measure>
+    <measure type="interval"><date from-iso="1945-11-21">21/11/1945</date>-<date to-iso="1945-11-21">21/11/1945</date></measure>
+    <measure type="interval"><date from-iso="1945-11-21">21/11/1945</date>-<date to-iso="1945-11-21">21/11/1945</date></measure>
+    <measure type="interval"><date from-iso="1945-11-22">22/11/1945</date>-<date to-iso="1945-11-22">22/11/1945</date></measure>
+    <measure type="interval"><date from-iso="1946-11-21">23/01/1946</date>-<date to-iso="1946-11-21">23/01/1946</date></measure>
+    <measure type="interval"><date from-iso="1946-01-10">10/01/1946</date>-<date to-iso="1946-01-10">10/01/1946</date></measure>
+    <measure type="interval"><date from-iso="1946-02-14">01/14/1946</date>-<date to-iso="1946-02-14">01/14/1946</date></measure>
+    <measure type="interval"><date from-iso="1900-04-07">07/04/1900</date>-<date to-iso="1900-04-07">07/04/1900</date></measure>
+    <measure type="interval"><date from-iso="1884-08-15">15/08/1884</date>-<date to-iso="1946-07-16">16/07/1946</date></measure>
+    <measure type="interval"><date from-iso="1888-01-01">01/01/1888</date>-<date to-iso="1962-12-31">31/12/1962</date></measure>
+    <measure type="interval"><date from-iso="1880-01-01">01/01/1880</date>-<date to-iso="1880-12-31">31/12/1880</date></measure>
+    <measure type="interval"><date from-iso="1887-01-01">01/01/1887</date>-<date to-iso="1920-12-31">31/12/1920</date></measure>
+    <measure type="interval"><date from-iso="1914-01-01">01/01/1914</date>-<date to-iso="1941-12-31">31/12/1941</date></measure>
+</dates>
