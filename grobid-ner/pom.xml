@@ -6,13 +6,13 @@
 	<parent>
 		<groupId>org.grobid</groupId>
 		<artifactId>grobid-parent</artifactId>
-		<version>0.4.2-SNAPSHOT</version>
+		<version>0.4.3-SNAPSHOT</version>
 		<relativePath>../../pom.xml</relativePath>
 	</parent>
 
 	<groupId>org.grobid</groupId>
 	<artifactId>grobid-ner</artifactId>
-	<version>0.4.2-SNAPSHOT</version>
+	<version>0.4.3-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>${project.artifactId}</name>
 
@@ -44,12 +44,12 @@
 		<dependency>
 			<groupId>org.grobid</groupId>
 			<artifactId>grobid-core</artifactId>
-			<version>0.4.2-SNAPSHOT</version>
+			<version>0.4.3-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.grobid</groupId>
 			<artifactId>grobid-trainer</artifactId>
-			<version>0.4.2-SNAPSHOT</version>
+			<version>0.4.3-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
@@ -66,7 +66,6 @@
 			<optional>true</optional>
 			<!--scope>runtime</scope -->
 		</dependency>
-
 
 		<!-- for pooling e.g. Engine -->
 		<dependency>
