@@ -10,7 +10,7 @@
 			</p>
 			<p xml:lang="en" xml:id="P65">
 				<sentence xml:id="P65E0">With the establishment of the <ENAMEX type="INSTITUTION">Third Reich</ENAMEX>, <ENAMEX type="PERSON_TYPE">Nazi</ENAMEX> leaders proclaimed the existence of a <ENAMEX type="CONCEPT">Volksgemeinschaft</ENAMEX> (&quot;people&apos;s community&quot;).</sentence>
-				<sentence xml:id="P65E1"><ENAMEX type="PERSON_TYPE">Nazi</ENAMEX> policies divided the population into <ENAMEX type="MEASURE">two</ENAMEX> categories, the <ENAMEX type="PERSON_TYPE">Volksgenossen</ENAMEX> (&quot;national comrades&quot;), who belonged to the <ENAMEX type="CONCEPT">Volksgemeinschaft</ENAMEX>, and the <ENAMEX type="PERSON_TYPE">Gemeinschaftsfremde</ENAMEX> (&quot;community aliens&quot;), who did not.</sentence>
+				<sentence xml:id="P65E1"><ENAMEX type="PERSON_TYPE">Nazi</ENAMEX> policies divided the population into <ENAMEX type="MEASURE">two</ENAMEX> categories, the <ENAMEX type="PERSON_TYPE">Volksgenossen (&quot;national comrades&quot;)</ENAMEX>, who belonged to the <ENAMEX type="CONCEPT">Volksgemeinschaft</ENAMEX>, and the <ENAMEX type="PERSON_TYPE">Gemeinschaftsfremde</ENAMEX> (&quot;community aliens&quot;), who did not.</sentence>
 				<sentence xml:id="P65E2"><ENAMEX type="PERSON_TYPE">Nazi</ENAMEX> policies about repression divided people into <ENAMEX type="MEASURE">three</ENAMEX> types of enemies, the &quot;racial&quot; enemies such as the <ENAMEX type="PERSON_TYPE">Jews and the Romani</ENAMEX> who were viewed as enemies because of their &quot;blood&quot;; political opponents such as <ENAMEX type="PERSON_TYPE">Marxists, liberals, Christians and the &quot;reactionaries&quot;</ENAMEX> who were viewed as wayward &quot;<ENAMEX type="PERSON_TYPE">National Comrades</ENAMEX>&quot;; and moral opponents such as <ENAMEX type="PERSON_TYPE">homosexuals</ENAMEX>, the &quot;work-shy&quot; and habitual criminals, also seen as wayward &quot;<ENAMEX type="PERSON_TYPE">National Comrades</ENAMEX>&quot;.</sentence>
 				<sentence xml:id="P65E3"> The last <ENAMEX type="MEASURE">two</ENAMEX> groups were to be sent to concentration camps for &quot;re-education&quot;, with the aim of eventual absorption into the <ENAMEX type="CONCEPT">Volksgemeinschaft</ENAMEX>, though some of the moral opponents were to be sterilized, as they were regarded as &quot;genetically inferior&quot;.</sentence>
 			</p>
@@ -21,7 +21,7 @@
 			<p xml:lang="en" xml:id="P67">
 				<sentence xml:id="P67E0">&quot;Racial&quot; enemies such as the <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> could, by definition, never belong to the <ENAMEX type="CONCEPT">Volksgemeinschaft</ENAMEX>; they were to be totally removed from society.</sentence>
 				<sentence xml:id="P67E1"> <ENAMEX type="NATIONAL">German</ENAMEX> historian <ENAMEX type="PERSON">Detlev Peukert</ENAMEX> wrote that the <ENAMEX type="PERSON_TYPE">National Socialists</ENAMEX>&apos; &quot;goal was an utopian <ENAMEX type="CONCEPT">Volksgemeinschaft</ENAMEX>, totally under police surveillance, in which any attempt at nonconformist behaviour, or even any hint or intention of such behaviour, would be visited with terror&quot;.</sentence>
-				<sentence xml:id="P67E2"> <ENAMEX type="PERSON">Peukert</ENAMEX> quotes policy documents on the &quot;Treatment of <ENAMEX type="PERSON_TYPE">Community Aliens</ENAMEX>&quot; from <ENAMEX type="PERIOD">1944</ENAMEX>, which (though never implemented) showed the full intentions of <ENAMEX type="PERSON_TYPE">Nazi</ENAMEX> social policy: &quot;persons who ...</sentence>
+				<sentence xml:id="P67E2"> <ENAMEX type="PERSON">Peukert</ENAMEX> quotes policy documents on the &quot;<ENAMEX type="LEGAL">Treatment of Community Aliens</ENAMEX>&quot; from <ENAMEX type="PERIOD">1944</ENAMEX>, which (though never implemented) showed the full intentions of <ENAMEX type="PERSON_TYPE">Nazi</ENAMEX> social policy: &quot;persons who ...</sentence>
 				<sentence xml:id="P67E3">show themselves [to be] unable to comply by their own efforts with the minimum requirements of the national community&quot; were to be placed under police supervision, and if this did not reform them, they were to be taken to a concentration camp.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P68">
@@ -75,7 +75,7 @@
 				<sentence xml:id="P75E4"> <ENAMEX type="PERSON">Albert Einstein</ENAMEX> was visiting the <ENAMEX type="LOCATION">US</ENAMEX> on <ENAMEX type="PERIOD">30 January 1933</ENAMEX>.</sentence>
 				<sentence xml:id="P75E5">He returned to <ENAMEX type="LOCATION">Ostende in Belgium</ENAMEX>, never to set foot in <ENAMEX type="LOCATION">Germany</ENAMEX> again, and calling events there a &quot;psychic illness of the masses&quot;; he was expelled from the <ENAMEX type="ORGANISATION">Kaiser Wilhelm Society</ENAMEX> and the <ENAMEX type="ORGANISATION">Prussian Academy of Sciences</ENAMEX>, and his citizenship was rescinded.</sentence>
 				<sentence xml:id="P75E6"> When <ENAMEX type="LOCATION">Germany</ENAMEX> annexed <ENAMEX type="LOCATION">Austria</ENAMEX> in <ENAMEX type="PERIOD">1938</ENAMEX>, <ENAMEX type="PERSON">Sigmund Freud</ENAMEX> and his family fled from <ENAMEX type="LOCATION">Vienna</ENAMEX> to <ENAMEX type="LOCATION">England</ENAMEX>.</sentence>
-				<sentence xml:id="P75E7"><ENAMEX type="PERSON">Saul Friedländer</ENAMEX> writes that when <ENAMEX type="PERSON">Max Liebermann, honorary president of the Prussian Academy of Arts</ENAMEX>, resigned his position, none of his colleagues expressed sympathy, and he was still ostracized at his death two years later.</sentence>
+				<sentence xml:id="P75E7"><ENAMEX type="PERSON">Saul Friedländer</ENAMEX> writes that when <ENAMEX type="PERSON">Max Liebermann, honorary president of the Prussian Academy of Arts</ENAMEX>, resigned his position, none of his colleagues expressed sympathy, and he was still ostracized at his death <ENAMEX type="PERIOD">two years later</ENAMEX>.</sentence>
 				<sentence xml:id="P75E8">When the police arrived in <ENAMEX type="PERIOD">1943</ENAMEX> with a stretcher to deport his <ENAMEX type="MEASURE">85</ENAMEX>-year-old bedridden widow, she committed suicide with an overdose of barbiturates rather than be taken.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P76">
@@ -219,7 +219,7 @@
 				<sentence xml:id="P109E0">Though the vast majority of the <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> affected and killed during <ENAMEX type="EVENT">Holocaust</ENAMEX> were of <ENAMEX type="PERSON_TYPE">Ashkenazi</ENAMEX> descent, <ENAMEX type="PERSON_TYPE">Sephardi and Mizrahi Jews</ENAMEX> suffered greatly as well.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P110">
-				<sentence xml:id="P110E0">In <ENAMEX type="PERIOD">1938</ENAMEX>, the <ENAMEX type="NATIONAL">Fascist Italian</ENAMEX> regime passed <ENAMEX type="LEGAL">anti-Semitic laws</ENAMEX> which barred <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> from government jobs and government schools, and required them to stamp &quot;<ENAMEX type="PERSON_TYPE">Jewish</ENAMEX> race&quot; into their passports.</sentence>
+				<sentence xml:id="P110E0">In <ENAMEX type="PERIOD">1938</ENAMEX>, the <ENAMEX type="CONCEPTUAL">Fascist</ENAMEX> <ENAMEX type="NATIONAL">Italian</ENAMEX> regime passed <ENAMEX type="LEGAL">anti-Semitic laws</ENAMEX> which barred <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> from government jobs and government schools, and required them to stamp &quot;<ENAMEX type="PERSON_TYPE">Jewish</ENAMEX> race&quot; into their passports.</sentence>
 				<sentence xml:id="P110E1"> But these laws were not harsh enough to force <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> to leave <ENAMEX type="LOCATION">Libya</ENAMEX>, because <ENAMEX type="MEASURE">25%</ENAMEX> of <ENAMEX type="LOCATION">Tripoli</ENAMEX>&apos;s population was <ENAMEX type="PERSON_TYPE">Jewish</ENAMEX>, and the city had <ENAMEX type="MEASURE">over 44</ENAMEX> synagogues.</sentence>
 				<sentence xml:id="P110E2"> In <ENAMEX type="PERIOD">1942</ENAMEX>, the <ENAMEX type="PERSON_TYPE">Nazis</ENAMEX> occupied <ENAMEX type="LOCATION">Benghazi&apos;s Jewish Quarter</ENAMEX> and deported <ENAMEX type="MEASURE">more than 2,000</ENAMEX> <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> to <ENAMEX type="PERSON_TYPE">Nazi</ENAMEX> labor camps.</sentence>
 				<sentence xml:id="P110E3">By the end of <ENAMEX type="EVENT">WWII</ENAMEX>, about <ENAMEX type="MEASURE">one-fifth</ENAMEX> of those who were sent away had perished.</sentence>
@@ -233,19 +233,19 @@
 				<sentence xml:id="P111E3"> <ENAMEX type="MEASURE">More than 2,500</ENAMEX> <ENAMEX type="PERSON_TYPE">Tunisian Jews</ENAMEX> died in slave labor camps during the <ENAMEX type="NATIONAL">German</ENAMEX> occupation.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P112">
-				<sentence xml:id="P112E0"><ENAMEX type="LOCATION">General Government and Lublin reservation</ENAMEX> (<ENAMEX type="UNKNOWN">Nisko plan</ENAMEX>)</sentence>
+				<sentence xml:id="P112E0"><ENAMEX type="LOCATION">General Government</ENAMEX> and <ENAMEX type="INSTALLATION">Lublin reservation</ENAMEX> (<ENAMEX type="UNKNOWN">Nisko plan</ENAMEX>)</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P113">
 				<sentence xml:id="P113E0">Main articles: <ENAMEX type="UNKNOWN">Nisko Plan</ENAMEX> and <ENAMEX type="LOCATION">General Government</ENAMEX></sentence>
 			</p>
 			<p xml:lang="en" xml:id="P114">
 				<sentence xml:id="P114E0">On <ENAMEX type="PERIOD">28 September 1939</ENAMEX>, <ENAMEX type="LOCATION">Germany</ENAMEX> gained control over the <ENAMEX type="LOCATION">Lublin area</ENAMEX> through the <ENAMEX type="LEGAL">German-Soviet agreement</ENAMEX> in exchange for <ENAMEX type="LOCATION">Lithuania</ENAMEX>.</sentence>
-				<sentence xml:id="P114E1"> According to the <ENAMEX type="UNKNOWN">Nisko Plan</ENAMEX>, they set up the <ENAMEX type="LOCATION">Lublin-Lipowa Reservation</ENAMEX> in the area.</sentence>
+				<sentence xml:id="P114E1"> According to the <ENAMEX type="UNKNOWN">Nisko Plan</ENAMEX>, they set up the <ENAMEX type="INSTALLATION">Lublin-Lipowa Reservation</ENAMEX> in the area.</sentence>
 				<sentence xml:id="P114E2">The reservation was designated by <ENAMEX type="PERSON">Adolf Eichmann</ENAMEX>, who was assigned the task of removing all <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> from <ENAMEX type="LOCATION">Germany, Austria, and the Protectorate of Bohemia and Moravia</ENAMEX>.</sentence>
 				<sentence xml:id="P114E3"> They shipped the first Jews to <ENAMEX type="LOCATION">Lublin</ENAMEX> on <ENAMEX type="PERIOD">18 October 1939</ENAMEX>.</sentence>
 				<sentence xml:id="P114E4">The first train loads consisted of <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> deported from <ENAMEX type="LOCATION">Austria and the Protectorate of Bohemia and Moravia</ENAMEX>.</sentence>
 				<sentence xml:id="P114E5"> By <ENAMEX type="PERIOD">30 January 1940</ENAMEX>, a total of <ENAMEX type="MEASURE">78,000</ENAMEX> <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> had been deported to <ENAMEX type="LOCATION">Lublin</ENAMEX> from <ENAMEX type="LOCATION">Germany, Austria, and Czechoslovakia</ENAMEX>.</sentence>
-				<sentence xml:id="P114E6"> On <ENAMEX type="MEASURE">12 and 13 February 1940</ENAMEX>, the <ENAMEX type="PERSON_TYPE">Pomeranian Jews</ENAMEX> were deported to the <ENAMEX type="LOCATION">Lublin reservation</ENAMEX>, resulting in <ENAMEX type="PERSON">Pomeranian Gauleiter Franz Schwede-Coburg</ENAMEX> to be the <ENAMEX type="MEASURE">first</ENAMEX> to declare his Gau (country subdivision) judenrein (&quot;free of <ENAMEX type="PERSON_TYPE">Jews</ENAMEX>&quot;).</sentence>
+				<sentence xml:id="P114E6"> On <ENAMEX type="MEASURE">12 and 13 February 1940</ENAMEX>, the <ENAMEX type="PERSON_TYPE">Pomeranian Jews</ENAMEX> were deported to the <ENAMEX type="LOCATION">Lublin reservation</ENAMEX>, resulting in <ENAMEX type="PERSON">Pomeranian Gauleiter Franz Schwede-Coburg</ENAMEX> to be the <ENAMEX type="MEASURE">first</ENAMEX> to declare his Gau (country subdivision) <ENAMEX type="LOCATION">judenrein</ENAMEX> (&quot;free of <ENAMEX type="PERSON_TYPE">Jews</ENAMEX>&quot;).</sentence>
 				<sentence xml:id="P114E7"> On <ENAMEX type="PERIOD">24 March 1940</ENAMEX> <ENAMEX type="PERSON">Göring</ENAMEX> put the <ENAMEX type="UNKNOWN">Nisko Plan</ENAMEX> on hold, and abandoned it entirely by <ENAMEX type="PERIOD">the end of April</ENAMEX>.</sentence>
 				<sentence xml:id="P114E8"> By the time the <ENAMEX type="UNKNOWN">Nisko Plan</ENAMEX> was stopped, the total number of <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> who had been transported to <ENAMEX type="LOCATION">Nisko</ENAMEX> had reached <ENAMEX type="MEASURE">95,000</ENAMEX>, many of whom had died from starvation.</sentence>
 			</p>
@@ -280,7 +280,7 @@
 				<sentence xml:id="P121E0">The <ENAMEX type="INSTITUTION">Third Reich</ENAMEX> first used concentration camps as places of incarceration.</sentence>
 				<sentence xml:id="P121E1">And though death rates were high—with a mortality rate of <ENAMEX type="MEASURE">50%</ENAMEX>—they were not designed to be killing centers.</sentence>
 				<sentence xml:id="P121E2"><ENAMEX type="PERIOD">After 1939</ENAMEX>, the camps increasingly became places where <ENAMEX type="PERSON_TYPE">Jews and POWs</ENAMEX> were either killed or made to work as slave laborers, undernourished and tortured.</sentence>
-				<sentence xml:id="P121E3"> By <ENAMEX type="PERIOD">1942</ENAMEX>, <ENAMEX type="INSTITUTION">six</ENAMEX> large camps were built in <ENAMEX type="LOCATION">Poland</ENAMEX> solely for mass killing.</sentence>
+				<sentence xml:id="P121E3"> By <ENAMEX type="PERIOD">1942</ENAMEX>, <ENAMEX type="MEASURE">six</ENAMEX> large camps were built in <ENAMEX type="LOCATION">Poland</ENAMEX> solely for mass killing.</sentence>
 				<sentence xml:id="P121E4">It is estimated <ENAMEX type="PERSON_TYPE">Germans</ENAMEX> established <ENAMEX type="MEASURE">15,000</ENAMEX> camps and subcamps in the occupied countries, mostly in <ENAMEX type="LOCATION">eastern Europe</ENAMEX>.</sentence>
 				<sentence xml:id="P121E5"> New camps were founded in areas with large <ENAMEX type="PERSON_TYPE">Jewish, Polish intelligentsia, communist, or Roma and Sinti</ENAMEX> populations, including inside <ENAMEX type="LOCATION">Germany</ENAMEX>.</sentence>
 				<sentence xml:id="P121E6">Prisoner transportation was often carried out under horrifying conditions in rail freight cars; many died before reaching their destination.</sentence>
@@ -433,7 +433,7 @@
 				<sentence xml:id="P152E2">By <ENAMEX type="PERIOD">December 1941</ENAMEX>, the <ENAMEX type="MEASURE">four</ENAMEX> <ENAMEX type="INSTITUTION">Einsatzgruppen</ENAMEX> had killed, respectively, <ENAMEX type="MEASURE">125,000, 45,000, 75,000, and 55,000</ENAMEX> people—a total of <ENAMEX type="MEASURE">300,000</ENAMEX> people—mainly by shooting or with hand grenades at mass-killing sites outside the major towns.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P153">
-				<sentence xml:id="P153E0">The <ENAMEX type="INSTALLATION">United States Holocaust Memorial Museum</ENAMEX> provides the account of one survivor of the <ENAMEX type="INSTITUTION">Einsatzgruppen</ENAMEX> in <ENAMEX type="LOCATION">Piryatin, Ukraine</ENAMEX>, where the <ENAMEX type="PERSON_TYPE">Germans</ENAMEX> killed <ENAMEX type="MEASURE">1,600</ENAMEX> <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> on <ENAMEX type="PERIOD">6 April 1942, the second day of Passover</ENAMEX>:</sentence>
+				<sentence xml:id="P153E0">The <ENAMEX type="INSTALLATION">United States Holocaust Memorial Museum</ENAMEX> provides the account of <ENAMEX type="MEASURE">one</ENAMEX> survivor of the <ENAMEX type="INSTITUTION">Einsatzgruppen</ENAMEX> in <ENAMEX type="LOCATION">Piryatin, Ukraine</ENAMEX>, where the <ENAMEX type="PERSON_TYPE">Germans</ENAMEX> killed <ENAMEX type="MEASURE">1,600</ENAMEX> <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> on <ENAMEX type="PERIOD">6 April 1942, the second day of Passover</ENAMEX>:</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P154">
 				<sentence xml:id="P154E0">  I saw them do the killing.</sentence>
@@ -443,7 +443,7 @@
 				<sentence xml:id="P154E4">His eyes were bloody and he was screaming: &quot;Finish me off!&quot;</sentence>
 				<sentence xml:id="P154E5">...</sentence>
 				<sentence xml:id="P154E6">A murdered woman lay at my feet.</sentence>
-				<sentence xml:id="P154E7">A boy of five years crawled out from under her body and began to scream desperately.</sentence>
+				<sentence xml:id="P154E7">A boy of <ENAMEX type="MEASURE">five</ENAMEX> years crawled out from under her body and began to scream desperately.</sentence>
 				<sentence xml:id="P154E8">&quot;Mommy!&quot;</sentence>
 				<sentence xml:id="P154E9">That was all I saw, since I fell unconscious.</sentence>
 			</p>
@@ -571,7 +571,7 @@
 			</p>
 			<p xml:lang="en" xml:id="P183">
 				<sentence xml:id="P183E0">The <ENAMEX type="PERSON_TYPE">Nazis</ENAMEX> methodically tracked the progress of the <ENAMEX type="EVENT">Holocaust</ENAMEX> in <ENAMEX type="MEASURE">thousands</ENAMEX> of reports and documents.</sentence>
-				<sentence xml:id="P183E1">Pictured is the <ENAMEX type="UNKNOWN">Höfle Telegram</ENAMEX> sent to <ENAMEX type="PERSON">Adolf Eichmann</ENAMEX> in <ENAMEX type="PERIOD">January 1943</ENAMEX>, that reported that <ENAMEX type="MEASURE">1,274,166</ENAMEX> <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> had been killed in the four <ENAMEX type="INSTALLATION">Aktion Reinhard camps</ENAMEX> during <ENAMEX type="PERIOD">1942</ENAMEX>.</sentence>
+				<sentence xml:id="P183E1">Pictured is the <ENAMEX type="UNKNOWN">Höfle Telegram</ENAMEX> sent to <ENAMEX type="PERSON">Adolf Eichmann</ENAMEX> in <ENAMEX type="PERIOD">January 1943</ENAMEX>, that reported that <ENAMEX type="MEASURE">1,274,166</ENAMEX> <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> had been killed in the <ENAMEX type="MEASURE">four</ENAMEX> <ENAMEX type="INSTALLATION">Aktion Reinhard camps</ENAMEX> during <ENAMEX type="PERIOD">1942</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P184">
 				<sentence xml:id="P184E0"><ENAMEX type="PERSON">Reinhard Heydrich</ENAMEX> convened the <ENAMEX type="EVENT">Wannsee Conference on 20 January 1942 in Berlin&apos;s Wannsee suburb</ENAMEX>.</sentence>
@@ -591,7 +591,7 @@
 			<p xml:lang="en" xml:id="P187">
 				<sentence xml:id="P187E0">The officials were told there were <ENAMEX type="MEASURE">2.3 million</ENAMEX> <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> in the <ENAMEX type="LOCATION">General Government</ENAMEX>, <ENAMEX type="MEASURE">850,000</ENAMEX> in <ENAMEX type="LOCATION">Hungary</ENAMEX>, <ENAMEX type="MEASURE">1.1 million</ENAMEX> in the other occupied countries, and up to <ENAMEX type="MEASURE">five million</ENAMEX> in the <ENAMEX type="LOCATION">USSR</ENAMEX>, although <ENAMEX type="MEASURE">two million</ENAMEX> of these were in areas still under <ENAMEX type="NATIONAL">Soviet</ENAMEX> control—a total of about <ENAMEX type="MEASURE">6.5 million</ENAMEX>.</sentence>
 				<sentence xml:id="P187E1">These would all be transported by train to extermination camps (Vernichtungslager) in <ENAMEX type="LOCATION">Poland</ENAMEX>, where almost all of them would be gassed at once.</sentence>
-				<sentence xml:id="P187E2">In some camps, such as <ENAMEX type="LOCATION">Auschwitz</ENAMEX>, those fit for work would be kept alive for a while, but eventually all would be killed.</sentence>
+				<sentence xml:id="P187E2">In some camps, such as <ENAMEX type="INSTALLATION">Auschwitz</ENAMEX>, those fit for work would be kept alive for a while, but eventually all would be killed.</sentence>
 				<sentence xml:id="P187E3"><ENAMEX type="PERSON">Göring&apos;s representative, Erich Neumann</ENAMEX>, gained a limited exemption for some classes of industrial workers.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P188">
@@ -601,7 +601,7 @@
 				<sentence xml:id="P189E0"><ENAMEX type="PERSON_TYPE">German</ENAMEX> public</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P190">
-				<sentence xml:id="P190E0">In his <ENAMEX type="PERIOD">1983</ENAMEX> book, <ENAMEX type="CREATION">Popular Opinion and Political Dissent in the Third Reich</ENAMEX>, <ENAMEX type="PERSON">Ian Kershaw</ENAMEX> examined the Alltagsgeschichte (history of everyday life) in <ENAMEX type="LOCATION">Bavaria</ENAMEX> during the <ENAMEX type="PERIOD">Nazi period</ENAMEX>.</sentence>
+				<sentence xml:id="P190E0">In his <ENAMEX type="PERIOD">1983</ENAMEX> book, <ENAMEX type="CREATION">Popular Opinion and Political Dissent in the Third Reich</ENAMEX>, <ENAMEX type="PERSON">Ian Kershaw</ENAMEX> examined the <ENAMEX type="CONCEPT">Alltagsgeschichte</ENAMEX> (history of everyday life) in <ENAMEX type="LOCATION">Bavaria</ENAMEX> during the <ENAMEX type="PERIOD">Nazi period</ENAMEX>.</sentence>
 				<sentence xml:id="P190E1"> Describing the attitudes of most <ENAMEX type="PERSON_TYPE">Bavarians</ENAMEX>, <ENAMEX type="PERSON">Kershaw</ENAMEX> argued that the most common viewpoint was indifference towards what was happening to the <ENAMEX type="PERSON_TYPE">Jews</ENAMEX>.</sentence>
 				<sentence xml:id="P190E2"> <ENAMEX type="PERSON">Kershaw</ENAMEX> argued that most <ENAMEX type="PERSON_TYPE">Bavarians</ENAMEX> were vaguely aware of the <ENAMEX type="EVENT">Shoah</ENAMEX>, but were vastly more concerned about the war than about the &quot;<ENAMEX type="CONCEPT">Final Solution to the Jewish Question</ENAMEX>&quot;.</sentence>
 				<sentence xml:id="P190E3"> <ENAMEX type="PERSON">Kershaw</ENAMEX> made the analogy that &quot;the road to <ENAMEX type="INSTALLATION">Auschwitz</ENAMEX> was built by hate, but paved with indifference&quot;.</sentence>
@@ -659,13 +659,13 @@
 			</p>
 			<p xml:lang="en" xml:id="P200">
 				<sentence xml:id="P200E0">The &quot;<ENAMEX type="PERSON_TYPE">Trawniki</ENAMEX> men&quot; were deployed in all major killing sites of the &quot;<ENAMEX type="CONCEPT">Final Solution</ENAMEX>&quot;—it was their primary purpose of training.</sentence>
-				<sentence xml:id="P200E1">They took an active role in the executions of <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> at <ENAMEX type="INSTALLATION">Belzec, Sobibór, Treblinka II</ENAMEX>, <ENAMEX type="LOCATION">Warsaw</ENAMEX> (<ENAMEX type="MEASURE">three</ENAMEX> times), <ENAMEX type="LOCATION">Częstochowa, Lublin, Lvov, Radom, Kraków, Białystok</ENAMEX> (twice), <ENAMEX type="INSTALLATION">Majdanek</ENAMEX> as well as <ENAMEX type="INSTALLATION">Auschwitz</ENAMEX>, not to mention <ENAMEX type="INSTALLATION">Trawniki</ENAMEX> itself, and the remaining subcamps of <ENAMEX type="INSTALLATION">KL Lublin/Majdanek camp complex</ENAMEX> including <ENAMEX type="INSTALLATION">Poniatowa, Budzyń, Kraśnik, Puławy, Lipowa</ENAMEX>, and also during massacres in <ENAMEX type="LOCATION">Łomazy, Międzyrzec, Łuków, Radzyń, Parczew, Końskowola, Komarówka</ENAMEX> and other locations.</sentence>
+				<sentence xml:id="P200E1">They took an active role in the executions of <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> at <ENAMEX type="INSTALLATION">Belzec, Sobibór, Treblinka II</ENAMEX>, <ENAMEX type="LOCATION">Warsaw</ENAMEX> (<ENAMEX type="MEASURE">three</ENAMEX> times), <ENAMEX type="LOCATION">Częstochowa, Lublin, Lvov, Radom, Kraków, Białystok</ENAMEX> (<ENAMEX type="MEASURE">twice</ENAMEX>), <ENAMEX type="INSTALLATION">Majdanek</ENAMEX> as well as <ENAMEX type="INSTALLATION">Auschwitz</ENAMEX>, not to mention <ENAMEX type="INSTALLATION">Trawniki</ENAMEX> itself, and the remaining subcamps of <ENAMEX type="INSTALLATION">KL Lublin/Majdanek camp</ENAMEX> complex including <ENAMEX type="INSTALLATION">Poniatowa, Budzyń, Kraśnik, Puławy, Lipowa</ENAMEX>, and also during massacres in <ENAMEX type="LOCATION">Łomazy, Międzyrzec, Łuków, Radzyń, Parczew, Końskowola, Komarówka</ENAMEX> and other locations.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P212">
-				<sentence xml:id="P212E0">During <ENAMEX type="PERIOD">1942</ENAMEX>, in addition to <ENAMEX type="INSTALLATION">Auschwitz</ENAMEX>, five other camps were designated as extermination camps (Vernichtungslager) for the carrying out of the <ENAMEX type="UNKNOWN">Reinhard plan</ENAMEX>.</sentence>
-				<sentence xml:id="P212E1"> Two of these, <ENAMEX type="INSTALLATION">Chełmno</ENAMEX> and <ENAMEX type="INSTALLATION">Majdanek</ENAMEX>, were already functioning as, respectively, a labor camp and a <ENAMEX type="PERSON_TYPE">POW</ENAMEX> camp: these now had extermination facilities added to them.</sentence>
-				<sentence xml:id="P212E2">Three new camps were built for the sole purpose of killing large numbers of <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> as quickly as possible, at <ENAMEX type="INSTALLATION">Belzec</ENAMEX>, <ENAMEX type="INSTALLATION">Sobibór</ENAMEX> and <ENAMEX type="INSTALLATION">Treblinka</ENAMEX>, but <ENAMEX type="INSTALLATION">Auschwitz</ENAMEX> was the most radically transformed in terms of systematic killing.</sentence>
-				<sentence xml:id="P212E3"> A seventh camp, at <ENAMEX type="INSTALLATION">Maly Trostinets in Belarus</ENAMEX>, was also used for this purpose.</sentence>
+				<sentence xml:id="P212E0">During <ENAMEX type="PERIOD">1942</ENAMEX>, in addition to <ENAMEX type="INSTALLATION">Auschwitz</ENAMEX>, <ENAMEX type="MEASURE">five</ENAMEX> other camps were designated as extermination camps (Vernichtungslager) for the carrying out of the <ENAMEX type="UNKNOWN">Reinhard plan</ENAMEX>.</sentence>
+				<sentence xml:id="P212E1"> <ENAMEX type="MEASURE">Two</ENAMEX> of these, <ENAMEX type="INSTALLATION">Chełmno</ENAMEX> and <ENAMEX type="INSTALLATION">Majdanek</ENAMEX>, were already functioning as, respectively, a labor camp and a <ENAMEX type="PERSON_TYPE">POW</ENAMEX> camp: these now had extermination facilities added to them.</sentence>
+				<sentence xml:id="P212E2"><ENAMEX type="MEASURE">Three</ENAMEX> new camps were built for the sole purpose of killing large numbers of <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> as quickly as possible, at <ENAMEX type="INSTALLATION">Belzec, Sobibór and Treblinka</ENAMEX>, but <ENAMEX type="INSTALLATION">Auschwitz</ENAMEX> was the most radically transformed in terms of systematic killing.</sentence>
+				<sentence xml:id="P212E3"> A <ENAMEX type="MEASURE">seventh</ENAMEX> camp, at <ENAMEX type="INSTALLATION">Maly Trostinets</ENAMEX> in <ENAMEX type="LOCATION">Belarus</ENAMEX>, was also used for this purpose.</sentence>
 				<sentence xml:id="P212E4"><ENAMEX type="INSTALLATION">Jasenovac</ENAMEX> was an extermination camp where mostly ethnic <ENAMEX type="PERSON_TYPE">Serbs</ENAMEX> were killed.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P213">
@@ -675,14 +675,14 @@
 			</p>
 			<p xml:lang="en" xml:id="P214">
 				<sentence xml:id="P214E0">  There was a place called the ramp where the trains with the <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> were coming in.</sentence>
-				<sentence xml:id="P214E1">They were coming in day and night, and sometimes <ENAMEX type="LOCATION">one</ENAMEX> per day and sometimes <ENAMEX type="LOCATION">five</ENAMEX> per day… Constantly, people from the <ENAMEX type="LOCATION">heart of Europe</ENAMEX> were disappearing, and they were arriving to the same place with the same ignorance of the fate of the previous transport.</sentence>
+				<sentence xml:id="P214E1">They were coming in day and night, and sometimes <ENAMEX type="MEASURE">one</ENAMEX> per day and sometimes <ENAMEX type="MEASURE">five</ENAMEX> per day… Constantly, people from the <ENAMEX type="LOCATION">heart of Europe</ENAMEX> were disappearing, and they were arriving to the same place with the same ignorance of the fate of the previous transport.</sentence>
 				<sentence xml:id="P214E2">And the people in this mass…I knew that within a <ENAMEX type="PERIOD">couple of hours</ENAMEX>…<ENAMEX type="MEASURE">ninety percent</ENAMEX> would be gassed.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P215">
-				<sentence xml:id="P215E0">  — <ENAMEX type="PERSON">Rudolf Vrba</ENAMEX>, who worked on the <ENAMEX type="INSTALLATION">Judenrampe in Auschwitz</ENAMEX> <ENAMEX type="PERIOD">from 18 August 1942 to 7 June 1943</ENAMEX>.</sentence>
+				<sentence xml:id="P215E0">  — <ENAMEX type="PERSON">Rudolf Vrba</ENAMEX>, who worked on the <ENAMEX type="INSTALLATION">Judenrampe</ENAMEX> in <ENAMEX type="INSTALLATION">Auschwitz</ENAMEX> <ENAMEX type="PERIOD">from 18 August 1942 to 7 June 1943</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P216">
-				<sentence xml:id="P216E0">There were another few &quot;concentration&quot; camps, such as the <ENAMEX type="INSTALLATION">Mauthausen-Gusen concentration camp in pre-war Austria</ENAMEX>, which were designed as Extermination through labor camps.</sentence>
+				<sentence xml:id="P216E0">There were another few &quot;concentration&quot; camps, such as the <ENAMEX type="INSTALLATION">Mauthausen-Gusen concentration camp</ENAMEX> in <ENAMEX type="LOCATION">pre-war Austria</ENAMEX>, which were designed as Extermination through labor camps.</sentence>
 				<sentence xml:id="P216E1">These were specifically for the process where very extreme hard labor was deliberately intended to murder.</sentence>
 				<sentence xml:id="P216E2">This is in contrast to those concentration camps, where the murder was &quot;incidental&quot; to the extremely harsh conditions.</sentence>
 			</p>
@@ -691,7 +691,7 @@
 			</p>
 			<p xml:lang="en" xml:id="P218">
 				<sentence xml:id="P218E0">At the extermination camps with gas chambers all the prisoners arrived by train.</sentence>
-				<sentence xml:id="P218E1">Sometimes entire trainloads were sent straight to the gas chambers, but usually the camp <ENAMEX type="TITLE">doctor</ENAMEX> on duty subjected individuals to selections, where a small percentage were deemed fit to work in the slave labor camps; the majority were taken directly from the platforms to a reception area where all their clothes and other possessions were seized by the <ENAMEX type="PERSON_TYPE">Nazis</ENAMEX> to help fund the war.</sentence>
+				<sentence xml:id="P218E1">Sometimes entire trainloads were sent straight to the gas chambers, but usually the camp doctor on duty subjected individuals to selections, where a small percentage were deemed fit to work in the slave labor camps; the majority were taken directly from the platforms to a reception area where all their clothes and other possessions were seized by the <ENAMEX type="PERSON_TYPE">Nazis</ENAMEX> to help fund the war.</sentence>
 				<sentence xml:id="P218E2">They were then herded naked into the gas chambers.</sentence>
 				<sentence xml:id="P218E3">Usually they were told these were showers or delousing chambers, and there were signs outside saying &quot;baths&quot; and &quot;sauna.&quot;</sentence>
 				<sentence xml:id="P218E4">They were sometimes given a small piece of soap and a towel so as to avoid panic, and were told to remember where they had put their belongings for the same reason.</sentence>
@@ -721,7 +721,7 @@
 			</p>
 			<p xml:lang="en" xml:id="P223">
 				<sentence xml:id="P223E0">  Another improvement we made over <ENAMEX type="INSTALLATION">Treblinka</ENAMEX> was that we built our gas chambers to accommodate <ENAMEX type="MEASURE">2,000</ENAMEX> people at one time, whereas at <ENAMEX type="INSTALLATION">Treblinka</ENAMEX> their <ENAMEX type="MEASURE">10</ENAMEX> gas chambers only accommodated <ENAMEX type="MEASURE">200</ENAMEX> people each.</sentence>
-				<sentence xml:id="P223E1">The way we selected our victims was as follows: we had two <ENAMEX type="TITLE">SS doctors</ENAMEX> on duty at <ENAMEX type="INSTALLATION">Auschwitz</ENAMEX> to examine the incoming transports of prisoners.</sentence>
+				<sentence xml:id="P223E1">The way we selected our victims was as follows: we had <ENAMEX type="MEASURE">two</ENAMEX> <ENAMEX type="TITLE">SS doctors</ENAMEX> on duty at <ENAMEX type="INSTALLATION">Auschwitz</ENAMEX> to examine the incoming transports of prisoners.</sentence>
 				<sentence xml:id="P223E2">The prisoners would be marched by one of the <ENAMEX type="TITLE">doctors</ENAMEX> who would make spot decisions as they walked by.</sentence>
 				<sentence xml:id="P223E3">Those who were fit for work were sent into the Camp.</sentence>
 				<sentence xml:id="P223E4">Others were sent immediately to the extermination plants.</sentence>
@@ -769,7 +769,7 @@
 				<sentence xml:id="P231E8">[...]</sentence>
 				<sentence xml:id="P231E9"><ENAMEX type="ORGANISATION">Jewish resistance</ENAMEX> organizations attempting to reverse the mass inertia spoke the words: &quot;Do not be led like sheep to slaughter.&quot;</sentence>
 				<sentence xml:id="P231E10">[...]</sentence>
-				<sentence xml:id="P231E11"><ENAMEX type="PERSON">Franz Stangl</ENAMEX>, who had commanded two death camps, was asked in a <ENAMEX type="NATIONAL">West German</ENAMEX> prison about his reaction to the <ENAMEX type="PERSON_TYPE">Jewish</ENAMEX> victims.</sentence>
+				<sentence xml:id="P231E11"><ENAMEX type="PERSON">Franz Stangl</ENAMEX>, who had commanded <ENAMEX type="MEASURE">two</ENAMEX> death camps, was asked in a <ENAMEX type="NATIONAL">West German</ENAMEX> prison about his reaction to the <ENAMEX type="PERSON_TYPE">Jewish</ENAMEX> victims.</sentence>
 				<sentence xml:id="P231E12">He said that only recently he had read a book about lemmings.</sentence>
 				<sentence xml:id="P231E13">It reminded him of <ENAMEX type="INSTALLATION">Treblinka</ENAMEX>.</sentence>
 			</p>
@@ -778,7 +778,7 @@
 				<sentence xml:id="P232E1">The motto of the <ENAMEX type="ORGANISATION">FPO</ENAMEX> was &quot;We will not allow them to take us like sheep to the slaughter.&quot;</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P233">
-				<sentence xml:id="P233E0">Discussing the case of <ENAMEX type="LOCATION">Warsaw</ENAMEX>, <ENAMEX type="PERSON">Timothy Snyder</ENAMEX> notes in a similar vein that it was only during the three months after the <ENAMEX type="EVENT">massive deportations of July–September 1942</ENAMEX> that general agreement on the need for armed resistance was reached, and lays the passivity emanating from the conservative center of <ENAMEX type="PERSON_TYPE">Jewish</ENAMEX> politics at the door of the overall success the <ENAMEX type="PERSON_TYPE">Jewish</ENAMEX> community had enjoyed by engaging in a quid pro quo with the <ENAMEX type="INSTITUTION">pre-war Polish government</ENAMEX>.</sentence>
+				<sentence xml:id="P233E0">Discussing the case of <ENAMEX type="LOCATION">Warsaw</ENAMEX>, <ENAMEX type="PERSON">Timothy Snyder</ENAMEX> notes in a similar vein that it was only during the <ENAMEX type="PERIOD">three months</ENAMEX> after the <ENAMEX type="EVENT">massive deportations of July–September 1942</ENAMEX> that general agreement on the need for armed resistance was reached, and lays the passivity emanating from the conservative center of <ENAMEX type="PERSON_TYPE">Jewish</ENAMEX> politics at the door of the overall success the <ENAMEX type="PERSON_TYPE">Jewish</ENAMEX> community had enjoyed by engaging in a quid pro quo with the <ENAMEX type="INSTITUTION">pre-war Polish government</ENAMEX>.</sentence>
 				<sentence xml:id="P233E1"> By the time of the biggest act of armed resistance, the <ENAMEX type="EVENT">Warsaw Ghetto Uprising of spring 1943</ENAMEX>, only a small minority of <ENAMEX type="PERSON_TYPE">Polish Jews</ENAMEX> were still alive.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P234">
@@ -828,7 +828,7 @@
 				<sentence xml:id="P240E7">Most of the survivors either died in the minefields surrounding the camp or were recaptured and executed.</sentence>
 				<sentence xml:id="P240E8">About <ENAMEX type="MEASURE">60</ENAMEX> survived and joined the <ENAMEX type="PERSON_TYPE">Soviet partisans</ENAMEX>.</sentence>
 				<sentence xml:id="P240E9">On <ENAMEX type="PERIOD">7 October 1944</ENAMEX>, <ENAMEX type="MEASURE">250</ENAMEX> <ENAMEX type="PERSON_TYPE">Jewish Sonderkommandos</ENAMEX> (laborers) at <ENAMEX type="INSTALLATION">Auschwitz</ENAMEX> attacked their guards and blew up <ENAMEX type="INSTALLATION">Crematorium IV</ENAMEX> with explosives that female prisoners had smuggled-in from a nearby factory.</sentence>
-				<sentence xml:id="P240E10">Three <ENAMEX type="NATIONAL">German</ENAMEX> guards were killed during the <ENAMEX type="EVENT">uprising</ENAMEX>, one of whom was stuffed into an oven.</sentence>
+				<sentence xml:id="P240E10"><ENAMEX type="MEASURE">Three</ENAMEX> <ENAMEX type="NATIONAL">German</ENAMEX> guards were killed during the <ENAMEX type="EVENT">uprising</ENAMEX>, one of whom was stuffed into an oven.</sentence>
 				<sentence xml:id="P240E11">The <ENAMEX type="ORGANISATION">Sonderkommandos</ENAMEX> attempted a mass breakout, but all <ENAMEX type="MEASURE">250</ENAMEX> were killed soon afterwards.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P241">
@@ -895,7 +895,7 @@
 				<sentence xml:id="P251E0">The <ENAMEX type="PERSON_TYPE">Jewish</ENAMEX> communities were also systematically deceived about <ENAMEX type="PERSON_TYPE">German</ENAMEX> intentions, and were cut off from most sources of news from the outside world.</sentence>
 				<sentence xml:id="P251E1">The <ENAMEX type="PERSON_TYPE">Germans</ENAMEX> told the <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> that they were being deported to work camps – euphemistically calling it &quot;resettlement in the <ENAMEX type="LOCATION">East</ENAMEX>&quot; – and maintained this illusion through elaborate deceptions all the way to the gas chamber doors (which were marked with labels stating that the chambers were for the removal of lice) to avoid uprisings.</sentence>
 				<sentence xml:id="P251E2">As photographs testify, <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> disembarked at the <ENAMEX type="INSTALLATION">railway stations at Auschwitz</ENAMEX> and other extermination camps carrying sacks and suitcases, clearly having no idea of the fate that awaited them.</sentence>
-				<sentence xml:id="P251E3">Rumours of the reality of the extermination camps filtered back only slowly to the ghettos, and were usually not believed, just as they were not believed when couriers such as <ENAMEX type="PERSON">Jan Karski</ENAMEX>, the <ENAMEX type="ORGANISATION">Polish resistance</ENAMEX> fighter, conveyed them to the western <ENAMEX type="INSTITUTION">Allies</ENAMEX>.</sentence>
+				<sentence xml:id="P251E3">Rumours of the reality of the extermination camps filtered back only slowly to the ghettos, and were usually not believed, just as they were not believed when couriers such as <ENAMEX type="PERSON">Jan Karski</ENAMEX>, the <ENAMEX type="ORGANISATION">Polish resistance</ENAMEX> fighter, conveyed them to the <ENAMEX type="INSTITUTION">western Allies</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P252">
 				<sentence xml:id="P252E0">In spite of common disbelief in the true meaning of &quot;resettlement&quot; the <ENAMEX type="EVENT">Jewish Uprisings</ENAMEX> took place in dozens of <ENAMEX type="PERSON_TYPE">Nazi</ENAMEX> ghettos.</sentence>
@@ -1017,7 +1017,7 @@
 			</p>
 			<p xml:lang="en" xml:id="P277">
 				<sentence xml:id="P277E0">By at least <ENAMEX type="PERIOD">9 October 1942</ENAMEX>, <ENAMEX type="NATIONAL">British</ENAMEX> radio had broadcast news of gassing of <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> to the <ENAMEX type="LOCATION">Netherlands</ENAMEX>.</sentence>
-				<sentence xml:id="P277E1"> In <ENAMEX type="PERIOD">December 1942</ENAMEX>, the western <ENAMEX type="INSTITUTION">Allies</ENAMEX> released the <ENAMEX type="EVENT">Joint Declaration by Members of the United Nations</ENAMEX>, that described how &quot;<ENAMEX type="PERSON">Hitler</ENAMEX>&apos;s oft-repeated intention to exterminate the <ENAMEX type="PERSON_TYPE">Jewish</ENAMEX> people in <ENAMEX type="LOCATION">Europe</ENAMEX>&quot; was being carried out and which declared that they &quot;condemn in the strongest possible terms this bestial policy of cold-blooded extermination.&quot;</sentence>
+				<sentence xml:id="P277E1"> In <ENAMEX type="PERIOD">December 1942</ENAMEX>, the <ENAMEX type="INSTITUTION">western Allies</ENAMEX> released the <ENAMEX type="EVENT">Joint Declaration by Members of the United Nations</ENAMEX>, that described how &quot;<ENAMEX type="PERSON">Hitler</ENAMEX>&apos;s oft-repeated intention to exterminate the <ENAMEX type="PERSON_TYPE">Jewish</ENAMEX> people in <ENAMEX type="LOCATION">Europe</ENAMEX>&quot; was being carried out and which declared that they &quot;condemn in the strongest possible terms this bestial policy of cold-blooded extermination.&quot;</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P278">
 				<sentence xml:id="P278E0">In <ENAMEX type="PERIOD">1942</ENAMEX>, <ENAMEX type="PERSON">Jan Karski</ENAMEX> reported to the <ENAMEX type="INSTITUTION">Polish, British and US governments</ENAMEX> on the situation in <ENAMEX type="LOCATION">Poland</ENAMEX>, especially the <ENAMEX type="EVENT">destruction of the Warsaw Ghetto and the Holocaust of the Jews</ENAMEX>.</sentence>
@@ -1066,8 +1066,8 @@
 				<sentence xml:id="P284E3">The level of detail with which he described the transports allowed <ENAMEX type="NATIONAL">Slovakian</ENAMEX> officials to compare his account with their own deportation records, and the corroboration convinced the <ENAMEX type="INSTITUTION">Allies</ENAMEX> to take the report seriously.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P285">
-				<sentence xml:id="P285E0"><ENAMEX type="MEASURE">Two</ENAMEX> other <ENAMEX type="INSTALLATION">Auschwitz</ENAMEX> inmates, <ENAMEX type="PERSON">Arnost Rosin and Czesław Mordowicz</ENAMEX> escaped on <ENAMEX type="PERIOD">27 May 1944</ENAMEX>, arriving in <ENAMEX type="LOCATION">Slovakia</ENAMEX> on <ENAMEX type="PERIOD">6 June</ENAMEX>, the day of the <ENAMEX type="EVENT">Normandy landing</ENAMEX> (D-Day)</ENAMEX>.</sentence>
-				<sentence xml:id="P285E1">Hearing about <ENAMEX type="LOCATION">Normandy</ENAMEX>, they believed the war was over and got drunk to celebrate, using dollars they&apos;d smuggled out of the camp.</sentence>
+				<sentence xml:id="P285E0"><ENAMEX type="MEASURE">Two</ENAMEX> other <ENAMEX type="INSTALLATION">Auschwitz</ENAMEX> inmates, <ENAMEX type="PERSON">Arnost Rosin and Czesław Mordowicz</ENAMEX> escaped on <ENAMEX type="PERIOD">27 May 1944</ENAMEX>, arriving in <ENAMEX type="LOCATION">Slovakia</ENAMEX> on <ENAMEX type="PERIOD">6 June</ENAMEX>, the day of the <ENAMEX type="EVENT">Normandy landing (D-Day)</ENAMEX>.</sentence>
+				<sentence xml:id="P285E1">Hearing about <ENAMEX type="EVENT">Normandy</ENAMEX>, they believed the war was over and got drunk to celebrate, using dollars they&apos;d smuggled out of the camp.</sentence>
 				<sentence xml:id="P285E2">They were arrested for violating currency laws, and spent <ENAMEX type="PERIOD">eight days</ENAMEX> in prison, before the <ENAMEX type="INSTITUTION">Judenrat</ENAMEX> paid their fines.</sentence>
 				<sentence xml:id="P285E3">The additional information they offered the <ENAMEX type="INSTITUTION">Judenrat</ENAMEX> was added to <ENAMEX type="CREATION">Vrba and Wetzler&apos;s report</ENAMEX> and became known as the <ENAMEX type="CREATION">Auschwitz Protocols</ENAMEX>.</sentence>
 				<sentence xml:id="P285E4">They reported that, <ENAMEX type="PERIOD">between 15 and 27 May 1944</ENAMEX>, <ENAMEX type="MEASURE">100,000</ENAMEX> <ENAMEX type="PERSON_TYPE">Hungarian Jews</ENAMEX> had arrived at <ENAMEX type="INSTALLATION">Birkenau</ENAMEX>, and had been killed at an unprecedented rate, with human fat being used to accelerate the burning.</sentence>
@@ -1103,7 +1103,7 @@
 				<sentence xml:id="P292E6"><ENAMEX type="INSTITUTION">Allied</ENAMEX> air attacks and the operations of <ENAMEX type="PERSON_TYPE">partisans</ENAMEX> made rail transport increasingly difficult, and the objections of the military to the diversion of rail transport for carrying <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> to <ENAMEX type="LOCATION">Poland</ENAMEX> more urgent and harder to ignore.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P293">
-				<sentence xml:id="P293E0">At this time, as the <ENAMEX type="INSTITUTION">Soviet armed forces</ENAMEX> approached, the camps in <ENAMEX type="LOCATION">eastern Poland</ENAMEX> were closed down, any surviving inmates being shipped <ENAMEX type="LOCATION">west</ENAMEX> to camps closer to <ENAMEX type="LOCATION">Germany</ENAMEX>, first to <ENAMEX type="INSTALLATION">Auschwitz</ENAMEX> and later to <ENAMEX type="INSTALLATION">Gross Rosen in Silesia</ENAMEX>.</sentence>
+				<sentence xml:id="P293E0">At this time, as the <ENAMEX type="INSTITUTION">Soviet armed forces</ENAMEX> approached, the camps in <ENAMEX type="LOCATION">eastern Poland</ENAMEX> were closed down, any surviving inmates being shipped west to camps closer to <ENAMEX type="LOCATION">Germany</ENAMEX>, first to <ENAMEX type="INSTALLATION">Auschwitz</ENAMEX> and later to <ENAMEX type="INSTALLATION">Gross Rosen in Silesia</ENAMEX>.</sentence>
 				<sentence xml:id="P293E1"><ENAMEX type="INSTALLATION">Auschwitz</ENAMEX> itself was closed as the <ENAMEX type="PERSON_TYPE">Soviets</ENAMEX> advanced through <ENAMEX type="LOCATION">Poland</ENAMEX>.</sentence>
 				<sentence xml:id="P293E2">The last <ENAMEX type="MEASURE">13</ENAMEX> prisoners, all women, were killed in <ENAMEX type="INSTALLATION">Auschwitz II</ENAMEX> on <ENAMEX type="PERIOD">25 November 1944</ENAMEX>; records show they were &quot;unmittelbar getötet&quot; (&quot;killed outright&quot;), leaving open whether they were gassed or otherwise murdered.</sentence>
 			</p>
@@ -1692,7 +1692,7 @@
 				<sentence xml:id="P501E0">In <ENAMEX type="CREATION">Mein Kampf</ENAMEX>, <ENAMEX type="PERSON">Hitler</ENAMEX> wrote that <ENAMEX type="INSTITUTION">Freemasonry</ENAMEX> had &quot;succumbed&quot; to the <ENAMEX type="PERSON_TYPE">Jews</ENAMEX>: &quot;The general pacifistic paralysis of the national instinct of self-preservation begun by <ENAMEX type="INSTITUTION">Freemasonry</ENAMEX> is then transmitted to the masses of society by the <ENAMEX type="PERSON_TYPE">Jewish</ENAMEX> press.&quot;</sentence>
 				<sentence xml:id="P501E1"> Within the <ENAMEX type="INSTITUTION">Reich</ENAMEX>, however, the &quot;threat&quot; posed by <ENAMEX type="PERSON_TYPE">Freemasons</ENAMEX> was not considered serious <ENAMEX type="PERIOD">from the mid-1930s</ENAMEX> onwards.</sentence>
 				<sentence xml:id="P501E2"> <ENAMEX type="PERSON">Heydrich</ENAMEX> even established a <ENAMEX type="INSTITUTION">Freemasonry museum</ENAMEX>—at which <ENAMEX type="PERSON">Eichmann</ENAMEX> spent some time early in his <ENAMEX type="INSTITUTION">SD</ENAMEX> career—for what he regarded as a &quot;disappeared cult&quot;.</sentence>
-				<sentence xml:id="P501E3"> Similarly, <ENAMEX type="PERSON">Hitler</ENAMEX> was happy to issue a proclamation on <ENAMEX type="PERIOD">27 April 1938</ENAMEX> whose third point lifted restrictions on Party membership for former <ENAMEX type="PERSON_TYPE">Freemasons</ENAMEX>, &quot;provided the applicants had not served with the Lodge as high degree members.&quot;</sentence>
+				<sentence xml:id="P501E3"> Similarly, <ENAMEX type="PERSON">Hitler</ENAMEX> was happy to issue a proclamation on <ENAMEX type="PERIOD">27 April 1938</ENAMEX> whose <ENAMEX type="MEASURE">third</ENAMEX> point lifted restrictions on Party membership for former <ENAMEX type="PERSON_TYPE">Freemasons</ENAMEX>, &quot;provided the applicants had not served with the Lodge as high degree members.&quot;</sentence>
 				<sentence xml:id="P501E4"> The <ENAMEX type="PERSON">Führer</ENAMEX> still maintained <ENAMEX type="INSTITUTION">Freemasonry</ENAMEX> within his conspiratorial outlook, but its adherents were not persecuted in a systematic fashion like groups such as the <ENAMEX type="PERSON_TYPE">Jews</ENAMEX>.</sentence>
 				<sentence xml:id="P501E5"> Those <ENAMEX type="PERSON_TYPE">Freemasons</ENAMEX> who were sent to concentration camps as political prisoners were forced to wear an <ENAMEX type="UNKNOWN">inverted red triangle</ENAMEX>.</sentence>
 			</p>
