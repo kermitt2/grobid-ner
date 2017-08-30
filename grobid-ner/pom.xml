@@ -72,12 +72,12 @@
 			<!-- Should be runtime or at least optional -->
 			<optional>true</optional>
 		</dependency>
-		<dependency>
+
+<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>1.7.25</version>
 		</dependency>
-
 		<!-- for pooling e.g. Engine -->
 		<dependency>
 			<groupId>commons-pool</groupId>
