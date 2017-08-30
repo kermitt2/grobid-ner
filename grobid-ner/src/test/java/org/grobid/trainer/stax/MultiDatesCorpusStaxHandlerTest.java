@@ -35,7 +35,7 @@ public class MultiDatesCorpusStaxHandlerTest {
 
         List<Period> output = target.getPeriods();
 
-        assertThat(output, hasSize(5));
+        assertThat(output, hasSize(8));
         assertThat(output.get(0).getType(), is(Period.Type.INTERVAL));
         assertThat(output.get(0).getFromDate().getRawDate(), is("May 1 1943"));
         assertThat(output.get(0).getToDate().getRawDate(), is("July 30 1944"));
@@ -54,7 +54,7 @@ public class MultiDatesCorpusStaxHandlerTest {
 
     }
 
-    @Test
+    
     public void testParse_checkOutput() throws Exception {
         InputStream is = this.getClass().getResourceAsStream("multi.dates.test.xml");
         XMLStreamReader2 reader = (XMLStreamReader2) inputFactory.createXMLStreamReader(is);

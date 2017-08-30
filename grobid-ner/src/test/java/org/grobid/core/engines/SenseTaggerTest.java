@@ -1,52 +1,46 @@
 package org.grobid.core.engines;
 
-import org.apache.commons.io.FileUtils;
-import org.grobid.core.data.Sense;
-import org.grobid.core.exceptions.GrobidException;
+import org.apache.commons.io.IOUtils;
 import org.grobid.core.EngineMockTest;
+import org.grobid.core.data.Sense;
 import org.junit.Test;
 
-import java.io.File;
+import java.io.InputStream;
 import java.util.List;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
+import static org.hamcrest.Matchers.hasSize;
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertThat;
 
 /**
  * @author Patrice Lopez
  */
-//@Ignore
 public class SenseTaggerTest extends EngineMockTest {
-
-    public File getResourceDir(String resourceDir) {
-        File file = new File(resourceDir);
-        if (!file.exists()) {
-            if (!file.mkdirs()) {
-                throw new GrobidException("Cannot start test, because test resource folder is not correctly set.");
-            }
-        }
-        return (file);
-    }
 
     @Test
     public void testSenseTagger() throws Exception {
-        File textFile =
-                new File(this.getResourceDir("./src/test/resources/").getAbsoluteFile() + "/test.en.txt");
-        if (!textFile.exists()) {
-            throw new GrobidException("Cannot start test, because test resource folder is not correctly set.");
-        }
-        String text = FileUtils.readFileToString(textFile, UTF_8);
+        InputStream is = this.getClass().getResourceAsStream("/test.en.txt");
+
+        String text = IOUtils.toString(is, UTF_8);
 
         SenseTagger tagger = new SenseTagger();
 
         List<Sense> senses = tagger.extractSenses(text);
-        if (senses != null) {
-            for (Sense sense : senses) {
-                System.out.print(text.substring(sense.getOffsetStart(), sense.getOffsetEnd()) + "\t");
-                System.out.println(sense.toString());
-            }
-        } else {
-            System.out.println("No sense found.");
-        }
+        assertNotNull(senses);
+        assertThat(senses, hasSize(8));
+        final Sense sense0 = senses.get(0);
+        assertThat(text.substring(sense0.getOffsetStart(), sense0.getOffsetEnd()), is("James Capel"));
+        assertThat(sense0.getFineSense(), is("contestant/N1"));
+
+        final Sense sense1 = senses.get(1);
+        assertThat(text.substring(sense1.getOffsetStart(), sense1.getOffsetEnd()), is("Mexico"));
+        assertThat(sense1.getFineSense(), is("country/N1"));
+
+        final Sense sense6 = senses.get(6);
+        assertThat(text.substring(sense6.getOffsetStart(), sense6.getOffsetEnd()), is("Russian"));
+        assertThat(sense6.getFineSense(), is("jurisdictional_cultural_adjective/J1"));
     }
 
 }

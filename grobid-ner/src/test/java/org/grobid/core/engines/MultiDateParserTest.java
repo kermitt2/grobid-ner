@@ -151,7 +151,7 @@ public class MultiDateParserTest extends EngineMockTest {
 
     // -- these are not unit tests... only used to develop the other unit tests
 
-    @Test
+//    @Test
     public void testProcess_integration() throws Exception {
 
         final String text = "------";
