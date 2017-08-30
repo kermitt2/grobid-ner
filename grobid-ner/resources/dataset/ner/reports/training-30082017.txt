@@ -1,0 +1,70 @@
+===== Token-level results =====
+
+
+label                accuracy     precision    recall       f1
+
+ACRONYM              99.99        0            0            0
+ARTIFACT             99.93        15           12.5         13.64
+AWARD                99.99        0            0            0
+BUSINESS             99.74        8.33         7.79         8.05
+CONCEPT              99.65        38.82        39.86        39.33
+CONCEPTUAL           99.83        51.02        27.47        35.71
+CREATION             99.52        58.06        7.06         12.59
+EVENT                97.86        31.86        25.6         28.39
+INSTALLATION         99.47        74.32        17.52        28.35
+INSTITUTION          97.41        41.07        44.88        42.89
+LEGAL                98.81        31.6         31.74        31.67
+LOCATION             97.98        60.48        82.95        69.95
+MEASURE              98.86        86.64        67.78        76.06
+MEDIA                99.84        50           2.41         4.6
+NATIONAL             99.47        37.37        77.6         50.44
+ORGANISATION         98.45        17.76        8.67         11.65
+PERIOD               98.74        71.88        74.3         73.07
+PERSON               98.59        85.23        64.82        73.64
+PERSON_TYPE          98.9         75.78        60.89        67.52
+PLANT                100          0            0            0
+SUBSTANCE            99.99        0            0            0
+TITLE                99.39        23.6         18.34        20.64
+UNKNOWN              99.76        18.75        5.66         8.7
+WEBSITE              99.97        7.69         25           11.76
+
+all fields           99.26        59.49        53.24        56.19   (micro average)
+                     99.26        36.89        29.29        29.53   (macro average)
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1
+
+ACRONYM              99.97        0            0            0
+ARTIFACT             99.86        0            0            0
+AWARD                99.98        0            0            0
+BUSINESS             99.68        0            0            0
+CONCEPT              99.21        41.56        40.51        41.03
+CONCEPTUAL           99.72        81.82        23.08        36
+CREATION             99.57        37.5         6.25         10.71
+EVENT                97.37        39.55        33.46        36.25
+INSTALLATION         99.08        78.72        27.61        40.88
+INSTITUTION          95.16        55.67        44.5         49.46
+LEGAL                98.91        36.05        30.1         32.8
+LOCATION             95.97        66.39        86.81        75.24
+MEASURE              97.44        79.11        61.72        69.34
+MEDIA                99.67        50           2.63         5
+NATIONAL             98.62        51.85        82.35        63.64
+ORGANISATION         98.13        27.14        10.27        14.9
+PERIOD               98.17        77.43        81.85        79.58
+PERSON               97.97        83.38        66.07        73.72
+PERSON_TYPE          97.19        82.59        70.64        76.15
+PLANT                99.98        0            0            0
+SUBSTANCE            99.95        0            0            0
+TITLE                99.2         27.66        18.06        21.85
+UNKNOWN              99.6         20           8.11         11.54
+WEBSITE              99.98        50           50           50
+
+all fields           98.77        66.98        60.01        63.3    (micro average)
+                     98.77        41.1         31           32.84   (macro average)
+
+===== Instance-level results =====
+
+Total expected instances:   1750
+Correct instances:          564
+Instance-level recall:      32.23
