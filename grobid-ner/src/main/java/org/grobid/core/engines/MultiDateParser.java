@@ -157,7 +157,7 @@ public class MultiDateParser extends AbstractParser {
 
             //Embedding in the previous token the information
             if (tok.getText().equals(" ")) {
-                previousToken.setSpaceAfter(true);
+                //previousToken.setSpaceAfter(true);
             } else if (tok.getText().equals("\n")) {
                 previousToken.setNewLineAfter(true);
             } else {
