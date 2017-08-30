@@ -254,7 +254,7 @@ public class FeaturesVectorNER {
         if (featuresVector.punctType == null)
             featuresVector.punctType = "NOPUNCT";
 
-        Matcher m2 = featureFactory.year.matcher(token);
+        Matcher m2 = featureFactory.YEAR.matcher(token);
         if (m2.find()) {
             featuresVector.year = true;
         }
