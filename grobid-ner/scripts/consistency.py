@@ -59,6 +59,7 @@ def main(args):
         #catch all ENAMEX tags
         enamex = [] #enamex contain all ENAMEX balises the variable is used at line 26
         sfiles = "" #sfiles is all files in a string variable it serves at line 47
+        files = [file_ for file_ in files if ".xml" in file_]
 
         for file in files:
             with open(args[0] + os.sep + file, 'r') as file_:
