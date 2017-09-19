@@ -1,5 +1,7 @@
 package org.grobid.trainer;
 
+import org.grobid.core.layout.LayoutToken;
+import org.grobid.core.utilities.LayoutTokensNERUtility;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -189,11 +191,11 @@ public class NERFrenchTrainer extends AbstractTrainer {
 			writer = null;
 
 			// to store unit term positions
-            List<List<OffsetPosition>> locationPositions = new ArrayList<List<OffsetPosition>>();
-            List<List<OffsetPosition>> personTitlePositions = new ArrayList<List<OffsetPosition>>();
-            List<List<OffsetPosition>> organisationPositions = new ArrayList<List<OffsetPosition>>();
-			List<List<OffsetPosition>> orgFormPositions = new ArrayList<List<OffsetPosition>>();
-			List<String> labeled = new ArrayList<String>();
+            List<List<OffsetPosition>> locationPositions = new ArrayList<>();
+            List<List<OffsetPosition>> personTitlePositions = new ArrayList<>();
+            List<List<OffsetPosition>> organisationPositions = new ArrayList<>();
+			List<List<OffsetPosition>> orgFormPositions = new ArrayList<>();
+			List<String> labeled = new ArrayList<>();
 			String line = null;
 			for(int i = 0; i<lines.length; i++) {
 				line = lines[i].trim();
@@ -223,14 +225,14 @@ public class NERFrenchTrainer extends AbstractTrainer {
 					if (ind != -1)
 						line = line.substring(0,ind);
 				}
-				//System.out.println(line);
 
 				if ((line.length() == 0) && (labeled.size() > 0)) {
 					// sentence is complete
-					locationPositions.add(lexicon.inLocationNames(labeled));
-		            personTitlePositions.add(lexicon.inPersonTitleNames(labeled));
-		            organisationPositions.add(lexicon.inOrganisationNames(labeled));
-					orgFormPositions.add(lexicon.inOrgFormNames(labeled));
+					List<LayoutToken> tokens = LayoutTokensNERUtility.mapFromTokenisedList(labeled);
+					locationPositions.add(lexicon.tokenPositionsLocationNames(tokens));
+					personTitlePositions.add(lexicon.tokenPositionsPersonTitleNames(tokens));
+					organisationPositions.add(lexicon.tokenPositionsOrganisationNames(tokens));
+					orgFormPositions.add(lexicon.tokenPositionsOrgFormNames(tokens));
 
 					// this is mandatory for the correct setting of features
 					labeled.add("@newline");

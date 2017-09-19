@@ -86,7 +86,7 @@ public class FeaturesVectorMultiDates {
         if (featuresVector.punctType == null)
             featuresVector.punctType = "NOPUNCT";
 
-        Matcher m2 = featureFactory.YEAR.matcher(word);
+        Matcher m2 = featureFactory.year.matcher(word);
         if (m2.find()) {
             featuresVector.year = true;
         }

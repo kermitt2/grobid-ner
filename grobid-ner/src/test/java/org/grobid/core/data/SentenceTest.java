@@ -1,5 +1,6 @@
 package org.grobid.core.data;
 
+import org.grobid.core.analyzers.GrobidAnalyzer;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -27,7 +28,7 @@ public class SentenceTest {
     public void testRelinkEntitiesWithTokenisedList_0entities() throws Exception {
         target.setRawValue("This is a sentence.");
 
-        target.setTokenisedValue(Arrays.asList("This", " ", "is", " ", "a", " ", "sentence", "."));
+        target.setTokenisedValue(GrobidAnalyzer.getInstance().tokenizeWithLayoutToken("This is a sentence."));
 
         final List<Integer> indexList = target.getEntityIndexList();
         assertThat(indexList, hasSize(target.getTokenisedValue().size()));
@@ -54,7 +55,7 @@ public class SentenceTest {
 
         target.setEntities(Arrays.asList(entity1));
 
-        target.setTokenisedValue(Arrays.asList("This", " ", "is", " ", "a", " ", "sentence", "."));
+        target.setTokenisedValue(GrobidAnalyzer.getInstance().tokenizeWithLayoutToken("This is a sentence."));
 
         final List<Integer> indexList = target.getEntityIndexList();
         assertThat(indexList, hasSize(target.getTokenisedValue().size()));
@@ -82,7 +83,7 @@ public class SentenceTest {
 
         target.setEntities(Arrays.asList(entity2, entity1));
 
-        target.setTokenisedValue(Arrays.asList("This", " ", "is", " ", "a", " ", "sentence", "."));
+        target.setTokenisedValue(GrobidAnalyzer.getInstance().tokenizeWithLayoutToken("This is a sentence."));
 
         final List<Integer> indexList = target.getEntityIndexList();
         assertThat(indexList, hasSize(target.getTokenisedValue().size()));

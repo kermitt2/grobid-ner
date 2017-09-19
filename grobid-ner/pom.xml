@@ -21,7 +21,6 @@
         <assemblies.name>src/main/assembly/assembly.xml</assemblies.name>
         <package.file>${project.groupId}.${project.artifactId}_${project.version}.war</package.file>
         <license.file>${basedir}/LICENSE</license.file>
-        <!-- <notice.file>${basedir}/NOTICE</notice.file> -->
     </properties>
 
     <repositories>
@@ -49,7 +48,7 @@
         <dependency>
             <groupId>org.grobid</groupId>
             <artifactId>grobid-trainer</artifactId>
-            <version>0.4.2</version>
+            <version>0.4.3-SNAPSHOT</version>
         </dependency>
 
         <!-- Tests -->
@@ -66,32 +65,11 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.17</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <version>1.7.25</version>
-        </dependency>
-        
-        <!-- for pooling e.g. Engine -->
-        <dependency>
-            <groupId>commons-pool</groupId>
-            <artifactId>commons-pool</artifactId>
-            <version>1.6</version>
-        </dependency>
+        <!-- commons -->
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.5</version>
-        </dependency>
-        <dependency>
-            <groupId>commons-logging</groupId>
-            <artifactId>commons-logging</artifactId>
-            <version>1.2</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -102,12 +80,6 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-collections4</artifactId>
             <version>4.1</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.25</version>
         </dependency>
 
         <dependency>
@@ -128,6 +100,7 @@
             <version>5.0.3</version>
         </dependency>
 
+        <!-- NLP -->
         <dependency>
             <groupId>edu.emory.mathcs.nlp</groupId>
             <artifactId>nlp4j-api</artifactId>
@@ -144,7 +117,9 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.1.0</version>
                 <configuration>
                     <archive>
                         <manifest>

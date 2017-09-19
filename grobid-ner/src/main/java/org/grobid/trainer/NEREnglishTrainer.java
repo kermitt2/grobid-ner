@@ -12,6 +12,7 @@ import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.exceptions.GrobidResourceException;
 import org.grobid.core.features.FeaturesVectorNER;
 import org.grobid.core.lang.Language;
+import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.lexicon.NERLexicon;
 import org.grobid.core.mock.MockContext;
@@ -156,7 +157,7 @@ public class NEREnglishTrainer extends AbstractTrainer {
                     final List<Sentence> sentences = handler.getSentences();
 
                     for (Sentence sentence : sentences) {
-                        List<String> tokens = GrobidAnalyzer.getInstance().tokenize(sentence.getRawValue(), new Language(Language.EN, 1.0));
+                        List<LayoutToken> tokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(sentence.getRawValue(), new Language(Language.EN, 1.0));
                         sentence.setTokenisedValue(tokens);
 
                         computeFeatures(sentence, writer);
@@ -177,10 +178,10 @@ public class NEREnglishTrainer extends AbstractTrainer {
     }
 
     private void computeFeatures(Sentence sentence, Writer writer) {
-        List<OffsetPosition> locationPositions = lexicon.getPositionsInLocationNames(sentence.getTokenisedValue());
-        List<OffsetPosition> personTitlePositions = lexicon.getPositionsInPersonTitleNames(sentence.getTokenisedValue());
-        List<OffsetPosition> organisationPositions = lexicon.getPositionsInOrganisationNames(sentence.getTokenisedValue());
-        List<OffsetPosition> orgFormPositions = lexicon.getPositionsInOrgFormNames(sentence.getTokenisedValue());
+        List<OffsetPosition> locationPositions = lexicon.charPositionsLocationNames(sentence.getTokenisedValue());
+        List<OffsetPosition> personTitlePositions = lexicon.charPositionsPersonTitleNames(sentence.getTokenisedValue());
+        List<OffsetPosition> organisationPositions = lexicon.charPositionsOrganisationNames(sentence.getTokenisedValue());
+        List<OffsetPosition> orgFormPositions = lexicon.charPositionsOrgFormNames(sentence.getTokenisedValue());
 
         //Getting the flat indexes of the OffsetPositions for each dictionary
         List<Integer> locationIndexes = offsetToIndex(sentence.getTokenisedValue(), locationPositions);
@@ -193,7 +194,7 @@ public class NEREnglishTrainer extends AbstractTrainer {
         for (int i = 0; i < sentence.getTokenisedValue().size(); i++) {
             String label = "O";
 
-            final String token = sentence.getTokenisedValue().get(i);
+            final String token = sentence.getTokenisedValue().get(i).getText();
             final Integer entityIndexForThisToken = sentence.getEntityIndexList().get(i);
             if (entityIndexForThisToken > -1) {
                 label = sentence.getEntities().get(entityIndexForThisToken).getType().getName();
@@ -237,12 +238,12 @@ public class NEREnglishTrainer extends AbstractTrainer {
      * @param offsetPositions the list of index position within the tokenised sentence
      * @return an index with explicit index definition
      */
-    protected List<Integer> offsetToIndex(List<String> tokenisedSentence, List<OffsetPosition> offsetPositions) {
+    protected List<Integer> offsetToIndex(List<LayoutToken> tokenisedSentence, List<OffsetPosition> offsetPositions) {
         List<Integer> indexList = new ArrayList<>();
 
         int indexStart = 0;
         for (int i = 0; i < tokenisedSentence.size(); i++) {
-            String token = tokenisedSentence.get(i);
+            String token = tokenisedSentence.get(i).getText();
 
             out:
             for (int locationIdx = indexStart; locationIdx < offsetPositions.size(); locationIdx++) {

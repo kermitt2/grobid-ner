@@ -4,15 +4,17 @@ import org.grobid.core.GrobidModels;
 import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.exceptions.GrobidResourceException;
 import org.grobid.core.features.FeaturesVectorNERSense;
+import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.lexicon.NERLexicon;
 import org.grobid.core.mock.MockContext;
 import org.grobid.core.utilities.GrobidProperties;
+import org.grobid.core.utilities.LayoutTokensNERUtility;
 import org.grobid.core.utilities.OffsetPosition;
 import org.grobid.core.utilities.TextUtilities;
+import org.grobid.trainer.evaluation.EvaluationUtilities;
 import org.grobid.trainer.sax.ReutersSaxHandler;
 import org.grobid.trainer.sax.SemDocSaxHandler;
-import org.grobid.trainer.evaluation.EvaluationUtilities;
 
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
@@ -314,10 +316,12 @@ public class SenseTrainer extends AbstractTrainer {
 
 					if ((line.length() == 0) && (labeled.size() > 0)) {
 						// sentence is complete
-						locationPositions.add(lexicon.inLocationNames(labeled));
-			            personTitlePositions.add(lexicon.inPersonTitleNames(labeled));
-			            organisationPositions.add(lexicon.inOrganisationNames(labeled));
-						orgFormPositions.add(lexicon.inOrgFormNames(labeled));	
+
+						List<LayoutToken> tokens = LayoutTokensNERUtility.mapFromTokenisedList(labeled);
+						locationPositions.add(lexicon.tokenPositionsLocationNames(tokens));
+			            personTitlePositions.add(lexicon.tokenPositionsPersonTitleNames(tokens));
+			            organisationPositions.add(lexicon.tokenPositionsOrganisationNames(tokens));
+						orgFormPositions.add(lexicon.tokenPositionsOrgFormNames(tokens));
 					
 						// this is mandatory for the correct setting of features
 						labeled.add("@newline");
@@ -326,12 +330,12 @@ public class SenseTrainer extends AbstractTrainer {
 							locationPositions, personTitlePositions, organisationPositions, orgFormPositions);
 						writer.write("\n");
 					
-						locationPositions = new ArrayList<List<OffsetPosition>>();
-			            personTitlePositions = new ArrayList<List<OffsetPosition>>();
-			            organisationPositions = new ArrayList<List<OffsetPosition>>();		
-						orgFormPositions = new ArrayList<List<OffsetPosition>>();
+						locationPositions = new ArrayList<>();
+			            personTitlePositions = new ArrayList<>();
+			            organisationPositions = new ArrayList<>();
+						orgFormPositions = new ArrayList<>();
 						
-						labeled = new ArrayList<String>();
+						labeled = new ArrayList<>();
 						res++;
 					}		
 					else 
@@ -478,12 +482,14 @@ System.out.println(fileName);
 				List<List<OffsetPosition>> orgFormPositions = new ArrayList<List<OffsetPosition>>();
 				List<String> labeled = new ArrayList<String>();
 				
-				for(String line : semdocSax.getAnnotatedTextVector()) {	
+				for(String line : semdocSax.getAnnotatedTextVector()) {
 					if (line.trim().startsWith("@newline")) {
-						locationPositions.add(lexicon.inLocationNames(labeled));
-			            personTitlePositions.add(lexicon.inPersonTitleNames(labeled));
-			            organisationPositions.add(lexicon.inOrganisationNames(labeled));
-						orgFormPositions.add(lexicon.inOrgFormNames(labeled));			
+
+						List<LayoutToken> tokens = LayoutTokensNERUtility.mapFromTokenisedList(labeled);
+						locationPositions.add(lexicon.tokenPositionsLocationNames(tokens));
+						personTitlePositions.add(lexicon.tokenPositionsPersonTitleNames(tokens));
+						organisationPositions.add(lexicon.tokenPositionsOrganisationNames(tokens));
+						orgFormPositions.add(lexicon.tokenPositionsOrgFormNames(tokens));
 
 						addFeatures(labeled, writer, 
 							locationPositions, personTitlePositions, organisationPositions, orgFormPositions);
@@ -498,7 +504,7 @@ System.out.println(fileName);
 					}
 					else 
 						labeled.add(line);
-				}				
+				}
 			}
 		}
 		catch (Exception e) {

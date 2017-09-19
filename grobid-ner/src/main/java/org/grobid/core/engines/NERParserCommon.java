@@ -466,7 +466,7 @@ public class NERParserCommon {
 
             outputSentence.setOffsets(new OffsetPosition(firstToken.getStartOffset(), lastToken.getEndOffset()));
             results.add(outputSentence);
-        } 
-        return results; 
+        }
+        return results;
     }
 }

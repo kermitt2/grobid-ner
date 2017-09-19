@@ -26,19 +26,17 @@ public class LexiconPositionsIndexes {
     }
 
     public void computeIndexes(String text) {
-        localLocationPositions = lexicon.inLocationNames(text);
-        localPersonTitlePositions = lexicon.inPersonTitleNames(text);
-        localOrganisationPositions = lexicon.inOrganisationNames(text);
-        localOrgFormPositions = lexicon.inOrgFormNames(text);
+        localLocationPositions = lexicon.tokenPositionsLocationNames(text);
+        localPersonTitlePositions = lexicon.tokenPositionsLocationNames(text);
+        localOrganisationPositions = lexicon.tokenPositionsLocationNames(text);
+        localOrgFormPositions = lexicon.tokenPositionsLocationNames(text);
     }
 
     public void computeIndexes(List<LayoutToken> tokens) {
-        // we should extend the methods to avoid a copy of the strings here
-        List<String> strings = getTexts(tokens);
-        localLocationPositions = lexicon.inLocationNames(strings);
-        localPersonTitlePositions = lexicon.inPersonTitleNames(strings);
-        localOrganisationPositions = lexicon.inOrganisationNames(strings);
-        localOrgFormPositions = lexicon.inOrgFormNames(strings);
+        localLocationPositions = lexicon.tokenPositionsLocationNames(tokens);
+        localPersonTitlePositions = lexicon.tokenPositionsLocationNames(tokens);
+        localOrganisationPositions = lexicon.tokenPositionsLocationNames(tokens);
+        localOrgFormPositions = lexicon.tokenPositionsLocationNames(tokens);
     }
 
     /**

@@ -32,7 +32,7 @@ public class NEREnglishTrainerTest extends EngineMockTest {
         Sentence sentence = new Sentence();
         final String rawSentence = "This is a sentence. A nice one.";
         sentence.setRawValue(rawSentence);
-        sentence.setTokenisedValue(GrobidAnalyzer.getInstance().tokenize(rawSentence));
+        sentence.setTokenisedValue(GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(rawSentence));
 
         List<OffsetPosition> positions = new ArrayList<>();
         positions.add(new OffsetPosition(4, 6));
@@ -50,7 +50,7 @@ public class NEREnglishTrainerTest extends EngineMockTest {
         Sentence sentence = new Sentence();
         final String rawSentence = "This is a sentence. A nice one.";
         sentence.setRawValue(rawSentence);
-        sentence.setTokenisedValue(GrobidAnalyzer.getInstance().tokenize(rawSentence));
+        sentence.setTokenisedValue(GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(rawSentence));
 
         List<OffsetPosition> positions = new ArrayList<>();
 
@@ -64,7 +64,7 @@ public class NEREnglishTrainerTest extends EngineMockTest {
         Sentence sentence = new Sentence();
         final String rawSentence = "";
         sentence.setRawValue(rawSentence);
-        sentence.setTokenisedValue(GrobidAnalyzer.getInstance().tokenize(rawSentence));
+        sentence.setTokenisedValue(GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(rawSentence));
 
         List<OffsetPosition> positions = new ArrayList<>();
         positions.add(new OffsetPosition(4, 6));

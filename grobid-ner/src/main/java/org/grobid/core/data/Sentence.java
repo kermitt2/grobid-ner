@@ -1,5 +1,6 @@
 package org.grobid.core.data;
 
+import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.utilities.OffsetPosition;
 
 import java.util.ArrayList;
@@ -20,7 +21,7 @@ public class Sentence {
 
     // relative offset positions in context
     private OffsetPosition offsets = null;
-    private List<String> tokenisedValue;
+    private List<LayoutToken> tokenisedValue;
     private List<Integer> entityIndexList = new ArrayList<>();
 
     public Sentence() {
@@ -88,7 +89,7 @@ public class Sentence {
      * When the tokens are set, if the entities are present (the list is not empty), a reversed index
      * (to simplify the identification of entities starting from the tokens) is calculated.
      */
-    public void setTokenisedValue(List<String> tokenisedValue) {
+    public void setTokenisedValue(List<LayoutToken> tokenisedValue) {
         this.tokenisedValue = tokenisedValue;
         List<Integer> entityIndexList = new ArrayList<>();
         if (isNotEmpty(getEntities())) {
@@ -97,7 +98,7 @@ public class Sentence {
             out:
             for (int i = 0; i < tokenisedValue.size(); i++) {
                 int idxExpectedStart = checkIndex;
-                int idxExpectedEnd = checkIndex + tokenisedValue.get(i).length();
+                int idxExpectedEnd = checkIndex + tokenisedValue.get(i).getText().length();
 
                 for (int j = startEntityIndex; j < getEntities().size(); j++) {
                     Entity entity = getEntities().get(j);
@@ -114,14 +115,14 @@ public class Sentence {
             }
 
         } else {
-            for (String token : getTokenisedValue()) {
+            for (LayoutToken token : getTokenisedValue()) {
                 entityIndexList.add(-1);
             }
         }
         this.entityIndexList.addAll(entityIndexList);
     }
 
-    public List<String> getTokenisedValue() {
+    public List<LayoutToken> getTokenisedValue() {
         return this.tokenisedValue;
     }
 
