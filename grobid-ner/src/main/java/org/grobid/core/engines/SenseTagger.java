@@ -43,10 +43,10 @@ public class SenseTagger extends AbstractParser {
         try {
             text = text.replace("\n", " ");
 			int sentence = 0;
-			List<OffsetPosition> localLocationPositions = lexicon.inLocationNames(text);
-			List<OffsetPosition> localPersonTitlePositions = lexicon.inPersonTitleNames(text);
-			List<OffsetPosition> localOrganisationPositions = lexicon.inOrganisationNames(text);
-			List<OffsetPosition> localOrgFormPositions = lexicon.inOrgFormNames(text);
+			List<OffsetPosition> localLocationPositions = lexicon.tokenPositionsLocationNames(text);
+			List<OffsetPosition> localPersonTitlePositions = lexicon.tokenPositionsPersonTitleNames(text);
+			List<OffsetPosition> localOrganisationPositions = lexicon.tokenPositionsOrganisationNames(text);
+			List<OffsetPosition> localOrgFormPositions = lexicon.tokenPositionsOrgFormNames(text);
 			int currentPosition = 0;
             StringTokenizer st = new StringTokenizer(text, TextUtilities.fullPunctuations, true);
 			

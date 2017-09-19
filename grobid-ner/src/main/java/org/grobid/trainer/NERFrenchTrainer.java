@@ -1,5 +1,7 @@
 package org.grobid.trainer;
 
+import org.grobid.core.layout.LayoutToken;
+import org.grobid.core.utilities.LayoutTokensNERUtility;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -226,11 +228,12 @@ public class NERFrenchTrainer extends AbstractTrainer {
 
 				if ((line.length() == 0) && (labeled.size() > 0)) {
 					// sentence is complete
-					locationPositions.add(lexicon.inLocationNames(labeled));
-		            personTitlePositions.add(lexicon.inPersonTitleNames(labeled));
-		            organisationPositions.add(lexicon.inOrganisationNames(labeled));
-					orgFormPositions.add(lexicon.inOrgFormNames(labeled));	
-				
+					List<LayoutToken> tokens = LayoutTokensNERUtility.mapFromTokenisedList(labeled);
+					locationPositions.add(lexicon.tokenPositionsLocationNames(tokens));
+					personTitlePositions.add(lexicon.tokenPositionsPersonTitleNames(tokens));
+					organisationPositions.add(lexicon.tokenPositionsOrganisationNames(tokens));
+					orgFormPositions.add(lexicon.tokenPositionsOrgFormNames(tokens));
+
 					// this is mandatory for the correct setting of features
 					labeled.add("@newline");
 				

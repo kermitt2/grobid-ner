@@ -4,10 +4,12 @@ import org.grobid.core.GrobidModels;
 import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.exceptions.GrobidResourceException;
 import org.grobid.core.features.FeaturesVectorNER;
+import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.lexicon.NERLexicon;
 import org.grobid.core.mock.MockContext;
 import org.grobid.core.utilities.GrobidProperties;
+import org.grobid.core.utilities.LayoutTokensNERUtility;
 import org.grobid.core.utilities.OffsetPosition;
 import org.grobid.trainer.sax.ReutersSaxHandler;
 import org.grobid.trainer.sax.SemDocSaxHandler;
@@ -317,10 +319,12 @@ public class NERTrainer extends AbstractTrainer {
 
 					if ((line.length() == 0) && (labeled.size() > 0)) {
 						// sentence is complete
-						locationPositions.add(lexicon.inLocationNames(labeled));
-			            personTitlePositions.add(lexicon.inPersonTitleNames(labeled));
-			            organisationPositions.add(lexicon.inOrganisationNames(labeled));
-						orgFormPositions.add(lexicon.inOrgFormNames(labeled));	
+
+						List<LayoutToken> tokens = LayoutTokensNERUtility.mapFromTokenisedList(labeled);
+						locationPositions.add(lexicon.tokenPositionsLocationNames(tokens));
+						personTitlePositions.add(lexicon.tokenPositionsPersonTitleNames(tokens));
+						organisationPositions.add(lexicon.tokenPositionsOrganisationNames(tokens));
+						orgFormPositions.add(lexicon.tokenPositionsOrgFormNames(tokens));
 					
 						// this is mandatory for the correct setting of features
 						labeled.add("@newline");
@@ -470,10 +474,11 @@ System.out.println(fileName);
 					labeled.add(line);
 					
 					if (line.trim().equals("@newline")) {
-						locationPositions.add(lexicon.inLocationNames(labeled));
-			            personTitlePositions.add(lexicon.inPersonTitleNames(labeled));
-			            organisationPositions.add(lexicon.inOrganisationNames(labeled));
-						orgFormPositions.add(lexicon.inOrgFormNames(labeled));			
+						List<LayoutToken> tokens = LayoutTokensNERUtility.mapFromTokenisedList(labeled);
+						locationPositions.add(lexicon.tokenPositionsLocationNames(tokens));
+						personTitlePositions.add(lexicon.tokenPositionsPersonTitleNames(tokens));
+						organisationPositions.add(lexicon.tokenPositionsOrganisationNames(tokens));
+						orgFormPositions.add(lexicon.tokenPositionsOrgFormNames(tokens));
 					
 						addFeatures(labeled, writer, 
 							locationPositions, personTitlePositions, organisationPositions, orgFormPositions);
