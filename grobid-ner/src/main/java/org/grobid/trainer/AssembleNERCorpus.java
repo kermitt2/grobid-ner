@@ -29,7 +29,6 @@ import java.util.List;
 import java.util.Properties;
 import java.util.StringTokenizer;
 
-import static java.nio.charset.StandardCharsets.UTF_8;
 import static org.apache.commons.lang3.StringUtils.isBlank;
 import static org.apache.commons.lang3.StringUtils.trim;
 
@@ -231,7 +230,7 @@ public class AssembleNERCorpus {
                     LOGGER.error("Invalid file path: " + reutersFileTxt);
                     continue;
                 }
-                String content = FileUtils.readFileToString(reutersFileTxt, UTF_8);
+                String content = FileUtils.readFileToString(reutersFileTxt, "UTF-8");
                 //System.out.println(content);
 
                 try {
@@ -254,9 +253,9 @@ public class AssembleNERCorpus {
                         //text = text.replace("\n", " ");
                         int sentence = 0;
                         List<OffsetPosition> localLocationPositions = lexicon.tokenPositionsLocationNames(text);
-                        List<OffsetPosition> localPersonTitlePositions = lexicon.tokenPositionsPersonTitleNames(text);
+                        List<OffsetPosition> localPersonTitlePositions = lexicon.tokenPositionsPersonTitle(text);
                         List<OffsetPosition> localOrganisationPositions = lexicon.tokenPositionsOrganisationNames(text);
-                        List<OffsetPosition> localOrgFormPositions = lexicon.tokenPositionsOrgFormNames(text);
+                        List<OffsetPosition> localOrgFormPositions = lexicon.tokenPositionsOrgForm(text);
                         int currentPosition = 0;
                         StringTokenizer st = new StringTokenizer(text, TextUtilities.fullPunctuations, true);
 

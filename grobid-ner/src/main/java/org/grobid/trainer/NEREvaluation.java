@@ -357,9 +357,9 @@ public class NEREvaluation {
 					List<LayoutToken> tokens = LayoutTokensNERUtility.mapFromTokenisedList(labeled);
 
 					locationPositions.add(lexicon.tokenPositionsLocationNames(tokens));
-					peoplePositions.add(lexicon.tokenPositionsPersonTitleNames(tokens));
+					peoplePositions.add(lexicon.tokenPositionsPersonTitle(tokens));
 					organisationPositions.add(lexicon.tokenPositionsOrganisationNames(tokens));
-					orgFormPositions.add(lexicon.tokenPositionsOrgFormNames(tokens));
+					orgFormPositions.add(lexicon.tokenPositionsOrgForm(tokens));
 
 					nbSentences++;
 					continue;

@@ -319,9 +319,9 @@ public class SenseTrainer extends AbstractTrainer {
 
 						List<LayoutToken> tokens = LayoutTokensNERUtility.mapFromTokenisedList(labeled);
 						locationPositions.add(lexicon.tokenPositionsLocationNames(tokens));
-			            personTitlePositions.add(lexicon.tokenPositionsPersonTitleNames(tokens));
+			            personTitlePositions.add(lexicon.tokenPositionsPersonTitle(tokens));
 			            organisationPositions.add(lexicon.tokenPositionsOrganisationNames(tokens));
-						orgFormPositions.add(lexicon.tokenPositionsOrgFormNames(tokens));
+						orgFormPositions.add(lexicon.tokenPositionsOrgForm(tokens));
 					
 						// this is mandatory for the correct setting of features
 						labeled.add("@newline");
@@ -487,9 +487,9 @@ System.out.println(fileName);
 
 						List<LayoutToken> tokens = LayoutTokensNERUtility.mapFromTokenisedList(labeled);
 						locationPositions.add(lexicon.tokenPositionsLocationNames(tokens));
-						personTitlePositions.add(lexicon.tokenPositionsPersonTitleNames(tokens));
+						personTitlePositions.add(lexicon.tokenPositionsPersonTitle(tokens));
 						organisationPositions.add(lexicon.tokenPositionsOrganisationNames(tokens));
-						orgFormPositions.add(lexicon.tokenPositionsOrgFormNames(tokens));
+						orgFormPositions.add(lexicon.tokenPositionsOrgForm(tokens));
 
 						addFeatures(labeled, writer, 
 							locationPositions, personTitlePositions, organisationPositions, orgFormPositions);
