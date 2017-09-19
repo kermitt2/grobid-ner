@@ -58,14 +58,6 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>1.2.17</version>
-			<!-- Should be runtime or at least optional -->
-			<optional>true</optional>
-			<!--scope>runtime</scope -->
-		</dependency>
 
 		<!-- for pooling e.g. Engine -->
 		<dependency>
@@ -94,10 +86,12 @@
 			<version>4.1</version>
 		</dependency>
 
+		<!-- Logging -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>1.6.6</version>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.25</version>
+			<scope>test</scope>
 		</dependency>
 
 		<dependency>
@@ -137,16 +131,6 @@
     </dependencies>
 
 	<build>
-		<!-- Not standard -->
-		<!-- finalName>${project.groupId}.${project.artifactId}_${project.version}</finalName -->
-
-		<!--<resources> -->
-		<!--<resource> -->
-		<!--<directory>src/main/native</directory> -->
-		<!--</resource> -->
-		<!--</resources> -->
-
-		<!--pluginManagement -->
 		<plugins>
 			<!--plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-jar-plugin</artifactId> 
 				<configuration> <archive> <manifest> <mainClass>org.grobid.core.engines.Engine</mainClass> 
