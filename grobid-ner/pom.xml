@@ -161,14 +161,11 @@
                     <testFailureIgnore>false</testFailureIgnore>
                     <skip>false</skip>
                     <systemPropertyVariables>
-                        <log4j.configuration>log4j-test.properties</log4j.configuration>
+                        <log4j.configuration>log4j-test.xml</log4j.configuration>
                     </systemPropertyVariables>
                     <excludes>
                         <exclude>**/*IntegrationTest.java</exclude>
                     </excludes>
-                    <!--argLine>-Djava.library.path=${basedir}/lib/</argLine> <systemProperties>
-                        <property> <name>java.library.path</name> <value>lib/</value> </property>
-                        </systemProperties -->
                 </configuration>
             </plugin>
         </plugins>

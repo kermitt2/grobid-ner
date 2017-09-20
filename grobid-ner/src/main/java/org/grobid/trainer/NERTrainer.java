@@ -313,12 +313,12 @@ public class NERTrainer extends AbstractTrainer {
 
 					if ((line.length() == 0) && (labeled.size() > 0)) {
 						// sentence is complete
-						
+
 						List<LayoutToken> tokens = LayoutTokensNERUtility.mapFromTokenisedList(labeled);
 						locationPositions.add(lexicon.tokenPositionsLocationNames(tokens));
-						personTitlePositions.add(lexicon.tokenPositionsPersonTitleNames(tokens));
+						personTitlePositions.add(lexicon.tokenPositionsPersonTitle(tokens));
 						organisationPositions.add(lexicon.tokenPositionsOrganisationNames(tokens));
-						orgFormPositions.add(lexicon.tokenPositionsOrgFormNames(tokens));
+						orgFormPositions.add(lexicon.tokenPositionsOrgForm(tokens));
 					
 						// this is mandatory for the correct setting of features
 						labeled.add("@newline");
@@ -351,6 +351,62 @@ public class NERTrainer extends AbstractTrainer {
 	}
 	
 
+	private int processReutersCorpus(Writer writerTraining, Writer writerEvaluation, double splitRatio) {
+		int res = 0;
+		try {
+			File corpusDir = new File(reutersPath);
+			System.out.println("Path to Reuters corpus: " + reutersPath);
+			if (!corpusDir.exists()) {
+				throw new GrobidException("Cannot start training, because corpus resource folder is not correctly set : " 
+					+ reutersPath);
+			}
+			
+			File[] refFiles = corpusDir.listFiles(new FilenameFilter() {
+                public boolean accept(File dir, String name) {
+                    return (name.endsWith(".zip"));
+                }
+            });
+
+			System.out.println(refFiles.length + " reuters zip files");
+
+            if (refFiles == null) {
+                return 0;
+            }
+			for (File thefile : refFiles) {	
+				// we ignore the files in the core set
+				if (coreSet.contains(thefile.getName().replace(".zip", ""))) {
+					continue;
+				}
+				ZipFile zipFile = new ZipFile(thefile);
+				System.out.println(thefile.getPath());
+			    Enumeration<? extends ZipEntry> entries = zipFile.entries();
+			    while(entries.hasMoreElements()) {
+			        ZipEntry entry = entries.nextElement();
+			        InputStream xmlStream = zipFile.getInputStream(entry);
+			
+					res += processReutersCorpus(xmlStream, entry, writerTraining, writerEvaluation, splitRatio);
+					xmlStream.close();
+					
+					// as the number of files might be too important for development and debugging, 
+					// we introduce an optional limit 
+					if ( (LIMIT != -1) && (res > LIMIT) ) {
+						break;
+					}
+			    }
+				if ( (GLOBAL_LIMIT != -1) && (res > GLOBAL_LIMIT) ) {
+					break;
+				}
+			}	
+		}
+		catch (IOException ex) {
+			throw new GrobidResourceException(
+				"An exception occured when accessing/reading the Reuters corpus zip files.", ex);
+		} 
+		finally {
+		}
+		return res;
+	}
+	
 	private int processReutersCorpus(InputStream currentStream, 
 									 ZipEntry entry,
 									 Writer writerTraining, 
@@ -414,9 +470,9 @@ System.out.println(fileName);
 					if (line.trim().equals("@newline")) {
 						List<LayoutToken> tokens = LayoutTokensNERUtility.mapFromTokenisedList(labeled);
 						locationPositions.add(lexicon.tokenPositionsLocationNames(tokens));
-						personTitlePositions.add(lexicon.tokenPositionsPersonTitleNames(tokens));
+						personTitlePositions.add(lexicon.tokenPositionsPersonTitle(tokens));
 						organisationPositions.add(lexicon.tokenPositionsOrganisationNames(tokens));
-						orgFormPositions.add(lexicon.tokenPositionsOrgFormNames(tokens));
+						orgFormPositions.add(lexicon.tokenPositionsOrgForm(tokens));
 					
 						addFeatures(labeled, writer, 
 							locationPositions, personTitlePositions, organisationPositions, orgFormPositions);
@@ -485,7 +541,7 @@ System.out.println(fileName);
 					if (orgFormPositions.size() > sentence)	
 						localOrgFormPositions = orgFormPositions.get(sentence);
 				}
-				
+
 				
 				// do we have a unit term at position posit?
 				if ( (localLocationPositions != null) && (localLocationPositions.size() > 0) ) {

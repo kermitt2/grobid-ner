@@ -100,9 +100,9 @@ public class CoNNLNERTrainer extends NERTrainer {
 
 					List<LayoutToken> tokens = LayoutTokensNERUtility.mapFromTokenisedList(labeled);
 					locationPositions.add(lexicon.tokenPositionsLocationNames(tokens));
-					titleNamePositions.add(lexicon.tokenPositionsPersonTitleNames(tokens));
+					titleNamePositions.add(lexicon.tokenPositionsPersonTitle(tokens));
 					organisationPositions.add(lexicon.tokenPositionsOrganisationNames(tokens));
-					orgFormPositions.add(lexicon.tokenPositionsOrgFormNames(tokens));
+					orgFormPositions.add(lexicon.tokenPositionsOrgForm(tokens));
 
 					addFeatures(labeled, writer, 
 						locationPositions, titleNamePositions, organisationPositions, orgFormPositions);
@@ -175,9 +175,9 @@ public class CoNNLNERTrainer extends NERTrainer {
 
 						List<LayoutToken> tokens = LayoutTokensNERUtility.mapFromTokenisedList(labeled);
 						locationPositions.add(lexicon.tokenPositionsLocationNames(tokens));
-						titleNamePositions.add(lexicon.tokenPositionsPersonTitleNames(tokens));
+						titleNamePositions.add(lexicon.tokenPositionsPersonTitle(tokens));
 						organisationPositions.add(lexicon.tokenPositionsOrganisationNames(tokens));
-						orgFormPositions.add(lexicon.tokenPositionsOrgFormNames(tokens));
+						orgFormPositions.add(lexicon.tokenPositionsOrgForm(tokens));
 
 						addFeatures(labeled, writer, 
 							locationPositions, titleNamePositions, organisationPositions, orgFormPositions);
@@ -321,9 +321,9 @@ public class CoNNLNERTrainer extends NERTrainer {
 
 						List<LayoutToken> tokens = LayoutTokensNERUtility.mapFromTokenisedList(labeled);
 						locationPositions.add(lexicon.tokenPositionsLocationNames(tokens));
-						titleNamePositions.add(lexicon.tokenPositionsPersonTitleNames(tokens));
+						titleNamePositions.add(lexicon.tokenPositionsPersonTitle(tokens));
 						organisationPositions.add(lexicon.tokenPositionsOrganisationNames(tokens));
-						orgFormPositions.add(lexicon.tokenPositionsOrgFormNames(tokens));
+						orgFormPositions.add(lexicon.tokenPositionsOrgForm(tokens));
 
 						addFeatures(labeled, writer, 
 							locationPositions, titleNamePositions, organisationPositions, orgFormPositions);

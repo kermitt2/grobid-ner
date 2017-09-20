@@ -179,9 +179,9 @@ public class NEREnglishTrainer extends AbstractTrainer {
 
     private void computeFeatures(Sentence sentence, Writer writer) {
         List<OffsetPosition> locationPositions = lexicon.charPositionsLocationNames(sentence.getTokenisedValue());
-        List<OffsetPosition> personTitlePositions = lexicon.charPositionsPersonTitleNames(sentence.getTokenisedValue());
+        List<OffsetPosition> personTitlePositions = lexicon.charPositionsPersonTitle(sentence.getTokenisedValue());
         List<OffsetPosition> organisationPositions = lexicon.charPositionsOrganisationNames(sentence.getTokenisedValue());
-        List<OffsetPosition> orgFormPositions = lexicon.charPositionsOrgFormNames(sentence.getTokenisedValue());
+        List<OffsetPosition> orgFormPositions = lexicon.charPositionsOrgForm(sentence.getTokenisedValue());
 
         //Getting the flat indexes of the OffsetPositions for each dictionary
         List<Integer> locationIndexes = offsetToIndex(sentence.getTokenisedValue(), locationPositions);
