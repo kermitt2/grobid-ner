@@ -1,7 +1,6 @@
 package org.grobid.core.engines;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.IOUtils;
 import org.apache.commons.io.filefilter.SuffixFileFilter;
 import org.apache.commons.lang3.StringUtils;
 import org.grobid.core.analyzers.GrobidAnalyzer;
@@ -9,18 +8,14 @@ import org.grobid.core.data.dates.DateWrapper;
 import org.grobid.core.data.dates.Period;
 import org.grobid.core.engines.label.TaggingLabel;
 import org.grobid.core.exceptions.GrobidException;
-import org.grobid.core.factory.GrobidFactory;
 import org.grobid.core.features.FeaturesVectorMultiDates;
 import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.main.LibraryLoader;
-import org.grobid.core.mock.MockContext;
 import org.grobid.core.tokenization.TaggingTokenCluster;
 import org.grobid.core.tokenization.TaggingTokenClusteror;
-import org.grobid.core.utilities.GrobidHome;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.LayoutTokensUtil;
 import org.grobid.core.utilities.OffsetPosition;
-import org.grobid.trainer.MultiDateTrainer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -70,6 +65,8 @@ public class MultiDateParser extends AbstractParser {
         List<TaggingTokenCluster> clusters = clusteror.cluster();
         List<Period> list = new ArrayList<>();
 
+        String rawText = LayoutTokensUtil.toText(tokenisation);
+
         Period currentPeriod = null;
         int pos = 0; // position in term of characters for creating the offsets
 
@@ -90,7 +87,10 @@ public class MultiDateParser extends AbstractParser {
             if (clusterLabel.equals(DATE_VALUE)) {
                 final DateWrapper when = new DateWrapper(clusterContent.toString());
                 when.setOffsetPosition(new OffsetPosition(offsetStart, offsetEnd));
-                list.add(new Period(when));
+                currentPeriod = new Period(when);
+                list.add(currentPeriod);
+
+                currentPeriod.setRawText(rawText);
             } else if (clusterLabel.equals(DATE_INTERVAL_FROM)) {
                 final DateWrapper fromDate = new DateWrapper(clusterContent.toString());
                 fromDate.setOffsetPosition(new OffsetPosition(offsetStart, offsetEnd));
@@ -101,6 +101,10 @@ public class MultiDateParser extends AbstractParser {
                 } else if (currentPeriod.getToDate() != null) {
                     currentPeriod.setFromDate(fromDate);
                     currentPeriod = null;
+                }
+
+                if(currentPeriod != null){
+                    currentPeriod.setRawText(rawText);
                 }
             } else if (clusterLabel.equals(DATE_INTERVAL_TO)) {
                 final DateWrapper toDate = new DateWrapper(clusterContent.toString());
@@ -113,6 +117,10 @@ public class MultiDateParser extends AbstractParser {
                     currentPeriod.setToDate(toDate);
                     currentPeriod = null;
                 }
+
+                if(currentPeriod != null){
+                    currentPeriod.setRawText(rawText);
+                }
             } else if (clusterLabel.equals(DATE_VALUE_LIST)) {
                 if (currentPeriod == null) {
                     currentPeriod = new Period();
@@ -121,6 +129,7 @@ public class MultiDateParser extends AbstractParser {
                 final DateWrapper date = new DateWrapper(clusterContent.toString());
                 date.setOffsetPosition(new OffsetPosition(offsetStart, offsetEnd));
                 currentPeriod.addDate(date);
+                currentPeriod.setRawText(rawText);
 
             } else if (clusterLabel.equals(DATE_OTHER)) {
                 // nothing to be done at this stage... and maybe forever :-)
@@ -262,7 +271,7 @@ public class MultiDateParser extends AbstractParser {
                         output.append(substring);
                         pos += substring.length();
                     }
-                    if(pos == startInterval) {
+                    if (pos == startInterval) {
                         if (period.getFromDate() != null) {
                             output.append("<date type=\"from\">" + period.getFromDate().getRawDate() + "</date>");
                             pos += period.getFromDate().getRawDate().length();
@@ -315,19 +324,12 @@ public class MultiDateParser extends AbstractParser {
     public static void main(String... args) throws Exception {
         String input = args[0];
         String output = args[1];
-
-
-        GrobidHome.findGrobidHome();
+        
         LibraryLoader.load();
         GrobidProperties.getInstance();
-        MockContext.setInitialContext();
-
 
         MultiDateParser parser = new MultiDateParser();
         parser.createTraining(input, output);
-
-        MockContext.destroyInitialContext();
-
     }
 
 }

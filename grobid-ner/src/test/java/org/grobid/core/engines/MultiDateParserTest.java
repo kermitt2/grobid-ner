@@ -41,6 +41,7 @@ public class MultiDateParserTest extends EngineMockTest {
         List<Period> results = target.extractResults(output, layoutTokenTokenisation);
 
         assertThat(results, hasSize(1));
+        assertThat(results.get(0).getRawText(), is("between February 10 and February 28 1942."));
         assertThat(results.get(0).getType(), is(Period.Type.INTERVAL));
         assertThat(results.get(0).getFromDate().getRawDate(), is("February 10"));
         assertThat(results.get(0).getFromDate().getOffsetStart(), is(8));
@@ -65,6 +66,7 @@ public class MultiDateParserTest extends EngineMockTest {
         List<Period> results = target.extractResults(output, layoutTokenTokenisation);
 
         assertThat(results, hasSize(1));
+        assertThat(results.get(0).getRawText(), is(text));
         assertThat(results.get(0).getType(), is(Period.Type.INTERVAL));
         assertNull(results.get(0).getFromDate());
         assertThat(results.get(0).getToDate().getRawDate(), is("1941"));
@@ -88,6 +90,7 @@ public class MultiDateParserTest extends EngineMockTest {
         List<Period> results = target.extractResults(output, layoutTokenTokenisation);
 
         assertThat(results, hasSize(1));
+        assertThat(results.get(0).getRawText(), is(text));
         assertThat(results.get(0).getType(), is(Period.Type.VALUE));
         assertThat(results.get(0).getValue().getRawDate(), is("February 28 1942"));
         assertThat(results.get(0).getValue().getOffsetStart(), is(3));
@@ -124,6 +127,7 @@ public class MultiDateParserTest extends EngineMockTest {
         List<Period> results = target.extractResults(output, layoutTokenTokenisation);
 
         assertThat(results, hasSize(1));
+        assertThat(results.get(0).getRawText(), is(text));
         assertThat(results.get(0).getType(), is(Period.Type.LIST));
         assertThat(results.get(0).getList(), hasSize(4));
         assertThat(results.get(0).getList().get(0).getRawDate(), is("1942-07-27"));

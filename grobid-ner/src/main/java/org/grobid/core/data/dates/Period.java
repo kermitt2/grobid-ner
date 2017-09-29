@@ -1,11 +1,23 @@
 package org.grobid.core.data.dates;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.sun.scenario.effect.Offset;
 import org.apache.commons.lang3.StringUtils;
+import org.grobid.core.exceptions.GrobidException;
+import org.grobid.core.utilities.OffsetPosition;
 
+import java.io.IOException;
+import java.io.StringWriter;
+import java.io.Writer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Period {
     public enum Type {
         INTERVAL("interval"),
@@ -42,11 +54,13 @@ public class Period {
     private DateWrapper fromDate;
     private DateWrapper toDate;
     private String rawText;
+    private OffsetPosition offsetPosition = new OffsetPosition();
 
     public List<DateWrapper> getList() {
         return list;
     }
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
     private List<DateWrapper> list = new ArrayList<>();
 
     // Interval
@@ -137,6 +151,16 @@ public class Period {
         return null;
     }
 
+    public String toJson() {
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.configure(SerializationFeature.WRITE_ENUMS_USING_TO_STRING, true);
+        try {
+            return mapper.writerWithDefaultPrettyPrinter().writeValueAsString(this);
+        } catch (JsonProcessingException e) {
+            throw new GrobidException("Cannot marshal the Period object " + this.toString(), e);
+        }
+    }
+
     public String toXml() {
         StringBuilder sb = new StringBuilder();
         sb.append("<measure type=\"" + type + "\">");
@@ -172,5 +196,25 @@ public class Period {
 
     public void setRawText(String rawText) {
         this.rawText = rawText;
+    }
+
+    public void setOffsetStart(int offsetStart) {
+        offsetPosition.start = offsetStart;
+    }
+
+    public void setOffsetEnd(int offsetEnd) {
+        offsetPosition.end= offsetEnd;
+    }
+
+    public int getOffsetStart() {
+        return offsetPosition.start;
+    }
+
+    public int getOffsetEnd() {
+        return offsetPosition.end;
+    }
+
+    public void setOffsetPosition(OffsetPosition offsetPosition) {
+        this.offsetPosition = offsetPosition;
     }
 }
