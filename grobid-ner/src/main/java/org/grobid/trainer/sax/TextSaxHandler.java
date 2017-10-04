@@ -13,7 +13,9 @@ import java.util.StringTokenizer;
  * SAX parser for Wikipedia corpus.
  *
  * @author Patrice Lopez
+ * Deprecated: use IdilliaSemDocTextStaxHandler
  */
+@Deprecated
 public class TextSaxHandler extends DefaultHandler {
 
     private StringBuffer accumulator = new StringBuffer(); // Accumulate parsed text

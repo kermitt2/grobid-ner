@@ -1,9 +1,8 @@
 package org.grobid.core.main.batch;
 
 import org.grobid.core.engines.NERParsers;
+import org.grobid.core.main.GrobidHomeFinder;
 import org.grobid.core.main.LibraryLoader;
-import org.grobid.core.mock.MockContext;
-import org.grobid.core.utilities.GrobidHome;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.trainer.AssembleNERCorpus;
 import org.slf4j.Logger;
@@ -56,7 +55,7 @@ public class NERMain {
 
     protected static void initProcess() {
         try {
-            GrobidHome.findGrobidHome();
+            new GrobidHomeFinder().findGrobidHomeOrFail();
             LibraryLoader.load();
         } catch (final Exception exp) {
             System.err.println("Grobid initialisation failed: " + exp);
