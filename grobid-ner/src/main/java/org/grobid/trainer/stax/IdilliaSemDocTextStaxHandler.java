@@ -27,7 +27,7 @@ public class IdilliaSemDocTextStaxHandler implements StaxParserContentHandler {
         return accumulatorText.toString().trim();
     }
 
-    public String getTextSentence() {
+    private String getTextSentence() {
         return accumulatorSentence.toString().trim();
     }
 
@@ -58,7 +58,8 @@ public class IdilliaSemDocTextStaxHandler implements StaxParserContentHandler {
         if ("txt".equals(localName)) {
             insideText = false;
             String token = getTextSentence();
-//            token = token.replace("n't", " n't");
+            // Idillia tokenisation glitches
+            token = token.replace("n't", " n't");
 
             List<String> currentTmpVector = new ArrayList<>();
             StringTokenizer st = new StringTokenizer(token, TextUtilities.delimiters, true);

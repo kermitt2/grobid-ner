@@ -12,30 +12,27 @@ import java.util.Map;
 public class StaxUtils {
 
     public static void traverse(XMLStreamReader2 reader, final StaxParserContentHandler contentHandler) throws XMLStreamException {
-        traverse(reader, new StaxClosure() {
-            @Override
-            public void process(XMLStreamReader streamReader) throws XMLStreamException {
-                XMLStreamReader2 reader = (XMLStreamReader2) streamReader;
-                switch (reader.getEventType()) {
-                    case XMLStreamReader.START_DOCUMENT:
-                        contentHandler.onStartDocument(reader);
-                        break;
-                    case XMLStreamReader.START_ELEMENT:
-                        contentHandler.onStartElement(reader);
-                        break;
-                    case XMLStreamReader.ATTRIBUTE:
-                        contentHandler.onAttribute(reader);
-                        break;
-                    case XMLStreamReader.END_ELEMENT:
-                        contentHandler.onEndElement(reader);
-                        break;
-                    case XMLStreamConstants.CHARACTERS:
-                        contentHandler.onCharacter(reader);
-                        break;
-                    case XMLStreamReader.END_DOCUMENT:
-                        contentHandler.onEndDocument(reader);
-                        break;
-                }
+        traverse(reader, streamReader -> {
+            XMLStreamReader2 reader1 = (XMLStreamReader2) streamReader;
+            switch (reader1.getEventType()) {
+                case XMLStreamReader.START_DOCUMENT:
+                    contentHandler.onStartDocument(reader1);
+                    break;
+                case XMLStreamReader.START_ELEMENT:
+                    contentHandler.onStartElement(reader1);
+                    break;
+                case XMLStreamReader.ATTRIBUTE:
+                    contentHandler.onAttribute(reader1);
+                    break;
+                case XMLStreamReader.END_ELEMENT:
+                    contentHandler.onEndElement(reader1);
+                    break;
+                case XMLStreamConstants.CHARACTERS:
+                    contentHandler.onCharacter(reader1);
+                    break;
+                case XMLStreamReader.END_DOCUMENT:
+                    contentHandler.onEndDocument(reader1);
+                    break;
             }
         });
     }

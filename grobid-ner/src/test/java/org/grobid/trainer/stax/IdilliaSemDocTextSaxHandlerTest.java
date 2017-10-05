@@ -22,8 +22,8 @@ public class IdilliaSemDocTextSaxHandlerTest {
     }
 
     @Test
-    public void testParse_shouldWork() throws Exception {
-        InputStream is = this.getClass().getResourceAsStream("wikipedia.semdoc.sample.xml");
+    public void testParseSample_shouldWork() throws Exception {
+        InputStream is = this.getClass().getResourceAsStream("/wikipedia.semdoc.sample.xml");
         XMLStreamReader2 reader = (XMLStreamReader2) inputFactory.createXMLStreamReader(is);
 
         StaxUtils.traverse(reader, target);
@@ -32,5 +32,4 @@ public class IdilliaSemDocTextSaxHandlerTest {
         assertThat(target.getTextVector().toString(), is("[[World, War, I, -, Wikipedia, ,, the, free, encyclopedia], [World, War, I], [From, Wikipedia, ,, the, free, encyclopedia]]"));
         assertThat(target.getText(), is("World War I - Wikipedia, the free encyclopedia World War I From Wikipedia, the free encyclopedia"));
     }
-
 }
