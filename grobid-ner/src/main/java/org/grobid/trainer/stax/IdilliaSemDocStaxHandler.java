@@ -7,6 +7,7 @@ import org.grobid.core.lexicon.NERLexicon;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.management.openmbean.TabularDataSupport;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -21,14 +22,13 @@ public class IdilliaSemDocStaxHandler implements StaxParserContentHandler {
     private StringBuilder temporaryAccumulatorText = new StringBuilder();
     private StringBuilder globalTextAccumulator = new StringBuilder();
 
-
     private List<List<String>> textVector = new ArrayList<>();
     private List<String> currentVector = null;
 
     private boolean insideText = false;
     private boolean insideSenseInfo = false;
     private boolean isNE = false;
-    private String currentSenseKey;
+    private String currentFineSenseKey;
     private String currentCoarseSenseKey;
     private Entity currentEntity;
     private Sense currentSense;
@@ -36,6 +36,7 @@ public class IdilliaSemDocStaxHandler implements StaxParserContentHandler {
     private String currentNESubType;
     private String currentFragmentText;
     private Map<String, Entity> neInfos = null;
+    private Map<String, Sense> senseInfos = null;
     private boolean isDelimiter = false;
     private int sentenceIndex = 0;
     private int paragraphIndex = 0;
@@ -50,6 +51,7 @@ public class IdilliaSemDocStaxHandler implements StaxParserContentHandler {
     public IdilliaSemDocStaxHandler(String documentName) {
         this.documentName = documentName;
         neInfos = new HashMap<>();
+        senseInfos = new HashMap<>();
     }
 
     public IdilliaSemDocStaxHandler(String language, String documentName) {
@@ -68,7 +70,6 @@ public class IdilliaSemDocStaxHandler implements StaxParserContentHandler {
 
     @Override
     public void onEndDocument(XMLStreamReader2 reader) {
-        System.out.println(globalTextAccumulator);
     }
 
     @Override
@@ -86,7 +87,7 @@ public class IdilliaSemDocStaxHandler implements StaxParserContentHandler {
         } else if ("doc".equals(localName)) {
             globalTextAccumulator
                     .append("\t\t<document name=\"" + documentName + "\" threshold=\"" + confidenceThreshold + "\"> ")
-                            .append("\n");
+                    .append("\n");
         }
 
         if ("sensesInfo".equals(localName)) {
@@ -97,35 +98,29 @@ public class IdilliaSemDocStaxHandler implements StaxParserContentHandler {
         if (insideSenseInfo) {
             if ("sense".equals(localName)) {
                 isNE = reader.getAttributeValue(null, "isne") != null;
-                currentSenseKey = reader.getAttributeValue(null, "fsk");
+                currentFineSenseKey = reader.getAttributeValue(null, "fsk");
                 currentCoarseSenseKey = reader.getAttributeValue(null, "csk");
 
                 if (isNE) {
                     currentEntity = new Entity();
+                } else {
+                    currentSense = new Sense();
+                    currentSense.setCoarseSense(currentCoarseSenseKey);
+                    currentSense.setFineSense(currentFineSenseKey);
                 }
-//                } else {
-//                    currentSense = new Sense();
-//                    currentSense.setFineSense(currentSenseKey);
-//                    currentSense.setCoarseSense(currentCoarseSenseKey);
-//                }
             }
         } else {
             if ("txt".equals(localName)) {
                 insideText = true;
             } else if ("frag".equals(localName)) {
-//                System.out.println("new fragment");
+
             } else if ("lc".equals(localName)) {
-//                final String punct = reader.getAttributeValue(null, "lc");
-//                if ("punct".equals(punct)) {
                 isDelimiter = true;
-//                } else {
-//                    System.out.println("Found LC with attribute = " + punct);
-//                }
 
             } else if ("cs".equals(localName)) {
 
             } else if ("fs".equals(localName)) {
-                currentSenseKey = reader.getAttributeValue(null, "sk");
+                currentFineSenseKey = reader.getAttributeValue(null, "sk");
                 currentFineConfidence = Double.parseDouble(reader.getAttributeValue(null, "pc"));
             } else if ("sent".equals(localName)) {
                 globalTextAccumulator.append("\t<sentence xml:id=\"P" + paragraphIndex + "E" + sentenceIndex + "\">");
@@ -153,7 +148,7 @@ public class IdilliaSemDocStaxHandler implements StaxParserContentHandler {
             globalTextAccumulator.append("\n")
                     .append("\t</subCorpus>")
                     .append("\n")
-                    .append("<corpus>");
+                    .append("</corpus>");
         }
 
         if (insideSenseInfo) {
@@ -163,21 +158,27 @@ public class IdilliaSemDocStaxHandler implements StaxParserContentHandler {
                 currentNESubType = getText();
             } else if ("neInfo".equals(localName)) {
                 // Here we are taking only the first NER 
-
                 if (currentEntity != null) {
                     if (currentEntity.getType() == null && currentNEType != null) {
                         // try to convert the entity type
                         NERLexicon.NER_Type nerType = NERLexicon.NER_Type.mapIdilia(currentNEType);
                         currentEntity.setType(nerType);
+                    } else {
+                        LOGGER.debug("Skipping because the type is already set: " + currentEntity.getType());
                     }
                     if (currentNESubType != null) {
                         currentEntity.addSubType(currentNESubType);
                     }
+                } else {
+                    LOGGER.warn("Ignored secondary entity value " + getText() + " with type" + NERLexicon.NER_Type.mapIdilia(currentNEType));
                 }
             } else if ("sense".equals(localName)) {
                 if (currentEntity != null) {
-                    neInfos.put(currentSenseKey, currentEntity);
+                    neInfos.put(currentFineSenseKey, currentEntity);
                     currentEntity = null;
+                } else if (currentSense != null) {
+                    senseInfos.put(currentFineSenseKey, currentSense);
+                    currentSense = null;
                 }
                 currentNEType = null;
                 currentNESubType = null;
@@ -196,12 +197,15 @@ public class IdilliaSemDocStaxHandler implements StaxParserContentHandler {
                     globalTextAccumulator.append(currentFragmentText);
                     isDelimiter = false;
                 } else {
-                    if(currentFineConfidence > confidenceThreshold) {
-                        currentEntity = neInfos.get(currentSenseKey);
+                    if (currentFineConfidence > confidenceThreshold) {
+                        currentEntity = neInfos.get(currentFineSenseKey);
                         if (currentEntity != null) {
                             currentEntity.setRawName(currentFragmentText);
                             globalTextAccumulator.append(currentEntity.toXml());
                         } else {
+//                            if(senseInfos.get(currentFineSenseKey) == null) {
+//                                System.out.println("Info not found neither in sense nor ner for " + currentFineSenseKey);
+//                            }
                             globalTextAccumulator.append(currentFragmentText);
                         }
                     } else {
@@ -226,7 +230,10 @@ public class IdilliaSemDocStaxHandler implements StaxParserContentHandler {
 
     @Override
     public void onAttribute(XMLStreamReader2 reader) {
+    }
 
+    public String getConvertedText() {
+        return globalTextAccumulator.toString();
     }
 
     public List<List<String>> getTextVector() {
