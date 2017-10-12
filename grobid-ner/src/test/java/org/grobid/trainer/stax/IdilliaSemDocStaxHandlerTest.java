@@ -102,4 +102,22 @@ public class IdilliaSemDocStaxHandlerTest {
         assertThat(entities.size(), is(170));
     }
 
+    @Test
+    public void testParserSample_SpecialChars_shouldWork() throws Exception {
+        InputStream is = this.getClass().getResourceAsStream("/102.2_Jazz_FM.semdoc.xml");
+        XMLStreamReader2 reader = (XMLStreamReader2) inputFactory.createXMLStreamReader(is);
+
+        StaxUtils.traverse(reader, target);
+
+        String text = target.getConvertedText();
+        XMLStreamReader2 readerOutput = (XMLStreamReader2) inputFactory.createXMLStreamReader(new StringReader(text));
+
+        CustomEMEXFormatStaxHandler staxHandler = new CustomEMEXFormatStaxHandler();
+        StaxUtils.traverse(readerOutput, staxHandler);
+
+        final List<Sentence> sentences = staxHandler.getSentences();
+
+        assertThat(sentences.get(0).getRawValue(), is("GMG made more changes to the playlist, shifting to more R&B, soul, easy listening and adult contemporary music during the daytime. "));
+    }
+
 }
