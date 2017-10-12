@@ -6,6 +6,7 @@ import org.grobid.core.data.Sense;
 import org.grobid.core.lexicon.NERLexicon;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import shadedwipo.org.apache.commons.lang3.StringEscapeUtils;
 
 import javax.management.openmbean.TabularDataSupport;
 import java.util.ArrayList;
@@ -194,22 +195,22 @@ public class IdilliaSemDocStaxHandler implements StaxParserContentHandler {
                 sentenceIndex++;
             } else if ("frag".equals(localName)) {
                 if (isDelimiter) {
-                    globalTextAccumulator.append(currentFragmentText);
+                    globalTextAccumulator.append(escape(currentFragmentText));
                     isDelimiter = false;
                 } else {
                     if (currentFineConfidence > confidenceThreshold) {
                         currentEntity = neInfos.get(currentFineSenseKey);
                         if (currentEntity != null) {
-                            currentEntity.setRawName(currentFragmentText);
+                            currentEntity.setRawName(escape(currentFragmentText));
                             globalTextAccumulator.append(currentEntity.toXml());
                         } else {
 //                            if(senseInfos.get(currentFineSenseKey) == null) {
 //                                System.out.println("Info not found neither in sense nor ner for " + currentFineSenseKey);
 //                            }
-                            globalTextAccumulator.append(currentFragmentText);
+                            globalTextAccumulator.append(escape(currentFragmentText));
                         }
                     } else {
-                        globalTextAccumulator.append(currentFragmentText);
+                        globalTextAccumulator.append(escape(currentFragmentText));
                     }
                 }
 
@@ -220,6 +221,10 @@ public class IdilliaSemDocStaxHandler implements StaxParserContentHandler {
             }
         }
 
+    }
+
+    private String escape(String text) {
+        return StringEscapeUtils.ESCAPE_XML.translate(text);
     }
 
     @Override
