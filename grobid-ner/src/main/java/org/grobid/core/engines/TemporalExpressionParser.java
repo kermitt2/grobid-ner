@@ -27,14 +27,14 @@ import java.util.List;
 import static java.nio.charset.StandardCharsets.UTF_8;
 import static org.apache.commons.collections4.CollectionUtils.isEmpty;
 import static org.apache.commons.lang3.StringUtils.trim;
-import static org.grobid.core.engines.Models.MULTI_DATE;
+import static org.grobid.core.engines.Models.TEMPORAL_EXPRESSION;
 import static org.grobid.core.engines.label.MultiDateLabels.*;
 
-public class MultiDateParser extends AbstractParser {
-    private static Logger LOGGER = LoggerFactory.getLogger(MultiDateParser.class);
+public class TemporalExpressionParser extends AbstractParser {
+    private static Logger LOGGER = LoggerFactory.getLogger(TemporalExpressionParser.class);
 
-    public MultiDateParser() {
-        super(MULTI_DATE);
+    public TemporalExpressionParser() {
+        super(TEMPORAL_EXPRESSION);
     }
 
     public List<Period> process(String text) {
@@ -61,7 +61,7 @@ public class MultiDateParser extends AbstractParser {
     }
 
     public List<Period> extractResults(String results, List<LayoutToken> tokenisation) {
-        TaggingTokenClusteror clusteror = new TaggingTokenClusteror(Models.MULTI_DATE, results, tokenisation);
+        TaggingTokenClusteror clusteror = new TaggingTokenClusteror(Models.TEMPORAL_EXPRESSION, results, tokenisation);
         List<TaggingTokenCluster> clusters = clusteror.cluster();
         List<Period> list = new ArrayList<>();
 
@@ -328,7 +328,7 @@ public class MultiDateParser extends AbstractParser {
         LibraryLoader.load();
         GrobidProperties.getInstance();
 
-        MultiDateParser parser = new MultiDateParser();
+        TemporalExpressionParser parser = new TemporalExpressionParser();
         parser.createTraining(input, output);
     }
 

@@ -4,7 +4,6 @@ import org.grobid.core.EngineMockTest;
 import org.grobid.core.analyzers.GrobidAnalyzer;
 import org.grobid.core.data.dates.Period;
 import org.grobid.core.layout.LayoutToken;
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -17,11 +16,11 @@ import static org.junit.Assert.*;
 
 public class MultiDateParserTest extends EngineMockTest {
 
-    MultiDateParser target;
+    TemporalExpressionParser target;
 
     @Before
     public void setUp() throws Exception {
-        target  = new MultiDateParser();
+        target  = new TemporalExpressionParser();
     }
 
     @Test

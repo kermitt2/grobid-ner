@@ -18,11 +18,11 @@ public class MultiDateLabels extends TaggingLabels {
     public static final String DATE_VALUE_LIST_LABEL = "<dateList>";
     public static final String DATE_OTHER_LABEL = "<other>";
 
-    public static final TaggingLabel DATE_VALUE= new TaggingLabelImpl(Models.MULTI_DATE, DATE_VALUE_LABEL);
-    public static final TaggingLabel DATE_INTERVAL_FROM = new TaggingLabelImpl(Models.MULTI_DATE, DATE_INTERVAL_FROM_LABEL);
-    public static final TaggingLabel DATE_INTERVAL_TO = new TaggingLabelImpl(Models.MULTI_DATE, DATE_INTERVAL_TO_LABEL);
-    public static final TaggingLabel DATE_VALUE_LIST = new TaggingLabelImpl(Models.MULTI_DATE, DATE_VALUE_LIST_LABEL);
-    public static final TaggingLabel DATE_OTHER = new TaggingLabelImpl(Models.MULTI_DATE, DATE_OTHER_LABEL);
+    public static final TaggingLabel DATE_VALUE= new TaggingLabelImpl(Models.TEMPORAL_EXPRESSION, DATE_VALUE_LABEL);
+    public static final TaggingLabel DATE_INTERVAL_FROM = new TaggingLabelImpl(Models.TEMPORAL_EXPRESSION, DATE_INTERVAL_FROM_LABEL);
+    public static final TaggingLabel DATE_INTERVAL_TO = new TaggingLabelImpl(Models.TEMPORAL_EXPRESSION, DATE_INTERVAL_TO_LABEL);
+    public static final TaggingLabel DATE_VALUE_LIST = new TaggingLabelImpl(Models.TEMPORAL_EXPRESSION, DATE_VALUE_LIST_LABEL);
+    public static final TaggingLabel DATE_OTHER = new TaggingLabelImpl(Models.TEMPORAL_EXPRESSION, DATE_OTHER_LABEL);
 
     static {
         register(DATE_VALUE);

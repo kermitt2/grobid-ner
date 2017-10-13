@@ -10,8 +10,7 @@ import org.grobid.core.GrobidModels;
 import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.exceptions.GrobidResourceException;
 import org.grobid.core.features.FeaturesVectorMultiDates;
-import org.grobid.core.mock.MockContext;
-import org.grobid.core.utilities.GrobidHome;
+import org.grobid.core.main.GrobidHomeFinder;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.Pair;
 import org.grobid.trainer.stax.MultiDatesCorpusStaxHandler;
@@ -21,22 +20,20 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Properties;
+import java.util.*;
 
 import static org.apache.commons.collections4.CollectionUtils.isEmpty;
 import static org.apache.commons.collections4.CollectionUtils.isNotEmpty;
+import static org.grobid.core.engines.Models.TEMPORAL_EXPRESSION;
 
-public class MultiDateTrainer extends AbstractTrainer {
+public class TemporalExpressionTrainer extends AbstractTrainer {
 
     private WstxInputFactory inputFactory = new WstxInputFactory();
 
     private String corpusPath = null;
 
-    public MultiDateTrainer() {
-        super(GrobidModels.modelFor("multiDate"));
+    public TemporalExpressionTrainer() {
+        super(GrobidModels.modelFor(TEMPORAL_EXPRESSION.getModelName()));
 
         // adjusting CRF training parameters for this model
         epsilon = 0.000001;
@@ -173,24 +170,10 @@ public class MultiDateTrainer extends AbstractTrainer {
      * @throws Exception
      */
     public static void main(String[] args) throws Exception {
-        try {
-            GrobidHome.findGrobidHome();
-
-            MockContext.setInitialContext(GrobidProperties.getGrobidHomePath().getAbsolutePath(),
-                    GrobidProperties.getGrobidPropertiesPath().getAbsolutePath());
-            GrobidProperties.getInstance();
-
-            MultiDateTrainer trainer = new MultiDateTrainer();
-
-            AbstractTrainer.runSplitTrainingEvaluation(trainer, 0.7);
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                MockContext.destroyInitialContext();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
+        GrobidHomeFinder grobidHomeFinder = new GrobidHomeFinder(Arrays.asList("../../grobid-home"));
+        grobidHomeFinder.findGrobidHomeOrFail();
+        GrobidProperties.getInstance(grobidHomeFinder);
+        TemporalExpressionTrainer trainer = new TemporalExpressionTrainer();
+        AbstractTrainer.runSplitTrainingEvaluation(trainer, 0.7);
     }
 }

@@ -4,6 +4,6 @@ import org.grobid.core.GrobidModel;
 import org.grobid.core.GrobidModels;
 
 public class Models {
-    public static final GrobidModel MULTI_DATE = GrobidModels.modelFor("multiDate");
+    public static final GrobidModel TEMPORAL_EXPRESSION = GrobidModels.modelFor("temporalExpression");
 
 }
