@@ -47,7 +47,7 @@ public class NERParserCommon {
 
     private static Logger LOGGER = LoggerFactory.getLogger(NERParserCommon.class);
 
-    static public String toFeatureVector(List<String> tokens, LexiconPositionsIndexes positionsIndexes) {
+    /*static public String toFeatureVector(List<String> tokens, LexiconPositionsIndexes positionsIndexes) {
         StringBuffer ress = new StringBuffer();
         int posit = 0; // keep track of the position index in the list of positions
 
@@ -81,7 +81,7 @@ public class NERParserCommon {
         }
         ress.append("\n");
         return ress.toString();
-    }
+    }*/
 
     static public String toFeatureVectorLayout(List<LayoutToken> tokens, LexiconPositionsIndexes positionsIndexes) {
         StringBuffer ress = new StringBuffer();
@@ -187,7 +187,7 @@ public class NERParserCommon {
      */
     public static List<Entity> resultExtraction(String text,
                                          List<Pair<String, String>> labeled,
-                                         List<String> tokenizations) {
+                                         List<LayoutToken> tokenizations) {
 
         List<Entity> entities = new ArrayList<Entity>();
         String label = null; // label
@@ -203,7 +203,7 @@ public class NERParserCommon {
 
             boolean stop = false;
             while ((!stop) && (p < tokenizations.size())) {
-                String tokOriginal = tokenizations.get(p);
+                String tokOriginal = tokenizations.get(p).getText();
                 addedOffset += tokOriginal.length();
                 if (tokOriginal.equals(actual)) {
                     stop = true;

@@ -3,13 +3,12 @@ package org.grobid.trainer;
 import org.grobid.core.GrobidModels;
 import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.exceptions.GrobidResourceException;
-import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.lexicon.NERLexicon;
 import org.grobid.core.mock.MockContext;
 import org.grobid.core.utilities.GrobidProperties;
-import org.grobid.core.utilities.LayoutTokensNERUtility;
 import org.grobid.core.utilities.OffsetPosition;
 import org.grobid.core.utilities.TextUtilities;
+import org.grobid.core.layout.LayoutToken;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -79,16 +78,18 @@ public class CoNNLNERTrainer extends NERTrainer {
 				writer = new OutputStreamWriter(os, "UTF8");
 			}
 			
-			List<List<OffsetPosition>> locationPositions = new ArrayList<List<OffsetPosition>>();
-            List<List<OffsetPosition>> titleNamePositions = new ArrayList<List<OffsetPosition>>();
-            List<List<OffsetPosition>> organisationPositions = new ArrayList<List<OffsetPosition>>();
-			List<List<OffsetPosition>> orgFormPositions = new ArrayList<List<OffsetPosition>>();
+			List<OffsetPosition> locationPositions = null;
+            List<OffsetPosition> titleNamePositions = null;
+            List<OffsetPosition> organisationPositions = null;
+			List<OffsetPosition> orgFormPositions = null;
 			
-			List<String> labeled = new ArrayList<String>();
+			//List<String> labeled = new ArrayList<String>();
 		  	BufferedReader br = new BufferedReader(new InputStreamReader(
 				new DataInputStream(new FileInputStream(trainFile))));
 		  	String line;
 			String previousLabel = "O";
+			List<LayoutToken> tokens = new ArrayList<LayoutToken>();
+			List<String> labels = new ArrayList<String>();
 		  	while ((line = br.readLine()) != null)   {
 				if (line.startsWith("-DOCSTART-")) {
 					previousLabel = "O";
@@ -96,53 +97,58 @@ public class CoNNLNERTrainer extends NERTrainer {
 				}
 			
 				if (line.trim().length() == 0) {
-					labeled.add("@newline");
-
-					List<LayoutToken> tokens = LayoutTokensNERUtility.mapFromTokenisedList(labeled);
-					locationPositions.add(lexicon.tokenPositionsLocationNames(tokens));
-					titleNamePositions.add(lexicon.tokenPositionsPersonTitle(tokens));
-					organisationPositions.add(lexicon.tokenPositionsOrganisationNames(tokens));
-					orgFormPositions.add(lexicon.tokenPositionsOrgForm(tokens));
-
-					addFeatures(labeled, writer, 
-						locationPositions, titleNamePositions, organisationPositions, orgFormPositions);
-		            writer.write("\n");
-
-					locationPositions = new ArrayList<List<OffsetPosition>>();
-		            titleNamePositions = new ArrayList<List<OffsetPosition>>();
-		            organisationPositions = new ArrayList<List<OffsetPosition>>();
-					orgFormPositions = new ArrayList<List<OffsetPosition>>();
-					labeled = new ArrayList<String>();
+					LayoutToken token = new LayoutToken("\n");
+					tokens.add(token);
+					labels.add(null);
 					previousLabel = "O";
 					continue;
 				}
 				
-				String[] tokens = line.split(" ");
+				String[] toks = line.split(" ");
 				
-				if (tokens.length != 4) {
+				if (toks.length != 4) {
 					System.err.println("Invalid number of tokens for CoNNL corpus line: " + line);
 					continue;
 				}
 				// we take the standard Grobid tokenizer
-				StringTokenizer st2 = new StringTokenizer(tokens[0], 
+				StringTokenizer st2 = new StringTokenizer(toks[0], 
 					TextUtilities.fullPunctuations, true);
 				while(st2.hasMoreTokens()) {
 					String tok = st2.nextToken();
 					if (tok.trim().length() == 0)
 						continue;
-					String label = tokens[3];
+					LayoutToken token = new LayoutToken(tok);
+					tokens.add(token);
+
+					String label = toks[3];
 					label = translate(label);
 					
-					if (label.equals("O")) 
+					/*if (label.equals("O")) 
 						labeled.add(tok + "\tO");
 					else if (previousLabel.equals("O") || !previousLabel.equals(label))
 						labeled.add(tok + "\tB-" + label);
 					else
-						labeled.add(tok + "\tI-" + label);
+						labeled.add(tok + "\tI-" + label);*/
+
+					if (previousLabel.equals("O") || !previousLabel.equals(label))
+						label = "B-" + label;
+					else
+						label = "I-" + label;
+
+					labels.add(label);
 					previousLabel = label;
 				}
 			}
-			writer.write("\n");
+
+			locationPositions = lexicon.tokenPositionsLocationNames(tokens);
+		    titleNamePositions = lexicon.tokenPositionsPersonTitle(tokens);
+		    organisationPositions = lexicon.tokenPositionsOrganisationNames(tokens);
+			orgFormPositions = lexicon.tokenPositionsOrgForm(tokens);	
+
+			addFeatures(tokens, labels, writer, 
+				locationPositions, titleNamePositions, organisationPositions, orgFormPositions);
+		    writer.write("\n");
+
 			br.close();
 			
 			// if indicated, we include the development set (eng.testa) in the training
@@ -155,12 +161,12 @@ public class CoNNLNERTrainer extends NERTrainer {
 						" is not correctly set : " + conllPath + "/eng.testa");
 				}
 
-				locationPositions = new ArrayList<List<OffsetPosition>>();
+				/*locationPositions = new ArrayList<List<OffsetPosition>>();
 	            titleNamePositions = new ArrayList<List<OffsetPosition>>();
 	            organisationPositions = new ArrayList<List<OffsetPosition>>();
-				orgFormPositions = new ArrayList<List<OffsetPosition>>();
-
-				labeled = new ArrayList<String>();
+				orgFormPositions = new ArrayList<List<OffsetPosition>>();*/
+				tokens = new ArrayList<LayoutToken>();
+				labels = new ArrayList<String>();
 			  	br = new BufferedReader(new InputStreamReader(
 					new DataInputStream(new FileInputStream(trainFile))));
 				previousLabel = "O";
@@ -171,53 +177,58 @@ public class CoNNLNERTrainer extends NERTrainer {
 					}
 
 					if (line.trim().length() == 0) {
-						labeled.add("@newline");
-
-						List<LayoutToken> tokens = LayoutTokensNERUtility.mapFromTokenisedList(labeled);
-						locationPositions.add(lexicon.tokenPositionsLocationNames(tokens));
-						titleNamePositions.add(lexicon.tokenPositionsPersonTitle(tokens));
-						organisationPositions.add(lexicon.tokenPositionsOrganisationNames(tokens));
-						orgFormPositions.add(lexicon.tokenPositionsOrgForm(tokens));
-
-						addFeatures(labeled, writer, 
-							locationPositions, titleNamePositions, organisationPositions, orgFormPositions);
-			            writer.write("\n");
-
-						locationPositions = new ArrayList<List<OffsetPosition>>();
-			            titleNamePositions = new ArrayList<List<OffsetPosition>>();
-			            organisationPositions = new ArrayList<List<OffsetPosition>>();
-						orgFormPositions = new ArrayList<List<OffsetPosition>>();
-						labeled = new ArrayList<String>();
+						LayoutToken token = new LayoutToken("\n");
+						tokens.add(token);
+						labels.add(null);
 						previousLabel = "O";
 						continue;
 					}
 
-					String[] tokens = line.split(" ");
+					String[] toks = line.split(" ");
 
-					if (tokens.length != 4) {
+					if (toks.length != 4) {
 						System.err.println("Invalid number of tokens for CoNNL corpus line: " + line);
 						continue;
 					}
 					// we take the standard Grobid tokenizer
-					StringTokenizer st2 = new StringTokenizer(tokens[0], 
+					StringTokenizer st2 = new StringTokenizer(toks[0], 
 						TextUtilities.fullPunctuations, true);
 					while(st2.hasMoreTokens()) {
 						String tok = st2.nextToken();
 						if (tok.trim().length() == 0)
 							continue;
-						String label = tokens[3];
-						label = translate(label);
+						LayoutToken token = new LayoutToken(tok);
+						tokens.add(token);
 
-						if (label.equals("O")) 
+						String label = toks[3];
+						label = translate(label);
+						
+						/*if (label.equals("O")) 
 							labeled.add(tok + "\tO");
 						else if (previousLabel.equals("O") || !previousLabel.equals(label))
 							labeled.add(tok + "\tB-" + label);
 						else
-							labeled.add(tok + "\tI-" + label);
+							labeled.add(tok + "\tI-" + label);*/
+
+						if (previousLabel.equals("O") || !previousLabel.equals(label))
+							label = "B-" + label;
+						else
+							label = "I-" + label;
+
+						labels.add(label);
 						previousLabel = label;
 					}
 				}
-				writer.write("\n");
+
+				locationPositions = lexicon.tokenPositionsLocationNames(tokens);
+			    titleNamePositions = lexicon.tokenPositionsPersonTitle(tokens);
+			    organisationPositions = lexicon.tokenPositionsOrganisationNames(tokens);
+				orgFormPositions = lexicon.tokenPositionsOrgForm(tokens);		
+
+				addFeatures(tokens, labels, writer, 
+					locationPositions, titleNamePositions, organisationPositions, orgFormPositions);
+		   	 	writer.write("\n");
+
 				br.close();				
 			}
 			writer.close();
@@ -304,76 +315,78 @@ public class CoNNLNERTrainer extends NERTrainer {
 				writer = new OutputStreamWriter(os, "UTF8");
 			}
 			
-			List<List<OffsetPosition>> locationPositions = new ArrayList<List<OffsetPosition>>();
-            List<List<OffsetPosition>> titleNamePositions = new ArrayList<List<OffsetPosition>>();
-            List<List<OffsetPosition>> organisationPositions = new ArrayList<List<OffsetPosition>>();
-			List<List<OffsetPosition>> orgFormPositions = new ArrayList<List<OffsetPosition>>();
+			List<OffsetPosition> locationPositions = null;
+            List<OffsetPosition> titleNamePositions = null;
+            List<OffsetPosition> organisationPositions = null;
+			List<OffsetPosition> orgFormPositions = null;
 						
 			BufferedReader br = new BufferedReader(new InputStreamReader(
 				new DataInputStream(new FileInputStream(eval))));
 		  	String line = null;
-			List<String> labeled = new ArrayList<String>();
+		  	List<LayoutToken> tokens = new ArrayList<LayoutToken>();
+			List<String> labels = new ArrayList<String>();
 			String previousLabel = "O";
 		  	while ((line = br.readLine()) != null) {
-				if (line.trim().length() == 0) {
+				if (line.startsWith("-DOCSTART-") || line.startsWith("--")) {
 					previousLabel = "O";
-					if (labeled.size() > 0) {
-
-						List<LayoutToken> tokens = LayoutTokensNERUtility.mapFromTokenisedList(labeled);
-						locationPositions.add(lexicon.tokenPositionsLocationNames(tokens));
-						titleNamePositions.add(lexicon.tokenPositionsPersonTitle(tokens));
-						organisationPositions.add(lexicon.tokenPositionsOrganisationNames(tokens));
-						orgFormPositions.add(lexicon.tokenPositionsOrgForm(tokens));
-
-						addFeatures(labeled, writer, 
-							locationPositions, titleNamePositions, organisationPositions, orgFormPositions);
-		            	writer.write("\n");
-		
-						locationPositions = new ArrayList<List<OffsetPosition>>();
-			            titleNamePositions = new ArrayList<List<OffsetPosition>>();
-			            organisationPositions = new ArrayList<List<OffsetPosition>>();
-						orgFormPositions = new ArrayList<List<OffsetPosition>>();
-						labeled = new ArrayList<String>();
-						previousLabel = "O";
-					}
 					continue;
 				}
-				
-				if (line.startsWith("-DOCSTART-") || line.startsWith("--")) {
-					if (labeled.size() > 0) {
-						addFeatures(labeled, writer, 
-							locationPositions, titleNamePositions, organisationPositions, orgFormPositions);
-		            	writer.write("\n");
-						labeled = new ArrayList<String>();
-					}
+
+				if (line.trim().length() == 0) {
+					LayoutToken token = new LayoutToken("\n");
+					tokens.add(token);
+					labels.add(null);
 					previousLabel = "O";
 					continue;
 				}
 			
-				String[] tokens = line.split(" ");
-				if (tokens.length != 4) {
+				String[] toks = line.split(" ");
+				if (toks.length != 4) {
 					System.err.println("Invalid number of tokens for CoNNL corpus line: " + line);
 					previousLabel = "O";
 					continue;
 				}
-				
-				String token = tokens[0];
-				String label = tokens[3];
-				label = translate(label);
-				
-				StringTokenizer st = new StringTokenizer(token, TextUtilities.fullPunctuations, true);
-				while(st.hasMoreTokens()) { 
-					if (label.equals("O"))
-						labeled.add(st.nextToken() + " O");
-					else if (previousLabel.equals(label))
-						labeled.add(st.nextToken() + " I-" + label);
-					else 
-						labeled.add(st.nextToken() + " B-" + label);
+
+				// we take the standard Grobid tokenizer
+				StringTokenizer st2 = new StringTokenizer(toks[0], 
+					TextUtilities.fullPunctuations, true);
+				while(st2.hasMoreTokens()) {
+					String tok = st2.nextToken();
+					if (tok.trim().length() == 0)
+						continue;
+					LayoutToken token = new LayoutToken(tok);
+					tokens.add(token);
+
+					String label = toks[3];
+					label = translate(label);
+					
+					/*if (label.equals("O")) 
+						labeled.add(tok + "\tO");
+					else if (previousLabel.equals("O") || !previousLabel.equals(label))
+						labeled.add(tok + "\tB-" + label);
+					else
+						labeled.add(tok + "\tI-" + label);*/
+
+					if (previousLabel.equals("O") || !previousLabel.equals(label))
+						label = "B-" + label;
+					else
+						label = "I-" + label;
+
+					labels.add(label);
 					previousLabel = label;
 				}
 			}
+			locationPositions = lexicon.tokenPositionsLocationNames(tokens);
+		    titleNamePositions = lexicon.tokenPositionsPersonTitle(tokens);
+		    organisationPositions = lexicon.tokenPositionsOrganisationNames(tokens);
+			orgFormPositions = lexicon.tokenPositionsOrgForm(tokens);	
+
+			addFeatures(tokens, labels, writer, 
+				locationPositions, titleNamePositions, organisationPositions, orgFormPositions);
+	   	 	writer.write("\n");
+
 			br.close();
-			writer.close();
+			writer.close();	
 			
 			// apply now the model, we use a simple command line as it is only evaluation
 			String modelPath = GrobidProperties.getModelPath(model).getAbsolutePath() + ".connl";

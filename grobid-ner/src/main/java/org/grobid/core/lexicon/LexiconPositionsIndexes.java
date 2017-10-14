@@ -25,18 +25,11 @@ public class LexiconPositionsIndexes {
         this.lexicon = lexicon;
     }
 
-    public void computeIndexes(String text) {
-        localLocationPositions = lexicon.tokenPositionsLocationNames(text);
-        localPersonTitlePositions = lexicon.tokenPositionsLocationNames(text);
-        localOrganisationPositions = lexicon.tokenPositionsLocationNames(text);
-        localOrgFormPositions = lexicon.tokenPositionsLocationNames(text);
-    }
-
     public void computeIndexes(List<LayoutToken> tokens) {
         localLocationPositions = lexicon.tokenPositionsLocationNames(tokens);
-        localPersonTitlePositions = lexicon.tokenPositionsLocationNames(tokens);
-        localOrganisationPositions = lexicon.tokenPositionsLocationNames(tokens);
-        localOrgFormPositions = lexicon.tokenPositionsLocationNames(tokens);
+        localPersonTitlePositions = lexicon.tokenPositionsPersonTitle(tokens);
+        localOrganisationPositions = lexicon.tokenPositionsOrganisationNames(tokens);
+        localOrgFormPositions = lexicon.tokenPositionsOrgForm(tokens);
     }
 
     /**
@@ -95,7 +88,7 @@ public class LexiconPositionsIndexes {
     /**
      * Give the list of textual tokens from a list of LayoutToken
      */
-    private static List<String> getTexts(List<LayoutToken> tokenizations) {
+    /*private static List<String> getTexts(List<LayoutToken> tokenizations) {
         List<String> texts = new ArrayList<String>();
         for (LayoutToken token : tokenizations) {
             if (isNotEmpty(trim(token.getText())) && 
@@ -108,5 +101,5 @@ public class LexiconPositionsIndexes {
             }
         }
         return texts;
-    }
+    }*/
 }

@@ -9,6 +9,7 @@ import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.lexicon.LexiconPositionsIndexes;
 import org.grobid.core.utilities.Pair;
 import org.grobid.core.layout.LayoutToken;
+import org.grobid.core.utilities.LayoutTokensUtil;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -38,9 +39,9 @@ public class NERFrParser extends AbstractParser implements NERParser {
      * (following Java specification of characters).
      */
     public List<Entity> extractNE(String text) {
-        List<String> tokens = null;
+        List<LayoutToken> tokens = null;
         try {
-            tokens = GrobidAnalyzer.getInstance().tokenize(text, new Language(Language.FR, 1.0));
+            tokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(text, new Language(Language.FR, 1.0));
         } catch(Exception e) {
             LOGGER.error("Tokenization failed", e);
         }
@@ -48,9 +49,9 @@ public class NERFrParser extends AbstractParser implements NERParser {
             return null;
 
         LexiconPositionsIndexes positionsIndexes = new LexiconPositionsIndexes(lexicon);
-        positionsIndexes.computeIndexes(text);
+        positionsIndexes.computeIndexes(tokens);
 
-        String res = NERParserCommon.toFeatureVector(tokens, positionsIndexes);
+        String res = NERParserCommon.toFeatureVectorLayout(tokens, positionsIndexes);
         String result = label(res);
         List<Pair<String, String>> labeled = GenericTaggerUtils.getTokensAndLabels(result);
 
@@ -66,9 +67,19 @@ public class NERFrParser extends AbstractParser implements NERParser {
      * the input document.
      */
     public List<Entity> extractNE(List<LayoutToken> tokens) {
-        
+        if (tokens == null)
+            return null;
 
-        return null;
+        LexiconPositionsIndexes positionsIndexes = new LexiconPositionsIndexes(lexicon);
+        positionsIndexes.computeIndexes(tokens);
+
+        String res = NERParserCommon.toFeatureVectorLayout(tokens, positionsIndexes);
+        String result = label(res);
+        List<Pair<String, String>> labeled = GenericTaggerUtils.getTokensAndLabels(result);
+
+        List<Entity> entities = NERParserCommon.resultExtraction(LayoutTokensUtil.toText(tokens), labeled, tokens);
+
+        return entities;
     }
 
     public String createCONNLTrainingFromText(String text) {
@@ -77,16 +88,16 @@ public class NERFrParser extends AbstractParser implements NERParser {
 
         text = text.replace("\n", " ");
 
-        List<String> tokens = null;
+        List<LayoutToken> tokens = null;
         try {
-            tokens = GrobidAnalyzer.getInstance().tokenize(text, new Language(Language.FR, 1.0));
+            tokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(text, new Language(Language.FR, 1.0));
         } catch(Exception e) {
             LOGGER.error("Tokenization failed", e);
         }
         LexiconPositionsIndexes positionsIndexes = new LexiconPositionsIndexes(lexicon);
-        positionsIndexes.computeIndexes(text);
+        positionsIndexes.computeIndexes(tokens);
 
-        String featuresVector = NERParserCommon.toFeatureVector(tokens, positionsIndexes);
+        String featuresVector = NERParserCommon.toFeatureVectorLayout(tokens, positionsIndexes);
         String res = label(featuresVector);
 
         List<Pair<String, String>> labeledEntries = GenericTaggerUtils.getTokensAndLabels(res);

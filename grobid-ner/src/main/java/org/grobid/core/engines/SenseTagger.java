@@ -43,10 +43,10 @@ public class SenseTagger extends AbstractParser {
         try {
             text = text.replace("\n", " ");
 			int sentence = 0;
-			List<OffsetPosition> localLocationPositions = lexicon.tokenPositionsLocationNames(text);
-			List<OffsetPosition> localPersonTitlePositions = lexicon.tokenPositionsPersonTitle(text);
-			List<OffsetPosition> localOrganisationPositions = lexicon.tokenPositionsOrganisationNames(text);
-			List<OffsetPosition> localOrgFormPositions = lexicon.tokenPositionsOrgForm(text);
+			List<OffsetPosition> locationPositions = lexicon.tokenPositionsLocationNames(text);
+			List<OffsetPosition> personTitlePositions = lexicon.tokenPositionsPersonTitle(text);
+			List<OffsetPosition> organisationPositions = lexicon.tokenPositionsOrganisationNames(text);
+			List<OffsetPosition> orgFormPositions = lexicon.tokenPositionsOrgForm(text);
 			int currentPosition = 0;
             StringTokenizer st = new StringTokenizer(text, TextUtilities.fullPunctuations, true);
 			
@@ -81,70 +81,70 @@ public class SenseTagger extends AbstractParser {
 				boolean isPersonTitleToken = false;
 				boolean isOrganisationToken = false;
 				boolean isOrgFormToken = false;
-				if ( (localLocationPositions != null) && (localLocationPositions.size() > 0) ) {
-					for(int mm = currentLocationIndex; mm < localLocationPositions.size(); mm++) {
-						if ( (posit >= localLocationPositions.get(mm).start) && 
-							 (posit <= localLocationPositions.get(mm).end) ) {
+				if ( (locationPositions != null) && (locationPositions.size() > 0) ) {
+					for(int mm = currentLocationIndex; mm < locationPositions.size(); mm++) {
+						if ( (posit >= locationPositions.get(mm).start) && 
+							 (posit <= locationPositions.get(mm).end) ) {
 							isLocationToken = true;
 							currentLocationIndex = mm;
 							break;
 						}
-						else if (posit < localLocationPositions.get(mm).start) {
+						else if (posit < locationPositions.get(mm).start) {
 							isLocationToken = false;
 							break;
 						}
-						else if (posit > localLocationPositions.get(mm).end) {
+						else if (posit > locationPositions.get(mm).end) {
 							continue;
 						}
 					}
 				}
-				if ( (localPersonTitlePositions != null) && (localPersonTitlePositions.size() > 0) ) {
-					for(int mm = currentPersonTitleIndex; mm < localPersonTitlePositions.size(); mm++) {
-						if ( (posit >= localPersonTitlePositions.get(mm).start) && 
-							 (posit <= localPersonTitlePositions.get(mm).end) ) {
+				if ( (personTitlePositions != null) && (personTitlePositions.size() > 0) ) {
+					for(int mm = currentPersonTitleIndex; mm < personTitlePositions.size(); mm++) {
+						if ( (posit >= personTitlePositions.get(mm).start) && 
+							 (posit <= personTitlePositions.get(mm).end) ) {
 							isPersonTitleToken = true;
 							currentPersonTitleIndex = mm;
 							break;
 						}
-						else if (posit < localPersonTitlePositions.get(mm).start) {
+						else if (posit < personTitlePositions.get(mm).start) {
 							isPersonTitleToken = false;
 							break;
 						}
-						else if (posit > localPersonTitlePositions.get(mm).end) {
+						else if (posit > personTitlePositions.get(mm).end) {
 							continue;
 						}
 					}
 				}
-				if ( (localOrganisationPositions != null) && (localOrganisationPositions.size() > 0) ) {
-					for(int mm = currentOrganisationIndex; mm < localOrganisationPositions.size(); mm++) {
-						if ( (posit >= localOrganisationPositions.get(mm).start) && 
-							 (posit <= localOrganisationPositions.get(mm).end) ) {
+				if ( (organisationPositions != null) && (organisationPositions.size() > 0) ) {
+					for(int mm = currentOrganisationIndex; mm < organisationPositions.size(); mm++) {
+						if ( (posit >= organisationPositions.get(mm).start) && 
+							 (posit <= organisationPositions.get(mm).end) ) {
 							isOrganisationToken = true;
 							currentOrganisationIndex = mm;
 							break;
 						}
-						else if (posit < localOrganisationPositions.get(mm).start) {
+						else if (posit < organisationPositions.get(mm).start) {
 							isOrganisationToken = false;
 							break;
 						}
-						else if (posit > localOrganisationPositions.get(mm).end) {
+						else if (posit > organisationPositions.get(mm).end) {
 							continue;
 						}
 					}
 				}
-				if ( (localOrgFormPositions != null) && (localOrgFormPositions.size() > 0) ) {
-					for(int mm = currentOrgFormIndex; mm < localOrgFormPositions.size(); mm++) {
-						if ( (posit >= localOrgFormPositions.get(mm).start) && 
-							 (posit <= localOrgFormPositions.get(mm).end) ) {
+				if ( (orgFormPositions != null) && (orgFormPositions.size() > 0) ) {
+					for(int mm = currentOrgFormIndex; mm < orgFormPositions.size(); mm++) {
+						if ( (posit >= orgFormPositions.get(mm).start) && 
+							 (posit <= orgFormPositions.get(mm).end) ) {
 							isOrgFormToken = true;
 							currentOrgFormIndex = mm;
 							break;
 						}
-						else if (posit < localOrgFormPositions.get(mm).start) {
+						else if (posit < orgFormPositions.get(mm).start) {
 							isOrganisationToken = false;
 							break;
 						}
-						else if (posit > localOrgFormPositions.get(mm).end) {
+						else if (posit > orgFormPositions.get(mm).end) {
 							continue;
 						}
 					}
@@ -185,10 +185,10 @@ public class SenseTagger extends AbstractParser {
 
 		List<Sense> senses = null;
 
-		List<OffsetPosition> localLocationPositions = positionsIndexes.getLocalLocationPositions();
-		List<OffsetPosition> localPersonTitlePositions = positionsIndexes.getLocalPersonTitlePositions();
-		List<OffsetPosition> localOrganisationPositions = positionsIndexes.getLocalOrganisationPositions();
-		List<OffsetPosition> localOrgFormPositions = positionsIndexes.getLocalOrgFormPositions();
+		List<OffsetPosition> locationPositions = positionsIndexes.getLocalLocationPositions();
+		List<OffsetPosition> personTitlePositions = positionsIndexes.getLocalPersonTitlePositions();
+		List<OffsetPosition> organisationPositions = positionsIndexes.getLocalOrganisationPositions();
+		List<OffsetPosition> orgFormPositions = positionsIndexes.getLocalOrgFormPositions();
 
         try {
 			int sentence = 0;
@@ -224,70 +224,70 @@ public class SenseTagger extends AbstractParser {
 				boolean isPersonTitleToken = false;
 				boolean isOrganisationToken = false;
 				boolean isOrgFormToken = false;
-				if ( (localLocationPositions != null) && (localLocationPositions.size() > 0) ) {
-					for(int mm = currentLocationIndex; mm < localLocationPositions.size(); mm++) {
-						if ( (posit >= localLocationPositions.get(mm).start) && 
-							 (posit <= localLocationPositions.get(mm).end) ) {
+				if ( (locationPositions != null) && (locationPositions.size() > 0) ) {
+					for(int mm = currentLocationIndex; mm < locationPositions.size(); mm++) {
+						if ( (posit >= locationPositions.get(mm).start) && 
+							 (posit <= locationPositions.get(mm).end) ) {
 							isLocationToken = true;
 							currentLocationIndex = mm;
 							break;
 						}
-						else if (posit < localLocationPositions.get(mm).start) {
+						else if (posit < locationPositions.get(mm).start) {
 							isLocationToken = false;
 							break;
 						}
-						else if (posit > localLocationPositions.get(mm).end) {
+						else if (posit > locationPositions.get(mm).end) {
 							continue;
 						}
 					}
 				}
-				if ( (localPersonTitlePositions != null) && (localPersonTitlePositions.size() > 0) ) {
-					for(int mm = currentPersonTitleIndex; mm < localPersonTitlePositions.size(); mm++) {
-						if ( (posit >= localPersonTitlePositions.get(mm).start) && 
-							 (posit <= localPersonTitlePositions.get(mm).end) ) {
+				if ( (personTitlePositions != null) && (personTitlePositions.size() > 0) ) {
+					for(int mm = currentPersonTitleIndex; mm < personTitlePositions.size(); mm++) {
+						if ( (posit >= personTitlePositions.get(mm).start) && 
+							 (posit <= personTitlePositions.get(mm).end) ) {
 							isPersonTitleToken = true;
 							currentPersonTitleIndex = mm;
 							break;
 						}
-						else if (posit < localPersonTitlePositions.get(mm).start) {
+						else if (posit < personTitlePositions.get(mm).start) {
 							isPersonTitleToken = false;
 							break;
 						}
-						else if (posit > localPersonTitlePositions.get(mm).end) {
+						else if (posit > personTitlePositions.get(mm).end) {
 							continue;
 						}
 					}
 				}
-				if ( (localOrganisationPositions != null) && (localOrganisationPositions.size() > 0) ) {
-					for(int mm = currentOrganisationIndex; mm < localOrganisationPositions.size(); mm++) {
-						if ( (posit >= localOrganisationPositions.get(mm).start) && 
-							 (posit <= localOrganisationPositions.get(mm).end) ) {
+				if ( (organisationPositions != null) && (organisationPositions.size() > 0) ) {
+					for(int mm = currentOrganisationIndex; mm < organisationPositions.size(); mm++) {
+						if ( (posit >= organisationPositions.get(mm).start) && 
+							 (posit <= organisationPositions.get(mm).end) ) {
 							isOrganisationToken = true;
 							currentOrganisationIndex = mm;
 							break;
 						}
-						else if (posit < localOrganisationPositions.get(mm).start) {
+						else if (posit < organisationPositions.get(mm).start) {
 							isOrganisationToken = false;
 							break;
 						}
-						else if (posit > localOrganisationPositions.get(mm).end) {
+						else if (posit > organisationPositions.get(mm).end) {
 							continue;
 						}
 					}
 				}
-				if ( (localOrgFormPositions != null) && (localOrgFormPositions.size() > 0) ) {
-					for(int mm = currentOrgFormIndex; mm < localOrgFormPositions.size(); mm++) {
-						if ( (posit >= localOrgFormPositions.get(mm).start) && 
-							 (posit <= localOrgFormPositions.get(mm).end) ) {
+				if ( (orgFormPositions != null) && (orgFormPositions.size() > 0) ) {
+					for(int mm = currentOrgFormIndex; mm < orgFormPositions.size(); mm++) {
+						if ( (posit >= orgFormPositions.get(mm).start) && 
+							 (posit <= orgFormPositions.get(mm).end) ) {
 							isOrgFormToken = true;
 							currentOrgFormIndex = mm;
 							break;
 						}
-						else if (posit < localOrgFormPositions.get(mm).start) {
+						else if (posit < orgFormPositions.get(mm).start) {
 							isOrganisationToken = false;
 							break;
 						}
-						else if (posit > localOrgFormPositions.get(mm).end) {
+						else if (posit > orgFormPositions.get(mm).end) {
 							continue;
 						}
 					}

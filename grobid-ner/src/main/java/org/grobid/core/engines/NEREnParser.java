@@ -44,9 +44,9 @@ public class NEREnParser extends AbstractParser implements NERParser {
      * (following Java specification of characters).
      */
     public List<Entity> extractNE(String text) {
-        List<String> tokens = null;
+        List<LayoutToken> tokens = null;
         try {
-            tokens = GrobidAnalyzer.getInstance().tokenize(text, new Language(Language.EN, 1.0));
+            tokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(text, new Language(Language.EN, 1.0));
         } catch(Exception e) {
             LOGGER.error("Tokenization failed. ", e);
         }
@@ -54,9 +54,9 @@ public class NEREnParser extends AbstractParser implements NERParser {
             return null;
         
         LexiconPositionsIndexes positionsIndexes = new LexiconPositionsIndexes(lexicon);
-        positionsIndexes.computeIndexes(text);
+        positionsIndexes.computeIndexes(tokens);
 
-        String res = NERParserCommon.toFeatureVector(tokens, positionsIndexes);
+        String res = NERParserCommon.toFeatureVectorLayout(tokens, positionsIndexes);
         String result = label(res);
         List<Pair<String, String>> labeled = GenericTaggerUtils.getTokensAndLabels(result);
 
@@ -104,17 +104,17 @@ public class NEREnParser extends AbstractParser implements NERParser {
 
         text = text.replace("\n", " ");
 
-        List<String> tokens = null;
+        List<LayoutToken> tokens = null;
         try {
-            tokens =  GrobidAnalyzer.getInstance().tokenize(text, new Language(Language.EN, 1.0));
+            tokens =  GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(text, new Language(Language.EN, 1.0));
         } catch(Exception e) {
             LOGGER.error("Tokenization failed", e);
             return null;
         }
         LexiconPositionsIndexes positionsIndexes = new LexiconPositionsIndexes(lexicon);
-        positionsIndexes.computeIndexes(text);
+        positionsIndexes.computeIndexes(tokens);
 
-        String featuresVector = NERParserCommon.toFeatureVector(tokens, positionsIndexes);
+        String featuresVector = NERParserCommon.toFeatureVectorLayout(tokens, positionsIndexes);
         String res = label(featuresVector);
 
         List<Pair<String, String>> labeledEntries = GenericTaggerUtils.getTokensAndLabels(res);

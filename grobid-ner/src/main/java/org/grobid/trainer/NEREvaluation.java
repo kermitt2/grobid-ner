@@ -4,15 +4,14 @@ import org.grobid.core.GrobidModels;
 import org.grobid.core.engines.NERParser;
 import org.grobid.core.engines.NEREnParser;
 import org.grobid.core.engines.NERParsers;
-import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.lexicon.NERLexicon;
 import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.exceptions.GrobidResourceException;
 import org.grobid.core.factory.GrobidFactory;
 import org.grobid.core.lexicon.Lexicon;
+import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.mock.MockContext;
 import org.grobid.core.utilities.GrobidProperties;
-import org.grobid.core.utilities.LayoutTokensNERUtility;
 import org.grobid.core.utilities.OffsetPosition;
 import org.grobid.core.utilities.TextUtilities;
 
@@ -341,10 +340,14 @@ public class NEREvaluation {
 			writer = new OutputStreamWriter(new FileOutputStream(evalOutputPath), "UTF8");
 			List<String> labeled = new ArrayList<String>();
 			// to store unit term positions
-            List<List<OffsetPosition>> locationPositions = new ArrayList<List<OffsetPosition>>();
-			List<List<OffsetPosition>> peoplePositions = new ArrayList<List<OffsetPosition>>();
-			List<List<OffsetPosition>> organisationPositions = new ArrayList<List<OffsetPosition>>();
-			List<List<OffsetPosition>> orgFormPositions = new ArrayList<List<OffsetPosition>>();
+            List<OffsetPosition> locationPositions = null;
+			List<OffsetPosition> peoplePositions = null;
+			List<OffsetPosition> organisationPositions = null;
+			List<OffsetPosition> orgFormPositions = null;
+
+			List<LayoutToken> tokens = new ArrayList<LayoutToken>();
+			List<String> labels = new ArrayList<String>();
+
 			while ((line = bufReader.readLine()) != null) {
 				line = line.trim();
 				// note that we work at sentence level
@@ -354,13 +357,9 @@ public class NEREvaluation {
 				
 				if (line.length() == 0) {
 					// sentence is complete
-					List<LayoutToken> tokens = LayoutTokensNERUtility.mapFromTokenisedList(labeled);
-
-					locationPositions.add(lexicon.tokenPositionsLocationNames(tokens));
-					peoplePositions.add(lexicon.tokenPositionsPersonTitle(tokens));
-					organisationPositions.add(lexicon.tokenPositionsOrganisationNames(tokens));
-					orgFormPositions.add(lexicon.tokenPositionsOrgForm(tokens));
-
+					LayoutToken token = new LayoutToken("\n");
+					tokens.add(token);
+					labels.add(null);
 					nbSentences++;
 					continue;
 				}
@@ -368,8 +367,8 @@ public class NEREvaluation {
 				String[] pieces = line.split(" ");
 				if (pieces.length == 4) {
 					// we retokenize the lexical string according to Grobid NER
-					String token = pieces[0];
-					StringTokenizer st = new StringTokenizer(token, TextUtilities.fullPunctuations);
+					String tok = pieces[0];
+					StringTokenizer st = new StringTokenizer(tok, TextUtilities.fullPunctuations);
 					
 					String conllLabel = pieces[3];
 					String label = "O";
@@ -387,12 +386,19 @@ public class NEREvaluation {
 					}
 					boolean start = true;
 		            while(st.hasMoreTokens()) {
-						labeled.add(st.nextToken() + "\t" + label);
+		            	LayoutToken token = new LayoutToken(tok);
+						tokens.add(token);
+						labels.add(label);
 					}
 				}
 			}
 			
-			NERTrainer.addFeatures(labeled, writer, 
+			locationPositions = lexicon.tokenPositionsLocationNames(tokens);
+            peoplePositions = lexicon.tokenPositionsPersonTitle(tokens);
+            organisationPositions = lexicon.tokenPositionsOrganisationNames(tokens);
+			orgFormPositions = lexicon.tokenPositionsOrgForm(tokens);
+
+			NERTrainer.addFeatures(tokens, labels, writer, 
 				locationPositions, peoplePositions, organisationPositions, orgFormPositions);			
 			writer.write("\n");
 			writer.close();

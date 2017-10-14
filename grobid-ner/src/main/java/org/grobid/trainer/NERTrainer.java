@@ -9,7 +9,6 @@ import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.lexicon.NERLexicon;
 import org.grobid.core.mock.MockContext;
 import org.grobid.core.utilities.GrobidProperties;
-import org.grobid.core.utilities.LayoutTokensNERUtility;
 import org.grobid.core.utilities.OffsetPosition;
 import org.grobid.trainer.sax.ReutersSaxHandler;
 import org.grobid.trainer.sax.SemDocSaxHandler;
@@ -291,12 +290,16 @@ public class NERTrainer extends AbstractTrainer {
 				Writer writer = null;
 				BufferedReader bufReader = new BufferedReader(
 		                new InputStreamReader(new FileInputStream(corpusDir), "UTF-8"));
+
 				// to store unit term positions
-	            List<List<OffsetPosition>> locationPositions = new ArrayList<List<OffsetPosition>>();
-	            List<List<OffsetPosition>> personTitlePositions = new ArrayList<List<OffsetPosition>>();
-	            List<List<OffsetPosition>> organisationPositions = new ArrayList<List<OffsetPosition>>();		
-				List<List<OffsetPosition>> orgFormPositions = new ArrayList<List<OffsetPosition>>();
-				List<String> labeled = new ArrayList<String>();
+	            List<OffsetPosition> locationPositions = null;
+	            List<OffsetPosition> personTitlePositions = null;
+	            List<OffsetPosition> organisationPositions = null;		
+				List<OffsetPosition> orgFormPositions = null;
+
+				List<LayoutToken> tokens = new ArrayList<LayoutToken>();
+				List<String> labels = new ArrayList<String>();
+
 				String line = null;
 				while ((line = bufReader.readLine()) != null) {
 					line = line.trim();
@@ -317,33 +320,36 @@ public class NERTrainer extends AbstractTrainer {
 						continue;
 					}
 
-					if ((line.length() == 0) && (labeled.size() > 0)) {
-						// sentence is complete
-
-						List<LayoutToken> tokens = LayoutTokensNERUtility.mapFromTokenisedList(labeled);
-						locationPositions.add(lexicon.tokenPositionsLocationNames(tokens));
-						personTitlePositions.add(lexicon.tokenPositionsPersonTitle(tokens));
-						organisationPositions.add(lexicon.tokenPositionsOrganisationNames(tokens));
-						orgFormPositions.add(lexicon.tokenPositionsOrgForm(tokens));
-					
-						// this is mandatory for the correct setting of features
-						labeled.add("@newline");
-					
-						addFeatures(labeled, writer, 
-							locationPositions, personTitlePositions, organisationPositions, orgFormPositions);
-						writer.write("\n");
-					
-						locationPositions = new ArrayList<List<OffsetPosition>>();
-			            personTitlePositions = new ArrayList<List<OffsetPosition>>();
-			            organisationPositions = new ArrayList<List<OffsetPosition>>();		
-						orgFormPositions = new ArrayList<List<OffsetPosition>>();
-						
-						labeled = new ArrayList<String>();
+					if (line.length() == 0) {
+						LayoutToken token = new LayoutToken("\n");
+						tokens.add(token);
+						labels.add(null);
 						res++;
-					}		
-					else 
-						labeled.add(line);	
-				}	
+					} else {
+						String pieces[] = line.split("\t");
+						if (pieces.length != 2)
+							continue;
+						// check if previous label is different from new line - if yes add a space
+						if (!tokens.get(tokens.size()-1).getText().equals("\n")) {
+							LayoutToken token = new LayoutToken(" ");
+							tokens.add(token);
+							labels.add(null);
+						}
+						LayoutToken token = new LayoutToken(pieces[0]);
+						tokens.add(token);
+						labels.add(pieces[1]);
+					}
+				}
+
+				locationPositions = lexicon.tokenPositionsLocationNames(tokens);
+				personTitlePositions = lexicon.tokenPositionsPersonTitle(tokens);
+				organisationPositions = lexicon.tokenPositionsOrganisationNames(tokens);
+				orgFormPositions = lexicon.tokenPositionsOrgForm(tokens);
+					
+				addFeatures(tokens, labels, writer, 
+					locationPositions, personTitlePositions, organisationPositions, orgFormPositions);
+				writer.write("\n");	
+				
 				bufReader.close();			
 			}
 		}
@@ -463,33 +469,34 @@ System.out.println(fileName);
 
 			if (semdocSax.getAnnotatedTextVector() != null) {
 				// to store unit term positions
-	            List<List<OffsetPosition>> locationPositions = new ArrayList<List<OffsetPosition>>();
-	            List<List<OffsetPosition>> personTitlePositions = new ArrayList<List<OffsetPosition>>();
-	            List<List<OffsetPosition>> organisationPositions = new ArrayList<List<OffsetPosition>>();		
-				List<List<OffsetPosition>> orgFormPositions = new ArrayList<List<OffsetPosition>>();
+	            List<OffsetPosition> locationPositions = null;
+	            List<OffsetPosition> personTitlePositions = null;
+	            List<OffsetPosition> organisationPositions = null;		
+				List<OffsetPosition> orgFormPositions = null;
 				List<String> labeled = new ArrayList<String>();
 				// default value for named entity feature
 				
+				List<LayoutToken> tokens = new ArrayList<LayoutToken>();
+				List<String> labels = new ArrayList<String>();
+
 				for(String line : semdocSax.getAnnotatedTextVector()) {
-					labeled.add(line);
+					String[] pieces = line.split("\t");
+					LayoutToken token = new LayoutToken(pieces[0]);
+					String label = null;
+					if (pieces.length == 2)
+						label = pieces[1];
+					tokens.add(token);
+					labels.add(label);
 					
 					if (line.trim().equals("@newline")) {
-						List<LayoutToken> tokens = LayoutTokensNERUtility.mapFromTokenisedList(labeled);
-						locationPositions.add(lexicon.tokenPositionsLocationNames(tokens));
-						personTitlePositions.add(lexicon.tokenPositionsPersonTitle(tokens));
-						organisationPositions.add(lexicon.tokenPositionsOrganisationNames(tokens));
-						orgFormPositions.add(lexicon.tokenPositionsOrgForm(tokens));
-					
-						addFeatures(labeled, writer, 
+						locationPositions = lexicon.tokenPositionsLocationNames(tokens);
+			            personTitlePositions = lexicon.tokenPositionsPersonTitle(tokens);
+			            organisationPositions = lexicon.tokenPositionsOrganisationNames(tokens);
+						orgFormPositions = lexicon.tokenPositionsOrgForm(tokens);			
+						
+						addFeatures(tokens, labels, writer, 
 							locationPositions, personTitlePositions, organisationPositions, orgFormPositions);
 						writer.write("\n");
-						
-						locationPositions = new ArrayList<List<OffsetPosition>>();
-			            personTitlePositions = new ArrayList<List<OffsetPosition>>();
-			            organisationPositions = new ArrayList<List<OffsetPosition>>();		
-						orgFormPositions = new ArrayList<List<OffsetPosition>>();
-						
-						labeled = new ArrayList<String>();
 					}
 				}				
 			}
@@ -501,51 +508,54 @@ System.out.println(fileName);
 	}
 
     @SuppressWarnings({"UnusedParameters"})
-    static public void addFeatures(List<String> texts,
+    static public void addFeatures(List<LayoutToken> tokens, 
+    						List<String> labels,
                             Writer writer,
-                            List<List<OffsetPosition>> locationPositions,
-							List<List<OffsetPosition>> personTitlePositions,
-							List<List<OffsetPosition>> organisationPositions,
-							List<List<OffsetPosition>> orgFormPositions) {
-        int totalLine = texts.size();
+                            List<OffsetPosition> locationPositions,
+							List<OffsetPosition> personTitlePositions,
+							List<OffsetPosition> organisationPositions,
+							List<OffsetPosition> orgFormPositions) {
+        //int totalLine = texts.size();
         int posit = 0;
-		int sentence = 0;
+		//int sentence = 0;
 		int currentLocationIndex = 0;
 		int currentPersonTitleIndex = 0;
 		int currentOrganisationIndex = 0;
 		int currentOrgFormIndex = 0;
-		List<OffsetPosition> localLocationPositions = null;
-		List<OffsetPosition> localPersonTitlePositions = null;
-		List<OffsetPosition> localOrganisationPositions = null;
-		List<OffsetPosition> localOrgFormPositions = null;
-		if (locationPositions.size() > sentence)
+		//List<OffsetPosition> localLocationPositions = null;
+		//List<OffsetPosition> localPersonTitlePositions = null;
+		//List<OffsetPosition> localOrganisationPositions = null;
+		//List<OffsetPosition> localOrgFormPositions = null;
+		/*if (locationPositions.size() > sentence)
 			localLocationPositions = locationPositions.get(sentence);
 		if (personTitlePositions.size() > sentence)	
 			localPersonTitlePositions = personTitlePositions.get(sentence);
 		if (organisationPositions.size() > sentence)			
 			localOrganisationPositions = organisationPositions.get(sentence);
 		if (orgFormPositions.size() > sentence)			
-			localOrgFormPositions = orgFormPositions.get(sentence);	
+			localOrgFormPositions = orgFormPositions.get(sentence);	*/
         boolean isLocationToken = false;
 		boolean isPersonTitleToken = false;
 		boolean isOrganisationToken = false;
 		boolean isOrgFormToken = false;
         try {
 			String previousLabel = null;
-            for (String line : texts) {
-				if (line.trim().equals("@newline")) {
+            for (int n = 0; n < tokens.size(); n++) {
+            	LayoutToken token = tokens.get(n);
+
+				if (token.getText().trim().equals("@newline") || token.getText().equals("\n")) {
 					writer.write("\n");
 	                writer.flush();	
-					sentence++;
+					//sentence++;
 					previousLabel= null;
-					if (locationPositions.size() > sentence)
+					/*if (locationPositions.size() > sentence)
 						localLocationPositions = locationPositions.get(sentence);
 					if (personTitlePositions.size() > sentence)		
 						localPersonTitlePositions = personTitlePositions.get(sentence);
 					if (organisationPositions.size() > sentence)	
 						localOrganisationPositions = organisationPositions.get(sentence);
 					if (orgFormPositions.size() > sentence)	
-						localOrgFormPositions = orgFormPositions.get(sentence);
+						localOrgFormPositions = orgFormPositions.get(sentence);*/
 				}
 				
 				/*int ind = line.indexOf("\t");
@@ -555,91 +565,84 @@ System.out.println(fileName);
 				}*/
 				
 				// do we have a unit term at position posit?
-				if ( (localLocationPositions != null) && (localLocationPositions.size() > 0) ) {
-					for(int mm = currentLocationIndex; mm < localLocationPositions.size(); mm++) {
-						if ( (posit >= localLocationPositions.get(mm).start) && 
-							 (posit <= localLocationPositions.get(mm).end) ) {
+				if ( (locationPositions != null) && (locationPositions.size() > 0) ) {
+					for(int mm = currentLocationIndex; mm < locationPositions.size(); mm++) {
+						if ( (posit >= locationPositions.get(mm).start) && 
+							 (posit <= locationPositions.get(mm).end) ) {
 							isLocationToken = true;
 							currentLocationIndex = mm;
 							break;
 						}
-						else if (posit < localLocationPositions.get(mm).start) {
+						else if (posit < locationPositions.get(mm).start) {
 							isLocationToken = false;
 							break;
 						}
-						else if (posit > localLocationPositions.get(mm).end) {
+						else if (posit > locationPositions.get(mm).end) {
 							continue;
 						}
 					}
 				}
-				if ( (localPersonTitlePositions != null) && (localPersonTitlePositions.size() > 0) ) {
-					for(int mm = currentPersonTitleIndex; mm < localPersonTitlePositions.size(); mm++) {
-						if ( (posit >= localPersonTitlePositions.get(mm).start) && 
-							 (posit <= localPersonTitlePositions.get(mm).end) ) {
+				if ( (personTitlePositions != null) && (personTitlePositions.size() > 0) ) {
+					for(int mm = currentPersonTitleIndex; mm < personTitlePositions.size(); mm++) {
+						if ( (posit >= personTitlePositions.get(mm).start) && 
+							 (posit <= personTitlePositions.get(mm).end) ) {
 							isPersonTitleToken = true;
 							currentPersonTitleIndex = mm;
 							break;
 						}
-						else if (posit < localPersonTitlePositions.get(mm).start) {
+						else if (posit < personTitlePositions.get(mm).start) {
 							isPersonTitleToken = false;
 							break;
 						}
-						else if (posit > localPersonTitlePositions.get(mm).end) {
+						else if (posit > personTitlePositions.get(mm).end) {
 							continue;
 						}
 					}
 				}
-				if ( (localOrganisationPositions != null) && (localOrganisationPositions.size() > 0) ) {
-					for(int mm = currentOrganisationIndex; mm < localOrganisationPositions.size(); mm++) {
-						if ( (posit >= localOrganisationPositions.get(mm).start) && 
-							 (posit <= localOrganisationPositions.get(mm).end) ) {
+				if ( (organisationPositions != null) && (organisationPositions.size() > 0) ) {
+					for(int mm = currentOrganisationIndex; mm < organisationPositions.size(); mm++) {
+						if ( (posit >= organisationPositions.get(mm).start) && 
+							 (posit <= organisationPositions.get(mm).end) ) {
 							isOrganisationToken = true;
 							currentOrganisationIndex = mm;
 							break;
 						}
-						else if (posit < localOrganisationPositions.get(mm).start) {
+						else if (posit < organisationPositions.get(mm).start) {
 							isOrganisationToken = false;
 							break;
 						}
-						else if (posit > localOrganisationPositions.get(mm).end) {
+						else if (posit > organisationPositions.get(mm).end) {
 							continue;
 						}
 					}
 				}
-				if ( (localOrgFormPositions != null) && (localOrgFormPositions.size() > 0) ) {
-					for(int mm = currentOrgFormIndex; mm < localOrgFormPositions.size(); mm++) {
-						if ( (posit >= localOrgFormPositions.get(mm).start) && 
-							 (posit <= localOrgFormPositions.get(mm).end) ) {
+				if ( (orgFormPositions != null) && (orgFormPositions.size() > 0) ) {
+					for(int mm = currentOrgFormIndex; mm < orgFormPositions.size(); mm++) {
+						if ( (posit >= orgFormPositions.get(mm).start) && 
+							 (posit <= orgFormPositions.get(mm).end) ) {
 							isOrgFormToken = true;
 							currentOrgFormIndex = mm;
 							break;
 						}
-						else if (posit < localOrgFormPositions.get(mm).start) {
+						else if (posit < orgFormPositions.get(mm).start) {
 							isOrgFormToken = false;
 							break;
 						}
-						else if (posit > localOrgFormPositions.get(mm).end) {
+						else if (posit > orgFormPositions.get(mm).end) {
 							continue;
 						}
 					}
 				}
-
-				// the "line" expected by the method FeaturesVectorNER.addFeaturesNER is the token
-				// followed by the label, separated by a tab, and nothing else
-				// in addition, the B- prefix for the labels must be injected here if not 
-				// present
-				String cleanLine = "";
-				String[] pieces = line.split("\t");
 				
-				if (pieces.length > 0) {
-					// first string is always the token
-					cleanLine += pieces[0];
-				}
-				if (pieces.length > 1) {
+				String cleanLine = token.getText();
+				String label = null;
+				if (labels.size()>n)
+					label = labels.get(n);
+				if (label != null) {
 					// second piece is the NER label, which could a single label or a list of labels in brackets 
 					// separated by a comma
-					if (pieces[1].startsWith("[")) {
-						String rawlab = pieces[1].substring(1,pieces[1].length()-1);
+					if (label.startsWith("[")) {
+						String rawlab = label.substring(1,label.length()-1);
 						int ind = rawlab.indexOf(",");
 						if (ind != -1) {
 							rawlab = rawlab.substring(0,ind);
@@ -663,7 +666,7 @@ System.out.println(fileName);
 						previousLabel = rawlab;
 					}
 					else {
-						String rawlab = pieces[1];
+						String rawlab = label;
 						if (rawlab.startsWith("B-") || rawlab.equals("O") || 
 							rawlab.equals("0")) {
 							cleanLine += "\t" + rawlab;
@@ -679,6 +682,7 @@ System.out.println(fileName);
 						previousLabel = rawlab;
 					}
 				}
+
                 FeaturesVectorNER featuresVector =
                         FeaturesVectorNER.addFeaturesNER(cleanLine, isLocationToken, isPersonTitleToken, 
 							isOrganisationToken, isOrgFormToken);
