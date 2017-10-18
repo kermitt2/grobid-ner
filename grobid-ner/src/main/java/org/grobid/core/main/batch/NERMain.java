@@ -1,9 +1,8 @@
 package org.grobid.core.main.batch;
 
 import org.grobid.core.engines.NERParsers;
+import org.grobid.core.main.GrobidHomeFinder;
 import org.grobid.core.main.LibraryLoader;
-import org.grobid.core.mock.MockContext;
-import org.grobid.core.utilities.GrobidHome;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.trainer.AssembleNERCorpus;
 import org.slf4j.Logger;
@@ -12,6 +11,8 @@ import org.slf4j.LoggerFactory;
 import java.io.File;
 import java.util.Arrays;
 import java.util.List;
+
+import static org.apache.commons.lang3.StringUtils.isNotEmpty;
 
 public class NERMain {
     private static Logger LOGGER = LoggerFactory.getLogger(NERMain.class);
@@ -42,21 +43,26 @@ public class NERMain {
     }
 
     /**
-     * Infer some parameters not given in arguments.
+     * Init process with the provided grobid-home
+     *
+     * @param grobidHome
      */
-    protected static void inferParamsNotSet() {
-        String tmpFilePath;
-        if (gbdArgs.getPath2grobidHome() == null) {
-            tmpFilePath = new File("grobid-home").getAbsolutePath();
-            System.out.println("No path set for grobid-home. Using: " + tmpFilePath);
-            gbdArgs.setPath2grobidHome(tmpFilePath);
-            gbdArgs.setPath2grobidProperty(new File("grobid.properties").getAbsolutePath());
+    protected static void initProcess(String grobidHome) {
+        try {
+            final GrobidHomeFinder grobidHomeFinder = new GrobidHomeFinder(Arrays.asList(grobidHome));
+            grobidHomeFinder.findGrobidHomeOrFail();
+            GrobidProperties.getInstance(grobidHomeFinder);
+            LibraryLoader.load();
+        } catch (final Exception exp) {
+            System.err.println("Grobid initialisation failed: " + exp);
         }
     }
 
+    /**
+     * Init process with the default value of the grobid home
+     */
     protected static void initProcess() {
         try {
-            GrobidHome.findGrobidHome();
             LibraryLoader.load();
         } catch (final Exception exp) {
             System.err.println("Grobid initialisation failed: " + exp);
@@ -164,8 +170,12 @@ public class NERMain {
         gbdArgs = new GrobidNERMainArgs();
 
         if (processArgs(args) && (gbdArgs.getProcessMethodName() != null)) {
-            inferParamsNotSet();
-            initProcess();
+            if (isNotEmpty(gbdArgs.getPath2grobidHome())) {
+                initProcess(gbdArgs.getPath2grobidHome());
+            } else {
+                LOGGER.warn("Grobid home not provided, using default. ");
+                initProcess();
+            }
             int nb = 0;
 
             long time = System.currentTimeMillis();

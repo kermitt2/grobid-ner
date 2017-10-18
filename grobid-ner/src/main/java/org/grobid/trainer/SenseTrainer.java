@@ -7,14 +7,13 @@ import org.grobid.core.features.FeaturesVectorNERSense;
 import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.lexicon.NERLexicon;
-import org.grobid.core.mock.MockContext;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.LayoutTokensNERUtility;
 import org.grobid.core.utilities.OffsetPosition;
 import org.grobid.core.utilities.TextUtilities;
+import org.grobid.trainer.evaluation.EvaluationUtilities;
 import org.grobid.trainer.sax.ReutersSaxHandler;
 import org.grobid.trainer.sax.SemDocSaxHandler;
-import org.grobid.trainer.evaluation.EvaluationUtilities;
 
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
@@ -708,7 +707,7 @@ System.out.println(fileName);
     }
 
 	/**
-	 *  Standard evaluation via the the usual Grobid evaluation framework.
+     * Standard evaluation via the the usual Grobid evaluation framework.
 	 */
 	public String evaluate() {
 		File evalDataF = GrobidProperties.getInstance().getEvalCorpusPath(
@@ -726,27 +725,10 @@ System.out.println(fileName);
      * @param args Command line arguments.
      */
     public static void main(String[] args) {
-		try {
-			String pGrobidHome = "../grobid-home";
-			String pGrobidProperties = "../grobid-home/config/grobid.properties";
-
-			MockContext.setInitialContext(pGrobidHome, pGrobidProperties);
 		    GrobidProperties.getInstance();
 
 	        Trainer trainer = new SenseTrainer();
 	        AbstractTrainer.runTraining(trainer);
 	        //AbstractTrainer.runEvaluation(trainer);
 		}
-		catch (Exception e) {
-		    e.printStackTrace();
-		}
-		finally {
-			try {
-				MockContext.destroyInitialContext();
-			}
-			catch(Exception e) {
-				e.printStackTrace();
-			}
-		}
-    }
 }

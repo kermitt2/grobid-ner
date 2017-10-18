@@ -1,9 +1,12 @@
 package org.grobid.trainer;
 
-import java.io.File;
-
-import org.grobid.core.mock.MockContext;
+import org.grobid.core.main.GrobidHomeFinder;
 import org.grobid.core.utilities.GrobidProperties;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.File;
+import java.util.Arrays;
 
 /**
  * Training application for training a target model.
@@ -11,6 +14,7 @@ import org.grobid.core.utilities.GrobidProperties;
  * @author Patrice Lopez
  */
 public class NERTrainerRunner {
+	private static Logger LOGGER = LoggerFactory.getLogger(NERTrainerRunner.class);
 
 	enum RunType {
 		TRAIN, EVAL, SPLIT;
@@ -26,23 +30,11 @@ public class NERTrainerRunner {
 		}
 	}
 
-	/**
-	 * Initialize the batch.
-	 */
-	protected static void initProcess(final String path2GbdHome, final String path2GbdProperties) {
-		try {
-			MockContext.setInitialContext(path2GbdHome, path2GbdProperties);
-		} catch (final Exception exp) {
-			System.err.println("Grobid initialisation failed: " + exp);
-		}
-		GrobidProperties.getInstance();
-	}
 
 	/**
 	 * Command line execution.
 	 * 
-	 * @param args
-	 *            Command line arguments.
+	 * @param args Command line arguments.
 	 */
 	public static void main(String[] args) {
 		if (args.length < 4) {
@@ -85,10 +77,10 @@ public class NERTrainerRunner {
 					"Usage: {0 - train, 1 - evaluate, 2 - split, train and evaluate} {ner,nerfr,nersense} -gH /path/to/Grobid/home -s { [0.0 - 1.0] - split ratio, optional}");
 		}
 
-		final String path2GbdProperties = path2GbdHome + File.separator + "config" + File.separator + "grobid.properties";
+		final GrobidHomeFinder grobidHomeFinder = new GrobidHomeFinder(Arrays.asList("../../grobid-home", "../grobid-home"));
+		grobidHomeFinder.findGrobidHomeOrFail();
 
-		System.out.println("path2GbdHome=" + path2GbdHome + "   path2GbdProperties=" + path2GbdProperties);
-		initProcess(path2GbdHome, path2GbdProperties);
+		GrobidProperties.getInstance(grobidHomeFinder);
 
 		String model = args[1];
 
