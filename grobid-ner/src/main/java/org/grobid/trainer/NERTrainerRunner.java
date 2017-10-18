@@ -1,11 +1,10 @@
 package org.grobid.trainer;
 
-import java.io.File;
-
-import org.grobid.core.mock.MockContext;
 import org.grobid.core.utilities.GrobidProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.File;
 
 /**
  * Training application for training a target model.
@@ -27,15 +26,6 @@ public class NERTrainerRunner {
 
 			throw new IllegalStateException("Unsupported RunType with ordinal " + i);
 		}
-	}
-	
-	protected static void initProcess(final String path2GbdHome, final String path2GbdProperties) {
-		try {
-			MockContext.setInitialContext(path2GbdHome, path2GbdProperties);
-		} catch (final Exception exp) {
-			LOGGER.error("Grobid initialisation failed: " + exp);
-		}
-		GrobidProperties.getInstance();
 	}
 
 	/**
@@ -87,7 +77,8 @@ public class NERTrainerRunner {
 		final String path2GbdProperties = path2GbdHome + File.separator + "config" + File.separator + "grobid.properties";
 
 		System.out.println("path2GbdHome=" + path2GbdHome + "   path2GbdProperties=" + path2GbdProperties);
-		initProcess(path2GbdHome, path2GbdProperties);
+
+		GrobidProperties.getInstance();
 
 		String model = args[1];
 

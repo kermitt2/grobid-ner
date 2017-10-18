@@ -14,9 +14,7 @@ import org.grobid.core.features.FeaturesVectorNER;
 import org.grobid.core.lang.Language;
 import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.lexicon.Lexicon;
-import org.grobid.core.lexicon.NERLexicon;
-import org.grobid.core.mock.MockContext;
-import org.grobid.core.utilities.GrobidHome;
+import org.grobid.core.main.GrobidHomeFinder;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.OffsetPosition;
 import org.grobid.trainer.stax.CustomEMEXFormatStaxHandler;
@@ -29,7 +27,6 @@ import java.nio.file.Paths;
 import java.util.*;
 
 import static org.apache.commons.lang3.StringUtils.isBlank;
-import static org.apache.commons.lang3.StringUtils.isNotBlank;
 
 
 /**
@@ -40,8 +37,6 @@ import static org.apache.commons.lang3.StringUtils.isNotBlank;
 public class NEREnglishTrainer extends AbstractTrainer {
 
     private WstxInputFactory inputFactory = new WstxInputFactory();
-
-    //    private NERLexicon nerLexicon = NERLexicon.getInstance();
     protected Lexicon lexicon = Lexicon.getInstance();
 
     private String nerCorpusPath = null;
@@ -63,8 +58,8 @@ public class NEREnglishTrainer extends AbstractTrainer {
             input = this.getClass().getResourceAsStream("/grobid-ner.properties");
             prop.load(input);
             nerCorpusPath = prop.getProperty("grobid.ner.corpus.path");
-            if(!Files.exists(Paths.get(nerCorpusPath))){
-                throw new GrobidResourceException("Corpus path doesn't exists.");
+            if (!Files.exists(Paths.get(nerCorpusPath))) {
+                throw new GrobidResourceException("Corpus path " + nerCorpusPath + " doesn't exists.");
             }
         } catch (IOException ex) {
             throw new GrobidResourceException("An exception occurred when accessing/reading the grobid-ner property file.", ex);
@@ -205,7 +200,7 @@ public class NEREnglishTrainer extends AbstractTrainer {
 
             previousEntityIndexForThisToken = entityIndexForThisToken;
 
-            if(isBlank(token) || isBlank(label)) {
+            if (isBlank(token) || isBlank(label)) {
                 continue;
             }
 
@@ -230,12 +225,12 @@ public class NEREnglishTrainer extends AbstractTrainer {
     /**
      * Given a tokenised sentence and a list of OffsetPositions representing indexes offset position
      * within the sentence, returns flat array of indexes:
-     *
+     * <p>
      * e.g. the sentence is "I walk in the Bronx", which is, tokenised "I, ,walk, ,in, ,the, ,bronx"
      * with offsets [(2, 2), (6,8)] the result would be [2, 6, 7, 8]
      *
-     * @param tokenisedSentence the sentence already tokenised 
-     * @param offsetPositions the list of index position within the tokenised sentence
+     * @param tokenisedSentence the sentence already tokenised
+     * @param offsetPositions   the list of index position within the tokenised sentence
      * @return an index with explicit index definition
      */
     protected List<Integer> offsetToIndex(List<LayoutToken> tokenisedSentence, List<OffsetPosition> offsetPositions) {
@@ -287,27 +282,20 @@ public class NEREnglishTrainer extends AbstractTrainer {
         return writer;
     }
 
-    
+
     public static void main(String[] args) {
-        try {
+        GrobidHomeFinder grobidHomeFinder = new GrobidHomeFinder(Arrays.asList("../../grobid-home"));
+        File grobidHome = grobidHomeFinder.findGrobidHomeOrFail();
+        grobidHomeFinder.findGrobidPropertiesOrFail(grobidHome);
 
-            GrobidHome.findGrobidHome();
+        GrobidProperties.getInstance(grobidHomeFinder);
 
-            MockContext.setInitialContext(GrobidProperties.getGrobidHomePath().getAbsolutePath(),
-                    GrobidProperties.getGrobidPropertiesPath().getAbsolutePath());
-            GrobidProperties.getInstance();
+        NEREnglishTrainer trainer = new NEREnglishTrainer();
 
-            NEREnglishTrainer trainer = new NEREnglishTrainer();
+        AbstractTrainer.runSplitTrainingEvaluation(trainer, 0.8);
+    }
 
-            AbstractTrainer.runSplitTrainingEvaluation(trainer, 0.8);
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                MockContext.destroyInitialContext();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
+    public void setNerCorpusPath(String nerCorpusPath) {
+        this.nerCorpusPath = nerCorpusPath;
     }
 }

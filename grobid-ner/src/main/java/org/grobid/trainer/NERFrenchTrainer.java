@@ -1,32 +1,26 @@
 package org.grobid.trainer;
 
-import org.grobid.core.layout.LayoutToken;
-import org.grobid.core.utilities.LayoutTokensNERUtility;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
+import com.ctc.wstx.stax.WstxInputFactory;
+import org.codehaus.stax2.XMLStreamReader2;
 import org.grobid.core.GrobidModels;
 import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.exceptions.GrobidResourceException;
 import org.grobid.core.features.FeaturesVectorNER;
+import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.lexicon.NERLexicon;
-import org.grobid.core.mock.MockContext;
 import org.grobid.core.utilities.GrobidProperties;
+import org.grobid.core.utilities.LayoutTokensNERUtility;
 import org.grobid.core.utilities.OffsetPosition;
-import org.grobid.trainer.stax.*;
-import org.grobid.trainer.evaluation.EvaluationUtilities;
+import org.grobid.trainer.stax.INRIALeMondeCorpusStaxHandler;
+import org.grobid.trainer.stax.StaxUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import org.codehaus.stax2.XMLStreamReader2;
-import com.ctc.wstx.stax.WstxInputFactory;
-
-import javax.xml.parsers.SAXParser;
-import javax.xml.parsers.SAXParserFactory;
-import javax.xml.stream.*;
 import java.io.*;
-import java.util.*;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipFile;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Properties;
 
 /**
  * Create the French NER tagging model 
@@ -464,44 +458,11 @@ public class NERFrenchTrainer extends AbstractTrainer {
      * Command line execution.
      *
      * @param args Command line arguments.
-     */
-    /*public static void main(String[] args) {
-		try {
-			String pGrobidHome = "../grobid-home";
-			String pGrobidProperties = "../grobid-home/config/grobid.properties";
-		
-			MockContext.setInitialContext(pGrobidHome, pGrobidProperties);
-		    GrobidProperties.getInstance();
-
-	        NERFrenchTrainer trainer = new NERFrenchTrainer();
-	
-	        AbstractTrainer.runTraining(trainer);
-	        AbstractTrainer.runEvaluation(trainer);
-		}
-		catch (Exception e) {
-		    e.printStackTrace();
-		}
-		finally {
-			try {
-				MockContext.destroyInitialContext();
-			}
-			catch(Exception e) {
-				e.printStackTrace();
-			}
-		}
-    }*/
-
-    /**
-     * Command line execution.
-     *
-     * @param args Command line arguments.
      * @throws Exception
      */
     public static void main(String[] args) throws Exception {
-        MockContext.setInitialContext();
         GrobidProperties.getInstance();
         AbstractTrainer.runTraining(new NERFrenchTrainer());
         AbstractTrainer.runEvaluation(new NERFrenchTrainer());
-        MockContext.destroyInitialContext();
     }
 }

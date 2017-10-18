@@ -5,7 +5,6 @@ import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.exceptions.GrobidResourceException;
 import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.lexicon.NERLexicon;
-import org.grobid.core.mock.MockContext;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.LayoutTokensNERUtility;
 import org.grobid.core.utilities.OffsetPosition;
@@ -460,11 +459,6 @@ public class CoNNLNERTrainer extends NERTrainer {
      * @param args Command line arguments.
      */
     public static void main(String[] args) {
-		try {
-			String pGrobidHome = "../grobid-home";
-			String pGrobidProperties = "../grobid-home/config/grobid.properties";
-		
-			MockContext.setInitialContext(pGrobidHome, pGrobidProperties);
 		    GrobidProperties.getInstance();
 
 	        CoNNLNERTrainer trainer = new CoNNLNERTrainer();
@@ -473,18 +467,6 @@ public class CoNNLNERTrainer extends NERTrainer {
 			trainer.evalCoNLL("eng.train");
 			trainer.evalCoNLL("eng.testa");
 			trainer.evalCoNLL("eng.testb");
-		}
-		catch (Exception e) {
-		    e.printStackTrace();
-		}
-		finally {
-			try {
-				MockContext.destroyInitialContext();
-			}
-			catch(Exception e) {
-				e.printStackTrace();
-			}
-		}
     }
 	
 	
