@@ -9,7 +9,7 @@ import org.codehaus.stax2.XMLStreamReader2;
 import org.grobid.core.GrobidModels;
 import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.exceptions.GrobidResourceException;
-import org.grobid.core.features.FeaturesVectorMultiDates;
+import org.grobid.core.features.FeaturesVectorTemporalExpression;
 import org.grobid.core.main.GrobidHomeFinder;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.Pair;
@@ -126,7 +126,7 @@ public class TemporalExpressionTrainer extends AbstractTrainer {
                         }
                         example = new ArrayList<>();
                     } else {
-                        FeaturesVectorMultiDates vector = FeaturesVectorMultiDates.addFeatures(labeledToken.a, labeledToken.b);
+                        FeaturesVectorTemporalExpression vector = FeaturesVectorTemporalExpression.addFeatures(labeledToken.a, labeledToken.b);
                         String vectorAsString = vector.printVector();
 
                         example.add(vectorAsString);

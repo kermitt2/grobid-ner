@@ -8,7 +8,7 @@ import org.grobid.core.data.dates.DateWrapper;
 import org.grobid.core.data.dates.Period;
 import org.grobid.core.engines.label.TaggingLabel;
 import org.grobid.core.exceptions.GrobidException;
-import org.grobid.core.features.FeaturesVectorMultiDates;
+import org.grobid.core.features.FeaturesVectorTemporalExpression;
 import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.main.LibraryLoader;
 import org.grobid.core.tokenization.TaggingTokenCluster;
@@ -49,7 +49,7 @@ public class TemporalExpressionParser extends AbstractParser {
 
         StringBuilder sb = new StringBuilder();
         for (LayoutToken token : cleanTokens) {
-            FeaturesVectorMultiDates vector = FeaturesVectorMultiDates.addFeatures(token.getText(), null);
+            FeaturesVectorTemporalExpression vector = FeaturesVectorTemporalExpression.addFeatures(token.getText(), null);
             sb.append(vector.printVector());
         }
 

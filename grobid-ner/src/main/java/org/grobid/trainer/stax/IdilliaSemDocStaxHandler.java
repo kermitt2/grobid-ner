@@ -82,7 +82,7 @@ public class IdilliaSemDocStaxHandler implements StaxParserContentHandler {
                     .append("\n")
                     .append("<corpus>")
                     .append("\n")
-                    .append("\t<subCorpus>")
+                    .append("\t<subcorpus>")
                     .append("\n");
             return;
         } else if ("doc".equals(localName)) {
@@ -147,7 +147,7 @@ public class IdilliaSemDocStaxHandler implements StaxParserContentHandler {
 
         } else if ("docs".equals(localName)) {
             globalTextAccumulator.append("\n")
-                    .append("\t</subCorpus>")
+                    .append("\t</subcorpus>")
                     .append("\n")
                     .append("</corpus>");
         }

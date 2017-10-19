@@ -72,10 +72,10 @@ public class SemDocIdilliaAssembler implements TrainingDataAssembler {
             final Path path = Paths.get(stringPath);
             IdilliaSemDocStaxHandler parser = new IdilliaSemDocStaxHandler(stringPath);
             try {
-                XMLStreamReader2 reader = (XMLStreamReader2) inputFactory.createXMLStreamReader(path.toFile());
+                XMLStreamReader2 reader = inputFactory.createXMLStreamReader(path.toFile());
                 StaxUtils.traverse(reader, parser);
             } catch (XMLStreamException e) {
-                LOGGER.error("Cannot open file " + stringPath, e);
+                LOGGER.error("Cannot open file " + stringPath + ". Ignoring it. ", e);
             }
 
             String xmlOutput = parser.getConvertedText();
