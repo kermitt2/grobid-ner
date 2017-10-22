@@ -15,10 +15,9 @@ def main(args):
         print("path not found (be sure to put an absolute path)")
         sys.exit()
 
-    # catch all ENAMEX tags
-    enamex = []
-
+    frequencies = {}
     for file in files:
+        enamex = []
         absPath = args[0] + os.sep + file
         print("parsing " + absPath)
         try:
@@ -32,13 +31,12 @@ def main(args):
             for sent in p.findall("sentence"):
                 enamex = enamex + sent.findall("ENAMEX")
 
-    frequencies = {}
-    for elt in enamex:
-        nerClass = elt.get("type")
-        if nerClass in frequencies:
-            frequencies[nerClass] = frequencies.get(nerClass) + 1
-        else:
-            frequencies[nerClass] = 1
+        for elt in enamex:
+            nerClass = elt.get("type")
+            if nerClass in frequencies:
+                frequencies[nerClass] = frequencies.get(nerClass) + 1
+            else:
+                frequencies[nerClass] = 1
 
     print(frequencies)
 

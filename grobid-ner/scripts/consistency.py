@@ -59,11 +59,12 @@ def main(args):
             sys.exit()
 
         # catch all ENAMEX tags
-        enamex = []  # enamex contain all ENAMEX balises the variable is used at line 26
         sfiles = ""  # sfiles is all files in a string variable it serves at line 47
         files = [file_ for file_ in files if ".xml" in file_]
 
+        dic = {}
         for file in files:
+            enamex = []  # enamex contain all ENAMEX balises the variable is used at line 26
             with file.open(args[0] + os.sep + file, 'r') as file_:
                 sfiles = sfiles + ''.join(file_.readlines())
             # try:
@@ -74,14 +75,14 @@ def main(args):
                 for sent in p.findall("sentence"):
                     enamex = enamex + sent.findall("ENAMEX")
 
-        # the dictionary "ambiguates" containes the text annotation (string) as key and class (list) as values
-        dic = {}
-        for elt in enamex:
-            # if dic contain the token as key add new value else initialize token with first value
-            if (dic.has_key(elt.text)):
-                dic[elt.text] = list(set(dic.get(elt.text) + [elt.get("type")]))
-            else:
-                dic[elt.text] = [elt.get("type")]
+            # the dictionary "ambiguates" containes the text annotation (string) as key and class (list) as values
+
+            for elt in enamex:
+                # if dic contain the token as key add new value else initialize token with first value
+                if (dic.has_key(elt.text)):
+                    dic[elt.text] = list(set(dic.get(elt.text) + [elt.get("type")]))
+                else:
+                    dic[elt.text] = [elt.get("type")]
 
         # print part where a dic key has multiple value.
         for tok in dic.keys():
