@@ -1,38 +1,27 @@
 package org.grobid.trainer.assembler;
 
-import com.ctc.wstx.stax.WstxInputFactory;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.io.filefilter.SuffixFileFilter;
-import org.codehaus.stax2.XMLStreamReader2;
-import org.grobid.trainer.stax.IdilliaSemDocStaxHandler;
-import org.grobid.trainer.stax.StaxUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.xml.stream.XMLStreamException;
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 import java.util.Properties;
-import java.util.stream.Collectors;
 
 /**
- * Class to assemble files written in ENAMEX XML
+ * Class to assemble files written in ENAMEX XML, since this format is the desired output format
+ * the files are just written in the output directory without furhter processing.
  */
 public class ENAMEXAssembler implements TrainingDataAssembler {
     private static Logger LOGGER = LoggerFactory.getLogger(ENAMEXAssembler.class);
 
     private String nerCorpusPath;
-    private WstxInputFactory inputFactory = new WstxInputFactory();
 
     public ENAMEXAssembler() {
         // we read the module specific property file to get the paths to the resources
@@ -56,7 +45,7 @@ public class ENAMEXAssembler implements TrainingDataAssembler {
         Collection<File> trainingFiles = FileUtils.listFiles(new File(nerCorpusPath),
                 new SuffixFileFilter("training.xml"), null);
 
-        for (File trainingFile : trainingFiles) {
+        trainingFiles.stream().forEach(trainingFile -> {
             String filename = Paths.get(trainingFile.getAbsolutePath()).getFileName().toString();
             final String outputAbsPath = outputDirectory.toString() + File.separator + filename;
 
@@ -65,7 +54,7 @@ public class ENAMEXAssembler implements TrainingDataAssembler {
             } catch (IOException e) {
                 LOGGER.warn("Cannot write file " + outputAbsPath, e);
             }
-        }
+        });
 
     }
 

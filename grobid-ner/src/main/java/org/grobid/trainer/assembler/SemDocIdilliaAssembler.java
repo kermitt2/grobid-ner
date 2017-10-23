@@ -53,37 +53,37 @@ public class SemDocIdilliaAssembler implements TrainingDataAssembler {
 
         // IDILLIA WIKIPEDIA LIST
         LOGGER.info("Read wikipedia resources: ");
-        List<String> list = new ArrayList<>();
+        List<String> relativePaths = new ArrayList<>();
 
         try (BufferedReader br = Files.newBufferedReader(Paths.get(wikipediaSelectionPath))) {
 
             //br returns as stream and convert it into a List
-            list = br.lines().filter(l -> !l.startsWith("#")).collect(Collectors.toList());
+            relativePaths = br.lines().filter(l -> !l.startsWith("#")).collect(Collectors.toList());
 
         } catch (IOException e) {
             e.printStackTrace();
         }
 
         //Transform IDILLIA WIKIPEDIA
-        final List<String> absPathIdillia = list.stream().map(path -> idiliaPath + File.separator + path).collect(Collectors.toList());
+        relativePaths.parallelStream().forEach(relativeInputPath -> {
+            String absoluteInputPath = idiliaPath + File.separator + relativeInputPath;
+            String absoluteOutputPath = outputDirectory.toString() + File.separator + File.separator
+                    + relativeInputPath.replace("xml", "training.xml");
 
-        absPathIdillia.stream().forEach(stringPath -> {
-
-            final Path path = Paths.get(stringPath);
-            IdilliaSemDocStaxHandler parser = new IdilliaSemDocStaxHandler(stringPath);
+            final Path path = Paths.get(absoluteInputPath);
+            IdilliaSemDocStaxHandler parser = new IdilliaSemDocStaxHandler(absoluteInputPath);
             try {
                 XMLStreamReader2 reader = inputFactory.createXMLStreamReader(path.toFile());
                 StaxUtils.traverse(reader, parser);
             } catch (XMLStreamException e) {
-                LOGGER.error("Cannot open file " + stringPath + ". Ignoring it. ", e);
+                LOGGER.error("Cannot open file " + absoluteInputPath + ". Ignoring it. ", e);
             }
 
             String xmlOutput = parser.getConvertedText();
-            final String outputAbsPath = outputDirectory.toString() + File.separator + path.getFileName().toString().replace("xml", "training.xml");
             try {
-                FileUtils.writeStringToFile(new File(outputAbsPath), xmlOutput, StandardCharsets.UTF_8);
+                FileUtils.writeStringToFile(new File(absoluteOutputPath), xmlOutput, StandardCharsets.UTF_8);
             } catch (IOException e) {
-                LOGGER.error("Cannot write file " + outputAbsPath, e);
+                LOGGER.error("Cannot write file " + absoluteOutputPath, e);
             }
         });
     }
