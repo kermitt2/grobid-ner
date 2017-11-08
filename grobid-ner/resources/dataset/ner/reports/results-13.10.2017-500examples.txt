@@ -1,0 +1,73 @@
+===== Token-level results =====
+
+
+label                accuracy     precision    recall       f1     
+
+ACRONYM              100          0            0            0      
+ANIMAL               99.99        0            0            0      
+ARTIFACT             99.32        41.63        35.43        38.28  
+AWARD                99.84        74.32        45.71        56.6   
+BUSINESS             99.18        49.17        31.85        38.66  
+CONCEPT              99.5         46.73        25.77        33.22  
+CONCEPTUAL           99.92        50.98        38.24        43.7   
+CREATION             98.15        53.03        39.11        45.02  
+EVENT                99.41        64.67        47.7         54.91  
+IDENTIFIER           99.84        40.07        60.29        48.14  
+INSTALLATION         99.42        51.74        28.19        36.5   
+INSTITUTION          99.22        64.72        53.21        58.4   
+LEGAL                99.92        76.55        53.62        63.07  
+LOCATION             98.44        73.15        76.68        74.87  
+MEASURE              99.62        92.68        93.26        92.97  
+MEDIA                99.82        43.07        46.18        44.57  
+NATIONAL             99.78        68.33        73.66        70.89  
+ORGANISATION         98.35        43.08        49.3         45.98  
+PERIOD               99.68        93.99        95.04        94.51  
+PERSON               97.7         74.06        81.43        77.57  
+PERSON_TYPE          99.86        75.09        56.06        64.2   
+SUBSTANCE            99.99        33.33        7.69         12.5   
+TITLE                99.68        62.54        56.58        59.41  
+UNKNOWN              99.35        59.52        31.48        41.18  
+WEBSITE              100          0            0            0      
+
+all fields           99.44        71.5         67.38        69.38   (micro average)
+                     99.44        53.3         45.06        47.81   (macro average)
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1     
+
+ACRONYM              100          0            0            0      
+ANIMAL               99.98        0            0            0      
+ARTIFACT             98.83        40.86        22.71        29.19  
+AWARD                99.79        67.57        39.68        50     
+BUSINESS             98.29        43.75        21.13        28.5   
+CONCEPT              99.03        38.1         19.56        25.85  
+CONCEPTUAL           99.78        62.67        38.84        47.96  
+CREATION             97.62        39.06        26.28        31.42  
+EVENT                99.2         59.62        42.95        49.93  
+IDENTIFIER           99.79        50           27.55        35.53  
+INSTALLATION         99.12        50           20.05        28.62  
+INSTITUTION          98.89        60.43        48.96        54.1   
+LEGAL                99.92        72.5         53.7         61.7   
+LOCATION             96.07        71.1         72.86        71.97  
+MEASURE              98.79        87.33        90.91        89.08  
+MEDIA                99.68        40.52        36.43        38.37  
+NATIONAL             99.37        69.22        76.69        72.76  
+ORGANISATION         97.36        37.45        39.9         38.64  
+PERIOD               99.17        93.19        93.06        93.12  
+PERSON               94.23        67.13        73.77        70.3   
+PERSON_TYPE          99.59        72.31        57.95        64.34  
+SUBSTANCE            99.98        0            0            0      
+TITLE                99.3         59.51        54.75        57.03  
+UNKNOWN              98.89        54.34        35.08        42.64  
+WEBSITE              100          0            0            0      
+
+all fields           98.91        69.86        65.19        67.44   (micro average)
+                     98.91        49.47        39.71        43.24   (macro average)
+
+===== Instance-level results =====
+
+Total expected instances:   10793
+Correct instances:          6248
+Instance-level recall:      57.89
+

@@ -75,6 +75,7 @@ public class NEREnglishTrainer extends AbstractTrainer {
     @Override
     public int createCRFPPData(File sourcePathLabel, File outputPath) {
         return createCRFPPData(sourcePathLabel, outputPath, null, 1.0);
+        //return createCRFPPData(sourcePathLabel, null, outputPath, 1.0);
     }
 
     /**
@@ -291,6 +292,7 @@ public class NEREnglishTrainer extends AbstractTrainer {
         GrobidProperties.getInstance(grobidHomeFinder);
 
         NEREnglishTrainer trainer = new NEREnglishTrainer();
+        //AbstractTrainer.runEvaluation(trainer);
 
         AbstractTrainer.runSplitTrainingEvaluation(trainer, 0.8);
     }
