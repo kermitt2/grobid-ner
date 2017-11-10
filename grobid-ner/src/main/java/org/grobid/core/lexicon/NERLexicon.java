@@ -48,7 +48,7 @@ public class NERLexicon {
         TITLE("TITLE"),
         PERSON_TYPE("PERSON_TYPE"),
         WEBSITE("WEBSITE"),
-        ATHLETIC_TEAM("ATHLETIC_TEAM");
+        SPORT_TEAM("SPORT_TEAM");
 
         private String name;
 
@@ -110,7 +110,7 @@ public class NERLexicon {
             } else if (type.equals("website/N1")) {
                 return NER_Type.WEBSITE;
             } else if (type.equals("athletic_team/N1")) {
-                return NER_Type.ATHLETIC_TEAM;
+                return NER_Type.SPORT_TEAM;
             } else if (type.equals("NETYPE_UNKNOWN/N1")) {
                 return NER_Type.UNKNOWN;
             } else {

@@ -3,16 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>org.grobid</groupId>
-		<artifactId>grobid-parent</artifactId>
-		<version>0.4.3-SNAPSHOT</version>
-		<relativePath>../../pom.xml</relativePath>
-	</parent>
 
 	<groupId>org.grobid</groupId>
 	<artifactId>grobid-ner</artifactId>
-	<version>0.4.3-SNAPSHOT</version>
+    <version>0.5.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>${project.artifactId}</name>
 
@@ -21,7 +15,6 @@
 		<assemblies.name>src/main/assembly/assembly.xml</assemblies.name>
 		<package.file>${project.groupId}.${project.artifactId}_${project.version}.war</package.file>
 		<license.file>${basedir}/LICENSE</license.file>
-		<!-- <notice.file>${basedir}/NOTICE</notice.file> -->
 	</properties>
 
 	<repositories>
@@ -40,16 +33,16 @@
 	</repositories>
 
 	<dependencies>
-		
+        <!-- GROBID -->
 		<dependency>
 			<groupId>org.grobid</groupId>
 			<artifactId>grobid-core</artifactId>
-			<version>0.4.3-SNAPSHOT</version>
+            <version>0.5.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.grobid</groupId>
 			<artifactId>grobid-trainer</artifactId>
-			<version>0.4.3-SNAPSHOT</version>
+            <version>0.5.0-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
@@ -59,6 +52,7 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- commons -->
 		<!-- for pooling e.g. Engine -->
 		<dependency>
 			<groupId>commons-pool</groupId>
@@ -71,14 +65,9 @@
 			<version>2.5</version>
 		</dependency>
 		<dependency>
-			<groupId>commons-logging</groupId>
-			<artifactId>commons-logging</artifactId>
-			<version>1.2</version>
-		</dependency>
-		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
-			<version>3.4</version>
+            <version>3.6</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.commons</groupId>
@@ -89,27 +78,11 @@
 		<!-- Logging -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-log4j12</artifactId>
+			<artifactId>slf4j-api</artifactId>
 			<version>1.7.25</version>
-			<scope>test</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>directory-naming</groupId>
-			<artifactId>naming-java</artifactId>
-			<version>0.8</version>
-		</dependency>
-
-        <dependency>
-            <groupId>fr.limsi.wapiti</groupId>
-            <artifactId>wapiti</artifactId>
-            <version>1.5.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.cybozu.labs</groupId>
-            <artifactId>langdetect</artifactId>
-            <version>1.1-20120112</version>
-        </dependency>
+        <!-- XML parsing -->
         <dependency>
             <groupId>org.codehaus.woodstox</groupId>
             <artifactId>stax2-api</artifactId>
