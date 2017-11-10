@@ -1,9 +1,7 @@
 package org.grobid.trainer;
 
-import fr.limsi.wapiti.Wapiti;
 import org.apache.commons.io.IOUtils;
 import org.grobid.core.GrobidModels;
-import org.grobid.core.engines.tagging.WapitiTagger;
 import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.exceptions.GrobidResourceException;
 import org.grobid.core.lexicon.NERLexicon;
