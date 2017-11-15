@@ -1,4 +1,5 @@
-## Script to convert old connl files to xml Grobid-NER files.
+## Script to convert CONNL GROBID files to xml Grobid-NER files.
+# For the official CONLL files, please use convertCONLL instead. 
 #
 # Usage python convert.py inputFile outputFile
 
@@ -7,12 +8,13 @@
 # Note:
 #  - An empty line in the input file is interpreted as a new sentence.
 #  - Since there is no information about the paragraph, the output will only contain a single one
+#  - the separators are tabulation and not spaces (in the official CONLL files)
 
 import os
 import sys
 
 if len(sys.argv) < 2 or len(sys.argv) > 3:
-    print("This tool requires one parameter. ")
+    print("Usage: python convert.py inputFile outputFile ")
     sys.exit(-1)
 
 fname = sys.argv[1]
