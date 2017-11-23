@@ -16,7 +16,7 @@ import java.util.Properties;
 
 /**
  * Class to assemble files written in ENAMEX XML, since this format is the desired output format
- * the files are just written in the output directory without furhter processing.
+ * the files are just written in the output directory without further processing.
  */
 public class ENAMEXAssembler implements TrainingDataAssembler {
     private static Logger LOGGER = LoggerFactory.getLogger(ENAMEXAssembler.class);

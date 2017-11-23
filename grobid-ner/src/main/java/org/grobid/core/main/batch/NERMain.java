@@ -4,7 +4,6 @@ import org.grobid.core.engines.NERParsers;
 import org.grobid.core.main.GrobidHomeFinder;
 import org.grobid.core.main.LibraryLoader;
 import org.grobid.core.utilities.GrobidProperties;
-import org.grobid.trainer.AssembleNERCorpus;
 import org.grobid.trainer.CorporaAssembler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,6 +14,7 @@ import java.util.List;
 
 import static org.apache.commons.lang3.StringUtils.isEmpty;
 import static org.apache.commons.lang3.StringUtils.isNotEmpty;
+import static org.grobid.trainer.CorporaAssembler.IDILLIA;
 
 public class NERMain {
     private static Logger LOGGER = LoggerFactory.getLogger(NERMain.class);
@@ -22,25 +22,17 @@ public class NERMain {
     private static final String COMMAND_CREATE_TRAINING_NER = "createTrainingNER";
     private static final String COMMAND_CREATE_TRAINING_SENSE = "createTrainingSense";
     private static final String COMMAND_CREATE_TRAINING_IDILIA = "createTrainingIDILIA";
-    private static final String COMMAND_ASSEMBLE_TRAINING_DATA = "assembleTrainingData";
 
     private static List<String> availableCommands = Arrays.asList(
             COMMAND_CREATE_TRAINING_NER,
             COMMAND_CREATE_TRAINING_SENSE,
-            COMMAND_CREATE_TRAINING_IDILIA,
-            COMMAND_ASSEMBLE_TRAINING_DATA
+            COMMAND_CREATE_TRAINING_IDILIA
     );
 
-    /**
-     * Arguments of the batch.
-     */
-    private static GrobidNERMainArgs gbdArgs;
+    private static GrobidNERMainArgs grobidArguments;
 
     /**
      * Build the path to grobid.properties from the path to grobid-home.
-     *
-     * @param pPath2GbdHome The path to Grobid home.
-     * @return the path to grobid.properties.
      */
     protected final static String getPath2GbdProperties(final String pPath2GbdHome) {
         return pPath2GbdHome + File.separator + "config" + File.separator + "grobid.properties";
@@ -48,7 +40,6 @@ public class NERMain {
 
     /**
      * Init process with the provided grobid-home
-     * @param grobidHome
      */
     protected static void initProcess(String grobidHome) {
         try {
@@ -111,39 +102,39 @@ public class NERMain {
                     break;
                 }
                 if (currArg.equals("-gH")) {
-                    gbdArgs.setPath2grobidHome(pArgs[i + 1]);
+                    grobidArguments.setPath2grobidHome(pArgs[i + 1]);
                     if (pArgs[i + 1] != null) {
-                        gbdArgs.setPath2grobidProperty(getPath2GbdProperties(pArgs[i + 1]));
+                        grobidArguments.setPath2grobidProperty(getPath2GbdProperties(pArgs[i + 1]));
                     }
                     i++;
                     continue;
                 }
                 if (currArg.equals("-dIn")) {
                     if (pArgs[i + 1] != null) {
-                        gbdArgs.setPath2Input(pArgs[i + 1]);
-                        gbdArgs.setPdf(true);
+                        grobidArguments.setPath2Input(pArgs[i + 1]);
+                        grobidArguments.setPdf(true);
                     }
                     i++;
                     continue;
                 }
                 if (currArg.equals("-s")) {
                     if (pArgs[i + 1] != null) {
-                        gbdArgs.setInput(pArgs[i + 1]);
-                        gbdArgs.setPdf(false);
+                        grobidArguments.setInput(pArgs[i + 1]);
+                        grobidArguments.setPdf(false);
                     }
                     i++;
                     continue;
                 }
                 if (currArg.equals("-l")) {
                     if (pArgs[i + 1] != null) {
-                        gbdArgs.setLang(pArgs[i + 1]);
+                        grobidArguments.setLang(pArgs[i + 1]);
                     }
                     i++;
                     continue;
                 }
                 if (currArg.equals("-dOut")) {
                     if (pArgs[i + 1] != null) {
-                        gbdArgs.setPath2Output(pArgs[i + 1]);
+                        grobidArguments.setPath2Output(pArgs[i + 1]);
                     }
                     i++;
                     continue;
@@ -151,7 +142,7 @@ public class NERMain {
                 if (currArg.equals("-exe")) {
                     final String command = pArgs[i + 1];
                     if (availableCommands.contains(command)) {
-                        gbdArgs.setProcessMethodName(command);
+                        grobidArguments.setProcessMethodName(command);
                         i++;
                         continue;
                     } else {
@@ -161,7 +152,7 @@ public class NERMain {
                     }
                 }
                 if (currArg.equals("-r")) {
-                    gbdArgs.setRecursive(true);
+                    grobidArguments.setRecursive(true);
                     continue;
                 }
             }
@@ -170,12 +161,12 @@ public class NERMain {
     }
 
     public static void main(final String[] args) throws Exception {
-        gbdArgs = new GrobidNERMainArgs();
+        grobidArguments = new GrobidNERMainArgs();
 
-        if (processArgs(args) && (gbdArgs.getProcessMethodName() != null)) {
+        if (processArgs(args) && (grobidArguments.getProcessMethodName() != null)) {
 
-            if (isNotEmpty(gbdArgs.getPath2grobidHome())) {
-                initProcess(gbdArgs.getPath2grobidHome());
+            if (isNotEmpty(grobidArguments.getPath2grobidHome())) {
+                initProcess(grobidArguments.getPath2grobidHome());
             } else {
                 LOGGER.warn("Grobid home not provided, using default. ");
                 initProcess();
@@ -185,18 +176,15 @@ public class NERMain {
 
             long time = System.currentTimeMillis();
 
-            if (gbdArgs.getProcessMethodName().equals(COMMAND_CREATE_TRAINING_NER)) {
+            if (grobidArguments.getProcessMethodName().equals(COMMAND_CREATE_TRAINING_NER)) {
                 NERParsers nerParsers = new NERParsers();
-                nb = nerParsers.createTrainingBatch(gbdArgs.getPath2Input(), gbdArgs.getPath2Output(), gbdArgs.getLang());
+                nb = nerParsers.createTrainingBatch(grobidArguments.getPath2Input(), grobidArguments.getPath2Output(), grobidArguments.getLang());
                 LOGGER.info(nb + " files processed in " + (System.currentTimeMillis() - time) + " milliseconds");
-            } else if (gbdArgs.getProcessMethodName().equals(COMMAND_CREATE_TRAINING_SENSE)) {
+            } else if (grobidArguments.getProcessMethodName().equals(COMMAND_CREATE_TRAINING_SENSE)) {
                 throw new RuntimeException("Not yet implemented. ");
 
-            } else if (gbdArgs.getProcessMethodName().equals(COMMAND_CREATE_TRAINING_IDILIA)) {
-                new AssembleNERCorpus().assembleWikipedia(gbdArgs.getPath2Output());
-                LOGGER.info(nb + " files processed in " + (System.currentTimeMillis() - time) + " milliseconds");
-            } else if (gbdArgs.getProcessMethodName().equals(COMMAND_ASSEMBLE_TRAINING_DATA)) {
-                String outputDirectory = gbdArgs.getPath2Output();
+            } else if (grobidArguments.getProcessMethodName().equals(COMMAND_CREATE_TRAINING_IDILIA)) {
+                String outputDirectory = grobidArguments.getPath2Output();
                 if(isEmpty(outputDirectory)) {
                     LOGGER.warn("No output specified");
                     System.out.println(getHelp());
@@ -204,7 +192,8 @@ public class NERMain {
                 }
 
                 CorporaAssembler assembler = new CorporaAssembler();
-                assembler.assemble(outputDirectory);
+                assembler.assemble(IDILLIA, outputDirectory);
+                LOGGER.info(nb + " files processed in " + (System.currentTimeMillis() - time) + " milliseconds");
             } else {
                 System.out.println("No command supplied.");
                 System.out.println(getHelp());

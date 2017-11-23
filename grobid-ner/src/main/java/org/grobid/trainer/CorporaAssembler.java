@@ -7,8 +7,10 @@ import org.grobid.trainer.assembler.TrainingDataAssembler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
+import java.util.AbstractMap.SimpleEntry;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static org.apache.commons.collections4.CollectionUtils.isEmpty;
 
@@ -19,28 +21,28 @@ import static org.apache.commons.collections4.CollectionUtils.isEmpty;
  */
 public class CorporaAssembler {
 
+    public static final String IDILLIA = "idillia";
     private static Logger LOGGER = LoggerFactory.getLogger(CorporaAssembler.class);
-    private List<TrainingDataAssembler> assemblers = Arrays.asList(
-//            new ENAMEXAssembler(),
-            new SemDocIdilliaAssembler()
-    );
 
-    public CorporaAssembler() {}
-    
-    public CorporaAssembler(List<TrainingDataAssembler> assemblers) {
+    private Map<String, TrainingDataAssembler> assemblers = Collections.unmodifiableMap(
+            Stream.of(
+                    new SimpleEntry<>(IDILLIA, new SemDocIdilliaAssembler())
+            ).collect(Collectors.toMap((e) -> e.getKey(), (e) -> e.getValue())));
+
+    public CorporaAssembler() {
+    }
+
+    public CorporaAssembler(Map<String, TrainingDataAssembler> assemblers) {
         this.assemblers = assemblers;
     }
 
-    public void assemble(String outputDirectory) {
-        if (isEmpty(assemblers)) {
+    public void assemble(String assembler, String outputDirectory) {
+        if (isEmpty(assemblers.keySet())) {
             throw new GrobidResourceException("No valid assemblers have been specified");
         }
 
         LOGGER.info("Output directory: " + outputDirectory);
-        assemblers.stream().forEach(assembler -> {
-            LOGGER.debug("Calling assembler " + assembler.getName());
-            assembler.assemble(outputDirectory);
-        });
+        assemblers.get(assembler).assemble(outputDirectory);
     }
 
 }
