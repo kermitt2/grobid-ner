@@ -28,7 +28,7 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 import static org.apache.commons.collections4.CollectionUtils.isEmpty;
 import static org.apache.commons.lang3.StringUtils.trim;
 import static org.grobid.core.engines.Models.TEMPORAL_EXPRESSION;
-import static org.grobid.core.engines.label.MultiDateLabels.*;
+import static org.grobid.core.engines.label.TemporalExpressionLabels.*;
 
 public class TemporalExpressionParser extends AbstractParser {
     private static Logger LOGGER = LoggerFactory.getLogger(TemporalExpressionParser.class);

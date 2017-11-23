@@ -19,7 +19,7 @@ import java.util.List;
 import static java.time.format.DateTimeFormatter.ISO_LOCAL_DATE;
 import static org.apache.commons.lang3.StringUtils.*;
 import static org.grobid.core.data.dates.Period.Type.VALUE;
-import static org.grobid.core.engines.label.MultiDateLabels.*;
+import static org.grobid.core.engines.label.TemporalExpressionLabels.*;
 
 public class MultiDatesCorpusStaxHandler implements StaxParserContentHandler {
     private static Logger LOGGER = LoggerFactory.getLogger(MultiDatesCorpusStaxHandler.class);

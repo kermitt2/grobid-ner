@@ -30,7 +30,7 @@ public class CustomEMEXFormatStaxHandlerTest {
     }
 
     @Test
-    public void test1() throws Exception {
+    public void testStandard_shouldWork() throws Exception {
 
         InputStream resourceAsStream = this.getClass().getResourceAsStream("/sample.enamex.small.xml");
         XMLStreamReader2 reader = (XMLStreamReader2) inputFactory.createXMLStreamReader(resourceAsStream);
@@ -59,8 +59,16 @@ public class CustomEMEXFormatStaxHandlerTest {
 
         assertThat(target.getSentences().get(8).getEntities(), hasSize(0));
         assertThat(target.getSentences().get(8).getRawValue(), is("They ensure that public archives are transferred according to strict archival standards."));
+    }
 
+    @Test
+    public void testLong_shouldWork() throws Exception {
+        InputStream resourceAsStream = this.getClass().getResourceAsStream("/wikipedia.ner26.en.training.xml");
+        XMLStreamReader2 reader = (XMLStreamReader2) inputFactory.createXMLStreamReader(resourceAsStream);
 
+        StaxUtils.traverse(reader, target);
+
+        assertThat(target.getSentences(), hasSize(409));
     }
 
 }

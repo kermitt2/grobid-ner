@@ -10,7 +10,7 @@ import org.grobid.core.engines.Models;
  *  - <dateTo>
  *  - <other>
  */
-public class MultiDateLabels extends TaggingLabels {
+public class TemporalExpressionLabels extends TaggingLabels {
     
     public static final String DATE_VALUE_LABEL = "<dateValue>";
     public static final String DATE_INTERVAL_FROM_LABEL = "<dateFrom>";
