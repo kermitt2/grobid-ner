@@ -41,9 +41,6 @@ public class NEREnglishTrainer extends AbstractTrainer {
 
     private String nerCorpusPath = null;
 
-    private static int LIMIT = 25000; // limit of files to process per zip archives, -1 if no limit
-    private static int GLOBAL_LIMIT = 500000; // overall limit of files to process, -1 if no limit
-
     public NEREnglishTrainer() {
         super(GrobidModels.ENTITIES_NER);
 
@@ -116,8 +113,7 @@ public class NEREnglishTrainer extends AbstractTrainer {
                 evaluationOutputWriter = new OutputStreamWriter(os3, "UTF8");
             }
 
-
-            totalExamples = processCorpus(trainingOutputWriter, evaluationOutputWriter, splitRatio);
+            totalExamples = processCorpus(corpusDir.getAbsolutePath(), trainingOutputWriter, evaluationOutputWriter, splitRatio);
         } catch (Exception e) {
             throw new GrobidException("An exception occured while running Grobid.", e);
         } finally {
@@ -128,12 +124,12 @@ public class NEREnglishTrainer extends AbstractTrainer {
     }
 
 
-    private int processCorpus(Writer writerTraining, Writer writerEvaluation, double splitRatio) {
+    private int processCorpus(String corpusPath, Writer writerTraining, Writer writerEvaluation, double splitRatio) {
 
         int res = 0;
         Writer writer = null;
         try {
-            Collection<File> trainingFiles = FileUtils.listFiles(new File(nerCorpusPath),
+            Collection<File> trainingFiles = FileUtils.listFiles(new File(corpusPath),
                     new SuffixFileFilter("training.xml"), null);
 
 
@@ -292,7 +288,8 @@ public class NEREnglishTrainer extends AbstractTrainer {
         GrobidProperties.getInstance(grobidHomeFinder);
 
         NEREnglishTrainer trainer = new NEREnglishTrainer();
-        //AbstractTrainer.runEvaluation(trainer);
+//        AbstractTrainer.runTraining(trainer);
+//        AbstractTrainer.runEvaluation(trainer);
 
         AbstractTrainer.runSplitTrainingEvaluation(trainer, 0.8);
     }

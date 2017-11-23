@@ -21,7 +21,7 @@ public class CorporaAssembler {
 
     private static Logger LOGGER = LoggerFactory.getLogger(CorporaAssembler.class);
     private List<TrainingDataAssembler> assemblers = Arrays.asList(
-            new ENAMEXAssembler(),
+//            new ENAMEXAssembler(),
             new SemDocIdilliaAssembler()
     );
 

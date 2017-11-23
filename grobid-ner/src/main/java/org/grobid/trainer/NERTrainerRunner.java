@@ -1,10 +1,12 @@
 package org.grobid.trainer;
 
+import org.grobid.core.main.GrobidHomeFinder;
 import org.grobid.core.utilities.GrobidProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.File;
+import java.util.Arrays;
 
 /**
  * Training application for training a target model.
@@ -47,10 +49,12 @@ public class NERTrainerRunner {
 
 		String path2GbdHome = null;
 		Double split = 0.0;
+        GrobidHomeFinder grobidHomeFinder = null;
 		for (int i = 0; i < args.length; i++) {
 			if (args[i].equals("-gH")) {
 				if (i+1 == args.length) {
-					throw new IllegalStateException("Missing path to Grobid home. ");
+                    grobidHomeFinder = new GrobidHomeFinder(Arrays.asList(path2GbdHome));
+                    grobidHomeFinder.findGrobidHomeOrFail();
 				}
 				path2GbdHome = args[i + 1];
 			}
@@ -74,11 +78,7 @@ public class NERTrainerRunner {
 					"Usage: {0 - train, 1 - evaluate, 2 - split, train and evaluate} {ner,nerfr,nersense} -gH /path/to/Grobid/home -s { [0.0 - 1.0] - split ratio, optional}");
 		}
 
-		final String path2GbdProperties = path2GbdHome + File.separator + "config" + File.separator + "grobid.properties";
-
-		System.out.println("path2GbdHome=" + path2GbdHome + "   path2GbdProperties=" + path2GbdProperties);
-
-		GrobidProperties.getInstance();
+        GrobidProperties.getInstance(grobidHomeFinder);
 
 		String model = args[1];
 

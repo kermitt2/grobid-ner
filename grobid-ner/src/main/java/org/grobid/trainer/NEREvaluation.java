@@ -1,5 +1,6 @@
 package org.grobid.trainer;
 
+import org.apache.commons.io.IOUtils;
 import org.grobid.core.GrobidModels;
 import org.grobid.core.engines.NEREnParser;
 import org.grobid.core.engines.NERParsers;
@@ -9,16 +10,15 @@ import org.grobid.core.factory.GrobidFactory;
 import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.lexicon.NERLexicon;
+import org.grobid.core.main.GrobidHomeFinder;
 import org.grobid.core.utilities.GrobidProperties;
-import org.grobid.core.utilities.LayoutTokensNERUtility;
 import org.grobid.core.utilities.OffsetPosition;
 import org.grobid.core.utilities.TextUtilities;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Properties;
-import java.util.StringTokenizer;
+import java.util.*;
 
 
 /**
@@ -27,6 +27,7 @@ import java.util.StringTokenizer;
  * @author Patrice Lopez
  */
 public class NEREvaluation {
+    private static Logger LOGGER = LoggerFactory.getLogger(NEREvaluation.class);
 
     private Lexicon lexicon = Lexicon.getInstance();
     private NERLexicon nerLexicon = NERLexicon.getInstance();
@@ -55,13 +56,7 @@ public class NEREvaluation {
             throw new GrobidResourceException(
                     "An exception occured when accessing/reading the grobid-ner property file.", ex);
         } finally {
-            if (input != null) {
-                try {
-                    input.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
+            IOUtils.closeQuietly(input);
         }
     }
 
@@ -72,7 +67,7 @@ public class NEREvaluation {
      */
     public String evaluate_reuters() {
         long start = System.currentTimeMillis();
-        StringBuffer report = new StringBuffer();
+        StringBuilder report = new StringBuilder();
         try {
             GrobidFactory.getInstance();
             NERParsers parsers = new NERParsers();
@@ -137,7 +132,7 @@ public class NEREvaluation {
 
             // the parser needs to be applied on a sentence level as it has been trained as such
             String line;
-            StringBuffer ress = new StringBuffer();
+            StringBuilder ress = new StringBuilder();
             List<String> results = new ArrayList<String>();
             while ((line = bufReader.readLine()) != null) {
                 ress.append(line + "\n");
@@ -145,7 +140,7 @@ public class NEREvaluation {
                     if (ress.toString().trim().length() != 0) {
                         String res = parser.label(ress.toString());
                         results.add(res);
-                        ress = new StringBuffer();
+                        ress = new StringBuilder();
                     }
                 }
             }
@@ -205,7 +200,7 @@ public class NEREvaluation {
 
             // and finally apply the CoNLL evaluation script
             ProcessBuilder builder = new ProcessBuilder("/usr/bin/perl", conllPath + "/bin/conlleval");
-            //System.out.println("command: " + builder.command());
+			//System.out.println("command: " + builder.command());
             BufferedReader br2 = null;
             BufferedReader br3 = null;
             PrintWriter pw = null;
@@ -238,10 +233,7 @@ public class NEREvaluation {
             } catch (Exception e) {
                 e.printStackTrace();
             } finally {
-                br.close();
-                br2.close();
-                br3.close();
-                pw.close();
+                IOUtils.closeQuietly(br, br2, br3, pw);
             }
 
         } catch (Exception e) {
@@ -249,14 +241,7 @@ public class NEREvaluation {
                     "An exception occured while running Grobid Reuters evaluation for the set "
                             + evalSet.getPath(), e);
         } finally {
-            try {
-                if (bufReader != null)
-                    bufReader.close();
-                if (writer != null)
-                    writer.close();
-            } catch (Exception e) {
-                throw new GrobidException(e);
-            }
+            IOUtils.closeQuietly(bufReader, writer);
 
         }
         return report.toString();
@@ -274,7 +259,14 @@ public class NEREvaluation {
             label = label.substring(2, label.length());
         }
 
-        NERLexicon.NER_Type type = NERLexicon.NER_Type.valueOf(label);
+        NERLexicon.NER_Type type = null;
+
+        try {
+            type = NERLexicon.NER_Type.valueOf(label);
+        } catch (IllegalArgumentException iae) {
+            LOGGER.warn("Forcing label " + label + " to 'O'");
+            return "O";
+        }
         switch (type) {
             case PERSON:
                 label = "per";
@@ -379,10 +371,12 @@ public class NEREvaluation {
             writer = new OutputStreamWriter(new FileOutputStream(evalOutputPath), "UTF8");
             List<String> labeled = new ArrayList<String>();
             // to store unit term positions
-            List<List<OffsetPosition>> locationPositions = new ArrayList<List<OffsetPosition>>();
-            List<List<OffsetPosition>> peoplePositions = new ArrayList<List<OffsetPosition>>();
-            List<List<OffsetPosition>> organisationPositions = new ArrayList<List<OffsetPosition>>();
-            List<List<OffsetPosition>> orgFormPositions = new ArrayList<List<OffsetPosition>>();
+            List<OffsetPosition> locationPositions = null;
+            List<OffsetPosition> peoplePositions = null;
+            List<OffsetPosition> organisationPositions = null;
+            List<OffsetPosition> orgFormPositions = null;
+            List<LayoutToken> tokens = new ArrayList<LayoutToken>();
+            List<String> labels = new ArrayList<String>();
             while ((line = bufReader.readLine()) != null) {
                 line = line.trim();
                 // note that we work at sentence level
@@ -392,12 +386,10 @@ public class NEREvaluation {
 
                 if (line.length() == 0) {
                     // sentence is complete
-                    List<LayoutToken> tokens = LayoutTokensNERUtility.mapFromTokenisedList(labeled);
+                    LayoutToken token = new LayoutToken("\n");
 
-                    locationPositions.add(lexicon.tokenPositionsLocationNames(tokens));
-                    peoplePositions.add(lexicon.tokenPositionsPersonTitle(tokens));
-                    organisationPositions.add(lexicon.tokenPositionsOrganisationNames(tokens));
-                    orgFormPositions.add(lexicon.tokenPositionsOrgForm(tokens));
+                    tokens.add(token);
+                    labels.add(null);
 
                     nbSentences++;
                     continue;
@@ -406,8 +398,8 @@ public class NEREvaluation {
                 String[] pieces = line.split(" ");
                 if (pieces.length == 4) {
                     // we retokenize the lexical string according to Grobid NER
-                    String token = pieces[0];
-                    StringTokenizer st = new StringTokenizer(token, TextUtilities.fullPunctuations);
+                    String tok = pieces[0];
+                    StringTokenizer st = new StringTokenizer(tok, TextUtilities.fullPunctuations);
 
                     String conllLabel = pieces[3];
                     String label = "O";
@@ -422,12 +414,18 @@ public class NEREvaluation {
                     }
                     boolean start = true;
                     while (st.hasMoreTokens()) {
-                        labeled.add(st.nextToken() + "\t" + label);
+                        LayoutToken token = new LayoutToken(st.nextToken());
+                        tokens.add(token);
+                        labels.add(label);
                     }
                 }
             }
 
-            NERTrainer.addFeatures(labeled, writer,
+            locationPositions = lexicon.tokenPositionsLocationNames(tokens);
+            peoplePositions = lexicon.tokenPositionsPersonTitle(tokens);
+            organisationPositions = lexicon.tokenPositionsOrganisationNames(tokens);
+            orgFormPositions = lexicon.tokenPositionsOrgForm(tokens);
+            NERTrainer.addFeatures(tokens, labels, writer,
                     locationPositions, peoplePositions, organisationPositions, orgFormPositions);
             writer.write("\n");
             writer.close();
@@ -436,13 +434,7 @@ public class NEREvaluation {
                     "An exception occured while creating Grobid Reuters evaluation resource the set "
                             + corpusDir.getPath(), e);
         } finally {
-            try {
-                if (writer != null)
-                    writer.close();
-                if (bufReader != null)
-                    bufReader.close();
-            } catch (Exception e) {
-            }
+            IOUtils.closeQuietly(writer, bufReader);
         }
         return nbSentences;
     }
@@ -461,6 +453,8 @@ public class NEREvaluation {
      * @param args Command line arguments.
      */
     public static void main(String[] args) {
+        final GrobidHomeFinder grobidHomeFinder = new GrobidHomeFinder(Arrays.asList("../../grobid-home", "../grobid-home"));
+        GrobidProperties.getInstance(grobidHomeFinder);
         NEREvaluation eval = new NEREvaluation();
 
         // CoNLL evaluation

@@ -1,6 +1,7 @@
 package org.grobid.trainer;
 
 import com.ctc.wstx.stax.WstxInputFactory;
+import org.apache.commons.io.IOUtils;
 import org.codehaus.stax2.XMLStreamReader2;
 import org.grobid.core.GrobidModels;
 import org.grobid.core.exceptions.GrobidException;
@@ -61,14 +62,7 @@ public class NERFrenchTrainer extends AbstractTrainer {
 				"An exception occured when accessing/reading the grobid-ner property file.", ex);
 		} 
 		finally {
-			if (input != null) {
-				try {
-					input.close();
-				} 
-				catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
+			IOUtils.closeQuietly(input);
 		}
     }
 
@@ -85,14 +79,10 @@ public class NERFrenchTrainer extends AbstractTrainer {
 	/**
 	 * Add the selected features to a NER example set
 	 *
-	 * @param corpusDir
-	 *            a path where corpus files are located
-	 * @param trainingOutputPath
-	 *            path where to store the temporary training data
-	 * @param evalOutputPath
-	 *            path where to store the temporary evaluation data
-	 * @param splitRatio
-	 *            ratio to consider for separating training and evaluation data, e.g. 0.8 for 80%
+     * @param corpusDir          a path where corpus files are located
+     * @param trainingOutputPath path where to store the temporary training data
+     * @param evalOutputPath     path where to store the temporary evaluation data
+     * @param splitRatio         ratio to consider for separating training and evaluation data, e.g. 0.8 for 80%
 	 * @return the total number of used corpus items
 	 */
 	@Override
