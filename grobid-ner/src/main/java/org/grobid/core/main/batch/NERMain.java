@@ -4,7 +4,7 @@ import org.grobid.core.engines.NERParsers;
 import org.grobid.core.main.GrobidHomeFinder;
 import org.grobid.core.main.LibraryLoader;
 import org.grobid.core.utilities.GrobidProperties;
-import org.grobid.trainer.CorporaAssembler;
+import org.grobid.trainer.assembler.SemDocIdilliaAssembler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,7 +14,6 @@ import java.util.List;
 
 import static org.apache.commons.lang3.StringUtils.isEmpty;
 import static org.apache.commons.lang3.StringUtils.isNotEmpty;
-import static org.grobid.trainer.CorporaAssembler.IDILLIA;
 
 public class NERMain {
     private static Logger LOGGER = LoggerFactory.getLogger(NERMain.class);
@@ -78,6 +77,7 @@ public class NERMain {
         help.append("-r: recursive directory processing, default processing is not recursive.\n");
         help.append("-l: language to be used, as ISO code (e.g. [en, fr]).\n");
         help.append("-exe: gives the command to execute. The value should be one of these:\n");
+        help.append("-p: confidence threshold, filter out entities with lower confidence when -exe = '" + COMMAND_CREATE_TRAINING_IDILIA + "' is called. ");
         help.append("\t" + availableCommands + "\n");
         return help.toString();
     }
@@ -134,8 +134,14 @@ public class NERMain {
                 }
                 if (currArg.equals("-dOut")) {
                     if (pArgs[i + 1] != null) {
+                        if (isEmpty(pArgs[i + 1]) || !new File(pArgs[i + 1]).exists()) {
+                            LOGGER.error("No valid output specified");
+                            System.out.println(getHelp());
+                            System.exit(-1);
+                        }
                         grobidArguments.setPath2Output(pArgs[i + 1]);
                     }
+
                     i++;
                     continue;
                 }
@@ -153,6 +159,14 @@ public class NERMain {
                 }
                 if (currArg.equals("-r")) {
                     grobidArguments.setRecursive(true);
+                    i++;
+                    continue;
+                }
+                if (currArg.equals("-p")) {
+                    if (pArgs[i + 1] != null) {
+                        grobidArguments.setConfidenceThreshold(Double.parseDouble(pArgs[i + 1]));
+                    }
+                    i++;
                     continue;
                 }
             }
@@ -185,14 +199,21 @@ public class NERMain {
 
             } else if (grobidArguments.getProcessMethodName().equals(COMMAND_CREATE_TRAINING_IDILIA)) {
                 String outputDirectory = grobidArguments.getPath2Output();
-                if(isEmpty(outputDirectory)) {
-                    LOGGER.warn("No output specified");
-                    System.out.println(getHelp());
-                    System.exit(-1);
+
+                SemDocIdilliaAssembler assembler = new SemDocIdilliaAssembler();
+                if (isEmpty(grobidArguments.getLang())) {
+                    System.out.printf("No language specified, to do so use -l, otherwise `en` will be used by defaul");
+                } else {
+                    assembler.setLanguage(grobidArguments.getLang());
                 }
 
-                CorporaAssembler assembler = new CorporaAssembler();
-                assembler.assemble(IDILLIA, outputDirectory);
+                if (grobidArguments.getConfidenceThreshold() == 0.0) {
+                    System.out.println("No confidence Threshold specified, to do so use -c. ");
+                } else {
+                    assembler.setConfidenceThreshold(grobidArguments.getConfidenceThreshold());
+                }
+
+                assembler.assemble(outputDirectory);
                 LOGGER.info(nb + " files processed in " + (System.currentTimeMillis() - time) + " milliseconds");
             } else {
                 System.out.println("No command supplied.");

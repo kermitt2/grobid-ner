@@ -55,10 +55,14 @@ public class IdilliaSemDocStaxHandler implements StaxParserContentHandler {
         senseInfos = new HashMap<>();
     }
 
-    public IdilliaSemDocStaxHandler(String language, String documentName) {
+    public IdilliaSemDocStaxHandler(String documentName, String language) {
         this(documentName);
         this.language = language;
+    }
 
+    public IdilliaSemDocStaxHandler(String documentName, String language, double confidenceThreshold) {
+        this(documentName, language);
+        this.confidenceThreshold = confidenceThreshold;
     }
 
     public String getText() {

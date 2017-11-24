@@ -35,9 +35,13 @@ The training data generated from this corpus is quite handy because a larger set
 ```
 
 5. Run the process:
-
 ```bash
-> java -jar target/grobid-ner-<version>.one-jar.jar -dOut /my/output/directory -exe createTrainingIDILLIA
+> java -jar target/grobid-ner-<version>.one-jar.jar -dOut /my/output/directory -exe createTrainingIDILIA -l en -p 0.8
 ```
 
-6. The generated files will be located in `/my/output/directory/{inputFileName}.out'. Review the output and eventually correct missing / wrong labels.
+The last two parameters are optional: 
+ - `-l` indicate the language to indicate in the XML
+ - `-p` indicate the confidence threshold, when specified only IDILIA entities with a higher confidence score will appear in the XML output file. 
+
+
+6. The generated files will be located in `/my/output/directory/{inputFileName}.xml'. Review the output and eventually correct missing / wrong labels.
