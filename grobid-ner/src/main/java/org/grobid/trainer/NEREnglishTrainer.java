@@ -141,8 +141,6 @@ public class NEREnglishTrainer extends AbstractTrainer {
             for (File trainingFile : trainingFiles) {
                 System.out.println("Processing " + trainingFile.getAbsolutePath());
 
-                writer = dispatchExample(writerTraining, writerEvaluation, splitRatio);
-
                 InputStream resourceAsStream = new FileInputStream(trainingFile);
                 XMLStreamReader2 reader = null;
                 CustomEMEXFormatStaxHandler handler = new CustomEMEXFormatStaxHandler();
@@ -155,6 +153,8 @@ public class NEREnglishTrainer extends AbstractTrainer {
 
                     for (TrainingDocument document : documents) {
                         for (Paragraph paragraph : document.getParagraphs()) {
+                            writer = dispatchExample(writerTraining, writerEvaluation, splitRatio);
+
                             for (Sentence sentence : paragraph.getSentences()) {
                                 List<LayoutToken> tokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(sentence.getRawValue(), new Language(Language.EN, 1.0));
                                 sentence.setTokenisedValue(tokens);
