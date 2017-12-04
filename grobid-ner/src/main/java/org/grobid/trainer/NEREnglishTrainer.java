@@ -7,7 +7,9 @@ import org.apache.commons.io.filefilter.SuffixFileFilter;
 import org.codehaus.stax2.XMLStreamReader2;
 import org.grobid.core.GrobidModels;
 import org.grobid.core.analyzers.GrobidAnalyzer;
+import org.grobid.core.data.Paragraph;
 import org.grobid.core.data.Sentence;
+import org.grobid.core.data.TrainingDocument;
 import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.exceptions.GrobidResourceException;
 import org.grobid.core.features.FeaturesVectorNER;
@@ -47,6 +49,8 @@ public class NEREnglishTrainer extends AbstractTrainer {
         // adjusting CRF training parameters for this model
         epsilon = 0.000001;
         window = 20;
+
+        GrobidProperties.setNBThreads("7");
 
         // read additional properties for this sub-project to get the paths to the resources
         Properties prop = new Properties();
@@ -113,7 +117,8 @@ public class NEREnglishTrainer extends AbstractTrainer {
                 evaluationOutputWriter = new OutputStreamWriter(os3, "UTF8");
             }
 
-            totalExamples = processCorpus(corpusDir.getAbsolutePath(), trainingOutputWriter, evaluationOutputWriter, splitRatio);
+            // Override the default location
+            totalExamples = processCorpus(nerCorpusPath, trainingOutputWriter, evaluationOutputWriter, splitRatio);
         } catch (Exception e) {
             throw new GrobidException("An exception occured while running Grobid.", e);
         } finally {
@@ -146,14 +151,18 @@ public class NEREnglishTrainer extends AbstractTrainer {
 
                     StaxUtils.traverse(reader, handler);
 
-                    final List<Sentence> sentences = handler.getSentences();
+                    List<TrainingDocument> documents = handler.getDocuments();
 
-                    for (Sentence sentence : sentences) {
-                        List<LayoutToken> tokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(sentence.getRawValue(), new Language(Language.EN, 1.0));
-                        sentence.setTokenisedValue(tokens);
+                    for (TrainingDocument document : documents) {
+                        for (Paragraph paragraph : document.getParagraphs()) {
+                            for (Sentence sentence : paragraph.getSentences()) {
+                                List<LayoutToken> tokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(sentence.getRawValue(), new Language(Language.EN, 1.0));
+                                sentence.setTokenisedValue(tokens);
 
-                        computeFeatures(sentence, writer);
-                        writer.write("\n");
+                                computeFeatures(sentence, writer);
+                            }
+                            writer.write("\n");
+                        }
                     }
 
                 } catch (XMLStreamException e) {

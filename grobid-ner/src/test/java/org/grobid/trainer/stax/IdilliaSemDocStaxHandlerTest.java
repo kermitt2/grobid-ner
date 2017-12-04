@@ -32,7 +32,7 @@ public class IdilliaSemDocStaxHandlerTest {
 
     @Test
     public void testParseSmallSample_noThreshol_shouldWork() throws Exception {
-        InputStream is = this.getClass().getResourceAsStream("/9K11_Malyutka.semdoc.sample.xml");
+        InputStream is = this.getClass().getResourceAsStream("9K11_Malyutka.semdoc.sample.xml");
         XMLStreamReader2 reader = (XMLStreamReader2) inputFactory.createXMLStreamReader(is);
 
         StaxUtils.traverse(reader, target);
@@ -43,7 +43,7 @@ public class IdilliaSemDocStaxHandlerTest {
         CustomEMEXFormatStaxHandler staxHandler = new CustomEMEXFormatStaxHandler();
         StaxUtils.traverse(readerOutput, staxHandler);
 
-        final List<Sentence> sentences = staxHandler.getSentences();
+        final List<Sentence> sentences = staxHandler.getDocuments().get(0).getSentences();
 
         assertThat(sentences, hasSize(38));
 
@@ -60,7 +60,7 @@ public class IdilliaSemDocStaxHandlerTest {
 
     @Test
     public void testParseSample_noThreshold_shouldWork() throws Exception {
-        InputStream is = this.getClass().getResourceAsStream("/9K11_Malyutka.semdoc.xml");
+        InputStream is = this.getClass().getResourceAsStream("9K11_Malyutka.semdoc.xml");
         XMLStreamReader2 reader = (XMLStreamReader2) inputFactory.createXMLStreamReader(is);
 
         StaxUtils.traverse(reader, target);
@@ -71,7 +71,7 @@ public class IdilliaSemDocStaxHandlerTest {
         CustomEMEXFormatStaxHandler staxHandler = new CustomEMEXFormatStaxHandler();
         StaxUtils.traverse(readerOutput, staxHandler);
 
-        final List<Sentence> sentences = staxHandler.getSentences();
+        final List<Sentence> sentences = staxHandler.getDocuments().get(0).getSentences();
 
         assertThat(sentences, hasSize(138));
         
@@ -82,7 +82,7 @@ public class IdilliaSemDocStaxHandlerTest {
     @Test
     public void testParseSample_confidence1_shouldWork() throws Exception {
         target.setConfidenceThreshold(0.9);
-        InputStream is = this.getClass().getResourceAsStream("/9K11_Malyutka.semdoc.xml");
+        InputStream is = this.getClass().getResourceAsStream("9K11_Malyutka.semdoc.xml");
         XMLStreamReader2 reader = (XMLStreamReader2) inputFactory.createXMLStreamReader(is);
 
         StaxUtils.traverse(reader, target);
@@ -93,7 +93,7 @@ public class IdilliaSemDocStaxHandlerTest {
         CustomEMEXFormatStaxHandler staxHandler = new CustomEMEXFormatStaxHandler();
         StaxUtils.traverse(readerOutput, staxHandler);
 
-        final List<Sentence> sentences = staxHandler.getSentences();
+        final List<Sentence> sentences = staxHandler.getDocuments().get(0).getSentences();
 
         assertThat(sentences, hasSize(138));
 
@@ -104,7 +104,7 @@ public class IdilliaSemDocStaxHandlerTest {
 
     @Test
     public void testParserSample_SpecialChars_shouldWork() throws Exception {
-        InputStream is = this.getClass().getResourceAsStream("/102.2_Jazz_FM.semdoc.xml");
+        InputStream is = this.getClass().getResourceAsStream("102.2_Jazz_FM.semdoc.xml");
         XMLStreamReader2 reader = (XMLStreamReader2) inputFactory.createXMLStreamReader(is);
 
         StaxUtils.traverse(reader, target);
@@ -115,7 +115,7 @@ public class IdilliaSemDocStaxHandlerTest {
         CustomEMEXFormatStaxHandler staxHandler = new CustomEMEXFormatStaxHandler();
         StaxUtils.traverse(readerOutput, staxHandler);
 
-        final List<Sentence> sentences = staxHandler.getSentences();
+        final List<Sentence> sentences = staxHandler.getDocuments().get(0).getSentences();
 
         assertThat(sentences.get(0).getRawValue(), is("GMG made more changes to the playlist, shifting to more R&B, soul, easy listening and adult contemporary music during the daytime. "));
     }
