@@ -173,11 +173,8 @@ public class FeaturesVectorNER {
         return res.toString();
     }
 
-    public static FeaturesVectorNER addFeaturesNER(String line,
-                                                   boolean isLocationToken,
-                                                   boolean isPersonTitleToken,
-                                                   boolean isOrganisationToken,
-                                                   boolean isOrgFormToken) {
+    public static FeaturesVectorNER addFeaturesNER(String line, boolean isLocationToken, boolean isPersonTitleToken,
+                                                   boolean isOrganisationToken, boolean isOrgFormToken) {
 
         StringTokenizer st = new StringTokenizer(line, "\t ");
 
@@ -197,10 +194,8 @@ public class FeaturesVectorNER {
      * Add the features for the NER model.
      */
     public static FeaturesVectorNER addFeaturesNER(String token, String label,
-                                                   boolean isLocationToken,
-                                                   boolean isPersonTitleToken,
-                                                   boolean isOrganisationToken,
-                                                   boolean isOrgFormToken) {
+                                                   boolean isLocationToken, boolean isPersonTitleToken,
+                                                   boolean isOrganisationToken, boolean isOrgFormToken) {
         FeatureFactory featureFactory = FeatureFactory.getInstance();
 
         FeaturesVectorNER featuresVector = new FeaturesVectorNER();

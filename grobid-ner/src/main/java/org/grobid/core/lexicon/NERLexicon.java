@@ -53,7 +53,7 @@ public class NERLexicon {
 
         private String name;
 
-        private NER_Type(String name) {
+        NER_Type(String name) {
             this.name = name;
         }
 
@@ -61,7 +61,7 @@ public class NERLexicon {
             return name;
         }
 
-        static public NER_Type mapIdilia(String type) {
+        public static NER_Type mapIdilia(String type) {
             if (type.equals("person/N1")) {
                 return NER_Type.PERSON;
             } else if (type.equals("location/N1")) {
