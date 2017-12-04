@@ -46,7 +46,7 @@ output.write('<?xml version="1.0" encoding="UTF-8"?>')
 output.write('\n')
 output.write('<corpus>\n\t<subcorpus>\n\t\t<document name="' + os.path.basename(fname) + '">\n\n\t\t\t')
 
-output.write('<paragraph xml:id="P0">\n\t\t\t\t')
+output.write('<p xml:id="P0">\n\t\t\t\t')
 output.write('<sentence xml:id="P0E' + str(sentenceCount) + '">')
 
 
@@ -127,7 +127,7 @@ with open(fname) as f:
 
 output.write("</sentence>")
 
-output.write("\n\t\t\t</paragraph>")
+output.write("\n\t\t\t</p>")
 output.write("\n\t\t</document>\n\t</subcorpus>\n</corpus>")
 
 output.close()

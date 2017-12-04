@@ -78,16 +78,16 @@ with open(fname) as f:
             if not isDocumentOpen:
                 isDocumentOpen = True
                 output.write('\t\t<document name="' + os.path.basename(fname) + '_' + str(documentCount) + '">')
-                output.write('\n\t\t\t<paragraph xml:id="P0">')
+                output.write('\n\t\t\t<p xml:id="P0">')
                 output.write('\n\t\t\t\t<sentence xml:id="P0E' + str(sentenceCount) + '">')
             else:
                 if isSentenceOpen:
                     output.write('</sentence>')
-                    output.write('\n\t\t\t</paragraph>')
+                    output.write('\n\t\t\t</p>')
                     isSentenceOpen = False
                 output.write('\n\t\t</document>')
                 output.write('\n\t\t<document name="' + os.path.basename(fname) + '_' + str(documentCount) + '">')
-                output.write('\n\t\t\t<paragraph xml:id="P0">')
+                output.write('\n\t\t\t<p xml:id="P0">')
                 # output.write('\n\t\t\t\t<sentence xml:id="P0E' + str(sentenceCount) + '">')
 
             documentCount = documentCount + 1
@@ -155,7 +155,7 @@ with open(fname) as f:
 
 output.write("</sentence>")
 
-output.write("\n\t\t\t</paragraph>")
+output.write("\n\t\t\t</p>")
 output.write("\n\t\t</document>\n\t</subcorpus>\n</corpus>")
 
 output.close()
