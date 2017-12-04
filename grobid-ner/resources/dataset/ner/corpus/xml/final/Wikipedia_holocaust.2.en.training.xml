@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <corpus>
 	<subcorpus>
-		<document name="Wikipedia_holocaust">
+		<document name="Wikipedia_holocaust.2.training.txt">
 			<p xml:lang="en" xml:id="P63">
 				<sentence xml:id="P63E0">Legal repression and emigration</sentence>
 			</p>
