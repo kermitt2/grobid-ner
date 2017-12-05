@@ -38,25 +38,14 @@ public class NERFrParser extends AbstractParser implements NERParser {
      * (following Java specification of characters).
      */
     public List<Entity> extractNE(String text) {
-        List<String> tokens = null;
+        List<LayoutToken> tokens = null;
         try {
-            tokens = GrobidAnalyzer.getInstance().tokenize(text, new Language(Language.FR, 1.0));
+            tokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(text, new Language(Language.FR, 1.0));
         } catch(Exception e) {
             LOGGER.error("Tokenization failed", e);
         }
-        if (tokens == null)
-            return null;
 
-        LexiconPositionsIndexes positionsIndexes = new LexiconPositionsIndexes(lexicon);
-        positionsIndexes.computeIndexes(text);
-
-        String res = NERParserCommon.toFeatureVector(tokens, positionsIndexes);
-        String result = label(res);
-        List<Pair<String, String>> labeled = GenericTaggerUtils.getTokensAndLabels(result);
-
-        List<Entity> entities = NERParserCommon.resultExtraction(text, labeled, tokens);
-
-        return entities;
+        return extractNE(tokens);
     }
 
     /**
@@ -66,56 +55,24 @@ public class NERFrParser extends AbstractParser implements NERParser {
      * the input document.
      */
     public List<Entity> extractNE(List<LayoutToken> tokens) {
-        
-
-        return null;
-    }
-
-    public String createCONNLTrainingFromText(String text) {
-        if (isEmpty(text))
+        if (tokens == null)
             return null;
 
-        text = text.replace("\n", " ");
-
-        List<String> tokens = null;
-        try {
-            tokens = GrobidAnalyzer.getInstance().tokenize(text, new Language(Language.FR, 1.0));
-        } catch(Exception e) {
-            LOGGER.error("Tokenization failed", e);
-        }
         LexiconPositionsIndexes positionsIndexes = new LexiconPositionsIndexes(lexicon);
-        positionsIndexes.computeIndexes(text);
+        positionsIndexes.computeIndexes(tokens);
 
-        String featuresVector = NERParserCommon.toFeatureVector(tokens, positionsIndexes);
-        String res = label(featuresVector);
+        String res = NERParserCommon.toFeatureVectorLayout(tokens, positionsIndexes);
+        String result = label(res);
+        //List<Pair<String, String>> labeled = GenericTaggerUtils.getTokensAndLabels(result);
 
-        List<Pair<String, String>> labeledEntries = GenericTaggerUtils.getTokensAndLabels(res);
-//        List<Sense> senses = senseTagger.extractSenses(text, labeledEntries, blocks.getTokens(), positionsIndexes);
+        //String text = LayoutTokensUtil.toText(tokens);
+        List<Entity> entities = NERParserCommon.resultExtraction(GrobidModels.ENTITIES_NERFR, result, tokens);
 
-        StringBuilder sb = new StringBuilder();
+        // we use now the sense tagger for the recognized named entity
+        //List<Sense> senses = senseTagger.extractSenses(labeled, tokens, positionsIndexes);
 
-//        int count = 0;
-        for (Pair<String, String> labeledEntry : labeledEntries) {
-            String value = labeledEntry.a;
-            String label = labeledEntry.b;
+        //NERParserCommon.merge(entities, senses);
 
-            if (value != null) {
-                sb.append(value).append("\t").append(label);
-                /*if (!StringUtils.equals(label, "O")) {
-                    int senseIdx = blocks.getTextBlocksPositions().get(count);
-
-                    for (Sense sense : senses) {
-                        if (senseIdx >= sense.getOffsetStart() && senseIdx <= sense.getOffsetEnd()) {
-                            sb.append("\t").append(sense.getFineSense());
-                            break;
-                        }
-                    }
-                }*/
-                sb.append("\n");
-            }
-//            count++;
-        }
-        return sb.toString();
+        return entities;
     }
-
 }

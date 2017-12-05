@@ -45,30 +45,14 @@ public class NEREnParser extends AbstractParser implements NERParser {
      * (following Java specification of characters).
      */
     public List<Entity> extractNE(String text) {
-        List<String> tokens = null;
+        List<LayoutToken> tokens = null;
         try {
-            tokens = GrobidAnalyzer.getInstance().tokenize(text, new Language(Language.EN, 1.0));
+            tokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(text, new Language(Language.EN, 1.0));
         } catch(Exception e) {
             LOGGER.error("Tokenization failed. ", e);
         }
-        if (tokens == null)
-            return null;
-        
-        LexiconPositionsIndexes positionsIndexes = new LexiconPositionsIndexes(lexicon);
-        positionsIndexes.computeIndexes(text);
 
-        String res = NERParserCommon.toFeatureVector(tokens, positionsIndexes);
-        String result = label(res);
-        List<Pair<String, String>> labeled = GenericTaggerUtils.getTokensAndLabels(result);
-
-        List<Entity> entities = NERParserCommon.resultExtraction(text, labeled, tokens);
-
-        // we use now the sense tagger for the recognized named entity
-        //List<Sense> senses = senseTagger.extractSenses(text, labeled, tokens, positionsIndexes);
-
-        //NERParserCommon.merge(entities, senses);
-
-        return entities;
+        return extractNE(tokens);
     }
 
     /**
