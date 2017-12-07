@@ -30,12 +30,14 @@ import static org.apache.commons.lang3.StringUtils.isEmpty;
 public class NEREnParser extends AbstractParser implements NERParser {
 
     private static Logger LOGGER = LoggerFactory.getLogger(NEREnParser.class);
+    private final NERParserCommon nerParserCommon;
 
     protected Lexicon lexicon = Lexicon.getInstance();
     //protected SenseTagger senseTagger = null;
 
     public NEREnParser() {
         super(GrobidModels.ENTITIES_NER);
+        nerParserCommon = new NERParserCommon();
         //senseTagger = new SenseTagger();
     }
 
@@ -73,7 +75,7 @@ public class NEREnParser extends AbstractParser implements NERParser {
         //List<Pair<String, String>> labeled = GenericTaggerUtils.getTokensAndLabels(result);
 
         //String text = LayoutTokensUtil.toText(tokens);
-        List<Entity> entities = NERParserCommon.resultExtraction(GrobidModels.ENTITIES_NER, result, tokens);
+        List<Entity> entities = nerParserCommon.resultExtraction(GrobidModels.ENTITIES_NER, result, tokens);
 
         // we use now the sense tagger for the recognized named entity
         //List<Sense> senses = senseTagger.extractSenses(labeled, tokens, positionsIndexes);

@@ -68,6 +68,14 @@ public class NERParserTest extends EngineMockTest {
         assertThat(entity2.getRawName(), is(text.substring(entity2.getOffsetStart(), entity2.getOffsetEnd())));
         assertThat(entity2.getType(), is(NERLexicon.NER_Type.ORGANISATION));
     }
+/*
+    @Test
+    public void test() throws Exception {
+        final String input = "Austria fought the enemies with Germany.";
+        NEREnParser parser = new NEREnParser();
+        System.out.println(parser.extractNE(input));
+
+    }*/
 
     public static void printTextAndEntities(String text, List<Entity> entities) {
         System.out.println("\n" + text);

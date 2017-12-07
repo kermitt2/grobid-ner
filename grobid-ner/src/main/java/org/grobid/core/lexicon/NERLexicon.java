@@ -174,16 +174,4 @@ public class NERLexicon {
         return descriptions.get(label);
     }
 
-    public static final String START_ENTITY_LABEL_PREFIX = "B-";
-
-    public static String getPlainLabel(String label) {
-        if (label.startsWith(START_ENTITY_LABEL_PREFIX))
-            return label.substring(2);
-        else 
-            return label;
-    }
-
-    public static boolean isBeginningOfEntity(String label) {
-        return label.startsWith(START_ENTITY_LABEL_PREFIX);
-    }
 }

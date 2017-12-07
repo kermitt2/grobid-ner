@@ -27,9 +27,11 @@ public class NERFrParser extends AbstractParser implements NERParser {
     private static Logger LOGGER = LoggerFactory.getLogger(NERFrParser.class);
 
     protected Lexicon lexicon = Lexicon.getInstance();
+    private final NERParserCommon nerParserCommon;
 
     public NERFrParser() {
         super(GrobidModels.ENTITIES_NERFR);
+        nerParserCommon = new NERParserCommon();
     }
 
     /**
@@ -66,7 +68,7 @@ public class NERFrParser extends AbstractParser implements NERParser {
         //List<Pair<String, String>> labeled = GenericTaggerUtils.getTokensAndLabels(result);
 
         //String text = LayoutTokensUtil.toText(tokens);
-        List<Entity> entities = NERParserCommon.resultExtraction(GrobidModels.ENTITIES_NERFR, result, tokens);
+        List<Entity> entities = nerParserCommon.resultExtraction(GrobidModels.ENTITIES_NERFR, result, tokens);
 
         // we use now the sense tagger for the recognized named entity
         //List<Sense> senses = senseTagger.extractSenses(labeled, tokens, positionsIndexes);

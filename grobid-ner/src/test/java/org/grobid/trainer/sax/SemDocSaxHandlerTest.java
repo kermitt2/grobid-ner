@@ -54,7 +54,7 @@ public class SemDocSaxHandlerTest {
 
     @Test
     public void testAssemblingIdilliaAndSemdoc_shouldWork() throws Exception {
-        InputStream is = this.getClass().getResourceAsStream("/9K11_Malyutka.semdoc.sample.xml");
+        InputStream is = this.getClass().getResourceAsStream("9K11_Malyutka.semdoc.sample.xml");
 
         //extract the text
         IdilliaSemDocTextStaxHandler idilliaTextParser = new IdilliaSemDocTextStaxHandler();
@@ -67,7 +67,7 @@ public class SemDocSaxHandlerTest {
 
         SAXParser p = spf.newSAXParser();
         
-        is = this.getClass().getResourceAsStream("/9K11_Malyutka.semdoc.sample.xml");
+        is = this.getClass().getResourceAsStream("9K11_Malyutka.semdoc.sample.xml");
         p.parse(is, target);
 
         System.out.println(target.getAnnotatedTextVector());

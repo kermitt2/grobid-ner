@@ -10,11 +10,14 @@ import org.grobid.core.data.Entity;
 import org.grobid.core.data.Sense;
 import org.grobid.core.data.Sentence;
 import org.grobid.core.engines.label.TaggingLabel;
+import org.grobid.core.engines.tagging.GenericTagger;
+import org.grobid.core.engines.tagging.GenericTaggerUtils;
 import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.features.FeaturesVectorNER;
 import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.lexicon.LexiconPositionsIndexes;
 import org.grobid.core.lexicon.NERLexicon;
+import org.grobid.core.tokenization.LabeledTokensContainer;
 import org.grobid.core.tokenization.TaggingTokenCluster;
 import org.grobid.core.tokenization.TaggingTokenClusteror;
 import org.grobid.core.utilities.*;
@@ -23,6 +26,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
@@ -46,11 +50,11 @@ public class NERParserCommon {
         int posit = 0; // keep track of the position index in the list of positions
 
         for (String token : tokens) {
-            if (token.equals(" ") || 
-                token.equals("\t") || 
-                token.equals("\n") || 
-                token.equals("\r") || 
-                token.equals("\u00A0")) {
+            if (token.equals(" ") ||
+                    token.equals("\t") ||
+                    token.equals("\n") ||
+                    token.equals("\r") ||
+                    token.equals("\u00A0")) {
                 //posit++;
                 continue;
             }
@@ -83,12 +87,12 @@ public class NERParserCommon {
 
         for (LayoutToken token : tokens) {
             if ((token.getText() == null) ||
-                (token.getText().length() == 0) ||
-                token.getText().equals(" ") || 
-                token.getText().equals("\t") || 
-                token.getText().equals("\n") || 
-                token.getText().equals("\r") || 
-                token.getText().equals("\u00A0")) {
+                    (token.getText().length() == 0) ||
+                    token.getText().equals(" ") ||
+                    token.getText().equals("\t") ||
+                    token.getText().equals("\n") ||
+                    token.getText().equals("\r") ||
+                    token.getText().equals("\u00A0")) {
                 continue;
             }
 
@@ -137,11 +141,11 @@ public class NERParserCommon {
 
     /**
      * Extract the named entities from a labelled sequence of LayoutToken.
-     * This version use the new Clusteror class. 
+     * This version use the new Clusteror class.
      */
-    public static List<Entity> resultExtraction(GrobidModels model, 
-                                        String result,
-                                        List<LayoutToken> tokenizations) {
+    public List<Entity> resultExtraction(GrobidModels model,
+                                         String result,
+                                         List<LayoutToken> tokenizations) {
 
         List<Entity> entities = new ArrayList<Entity>();
 
@@ -162,19 +166,37 @@ public class NERParserCommon {
             String clusterContent = LayoutTokensUtil.normalizeText(LayoutTokensUtil.toText(cluster.concatTokens()));
             currentEntity = new Entity();
             currentEntity.setRawName(clusterContent);
-            currentEntity.setTypeFromString(NERLexicon.getPlainLabel(clusterLabel.getLabel()));
+            currentEntity.setTypeFromString(GenericTaggerUtils.getPlainLabel(clusterLabel.getLabel()));
             currentEntity.setBoundingBoxes(BoundingBoxCalculator.calculate(cluster.concatTokens()));
+            currentEntity.setOffsets(calculateOffsets(cluster));
             entities.add(currentEntity);
         }
 
         return entities;
     }
 
+    private OffsetPosition calculateOffsets(TaggingTokenCluster cluster) {
+        final List<LabeledTokensContainer> labeledTokensContainers = cluster.getLabeledTokensContainers();
+        if (CollectionUtils.isEmpty(labeledTokensContainers) || CollectionUtils.isEmpty(labeledTokensContainers.get(0).getLayoutTokens())) {
+            return new OffsetPosition();
+        } else {
+            final LabeledTokensContainer labeledTokensContainer = labeledTokensContainers.get(0);
+            final List<LayoutToken> layoutTokens = labeledTokensContainer.getLayoutTokens();
+
+            int start = layoutTokens.get(0).getOffset();
+            int end = start + LayoutTokensUtil.normalizeText(LayoutTokensUtil.toText(cluster.concatTokens())).length();
+
+            return new OffsetPosition(start, end);
+        }
+    }
+
     /**
      * Extract the named entities from a labelled text.
+     * Use the new method using the clusteror List
+     *      resultExtraction(GrobidModels model, String result, List<LayoutToken> tokenizations)
      */
-    public static List<Entity> resultExtraction(String text,
-                                         List<Pair<String, String>> labeled,
+    @Deprecated
+    public List<Entity> resultExtraction(String text, List<Pair<String, String>> labeled,
                                          List<String> tokenizations) {
 
         List<Entity> entities = new ArrayList<Entity>();
@@ -279,11 +301,11 @@ public class NERParserCommon {
      * Input file should be a text file. Each file is a paragraph entry that it's normally processed by NERD.
      */
     public StringBuilder createTraining(String inputFile,
-                               String outputPath,
-                               String fileName,
-                               NERParser parser, 
-                               String lang,
-                               Tokenizer tokenizer) throws Exception {
+                                        String outputPath,
+                                        String fileName,
+                                        NERParser parser,
+                                        String lang,
+                                        Tokenizer tokenizer) throws Exception {
         File file = new File(inputFile);
         if (!file.exists()) {
             throw new GrobidException("Cannot create training data because input file can not be accessed: " + inputFile);
@@ -321,7 +343,7 @@ public class NERParserCommon {
         // let's segment in paragraphs, assuming we have one per paragraph per line
         String[] paragraphs = text.split("\n");
 
-        for(int p=0; p<paragraphs.length; p++) {
+        for (int p = 0; p < paragraphs.length; p++) {
             String theText = paragraphs[p];
             if (theText.trim().length() == 0)
                 continue;
@@ -335,20 +357,20 @@ public class NERParserCommon {
 
             List<Sentence> sentences = sentenceSegmentation(theText, tokenizer);
             int sentenceIndex = 0;
-            for(int s=0; s < sentences.size(); s++) {
+            for (int s = 0; s < sentences.size(); s++) {
                 Sentence sentence = sentences.get(s);
                 int sentenceStart = sentence.getOffsetStart();
                 int sentenceEnd = sentence.getOffsetEnd();
 
                 sb.append("\t\t\t\t<sentence xml:id=\"P" + p + "E" + sentenceIndex + "\">");
 
-                if ( (entities == null) || (entities.size() == 0) ) {
+                if ((entities == null) || (entities.size() == 0)) {
                     // don't forget to encode the text for XML
                     sb.append(TextUtilities.HTMLEncode(theText.substring(sentenceStart, sentenceEnd)));
                 } else {
                     int index = sentenceStart;
                     // smal adjustement to avoid sentence starting with a space
-                    if (theText.charAt(index) == ' ') 
+                    if (theText.charAt(index) == ' ')
                         index++;
                     for (Entity entity : entities) {
                         if (entity.getOffsetEnd() < sentenceStart)
@@ -368,7 +390,7 @@ public class NERParserCommon {
 
                         index = entityEnd;
 
-                        while (index > sentenceEnd)  {
+                        while (index > sentenceEnd) {
                             // bad luck, the sentence segmentation or ner failed somehow and we have an 
                             // entity across 2 sentences, so we merge on the fly these 2 sentences, which is
                             // easier than it looks ;)
@@ -384,7 +406,7 @@ public class NERParserCommon {
                     if (index < sentenceEnd)
                         sb.append(TextUtilities.HTMLEncode(theText.substring(index, sentenceEnd)));
                     //else if (index > sentenceEnd)
-                        //System.out.println(theText.length() + " / / " + theText + "/ / " + index + " / / " + sentenceEnd);
+                    //System.out.println(theText.length() + " / / " + theText + "/ / " + index + " / / " + sentenceEnd);
                 }
 
                 sb.append("</sentence>\n");
@@ -392,7 +414,7 @@ public class NERParserCommon {
             }
 
             sb.append("\t\t\t</p>\n");
-        }    
+        }
         return sb;
     }
 
@@ -446,21 +468,21 @@ public class NERParserCommon {
     public List<Sentence> sentenceSegmentation(String text, Tokenizer tokenizer) {
         List<List<Token>> sentences = tokenizer.segmentize(text);
         List<Sentence> results = new ArrayList<>();
-        
+
         if (CollectionUtils.isEmpty(sentences)) {
             // The text is not identified into any sentences, return it as a single sentence
             Sentence sentence = new Sentence();
             sentence.setOffsets(new OffsetPosition(0, text.length()));
             results.add(sentence);
-            return results; 
+            return results;
         }
-        
+
         // we need to realign with the original sentences, so we have to match it from the text 
         // to be parsed based on the tokenization
 
-        for(List<Token> sentence : sentences) {
+        for (List<Token> sentence : sentences) {
             Token firstToken = sentence.get(0);
-            Token lastToken = sentence.get(sentence.size()-1);
+            Token lastToken = sentence.get(sentence.size() - 1);
 
             Sentence outputSentence = new Sentence();
 

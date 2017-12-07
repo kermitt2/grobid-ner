@@ -1,0 +1,1789 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<docs len="1743" num="1" title="9K11 Malyutka" fsk="9K11_Malyutka/N1">
+ <doc len="1743">
+  <sensesInfo>
+   <sense csk="13.7/C2104" fs="13.7/J2104" fsk="13.7/J2104" isne="1">
+    <desc>a rational number</desc>
+    <neInfo><neT>measure/N3</neT><neST>rational_number/N1</neST></neInfo>
+   </sense>
+   <sense csk="HJ-73_MCLOS/C1329" fs="HJ-73_MCLOS/N1329" fsk="HJ-73_MCLOS/N1329" isne="1">
+    <desc>a weapon</desc>
+    <neInfo><neT>artifact/N1</neT><neST>weapon/N1</neST></neInfo>
+    <constituent>73/N1</constituent>
+    <constituent>HJ-73/N1</constituent>
+   </sense>
+   <sense csk="HJ-73_Hongjian_Red_Arrow/C1329" fs="HJ-73_Hongjian_Red_Arrow/N1329" fsk="HJ-73_Hongjian_Red_Arrow/N1329" isne="1">
+    <desc>a weapon</desc>
+    <neInfo><neT>artifact/N1</neT><neST>weapon/N1</neST></neInfo>
+    <constituent>73/N1</constituent>
+    <constituent>HJ-73/N1</constituent>
+    <constituent>red/J1</constituent>
+    <constituent>arrow/N2</constituent>
+   </sense>
+  </sensesInfo>
+  <para len="353" so="1308">
+   <sent len="4" so="1308">
+    <frag cccfmp="0.895" cccmp="0.763" ccfmp="0.746" len="4" so="1308" sol="1">
+     <txt>AT-3 Sagger </txt>
+     <cs len="4" pb="1.000" pc="0.903" sk="AT-3_Sagger/C1" so="1308">
+      <fs len="4" pb="1.000" pc="0.903" sk="AT-3_Sagger/N1" so="1308"/>
+     </cs>
+    </frag>
+   </sent>
+   <sent len="17" so="1312">
+    <frag len="1" so="1312" sol="1">
+     <txt>AT</txt>
+     <lc lc="prep" pc="0.985"/>
+    </frag>
+    <frag len="1" so="1313">
+     <txt>-</txt>
+     <lc lc="punct"/>
+    </frag>
+    <frag cccfmp="0.479" cccmp="0.267" ccfmp="0.434" len="2" so="1314">
+     <txt>3A </txt>
+     <cs len="2" pb="1.000" pc="0.903" sk="3a/C2208" so="1314">
+      <fs len="2" pb="1.000" pc="0.903" sk="3a/N2208" so="1314"/>
+     </cs>
+    </frag>
+    <frag cccfmp="0.202" cccmp="0.150" ccfmp="0.251" len="1" so="1316">
+     <txt>Sagger </txt>
+     <cs pb="0.773" pc="0.913" sk="Sagger/C1300" so="1316">
+      <fs pb="0.773" pc="0.940" sk="Sagger/N1300" so="1316"/>
+     </cs>
+     <cs pb="0.227" pc="0.913" sk="Sagger/C1000" so="1316">
+      <fs pb="0.227" pc="0.940" sk="Sagger/N1000" so="1316"/>
+     </cs>
+     <dep c="0.502" dest="MCLOS" destLc="noun" role="modifier" src="Sagger" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1317">
+     <txt>A </txt>
+     <lc lc="det" pc="0.984"/>
+    </frag>
+    <frag cccfmp="0.211" cccmp="0.089" ccfmp="0.253" len="2" so="1318">
+     <txt>9M14 Malyutka </txt>
+     <cs len="2" pb="1.000" pc="0.853" sk="9M14_Malyutka/C1300" so="1318">
+      <fs len="2" pb="1.000" pc="0.853" sk="9M14_Malyutka/N1300" so="1318"/>
+     </cs>
+     <dep c="0.619" dest="MCLOS" destLc="noun" role="modifier" src="9M14 Malyutka" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.908" cccmp="0.852" ccfmp="0.804" len="3" so="1320">
+     <txt>wire-guided </txt>
+     <cs len="3" pb="1.000" pc="1.000" sk="wire-guided_missile/C1" so="1320">
+      <fs len="3" pb="1.000" pc="1.000" sk="wire-guided_missile/N1" so="1320"/>
+     </cs>
+     <dep c="0.698" dest="MCLOS" destLc="noun" role="modifier" src="wire-guided" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.233" cccmp="0.079" ccfmp="0.195" len="1" so="1323">
+     <txt>MCLOS </txt>
+     <cs pb="1.000" pc="0.819" sk="MCLOS/C1300" so="1323">
+      <fs pb="1.000" pc="0.690" sk="MCLOS/N1300" so="1323"/>
+     </cs>
+     <dep c="0.502" dest="Sagger" destLc="noun" role="head" src="MCLOS" srcLc="noun"/>
+     <dep c="0.619" dest="9M14 Malyutka" destLc="noun" role="head" src="MCLOS" srcLc="noun"/>
+     <dep c="0.698" dest="wire-guided" destLc="noun" role="head" src="MCLOS" srcLc="noun"/>
+     <dep c="0.765" dest="Entered" destLc="verb" role="argument" src="MCLOS" srcLc="noun" type="agent"/>
+    </frag>
+    <frag cccfmp="0.724" cccmp="0.717" ccfmp="0.662" len="1" so="1324">
+     <txt>Entered </txt>
+     <cs pb="1.000" pc="0.651" sk="enter/C2" so="1324">
+      <fs pb="1.000" pc="0.900" sk="enter/V2" so="1324"/>
+     </cs>
+     <dep c="0.765" dest="MCLOS" destLc="noun" role="predicate" src="Entered" srcLc="verb" type="agent"/>
+     <dep c="0.952" dest="service" destLc="noun" role="predicate" src="Entered" srcLc="verb" type="theme"/>
+     <dep c="0.831" dest="1963" destLc="noun" role="lnkParent" src="Entered" srcLc="verb"/>
+    </frag>
+    <frag cccfmp="0.923" cccmp="0.733" ccfmp="0.659" len="1" so="1325">
+     <txt>service </txt>
+     <cs pb="1.000" pc="0.967" sk="serve/C5" so="1325">
+      <fs pb="1.000" pc="0.914" sk="service/N1" so="1325"/>
+     </cs>
+     <dep c="0.952" dest="Entered" destLc="verb" role="argument" src="service" srcLc="noun" type="theme"/>
+    </frag>
+    <frag len="1" so="1326">
+     <txt>in </txt>
+     <lc lc="prep" pc="0.896"/>
+    </frag>
+    <frag cccfmp="0.713" cccmp="0.694" ccfmp="0.724" len="1" so="1327">
+     <txt>1963</txt>
+     <cs pb="1.000" pc="0.952" sk="1963/C303" so="1327">
+      <fs pb="1.000" pc="0.952" sk="1963/N303" so="1327"/>
+     </cs>
+     <dep c="0.831" dest="Entered" destLc="verb" role="lnkChild" src="1963" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1328">
+     <txt>. </txt>
+     <lc lc="punct"/>
+    </frag>
+   </sent>
+   <sent len="28" so="1329">
+    <frag len="1" so="1329" sol="1">
+     <txt>AT</txt>
+     <lc lc="prep" pc="0.985"/>
+    </frag>
+    <frag len="1" so="1330">
+     <txt>-</txt>
+     <lc lc="punct"/>
+    </frag>
+    <frag cccfmp="0.552" cccmp="0.628" ccfmp="0.622" len="2" so="1331">
+     <txt>3B </txt>
+     <cs len="2" pb="1.000" pc="0.853" sk="3b/C2208" so="1331">
+      <fs len="2" pb="1.000" pc="0.853" sk="3b/N2208" so="1331"/>
+     </cs>
+    </frag>
+    <frag len="1" so="1333">
+     <txt>Sagger </txt>
+     <cs pb="1.000" pc="0.000" sk="unk" so="1333">
+      <fs lc="noun" pb="1.000" pc="0.000" sk="unk" so="1333"/>
+     </cs>
+     <dep c="0.925" dest="B" destLc="noun" role="modifier" src="Sagger" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.792" cccmp="0.533" ccfmp="0.673" len="1" so="1334">
+     <txt>B </txt>
+     <cs pb="1.000" pc="0.877" sk="B/C6" so="1334">
+      <fs pb="1.000" pc="0.925" sk="B/N7" so="1334"/>
+     </cs>
+     <dep c="0.925" dest="Sagger" destLc="noun" role="head" src="B" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.324" cccmp="0.331" ccfmp="0.344" len="2" so="1335">
+     <txt>9M14M Malyutka</txt>
+     <cs len="2" pb="1.000" pc="0.903" sk="9M14M_Malyutka/C1300" so="1335">
+      <fs len="2" pb="1.000" pc="0.903" sk="9M14M_Malyutka/N1300" so="1335"/>
+     </cs>
+    </frag>
+    <frag len="1" so="1337">
+     <txt>-</txt>
+     <lc lc="punct"/>
+    </frag>
+    <frag cccfmp="0.748" cccmp="0.862" ccfmp="0.516" len="1" so="1338">
+     <txt>M </txt>
+     <cs pb="1.000" pc="0.995" sk="M/C3" so="1338">
+      <fs pb="1.000" pc="0.965" sk="M/N4" so="1338"/>
+     </cs>
+    </frag>
+    <frag cccfmp="0.878" cccmp="0.888" ccfmp="0.884" len="3" so="1339">
+     <txt>wire-guided </txt>
+     <cs len="3" pb="1.000" pc="1.000" sk="wire-guided_missile/C1" so="1339">
+      <fs len="3" pb="1.000" pc="1.000" sk="wire-guided_missile/N1" so="1339"/>
+     </cs>
+     <dep c="0.937" dest="MCLOS" destLc="noun" role="modifier" src="wire-guided" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.030" cccmp="0.004" ccfmp="0.035" len="1" so="1342">
+     <txt>MCLOS </txt>
+     <cs pb="0.628" pc="0.658" sk="MCLOS/C1300" so="1342">
+      <fs pb="0.628" pc="0.732" sk="MCLOS/N1300" so="1342"/>
+     </cs>
+     <cs pb="0.372" pc="0.658" sk="MCLOS/C1100" so="1342">
+      <fs pb="0.372" pc="0.732" sk="MCLOS/N1100" so="1342"/>
+     </cs>
+     <dep c="0.937" dest="wire-guided" destLc="noun" role="head" src="MCLOS" srcLc="noun"/>
+     <dep c="0.910" dest="Entered" destLc="verb" role="argument" src="MCLOS" srcLc="noun" type="agent"/>
+    </frag>
+    <frag cccfmp="0.585" cccmp="0.399" ccfmp="0.421" len="1" so="1343">
+     <txt>Entered </txt>
+     <cs pb="1.000" pc="0.662" sk="enter/C1" so="1343">
+      <fs pb="1.000" pc="0.732" sk="enter/V1" so="1343"/>
+     </cs>
+     <dep c="0.910" dest="MCLOS" destLc="noun" role="predicate" src="Entered" srcLc="verb" type="agent"/>
+     <dep c="0.937" dest="service" destLc="noun" role="predicate" src="Entered" srcLc="verb" type="theme"/>
+     <dep c="0.786" dest="1973" destLc="noun" role="lnkParent" src="Entered" srcLc="verb"/>
+     <dep c="0.566" dest="motor" destLc="noun" role="predicate" src="Entered" srcLc="verb"/>
+     <dep c="0.463" dest="reducing" destLc="verb" role="predicate" src="Entered" srcLc="verb"/>
+    </frag>
+    <frag cccfmp="0.886" cccmp="0.765" ccfmp="0.642" len="1" so="1344">
+     <txt>service </txt>
+     <cs pb="1.000" pc="0.940" sk="serve/C5" so="1344">
+      <fs pb="1.000" pc="0.916" sk="service/N1" so="1344"/>
+     </cs>
+     <dep c="0.937" dest="Entered" destLc="verb" role="argument" src="service" srcLc="noun" type="theme"/>
+    </frag>
+    <frag len="1" so="1345">
+     <txt>in </txt>
+     <lc lc="prep" pc="0.910"/>
+    </frag>
+    <frag cccfmp="0.584" cccmp="0.678" ccfmp="0.741" len="1" so="1346">
+     <txt>1973 </txt>
+     <cs pb="1.000" pc="0.952" sk="1973/C303" so="1346">
+      <fs pb="1.000" pc="0.952" sk="1973/N303" so="1346"/>
+     </cs>
+     <dep c="0.786" dest="Entered" destLc="verb" role="lnkChild" src="1973" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.711" cccmp="0.891" ccfmp="0.753" len="1" so="1347">
+     <txt>improved </txt>
+     <cs pb="1.000" pc="0.873" sk="improve/C1" so="1347">
+      <fs pb="1.000" pc="0.998" sk="improve/V1" so="1347"/>
+     </cs>
+     <dep c="0.931" dest="motor" destLc="noun" role="predicate" src="improved" srcLc="verb" type="theme"/>
+    </frag>
+    <frag cccfmp="0.788" cccmp="0.480" ccfmp="0.530" len="1" so="1348">
+     <txt>motor</txt>
+     <cs pb="1.000" pc="0.935" sk="motor/C1" so="1348">
+      <fs pb="1.000" pc="0.957" sk="motor/N1" so="1348"/>
+     </cs>
+     <dep c="0.566" dest="Entered" destLc="verb" role="argument" src="motor" srcLc="noun"/>
+     <dep c="0.931" dest="improved" destLc="verb" role="argument" src="motor" srcLc="noun" type="theme"/>
+    </frag>
+    <frag len="1" so="1349">
+     <txt>, </txt>
+     <lc lc="punct"/>
+    </frag>
+    <frag cccfmp="0.916" cccmp="0.988" ccfmp="0.943" len="1" so="1350">
+     <txt>reducing </txt>
+     <cs pb="1.000" pc="0.984" sk="reduce/C1" so="1350">
+      <fs pb="1.000" pc="0.992" sk="reduce/V1" so="1350"/>
+     </cs>
+     <dep c="0.463" dest="Entered" destLc="verb" role="argument" src="reducing" srcLc="verb"/>
+     <dep c="0.889" dest="time" destLc="noun" role="predicate" src="reducing" srcLc="verb" type="theme"/>
+     <dep c="0.706" dest="range" destLc="noun" role="lnkParent" src="reducing" srcLc="verb"/>
+    </frag>
+    <frag cccfmp="0.559" cccmp="0.827" ccfmp="0.813" len="1" so="1351">
+     <txt>flight </txt>
+     <cs pb="1.000" pc="0.961" sk="fly/C1" so="1351">
+      <fs pb="1.000" pc="0.649" sk="flight/N9" so="1351"/>
+     </cs>
+     <dep c="0.707" dest="time" destLc="noun" role="modifier" src="flight" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.858" cccmp="0.913" ccfmp="0.737" len="1" so="1352">
+     <txt>time </txt>
+     <cs pb="1.000" pc="0.947" sk="time/C1" so="1352">
+      <fs pb="1.000" pc="0.830" sk="time/N3" so="1352"/>
+     </cs>
+     <dep c="0.889" dest="reducing" destLc="verb" role="argument" src="time" srcLc="noun" type="theme"/>
+     <dep c="0.707" dest="flight" destLc="noun" role="head" src="time" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1353">
+     <txt>to </txt>
+     <lc lc="prep"/>
+    </frag>
+    <frag cccfmp="0.669" cccmp="0.992" ccfmp="0.725" len="1" so="1354">
+     <txt>maximum </txt>
+     <cs pb="1.000" pc="0.975" sk="maximum/C1" so="1354">
+      <fs pb="1.000" pc="0.975" sk="maximum/J1" so="1354"/>
+     </cs>
+     <dep c="0.968" dest="range" destLc="noun" role="modifier" src="maximum" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.839" cccmp="0.923" ccfmp="0.651" len="1" so="1355">
+     <txt>range</txt>
+     <cs pb="1.000" pc="0.961" sk="range/C1" so="1355">
+      <fs pb="1.000" pc="0.892" sk="range/N1" so="1355"/>
+     </cs>
+     <dep c="0.706" dest="reducing" destLc="verb" role="lnkChild" src="range" srcLc="noun"/>
+     <dep c="0.968" dest="maximum" destLc="adj" role="head" src="range" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1356">
+     <txt>. </txt>
+     <lc lc="punct"/>
+    </frag>
+   </sent>
+   <sent len="4" so="1357">
+    <frag cccfmp="0.680" cccmp="0.487" ccfmp="0.447" len="1" so="1357">
+     <txt>Mass </txt>
+     <cs pb="1.000" pc="0.879" sk="mass/C1" so="1357">
+      <fs pb="1.000" pc="0.886" sk="mass/N1" so="1357"/>
+     </cs>
+     <dep c="0.341" dest="kg" destLc="noun" role="modifier" src="Mass" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.892" cccmp="0.846" ccfmp="0.964" len="1" so="1358">
+     <txt>11 </txt>
+     <cs pb="1.000" pc="0.963" sk="11/C1" so="1358">
+      <fs pb="1.000" pc="0.998" sk="11/J1" so="1358"/>
+     </cs>
+     <dep c="0.509" dest="kg" destLc="noun" role="modifier" src="11" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.635" cccmp="0.657" ccfmp="0.745" len="1" so="1359">
+     <txt>kg</txt>
+     <cs pb="1.000" pc="0.975" sk="kg/C1" so="1359">
+      <fs pb="1.000" pc="0.975" sk="kg/N1" so="1359"/>
+     </cs>
+     <dep c="0.341" dest="Mass" destLc="noun" role="head" src="kg" srcLc="noun"/>
+     <dep c="0.509" dest="11" destLc="adj" role="head" src="kg" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1360">
+     <txt>. </txt>
+     <lc lc="punct"/>
+    </frag>
+   </sent>
+   <sent len="4" so="1361">
+    <frag cccfmp="0.643" cccmp="0.532" ccfmp="0.482" len="1" so="1361">
+     <txt>Range </txt>
+     <cs pb="1.000" pc="0.903" sk="range/C1" so="1361">
+      <fs pb="1.000" pc="0.618" sk="range/N2" so="1361"/>
+     </cs>
+    </frag>
+    <frag cccfmp="0.751" cccmp="0.663" ccfmp="0.902" len="1" so="1362">
+     <txt>3 </txt>
+     <cs pb="1.000" pc="0.977" sk="3/C1" so="1362">
+      <fs pb="1.000" pc="0.992" sk="3/J1" so="1362"/>
+     </cs>
+     <dep c="0.868" dest="km" destLc="noun" role="modifier" src="3" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.737" cccmp="0.776" ccfmp="0.808" len="1" so="1363">
+     <txt>km</txt>
+     <cs pb="1.000" pc="0.975" sk="km/C1" so="1363">
+      <fs pb="1.000" pc="0.975" sk="km/N1" so="1363"/>
+     </cs>
+     <dep c="0.868" dest="3" destLc="adj" role="head" src="km" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1364">
+     <txt>. </txt>
+     <lc lc="punct"/>
+    </frag>
+   </sent>
+   <sent len="14" so="1365">
+    <frag cccfmp="0.310" cccmp="0.328" ccfmp="0.323" len="4" so="1365">
+     <txt>AT-3C </txt>
+     <cs len="4" pb="1.000" pc="0.903" sk="AT-3C/C1300" so="1365">
+      <fs len="4" pb="1.000" pc="0.903" sk="AT-3C/N1300" so="1365"/>
+     </cs>
+     <dep c="0.861" dest="Sagger" destLc="noun" role="modifier" src="AT-3C" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1369">
+     <txt>Sagger </txt>
+     <cs pb="1.000" pc="0.000" sk="unk" so="1369">
+      <fs lc="noun" pb="1.000" pc="0.000" sk="unk" so="1369"/>
+     </cs>
+     <dep c="0.861" dest="AT-3C" destLc="noun" role="head" src="Sagger" srcLc="noun"/>
+     <dep c="0.837" dest="C" destLc="noun" role="modifier" src="Sagger" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.282" cccmp="0.303" ccfmp="0.297" len="1" so="1370">
+     <txt>C </txt>
+     <cs pb="1.000" pc="0.644" sk="C/C7" so="1370">
+      <fs pb="1.000" pc="0.701" sk="C/N9" so="1370"/>
+     </cs>
+     <dep c="0.837" dest="Sagger" destLc="noun" role="head" src="C" srcLc="noun"/>
+     <dep c="0.837" dest="9M14P" destLc="noun" role="modifier" src="C" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1371">
+     <txt>9M14P </txt>
+     <cs pb="1.000" pc="0.000" sk="unk" so="1371">
+      <fs lc="noun" pb="1.000" pc="0.000" sk="unk" so="1371"/>
+     </cs>
+     <dep c="0.837" dest="C" destLc="noun" role="head" src="9M14P" srcLc="noun"/>
+     <dep c="0.861" dest="P" destLc="noun" role="modifier" src="9M14P" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1372">
+     <txt>Malyutka</txt>
+     <cs pb="1.000" pc="0.000" sk="unk" so="1372">
+      <fs lc="noun" pb="1.000" pc="0.000" sk="unk" so="1372"/>
+     </cs>
+    </frag>
+    <frag len="1" so="1373">
+     <txt>-</txt>
+     <lc lc="punct"/>
+    </frag>
+    <frag cccfmp="0.383" cccmp="0.297" ccfmp="0.387" len="1" so="1374">
+     <txt>P </txt>
+     <cs pb="1.000" pc="0.880" sk="P/C2" so="1374">
+      <fs pb="1.000" pc="0.860" sk="P/N2" so="1374"/>
+     </cs>
+     <dep c="0.861" dest="9M14P" destLc="noun" role="head" src="P" srcLc="noun"/>
+     <dep c="0.837" dest="wire-guided" destLc="noun" role="modifier" src="P" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.752" cccmp="0.757" ccfmp="0.733" len="3" so="1375">
+     <txt>wire-guided </txt>
+     <cs len="3" pb="1.000" pc="1.000" sk="wire-guided_missile/C1" so="1375">
+      <fs len="3" pb="1.000" pc="1.000" sk="wire-guided_missile/N1" so="1375"/>
+     </cs>
+     <dep c="0.837" dest="P" destLc="noun" role="head" src="wire-guided" srcLc="noun"/>
+     <dep c="0.863" dest="SACLOS" destLc="noun" role="modifier" src="wire-guided" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.424" cccmp="0.286" ccfmp="0.374" len="1" so="1378">
+     <txt>SACLOS </txt>
+     <cs pb="1.000" pc="0.544" sk="SACLOS/C1300" so="1378">
+      <fs pb="1.000" pc="0.534" sk="SACLOS/N1300" so="1378"/>
+     </cs>
+     <dep c="0.863" dest="wire-guided" destLc="noun" role="head" src="SACLOS" srcLc="noun"/>
+    </frag>
+   </sent>
+   <sent len="12" so="1379">
+    <frag cccfmp="0.023" cccmp="0.049" ccfmp="0.048" len="5" so="1379" sol="1">
+     <txt>9M14P Improved warhead 460 mm </txt>
+     <cs len="5" pb="1.000" pc="0.903" sk="9M14P_Improved_Warhead_460_Mm/C1300" so="1379">
+      <fs len="5" pb="1.000" pc="0.903" sk="9M14P_Improved_Warhead_460_Mm/N1300" so="1379"/>
+     </cs>
+     <dep c="0.931" dest="Entered" destLc="verb" role="argument" src="9M14P Improved warhead 460 mm" srcLc="noun" type="agent"/>
+    </frag>
+    <frag len="1" so="1384">
+     <txt>versus </txt>
+     <lc lc="prep"/>
+    </frag>
+    <frag cccfmp="0.067" cccmp="0.199" ccfmp="0.236" len="1" so="1385">
+     <txt>RHA</txt>
+     <cs pb="1.000" pc="0.684" sk="Rha/C1000" so="1385">
+      <fs pb="1.000" pc="0.816" sk="Rha/N1000" so="1385"/>
+     </cs>
+     <dep c="0.948" dest="Entered" destLc="verb" role="lnkChild" src="RHA" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1386">
+     <txt>, </txt>
+     <lc lc="punct"/>
+    </frag>
+    <frag cccfmp="0.606" cccmp="0.688" ccfmp="0.549" len="1" so="1387">
+     <txt>Entered </txt>
+     <cs pb="1.000" pc="0.618" sk="enter/C1" so="1387">
+      <fs pb="1.000" pc="0.635" sk="enter/V1" so="1387"/>
+     </cs>
+     <dep c="0.931" dest="9M14P Improved warhead 460 mm" destLc="noun" role="predicate" src="Entered" srcLc="verb" type="agent"/>
+     <dep c="0.948" dest="RHA" destLc="noun" role="lnkParent" src="Entered" srcLc="verb"/>
+     <dep c="0.992" dest="service" destLc="noun" role="predicate" src="Entered" srcLc="verb" type="theme"/>
+     <dep c="0.970" dest="1969" destLc="noun" role="lnkParent" src="Entered" srcLc="verb"/>
+    </frag>
+    <frag cccfmp="0.769" cccmp="0.584" ccfmp="0.685" len="1" so="1388">
+     <txt>service </txt>
+     <cs pb="1.000" pc="0.963" sk="serve/C5" so="1388">
+      <fs pb="1.000" pc="0.925" sk="service/N1" so="1388"/>
+     </cs>
+     <dep c="0.992" dest="Entered" destLc="verb" role="argument" src="service" srcLc="noun" type="theme"/>
+    </frag>
+    <frag len="1" so="1389">
+     <txt>in </txt>
+     <lc lc="prep" pc="0.881"/>
+    </frag>
+    <frag cccfmp="0.489" cccmp="0.554" ccfmp="0.709" len="1" so="1390">
+     <txt>1969 </txt>
+     <cs pb="1.000" pc="0.952" sk="1969/C303" so="1390">
+      <fs pb="1.000" pc="0.952" sk="1969/N303" so="1390"/>
+     </cs>
+     <dep c="0.970" dest="Entered" destLc="verb" role="lnkChild" src="1969" srcLc="noun"/>
+    </frag>
+   </sent>
+   <sent len="18" so="1391">
+    <frag cccfmp="0.373" cccmp="0.316" ccfmp="0.423" len="1" so="1391" sol="1">
+     <txt>9M14P1 </txt>
+     <cs pb="1.000" pc="0.903" sk="9M14P1/C1000" so="1391">
+      <fs pb="1.000" pc="0.903" sk="9M14P1/N1000" so="1391"/>
+     </cs>
+     <dep c="0.762" dest="Improved" destLc="adj" role="modifier" src="9M14P1" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.675" cccmp="0.897" ccfmp="0.633" len="1" so="1392">
+     <txt>Improved </txt>
+     <cs pb="1.000" pc="0.963" sk="improve/C1" so="1392">
+      <fs pb="1.000" pc="0.964" sk="improved/J2" so="1392"/>
+     </cs>
+     <dep c="0.762" dest="9M14P1" destLc="noun" role="head" src="Improved" srcLc="adj"/>
+     <dep c="0.883" dest="warhead" destLc="noun" role="modifier" src="Improved" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.633" cccmp="0.599" ccfmp="0.665" len="1" so="1393">
+     <txt>warhead </txt>
+     <cs pb="1.000" pc="0.975" sk="warhead/C1" so="1393">
+      <fs pb="1.000" pc="0.975" sk="warhead/N1" so="1393"/>
+     </cs>
+     <dep c="0.883" dest="Improved" destLc="adj" role="head" src="warhead" srcLc="noun"/>
+     <dep c="0.859" dest="mm" destLc="noun" role="modifier" src="warhead" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.678" cccmp="0.677" ccfmp="0.678" len="1" so="1394">
+     <txt>520 </txt>
+     <cs pb="1.000" pc="0.911" sk="520/C2104" so="1394">
+      <fs pb="1.000" pc="0.911" sk="520/J2104" so="1394"/>
+     </cs>
+     <dep c="0.782" dest="mm" destLc="noun" role="modifier" src="520" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.639" cccmp="0.653" ccfmp="0.676" len="1" so="1395">
+     <txt>mm </txt>
+     <cs pb="1.000" pc="0.975" sk="mm/C1" so="1395">
+      <fs pb="1.000" pc="0.975" sk="mm/N1" so="1395"/>
+     </cs>
+     <dep c="0.859" dest="warhead" destLc="noun" role="head" src="mm" srcLc="noun"/>
+     <dep c="0.782" dest="520" destLc="adj" role="head" src="mm" srcLc="noun"/>
+     <dep c="0.525" dest="RHA" destLc="noun" role="lnkParent" src="mm" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1396">
+     <txt>versus </txt>
+     <lc lc="prep"/>
+    </frag>
+    <frag cccfmp="0.255" cccmp="0.399" ccfmp="0.499" len="1" so="1397">
+     <txt>RHA </txt>
+     <cs pb="1.000" pc="0.636" sk="Rha/C1000" so="1397">
+      <fs pb="1.000" pc="0.831" sk="Rha/N1000" so="1397"/>
+     </cs>
+     <dep c="0.525" dest="mm" destLc="noun" role="lnkChild" src="RHA" srcLc="noun"/>
+     <dep c="0.656" dest="stand" destLc="noun" role="lnkParent" src="RHA" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1398">
+     <txt>with </txt>
+     <lc lc="prep"/>
+    </frag>
+    <frag len="1" so="1399">
+     <txt>a </txt>
+     <lc lc="det"/>
+    </frag>
+    <frag cccfmp="0.203" cccmp="0.334" ccfmp="0.275" len="1" so="1400">
+     <txt>stand </txt>
+     <cs pb="1.000" pc="0.536" sk="stand/C8" so="1400">
+      <fs pb="1.000" pc="0.683" sk="stand/N5" so="1400"/>
+     </cs>
+     <dep c="0.656" dest="RHA" destLc="noun" role="lnkChild" src="stand" srcLc="noun"/>
+     <dep c="0.719" dest="probe" destLc="noun" role="lnkParent" src="stand" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1401">
+     <txt>off </txt>
+     <lc lc="prep" pc="0.688"/>
+    </frag>
+    <frag cccfmp="0.432" cccmp="0.414" ccfmp="0.461" len="1" so="1402">
+     <txt>probe </txt>
+     <cs pb="1.000" pc="0.617" sk="probe/C1" so="1402">
+      <fs pb="1.000" pc="0.650" sk="probe/N1" so="1402"/>
+     </cs>
+     <dep c="0.719" dest="stand" destLc="noun" role="lnkChild" src="probe" srcLc="noun"/>
+     <dep c="0.638" dest="capability" destLc="noun" role="lnkParent" src="probe" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1403">
+     <txt>for </txt>
+     <lc lc="prep" pc="0.997"/>
+    </frag>
+    <frag cccfmp="0.871" cccmp="0.961" ccfmp="0.843" len="1" so="1404">
+     <txt>improved </txt>
+     <cs pb="1.000" pc="0.963" sk="improve/C1" so="1404">
+      <fs pb="1.000" pc="0.988" sk="improved/J2" so="1404"/>
+     </cs>
+     <dep c="0.932" dest="capability" destLc="noun" role="modifier" src="improved" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.639" cccmp="0.597" ccfmp="0.594" len="1" so="1405">
+     <txt>capability </txt>
+     <cs pb="1.000" pc="0.992" sk="capable/C1" so="1405">
+      <fs pb="1.000" pc="0.933" sk="capability/N1" so="1405"/>
+     </cs>
+     <dep c="0.638" dest="probe" destLc="noun" role="lnkChild" src="capability" srcLc="noun"/>
+     <dep c="0.932" dest="improved" destLc="adj" role="head" src="capability" srcLc="noun"/>
+     <dep c="0.751" dest="ERA" destLc="noun" role="lnkParent" src="capability" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1406">
+     <txt>against </txt>
+     <lc lc="prep"/>
+    </frag>
+    <frag cccfmp="0.524" cccmp="0.431" ccfmp="0.557" len="1" so="1407">
+     <txt>ERA</txt>
+     <cs pb="1.000" pc="0.854" sk="ERA/C30" so="1407">
+      <fs pb="1.000" pc="0.854" sk="ERA/N36" so="1407"/>
+     </cs>
+     <dep c="0.751" dest="capability" destLc="noun" role="lnkChild" src="ERA" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1408">
+     <txt>. </txt>
+     <lc lc="punct"/>
+    </frag>
+   </sent>
+   <sent len="1" so="1409">
+    <frag len="1" so="1409" sol="1">
+     <txt>9M14MP1 </txt>
+     <cs pb="0.500" pc="0.000" sk="unk" so="1409">
+      <fs lc="noun" pb="0.500" pc="0.000" sk="unk" so="1409"/>
+     </cs>
+     <cs pb="0.500" pc="0.000" sk="ina" so="1409">
+      <fs lc="interj" pb="0.500" pc="0.000" sk="ina" so="1409"/>
+     </cs>
+    </frag>
+   </sent>
+   <sent len="1" so="1410">
+    <frag len="1" so="1410" sol="1">
+     <txt>9M14MP2 </txt>
+     <cs pb="1.000" pc="0.000" sk="unk" so="1410">
+      <fs lc="noun" pb="1.000" pc="0.000" sk="unk" so="1410"/>
+     </cs>
+    </frag>
+   </sent>
+   <sent len="17" so="1411">
+    <frag len="1" so="1411">
+     <txt>AT</txt>
+     <lc lc="prep" pc="0.999"/>
+    </frag>
+    <frag len="1" so="1412">
+     <txt>-</txt>
+     <lc lc="punct"/>
+    </frag>
+    <frag cccfmp="0.504" cccmp="0.349" ccfmp="0.453" len="2" so="1413">
+     <txt>3D </txt>
+     <cs len="2" pb="1.000" pc="0.864" sk="3D/C2" so="1413">
+      <fs len="2" pb="1.000" pc="0.862" sk="3D/N2" so="1413"/>
+     </cs>
+    </frag>
+    <frag cccfmp="0.341" cccmp="0.251" ccfmp="0.248" len="2" so="1415">
+     <txt>Sagger D </txt>
+     <cs len="2" pb="1.000" pc="0.852" sk="Sagger_D/C1400" so="1415">
+      <fs len="2" pb="1.000" pc="0.852" sk="Sagger_D/N1400" so="1415"/>
+     </cs>
+     <dep c="0.902" dest="wire-guided" destLc="noun" role="modifier" src="Sagger D" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.755" cccmp="0.771" ccfmp="0.742" len="3" so="1417">
+     <txt>wire-guided </txt>
+     <cs len="3" pb="1.000" pc="1.000" sk="wire-guided_missile/C1" so="1417">
+      <fs len="3" pb="1.000" pc="1.000" sk="wire-guided_missile/N1" so="1417"/>
+     </cs>
+     <dep c="0.902" dest="Sagger D" destLc="noun" role="head" src="wire-guided" srcLc="noun"/>
+     <dep c="0.882" dest="SACLOS" destLc="noun" role="modifier" src="wire-guided" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.275" cccmp="0.178" ccfmp="0.218" len="1" so="1420">
+     <txt>SACLOS </txt>
+     <cs pb="0.468" pc="0.912" sk="SACLOS/C1000" so="1420">
+      <fs pb="0.468" pc="0.914" sk="SACLOS/N1000" so="1420"/>
+     </cs>
+     <cs pb="0.389" pc="0.912" sk="SACLOS/C1300" so="1420">
+      <fs pb="0.389" pc="0.914" sk="SACLOS/N1300" so="1420"/>
+     </cs>
+     <cs pb="0.142" pc="0.912" sk="SACLOS/C1400" so="1420">
+      <fs pb="0.142" pc="0.914" sk="SACLOS/N1400" so="1420"/>
+     </cs>
+     <dep c="0.882" dest="wire-guided" destLc="noun" role="head" src="SACLOS" srcLc="noun"/>
+     <dep c="0.938" dest="entered" destLc="verb" role="argument" src="SACLOS" srcLc="noun" type="agent"/>
+    </frag>
+    <frag cccfmp="0.373" cccmp="0.327" ccfmp="0.305" len="1" so="1421">
+     <txt>entered </txt>
+     <cs pb="1.000" pc="0.555" sk="enter/C2" so="1421">
+      <fs pb="1.000" pc="0.788" sk="enter/V2" so="1421"/>
+     </cs>
+     <dep c="0.938" dest="SACLOS" destLc="noun" role="predicate" src="entered" srcLc="verb" type="agent"/>
+     <dep c="0.987" dest="service" destLc="noun" role="predicate" src="entered" srcLc="verb" type="theme"/>
+     <dep c="0.940" dest="1990s" destLc="noun" role="lnkParent" src="entered" srcLc="verb"/>
+    </frag>
+    <frag cccfmp="0.539" cccmp="0.552" ccfmp="0.518" len="1" so="1422">
+     <txt>service </txt>
+     <cs pb="1.000" pc="0.955" sk="serve/C5" so="1422">
+      <fs pb="1.000" pc="0.930" sk="service/N1" so="1422"/>
+     </cs>
+     <dep c="0.987" dest="entered" destLc="verb" role="argument" src="service" srcLc="noun" type="theme"/>
+    </frag>
+    <frag len="1" so="1423">
+     <txt>in </txt>
+     <lc lc="prep" pc="0.959"/>
+    </frag>
+    <frag len="1" so="1424">
+     <txt>the </txt>
+     <lc lc="det"/>
+    </frag>
+    <frag cccfmp="0.661" cccmp="0.649" ccfmp="0.656" len="2" so="1425">
+     <txt>1990s</txt>
+     <cs len="2" pb="1.000" pc="0.903" sk="1990s/C1" so="1425">
+      <fs len="2" pb="1.000" pc="0.903" sk="1990s/N1" so="1425"/>
+     </cs>
+     <dep c="0.940" dest="entered" destLc="verb" role="lnkChild" src="1990s" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1427">
+     <txt>. </txt>
+     <lc lc="punct"/>
+    </frag>
+   </sent>
+   <sent len="4" so="1428">
+    <frag cccfmp="0.502" cccmp="0.308" ccfmp="0.308" len="1" so="1428">
+     <txt>Mass </txt>
+     <cs pb="1.000" pc="0.877" sk="mass/C1" so="1428">
+      <fs pb="1.000" pc="0.944" sk="mass/N1" so="1428"/>
+     </cs>
+     <dep c="0.281" dest="kg" destLc="noun" role="modifier" src="Mass" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.760" cccmp="0.784" ccfmp="0.877" len="1" so="1429">
+     <txt>13 </txt>
+     <cs pb="1.000" pc="0.967" sk="13/C1" so="1429">
+      <fs pb="1.000" pc="0.996" sk="13/J1" so="1429"/>
+     </cs>
+     <dep c="0.437" dest="kg" destLc="noun" role="modifier" src="13" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.737" cccmp="0.741" ccfmp="0.815" len="1" so="1430">
+     <txt>kg</txt>
+     <cs pb="1.000" pc="0.975" sk="kg/C1" so="1430">
+      <fs pb="1.000" pc="0.975" sk="kg/N1" so="1430"/>
+     </cs>
+     <dep c="0.281" dest="Mass" destLc="noun" role="head" src="kg" srcLc="noun"/>
+     <dep c="0.437" dest="13" destLc="adj" role="head" src="kg" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1431">
+     <txt>. </txt>
+     <lc lc="punct"/>
+    </frag>
+   </sent>
+   <sent len="4" so="1432">
+    <frag cccfmp="0.502" cccmp="0.584" ccfmp="0.469" len="1" so="1432">
+     <txt>Range </txt>
+     <cs pb="1.000" pc="0.938" sk="range/C1" so="1432">
+      <fs pb="1.000" pc="0.437" sk="range/N2" so="1432"/>
+     </cs>
+    </frag>
+    <frag cccfmp="0.751" cccmp="0.663" ccfmp="0.902" len="1" so="1433">
+     <txt>3 </txt>
+     <cs pb="1.000" pc="0.977" sk="3/C1" so="1433">
+      <fs pb="1.000" pc="0.992" sk="3/J1" so="1433"/>
+     </cs>
+     <dep c="0.868" dest="km" destLc="noun" role="modifier" src="3" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.737" cccmp="0.776" ccfmp="0.808" len="1" so="1434">
+     <txt>km</txt>
+     <cs pb="1.000" pc="0.975" sk="km/C1" so="1434">
+      <fs pb="1.000" pc="0.975" sk="km/N1" so="1434"/>
+     </cs>
+     <dep c="0.868" dest="3" destLc="adj" role="head" src="km" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1435">
+     <txt>. </txt>
+     <lc lc="punct"/>
+    </frag>
+   </sent>
+   <sent len="8" so="1436">
+    <frag cccfmp="0.323" cccmp="0.434" ccfmp="0.399" len="1" so="1436">
+     <txt>Speed </txt>
+     <cs pb="1.000" pc="0.891" sk="speed/C7" so="1436">
+      <fs pb="1.000" pc="0.879" sk="speed/N1" so="1436"/>
+     </cs>
+     <dep c="0.760" dest="improved" destLc="verb" role="argument" src="Speed" srcLc="noun" type="agent"/>
+    </frag>
+    <frag cccfmp="0.499" cccmp="0.815" ccfmp="0.496" len="1" so="1437">
+     <txt>improved </txt>
+     <cs pb="1.000" pc="0.952" sk="improve/C1" so="1437">
+      <fs pb="1.000" pc="0.836" sk="improve/V1" so="1437"/>
+     </cs>
+     <dep c="0.760" dest="Speed" destLc="noun" role="predicate" src="improved" srcLc="verb" type="agent"/>
+     <dep c="0.714" dest="m/s" destLc="noun" role="lnkParent" src="improved" srcLc="verb"/>
+    </frag>
+    <frag len="1" so="1438">
+     <txt>to </txt>
+     <lc lc="prep"/>
+    </frag>
+    <frag cccfmp="0.574" cccmp="0.667" ccfmp="0.691" len="1" so="1439">
+     <txt>130 </txt>
+     <cs pb="1.000" pc="0.968" sk="130/C2104" so="1439">
+      <fs pb="1.000" pc="0.934" sk="130/J2104" so="1439"/>
+     </cs>
+     <dep c="0.725" dest="m/s" destLc="noun" role="modifier" src="130" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.635" cccmp="0.585" ccfmp="0.690" len="3" so="1440">
+     <txt>m/s</txt>
+     <cs len="3" pb="1.000" pc="0.975" sk="m/s/C1" so="1440">
+      <fs len="3" pb="1.000" pc="0.975" sk="m/s/N1" so="1440"/>
+     </cs>
+     <dep c="0.714" dest="improved" destLc="verb" role="lnkChild" src="m/s" srcLc="noun"/>
+     <dep c="0.725" dest="130" destLc="adj" role="head" src="m/s" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1443">
+     <txt>. </txt>
+     <lc lc="punct"/>
+    </frag>
+   </sent>
+   <sent len="16" so="1444">
+    <frag cccfmp="0.129" cccmp="0.191" ccfmp="0.149" len="4" so="1444" sol="1">
+     <txt>9M14-2 Malyutka</txt>
+     <cs len="4" pb="1.000" pc="0.903" sk="9M14-2_Malyutka/C1300" so="1444">
+      <fs len="4" pb="1.000" pc="0.903" sk="9M14-2_Malyutka/N1300" so="1444"/>
+     </cs>
+    </frag>
+    <frag len="1" so="1448">
+     <txt>-</txt>
+     <lc lc="punct"/>
+    </frag>
+    <frag cccfmp="0.683" cccmp="0.532" ccfmp="0.616" len="1" so="1449">
+     <txt>2 </txt>
+     <cs pb="1.000" pc="0.903" sk="2/C1" so="1449">
+      <fs pb="1.000" pc="0.903" sk="2/J1" so="1449"/>
+     </cs>
+    </frag>
+    <frag cccfmp="0.609" cccmp="0.577" ccfmp="0.615" len="1" so="1450">
+     <txt>3.5 </txt>
+     <cs pb="1.000" pc="0.895" sk="3.5/C2104" so="1450">
+      <fs pb="1.000" pc="0.895" sk="3.5/J2104" so="1450"/>
+     </cs>
+     <dep c="0.948" dest="kg" destLc="noun" role="modifier" src="3.5" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.556" cccmp="0.603" ccfmp="0.626" len="1" so="1451">
+     <txt>kg </txt>
+     <cs pb="1.000" pc="0.975" sk="kg/C1" so="1451">
+      <fs pb="1.000" pc="0.975" sk="kg/N1" so="1451"/>
+     </cs>
+     <dep c="0.948" dest="3.5" destLc="adj" role="head" src="kg" srcLc="noun"/>
+     <dep c="0.946" dest="HEAT" destLc="noun" role="modifier" src="kg" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.531" cccmp="0.425" ccfmp="0.497" len="1" so="1452">
+     <txt>HEAT </txt>
+     <cs pb="1.000" pc="0.975" sk="heat/C1" so="1452">
+      <fs pb="1.000" pc="0.975" sk="heat/N1" so="1452"/>
+     </cs>
+     <dep c="0.946" dest="kg" destLc="noun" role="head" src="HEAT" srcLc="noun"/>
+     <dep c="0.946" dest="warhead" destLc="noun" role="modifier" src="HEAT" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.752" cccmp="0.701" ccfmp="0.776" len="1" so="1453">
+     <txt>warhead </txt>
+     <cs pb="1.000" pc="0.975" sk="warhead/C1" so="1453">
+      <fs pb="1.000" pc="0.975" sk="warhead/N1" so="1453"/>
+     </cs>
+     <dep c="0.946" dest="HEAT" destLc="noun" role="head" src="warhead" srcLc="noun"/>
+     <dep c="0.693" dest="mm" destLc="noun" role="modifier" src="warhead" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.371" cccmp="0.522" ccfmp="0.547" len="1" so="1454">
+     <txt>800 </txt>
+     <cs pb="1.000" pc="0.892" sk="800/C2104" so="1454">
+      <fs pb="1.000" pc="0.892" sk="800/J2104" so="1454"/>
+     </cs>
+     <dep c="0.870" dest="mm" destLc="noun" role="modifier" src="800" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.704" cccmp="0.676" ccfmp="0.746" len="1" so="1455">
+     <txt>mm </txt>
+     <cs pb="1.000" pc="0.975" sk="mm/C1" so="1455">
+      <fs pb="1.000" pc="0.975" sk="mm/N1" so="1455"/>
+     </cs>
+     <dep c="0.693" dest="warhead" destLc="noun" role="head" src="mm" srcLc="noun"/>
+     <dep c="0.870" dest="800" destLc="adj" role="head" src="mm" srcLc="noun"/>
+     <dep c="0.317" dest="RHA" destLc="noun" role="lnkParent" src="mm" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.345" cccmp="0.302" ccfmp="0.375" len="1" so="1456">
+     <txt>penetration </txt>
+     <cs pb="1.000" pc="0.555" sk="penetrate/C6" so="1456">
+      <fs pb="1.000" pc="0.619" sk="penetration/N3" so="1456"/>
+     </cs>
+    </frag>
+    <frag len="1" so="1457">
+     <txt>versus </txt>
+     <lc lc="prep"/>
+    </frag>
+    <frag cccfmp="0.144" cccmp="0.233" ccfmp="0.310" len="1" so="1458">
+     <txt>RHA</txt>
+     <cs pb="1.000" pc="0.876" sk="Rha/C1000" so="1458">
+      <fs pb="1.000" pc="0.829" sk="Rha/N1000" so="1458"/>
+     </cs>
+     <dep c="0.317" dest="mm" destLc="noun" role="lnkChild" src="RHA" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1459">
+     <txt>. </txt>
+     <lc lc="punct"/>
+    </frag>
+   </sent>
+   <sent len="5" so="1460">
+    <frag cccfmp="0.314" cccmp="0.320" ccfmp="0.342" len="1" so="1460">
+     <txt>Entered </txt>
+     <cs pb="1.000" pc="0.543" sk="enter/C1" so="1460">
+      <fs pb="1.000" pc="0.662" sk="enter/V1" so="1460"/>
+     </cs>
+     <dep c="0.911" dest="service" destLc="noun" role="predicate" src="Entered" srcLc="verb" type="theme"/>
+     <dep c="0.814" dest="service" destLc="noun" role="modifier" src="Entered" srcLc="verb"/>
+    </frag>
+    <frag cccfmp="0.499" cccmp="0.554" ccfmp="0.497" len="1" so="1461">
+     <txt>service </txt>
+     <cs pb="1.000" pc="0.932" sk="serve/C5" so="1461">
+      <fs pb="1.000" pc="0.523" sk="service/N5" so="1461"/>
+     </cs>
+     <dep c="0.911" dest="Entered" destLc="verb" role="argument" src="service" srcLc="noun" type="theme"/>
+     <dep c="0.814" dest="Entered" destLc="verb" role="head" src="service" srcLc="noun"/>
+     <dep c="0.730" dest="1992" destLc="noun" role="lnkParent" src="service" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1462">
+     <txt>in </txt>
+     <lc lc="prep" pc="0.959"/>
+    </frag>
+    <frag cccfmp="0.842" cccmp="0.760" ccfmp="0.833" len="1" so="1463">
+     <txt>1992</txt>
+     <cs pb="1.000" pc="0.952" sk="1992/C303" so="1463">
+      <fs pb="1.000" pc="0.952" sk="1992/N303" so="1463"/>
+     </cs>
+     <dep c="0.730" dest="service" destLc="noun" role="lnkChild" src="1992" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1464">
+     <txt>. </txt>
+     <lc lc="punct"/>
+    </frag>
+   </sent>
+   <sent len="4" so="1465">
+    <frag cccfmp="0.563" cccmp="0.626" ccfmp="0.504" len="1" so="1465">
+     <txt>Weight </txt>
+     <cs pb="1.000" pc="0.925" sk="weigh/C1" so="1465">
+      <fs pb="1.000" pc="0.976" sk="weight/N1" so="1465"/>
+     </cs>
+    </frag>
+    <frag cccfmp="0.727" cccmp="0.665" ccfmp="0.658" len="1" so="1466">
+     <txt>12.5 </txt>
+     <cs pb="1.000" pc="0.895" sk="12.5/C2104" so="1466">
+      <fs pb="1.000" pc="0.895" sk="12.5/J2104" so="1466"/>
+     </cs>
+     <dep c="0.736" dest="kg" destLc="noun" role="modifier" src="12.5" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.737" cccmp="0.794" ccfmp="0.815" len="1" so="1467">
+     <txt>kg</txt>
+     <cs pb="1.000" pc="0.975" sk="kg/C1" so="1467">
+      <fs pb="1.000" pc="0.975" sk="kg/N1" so="1467"/>
+     </cs>
+     <dep c="0.736" dest="12.5" destLc="adj" role="head" src="kg" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1468">
+     <txt>. </txt>
+     <lc lc="punct"/>
+    </frag>
+   </sent>
+   <sent len="19" so="1469">
+    <frag cccfmp="0.157" cccmp="0.210" ccfmp="0.126" len="9" so="1469" sol="1">
+     <txt>9M14-2M Malyutka-2M 4.2 </txt>
+     <cs len="9" pb="1.000" pc="0.903" sk="9M14-2M_Malyutka-2M_4.2/C1300" so="1469">
+      <fs len="9" pb="1.000" pc="0.903" sk="9M14-2M_Malyutka-2M_4.2/N1300" so="1469"/>
+     </cs>
+     <dep c="0.948" dest="kg" destLc="noun" role="modifier" src="9M14-2M Malyutka-2M 4.2" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.577" cccmp="0.597" ccfmp="0.593" len="1" so="1478">
+     <txt>kg </txt>
+     <cs pb="1.000" pc="0.975" sk="kg/C1" so="1478">
+      <fs pb="1.000" pc="0.975" sk="kg/N1" so="1478"/>
+     </cs>
+     <dep c="0.948" dest="9M14-2M Malyutka-2M 4.2" destLc="noun" role="head" src="kg" srcLc="noun"/>
+     <dep c="0.937" dest="tandem" destLc="noun" role="modifier" src="kg" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.451" cccmp="0.505" ccfmp="0.539" len="1" so="1479">
+     <txt>tandem </txt>
+     <cs pb="1.000" pc="0.975" sk="tandem/C2" so="1479">
+      <fs pb="1.000" pc="0.975" sk="tandem/N1" so="1479"/>
+     </cs>
+     <dep c="0.937" dest="kg" destLc="noun" role="head" src="tandem" srcLc="noun"/>
+     <dep c="0.948" dest="HEAT" destLc="noun" role="modifier" src="tandem" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.332" cccmp="0.345" ccfmp="0.240" len="1" so="1480">
+     <txt>HEAT </txt>
+     <cs pb="1.000" pc="0.568" sk="heat/C1" so="1480">
+      <fs pb="1.000" pc="0.585" sk="heat/N1" so="1480"/>
+     </cs>
+     <dep c="0.948" dest="tandem" destLc="noun" role="head" src="HEAT" srcLc="noun"/>
+     <dep c="0.948" dest="warhead" destLc="noun" role="modifier" src="HEAT" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.577" cccmp="0.546" ccfmp="0.593" len="1" so="1481">
+     <txt>warhead </txt>
+     <cs pb="1.000" pc="0.975" sk="warhead/C1" so="1481">
+      <fs pb="1.000" pc="0.975" sk="warhead/N1" so="1481"/>
+     </cs>
+     <dep c="0.948" dest="HEAT" destLc="noun" role="head" src="warhead" srcLc="noun"/>
+     <dep c="0.626" dest="capability" destLc="noun" role="lnkParent" src="warhead" srcLc="noun"/>
+     <dep c="0.544" dest="ERA" destLc="noun" role="lnkParent" src="warhead" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1482">
+     <txt>for </txt>
+     <lc lc="prep" pc="0.999"/>
+    </frag>
+    <frag cccfmp="0.799" cccmp="0.962" ccfmp="0.786" len="1" so="1483">
+     <txt>improved </txt>
+     <cs pb="1.000" pc="0.963" sk="improve/C1" so="1483">
+      <fs pb="1.000" pc="0.994" sk="improved/J2" so="1483"/>
+     </cs>
+     <dep c="0.938" dest="capability" destLc="noun" role="modifier" src="improved" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.561" cccmp="0.579" ccfmp="0.511" len="1" so="1484">
+     <txt>capability </txt>
+     <cs pb="1.000" pc="0.991" sk="capable/C1" so="1484">
+      <fs pb="1.000" pc="0.919" sk="capability/N1" so="1484"/>
+     </cs>
+     <dep c="0.626" dest="warhead" destLc="noun" role="lnkChild" src="capability" srcLc="noun"/>
+     <dep c="0.938" dest="improved" destLc="adj" role="head" src="capability" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1485">
+     <txt>against </txt>
+     <lc lc="prep"/>
+    </frag>
+    <frag cccfmp="0.269" cccmp="0.275" ccfmp="0.310" len="1" so="1486">
+     <txt>ERA</txt>
+     <cs pb="1.000" pc="0.854" sk="ERA/C30" so="1486">
+      <fs pb="1.000" pc="0.854" sk="ERA/N36" so="1486"/>
+     </cs>
+     <dep c="0.544" dest="warhead" destLc="noun" role="lnkChild" src="ERA" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1487">
+     <txt>. </txt>
+     <lc lc="punct"/>
+    </frag>
+   </sent>
+   <sent len="4" so="1488">
+    <frag cccfmp="0.536" cccmp="0.626" ccfmp="0.504" len="1" so="1488">
+     <txt>Weight </txt>
+     <cs pb="1.000" pc="0.925" sk="weigh/C1" so="1488">
+      <fs pb="1.000" pc="0.974" sk="weight/N1" so="1488"/>
+     </cs>
+    </frag>
+    <frag cccfmp="0.727" cccmp="0.665" ccfmp="0.658" len="1" so="1489">
+     <txt>13.5 </txt>
+     <cs pb="1.000" pc="0.895" sk="13.5/C2104" so="1489">
+      <fs pb="1.000" pc="0.895" sk="13.5/J2104" so="1489"/>
+     </cs>
+     <dep c="0.793" dest="kg" destLc="noun" role="modifier" src="13.5" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.737" cccmp="0.794" ccfmp="0.815" len="1" so="1490">
+     <txt>kg</txt>
+     <cs pb="1.000" pc="0.975" sk="kg/C1" so="1490">
+      <fs pb="1.000" pc="0.975" sk="kg/N1" so="1490"/>
+     </cs>
+     <dep c="0.793" dest="13.5" destLc="adj" role="head" src="kg" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1491">
+     <txt>. </txt>
+     <lc lc="punct"/>
+    </frag>
+   </sent>
+   <sent len="6" so="1492">
+    <frag cccfmp="0.369" cccmp="0.472" ccfmp="0.379" len="1" so="1492">
+     <txt>Speed </txt>
+     <cs pb="0.669" pc="0.849" sk="speed/C7" so="1492">
+      <fs pb="0.669" pc="0.849" sk="speed/N1" so="1492"/>
+     </cs>
+     <cs pb="0.331" pc="0.849" sk="speed/C2" so="1492">
+      <fs pb="0.331" pc="0.849" sk="speed/N2" so="1492"/>
+     </cs>
+    </frag>
+    <frag cccfmp="0.726" cccmp="0.767" ccfmp="0.840" len="1" so="1493">
+     <txt>120 </txt>
+     <cs pb="1.000" pc="0.955" sk="120/C1" so="1493">
+      <fs pb="1.000" pc="0.996" sk="120/J1" so="1493"/>
+     </cs>
+     <dep c="0.884" dest="m/s" destLc="noun" role="modifier" src="120" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.783" cccmp="0.689" ccfmp="0.816" len="3" so="1494">
+     <txt>m/s</txt>
+     <cs len="3" pb="1.000" pc="0.975" sk="m/s/C1" so="1494">
+      <fs len="3" pb="1.000" pc="0.975" sk="m/s/N1" so="1494"/>
+     </cs>
+     <dep c="0.884" dest="120" destLc="adj" role="head" src="m/s" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1497">
+     <txt>. </txt>
+     <lc lc="punct"/>
+    </frag>
+   </sent>
+   <sent len="8" so="1498">
+    <frag cccfmp="0.221" cccmp="0.349" ccfmp="0.118" len="8" so="1498" sol="1">
+     <txt>9M14-2P Malyutka-2P </txt>
+     <cs len="8" pb="1.000" pc="0.903" sk="9M14-2P_Malyutka-2P/C1300" so="1498">
+      <fs len="8" pb="1.000" pc="0.903" sk="9M14-2P_Malyutka-2P/N1300" so="1498"/>
+     </cs>
+    </frag>
+   </sent>
+   <sent len="13" so="1506">
+    <frag cccfmp="0.140" cccmp="0.180" ccfmp="0.140" len="9" so="1506" sol="1">
+     <txt>9M14-2F Malyutka-2F 3.0 </txt>
+     <cs len="9" pb="1.000" pc="0.903" sk="9M14-2F_Malyutka-2F_3.0/C1300" so="1506">
+      <fs len="9" pb="1.000" pc="0.903" sk="9M14-2F_Malyutka-2F_3.0/N1300" so="1506"/>
+     </cs>
+     <dep c="0.893" dest="kg" destLc="noun" role="modifier" src="9M14-2F Malyutka-2F 3.0" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.536" cccmp="0.624" ccfmp="0.589" len="1" so="1515">
+     <txt>kg </txt>
+     <cs pb="1.000" pc="0.975" sk="kg/C1" so="1515">
+      <fs pb="1.000" pc="0.975" sk="kg/N1" so="1515"/>
+     </cs>
+     <dep c="0.893" dest="9M14-2F Malyutka-2F 3.0" destLc="noun" role="head" src="kg" srcLc="noun"/>
+     <dep c="0.830" dest="warhead" destLc="noun" role="modifier" src="kg" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.587" cccmp="0.626" ccfmp="0.671" len="1" so="1516">
+     <txt>thermobaric </txt>
+     <cs pb="1.000" pc="0.975" sk="barium/C1" so="1516">
+      <fs pb="1.000" pc="0.975" sk="baric/J1" so="1516"/>
+     </cs>
+     <dep c="0.913" dest="warhead" destLc="noun" role="modifier" src="thermobaric" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.536" cccmp="0.573" ccfmp="0.589" len="1" so="1517">
+     <txt>warhead</txt>
+     <cs pb="1.000" pc="0.975" sk="warhead/C1" so="1517">
+      <fs pb="1.000" pc="0.975" sk="warhead/N1" so="1517"/>
+     </cs>
+     <dep c="0.830" dest="kg" destLc="noun" role="head" src="warhead" srcLc="noun"/>
+     <dep c="0.913" dest="thermobaric" destLc="adj" role="head" src="warhead" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1518">
+     <txt>. </txt>
+     <lc lc="punct"/>
+    </frag>
+   </sent>
+   <sent len="9" so="1519">
+    <frag cccfmp="0.500" cccmp="0.664" ccfmp="0.601" len="1" so="1519">
+     <txt>Intended </txt>
+     <cs pb="1.000" pc="0.961" sk="intend/C1" so="1519">
+      <fs pb="0.642" pc="0.919" sk="intend/V2" so="1519"/>
+      <fs pb="0.358" pc="0.919" sk="intend/V1" so="1519"/>
+     </cs>
+     <dep c="0.862" dest="use" destLc="noun" role="lnkParent" src="Intended" srcLc="verb"/>
+    </frag>
+    <frag len="1" so="1520">
+     <txt>for </txt>
+     <lc lc="prep"/>
+    </frag>
+    <frag cccfmp="0.612" cccmp="0.727" ccfmp="0.616" len="1" so="1521">
+     <txt>use </txt>
+     <cs pb="1.000" pc="0.993" sk="use/C9" so="1521">
+      <fs pb="1.000" pc="0.970" sk="use/N1" so="1521"/>
+     </cs>
+     <dep c="0.862" dest="Intended" destLc="verb" role="lnkChild" src="use" srcLc="noun"/>
+     <dep c="0.695" dest="troops" destLc="noun" role="lnkParent" src="use" srcLc="noun"/>
+     <dep c="0.548" dest="vehicles" destLc="noun" role="lnkParent" src="use" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1522">
+     <txt>against </txt>
+     <lc lc="prep"/>
+    </frag>
+    <frag cccfmp="0.558" cccmp="0.605" ccfmp="0.561" len="1" so="1523">
+     <txt>troops </txt>
+     <cs pb="1.000" pc="0.949" sk="troop/C1" so="1523">
+      <fs pb="1.000" pc="0.706" sk="troops/N1" so="1523"/>
+     </cs>
+     <dep c="0.695" dest="use" destLc="noun" role="lnkChild" src="troops" srcLc="noun"/>
+     <dep c="0.792" dest="vehicles" destLc="noun" role="peerLeft" src="troops" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1524">
+     <txt>and </txt>
+     <lc lc="conj"/>
+    </frag>
+    <frag cccfmp="0.473" cccmp="0.443" ccfmp="0.440" len="1" so="1525">
+     <txt>soft </txt>
+     <cs pb="1.000" pc="0.789" sk="soft/C2" so="1525">
+      <fs pb="1.000" pc="0.860" sk="soft/J1" so="1525"/>
+     </cs>
+     <dep c="0.947" dest="vehicles" destLc="noun" role="modifier" src="soft" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.948" cccmp="0.911" ccfmp="0.913" len="1" so="1526">
+     <txt>vehicles</txt>
+     <cs pb="1.000" pc="1.000" sk="vehicle/C1" so="1526">
+      <fs pb="1.000" pc="0.999" sk="vehicle/N1" so="1526"/>
+     </cs>
+     <dep c="0.548" dest="use" destLc="noun" role="lnkChild" src="vehicles" srcLc="noun"/>
+     <dep c="0.792" dest="troops" destLc="noun" role="peerRight" src="vehicles" srcLc="noun"/>
+     <dep c="0.947" dest="soft" destLc="adj" role="head" src="vehicles" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1527">
+     <txt>. </txt>
+     <lc lc="punct"/>
+    </frag>
+   </sent>
+   <sent len="4" so="1528">
+    <frag cccfmp="0.666" cccmp="0.772" ccfmp="0.791" len="4" so="1528" sol="1">
+     <txt>9M14P-2F </txt>
+     <cs len="4" pb="1.000" pc="0.903" sk="9M14P-2F/C1300" so="1528">
+      <fs len="4" pb="1.000" pc="0.903" sk="9M14P-2F/N1300" so="1528"/>
+     </cs>
+    </frag>
+   </sent>
+   <sent len="28" so="1532">
+    <frag len="1" so="1532" sol="1">
+     <txt>9M14</txt>
+     <cs pb="1.000" pc="0.000" sk="unk" so="1532">
+      <fs lc="adj" pb="1.000" pc="0.000" sk="unk" so="1532"/>
+     </cs>
+    </frag>
+    <frag len="1" so="1533">
+     <txt>-</txt>
+     <lc lc="punct"/>
+    </frag>
+    <frag cccfmp="0.599" cccmp="0.531" ccfmp="0.652" len="1" so="1534">
+     <txt>2</txt>
+     <cs pb="1.000" pc="0.903" sk="2/C1" so="1534">
+      <fs pb="1.000" pc="0.903" sk="2/J1" so="1534"/>
+     </cs>
+    </frag>
+    <frag cccfmp="0.382" cccmp="0.252" ccfmp="0.402" len="1" so="1535">
+     <txt>T </txt>
+     <cs pb="0.591" pc="0.936" sk="t/C1" so="1535">
+      <fs pb="0.591" pc="0.937" sk="t/N3" so="1535"/>
+     </cs>
+     <cs pb="0.409" pc="0.936" sk="T/C3" so="1535">
+      <fs pb="0.409" pc="0.937" sk="T/N5" so="1535"/>
+     </cs>
+    </frag>
+    <frag cccfmp="0.526" cccmp="0.384" ccfmp="0.501" len="1" so="1536">
+     <txt>Serbian </txt>
+     <cs pb="1.000" pc="0.903" sk="Serbian/C702" so="1536">
+      <fs pb="1.000" pc="0.903" sk="Serbian/J702" so="1536">
+       <collapsed sk="Serbian/J1"/>
+       <collapsed sk="Serbian/J2"/>
+      </fs>
+     </cs>
+     <dep c="0.953" dest="Yugoimport SDPR Malyutka-2T SACLOS" destLc="noun" role="modifier" src="Serbian" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.167" cccmp="0.199" ccfmp="0.141" len="7" so="1537">
+     <txt>Yugoimport SDPR Malyutka-2T SACLOS </txt>
+     <cs len="7" pb="1.000" pc="0.903" sk="Yugoimport_SDPR_Malyutka-2T_SACLOS/C1300" so="1537">
+      <fs len="7" pb="1.000" pc="0.903" sk="Yugoimport_SDPR_Malyutka-2T_SACLOS/N1300" so="1537"/>
+     </cs>
+     <dep c="0.953" dest="Serbian" destLc="adj" role="head" src="Yugoimport SDPR Malyutka-2T SACLOS" srcLc="noun"/>
+     <dep c="0.833" dest="warhead" destLc="noun" role="modifier" src="Yugoimport SDPR Malyutka-2T SACLOS" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.608" cccmp="0.625" ccfmp="0.637" len="1" so="1544">
+     <txt>4.4 </txt>
+     <cs pb="1.000" pc="0.895" sk="4.4/C2104" so="1544">
+      <fs pb="1.000" pc="0.895" sk="4.4/J2104" so="1544"/>
+     </cs>
+     <dep c="0.943" dest="kg" destLc="noun" role="modifier" src="4.4" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.577" cccmp="0.640" ccfmp="0.622" len="1" so="1545">
+     <txt>kg </txt>
+     <cs pb="1.000" pc="0.975" sk="kg/C1" so="1545">
+      <fs pb="1.000" pc="0.975" sk="kg/N1" so="1545"/>
+     </cs>
+     <dep c="0.943" dest="4.4" destLc="adj" role="head" src="kg" srcLc="noun"/>
+     <dep c="0.930" dest="tandem" destLc="noun" role="modifier" src="kg" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.405" cccmp="0.519" ccfmp="0.556" len="1" so="1546">
+     <txt>tandem </txt>
+     <cs pb="1.000" pc="0.975" sk="tandem/C2" so="1546">
+      <fs pb="1.000" pc="0.975" sk="tandem/N1" so="1546"/>
+     </cs>
+     <dep c="0.930" dest="kg" destLc="noun" role="head" src="tandem" srcLc="noun"/>
+     <dep c="0.941" dest="HEAT" destLc="noun" role="modifier" src="tandem" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.299" cccmp="0.274" ccfmp="0.277" len="1" so="1547">
+     <txt>HEAT </txt>
+     <cs pb="1.000" pc="0.640" sk="heat/C1" so="1547">
+      <fs pb="1.000" pc="0.578" sk="heat/N1" so="1547"/>
+     </cs>
+     <dep c="0.941" dest="tandem" destLc="noun" role="head" src="HEAT" srcLc="noun"/>
+     <dep c="0.941" dest="warhead" destLc="noun" role="modifier" src="HEAT" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.577" cccmp="0.589" ccfmp="0.622" len="1" so="1548">
+     <txt>warhead </txt>
+     <cs pb="1.000" pc="0.975" sk="warhead/C1" so="1548">
+      <fs pb="1.000" pc="0.975" sk="warhead/N1" so="1548"/>
+     </cs>
+     <dep c="0.833" dest="Yugoimport SDPR Malyutka-2T SACLOS" destLc="noun" role="head" src="warhead" srcLc="noun"/>
+     <dep c="0.941" dest="HEAT" destLc="noun" role="head" src="warhead" srcLc="noun"/>
+     <dep c="1.000" dest="mm" destLc="noun" role="modifier" src="warhead" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.628" cccmp="0.625" ccfmp="0.673" len="1" so="1549">
+     <txt>1,000 </txt>
+     <cs pb="1.000" pc="0.892" sk="1,000/C2104" so="1549">
+      <fs pb="1.000" pc="0.892" sk="1,000/J2104" so="1549"/>
+     </cs>
+     <dep c="0.852" dest="mm" destLc="noun" role="modifier" src="1,000" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.556" cccmp="0.661" ccfmp="0.639" len="1" so="1550">
+     <txt>mm </txt>
+     <cs pb="1.000" pc="0.975" sk="mm/C1" so="1550">
+      <fs pb="1.000" pc="0.975" sk="mm/N1" so="1550"/>
+     </cs>
+     <dep c="1.000" dest="warhead" destLc="noun" role="head" src="mm" srcLc="noun"/>
+     <dep c="0.852" dest="1,000" destLc="adj" role="head" src="mm" srcLc="noun"/>
+     <dep c="0.191" dest="RHA" destLc="noun" role="lnkParent" src="mm" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.329" cccmp="0.318" ccfmp="0.341" len="1" so="1551">
+     <txt>penetration </txt>
+     <cs pb="1.000" pc="0.536" sk="penetrate/C6" so="1551">
+      <fs pb="1.000" pc="0.618" sk="penetration/N3" so="1551"/>
+     </cs>
+    </frag>
+    <frag len="1" so="1552">
+     <txt>versus </txt>
+     <lc lc="prep"/>
+    </frag>
+    <frag cccfmp="0.150" cccmp="0.249" ccfmp="0.253" len="1" so="1553">
+     <txt>RHA</txt>
+     <cs pb="1.000" pc="0.881" sk="Rha/C1000" so="1553">
+      <fs pb="1.000" pc="0.804" sk="Rha/N1000" so="1553"/>
+     </cs>
+     <dep c="0.191" dest="mm" destLc="noun" role="lnkChild" src="RHA" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1554">
+     <txt>, </txt>
+     <lc lc="punct"/>
+    </frag>
+    <frag cccfmp="0.661" cccmp="0.818" ccfmp="0.771" len="1" so="1555">
+     <txt>improved </txt>
+     <cs pb="1.000" pc="0.897" sk="improve/C1" so="1555">
+      <fs pb="1.000" pc="0.999" sk="improved/J2" so="1555"/>
+     </cs>
+     <dep c="0.937" dest="capability" destLc="noun" role="modifier" src="improved" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.523" cccmp="0.514" ccfmp="0.493" len="1" so="1556">
+     <txt>capability </txt>
+     <cs pb="1.000" pc="0.986" sk="capable/C1" so="1556">
+      <fs pb="1.000" pc="0.897" sk="capability/N1" so="1556"/>
+     </cs>
+     <dep c="0.937" dest="improved" destLc="adj" role="head" src="capability" srcLc="noun"/>
+     <dep c="0.434" dest="ERA" destLc="noun" role="lnkParent" src="capability" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1557">
+     <txt>against </txt>
+     <lc lc="prep"/>
+    </frag>
+    <frag cccfmp="0.270" cccmp="0.378" ccfmp="0.518" len="1" so="1558">
+     <txt>ERA</txt>
+     <cs pb="1.000" pc="0.854" sk="ERA/C30" so="1558">
+      <fs pb="1.000" pc="0.854" sk="ERA/N36" so="1558"/>
+     </cs>
+     <dep c="0.434" dest="capability" destLc="noun" role="lnkChild" src="ERA" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1559">
+     <txt>. </txt>
+     <lc lc="punct"/>
+    </frag>
+   </sent>
+   <sent len="4" so="1560">
+    <frag cccfmp="0.536" cccmp="0.595" ccfmp="0.504" len="1" so="1560">
+     <txt>Weight </txt>
+     <cs pb="1.000" pc="0.925" sk="weigh/C1" so="1560">
+      <fs pb="1.000" pc="0.974" sk="weight/N1" so="1560"/>
+     </cs>
+    </frag>
+    <frag cccfmp="0.704" cccmp="0.671" ccfmp="0.696" len="1" so="1561">
+     <txt>13.7 </txt>
+     <cs pb="1.000" pc="0.895" sk="13.7/C2104" so="1561">
+      <fs pb="1.000" pc="0.895" sk="13.7/J2104" so="1561"/>
+     </cs>
+     <dep c="0.947" dest="kg" destLc="noun" role="modifier" src="13.7" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.737" cccmp="0.774" ccfmp="0.808" len="1" so="1562">
+     <txt>kg</txt>
+     <cs pb="1.000" pc="0.975" sk="kg/C1" so="1562">
+      <fs pb="1.000" pc="0.975" sk="kg/N1" so="1562"/>
+     </cs>
+     <dep c="0.947" dest="13.7" destLc="adj" role="head" src="kg" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1563">
+     <txt>. </txt>
+     <lc lc="punct"/>
+    </frag>
+   </sent>
+   <sent len="5" so="1564">
+    <frag cccfmp="0.438" cccmp="0.514" ccfmp="0.450" len="1" so="1564">
+     <txt>Speed </txt>
+     <cs pb="0.669" pc="0.849" sk="speed/C7" so="1564">
+      <fs pb="0.669" pc="0.849" sk="speed/N1" so="1564"/>
+     </cs>
+     <cs pb="0.331" pc="0.849" sk="speed/C2" so="1564">
+      <fs pb="0.331" pc="0.849" sk="speed/N2" so="1564"/>
+     </cs>
+    </frag>
+    <frag cccfmp="0.751" cccmp="0.791" ccfmp="0.844" len="1" so="1565">
+     <txt>120 </txt>
+     <cs pb="1.000" pc="0.955" sk="120/C1" so="1565">
+      <fs pb="1.000" pc="0.996" sk="120/J1" so="1565"/>
+     </cs>
+     <dep c="0.960" dest="m/s" destLc="noun" role="modifier" src="120" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.813" cccmp="0.721" ccfmp="0.794" len="3" so="1566">
+     <txt>m/s </txt>
+     <cs len="3" pb="1.000" pc="0.975" sk="m/s/C1" so="1566">
+      <fs len="3" pb="1.000" pc="0.975" sk="m/s/N1" so="1566"/>
+     </cs>
+     <dep c="0.960" dest="120" destLc="adj" role="head" src="m/s" srcLc="noun"/>
+    </frag>
+   </sent>
+   <sent len="9" so="1569">
+    <frag cccfmp="0.249" cccmp="0.141" ccfmp="0.130" len="6" so="1569">
+     <txt>HJ-73 Hongjian Red Arrow</txt>
+     <cs len="6" pb="1.000" pc="0.903" sk="HJ-73_Hongjian_Red_Arrow/C1329" so="1569">
+      <fs len="6" pb="1.000" pc="0.903" sk="HJ-73_Hongjian_Red_Arrow/N1329" so="1569"/>
+     </cs>
+    </frag>
+    <frag len="1" so="1575">
+     <txt>-</txt>
+     <lc lc="punct"/>
+    </frag>
+    <frag cccfmp="0.673" cccmp="0.605" ccfmp="0.518" len="1" so="1576">
+     <txt>73 </txt>
+     <cs pb="1.000" pc="0.711" sk="73/C1" so="1576">
+      <fs pb="0.500" pc="0.986" sk="73/J1" so="1576"/>
+      <fs pb="0.500" pc="0.986" sk="73/N1" so="1576"/>
+     </cs>
+    </frag>
+    <frag cccfmp="0.929" cccmp="0.828" ccfmp="0.855" len="1" so="1577">
+     <txt>China </txt>
+     <cs pb="1.000" pc="1.000" sk="China/C12" so="1577">
+      <fs pb="1.000" pc="1.000" sk="China/N1" so="1577"/>
+     </cs>
+    </frag>
+   </sent>
+   <sent len="8" so="1578">
+    <frag cccfmp="0.633" cccmp="0.550" ccfmp="0.550" len="4" so="1578" sol="1">
+     <txt>HJ-73 MCLOS </txt>
+     <cs len="4" pb="1.000" pc="0.903" sk="HJ-73_MCLOS/C1329" so="1578">
+      <fs len="4" pb="1.000" pc="0.903" sk="HJ-73_MCLOS/N1329" so="1578"/>
+     </cs>
+     <dep c="0.878" dest="entered" destLc="verb" role="argument" src="HJ-73 MCLOS" srcLc="noun" type="agent"/>
+    </frag>
+    <frag cccfmp="0.454" cccmp="0.369" ccfmp="0.262" len="1" so="1582">
+     <txt>entered </txt>
+     <cs pb="1.000" pc="0.653" sk="enter/C1" so="1582">
+      <fs pb="1.000" pc="0.582" sk="enter/V1" so="1582"/>
+     </cs>
+     <dep c="0.878" dest="HJ-73 MCLOS" destLc="noun" role="predicate" src="entered" srcLc="verb" type="agent"/>
+     <dep c="0.956" dest="service" destLc="noun" role="predicate" src="entered" srcLc="verb" type="theme"/>
+     <dep c="0.842" dest="1979" destLc="noun" role="lnkParent" src="entered" srcLc="verb"/>
+    </frag>
+    <frag cccfmp="0.495" cccmp="0.557" ccfmp="0.491" len="1" so="1583">
+     <txt>service </txt>
+     <cs pb="1.000" pc="0.923" sk="serve/C5" so="1583">
+      <fs pb="1.000" pc="0.868" sk="service/N1" so="1583"/>
+     </cs>
+     <dep c="0.956" dest="entered" destLc="verb" role="argument" src="service" srcLc="noun" type="theme"/>
+    </frag>
+    <frag len="1" so="1584">
+     <txt>in </txt>
+     <lc lc="prep" pc="0.939"/>
+    </frag>
+    <frag cccfmp="0.848" cccmp="0.686" ccfmp="0.856" len="1" so="1585">
+     <txt>1979 </txt>
+     <cs pb="1.000" pc="0.952" sk="1979/C303" so="1585">
+      <fs pb="1.000" pc="0.952" sk="1979/N303" so="1585"/>
+     </cs>
+     <dep c="0.842" dest="entered" destLc="verb" role="lnkChild" src="1979" srcLc="noun"/>
+    </frag>
+   </sent>
+   <sent len="5" so="1586">
+    <frag cccfmp="0.857" cccmp="0.759" ccfmp="0.775" len="5" so="1586" sol="1">
+     <txt>HJ-73B SACLOS </txt>
+     <cs len="5" pb="1.000" pc="0.903" sk="HJ-73B_SACLOS/C1300" so="1586">
+      <fs len="5" pb="1.000" pc="0.903" sk="HJ-73B_SACLOS/N1300" so="1586"/>
+     </cs>
+    </frag>
+   </sent>
+   <sent len="13" so="1591">
+    <frag cccfmp="0.515" cccmp="0.504" ccfmp="0.501" len="5" so="1591" sol="1">
+     <txt>HJ-73C SACLOS </txt>
+     <cs len="5" pb="1.000" pc="0.903" sk="HJ-73C_SACLOS/C1300" so="1591">
+      <fs len="5" pb="1.000" pc="0.903" sk="HJ-73C_SACLOS/N1300" so="1591"/>
+     </cs>
+     <dep c="0.942" dest="stand off" destLc="noun" role="modifier" src="HJ-73C SACLOS" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.396" cccmp="0.261" ccfmp="0.375" len="2" so="1596">
+     <txt>stand off </txt>
+     <cs len="2" pb="1.000" pc="0.826" sk="stand_off/C6" so="1596">
+      <fs len="2" pb="1.000" pc="0.873" sk="stand-off/N2" so="1596"/>
+     </cs>
+     <dep c="0.942" dest="HJ-73C SACLOS" destLc="noun" role="head" src="stand off" srcLc="noun"/>
+     <dep c="0.931" dest="probe" destLc="noun" role="modifier" src="stand off" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.382" cccmp="0.380" ccfmp="0.414" len="1" so="1598">
+     <txt>probe </txt>
+     <cs pb="1.000" pc="0.548" sk="probe/C1" so="1598">
+      <fs pb="1.000" pc="0.782" sk="probe/N1" so="1598"/>
+     </cs>
+     <dep c="0.931" dest="stand off" destLc="noun" role="head" src="probe" srcLc="noun"/>
+     <dep c="0.663" dest="capability" destLc="noun" role="lnkParent" src="probe" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1599">
+     <txt>for </txt>
+     <lc lc="prep" pc="0.998"/>
+    </frag>
+    <frag cccfmp="0.816" cccmp="0.943" ccfmp="0.885" len="1" so="1600">
+     <txt>improved </txt>
+     <cs pb="1.000" pc="0.963" sk="improve/C1" so="1600">
+      <fs pb="1.000" pc="0.994" sk="improved/J2" so="1600"/>
+     </cs>
+     <dep c="0.953" dest="capability" destLc="noun" role="modifier" src="improved" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.564" cccmp="0.496" ccfmp="0.521" len="1" so="1601">
+     <txt>capability </txt>
+     <cs pb="1.000" pc="0.986" sk="capable/C1" so="1601">
+      <fs pb="1.000" pc="0.870" sk="capability/N1" so="1601"/>
+     </cs>
+     <dep c="0.663" dest="probe" destLc="noun" role="lnkChild" src="capability" srcLc="noun"/>
+     <dep c="0.953" dest="improved" destLc="adj" role="head" src="capability" srcLc="noun"/>
+     <dep c="0.817" dest="ERA" destLc="noun" role="lnkParent" src="capability" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1602">
+     <txt>against </txt>
+     <lc lc="prep"/>
+    </frag>
+    <frag cccfmp="0.568" cccmp="0.678" ccfmp="0.687" len="1" so="1603">
+     <txt>ERA </txt>
+     <cs pb="1.000" pc="0.999" sk="era/C1" so="1603">
+      <fs pb="1.000" pc="0.970" sk="era/N1" so="1603"/>
+     </cs>
+     <dep c="0.817" dest="capability" destLc="noun" role="lnkChild" src="ERA" srcLc="noun"/>
+    </frag>
+   </sent>
+   <sent len="2" so="1604">
+    <frag cccfmp="0.372" cccmp="0.260" ccfmp="0.269" len="1" so="1604">
+     <txt>RAAD </txt>
+     <cs pb="1.000" pc="0.903" sk="RAAD/C4" so="1604">
+      <fs pb="1.000" pc="0.903" sk="RAAD/N4" so="1604"/>
+     </cs>
+     <dep c="0.940" dest="Iran" destLc="noun" role="modifier" src="RAAD" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.885" cccmp="0.815" ccfmp="0.784" len="1" so="1605">
+     <txt>Iran </txt>
+     <cs pb="1.000" pc="1.000" sk="Iran/C1" so="1605">
+      <fs pb="1.000" pc="1.000" sk="Iran/N1" so="1605"/>
+     </cs>
+     <dep c="0.940" dest="RAAD" destLc="noun" role="head" src="Iran" srcLc="noun"/>
+    </frag>
+   </sent>
+   <sent len="1" so="1606">
+    <frag cccfmp="0.774" cccmp="0.612" ccfmp="0.678" len="1" so="1606" sol="1">
+     <txt>RAAD </txt>
+     <cs pb="1.000" pc="0.863" sk="RAAD/C4" so="1606">
+      <fs pb="1.000" pc="0.958" sk="RAAD/N4" so="1606"/>
+     </cs>
+    </frag>
+   </sent>
+   <sent len="11" so="1607">
+    <frag len="1" so="1607" sol="1">
+     <txt>I</txt>
+     <lc lc="pronoun"/>
+    </frag>
+    <frag len="1" so="1608">
+     <txt>-</txt>
+     <lc lc="punct"/>
+    </frag>
+    <frag cccfmp="0.491" cccmp="0.406" ccfmp="0.469" len="1" so="1609">
+     <txt>RAAD </txt>
+     <cs pb="1.000" pc="0.903" sk="RAAD/C4" so="1609">
+      <fs pb="1.000" pc="0.903" sk="RAAD/N4" so="1609"/>
+     </cs>
+    </frag>
+    <frag cccfmp="0.279" cccmp="0.343" ccfmp="0.492" len="2" so="1610">
+     <txt>stand off </txt>
+     <cs len="2" pb="1.000" pc="0.915" sk="stand_off/C6" so="1610">
+      <fs len="2" pb="1.000" pc="0.841" sk="stand-off/N2" so="1610"/>
+     </cs>
+     <dep c="0.928" dest="probe" destLc="noun" role="modifier" src="stand off" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.408" cccmp="0.343" ccfmp="0.416" len="1" so="1612">
+     <txt>probe </txt>
+     <cs pb="1.000" pc="0.684" sk="probe/C1" so="1612">
+      <fs pb="1.000" pc="0.867" sk="probe/N1" so="1612"/>
+     </cs>
+     <dep c="0.928" dest="stand off" destLc="noun" role="head" src="probe" srcLc="noun"/>
+     <dep c="0.663" dest="capability" destLc="noun" role="lnkParent" src="probe" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1613">
+     <txt>for </txt>
+     <lc lc="prep" pc="0.998"/>
+    </frag>
+    <frag cccfmp="0.846" cccmp="0.974" ccfmp="0.913" len="1" so="1614">
+     <txt>improved </txt>
+     <cs pb="1.000" pc="0.963" sk="improve/C1" so="1614">
+      <fs pb="1.000" pc="0.993" sk="improved/J2" so="1614"/>
+     </cs>
+     <dep c="0.953" dest="capability" destLc="noun" role="modifier" src="improved" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.589" cccmp="0.539" ccfmp="0.536" len="1" so="1615">
+     <txt>capability </txt>
+     <cs pb="1.000" pc="0.972" sk="capable/C1" so="1615">
+      <fs pb="1.000" pc="0.892" sk="capability/N1" so="1615"/>
+     </cs>
+     <dep c="0.663" dest="probe" destLc="noun" role="lnkChild" src="capability" srcLc="noun"/>
+     <dep c="0.953" dest="improved" destLc="adj" role="head" src="capability" srcLc="noun"/>
+     <dep c="0.817" dest="ERA" destLc="noun" role="lnkParent" src="capability" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1616">
+     <txt>against </txt>
+     <lc lc="prep"/>
+    </frag>
+    <frag cccfmp="0.486" cccmp="0.670" ccfmp="0.562" len="1" so="1617">
+     <txt>ERA </txt>
+     <cs pb="1.000" pc="0.997" sk="era/C1" so="1617">
+      <fs pb="1.000" pc="0.958" sk="era/N1" so="1617"/>
+     </cs>
+     <dep c="0.817" dest="capability" destLc="noun" role="lnkChild" src="ERA" srcLc="noun"/>
+    </frag>
+   </sent>
+   <sent len="5" so="1618">
+    <frag cccfmp="0.254" cccmp="0.192" ccfmp="0.283" len="3" so="1618" sol="1">
+     <txt>Susong-Po </txt>
+     <cs len="3" pb="1.000" pc="0.728" sk="Susong-Po/C1329" so="1618">
+      <fs len="3" pb="1.000" pc="0.675" sk="Susong-Po/N1329" so="1618"/>
+     </cs>
+     <dep c="0.981" dest="North Korean" destLc="noun" role="modifier" src="Susong-Po" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.746" cccmp="0.788" ccfmp="0.463" len="2" so="1621">
+     <txt>North Korean </txt>
+     <cs len="2" pb="1.000" pc="0.917" sk="North_Korea/C1" so="1621">
+      <fs len="2" pb="0.917" pc="0.966" sk="North_Korean/J1" so="1621"/>
+      <fs len="2" pb="0.083" pc="0.966" sk="North_Korean/N1" so="1621"/>
+     </cs>
+     <dep c="0.981" dest="Susong-Po" destLc="noun" role="head" src="North Korean" srcLc="noun"/>
+    </frag>
+   </sent>
+   <sent len="25" so="1623">
+    <frag len="1" so="1623" sol="1">
+     <txt>Maliutka </txt>
+     <cs pb="1.000" pc="0.000" sk="unk" so="1623">
+      <fs lc="noun" pb="1.000" pc="0.000" sk="unk" so="1623"/>
+     </cs>
+     <dep c="0.875" dest="M2T" destLc="noun" role="modifier" src="Maliutka" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1624">
+     <txt>M2T </txt>
+     <cs pb="1.000" pc="0.000" sk="unk" so="1624">
+      <fs lc="noun" pb="1.000" pc="0.000" sk="unk" so="1624"/>
+     </cs>
+     <dep c="0.875" dest="Maliutka" destLc="noun" role="head" src="M2T" srcLc="noun"/>
+     <dep c="0.852" dest="Romania" destLc="noun" role="modifier" src="M2T" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.734" cccmp="0.604" ccfmp="0.764" len="1" so="1625">
+     <txt>Romania</txt>
+     <cs pb="1.000" pc="1.000" sk="Romania/C1" so="1625">
+      <fs pb="1.000" pc="1.000" sk="Romania/N1" so="1625"/>
+     </cs>
+     <dep c="0.852" dest="M2T" destLc="noun" role="head" src="Romania" srcLc="noun"/>
+     <dep c="0.999" dest="uses" destLc="verb" role="argument" src="Romania" srcLc="noun" type="agent"/>
+    </frag>
+    <frag len="1" so="1626">
+     <txt>, </txt>
+     <lc lc="punct"/>
+    </frag>
+    <frag cccfmp="0.481" cccmp="0.449" ccfmp="0.477" len="1" so="1627">
+     <txt>joint </txt>
+     <cs pb="1.000" pc="0.895" sk="joint/C1" so="1627">
+      <fs pb="1.000" pc="0.811" sk="joint/J1" so="1627"/>
+     </cs>
+     <dep c="0.751" dest="ELMEC" destLc="noun" role="modifier" src="joint" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.543" cccmp="0.439" ccfmp="0.443" len="1" so="1628">
+     <txt>ELMEC </txt>
+     <cs pb="1.000" pc="0.889" sk="Elmec/C1100" so="1628">
+      <fs pb="1.000" pc="0.783" sk="Elmec/N1100" so="1628"/>
+     </cs>
+     <dep c="0.751" dest="joint" destLc="adj" role="head" src="ELMEC" srcLc="noun"/>
+     <dep c="0.396" dest="project" destLc="noun" role="peerLeft" src="ELMEC" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1629">
+     <txt>and </txt>
+     <lc lc="conj"/>
+    </frag>
+    <frag cccfmp="0.758" cccmp="0.701" ccfmp="0.784" len="1" so="1630">
+     <txt>Euromissile </txt>
+     <cs pb="1.000" pc="1.000" sk="MBDA/C1" so="1630">
+      <fs pb="1.000" pc="1.000" sk="MBDA/N8" so="1630"/>
+     </cs>
+     <dep c="0.706" dest="project" destLc="noun" role="modifier" src="Euromissile" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.893" cccmp="0.966" ccfmp="0.851" len="1" so="1631">
+     <txt>project</txt>
+     <cs pb="1.000" pc="0.964" sk="project/C1" so="1631">
+      <fs pb="1.000" pc="0.986" sk="project/N1" so="1631"/>
+     </cs>
+     <dep c="0.396" dest="ELMEC" destLc="noun" role="peerRight" src="project" srcLc="noun"/>
+     <dep c="0.706" dest="Euromissile" destLc="noun" role="head" src="project" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1632">
+     <txt>, </txt>
+     <lc lc="punct"/>
+    </frag>
+    <frag cccfmp="0.551" cccmp="0.644" ccfmp="0.585" len="1" so="1633">
+     <txt>uses </txt>
+     <cs pb="1.000" pc="0.946" sk="use/C9" so="1633">
+      <fs pb="1.000" pc="0.986" sk="use/V1" so="1633"/>
+     </cs>
+     <dep c="0.999" dest="Romania" destLc="noun" role="predicate" src="uses" srcLc="verb" type="agent"/>
+     <dep c="0.291" dest="warhead" destLc="noun" role="predicate" src="uses" srcLc="verb" type="theme"/>
+    </frag>
+    <frag cccfmp="0.751" cccmp="0.681" ccfmp="0.743" len="3" so="1634">
+     <txt>MILAN 2T </txt>
+     <cs len="3" pb="1.000" pc="1.000" sk="MILAN/C13" so="1634">
+      <fs len="3" pb="1.000" pc="1.000" sk="MILAN/N30" so="1634"/>
+     </cs>
+     <dep c="0.554" dest="tandem" destLc="noun" role="modifier" src="MILAN 2T" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.537" cccmp="0.539" ccfmp="0.547" len="1" so="1637">
+     <txt>tandem </txt>
+     <cs pb="1.000" pc="0.975" sk="tandem/C2" so="1637">
+      <fs pb="1.000" pc="0.975" sk="tandem/N1" so="1637"/>
+     </cs>
+     <dep c="0.554" dest="MILAN 2T" destLc="noun" role="head" src="tandem" srcLc="noun"/>
+     <dep c="0.601" dest="warhead" destLc="noun" role="modifier" src="tandem" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.639" cccmp="0.620" ccfmp="0.681" len="1" so="1638">
+     <txt>warhead </txt>
+     <cs pb="1.000" pc="0.975" sk="warhead/C1" so="1638">
+      <fs pb="1.000" pc="0.975" sk="warhead/N1" so="1638"/>
+     </cs>
+     <dep c="0.291" dest="uses" destLc="verb" role="argument" src="warhead" srcLc="noun" type="theme"/>
+     <dep c="0.601" dest="tandem" destLc="noun" role="head" src="warhead" srcLc="noun"/>
+     <dep c="0.656" dest="capable of" destLc="adj" role="head" src="warhead" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.534" cccmp="0.518" ccfmp="0.530" len="2" so="1639">
+     <txt>capable of </txt>
+     <cs len="2" pb="1.000" pc="0.967" sk="capable_of/C1" so="1639">
+      <fs len="2" pb="1.000" pc="0.864" sk="capable_of/J1" so="1639"/>
+     </cs>
+     <dep c="0.656" dest="warhead" destLc="noun" role="modifier" src="capable of" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.652" cccmp="0.822" ccfmp="0.758" len="1" so="1641">
+     <txt>defeating </txt>
+     <cs pb="1.000" pc="0.971" sk="defeat/C1" so="1641">
+      <fs pb="1.000" pc="0.960" sk="defeat/V1" so="1641"/>
+     </cs>
+    </frag>
+    <frag len="1" so="1642">
+     <txt>~</txt>
+     <lc lc="punct"/>
+    </frag>
+    <frag cccfmp="0.744" cccmp="0.610" ccfmp="0.655" len="1" so="1643">
+     <txt>900</txt>
+     <cs pb="1.000" pc="0.913" sk="900/C2104" so="1643">
+      <fs pb="1.000" pc="0.913" sk="900/J2104" so="1643"/>
+     </cs>
+     <dep c="0.815" dest="mm" destLc="noun" role="modifier" src="900" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.679" cccmp="0.663" ccfmp="0.695" len="1" so="1644">
+     <txt>mm </txt>
+     <cs pb="1.000" pc="0.975" sk="mm/C1" so="1644">
+      <fs pb="1.000" pc="0.975" sk="mm/N1" so="1644"/>
+     </cs>
+     <dep c="0.815" dest="900" destLc="adj" role="head" src="mm" srcLc="noun"/>
+     <dep c="0.564" dest="RHA" destLc="noun" role="lnkParent" src="mm" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1645">
+     <txt>of </txt>
+     <lc lc="prep"/>
+    </frag>
+    <frag cccfmp="0.159" cccmp="0.273" ccfmp="0.316" len="1" so="1646">
+     <txt>RHA</txt>
+     <cs pb="1.000" pc="0.627" sk="Rha/C1000" so="1646">
+      <fs pb="1.000" pc="0.470" sk="Rha/N1000" so="1646"/>
+     </cs>
+     <dep c="0.564" dest="mm" destLc="noun" role="lnkChild" src="RHA" srcLc="noun"/>
+    </frag>
+    <frag len="1" so="1647">
+     <txt>. </txt>
+     <lc lc="punct"/>
+    </frag>
+   </sent>
+   <sent len="9" so="1648">
+    <frag len="1" so="1648" sol="1">
+     <txt>POLK </txt>
+     <cs pb="1.000" pc="0.000" sk="unk" so="1648">
+      <fs lc="noun" pb="1.000" pc="0.000" sk="unk" so="1648"/>
+     </cs>
+     <dep c="0.516" dest="Slovenia" destLc="noun" role="modifier" src="POLK" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.876" cccmp="0.665" ccfmp="0.841" len="1" so="1649">
+     <txt>Slovenia </txt>
+     <cs pb="1.000" pc="1.000" sk="Slovene/C3" so="1649">
+      <fs pb="1.000" pc="1.000" sk="Slovenia/N1" so="1649"/>
+     </cs>
+     <dep c="0.516" dest="POLK" destLc="noun" role="head" src="Slovenia" srcLc="noun"/>
+     <dep c="0.683" dest="based" destLc="verb" role="argument" src="Slovenia" srcLc="noun" type="theme"/>
+    </frag>
+    <frag cccfmp="0.931" cccmp="0.925" ccfmp="0.846" len="1" so="1650">
+     <txt>based </txt>
+     <cs pb="1.000" pc="0.999" sk="base/C1" so="1650">
+      <fs pb="1.000" pc="0.998" sk="base/V1" so="1650"/>
+     </cs>
+     <dep c="0.683" dest="Slovenia" destLc="noun" role="predicate" src="based" srcLc="verb" type="theme"/>
+     <dep c="0.773" dest="AT-3C" destLc="noun" role="lnkParent" src="based" srcLc="verb"/>
+    </frag>
+    <frag len="1" so="1651">
+     <txt>on </txt>
+     <lc lc="prep"/>
+    </frag>
+    <frag len="1" so="1652">
+     <txt>the </txt>
+     <lc lc="det"/>
+    </frag>
+    <frag cccfmp="0.423" cccmp="0.448" ccfmp="0.437" len="4" so="1653">
+     <txt>AT-3C </txt>
+     <cs len="4" pb="1.000" pc="0.903" sk="AT-3C/C1300" so="1653">
+      <fs len="4" pb="1.000" pc="0.903" sk="AT-3C/N1300" so="1653"/>
+     </cs>
+     <dep c="0.773" dest="based" destLc="verb" role="lnkChild" src="AT-3C" srcLc="noun"/>
+    </frag>
+   </sent>
+   <sent len="4" so="1657">
+    <frag cccfmp="0.444" cccmp="0.413" ccfmp="0.552" len="2" so="1657" sol="1">
+     <txt>Kun Wu </txt>
+     <cs len="2" pb="1.000" pc="0.903" sk="Kun_Wu/C100" so="1657">
+      <fs len="2" pb="1.000" pc="0.903" sk="Kun_Wu/N100" so="1657"/>
+     </cs>
+     <dep c="0.901" dest="1" destLc="adj" role="head" src="Kun Wu" srcLc="noun"/>
+    </frag>
+    <frag cccfmp="0.437" cccmp="0.778" ccfmp="0.402" len="1" so="1659">
+     <txt>1 </txt>
+     <cs pb="1.000" pc="0.493" sk="1/C1" so="1659">
+      <fs pb="0.500" pc="0.986" sk="1/N1" so="1659"/>
+      <fs pb="0.500" pc="0.986" sk="1/J1" so="1659"/>
+     </cs>
+     <dep c="0.901" dest="Kun Wu" destLc="noun" role="modifier" src="1" srcLc="adj"/>
+    </frag>
+    <frag cccfmp="0.909" cccmp="0.802" ccfmp="0.758" len="1" so="1660">
+     <txt>Taiwan </txt>
+     <cs pb="1.000" pc="1.000" sk="Taiwan/C1" so="1660">
+      <fs pb="1.000" pc="1.000" sk="Taiwan/N1" so="1660"/>
+     </cs>
+    </frag>
+   </sent>
+  </para>
+
+ </doc>
+</docs>

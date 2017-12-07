@@ -27,10 +27,10 @@ public class NERParsers {
     private Map<String, NERParser> parsers = null;
 
     public NERParsers() {
-        parsers = new HashMap<String, NERParser>();
+        parsers = new HashMap<>();
         // supported languages
-        parsers.put("en", new NEREnParser());
-        parsers.put("fr", new NERFrParser());
+        parsers.put(Language.EN, new NEREnParser());
+        parsers.put(Language.FR, new NERFrParser());
     }
 
     /**
