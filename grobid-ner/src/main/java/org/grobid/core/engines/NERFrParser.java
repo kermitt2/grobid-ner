@@ -9,7 +9,6 @@ import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.lexicon.LexiconPositionsIndexes;
 import org.grobid.core.utilities.Pair;
 import org.grobid.core.layout.LayoutToken;
-import org.grobid.core.utilities.LayoutTokensUtil;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,9 +27,11 @@ public class NERFrParser extends AbstractParser implements NERParser {
     private static Logger LOGGER = LoggerFactory.getLogger(NERFrParser.class);
 
     protected Lexicon lexicon = Lexicon.getInstance();
+    private final NERParserCommon nerParserCommon;
 
     public NERFrParser() {
         super(GrobidModels.ENTITIES_NERFR);
+        nerParserCommon = new NERParserCommon();
     }
 
     /**
@@ -45,19 +46,9 @@ public class NERFrParser extends AbstractParser implements NERParser {
         } catch(Exception e) {
             LOGGER.error("Tokenization failed", e);
         }
-        if (tokens == null)
-            return null;
 
-        LexiconPositionsIndexes positionsIndexes = new LexiconPositionsIndexes(lexicon);
-        positionsIndexes.computeIndexes(tokens);
+        return extractNE(tokens);
 
-        String res = NERParserCommon.toFeatureVectorLayout(tokens, positionsIndexes);
-        String result = label(res);
-        List<Pair<String, String>> labeled = GenericTaggerUtils.getTokensAndLabels(result);
-
-        List<Entity> entities = NERParserCommon.resultExtraction(text, labeled, tokens);
-
-        return entities;
     }
 
     /**
@@ -75,9 +66,15 @@ public class NERFrParser extends AbstractParser implements NERParser {
 
         String res = NERParserCommon.toFeatureVectorLayout(tokens, positionsIndexes);
         String result = label(res);
-        List<Pair<String, String>> labeled = GenericTaggerUtils.getTokensAndLabels(result);
+        //List<Pair<String, String>> labeled = GenericTaggerUtils.getTokensAndLabels(result);
 
-        List<Entity> entities = NERParserCommon.resultExtraction(LayoutTokensUtil.toText(tokens), labeled, tokens);
+        //String text = LayoutTokensUtil.toText(tokens);
+        List<Entity> entities = nerParserCommon.resultExtraction(GrobidModels.ENTITIES_NERFR, result, tokens);
+
+        // we use now the sense tagger for the recognized named entity
+        //List<Sense> senses = senseTagger.extractSenses(labeled, tokens, positionsIndexes);
+
+        //NERParserCommon.merge(entities, senses);
 
         return entities;
     }

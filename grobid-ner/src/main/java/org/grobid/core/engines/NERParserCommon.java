@@ -1,5 +1,6 @@
 package org.grobid.core.engines;
 
+import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.io.FileUtils;
 import org.grobid.core.GrobidModels;
 import org.grobid.core.data.Entity;
@@ -13,6 +14,7 @@ import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.lexicon.LexiconPositionsIndexes;
 import org.grobid.core.lexicon.NERLexicon;
 import org.grobid.core.lang.Language;
+import org.grobid.core.tokenization.LabeledTokensContainer;
 import org.grobid.core.utilities.Pair;
 import org.grobid.core.utilities.LanguageUtilities;
 import org.grobid.core.utilities.TextUtilities;
@@ -83,7 +85,7 @@ public class NERParserCommon {
         return ress.toString();
     }*/
 
-    static public String toFeatureVectorLayout(List<LayoutToken> tokens, LexiconPositionsIndexes positionsIndexes) {
+    public static String toFeatureVectorLayout(List<LayoutToken> tokens, LexiconPositionsIndexes positionsIndexes) {
         StringBuffer ress = new StringBuffer();
         int posit = 0; // keep track of the position index in the list of positions
 
@@ -143,11 +145,9 @@ public class NERParserCommon {
 
     /**
      * Extract the named entities from a labelled sequence of LayoutToken.
-     * This version use the new Clusteror class. 
+     * This version use the new Clusteror class.
      */
-    public static List<Entity> resultExtraction(GrobidModels model, 
-                                        String result,
-                                        List<LayoutToken> tokenizations) {
+    public List<Entity> resultExtraction(GrobidModels model, String result, List<LayoutToken> tokenizations) {
 
         List<Entity> entities = new ArrayList<Entity>();
 
@@ -168,22 +168,33 @@ public class NERParserCommon {
             String clusterContent = LayoutTokensUtil.normalizeText(LayoutTokensUtil.toText(cluster.concatTokens()));
             currentEntity = new Entity();
             currentEntity.setRawName(clusterContent);
-            currentEntity.setTypeFromString(NERLexicon.getPlainLabel(clusterLabel.getLabel()));
-            //currentEntity.setStartTokenPos();
-            //currentEntity.setEndTokenPos();
+            currentEntity.setTypeFromString(GenericTaggerUtils.getPlainLabel(clusterLabel.getLabel()));
             currentEntity.setBoundingBoxes(BoundingBoxCalculator.calculate(cluster.concatTokens()));
+            currentEntity.setOffsets(calculateOffsets(cluster));
             entities.add(currentEntity);
-
-            /*else {
-                LOGGER.error("Warning: unexpected figure model label - " + clusterLabel + " for " + clusterContent);
-            }*/
         }
 
         return entities;
     }
 
+    private OffsetPosition calculateOffsets(TaggingTokenCluster cluster) {
+        final List<LabeledTokensContainer> labeledTokensContainers = cluster.getLabeledTokensContainers();
+        if (CollectionUtils.isEmpty(labeledTokensContainers) || CollectionUtils.isEmpty(labeledTokensContainers.get(0).getLayoutTokens())) {
+            return new OffsetPosition();
+        } else {
+            final LabeledTokensContainer labeledTokensContainer = labeledTokensContainers.get(0);
+            final List<LayoutToken> layoutTokens = labeledTokensContainer.getLayoutTokens();
+
+            int start = layoutTokens.get(0).getOffset();
+            int end = start + LayoutTokensUtil.normalizeText(LayoutTokensUtil.toText(cluster.concatTokens())).length();
+
+            return new OffsetPosition(start, end);
+        }
+    }
     /**
      * Extract the named entities from a labelled text.
+     * Use the new method using the clusteror List
+     *      resultExtraction(GrobidModels model, String result, List<LayoutToken> tokenizations)
      */
     public static List<Entity> resultExtraction(String text,
                                          List<Pair<String, String>> labeled,
@@ -324,8 +335,8 @@ public class NERParserCommon {
         return sb;
     }
 
-    static public StringBuilder createTrainingText(File file, NERParser parser, String lang, AbstractTokenizer tokenizer, StringBuilder sb) throws IOException {
-        String text = FileUtils.readFileToString(file);
+    public static StringBuilder createTrainingText(File file, NERParser parser, String lang, AbstractTokenizer tokenizer, StringBuilder sb) throws IOException {
+        String text = FileUtils.readFileToString(file, "UTF-8");
 
         if (isEmpty(text))
             return null;
