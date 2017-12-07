@@ -1,7 +1,7 @@
 import os
 import sys
 import xml.etree.ElementTree as ET
-
+from glob import glob
 
 def main(args):
     if len(args) != 1:
@@ -10,7 +10,8 @@ def main(args):
         sys.exit(-1)
 
     try:
-        files = os.listdir(args[0])
+        #files = os.listdir(args[0])
+        files = [y for x in os.walk(args[0]) for y in glob(os.path.join(x[0], '*.xml'))]
     except:
         print("path not found (be sure to put an absolute path)")
         sys.exit()
@@ -18,7 +19,7 @@ def main(args):
     frequencies = {}
     for file in files:
         enamex = []
-        absPath = args[0] + os.sep + file
+        absPath = file
         print("parsing " + absPath)
         try:
             root = ET.ElementTree().parse(absPath)
