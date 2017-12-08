@@ -3,6 +3,7 @@ import sys
 import xml.etree.ElementTree as ET
 from glob import glob
 
+
 def main(args):
     if len(args) != 1:
         print("1 argument needed")
@@ -10,7 +11,7 @@ def main(args):
         sys.exit(-1)
 
     try:
-        #files = os.listdir(args[0])
+        # files = os.listdir(args[0])
         files = [y for x in os.walk(args[0]) for y in glob(os.path.join(x[0], '*.xml'))]
     except:
         print("path not found (be sure to put an absolute path)")
@@ -39,7 +40,13 @@ def main(args):
             else:
                 frequencies[nerClass] = 1
 
-    print(frequencies)
+    sortedFrequencies = [(k, frequencies[k]) for k in sorted(frequencies, key=frequencies.get, reverse=True)]
+
+    print("{")
+    for ner in sortedFrequencies:
+        print("\t\"" + str(ner[0]) + "\": " + str(ner[1]))
+
+    print("}")
 
 
 if __name__ == "__main__":
