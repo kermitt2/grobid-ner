@@ -44,7 +44,7 @@ public class SemDocIdilliaAssembler {
             idiliaPath = prop.getProperty("grobid.ner.wikipedia.idilia_path");
 
             if (!new File(idiliaPath).exists()) {
-                throw new FileNotFoundException("Cannot read from the idillia path specified in option grobid.ner.wikipedia.idilia_path the grobid-ner.properties");
+                throw new FileNotFoundException("Th path " + idiliaPath + " doesn't exists or cannot be read. The path is specified in property grobid.ner.wikipedia.idilia_path in the grobid-ner.properties file. ");
             }
         } catch (IOException ex) {
             throw new GrobidException("Cannot initialise the semdoc idillia assembler", ex);
