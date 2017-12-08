@@ -154,7 +154,7 @@ public class MultiDatesCorpusStaxHandler implements StaxParserContentHandler {
             periods.add(currentPeriod);
             currentPeriod = null;
             currentTag = DATE_OTHER_LABEL;
-            data.add(new Pair("@newline", null));
+            data.add(new Pair<>("@newline", null));
         } else if ("date".equals(localName)) {
             inDateTag = false;
             currentDate = null;

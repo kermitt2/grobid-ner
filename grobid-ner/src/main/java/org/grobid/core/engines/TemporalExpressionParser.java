@@ -142,7 +142,7 @@ public class TemporalExpressionParser extends AbstractParser {
     }
 
     protected List<LayoutToken> toLayoutToken(List<String> tokenizedInput) {
-        List<LayoutToken> layoutTokens = new ArrayList();
+        List<LayoutToken> layoutTokens = new ArrayList<>();
 
         if (tokenizedInput.size() == 0)
             return layoutTokens;
