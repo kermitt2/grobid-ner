@@ -4,6 +4,7 @@ import com.ctc.wstx.stax.WstxInputFactory;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.io.filefilter.SuffixFileFilter;
+import org.apache.commons.lang3.StringUtils;
 import org.codehaus.stax2.XMLStreamReader2;
 import org.grobid.core.GrobidModels;
 import org.grobid.core.analyzers.GrobidAnalyzer;
@@ -89,8 +90,12 @@ public class NEREnglishTrainer extends AbstractTrainer {
      * @return the total number of used corpus items
      */
     @Override
-    public int createCRFPPData(final File corpusDir, final File trainingOutputPath,
+    public int createCRFPPData(File corpusDir, final File trainingOutputPath,
                                final File evalOutputPath, double splitRatio) {
+
+        if(StringUtils.isNotBlank(nerCorpusPath)) {
+            corpusDir = new File(nerCorpusPath);
+        }
         int totalExamples = 0;
         Writer trainingOutputWriter = null;
         Writer evaluationOutputWriter = null;
