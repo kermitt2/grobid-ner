@@ -3,6 +3,7 @@ package org.grobid.trainer;
 import com.ctc.wstx.stax.WstxInputFactory;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
+import org.apache.commons.io.filefilter.DirectoryFileFilter;
 import org.apache.commons.io.filefilter.SuffixFileFilter;
 import org.apache.commons.lang3.StringUtils;
 import org.codehaus.stax2.XMLStreamReader2;
@@ -93,7 +94,7 @@ public class NEREnglishTrainer extends AbstractTrainer {
     public int createCRFPPData(File corpusDir, final File trainingOutputPath,
                                final File evalOutputPath, double splitRatio) {
 
-        if(StringUtils.isNotBlank(nerCorpusPath)) {
+        if (StringUtils.isNotBlank(nerCorpusPath)) {
             corpusDir = new File(nerCorpusPath);
         }
         int totalExamples = 0;
@@ -140,7 +141,7 @@ public class NEREnglishTrainer extends AbstractTrainer {
         Writer writer = null;
         try {
             Collection<File> trainingFiles = FileUtils.listFiles(new File(corpusPath),
-                    new SuffixFileFilter("training.xml"), null);
+                    new SuffixFileFilter("training.xml"), DirectoryFileFilter.INSTANCE);
 
 
             for (File trainingFile : trainingFiles) {

@@ -54,6 +54,8 @@ find ./ -type f -name *.xml -exec egrep --color  'PERIOD">[0-9A-Za-z ,-\.]+<\/EN
 echo "Modifying PERIODs intervals like 'from date1 to date2'"
 find ./ -type f -name *.xml -exec sed -r -i -- 's/([fF]rom )(<ENAMEX type="PERIOD">)([0-9A-Za-z ,-\.]+)(<\/ENAMEX>)([to ]{4})(<ENAMEX type="PERIOD">)/\2\1\3\5/g' {} \;
 
+echo "Counting how many are left"
+find ./ -type f -name *.xml -exec egrep --color '[fF]rom <ENAMEX type="PERIOD">[0-9A-Za-z ,-\.]+<\/ENAMEX>[to ]{4}<ENAMEX type="PERIOD">' {} \; | wc -l
 
 ## Check for '$date1 to $date2'
 # egrep --color  'PERIOD">\w+<\/ENAMEX>[to ]{3,4}<ENAMEX type="PERIOD"' *.xml
@@ -61,6 +63,9 @@ find ./ -type f -name *.xml -exec sed -r -i -- 's/([fF]rom )(<ENAMEX type="PERIO
 
 echo "Modifying PERIODs intervals like 'date1 to date2'"
 find ./ -type f -name *.xml -exec sed -r -i -- 's/(PERIOD">[0-9A-Za-z ,-\.]+)(<\/ENAMEX>)([to ]{3,4})(<ENAMEX type="PERIOD">)/\1\3/g' {} \;
+
+echo "Counting how many are left"
+find ./ -type f -name *.xml -exec egrep --color 'PERIOD">[0-9A-Za-z ,-\.]+<\/ENAMEX>[to ]{3,4}<ENAMEX type="PERIOD">' {} \; | wc -l
 
 ## Replace inline (general command)
 # sed -r -i -- 's/(PERIOD">)(<\/ENAMEX>)(.{1})(<ENAMEX type="PERIOD">)/\1\3/g' *.xml
