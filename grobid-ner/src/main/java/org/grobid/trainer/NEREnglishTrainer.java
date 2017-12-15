@@ -18,6 +18,7 @@ import org.grobid.core.features.FeaturesVectorNER;
 import org.grobid.core.lang.Language;
 import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.lexicon.Lexicon;
+import org.grobid.core.lexicon.NERLexicon;
 import org.grobid.core.main.GrobidHomeFinder;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.OffsetPosition;
@@ -43,6 +44,16 @@ public class NEREnglishTrainer extends AbstractTrainer {
     private WstxInputFactory inputFactory = new WstxInputFactory();
     protected Lexicon lexicon = Lexicon.getInstance();
 
+    public static final long MAX_NB_FREQUENCY_NE_CLASS_DEFAULT = 500000;
+    public static List<String> LOW_FREQUENCY_ENTITIES = Arrays.asList(
+            NERLexicon.NER_Type.ANIMAL.getName(),
+            NERLexicon.NER_Type.PLANT.getName(),
+            NERLexicon.NER_Type.SUBSTANCE.getName(),
+            NERLexicon.NER_Type.AWARD.getName()
+    );
+    Map<String, Long> frequences = new HashMap<>();
+    private long maxFrequencyNEClass = MAX_NB_FREQUENCY_NE_CLASS_DEFAULT;
+
     private String nerCorpusPath = null;
 
     public NEREnglishTrainer() {
@@ -51,8 +62,6 @@ public class NEREnglishTrainer extends AbstractTrainer {
         // adjusting CRF training parameters for this model
         epsilon = 0.000001;
         window = 20;
-
-        GrobidProperties.setNBThreads("7");
 
         // read additional properties for this sub-project to get the paths to the resources
         Properties prop = new Properties();
@@ -134,7 +143,6 @@ public class NEREnglishTrainer extends AbstractTrainer {
         return totalExamples;
     }
 
-
     private int processCorpus(String corpusPath, Writer writerTraining, Writer writerEvaluation, double splitRatio) {
 
         int res = 0;
@@ -142,7 +150,6 @@ public class NEREnglishTrainer extends AbstractTrainer {
         try {
             Collection<File> trainingFiles = FileUtils.listFiles(new File(corpusPath),
                     new SuffixFileFilter("training.xml"), DirectoryFileFilter.INSTANCE);
-
 
             for (File trainingFile : trainingFiles) {
                 System.out.println("Processing " + trainingFile.getAbsolutePath());
@@ -158,7 +165,13 @@ public class NEREnglishTrainer extends AbstractTrainer {
                     List<TrainingDocument> documents = handler.getDocuments();
 
                     for (TrainingDocument document : documents) {
+
                         for (Paragraph paragraph : document.getParagraphs()) {
+                            final Map<String, Long> entitiesFrequencies = paragraph.getEntitiesFrequencies();
+
+                            boolean excludeParagraph = balanceExamples(entitiesFrequencies);
+                            if (excludeParagraph) continue;
+
                             writer = dispatchExample(writerTraining, writerEvaluation, splitRatio);
 
                             for (Sentence sentence : paragraph.getSentences()) {
@@ -182,6 +195,33 @@ public class NEREnglishTrainer extends AbstractTrainer {
             IOUtils.closeQuietly(writer);
         }
         return res;
+    }
+
+    protected boolean balanceExamples(Map<String, Long> entitiesFrequencies) {
+        Optional<Boolean> include = Optional.empty();
+        boolean forceInclude = false;
+
+        for (Map.Entry<String, Long> entry : entitiesFrequencies.entrySet()) {
+            if (LOW_FREQUENCY_ENTITIES.contains(entry.getKey())) {
+                forceInclude = Boolean.TRUE;
+            }
+
+            frequences.putIfAbsent(entry.getKey(), entry.getValue());
+
+            if (!include.isPresent() && !forceInclude) {
+                if (frequences.get(entry.getKey()) > maxFrequencyNEClass) {
+                    include = Optional.of(Boolean.FALSE);
+                } else {
+                    include = Optional.of(Boolean.TRUE);
+                }
+            } else {
+                if (frequences.get(entry.getKey()) > maxFrequencyNEClass) {
+                    include = Optional.of(Boolean.FALSE);
+                }
+            }
+        }
+
+        return forceInclude || include.orElse(Boolean.FALSE);
     }
 
     private void computeFeatures(Sentence sentence, Writer writer) {
@@ -311,5 +351,13 @@ public class NEREnglishTrainer extends AbstractTrainer {
 
     public void setNerCorpusPath(String nerCorpusPath) {
         this.nerCorpusPath = nerCorpusPath;
+    }
+
+    public long getMaxFrequencyNEClass() {
+        return maxFrequencyNEClass;
+    }
+
+    public void setMaxFrequencyNEClass(long maxFrequencyNEClass) {
+        this.maxFrequencyNEClass = maxFrequencyNEClass;
     }
 }

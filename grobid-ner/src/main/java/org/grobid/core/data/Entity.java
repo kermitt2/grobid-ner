@@ -1,8 +1,8 @@
 package org.grobid.core.data;
 
-import org.grobid.core.utilities.OffsetPosition;
-import org.grobid.core.lexicon.NERLexicon;
 import org.grobid.core.layout.BoundingBox;
+import org.grobid.core.lexicon.NERLexicon;
+import org.grobid.core.utilities.OffsetPosition;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -74,8 +74,13 @@ public class Entity implements Comparable<Entity> {
     }
 
     public Entity(String raw) {
+        this();
         this.rawName = raw;
-        this.offsets = new OffsetPosition();
+    }
+
+    public Entity(String raw, NERLexicon.NER_Type type) {
+        this(raw);
+        this.type = type;
     }
 
     public Entity(Entity ent) {

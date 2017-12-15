@@ -1,0 +1,25 @@
+{
+        "PERSON": 452536
+        "MEASURE": 316567
+        "LOCATION": 278593
+        "PERIOD": 242636
+        "CREATION": 100600
+        "ORGANISATION": 100502
+        "UNKNOWN": 66455
+        "BUSINESS": 65068
+        "ARTIFACT": 50884
+        "INSTITUTION": 45365
+        "NATIONAL": 35583
+        "CONCEPT": 35136
+        "TITLE": 33020
+        "EVENT": 28313
+        "MEDIA": 21276
+        "INSTALLATION": 16172
+        "PERSON_TYPE": 14663
+        "CONCEPTUAL": 10196
+        "SUBSTANCE": 8768
+        "IDENTIFIER": 7203
+        "AWARD": 6185
+        "ANIMAL": 3246
+        "PLANT": 41
+}

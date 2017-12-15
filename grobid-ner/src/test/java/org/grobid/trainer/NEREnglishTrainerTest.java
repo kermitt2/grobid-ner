@@ -2,15 +2,20 @@ package org.grobid.trainer;
 
 import org.grobid.core.EngineMockTest;
 import org.grobid.core.analyzers.GrobidAnalyzer;
+import org.grobid.core.data.Entity;
+import org.grobid.core.data.Paragraph;
 import org.grobid.core.data.Sentence;
+import org.grobid.core.lexicon.NERLexicon;
 import org.grobid.core.utilities.OffsetPosition;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import static org.hamcrest.CoreMatchers.hasItems;
+import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.Matchers.hasSize;
 import static org.junit.Assert.assertThat;
 
@@ -74,6 +79,85 @@ public class NEREnglishTrainerTest extends EngineMockTest {
         List<Integer> indexes = target.offsetToIndex(sentence.getTokenisedValue(), positions);
 
         assertThat(indexes, hasSize(0));
+    }
+
+    @Test
+    public void testBalancingExamples_lowClassPresent_shouldReturnTrue() throws Exception {
+        Paragraph paragraph = new Paragraph();
+        final Sentence sentence1 = new Sentence();
+        sentence1.addEntity(new Entity("bao", NERLexicon.NER_Type.AWARD));
+        sentence1.addEntity(new Entity("miao", NERLexicon.NER_Type.AWARD));
+        sentence1.addEntity(new Entity("ciao", NERLexicon.NER_Type.PERSON_TYPE));
+        paragraph.addSentence(sentence1);
+        final Sentence sentence2 = new Sentence();
+        sentence2.addEntity(new Entity("222__bao", NERLexicon.NER_Type.PERSON_TYPE));
+        sentence2.addEntity(new Entity("222__miao", NERLexicon.NER_Type.EVENT));
+        sentence2.addEntity(new Entity("222__ciao", NERLexicon.NER_Type.PERSON_TYPE));
+        sentence2.addEntity(new Entity("223__ciao", NERLexicon.NER_Type.EVENT));
+        paragraph.addSentence(sentence2);
+
+        final Map<String, Long> entitiesFrequencies = paragraph.getEntitiesFrequencies();
+        assertThat(target.balanceExamples(entitiesFrequencies), is(true));
+    }
+
+    @Test
+    public void testBalancingExamples_noLowFrequencyClassPresent_noThreshold_shouldReturnTrue() throws Exception {
+        Paragraph paragraph = new Paragraph();
+        final Sentence sentence1_P2 = new Sentence();
+        sentence1_P2.addEntity(new Entity("bao", NERLexicon.NER_Type.PERSON_TYPE));
+        sentence1_P2.addEntity(new Entity("miao", NERLexicon.NER_Type.PERSON_TYPE));
+        sentence1_P2.addEntity(new Entity("ciao", NERLexicon.NER_Type.PERSON_TYPE));
+        paragraph.addSentence(sentence1_P2);
+        final Sentence sentence2_P2 = new Sentence();
+        sentence2_P2.addEntity(new Entity("222__bao", NERLexicon.NER_Type.PERSON_TYPE));
+        sentence2_P2.addEntity(new Entity("222__miao", NERLexicon.NER_Type.EVENT));
+        sentence2_P2.addEntity(new Entity("222__ciao", NERLexicon.NER_Type.PERSON_TYPE));
+        sentence2_P2.addEntity(new Entity("223__ciao", NERLexicon.NER_Type.EVENT));
+        paragraph.addSentence(sentence2_P2);
+
+        final Map<String, Long> entitiesFrequencies = paragraph.getEntitiesFrequencies();
+        assertThat(target.balanceExamples(entitiesFrequencies), is(true));
+    }
+
+    @Test
+    public void testBalancingExamples_noLowFrequencyClassPresent_YesThreshold_shouldReturnFalse() throws Exception {
+        target.setMaxFrequencyNEClass(2);
+        Paragraph paragraph = new Paragraph();
+        final Sentence sentence1_P2 = new Sentence();
+        sentence1_P2.addEntity(new Entity("bao", NERLexicon.NER_Type.PERSON_TYPE));
+        sentence1_P2.addEntity(new Entity("miao", NERLexicon.NER_Type.PERSON_TYPE));
+        sentence1_P2.addEntity(new Entity("ciao", NERLexicon.NER_Type.PERSON_TYPE));
+        paragraph.addSentence(sentence1_P2);
+        final Sentence sentence2_P2 = new Sentence();
+        sentence2_P2.addEntity(new Entity("222__bao", NERLexicon.NER_Type.PERSON_TYPE));
+        sentence2_P2.addEntity(new Entity("222__miao", NERLexicon.NER_Type.EVENT));
+        sentence2_P2.addEntity(new Entity("222__ciao", NERLexicon.NER_Type.PERSON_TYPE));
+        sentence2_P2.addEntity(new Entity("223__ciao", NERLexicon.NER_Type.EVENT));
+        paragraph.addSentence(sentence2_P2);
+
+        final Map<String, Long> entitiesFrequencies = paragraph.getEntitiesFrequencies();
+        assertThat(target.balanceExamples(entitiesFrequencies), is(false));
+    }
+
+    @Test
+    public void testBalancingExamples_lowClassPresent_AndThreshold_shouldReturnTrue() throws Exception {
+        target.setMaxFrequencyNEClass(2);
+
+        Paragraph paragraph = new Paragraph();
+        final Sentence sentence1 = new Sentence();
+        sentence1.addEntity(new Entity("bao", NERLexicon.NER_Type.AWARD));
+        sentence1.addEntity(new Entity("miao", NERLexicon.NER_Type.AWARD));
+        sentence1.addEntity(new Entity("ciao", NERLexicon.NER_Type.PERSON_TYPE));
+        paragraph.addSentence(sentence1);
+        final Sentence sentence2 = new Sentence();
+        sentence2.addEntity(new Entity("222__bao", NERLexicon.NER_Type.PERSON_TYPE));
+        sentence2.addEntity(new Entity("222__miao", NERLexicon.NER_Type.EVENT));
+        sentence2.addEntity(new Entity("222__ciao", NERLexicon.NER_Type.PERSON_TYPE));
+        sentence2.addEntity(new Entity("223__ciao", NERLexicon.NER_Type.EVENT));
+        paragraph.addSentence(sentence2);
+
+        final Map<String, Long> entitiesFrequencies = paragraph.getEntitiesFrequencies();
+        assertThat(target.balanceExamples(entitiesFrequencies), is(true));
     }
 
 }
