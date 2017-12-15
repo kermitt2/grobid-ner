@@ -169,8 +169,8 @@ public class NEREnglishTrainer extends AbstractTrainer {
                         for (Paragraph paragraph : document.getParagraphs()) {
                             final Map<String, Long> entitiesFrequencies = paragraph.getEntitiesFrequencies();
 
-                            boolean excludeParagraph = balanceExamples(entitiesFrequencies);
-                            if (excludeParagraph) continue;
+                            boolean includeParagraph = balanceExamples(entitiesFrequencies);
+                            if (!includeParagraph) continue;
 
                             writer = dispatchExample(writerTraining, writerEvaluation, splitRatio);
 
@@ -206,7 +206,12 @@ public class NEREnglishTrainer extends AbstractTrainer {
                 forceInclude = Boolean.TRUE;
             }
 
-            frequences.putIfAbsent(entry.getKey(), entry.getValue());
+            final Long count = frequences.get(entry.getKey());
+            if (count == null) {
+                frequences.put(entry.getKey(), entry.getValue());
+            } else {
+                frequences.put(entry.getKey(), frequences.get(entry.getKey()) + entry.getValue());
+            }
 
             if (!include.isPresent() && !forceInclude) {
                 if (frequences.get(entry.getKey()) > maxFrequencyNEClass) {
