@@ -118,8 +118,8 @@ public class Entity implements Comparable<Entity> {
 	}
 	
 	public void setTypeFromString(String theType) {
-		if (theType.toUpperCase().equals("SPORT_TEAM"))
-			theType = "ATHLETIC_TEAM";
+		if (theType.toUpperCase().equals("ATHLETIC_TEAM"))
+			theType = "SPORT_TEAM";
 		type = NERLexicon.NER_Type.valueOf(theType.toUpperCase());
 	}
 	
