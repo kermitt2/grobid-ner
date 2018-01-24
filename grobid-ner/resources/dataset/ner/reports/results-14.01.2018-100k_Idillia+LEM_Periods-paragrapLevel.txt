@@ -1,0 +1,85 @@
+	epsilon: 1.0E-6
+	window: 20
+	nb max iterations: 2000
+	nb threads: 15
+
+ 166000 sequences loaded
+
+* Initialize the model
+* Summary
+    nb train:    166141
+    nb labels:   47
+    nb blocks:   4445597
+    nb features: 208945221
+* Train the model with l-bfgs
+ 
+===== Token-level results =====
+
+label                accuracy     precision    recall       f1     
+
+ANIMAL               99.97        63.67        50.09        56.07  
+ARTIFACT             99.47        63.42        59.03        61.15  
+AWARD                99.93        74.87        72.26        73.55  
+BUSINESS             99.43        68.21        60.26        63.99  
+CONCEPT              99.69        67.13        58.04        62.26  
+CONCEPTUAL           99.96        75.44        75.95        75.69  
+CREATION             98.47        65.28        64.19        64.73  
+EVENT                99.74        77.89        75.26        76.56  
+IDENTIFIER           99.91        83.57        79.6         81.54  
+INSTALLATION         99.8         68.45        63.37        65.82  
+INSTITUTION          99.59        77.35        75.24        76.28  
+LOCATION             99.02        83.49        83.48        83.48  
+MEASURE              99.69        94.64        96.25        95.44  
+MEDIA                99.82        75.48        66.63        70.78  
+NATIONAL             99.86        72.94        78.44        75.59  
+ORGANISATION         99.07        73.06        70.86        71.94  
+PERIOD               99.85        97.46        97.55        97.5   
+PERSON               98.55        86.3         88.97        87.61  
+PERSON_TYPE          99.93        73.65        60.16        66.22  
+PLANT                100          0            0            0      
+SUBSTANCE            99.94        70.42        60.52        65.1   
+TITLE                99.84        76.65        78.34        77.48  
+UNKNOWN              99.45        79.45        59.26        67.89
+
+all fields           99.61        82.82        81.4         82.1    (micro average)
+                     99.61        72.56        68.42        70.29   (macro average)
+					 
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1     
+
+ANIMAL               99.93        61.93        42.62        50.49  
+ARTIFACT             98.95        58.1         49.37        53.38  
+AWARD                99.91        72.29        66.82        69.45  
+BUSINESS             98.78        63.04        52.91        57.53  
+CONCEPT              99.4         67.3         56.65        61.52  
+CONCEPTUAL           99.87        74.98        74.8         74.89  
+CREATION             97.8         57.92        50.13        53.74  
+EVENT                99.58        71.23        66.83        68.96  
+IDENTIFIER           99.9         75.37        65.88        70.3   
+INSTALLATION         99.69        63.9         53.32        58.14  
+INSTITUTION          99.32        69.53        64.08        66.69  
+LOCATION             97.26        79.44        79.43        79.44  
+MEASURE              99.07        93.12        94.24        93.68  
+MEDIA                99.65        70.25        58.7         63.96  
+NATIONAL             99.58        73.63        80.22        76.79  
+ORGANISATION         98.36        67.21        62.74        64.9   
+PERIOD               99.52        96.11        95.75        95.93  
+PERSON               95.75        80.29        81.62        80.95  
+PERSON_TYPE          99.79        73.93        61.01        66.85  
+PLANT                100          0            0            0      
+SUBSTANCE            99.86        71.32        57.88        63.9   
+TITLE                99.6         73.81        75.63        74.71  
+UNKNOWN              98.96        69.94        61.63        65.52
+
+all fields           99.15        80.04        77.72        78.86   (micro average)
+                     99.15        68.9         63.14        65.73   (macro average)
+					 
+===== Instance-level results =====
+
+Total expected instances:   41427
+Correct instances:          16713
+Instance-level recall:      40.34
+
+Split, training and evaluation for ner model is realized in 864775342 ms
+Took 240 hrs 12 mins 56.599 secs.

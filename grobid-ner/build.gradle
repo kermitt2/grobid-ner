@@ -3,6 +3,7 @@ buildscript {
         mavenLocal()
         mavenCentral()
         jcenter()
+        maven { url "https://dl.bintray.com/rookies/maven" }
     }
     dependencies {
         classpath group: 'net.researchgate', name: 'gradle-release', version: '2.6.0'
