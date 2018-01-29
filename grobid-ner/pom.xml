@@ -31,12 +31,12 @@
             <layout>default</layout>
         </repository>
         <repository>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
             <id>bintray-rookies-maven</id>
             <name>bintray</name>
             <url>https://dl.bintray.com/rookies/maven</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
         </repository>
     </repositories>
 
