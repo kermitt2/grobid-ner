@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<corpus>
+    <subcorpus>
+        <document name="baobao.en">
+            <p xml:lang="en" xml:id="P520">
+                <sentence xml:id="P520E0">The <ENAMEX type="INSTITUTION">International Military Tribunal</ENAMEX> was
+                    opened on <ENAMEX type="PERIOD">November 19, 1945</ENAMEX>, in the <ENAMEX type="INSTALLATION">
+                        Palace of Justice
+                    </ENAMEX> in <ENAMEX type="LOCATION">Nuremberg</ENAMEX>.
+                </sentence>
+                <sentence xml:id="P520E1">The <ENAMEX type="MEASURE">first</ENAMEX> session was presided over by
+                    the <ENAMEX type="PERSON">Soviet judge, Nikitchenko</ENAMEX>.
+                </sentence>
+                <sentence xml:id="P520E2">The prosecution entered indictments against <ENAMEX type="MEASURE">24</ENAMEX> major
+                    war criminals and <ENAMEX type="MEASURE">seven</ENAMEX> organizations—the leadership of the <ENAMEX
+                            type="INSTITUTION">Nazi party, the Reich Cabinet, the Schutzstaffel (SS), Sicherheitsdienst
+                        (SD), the Gestapo, the Sturmabteilung (SA) and the &quot;General Staff and High
+                        Command&quot;</ENAMEX>, comprising several categories of <ENAMEX type="TITLE">senior military
+                        officers</ENAMEX>.
+                </sentence>
+                <sentence xml:id="P520E3">These organizations were to be declared &quot;criminal&quot; if found
+                    guilty.
+                </sentence>
+            </p>
+        </document>
+    </subcorpus>
+</corpus>

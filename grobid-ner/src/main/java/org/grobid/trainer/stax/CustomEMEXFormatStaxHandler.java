@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.apache.commons.lang3.StringUtils.isBlank;
+import static org.apache.commons.lang3.StringUtils.isNotEmpty;
 
 /**
  * This parser extract the list of sentences and its respective list of entities.
@@ -24,6 +25,7 @@ import static org.apache.commons.lang3.StringUtils.isBlank;
  */
 public class CustomEMEXFormatStaxHandler implements StaxParserContentHandler {
     private static Logger LOGGER = LoggerFactory.getLogger(CustomEMEXFormatStaxHandler.class);
+    public static final String NS_XML = "http://www.w3.org/XML/1998/namespace";
 
     private List<TrainingDocument> documents = new ArrayList<>();
 
@@ -52,7 +54,7 @@ public class CustomEMEXFormatStaxHandler implements StaxParserContentHandler {
             inSentence = true;
             currentSentence = new Sentence();
 
-            String sentenceId = getAttributeFiltered(reader, "id", "xml");
+            String sentenceId = getAttributeFiltered(reader, "id", NS_XML);
             currentSentence.setId(sentenceId);
 
         } else if ("ENAMEX".equals(localName)) {
@@ -70,12 +72,14 @@ public class CustomEMEXFormatStaxHandler implements StaxParserContentHandler {
         } else if ("p".equals(localName)) {
             inParagraph = true;
             currentParagraph = new Paragraph();
-            String paragraphId = getAttributeFiltered(reader, "id", "xml");
+            String paragraphId = getAttributeFiltered(reader, "id", NS_XML);
+            String lang = getAttributeFiltered(reader, "lang", NS_XML);
             currentParagraph.setId(paragraphId);
+            currentParagraph.setLanguage(lang);
         } else if ("document".equals(localName)) {
             currentDocument = new TrainingDocument();
-            String documentId = getAttributeFiltered(reader, "id", "xml");
-            currentDocument.setDocumentName(documentId);
+            String documentName = getAttributeFiltered(reader, "name");
+            currentDocument.setDocumentName(documentName);
         }
 
     }
@@ -104,9 +108,13 @@ public class CustomEMEXFormatStaxHandler implements StaxParserContentHandler {
         String text = reader.getText();
         if (inNamedEntity) {
             currentEntity.setOrigin(Entity.Origin.USER);
-            currentEntity.setRawName(text);
+            if (isNotEmpty(currentEntity.getRawName())) {
+                currentEntity.setRawName(currentEntity.getRawName() + text);
+            } else {
+                currentEntity.setRawName(text);
+            }
             currentEntity.setConf(1.0);
-            currentEntity.setOffsetEnd(currentEntity.getOffsetStart() + text.length());
+            currentEntity.setOffsetEnd(currentEntity.getOffsetStart() + currentEntity.getRawName().length());
         }
 
         if (inSentence) {

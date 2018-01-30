@@ -1,8 +1,15 @@
 package org.grobid.core.data;
 
 import org.grobid.core.lexicon.NERLexicon;
+import org.grobid.core.utilities.OffsetPosition;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
@@ -31,6 +38,54 @@ public class ParagraphTest {
         target.addSentence(sentence2);
 
         assertThat(target.getEntities(), hasSize(6));
+    }
+
+    @Test
+    public void testGetEntities_testSorting() throws Exception {
+        final Sentence sentence1 = new Sentence();
+        final Entity bao = new Entity("bao");
+        bao.setOffsets(new OffsetPosition(16, 19));
+        sentence1.addEntity(bao);
+        final Entity miao = new Entity("miao");
+        miao.setOffsets(new OffsetPosition(10, 14));
+        sentence1.addEntity(miao);
+        final Entity ciao = new Entity("ciao");
+        ciao.setOffsets(new OffsetPosition(0, 4));
+        sentence1.addEntity(ciao);
+
+        target.addSentence(sentence1);
+
+        final Map<Integer, List<Entity>> collect = Arrays.asList(bao, miao, ciao).stream()
+                .collect(Collectors.groupingBy(Entity::getOffsetStart));
+
+        assertThat(target.getEntities(), is(Arrays.asList(ciao, miao, bao)));
+    }
+
+    @Test
+    public void sortingTest1() throws Exception {
+        final Sentence sentence1 = new Sentence();
+        final Entity bao = new Entity("bao");
+        bao.setOffsets(new OffsetPosition(16, 19));
+        sentence1.addEntity(bao);
+        final Entity miao = new Entity("miao");
+        miao.setOffsets(new OffsetPosition(10, 14));
+        sentence1.addEntity(miao);
+        final Entity ciao = new Entity("ciao");
+        ciao.setOffsets(new OffsetPosition(0, 12));
+        sentence1.addEntity(ciao);
+
+        target.addSentence(sentence1);
+
+
+        final List<Entity> sorted = target.getSentences().get(0).getEntities().stream()
+                .sorted(Comparator
+                        .comparingInt(Entity::getOffsetStart)
+                        .thenComparing(Entity::getOffsetEnd))
+                .collect(Collectors.toList());
+
+
+        sorted.stream().forEach(System.out::println);
+
     }
 
     @Test

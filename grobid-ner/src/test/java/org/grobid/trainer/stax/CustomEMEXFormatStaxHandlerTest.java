@@ -3,6 +3,7 @@ package org.grobid.trainer.stax;
 import com.ctc.wstx.stax.WstxInputFactory;
 import org.codehaus.stax2.XMLStreamReader2;
 import org.grobid.core.data.Entity;
+import org.grobid.core.data.Paragraph;
 import org.grobid.core.data.Sentence;
 import org.grobid.core.data.TrainingDocument;
 import org.grobid.core.lexicon.NERLexicon;
@@ -14,7 +15,6 @@ import java.util.List;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.Matchers.hasSize;
-import static org.hamcrest.Matchers.hasValue;
 import static org.junit.Assert.assertThat;
 
 /**
@@ -45,6 +45,8 @@ public class CustomEMEXFormatStaxHandlerTest {
 
         assertThat(document0.getParagraphs(), hasSize(2));
         assertThat(document0.getParagraphs().get(0).getSentences(), hasSize(4));
+        assertThat(document0.getParagraphs().get(0).getId(), is("P0"));
+        assertThat(document0.getParagraphs().get(0).getLanguage(), is("en"));
         assertThat(document0.getParagraphs().get(1).getSentences(), hasSize(5));
 
         assertThat(document0.getSentences(), hasSize(9));
@@ -91,6 +93,24 @@ public class CustomEMEXFormatStaxHandlerTest {
         final TrainingDocument document0 = target.getDocuments().get(0);
         assertThat(document0.getSentences(), hasSize(407));
         assertThat(document0.getParagraphs(), hasSize(32));
+    }
+
+    @Test
+    public void test_checkParsingWhenQuotesInTheMiddle_shouldWork() throws Exception {
+        InputStream resourceAsStream = this.getClass().getResourceAsStream("strange.case.enamex.xml");
+        XMLStreamReader2 reader = (XMLStreamReader2) inputFactory.createXMLStreamReader(resourceAsStream);
+
+        StaxUtils.traverse(reader, target);
+
+        assertThat(target.getDocuments(), hasSize(1));
+
+        final TrainingDocument document0 = target.getDocuments().get(0);
+        final Paragraph paragraph = document0.getParagraphs().get(0);
+
+        final Entity strangeEntity = paragraph.getSentences().get(2).getEntities().get(2);
+        assertThat(strangeEntity.getType(), is(NERLexicon.NER_Type.INSTITUTION));
+        assertThat(strangeEntity.getRawName(), is("Nazi party, the Reich Cabinet, the Schutzstaffel (SS), Sicherheitsdienst (SD), the Gestapo, the Sturmabteilung (SA) and the \"General Staff and High Command\""));
+        assertThat(strangeEntity.getOffsetEnd() - strangeEntity.getOffsetStart(), is(strangeEntity.getRawName().length()));
     }
 
 }

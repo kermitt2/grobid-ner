@@ -9,16 +9,13 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.InputStream;
-import java.io.StringBufferInputStream;
 import java.io.StringReader;
 import java.util.List;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.Matchers.hasSize;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
 public class IdilliaSemDocStaxHandlerTest {
 
