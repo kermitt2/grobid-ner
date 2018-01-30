@@ -174,7 +174,7 @@ public class NERMain {
         return result;
     }
 
-    public static void main(final String[] args) throws Exception {
+    public static void main(final String[] args) {
         grobidArguments = new GrobidNERMainArgs();
 
         if (processArgs(args) && (grobidArguments.getProcessMethodName() != null)) {

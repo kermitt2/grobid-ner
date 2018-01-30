@@ -3,9 +3,9 @@ package org.grobid.core.engines;
 import org.grobid.core.data.Entity;
 import org.grobid.core.exceptions.GrobidResourceException;
 import org.grobid.core.lang.Language;
+import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.utilities.LanguageUtilities;
 import org.grobid.core.utilities.LayoutTokensUtil;
-import org.grobid.core.layout.LayoutToken;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -96,10 +96,8 @@ public class NERParsers {
         if ((tokens == null) || (tokens.size() == 0))
             return null;
 
-        //text = text.replace("\n", " ");
-
         if (lang == null) {
-            return extractNE(tokens);
+            lang = new Language(Language.EN);
         }
 
         NERParser parser = parsers.get(lang.getLang());
@@ -113,7 +111,7 @@ public class NERParsers {
 
     public int createTrainingBatch(String inputDirectory,
                                    String outputDirectory,
-                                   String lang) throws Exception {
+                                   String lang) {
         NERParser parser = parsers.get(lang);
         if (parser == null) {
             throw new GrobidResourceException("The automatically identified labnguage is currently not supported by grobid-ner: " + 

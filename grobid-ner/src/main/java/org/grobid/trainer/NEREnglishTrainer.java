@@ -51,7 +51,7 @@ public class NEREnglishTrainer extends AbstractTrainer {
             NERLexicon.NER_Type.SUBSTANCE.getName(),
             NERLexicon.NER_Type.AWARD.getName()
     );
-    Map<String, Long> frequences = new HashMap<>();
+    Map<String, Long> frequencies = new HashMap<>();
     private long maxFrequencyNEClass = MAX_NB_FREQUENCY_NE_CLASS_DEFAULT;
 
     private String nerCorpusPath = null;
@@ -206,21 +206,21 @@ public class NEREnglishTrainer extends AbstractTrainer {
                 forceInclude = Boolean.TRUE;
             }
 
-            final Long count = frequences.get(entry.getKey());
+            final Long count = frequencies.get(entry.getKey());
             if (count == null) {
-                frequences.put(entry.getKey(), entry.getValue());
+                frequencies.put(entry.getKey(), entry.getValue());
             } else {
-                frequences.put(entry.getKey(), frequences.get(entry.getKey()) + entry.getValue());
+                frequencies.put(entry.getKey(), frequencies.get(entry.getKey()) + entry.getValue());
             }
 
             if (!include.isPresent() && !forceInclude) {
-                if (frequences.get(entry.getKey()) > maxFrequencyNEClass) {
+                if (frequencies.get(entry.getKey()) > maxFrequencyNEClass) {
                     include = Optional.of(Boolean.FALSE);
                 } else {
                     include = Optional.of(Boolean.TRUE);
                 }
             } else {
-                if (frequences.get(entry.getKey()) > maxFrequencyNEClass) {
+                if (frequencies.get(entry.getKey()) > maxFrequencyNEClass) {
                     include = Optional.of(Boolean.FALSE);
                 }
             }

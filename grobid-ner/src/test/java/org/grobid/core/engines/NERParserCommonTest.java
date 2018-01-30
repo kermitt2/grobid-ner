@@ -1,19 +1,16 @@
 package org.grobid.core.engines;
 
 import edu.emory.mathcs.nlp.component.tokenizer.EnglishTokenizer;
-import org.apache.xpath.SourceTree;
 import org.grobid.core.GrobidModels;
 import org.grobid.core.analyzers.GrobidAnalyzer;
 import org.grobid.core.data.Entity;
 import org.grobid.core.data.Sentence;
 import org.grobid.core.layout.LayoutToken;
-import org.grobid.core.main.GrobidHomeFinder;
 import org.grobid.core.utilities.Pair;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import static org.grobid.core.lexicon.NERLexicon.NER_Type.LOCATION;
@@ -109,6 +106,7 @@ public class NERParserCommonTest {
 
     /** Testing the resultExtraction old method **/
     @Test
+    @SuppressWarnings("deprecation")
     public void testResultExtraction_oldMethod_simple() throws Exception {
         final String input = "Austria fought the enemies with Germany.";
 
@@ -143,6 +141,7 @@ public class NERParserCommonTest {
 
     /** Testing the resultExtraction old method **/
     @Test
+    @SuppressWarnings("deprecation")
     public void testResultExtraction_OldMethod_simple2() throws Exception {
         final String input = "Austria Hungary fought the enemies with Germany.";
 

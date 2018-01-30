@@ -10,13 +10,11 @@ import org.grobid.core.data.Entity;
 import org.grobid.core.data.Sense;
 import org.grobid.core.data.Sentence;
 import org.grobid.core.engines.label.TaggingLabel;
-import org.grobid.core.engines.tagging.GenericTagger;
 import org.grobid.core.engines.tagging.GenericTaggerUtils;
 import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.features.FeaturesVectorNER;
 import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.lexicon.LexiconPositionsIndexes;
-import org.grobid.core.lexicon.NERLexicon;
 import org.grobid.core.tokenization.LabeledTokensContainer;
 import org.grobid.core.tokenization.TaggingTokenCluster;
 import org.grobid.core.tokenization.TaggingTokenClusteror;
@@ -24,9 +22,9 @@ import org.grobid.core.utilities.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
@@ -193,7 +191,7 @@ public class NERParserCommon {
     /**
      * Extract the named entities from a labelled text.
      * Use the new method using the clusteror List
-     *      resultExtraction(GrobidModels model, String result, List<LayoutToken> tokenizations)
+     * resultExtraction(GrobidModels model, String result, List<LayoutToken> tokenizations)
      */
     @Deprecated
     public List<Entity> resultExtraction(String text, List<Pair<String, String>> labeled,
@@ -364,14 +362,17 @@ public class NERParserCommon {
 
                 sb.append("\t\t\t\t<sentence xml:id=\"P" + p + "E" + sentenceIndex + "\">");
 
-                if ((entities == null) || (entities.size() == 0)) {
+                if (CollectionUtils.isEmpty(entities)) {
                     // don't forget to encode the text for XML
                     sb.append(TextUtilities.HTMLEncode(theText.substring(sentenceStart, sentenceEnd)));
                 } else {
                     int index = sentenceStart;
-                    // smal adjustement to avoid sentence starting with a space
-                    if (theText.charAt(index) == ' ')
+
+                    // small adjustment to avoid sentence starting with a space
+                    if (theText.charAt(index) == ' ') {
                         index++;
+                    }
+
                     for (Entity entity : entities) {
                         if (entity.getOffsetEnd() < sentenceStart)
                             continue;
@@ -391,7 +392,7 @@ public class NERParserCommon {
                         index = entityEnd;
 
                         while (index > sentenceEnd) {
-                            // bad luck, the sentence segmentation or ner failed somehow and we have an 
+                            // bad luck, the sentence segmentation or ner failed somehow and we have an
                             // entity across 2 sentences, so we merge on the fly these 2 sentences, which is
                             // easier than it looks ;)
                             s++;
@@ -421,48 +422,42 @@ public class NERParserCommon {
     public int createTrainingBatch(String inputDirectory,
                                    String outputDirectory,
                                    NERParser parser,
-                                   String lang) throws IOException {
+                                   String lang) {
         // note that at the stage, we have already selected the NERParser according to the language
-        try {
-            File path = new File(inputDirectory);
-            if (!path.exists()) {
-                throw new GrobidException("Cannot create training data because input directory can not be accessed: " + inputDirectory);
-            }
 
-            File pathOut = new File(outputDirectory);
-            if (!pathOut.exists()) {
-                throw new GrobidException("Cannot create training data because ouput directory can not be accessed: " + outputDirectory);
-            }
-
-            // we process all pdf files in the directory
-            File[] refFiles = path.listFiles(new FilenameFilter() {
-                public boolean accept(File dir, String name) {
-                    return name.endsWith(".txt") || name.endsWith(".TXT");
-                }
-            });
-
-            if (refFiles == null)
-                return 0;
-
-            LOGGER.info(refFiles.length + " files to be processed.");
-
-            Tokenizer tokenizer = new EnglishTokenizer();
-
-            for (final File file : refFiles) {
-                try {
-                    String fileName = file.getName().substring(0, file.getName().length() - 4);
-                    String outputPath = outputDirectory + "/" + fileName + ".training.xml";
-                    createTraining(file.getAbsolutePath(), outputPath, fileName, parser, lang, tokenizer);
-                } catch (final Exception exp) {
-                    LOGGER.error("An error occured while processing the following pdf: "
-                            + file.getPath() + ": ", exp);
-                }
-            }
-
-            return refFiles.length;
-        } catch (final Exception exp) {
-            throw new GrobidException("An exception occured while running Grobid batch.", exp);
+        File path = new File(inputDirectory);
+        if (!path.exists()) {
+            throw new GrobidException("Cannot create training data because input directory can not be accessed: " + inputDirectory);
         }
+
+        File pathOut = new File(outputDirectory);
+        if (!pathOut.exists()) {
+            throw new GrobidException("Cannot create training data because ouput directory can not be accessed: " + outputDirectory);
+        }
+
+        // we process all pdf files in the directory
+        File[] refFiles = path.listFiles((dir, name) -> name.endsWith(".txt") || name.endsWith(".TXT"));
+
+        if (refFiles == null)
+            return 0;
+
+        LOGGER.info(refFiles.length + " files to be processed.");
+
+        Tokenizer tokenizer = new EnglishTokenizer();
+
+        for (final File file : refFiles) {
+            try {
+                String fileName = file.getName().substring(0, file.getName().length() - 4);
+                String outputPath = outputDirectory + "/" + fileName + ".training.xml";
+                createTraining(file.getAbsolutePath(), outputPath, fileName, parser, lang, tokenizer);
+            } catch (final Exception exp) {
+                LOGGER.error("An error occured while processing the following pdf: "
+                        + file.getPath() + ": ", exp);
+            }
+        }
+
+        return refFiles.length;
+
     }
 
     public List<Sentence> sentenceSegmentation(String text, Tokenizer tokenizer) {
