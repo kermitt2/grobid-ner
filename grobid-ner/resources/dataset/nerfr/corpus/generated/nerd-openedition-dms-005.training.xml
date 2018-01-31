@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<corpus>
+	<subcorpus>
+		<document name="nerd-openedition-dms-005">
+			<p xml:lang="fr" xml:id="P0">
+				<sentence xml:id="P0E0">La classe virtuelle, quels effets sur la pratique de l’enseignant ?</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P1">
+				<sentence xml:id="P1E0">Introduction L’utilisation de la visioconférence ou des classes virtuelles pour développer des interactions synchrones suscite un intérêt grandissant en formation à distance (<ENAMEX type="ORGANISATION">FAD</ENAMEX>).</sentence>
+				<sentence xml:id="P1E1">Ainsi, l’édition 2012 du colloque JOCAIR s’est ouverte par une conférence sur « La synchronie dans les apprentissages médiatisés », animée par le professeur <ENAMEX type="PERSON">Jacques Wallet</ENAMEX>, qui a noté à cette occasion, le nombre croissant de communications qui se situent dans une perspective synchrone ou partiellement synchrone (Sidir, <ENAMEX type="BUSINESS">Baron &amp; Bruillard</ENAMEX>, 2012).</sentence>
+				<sentence xml:id="P1E2">Pour de nombreux chercheurs, les potentialités de la synchronie en formation à distance s’avèrent en effet prometteuses.</sentence>
+				<sentence xml:id="P1E3">Le développement de la communication synchrone et la généralisation d’outils de plus en plus mobiles (tablettes et smartphones) permettraient de « toucher l’apprenant partout mais aussi immédiatement » et de conjuguer à la fois les bénéfices de l’enseignement en présence et à distance.</sentence>
+				<sentence xml:id="P1E4">La classe virtuelle permettrait ainsi de rompre l’isolement de l’étudiant en renforçant la présence à distance (Jézégou, 2010).</sentence>
+				<sentence xml:id="P1E5">D’autres chercheurs se montrent toutefois plus réservés quant aux effets sur les apprentissages de ces dispositifs de communication synchrone.</sentence>
+				<sentence xml:id="P1E6">Ils mettent en avant de nombreuses contraintes et le retour à un modèle pédagogique transmissif peu susceptible de favoriser l’engagement et la réflexivité de l’apprenant (sur ce débat contradictoire, voir Wallet 2012).</sentence>
+				<sentence xml:id="P1E7">Ce manque de consensus oblige les responsables de dispositifs de formation à distance et les formateurs concernés à s’interroger avant de promouvoir la synchronie et l’utilisation des classes virtuelles comme modalité de formation : la classe virtuelle permet-elle véritablement de réduire l’isolement de l’étudiant, la distance entre le formateur et l’apprenant ?</sentence>
+				<sentence xml:id="P1E8">Engendre-t-elle des effets sur la manière d’enseigner et sur les interactions en formation ?</sentence>
+				<sentence xml:id="P1E9">Cette recherche s’inscrit dans le domaine de la communication et du travail médiés par ordinateur.</sentence>
+				<sentence xml:id="P1E10">Elle vise à mieux percevoir les effets de l’utilisation de la visioconférence sur l’enseignement pour anticiper d’éventuelles conséquences sur les apprentissages.</sentence>
+				<sentence xml:id="P1E11">Pour cela, nous avons, dans le cadre d’un master « Education et métiers de l’enseignement du premier degré », comparé le même cours animé en présence et à distance.</sentence>
+				<sentence xml:id="P1E12"><ENAMEX type="BUSINESS">Macedo-Rouet</ENAMEX> (2009) montre en effet, dans une revue de littérature sur la visioconférence, tout l’intérêt d’une telle comparaison.</sentence>
+				<sentence xml:id="P1E13">Elle constate par ailleurs, le peu d’articles dans ce domaine ce qui rend difficile l’évaluation de l’utilisation des classes virtuelles ou des actions de formation synchrones.</sentence>
+				<sentence xml:id="P1E14">Classe virtuelle : définition, intérêts et limites d’utilisation La classe virtuelle appelée aussi webinaire est une modalité technico-pédagogique de formation à distance qui permet à des personnes d’établir des échanges synchrones pouvant utiliser l’image, le son et le texte.</sentence>
+				<sentence xml:id="P1E15">C’est une application de téléconférence assistée par ordinateur (<ENAMEX type="ORGANISATION">TCAO</ENAMEX>).</sentence>
+				<sentence xml:id="P1E16">Souvent appelé visioconférence, ses usages se sont développés dans les années 90, d’abord dans l’enseignement supérieur puis progressivement dans l’enseignement secondaire et primaire au fur et à mesure que les technologies numériques se sont développées et que leur coût a diminué.</sentence>
+				<sentence xml:id="P1E17"><ENAMEX type="BUSINESS"> Macedo-Rouet</ENAMEX> (2009) propose une typologie d’usages en fonction de situations recensées (débats avec des experts, apprentissages de langues étrangères, résolution collaborative de problèmes, échanges interculturels, intégration d’élèves avec des besoins particuliers, développement professionnel, diffusion de cours à distance), alors que <ENAMEX type="BUSINESS">Wallet</ENAMEX> (2012) distingue trois modalités d’utilisation selon que l’accent est porté sur la transmission d’informations, la communication ou la formation.</sentence>
+				<sentence xml:id="P1E18">La réunion virtuelle permet l’échange d’informations lors de réunions de régulation par exemple, le séminaire virtuel favorise la communication d’un petit groupe sur un objet commun.</sentence>
+				<sentence xml:id="P1E19">La classe virtuelle correspond à une situation de formation, à un « cours » virtuel en direct.</sentence>
+				<sentence xml:id="P1E20">C’est ce dernier aspect que nous étudions.</sentence>
+				<sentence xml:id="P1E21">L’efficacité de cette modalité de formation à distance, comme nous l’avons vu en introduction, est source de débats dans la communauté scientifique.</sentence>
+				<sentence xml:id="P1E22">Le principal argument en faveur des classes virtuelles, et qui explique son développement croissant, est qu’elles permettent de « créer de la présence à distance » (Jézégou, 2010) ce qui réduit le sentiment d’isolement, source de la plupart des abandons en formation à distance (<ENAMEX type="BUSINESS">Depover &amp; Marchand</ENAMEX>, 2002).</sentence>
+				<sentence xml:id="P1E23">Certains auteurs considèrent en outre que les échanges par ce biais sont plus authentiques comparés aux autres formes de communication (mails, forums,…) utilisées dans l’enseignement à distance (<ENAMEX type="LOCATION">Jacquinot-Delaunay</ENAMEX>, 2002).</sentence>
+				<sentence xml:id="P1E24">Des chercheurs considèrent même que l’enseignement via les visioconférences peut s’avérer plus profitable qu’en présentiel.</sentence>
+				<sentence xml:id="P1E25">Ainsi, <ENAMEX type="BUSINESS">Martin</ENAMEX> (2005) trouve que les étudiants sont plus impliqués, plus concentrés et plus indépendants dans leur apprentissage dans les cours donnés en visioconférence que dans les cours en présence.</sentence>
+				<sentence xml:id="P1E26">A l’inverse, d’autres recherches remettent en cause ces supposés bénéfices (voir <ENAMEX type="BUSINESS">Wallet</ENAMEX>, 2012).</sentence>
+				<sentence xml:id="P1E27">Les critiques sont relatives au caractère synchrone de la communication et aux aspects techniques.</sentence>
+				<sentence xml:id="P1E28">Le direct impose des contraintes horaires et ne favorise pas la prise de distance des formés.</sentence>
+				<sentence xml:id="P1E29">Leur efficacité nécessite un surcroît de travail de préparation du formé et du formateur.</sentence>
+				<sentence xml:id="P1E30">Les importantes contraintes techniques limitent fortement les interactions et favorisent un enseignement transmissif, presque exclusivement centré sur l’enseignant (<ENAMEX type="BUSINESS">Henri cité par Wallet</ENAMEX>, 2012).</sentence>
+				<sentence xml:id="P1E31">En outre, ces classes sont régulièrement perturbées par des problèmes techniques (les logiciels non professionnels, moins coûteux, sont peu stables et les problèmes de son fréquents).</sentence>
+				<sentence xml:id="P1E32">Ainsi, pour certains chercheurs, l’utilisation des classes virtuelles occasionne la perte des avantages de l’enseignement à distance (flexibilité, temps de réflexion et d’élaboration) (<ENAMEX type="BUSINESS">Bruillard</ENAMEX>, 2010), sans offrir en retour les avantages du présentiel.</sentence>
+				<sentence xml:id="P1E33">La classe virtuelle donnerait ainsi l’illusion d’une proximité retrouvée mais ne serait pas efficace en termes d’apprentissage.</sentence>
+				<sentence xml:id="P1E34">Le recours, qui se généralise en formation à distance, de la classe virtuelle et de la synchronie serait-il en définitive une fausse bonne idée ?</sentence>
+				<sentence xml:id="P1E35">Constate-t-on des effets sur les pratiques enseignantes et sur les apprentissages des étudiants à distance ?</sentence>
+				<sentence xml:id="P1E36">Nous nous appuierons sur une étude de cas pour répondre à ces questions.</sentence>
+				<sentence xml:id="P1E37"><ENAMEX type="BUSINESS"> Comparaison</ENAMEX> d’une séance menée en présence et à distance : contexte, données et méthodologie L’étude a consisté à comparer une séance d’enseignement, visant le même objectif, le même contenu et se déroulant selon un scénario identique, menée par le même formateur afin de neutraliser partiellement l’effet maître (<ENAMEX type="LOCATION">Bressoux</ENAMEX>, 1994), en présence et à distance, via une classe virtuelle.</sentence>
+				<sentence xml:id="P1E38">Les deux séances observées se sont déroulées dans le cadre du Master « Éducation et métiers de l&apos;enseignement du premier degré » de l’<ENAMEX type="ORGANISATION">IUFM</ENAMEX> de <ENAMEX type="BUSINESS">Créteil</ENAMEX>.</sentence>
+				<sentence xml:id="P1E39">Le choix s’est porté sur les unités d’enseignement de préparation aux épreuves d’admission au concours de recrutement de professeur des écoles et plus spécifiquement sur la préparation à l’oral de français en deuxième année de master.</sentence>
+				<sentence xml:id="P1E40">Deux séances ont été identifiées au premier semestre.</sentence>
+				<sentence xml:id="P1E41">Dans les deux cas, il s’agissait de la deuxième séance de l’année, le contenu retenu étant celui de la compréhension littéraire, la durée prévue des séances étant de deux heures dans les deux dispositifs.</sentence>
+				<sentence xml:id="P1E42">Pour mesurer les effets sur la pratique de l’enseignant, nous avons conçu un dispositif qui permettait de neutraliser la variable « cours » dans sa durée, son organisation et son contenu.</sentence>
+				<sentence xml:id="P1E43">Nous avons dans un premier temps, élaboré un champ lexical structuré autour de la question traitée.</sentence>
+				<sentence xml:id="P1E44">Nous nous sommes appuyés sur la démarche proposée par <ENAMEX type="BUSINESS">Vancomelbeke</ENAMEX> (2004).</sentence>
+				<sentence xml:id="P1E45">À partir de la question « À quels mots nous fait penser l’expression : « lecture et compréhension littéraire » ?</sentence>
+				<sentence xml:id="P1E46">», un ensemble de mots ou de syntagmes ont été recueillis.</sentence>
+				<sentence xml:id="P1E47">Nous avons ensuite regroupé ceux qui entretenaient à nos yeux une relation de sens, certains ont été écartés, d’autres ajoutés et enfin nous avons caractérisé en la nommant la relation sémantique qui liait chacun de ces ensembles de mots au syntagme-clé (lecture et compréhension littéraire).</sentence>
+				<sentence xml:id="P1E48">Cet outil nous a permis de lister puis de structurer toutes les notions que nous souhaitions aborder dans la séance.</sentence>
+				<sentence xml:id="P1E49">Nous avons retenu dix-neuf items.</sentence>
+				<sentence xml:id="P1E50">Figure 1: Items retenus dans le champ lexical structuré sur la « lecture compréhension littéraire » Dans un second temps, nous avons élaboré le canevas de la séance en précisant la durée envisagée pour chacune des phases ainsi que les modalités et les contenus à traiter.</sentence>
+				<sentence xml:id="P1E51">La question de recherche portant sur la pratique professionnelle des enseignants, le cadre méthodologique choisi est celui de l’observation écologique par l’observation directe et l’enregistrement des échanges.</sentence>
+				<sentence xml:id="P1E52">Nous avons ensuite procédé aux transcriptions et à l’analyse de contenu (Bardin, 1997).</sentence>
+				<sentence xml:id="P1E53">Pour l’analyse des interactions, la littérature de recherche s’accorde aujourd’hui à distinguer les échanges relatifs aux contenus d’apprentissage, à la dimension sociale et aux aspects organisationnels ou techniques.</sentence>
+				<sentence xml:id="P1E54">Ainsi, <ENAMEX type="BUSINESS">Quintin</ENAMEX> (2008) propose trois catégories pour analyser les modalités d<ENAMEX type="ORGANISATION">’interventions du tuteur</ENAMEX> (MIT) à distance : MIT socio-affective : Etablir et maintenir un climat relationnel propice au travail de l’équipe ; favoriser la cohésion entre les membres ; soutenir les étudiants dans l’effort ; valoriser le travail individuel et collectif qui est réalisé MIT organisationnelle : Soutenir l’organisation du travail collectif au niveau de la répartition des tâches et de leur planification ; rappeler les échéances ; inciter la réflexion sur l’organisation de l’équipe MIT pédagogique : Expliciter les objectifs et les critères d’évaluation ; intervenir par étayage sur les contenus ; apporter un soutien méthodologique ; susciter la réflexion métacognitive ; soutenir les conflits sociocognitifs De manière proche, Peraya et <ENAMEX type="BUSINESS">Dumont</ENAMEX> (2003) caractérisent les échanges selon trois dimensions : La dimension référentielle qui concerne les contenus d’apprentissage La dimension relationnelle qui regroupe les actes de sociabilité La dimension régulatrice des mécanismes conversationnels Nous avons retenu cette dernière grille, en la subdivisant en quatorze sous-catégories susceptibles de permettre l’analyse fine des échanges entre la formatrice et les étudiants en présence et à distance.</sentence>
+				<sentence xml:id="P1E55">Figure 2 : Critères d’analyse des interactions de l’enseignant définis à partir de la grille Peraya et <ENAMEX type="BUSINESS">Dumont</ENAMEX> (2003) Analyse : des interactions plus nombreuses, un enseignement plus cadré à distance Quantitativement, le volume de mots échangés est supérieur d’environ 35% sur une même durée de cours en FAD.</sentence>
+				<sentence xml:id="P1E56">On observe un phénomène de densification de la parole.</sentence>
+				<sentence xml:id="P1E57">Le flux de parole est continu et les pauses dans le discours moins nombreuses et moins longues, il y a moins d’hésitations.</sentence>
+				<sentence xml:id="P1E58">En présentiel, la mise en route effective du cours a été décalée de six minutes, temps nécessaire à l’installation et à la distribution des sujets.</sentence>
+				<sentence xml:id="P1E59">À partir de la 45e minute, les bavardages et les bruits parasites (toux, bruits de chaise, recharge d’ordinateur…) ont commencé à être importants nécessitant des pauses, des attentes ; enfin à deux reprises le professeur note des informations au tableau.</sentence>
+				<sentence xml:id="P1E60">Le clavardage permet les échanges simultanés, les étudiants s’expriment pendant que le formateur anime son cours sans que cela soit considéré comme du bavardage.</sentence>
+				<sentence xml:id="P1E61">Si on retire le clavardage au total de mots échangés, le volume reste supérieur de 16 % en FAD.</sentence>
+				<sentence xml:id="P1E62">Ce résultat est toutefois à prendre avec réserve puisque une partie du cours en présence (9 mn) a été consacrée à du travail de groupe et n’a donc pu être pris en compte.</sentence>
+				<sentence xml:id="P1E63">Figure 3 : <ENAMEX type="BUSINESS">Comparaison</ENAMEX> du nombre de mots échangés à distance et en présence Grâce au clavardage, une participation des étudiants plus importante à distance Trois cent cinquante-deux interventions sont comptabilisées en <ENAMEX type="ORGANISATION">FAD</ENAMEX> et quatre-vingt-sept en présence.</sentence>
+				<sentence xml:id="P1E64">Ce résultat peut apparaître paradoxal car la représentation qu’un cours en présence favorise et facilite les échanges est très ancrée.</sentence>
+				<sentence xml:id="P1E65">Ce résultat doit toutefois être nuancé car les interventions à distance se répartissent entre trois cent vingt-trois interventions en clavardage et vingt-neuf interventions voix.</sentence>
+				<sentence xml:id="P1E66">Le clavardage, pendant les classes virtuelles, semble faciliter la participation des étudiants, ce que constatent également <ENAMEX type="BUSINESS">Chanier et Vetter</ENAMEX> (2006).</sentence>
+				<sentence xml:id="P1E67">Ces interventions peuvent intervenir en même temps que celles de l’enseignant, les deux canaux se superposant sans se faire concurrence.</sentence>
+				<sentence xml:id="P1E68">L’envoi de messages peut être simultané, plusieurs étudiants pouvant intervenir pour s’exprimer sur le même contenu ce qui n’est pas possible en présence où la parole doit nécessairement s’alterner.</sentence>
+				<sentence xml:id="P1E69">L’usage du clavardage semble avoir également une incidence sur le nombre de participants.</sentence>
+				<sentence xml:id="P1E70">Vingt étudiants ont pris la parole à distance sur les vingt-deux présents et sept en présentiel pour les seize présents.</sentence>
+				<sentence xml:id="P1E71">Une moindre inhibition à intervenir par l’intermédiaire du clavardage peut être envisagée.</sentence>
+				<sentence xml:id="P1E72">La répartition des interventions est également différente.</sentence>
+				<sentence xml:id="P1E73">En présentiel, les étudiants qui interviennent les premiers sont ceux qui interviennent le plus tout au long de la séance.</sentence>
+				<sentence xml:id="P1E74">En <ENAMEX type="ORGANISATION">FAD</ENAMEX>, la répartition semble se faire par séquence.</sentence>
+				<sentence xml:id="P1E75">L’intervention d’un étudiant dès le début de la séance n’indique pas qu’il interviendra davantage.</sentence>
+				<sentence xml:id="P1E76">Le nombre de mots moyens est sensiblement proche avec une moyenne de neuf mots.</sentence>
+				<sentence xml:id="P1E77">On observe à la fois des interventions très courtes (1 à 3 mots) ou des prises de parole plus longues (environ 90 mots).</sentence>
+				<sentence xml:id="P1E78">En classe virtuelle, le nombre de mots par intervention est souvent proche de la moyenne soit environ neuf mots.</sentence>
+				<sentence xml:id="P1E79">Enfin, s’agissant des modalités, comme l’a montré l’analyse des interventions, les étudiants en <ENAMEX type="ORGANISATION">FAD</ENAMEX> questionnent plus le formateur, demandent des précisions, des reformulations, des exemples.</sentence>
+				<sentence xml:id="P1E80">Une nouvelle fois le clavardage semble expliquer cette différence.</sentence>
+				<sentence xml:id="P1E81">Des interventions du formateur plus diversifiées à distance L’analyse selon les critères retenus (dimension référentielle, relationnelle et régulatrice) montre une plus grande variété d’interactions à distance.</sentence>
+				<sentence xml:id="P1E82">La dimension référentielle Figure 4 : Analyse des interactions selon la dimension référentielle (fréquence en nombre de mots) Premier constat assez inattendu, les interventions uniquement centrées sur le contenu sont plus nombreuses en présentiel, alors que l’on a pu constater que la quantité d’informations échangée était plus importante en FAD.</sentence>
+				<sentence xml:id="P1E83">Les éléments structurants et leurs corollaires (glose) étaient nettement plus présents en FAD.</sentence>
+				<sentence xml:id="P1E84">Ce résultat s’explique en considérant les deux autres dimensions (relationnelle et régulatrice) ; en <ENAMEX type="ORGANISATION">FAD</ENAMEX> les interventions sont plus diversifiées, l’enseignante investit les trois dimensions et propose un discours pédagogique moins monolithique.</sentence>
+				<sentence xml:id="P1E85">Deuxième constat en formation à distance, les interventions sur « comment on va traiter le contenu qui nous réunit aujourd’hui » sont présentes.</sentence>
+				<sentence xml:id="P1E86">L’enseignante apporte des éléments de guidage méthodologique.</sentence>
+				<sentence xml:id="P1E87">En présentiel, cette dimension est ignorée, la suppression de la phase de présentation des objectifs l’explique en partie.</sentence>
+				<sentence xml:id="P1E88">Enfin troisième constat, la modalisation des interventions est plus équilibrée en FAD, l’enseignante sollicite autant qu’elle répond à des questions.</sentence>
+				<sentence xml:id="P1E89">La part prise par le formateur dans ces deux séances est très importante (plus de 80 %).</sentence>
+				<sentence xml:id="P1E90">Toutefois à distance, les échanges formateur-apprenant sont plus importants en quantité (2300 mots en <ENAMEX type="ORGANISATION">FAD</ENAMEX> et 950 en présentiel), l’analyse de contenu confirme ces données quantitatives.</sentence>
+				<sentence xml:id="P1E91">Le formateur est plus sollicité par les étudiants en FAD qu’en présentiel, ce qui génère plus d’interactions formateur-apprenants.</sentence>
+				<sentence xml:id="P1E92">La dimension relationnelle Figure 5 : Analyse des interactions selon la dimension relationnelle (fréquence en nombre de mots) Cette dimension est significativement plus investie en <ENAMEX type="ORGANISATION">FAD</ENAMEX> et sur presque l’ensemble des critères sauf l’humour.</sentence>
+				<sentence xml:id="P1E93">L’absence de coprésence physique des participants semble vouloir être compensée par l’introduction dans le discours d’éléments qui doivent contribuer à installer une situation de communication favorable à des échanges de qualité.</sentence>
+				<sentence xml:id="P1E94">Les étudiants sont interpellés par leur prénom (les noms des participants sont affichés dans la classe virtuelle ; en présence, le formateur ne connaît pas forcément le nom des étudiants).</sentence>
+				<sentence xml:id="P1E95">Lorsque l’enseignante répond à une question, elle implique le groupe en tant qu’interlocuteur dans la réponse.</sentence>
+				<sentence xml:id="P1E96">En revanche, la distance ne semble pas propice à introduire des tonalités humoristiques dans le discours.</sentence>
+				<sentence xml:id="P1E97">L’absence de communication non-verbale l’explique très certainement.</sentence>
+				<sentence xml:id="P1E98">En présentiel, les échanges à tonalité humoristique reposaient sur le contexte (un étudiant qui se mouche très bruyamment) et l’implicite (« On pense qu’ils ont compris » en parlant des élèves d’une classe « et en fait pas du tout » sous-entendu peut-être comme vous).</sentence>
+				<sentence xml:id="P1E99">En FAD, le formateur fait preuve d’empathie compréhensive (« Je vous comprends, c’est normal, nous allons essayer ensemble »), ce que l’on ne retrouve pas en présentiel.</sentence>
+				<sentence xml:id="P1E100">Les perceptions différentes que le formateur a de la difficulté à conduire sa formation dans l’un et l’autre dispositif peuvent expliquer l’expression de cette empathie.</sentence>
+				<sentence xml:id="P1E101">En outre, la classe virtuelle a lieu le soir (après une journée de travail pour beaucoup) ce qui peut accroître sa sollicitude.</sentence>
+				<sentence xml:id="P1E102">La dimension régulatrice Figure 6 : Analyse des interactions selon la dimension régulatrice (fréquence en nombre de mots) Comme la dimension relationnelle, la dimension régulatrice est plus représentée à distance.</sentence>
+				<sentence xml:id="P1E103">L’environnement technique dans lequel se déroule une classe virtuelle explique ce phénomène.</sentence>
+				<sentence xml:id="P1E104">Il est nécessaire de s’assurer que tous les participants entendent la réception d’un feedback.</sentence>
+				<sentence xml:id="P1E105">La stabilité de la liaison Internet n’est pas garantie pendant toute la durée, notamment pour les étudiants à l’étranger.</sentence>
+				<sentence xml:id="P1E106">Pour cette raison, la classe fut ainsi interrompue à deux reprises.</sentence>
+				<sentence xml:id="P1E107">De plus, tous les étudiants n’ont pas la même aisance à utiliser les modalités de communication offertes par le logiciel, notamment la prise de parole.</sentence>
+				<sentence xml:id="P1E108">La nécessité d’activer et de désactiver le micro à bon escient afin d’éviter des effets larsen a provoqué des interventions de régulation.</sentence>
+				<sentence xml:id="P1E109">En <ENAMEX type="ORGANISATION">FAD</ENAMEX>, les interventions de régulation sont essentiellement centrées sur les problèmes techniques.</sentence>
+				<sentence xml:id="P1E110">En présentiel, elles relèvent essentiellement de la gestion de groupe.</sentence>
+				<sentence xml:id="P1E111">Deux types d’interventions sont observées : les interventions visant à ramener un niveau de silence propice aux échanges et celles visant à organiser le travail de groupe.</sentence>
+				<sentence xml:id="P1E112">Un cadrage de l’enseignement plus strict à distance Pour repérer d’éventuels effets sur la pratique de l’enseignant, nous avons comparé les deux séances selon trois axes : le respect des durées et de la chronologie des phases, ainsi que les contenus traités.</sentence>
+				<sentence xml:id="P1E113">Pour chacun de ces axes, nous avons mesuré l’écart entre le canevas prescrit et le canevas mis en œuvre dans chacun des dispositifs.</sentence>
+				<sentence xml:id="P1E114">Le cadrage du temps Figure 7 : Comparaison des durées des différentes phases des deux séances (en minutes) Dans les deux cas, les séances ont une durée inférieure à deux heures alors que la contrainte temporelle apparaît de façon récurrente dans le discours de l’enseignante : « On n’a pas trop le temps », « Il nous manque du temps », « On n’a pas le temps pour ça », « On est pressé par le temps ».</sentence>
+				<sentence xml:id="P1E115">Les décalages entre le canevas prescrit et sa mise en œuvre apparaissent assez tôt dans les séances qu’elles soient menées en présence ou à distance.</sentence>
+				<sentence xml:id="P1E116">Les décalages les plus importants, une dizaine de minutes d’écart avec le temps prévu initialement, interviennent dans la présentation des textes du corpus.</sentence>
+				<sentence xml:id="P1E117">Les transcriptions des séances montrent qu’ils sont liés à une augmentation des interactions avec les étudiants.</sentence>
+				<sentence xml:id="P1E118">Dans les deux cas, l’enseignante donne la priorité aux échanges plutôt qu’au respect du canevas.</sentence>
+				<sentence xml:id="P1E119">En revanche, la régulation des décalages s’avère différente.</sentence>
+				<sentence xml:id="P1E120">En présence, l’enseignante choisit de ne pas traiter certaines phases.</sentence>
+				<sentence xml:id="P1E121">Dès le début de la séance, après une mise en route de six minutes, elle passe directement à l’identification du thème.</sentence>
+				<sentence xml:id="P1E122">Ensuite, elle décide de ne pas traiter la coélaboration de la méthodologie de l’introduction, ce qu’elle exprime explicitement : « Ça, on n’aura pas le temps de le faire ».</sentence>
+				<sentence xml:id="P1E123">À distance, la régulation se fait par ajustements progressifs tout au long de la séance, sans sacrifier aucune des phases.</sentence>
+				<sentence xml:id="P1E124">Pendant le cours à distance, l’enseignante regarde l’heure régulièrement et note le « timing » sur son support de cours.</sentence>
+				<sentence xml:id="P1E125">Le cadrage de la chronologie des phases L’ordre des phases est respecté dans les deux cas, le canevas n’a pas été réorganisé.</sentence>
+				<sentence xml:id="P1E126">En revanche des phases disparaissent en présence : la présentation des objectifs, la méthodologie de l’introduction et la synthèse.</sentence>
+				<sentence xml:id="P1E127">Nous l’avons vu précédemment, la méthodologie de l’introduction et la synthèse ont été délibérément écartées pour répondre à des contraintes de temps.</sentence>
+				<sentence xml:id="P1E128">Les deux séances commencent de manière radicalement différente.</sentence>
+				<sentence xml:id="P1E129">En présence, l’installation du groupe prend près de six minutes, les étudiants arrivent juste à l’heure voire légèrement en retard, l’heure du début du cours n’est pas perçue comme l’heure à laquelle le cours commence du point de vue des activités cognitives, mais l’heure à laquelle on doit être présent physiquement dans les locaux.</sentence>
+				<sentence xml:id="P1E130">L’enseignante distribue les documents, les étudiants signent la feuille de présence.</sentence>
+				<sentence xml:id="P1E131">La prise en main des documents (un sujet type concours) semble implicitement signifier les objectifs de la séance.</sentence>
+				<sentence xml:id="P1E132">Figure 8 : Lancement des séances en présence et à distance Le cadrage du contenu Sur la base du canevas de la séance, le contenu de chaque phase a été comparé au contenu effectivement mis en œuvre.</sentence>
+				<sentence xml:id="P1E133">La comparaison a porté sur les phases qui ont été mises en œuvre dans les deux dispositifs (identification du thème, analyse du corpus, apports théoriques et élaboration de la séquence).</sentence>
+				<sentence xml:id="P1E134">D’une manière générale, sur cet aspect, les contenus sont globalement traités de manière homogène dans les deux dispositifs.</sentence>
+				<sentence xml:id="P1E135">Par exemple, dans la partie théorique, l’enseignante illustre les notions d’inférence directe et indirecte en s’appuyant sur les mêmes apports, en l’occurrence les définitions données par <ENAMEX type="BUSINESS">Giasson</ENAMEX> (2008).</sentence>
+				<sentence xml:id="P1E136">Ce cas de figure est récurrent.</sentence>
+				<sentence xml:id="P1E137">On remarque toutefois une différence qui s’amorce très tôt dans la séance en présentiel et se poursuit jusqu’à sa clôture : la centration sur le support pédagogique destiné aux élèves, en l’occurrence l’extrait de l’album Sa majesté de nulle part de <ENAMEX type="PERSON">Gérard Moncomble</ENAMEX>.</sentence>
+				<sentence xml:id="P1E138">Dès la phase d’analyse du corpus, l’enseignante passe deux fois plus de temps en présentiel sur ce texte et le même phénomène se produit quand débute la phase d’élaboration de la séquence.</sentence>
+				<sentence xml:id="P1E139">Plusieurs facteurs peuvent l’expliquer : tout d’abord en présence, l’enseignante avait l’album dans les mains, elle le manipulait, le feuilletait.</sentence>
+				<sentence xml:id="P1E140">L’objet exerçait sur le groupe un vif intérêt.</sentence>
+				<sentence xml:id="P1E141">Il attendait de pouvoir le manipuler à leur tour.</sentence>
+				<sentence xml:id="P1E142">Il apportait à la fois une dimension très concrète et professionnelle, car c’est un support d’apprentissage mais aussi une ouverture vers une certaine forme de rêveries (lectures d’enfance, fascination pour le personnage du chat ou de la sorcière).</sentence>
+				<sentence xml:id="P1E143">Consciente de cet intérêt, l’enseignant a cherché l’adhésion du groupe en début de séance en s’appuyant sur l’intérêt pour ce texte.</sentence>
+				<sentence xml:id="P1E144">À une seconde reprise, elle utilise l’album de façon stratégique.</sentence>
+				<sentence xml:id="P1E145">Après la pause, la formatrice utilise une nouvelle fois l’album pour remobiliser le groupe en le présentant page par page.</sentence>
+				<sentence xml:id="P1E146">Cet échange fera l’objet d’une séquence digressive sur les superstitions autour du chat.</sentence>
+				<sentence xml:id="P1E147">Les différences de traitement des contenus entre le présentiel et la <ENAMEX type="BUSINESS">FAD</ENAMEX> pour ce corpus repose essentiellement sur l’utilisation de l’objet livre en présence.</sentence>
+				<sentence xml:id="P1E148">Cet aspect n’a pas été neutralisé dans le protocole et il introduit un biais dans la comparaison.</sentence>
+				<sentence xml:id="P1E149">Sinon, les occurrences directement liées au contenu du cours sur la base des éléments structurants identifiés dans le champ lexical (voir ci-dessus) sont prononcées de manière plus systématique dans la classe virtuelle, en moyenne deux fois plus, soient cent cinquante-neuf occurrences à distance pour les dix-neuf items retenus et soixante-huit occurrences en présence.</sentence>
+				<sentence xml:id="P1E150">L’ensemble des notions est plus souvent évoqué à distance, sauf pour le rappel qui a fait l’objet d’une question en présence : « Qu’est-ce que c’est exactement le rappel ?</sentence>
+				<sentence xml:id="P1E151">» et a nécessité une reformulation de la part du formateur.</sentence>
+				<sentence xml:id="P1E152">Quatre éléments structurants ne sont pas évoqués en présence (coopération du lecteur, compréhension fine, textes résistants, compréhension en îlots) et deux en <ENAMEX type="ORGANISATION">FAD</ENAMEX> (compréhension fine et résumé).</sentence>
+				<sentence xml:id="P1E153">Quatre éléments structurants sont surreprésentés en <ENAMEX type="ORGANISATION">FAD</ENAMEX> (questionnaire, inférences, interprétation, implicite).</sentence>
+				<sentence xml:id="P1E154">L’élaboration et l’animation d’un cours à distance invitent l’enseignant à plus de rigueur et de précision (<ENAMEX type="LOCATION">Ferone</ENAMEX>, 2012), nos analyses montrent que ce principe s’applique en particulier lors d’un enseignement en classe virtuelle.</sentence>
+				<sentence xml:id="P1E155">Ce constat nous amène à nous interroger sur le bénéfice qu’en retirent les étudiants.</sentence>
+				<sentence xml:id="P1E156">Enseigner en classe virtuelle a-t-il des effets sur les apprentissages ?</sentence>
+				<sentence xml:id="P1E157">Classe virtuelle et auto-direction de l’apprenant De nombreux travaux, en particulier ceux de <ENAMEX type="BUSINESS">Carré</ENAMEX> (2010), <ENAMEX type="PERSON">Cosnefroy</ENAMEX> (2010) et <ENAMEX type="PERSON">Jézégou</ENAMEX> (2012), nous invitent à prendre en considération les caractéristiques de l’apprenant et de l’environnement d’apprentissage pour statuer sur l’efficacité potentielle de tout dispositif technologique.</sentence>
+				<sentence xml:id="P1E158">Ces travaux mettent en évidence des configurations plus ou moins favorables aux apprentissages en fonction du niveau d’autonomie de l’apprenant et du contrôle pédagogique plus ou moins fort exercé par le dispositif pédagogique.</sentence>
+				<sentence xml:id="P1E159">Jézégou (2010) développe le concept d’auto-direction qui s’appuie sur un double ressort : la motivation et l’autorégulation.</sentence>
+				<sentence xml:id="P1E160">La motivation se construit à travers la perception que l’apprenant a de lui-même au regard de son projet d’apprentissage (Pourquoi je m’engage dans cette formation ?</sentence>
+				<sentence xml:id="P1E161">Dans quels buts ?</sentence>
+				<sentence xml:id="P1E162">Suis-je capable de la mener à son terme ?</sentence>
+				<sentence xml:id="P1E163">Quelles sont mes chances de réussite ?</sentence>
+				<sentence xml:id="P1E164">Quelles sont mes marges de manœuvre, mes espaces de négociation ?</sentence>
+				<sentence xml:id="P1E165">Quels bénéfices puis-je en espérer ?</sentence>
+				<sentence xml:id="P1E166">, etc.).</sentence>
+				<sentence xml:id="P1E167">C’est dans les réponses à ces questions que les ressorts motivationnels s’élaborent.</sentence>
+				<sentence xml:id="P1E168">La seconde dimension du contrôle psychologique est l’autorégulation.</sentence>
+				<sentence xml:id="P1E169">L’apprenant met en place des stratégies pour surveiller, contrôler et évaluer ses apprentissages.</sentence>
+				<sentence xml:id="P1E170">Ces stratégies d’autorégulation interviennent à trois niveaux.</sentence>
+				<sentence xml:id="P1E171">Elles peuvent agir sur l’état socioaffectif de l’apprenant, sur ses comportements ou enfin sur son environnement de travail.</sentence>
+				<sentence xml:id="P1E172">L’apprenant exerce un contrôle psychologique sur la formation, mais la structure du dispositif de formation exerce elle aussi un contrôle qualifié de pédagogique ou structurel.</sentence>
+				<sentence xml:id="P1E173">Jézégou (2008) pointe le fait que peu de recherches s’attachent à cette dimension de l’apprentissage autodirigé.</sentence>
+				<sentence xml:id="P1E174">Elle montre dans un premier temps que le contrôle pédagogique varie en fonction du degré de liberté de choix d’un dispositif.</sentence>
+				<sentence xml:id="P1E175">Puis dans un second temps, du lien qui existe entre contrôle psychologique et contrôle pédagogique.</sentence>
+				<sentence xml:id="P1E176">L’interaction entre ces deux formes de contrôle fait émerger des configurations plus ou moins favorables au développement de l’auto-direction de l’apprenant.</sentence>
+				<sentence xml:id="P1E177">Figure 9 : Relation entre contrôle pédagogique et contrôle pédagogique selon Jézégou (2008) Les situations 2 et 3 sont les situations les plus favorables au développement et au maintien de l’auto-direction de l’apprenant.</sentence>
+				<sentence xml:id="P1E178">La situation 1 peut mener à l’abandon de la formation si des relais d’accompagnement ne sont pas mis en place.</sentence>
+				<sentence xml:id="P1E179">Ces relais peuvent s’appuyer sur du tutorat, des blogs ou des forums.</sentence>
+				<sentence xml:id="P1E180">Ces dispositifs vont permettre d’augmenter la présence sociale et de réduire la distance transactionnelle.</sentence>
+				<sentence xml:id="P1E181">La situation 4 peut générer des situations conflictuelles, les contraintes imposées par la formation ne vont pas correspondre aux besoins et à l’organisation personnelle de l’apprenant.</sentence>
+				<sentence xml:id="P1E182">L’apprenant peut alors développer des stratégies d’ajustement ou de compensation en dehors du cadre de la formation afin de retrouver l’espace de liberté nécessaire à son projet.</sentence>
+				<sentence xml:id="P1E183">Les travaux sur l’auto-direction soulignent ainsi que les apports varient selon le profil des étudiants et qu’il existe des configurations plus ou moins bénéfiques en fonction du degré de contrôle opéré par l’enseignant en relation avec le niveau d’autonomie des étudiants.</sentence>
+				<sentence xml:id="P1E184">Nos données ne nous permettent pas d’établir une corrélation directe entre les changements de pratique observés et les apprentissages des étudiants.</sentence>
+				<sentence xml:id="P1E185">En effet, nous avons évalué les connaissances des étudiants par rapport à l’objectif visé avant et après la séance, mais, outre le fait qu’il nous manque un certain nombre d’évaluations, nous ne disposons d’aucune donnée fiable sur le degré d’autonomie des étudiants.</sentence>
+				<sentence xml:id="P1E186">Ainsi, nous devons nous appuyer sur ces travaux de recherche pour inférer d’éventuels effets sur les apprentissages et émettre l’hypothèse que, puisque l’animation d’une classe virtuelle contraint l’enseignant à un cadrage plus rigoureux, cet effort de structuration et d’explicitation devrait bénéficier en priorité aux étudiants les moins autodirigés (situation 3).</sentence>
+				<sentence xml:id="P1E187">Conclusion.</sentence>
+				<sentence xml:id="P1E188">La classe virtuelle, un outil qui serait utile pour transmettre des contenus à des étudiants peu autodirigés L’amélioration des performances des réseaux et la généralisation de nouveaux outils favorisent le développement des classes virtuelles en formation à distance.</sentence>
+				<sentence xml:id="P1E189">L’intérêt des chercheurs s’accroît mais les recherches sur l’efficacité de ces classes en termes d’apprentissage restent peu nombreuses et les résultats s’avèrent contradictoires.</sentence>
+				<sentence xml:id="P1E190">L’ESPE de <ENAMEX type="BUSINESS">Créteil</ENAMEX> propose aux étudiants souhaitant devenir professeur des écoles, des formations totalement à distance.</sentence>
+				<sentence xml:id="P1E191">Dans ces formations, les formateurs utilisent régulièrement des classes virtuelles.</sentence>
+				<sentence xml:id="P1E192">Le bilan de cette utilisation se montre lui aussi contrasté et source de tensions (<ENAMEX type="LOCATION">Ferone</ENAMEX>, 2012).</sentence>
+				<sentence xml:id="P1E193">Les enseignants reconnaissent l’intérêt de cette modalité de formation pour favoriser la relation avec leurs étudiants, mais ils évoquent aussi de nombreuses contraintes.</sentence>
+				<sentence xml:id="P1E194">Elles sont liées à l’animation du groupe (en l’absence d’indices visuels, il est plus difficile de « sentir » et d’interagir avec le groupe), à la charge de travail, qui nécessite pour beaucoup d’enseignants, une préparation plus importante que pour un cours en présence, et aux obligations horaires (les classes se déroulent uniquement le soir).</sentence>
+				<sentence xml:id="P1E195">Concernant les apprentissages des étudiants, la perception des enseignants est également contrastée.</sentence>
+				<sentence xml:id="P1E196">C’est en particulier pour comprendre si la classe virtuelle peut être efficace en termes d’apprentissage que nous avons mené cette étude et cette comparaison entre le même cours mené en présence et à distance, encouragé en cela par <ENAMEX type="BUSINESS">Macedo-Rouet</ENAMEX> (2009).</sentence>
+				<sentence xml:id="P1E197">Des limites méthodologiques sont à prendre en compte et relativisent nos résultats.</sentence>
+				<sentence xml:id="P1E198">La première concerne bien sûr la taille de l’échantillon étudié.</sentence>
+				<sentence xml:id="P1E199">Il aurait fallu pouvoir comparer un ensemble de cours suffisamment important pour pouvoir donner à nos résultats une dimension plus générale.</sentence>
+				<sentence xml:id="P1E200">Nous ne disposons pas, en outre, d’informations précises sur le profil des deux groupes d’étudiants.</sentence>
+				<sentence xml:id="P1E201">Ces informations constituent, en effet, un paramètre au moins aussi important que la modalité de communication, pour expliquer la différence de participation et d’implication des étudiants dans le cours.</sentence>
+				<sentence xml:id="P1E202">Enfin, le cours étudié est particulièrement centré sur le formateur qui monopolise l’essentiel de la parole.</sentence>
+				<sentence xml:id="P1E203">Il est difficile de savoir à quel point ce type de pédagogie est représentatif du fonctionnement habituel des formateurs des ESPE.</sentence>
+				<sentence xml:id="P1E204">On peut toutefois penser que, compte tenu des modalités du concours « professeurs des écoles » et de validation des différentes unités des masters préparant à ce concours, principalement centrées sur les connaissances et la réussite personnelle, l’aspect transmissif dans la formation initiale des enseignants français est encore très prégnant.</sentence>
+				<sentence xml:id="P1E205">Malgré ces importantes réserves, nous pouvons toutefois avancer que l’utilisation d’une classe virtuelle influence les pratiques de l’enseignant.</sentence>
+				<sentence xml:id="P1E206">La classe virtuelle a pour conséquence de renforcer le caractère transmissif du cours.</sentence>
+				<sentence xml:id="P1E207">L’enseignant cadre plus strictement ses interventions, respecte de manière plus étroite le canevas d’apprentissage fixé, notamment les différentes phases et le temps consacré à ces phases.</sentence>
+				<sentence xml:id="P1E208">L’enseignant reste, en outre, plus centré sur les contenus qu’en présentiel où les digressions sont plus fréquentes.</sentence>
+				<sentence xml:id="P1E209">Cela ne l’empêche pas de rester attentif à la dimension relationnelle (<ENAMEX type="LOCATION">Ferone</ENAMEX>, 2011).</sentence>
+				<sentence xml:id="P1E210">Nous n’avons pu recueillir les données nécessaires pour valider notre deuxième hypothèse et vérifier que ce cadrage plus strict bénéficie surtout aux étudiants les moins autonomes, ceux qui ont besoin d’un enseignement explicite et d’un étayage plus soutenu.</sentence>
+				<sentence xml:id="P1E211">Mais nous pouvons nous appuyer sur les résultats de recherche pour le supposer (voir les travaux de <ENAMEX type="BUSINESS">Jézégou</ENAMEX> [2008], ou, dans un contexte différent ceux du groupe RESEIDA, ceux de <ENAMEX type="BUSINESS">Rochex &amp; Crinon</ENAMEX>, 2011).</sentence>
+				<sentence xml:id="P1E212">Les étudiants, dans des questionnaires relatifs à l’utilisation des classes virtuelles, ont souligné deux autres aspects qui plaident en faveur de l’utilisation des classes virtuelles en formation à distance.</sentence>
+				<sentence xml:id="P1E213">Le premier est lié à la structuration du temps.</sentence>
+				<sentence xml:id="P1E214">Les étudiants, même les plus en réussite, sollicitent ces rendez-vous fixes qui donnent des repères temporels et structurent le rythme de travail.</sentence>
+				<sentence xml:id="P1E215">Ils considèrent également que leur participation régulière dans ces classes renforce l’identité du groupe.</sentence>
+				<sentence xml:id="P1E216">Être présent simultanément dans un même cours, même à distance, semble renforcer les liens entre les apprenants.</sentence>
+				<sentence xml:id="P1E217">Dans nos prochains travaux, pour vérifier et approfondir ces résultats, nous envisageons d’une part, de tester différentes configurations de classe virtuelle afin de comparer l’effet d’un contrôle pédagogique fort et faible sur les résultats d’étudiants plus ou moins autodirigés et d’autre part, de mesurer s’il y un effet « classes virtuelles » sur l’identité du groupe et sur la communication entre étudiants.</sentence>
+				<sentence xml:id="P1E218">Les échanges entre étudiants sont-ils plus denses avant et après les classes virtuelles dans les espaces prévus à cet effet ?</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P2">
+				<sentence xml:id="P2E0">http://dms.revues.org/1047</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P3">
+				<sentence xml:id="P3E0">10.4000/dms.1047</sentence>
+			</p>
+		</document>
+	</subcorpus>
+</corpus>

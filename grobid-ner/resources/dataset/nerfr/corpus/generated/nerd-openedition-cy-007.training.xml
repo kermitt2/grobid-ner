@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<corpus>
+	<subcorpus>
+		<document name="nerd-openedition-cy-007">
+			<p xml:lang="fr" xml:id="P0">
+				<sentence xml:id="P0E0">Télédetection archéologique dans la <ENAMEX type="ORGANISATION">Wadi Markha</ENAMEX></sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P1">
+				<sentence xml:id="P1E0">L&apos;<ENAMEX type="LOCATION">Arabie du Sud</ENAMEX> constitue, à plus d&apos;un titre, un terrain adapté à la télédétection.</sentence>
+				<sentence xml:id="P1E1">Ses vastes espaces rendent difficile au chercheur d&apos;y acquérir une vue d&apos;ensemble.</sentence>
+				<sentence xml:id="P1E2">L&apos;accès à certaines régions reste malaisé.</sentence>
+				<sentence xml:id="P1E3">Il existe de surcroît des documents fournissant des indications sur la situation antérieure à la transformation considérable du paysage au cours des 20 dernières années.</sentence>
+				<sentence xml:id="P1E4">Trois niveaux d&apos;observation peuvent être distingués en matière de télédétection :  1. d&apos;un satellite à environ 300 km d&apos;altitude, 2. d&apos;un avion entre 1 et 10 km d&apos;altitude, 3. du sol à environ 30 cm de hauteur.</sentence>
+				<sentence xml:id="P1E5">Avant d&apos;appliquer ces méthodes il importe de connaître l&apos;une des particularités de l&apos;<ENAMEX type="LOCATION">Arabie du Sud</ENAMEX>.</sentence>
+				<sentence xml:id="P1E6">L&apos;irrigation de crue dans l&apos;<ENAMEX type="LOCATION">Antiquité</ENAMEX> :  L&apos;irrigation de crue était la spécialité de l&apos;<ENAMEX type="LOCATION">Arabie du Sud</ENAMEX>.</sentence>
+				<sentence xml:id="P1E7">Les eaux de crue, produites par les violentes pluies de printemps et d&apos;été, étaient conduites directement dans les champs qui étaient submergés par environ un demi-mètre d&apos;eau.</sentence>
+				<sentence xml:id="P1E8">Chaque année plus d&apos;un centimètre de fins sédiments était déposé.</sentence>
+				<sentence xml:id="P1E9"><ENAMEX type="PERSON">A Marib</ENAMEX>, on trouve aujourd&apos;hui de monotones dépôts de limons de plus de 30 m de haut.</sentence>
+				<sentence xml:id="P1E10">Après l&apos;abandon de l&apos;irrigation, ces sédiments clairs furent érodés par l&apos;eau et le vent le long des canaux et des murets des champs, de sorte qu&apos;apparaît aujourd&apos;hui un schéma d&apos;érosion en quadrillage.</sentence>
+				<sentence xml:id="P1E11">Les dépôts sédimentaires antiques dus à l&apos;irrigation sont désormais l&apos;élément géographique le plus frappant des grands wadis du <ENAMEX type="LOCATION">Yémen</ENAMEX>.</sentence>
+				<sentence xml:id="P1E12">Géo-images/ Images satellites : Une première approche de l&apos;archéologie sudarabique est déjà possible par les géo-images.</sentence>
+				<sentence xml:id="P1E13">Les zones d&apos;irrigation antique peuvent être reconnues grâce aux teintes claires et au schéma d&apos;irrigation quadrillé.</sentence>
+				<sentence xml:id="P1E14">De grands tells peuvent également être localisés.</sentence>
+				<sentence xml:id="P1E15">Il ressort de cette vue d&apos;ensemble que :  - il y avait à l&apos;époque antique une oasis irriguée dans chaque grand wadi au pourtour du Ramlat as-Sabatayn, - le wadi <ENAMEX type="PERSON">Dana</ENAMEX> et le wadi <ENAMEX type="PERSON">Bayhan</ENAMEX> ne possèdent qu&apos;un grand tell.</sentence>
+				<sentence xml:id="P1E16">Saba et <ENAMEX type="BUSINESS">Qataban</ENAMEX> semblent donc avoir été des états fortement centralisés.</sentence>
+				<sentence xml:id="P1E17">On trouve plusieurs tells dans les régions des anciens royaumes de Ma&apos;in, <ENAMEX type="BUSINESS">Awsan</ENAMEX> et <ENAMEX type="BUSINESS">Hadramaout</ENAMEX> ce qui caractérise plutot des cité-états, - sur le plan archéologique, le wadi <ENAMEX type="PERSON"> Markha</ENAMEX> est une véritable mine qu&apos;il valait la peine d&apos;explorer.</sentence>
+				<sentence xml:id="P1E18">Photographies aériennes : Des survols purent être effectués en janvier 1994, peu avant le début de la guerre civile.</sentence>
+				<sentence xml:id="P1E19">Des prises de vue aériennes de tout le wadi Markha, à l&apos;échelle de 1:30.000, furent réalisées par la société <ENAMEX type="ORGANISATION">MAPS Geosystem Gmbh</ENAMEX> grâce à un financement du musée ethnologique de <ENAMEX type="PERSON">Münich</ENAMEX>.</sentence>
+				<sentence xml:id="P1E20">Ces vues permettent de reconnaître les dépôts sédimentaires d&apos;irrigation.</sentence>
+				<sentence xml:id="P1E21">Des tells, des barrages, des canaux, des murets et même des constructions telles que temple et répartiteur d&apos;eau sont visibles.</sentence>
+				<sentence xml:id="P1E22">Un premier examen des photographies renforcé par une étude de terrain en janvier 1995 permit de confirmer l&apos;hypothèse selon laquelle le paysage agraire antique du wadi Markha est resté conservé dans ses principaux traits.</sentence>
+				<sentence xml:id="P1E23">Les photographies aériennes permettront aux chercheurs à venir de connaître ce paysage, et ce, malgré les boulversements considérables que connaît actuellement le wadi.</sentence>
+				<sentence xml:id="P1E24">Les résultats les plus notables sont : - 6700 ha de dépôts sédimentaires d&apos;irrigation sont visibles en surface, - dans la basse vallée un système étendu de canaux a pu être cartographié, - une douzaine de zones d&apos;habitat antiques de plus d&apos;1 ha ont été localisées, - <ENAMEX type="PERSON">Hagar Yahirr</ENAMEX> dépasse plusieurs fois par la taille tous les autres tells.</sentence>
+				<sentence xml:id="P1E25">C&apos;est pourquoi notre campagne de terrain du 25-11 au 2-12-1995 s&apos;est concentrée sur ce tell.</sentence>
+				<sentence xml:id="P1E26">Mesures magnétométriques : MM. <ENAMEX type="PERSON">Becker</ENAMEX> et <ENAMEX type="PERSON">Fassbinder de L&apos;Office Bavarois</ENAMEX> pour la <ENAMEX type="LOCATION">Sauvegarde du Patrimoine</ENAMEX> à <ENAMEX type="BUSINESS">Münich</ENAMEX> ont mesuré une surface de 4 ha avec un magnétomètre au césium <ENAMEX type="BUSINESS">CS2</ENAMEX>/MEP720 à double censeur.</sentence>
+				<sentence xml:id="P1E27">Des lignes tirées tous les 50 cm permirent d&apos;effectuer des mesures à intervalles de 25 cm.  Les premiers traitements des 400.000 mesures avec <ENAMEX type="BUSINESS">Geoplot Software</ENAMEX> fournirent des résultats encourageants.</sentence>
+				<sentence xml:id="P1E28">Ils font apparaître un plan quasiment complet du niveau supérieur de la cité de <ENAMEX type="PERSON">Hagar Yahirr</ENAMEX> avec mur d&apos;enceinte et fondations de grands bâtiments qui furent détruits par un incendie.</sentence>
+				<sentence xml:id="P1E29">Les mesures magnétométriques nous permirent de collecter une information non-visible sans pour autant éveiller la curiosité des habitants qui aurait rapidement conduit à des fouilles de pillage, fréquentes dans cette région.</sentence>
+				<sentence xml:id="P1E30"><ENAMEX type="PERSON"> Hagar Yahirr</ENAMEX>, capitale du royaume de <ENAMEX type="PERSON"> Awsan</ENAMEX> : M. <ENAMEX type="PERSON">Saad Ayoub</ENAMEX> a entrepris l&apos;examen de la céramique.</sentence>
+				<sentence xml:id="P1E31">D&apos;après ses premières impressions, elle date principalement de la période entre la fin du 2ème siècle et le début du 1er siècle av. J.C. Autour des 16 ha de la ville ceinte de remparts les fondations de maisons en briques de terre crue furent repérées sur de vastes surfaces.</sentence>
+				<sentence xml:id="P1E32">A 600 m à l&apos;E.</sentence>
+				<sentence xml:id="P1E33">-N.E. de <ENAMEX type="PERSON">Hagar Yahirr</ENAMEX> se trouve un tell allongé, d&apos;environ 5 ha appelé <ENAMEX type="PERSON"> Hagar Asfal</ENAMEX>.</sentence>
+				<sentence xml:id="P1E34">Les premières datations au radio-carbone des sédiments d&apos;irrigation aux alentours indiquent un abandon de l&apos;irrigation dans la première moitié du 1er siècle av. J.C.  Ces découvertes amènent à esquisser à titre encore provisoire l&apos;hypothèse suivante : <ENAMEX type="BUSINESS">Hagar Yahirr</ENAMEX> était le centre d&apos;une cité exceptionnellement grande avec temples et palais.</sentence>
+				<sentence xml:id="P1E35">Elle était entourée de demeures simples construites en briques de terre crue.</sentence>
+				<sentence xml:id="P1E36">Au-delà se trouvait peut-être un souk avec des caravansérails dans lesquels les caravanes de chameaux pouvaient entreposer leurs marchandises.</sentence>
+				<sentence xml:id="P1E37">La ville semble avoir été détruite et abandonnée au cours de la première moitié du 1er siècle av. J.C.  Il est ainsi possible de répondre par l&apos;affirmative à la question posée par <ENAMEX type="PERSON">J.F. Breton</ENAMEX>.</sentence>
+				<sentence xml:id="P1E38"><ENAMEX type="PERSON"> Hagar Yahirr</ENAMEX> était la capitale du royaume de <ENAMEX type="LOCATION">Awsan</ENAMEX>.</sentence>
+				<sentence xml:id="P1E39">Son emplacement s&apos;inscrit parfaitement dans la chaîne des capitales sudarabiques au débouché des grands wadis, avec Ma&apos;in dans le wadi Jawf, Marib dans le wadi <ENAMEX type="BUSINESS"> Dana</ENAMEX>, Timna dans le wadi <ENAMEX type="PERSON">Bayhan</ENAMEX>, <ENAMEX type="PERSON">Hagar Yahirr</ENAMEX> dans le wadi <ENAMEX type="PERSON">Markha</ENAMEX> et Shabwa dans le wadi <ENAMEX type="BUSINESS">Irma</ENAMEX>.</sentence>
+				<sentence xml:id="P1E40">Cette capitale florissante du royaume d&apos;Awsan fut détruite au 7ème siècle av. J.C. par le roi sabéen Karib il <ENAMEX type="ORGANISATION">Watar</ENAMEX> (RES 3946) et n&apos;a jamais été reconstruite depuis.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P2">
+				<sentence xml:id="P2E0">http://cy.revues.org/108</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P3">
+				<sentence xml:id="P3E0">10.4000/cy.108</sentence>
+			</p>
+		</document>
+	</subcorpus>
+</corpus>

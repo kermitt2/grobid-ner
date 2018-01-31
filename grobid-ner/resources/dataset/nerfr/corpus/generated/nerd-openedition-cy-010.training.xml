@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<corpus>
+	<subcorpus>
+		<document name="nerd-openedition-cy-010">
+			<p xml:lang="fr" xml:id="P0">
+				<sentence xml:id="P0E0">Epigraphie islamique</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P1">
+				<sentence xml:id="P1E0">Cette mission comprend deux volets.</sentence>
+				<sentence xml:id="P1E1">Le premier, de nature pédagogique, s&apos;est déroulé à l&apos;<ENAMEX type="ORGANISATION">Université de Sanaa</ENAMEX>, au cours de trois conférences, dans le <ENAMEX type="ORGANISATION">Département d&apos;Histoire et d&apos;Archéologie</ENAMEX>, à l&apos;intérieur du cycle de cours de <ENAMEX type="PERSON">Muhammad al-Arousi</ENAMEX>, maître-assistant à l&apos;<ENAMEX type="ORGANISATION">Université de Sanaa</ENAMEX>.</sentence>
+				<sentence xml:id="P1E2">La première conférence a concerné la méthodologie à utiliser pour étudier l&apos;histoire de l&apos;art et faire des recherches dans ce domaine.</sentence>
+				<sentence xml:id="P1E3">La seconde a été une application de cette méthodologie, à partir de l&apos;étude de la mosquée al-&apos;<ENAMEX type="LOCATION">Abbas</ENAMEX> (à Asnaf, 40 km., au S.E. de <ENAMEX type="LOCATION">Sanaa</ENAMEX>).</sentence>
+				<sentence xml:id="P1E4">La structure de l&apos;étude, le développement de la problématique, les analyses et comparaisons des décors avec ceux des autres monuments du <ENAMEX type="LOCATION">Yémen</ENAMEX>, puis des pays islamiques, et les résultats de ces analyses leur ont été expliqués.</sentence>
+				<sentence xml:id="P1E5">La troisième conférence a concerné l&apos;épigraphie arabe : les différentes parties d&apos;une étude épigraphique, les diverses analyses à effectuer pour extraire des inscriptions, toutes les informations susceptibles d&apos;intéresser les chercheurs dans des domaines variés.</sentence>
+				<sentence xml:id="P1E6">Chaque conférence a été illustrée de diapositives et suivie d&apos;une discussion, à laquelle quelques étudiants, parmi la cinquantaine qui étaient présents, ont participé avec intérêt, parfois même avec vivacité, lorsque la question touchait, de près ou de loin, à un problème religieux.</sentence>
+				<sentence xml:id="P1E7">Le second volet de la mission a consisté dans une prospection dans le Hadramaout avec <ENAMEX type="PERSON">Muhammad al-Arousi</ENAMEX>, maître-assistant à l&apos;<ENAMEX type="ORGANISATION">Université de Sanaa</ENAMEX>, afin de commencer l&apos;inventaire des monuments islamiques de cette région (en particulier des monuments funéraires) et des inscriptions arabes.</sentence>
+				<sentence xml:id="P1E8">Les sites visités ont été : Say&apos;‚n avec la mosquée al-Riyad, le cimetière et les mausolées &quot;al-ºib·i&quot;.</sentence>
+				<sentence xml:id="P1E9">Au musée du palais al-Kaûiri, a été relevée et photographiée une inscription datée de 360 / 970-71 qui, jusqu&apos;alors n&apos;était pas publiée.</sentence>
+				<sentence xml:id="P1E10">Sur la route de Say&apos;‚n à <ENAMEX type="BUSINESS">Tarim</ENAMEX>, nous avons visité et photographié le tombeau et la mosquée de &apos;Isa b. <ENAMEX type="PERSON">Ahmed al-Muhagir</ENAMEX>, célèbre lieu de pélerinage ; à <ENAMEX type="BUSINESS"> Tarim</ENAMEX> même, la mosquée al-Mihdar (de fondation la plus ancienne, entre 375 et 402 / 985 et 1012), celles &apos;Abd al-Rahman Ba Ya&apos;q‚b (708 / 1309), d&apos;al-Nur et de Zuhra et celle des <ENAMEX type="BUSINESS">Bani &apos;Alawi</ENAMEX> ; le mausolée du wali Mawli al-&apos;<ENAMEX type="BUSINESS">Arad</ENAMEX>, lieu de pèlerinage pour les femmes.</sentence>
+				<sentence xml:id="P1E11">Nous avons également photographié les superbes maisons des familles ºamt‚t &apos;Aydar‚s b. Sa&apos;id al-Kaf et Mini ­‚ra.</sentence>
+				<sentence xml:id="P1E12">A &apos;Inat, le cimetière et les huit beaux mausolées du soufi Ab‚ Bakr b. Salim et des membres de sa famille ont été visités et photographiés.</sentence>
+				<sentence xml:id="P1E13">Le village est doté de nombreuses mosquées dont la plus ancienne est la mosquée al-<ENAMEX type="BUSINESS">Qibli</ENAMEX>.</sentence>
+				<sentence xml:id="P1E14">Plusieurs autres mosquées ont été repérées (la grande mosquée, la mosquée al-Zahir).</sentence>
+				<sentence xml:id="P1E15">Sur la route de Say&apos;‚n à °ibam, nous avons visité le cimetière et le mausolée de <ENAMEX type="PERSON">Sayyid &apos;Abd al-Rahman</ENAMEX> (1037 / 1627-28) et un peu plus loin, dans le village de º‚ta, ceux de <ENAMEX type="PERSON">Ahmad b</ENAMEX>. Zayn et de &apos;<ENAMEX type="PERSON">Ali b</ENAMEX>. Zayn.</sentence>
+				<sentence xml:id="P1E16">Peu avant d&apos;arriver à °ibam, le superbe mausolée de &apos;Aydar‚s al-ºib·i entouré de plusieurs tombes, dont l&apos;une est datée de 1294 / 1877.</sentence>
+				<sentence xml:id="P1E17">A °ibam, nous avons contacté le directeur des monuments historiques et photographié la grande mosquée et les habitations (dans chaque ville nous avons photographié des détails des portes et fenêtres en bois sculpté et des décors peints).</sentence>
+				<sentence xml:id="P1E18">Dans le wadi Du&apos;an, nous avons vu les mosquées des villages de qaryat ¹arat S‚dan et de <ENAMEX type="BUSINESS">Khiraykhir</ENAMEX>.</sentence>
+				<sentence xml:id="P1E19">Leurs décors peints s&apos;harmonisent avec ceux ds habitations.</sentence>
+				<sentence xml:id="P1E20">Les petites digues construites avec des galets pour empêcher les eaux du wadi d&apos;emporter les maisons, en période de crue, ont également retenu notre attention.</sentence>
+				<sentence xml:id="P1E21">Nous sommes restés peu de temps à <ENAMEX type="LOCATION">Mukalla</ENAMEX>, et n&apos;avons pas repéré beaucoup de mausolées aux alentours de la ville.</sentence>
+				<sentence xml:id="P1E22">Nous avons photographié de beaux décors de maisons et des fenêtres en bois.</sentence>
+				<sentence xml:id="P1E23">A l&apos;instar des habitations, les monuments religieux de l&apos;Hadramaout sont construits en terre crue.</sentence>
+				<sentence xml:id="P1E24">Leur architecture est simple, mais très harmonieuse.</sentence>
+				<sentence xml:id="P1E25">Tous les minarets sont également en terre crue, même le célèbre minaret de <ENAMEX type="PERSON">Tarim</ENAMEX>, de hauteur impressionnante ; il est composé d&apos;une superposition de troncs parallélépipédiques dont le volume décroît jusqu&apos;au sommet.</sentence>
+				<sentence xml:id="P1E26">Les autres minarets ofrent généralement une base carrée, un peu massive, surmontée d&apos;un fût cylindrique.</sentence>
+				<sentence xml:id="P1E27">Ils sont ornés de jolies balustrades ajourées, en briques crues.</sentence>
+				<sentence xml:id="P1E28">Une couche de n‚ra, chaux épaisse fabriquée sur le bord des routes, où les fours jouxtent des installations de fortune, revêt presque tous les monuments religieux et également certaines habitations, en particulier dans le wadi Du&apos;an où les arêtes des murs et les encadrements des fenêtres sont ornés de motifs géométriques ou floraux, peints de couleur vert-turquoise et saumon pouvant aller jusqu&apos;au rouge foncé.</sentence>
+				<sentence xml:id="P1E29">Les mausolées du Hadramaout, où l&apos;on décèle une influence indienne, méritent une étude approfondie.</sentence>
+				<sentence xml:id="P1E30">Parfois agrémentés d&apos;un petit porche couronné d&apos;une coupolette, ils sont composés d&apos;une ou de plusieurs salles carrées de hauteurs différentes, surmontées d&apos;un ou de deux balconnets ajourés en brique crue, parfois peints en turquoise et saumon.</sentence>
+				<sentence xml:id="P1E31">Une coupole, de forme ovoïde, de dimensions adaptées aux volumes couvre la salle principale et les petites salles adjacentes.</sentence>
+				<sentence xml:id="P1E32">Elles sont souvent décorées à mi-hauteur d&apos;une ou de deux frises géométriques, parfois peintes de la même teinte que celle des balconnets.</sentence>
+				<sentence xml:id="P1E33">A l&apos;intérieur de ces mausolées se trouve souvent un cénotaphe en bois, plus ou moins décoré, devant lequel une stèle précise l&apos;identité du défunt.</sentence>
+				<sentence xml:id="P1E34">Des tombes, celles de la famille du &quot;saint&quot;, sont disposées tout autour, le long des murs.</sentence>
+				<sentence xml:id="P1E35">Vu les difficultés qu&apos;ont actuellement les étrangers pour pénétrer dans les monuments religieux et les cimetières, il est souhaitable que nous aidions les étudiants yéménites qui se consacreront à l&apos;étude de ces monuments.</sentence>
+				<sentence xml:id="P1E36">Il y a là plusieurs sujets de maîtrise et de DEA.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P2">
+				<sentence xml:id="P2E0">http://cy.revues.org/110</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P3">
+				<sentence xml:id="P3E0">10.4000/cy.110</sentence>
+			</p>
+		</document>
+	</subcorpus>
+</corpus>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<corpus>
+	<subcorpus>
+		<document name="nerd-openedition-dms-006">
+			<p xml:lang="fr" xml:id="P0">
+				<sentence xml:id="P0E0">Des responsables d’équipe dans le déploiement d’un enseignement à distance : entre innovation, industrialisation et modèles de dissémination</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P1">
+				<sentence xml:id="P1E0">Introduction Aujourd’hui, de nombreuses universités proposent des enseignements à distance, souvent en complément d’offres en présentiel.</sentence>
+				<sentence xml:id="P1E1">Cette modalité permet à ces structures d’absorber l’augmentation des besoins de formation, de s’ouvrir à de nouveaux publics et de répondre à des attentes sociales (Bourdet, 2014).</sentence>
+				<sentence xml:id="P1E2">Elle leur permet également de s’inscrire dans la dynamique des technologies et de leurs usages, en déployant des dispositifs innovants comme les <ENAMEX type="ORGANISATION">MOOC</ENAMEX>.</sentence>
+				<sentence xml:id="P1E3">Des incitations locales, nationales ou internationales poussent au développement de l’enseignement à distance.</sentence>
+				<sentence xml:id="P1E4">Son implantation peut être le fruit d’une implication dans des projets d’envergure comme LEARN-<ENAMEX type="BUSINESS">NETT</ENAMEX> (Charlier, 2007), <ENAMEX type="BUSINESS">MS</ENAMEX> (Depover et al., 2007) ou les MOOC (<ENAMEX type="BUSINESS">Charlier</ENAMEX>, 2014).</sentence>
+				<sentence xml:id="P1E5">Elle peut également provenir d’une volonté locale qui s’appuie alors sur le soutien de collectivités territoriales, de services d’ingénierie et de laboratoires de recherches, dans des configurations et des contextes très divers (<ENAMEX type="BUSINESS">Wallet</ENAMEX>, 2007 ; Trestini et al., 2014 ; Bourdet et al., 2014).</sentence>
+				<sentence xml:id="P1E6">Dans cet article, nous nous intéressons à la façon dont l’enseignement à distance se dissémine au sein d’un même établissement, en particulier lorsqu’un dispositif initial existe et qu’il s’agit de l’étendre à d’autres composantes de la structure.</sentence>
+				<sentence xml:id="P1E7">Pour ces composantes, l’enseignement à distance est une innovation que l’université cherche à industrialiser en impliquant de nouveaux acteurs.</sentence>
+				<sentence xml:id="P1E8">L’université de <ENAMEX type="LOCATION">Cergy-Pontoise</ENAMEX> relève de ce cas.</sentence>
+				<sentence xml:id="P1E9">En 2010, elle portait un dispositif d’enseignement à distance issu de la lignée de travaux du projet ACOLAD (Jaillet, 2004).</sentence>
+				<sentence xml:id="P1E10">Ce dispositif délivrait une formation à distance ancienne et reconnue, la formation <ENAMEX type="BUSINESS">ACREDITE</ENAMEX>, dont l’objectif était de former aux nouvelles technologies des responsables de formation et des enseignants (Peraya et al., 2013).</sentence>
+				<sentence xml:id="P1E11">En 2010, l’université de <ENAMEX type="LOCATION">Cergy-Pontoise</ENAMEX> décidait d’étendre ce dispositif à ses formations de professeurs des écoles, formations déjà en place en présentiel depuis de longues années.</sentence>
+				<sentence xml:id="P1E12">Deux différences majeures opposent ces 2 dispositifs.</sentence>
+				<sentence xml:id="P1E13">Un changement d’échelle tout d’abord, puisque la formation initiale (<ENAMEX type="ORGANISATION">ACREDITE</ENAMEX>) ne s’adressait, en 2012-2013, date de notre étude, qu’à une cinquantaine d’étudiants, alors que celle des formations de professeurs en scolarisait presque 400.</sentence>
+				<sentence xml:id="P1E14">Un changement d’expérience de la part des enseignants ensuite, puisque le dispositif initial était assuré par une dizaine de tuteurs très expérimentés, alors que la centaine d’intervenants à distance des formations de professeurs était néophytes sur cette modalité.</sentence>
+				<sentence xml:id="P1E15">Cette configuration pose ainsi la question de la diffusion de la modalité à distance, envisagée comme une innovation pour les nouveaux acteurs, dans le contexte global d’une industrialisation de ce dispositif.</sentence>
+				<sentence xml:id="P1E16">La question posée est de comprendre comment un dispositif d’enseignement à distance initial, porté par un petit nombre d’acteurs, peut être adopté par d’autres composantes avec un changement d’échelle notoire et l’inexpérience des nouveaux intervenants.</sentence>
+				<sentence xml:id="P1E17">Dans le cas qui nous intéresse, celui de notre université, ce sont des acteurs particuliers, les responsables d’équipe, qui ont joué un rôle clé dans la dissémination de la modalité à distance.</sentence>
+				<sentence xml:id="P1E18">Ces responsables sont des enseignants volontaires, sans expérience préalable de la distance et ayant une longue pratique du présentiel dans les formations cibles.</sentence>
+				<sentence xml:id="P1E19">Ils se sont construit une expertise d’enseignants en ligne, ont décliné le modèle pédagogique de la distance dans leur discipline et ont recruté et piloté une équipe de pairs.</sentence>
+				<sentence xml:id="P1E20">Afin de mieux saisir leur place, nous passons en revue, dans une première partie, les questions d’innovation et d’industrialisation, en évoquant différents modèles qui peuvent nous intéresser.</sentence>
+				<sentence xml:id="P1E21">Dans une seconde partie, nous détaillons notre contexte, avant de présenter, dans une troisième partie, la méthodologie d’étude de ces acteurs et les principaux résultats que nous obtenons.</sentence>
+				<sentence xml:id="P1E22">Une dernière partie nous permet de discuter de nos résultats, en revenant sur les modèles d’innovation et sur les problématiques d’industrialisation abordées préalablement.</sentence>
+				<sentence xml:id="P1E23">Cadres de référence Innovation De nombreux auteurs se sont intéressés à la notion d’innovation.</sentence>
+				<sentence xml:id="P1E24">Nous retiendrons que l’innovation est un processus complexe, dynamique, qui s’inscrit dans la durée  (<ENAMEX type="ORGANISATION">Peraya</ENAMEX> et al., 2004).</sentence>
+				<sentence xml:id="P1E25">Elle vise à améliorer une situation, à résoudre des problèmes ou à organiser plus efficacement des ressources disponibles (Garant, 1996).</sentence>
+				<sentence xml:id="P1E26">Elle suscite souvent des tensions du fait des enjeux qu’elle représente.</sentence>
+				<sentence xml:id="P1E27">En éducation, elle ne porte pas nécessairement sur les seuls contenus, mais se situe aussi dans le « faire » autrement dans un milieu donné (Adamczewski, 1996).</sentence>
+				<sentence xml:id="P1E28">C’est en cela, plus généralement, que l’innovation se démarque de la simple nouveauté.</sentence>
+				<sentence xml:id="P1E29">Elle se caractérise en effet par des transformations durables dans les pratiques sociales (<ENAMEX type="BUSINESS">Alter</ENAMEX>, 2000).</sentence>
+				<sentence xml:id="P1E30">Ces transformations peuvent relever d’un changement plus émergent que planifié (<ENAMEX type="BUSINESS">Fichez</ENAMEX>, 2007).</sentence>
+				<sentence xml:id="P1E31">Dans le domaine des usages de la technologie dans le supérieur, l’innovation peut engendrer de nouveaux savoirs ou transformer les méthodes pédagogiques, les ressources, les métiers et les organisations (Simonnot, 2013).</sentence>
+				<sentence xml:id="P1E32">Les acteurs de l’innovation prennent une part active dans son développement, en adaptant, étendant, déplaçant et détournant les technologies (<ENAMEX type="LOCATION">Akrich</ENAMEX>, 1998).</sentence>
+				<sentence xml:id="P1E33">De façon générale, l’innovation peut commencer « petitement, par le bas et sur le mode artisanal » avant de se diffuser et de s’industrialiser dès que son utilité est reconnue (<ENAMEX type="LOCATION">Moeglin</ENAMEX>, 2005).</sentence>
+				<sentence xml:id="P1E34">C’est ce second processus, l’industrialisation, que nous examinons au paragraphe suivant.</sentence>
+				<sentence xml:id="P1E35">Industrialisation des formations Il faut se garder de certaines approches naïves de l’industrialisation des formations.</sentence>
+				<sentence xml:id="P1E36">La seule existence d’outils ou de médias industrialisés ne suffit pas à affirmer qu’une logique d’industrialisation soit à l’œuvre.</sentence>
+				<sentence xml:id="P1E37">Cette dernière ne se confond pas, en effet, avec la médiatisation ou la technologisation de certains pans du dispositif (Moeglin, 1998).</sentence>
+				<sentence xml:id="P1E38">De même, il faut veiller au périmètre qu’elle touche, l’industrialisation d’un seul objet innovant ne suffit pas (<ENAMEX type="LOCATION">Jacquinot-Delaunay</ENAMEX>, 2008).</sentence>
+				<sentence xml:id="P1E39">Elle doit nécessairement affecter l’ensemble de la formation, ses structures organisationnelles autant que la façon d’apprendre (<ENAMEX type="BUSINESS">Peters</ENAMEX>, 2000).</sentence>
+				<sentence xml:id="P1E40">En fait, l’appréhension de l’industrialisation des formations doit être reliée à l’industrie et aux marchés, et plus particulièrement à l’« intensité capitalistique », l’organisation rationnelle du travail et la « présence des machines » (Tremblay, 1998).</sentence>
+				<sentence xml:id="P1E41">Pour autant, cette démarche n’est pas sans difficulté, tant le monde de l’industrie et celui de la formation paraissent relever d’univers très différents et dont la conciliation serait « contre nature » (<ENAMEX type="BUSINESS">Moeglin</ENAMEX>, 1998).</sentence>
+				<sentence xml:id="P1E42">Comment en effet appliquer les notions de marchés à la formation, qu’elle soit initiale ou même continue, malgré les liens indéniables existant entre cette dernière et les entreprises (Trestini et al., 2012) ?</sentence>
+				<sentence xml:id="P1E43">En fait, la notion de rentabilité n’est guère pertinente dans le secteur de la formation et le rôle des machines est à cerner avec précision pour évaluer s’il relève d’un phénomène d’industrialisation.</sentence>
+				<sentence xml:id="P1E44">Par exemple, un processus qui se limite à la simple médiatisation de la communication pédagogique ou à la définition de quelques normes d’échanges ne sera pas reconnu comme industriel du fait de sa portée trop réduite (Fichez, 2010).</sentence>
+				<sentence xml:id="P1E45">L’industrialisation du matériel pédagogique est facile à identifier, elle porte sur la reproduction en masse de produits (supports d’apprentissage, logiciels).</sentence>
+				<sentence xml:id="P1E46">Celle du tutorat, en revanche, ne va pas de soi.</sentence>
+				<sentence xml:id="P1E47">Par nature, le tutorat est en effet une activité de service, immatérielle, qui nécessite la coprésence du tuteur et des étudiants et n’existe qu’au moment de son déroulement (<ENAMEX type="BUSINESS">Moeglin</ENAMEX>, 2005).</sentence>
+				<sentence xml:id="P1E48">Sa reproductibilité à grande échelle n’est donc pas immédiate.</sentence>
+				<sentence xml:id="P1E49">En outre, cette activité est soumise à des exigences qualitatives, qui vont dans le sens de « prestations plurielles et hétérogènes » et s’opposent à une approche quantitative « conduisant à des prestations standardisées et reproductibles » (<ENAMEX type="BUSINESS">Moeglin</ENAMEX>, 2005).</sentence>
+				<sentence xml:id="P1E50">Pour autant, ces considérations n’empêchent pas certaines formes d’industrialisation du tutorat.</sentence>
+				<sentence xml:id="P1E51">L’organisation de pools de tuteurs plus ou moins anonymes, la mise en place de procédures automatisées (suivis programmés reposant sur des typologies d’apprenants) et de ressources (foires aux questions avec réponses types), l’existence de standards de qualité et de check-lists conduisant à des procédures préétablies en sont des exemples (<ENAMEX type="LOCATION">Moeglin</ENAMEX>, 2005).</sentence>
+				<sentence xml:id="P1E52">Modèles de l’innovation techno-pédagogique Différents objectifs sont assignés à de tels modèles.</sentence>
+				<sentence xml:id="P1E53">Ils contribuent à l’analyse d’une innovation en identifiant les paramètres qui permettent de la piloter (Peraya et al., 2005).</sentence>
+				<sentence xml:id="P1E54">Ils questionnent la pertinence du dispositif, guident l’identification de ses dysfonctionnements, de ses incidents (<ENAMEX type="BUSINESS">Wallet</ENAMEX>, 2010).</sentence>
+				<sentence xml:id="P1E55">Ils se préoccupent des tensions subies par les acteurs, de leur confort et inconfort (Peraya et al., 2004).</sentence>
+				<sentence xml:id="P1E56">Ces modèles visent ainsi à rendre ces innovations durables et pérennes.</sentence>
+				<sentence xml:id="P1E57">Ils éclairent une réalité complexe, en mouvement, et mettent en lumière des aspects importants qui pourraient être éludés (Depover et al., 2007).</sentence>
+				<sentence xml:id="P1E58">Un modèle n’est pas une fin en soi mais un outil qui permet d’appréhender une réalité d’une façon moins naïve qu’une approche spontanée ne le permettrait.</sentence>
+				<sentence xml:id="P1E59">De nombreux modèles existent, qui présentent des positionnements communs.</sentence>
+				<sentence xml:id="P1E60">Ils se gardent d’une approche « techno-centrée » au profit d’une vision « anthropo-centrée » itérative et coopérative (<ENAMEX type="BUSINESS">Linard</ENAMEX>, 2002) ou « socio-centrée », qui se fonde alors sur des réseaux d’acteurs (<ENAMEX type="BUSINESS">Depover</ENAMEX> et al., 2007).</sentence>
+				<sentence xml:id="P1E61">Ces modèles se placent dans une approche systémique qui inscrit l’innovation dans un jeu d’éléments interdépendants.</sentence>
+				<sentence xml:id="P1E62">La pédagogie, les acteurs, le dispositif et l’institution constituent autant de pôles à prendre en compte (<ENAMEX type="BUSINESS">Wallet</ENAMEX>, 2010).</sentence>
+				<sentence xml:id="P1E63">Une innovation perturbe ainsi un équilibre souvent fragile.</sentence>
+				<sentence xml:id="P1E64">Elle génère des tensions, des désordres et des incidents qui touchent l’ensemble du système qui doit alors se restabiliser, retrouver un nouvel équilibre pour perdurer.</sentence>
+				<sentence xml:id="P1E65">Autre point commun à ces modèles, l’existence de différents niveaux d’analyse (macro, méso, micro) qui permettent d’ajuster la focale d’étude.</sentence>
+				<sentence xml:id="P1E66">La granularité de ces niveaux diffère d’un modèle à l’autre.</sentence>
+				<sentence xml:id="P1E67">Les qualifications de macro, méso, micro peuvent respectivement renvoyer tantôt au monde social, aux relations entre acteurs et aux acteurs eux-mêmes (Peraya et al., 2005), tantôt aux aspects sociétaux, institutionnels (programmes, établissement) et locaux (groupe d’apprenants, enseignant) (Depover et al., 2007).</sentence>
+				<sentence xml:id="P1E68">La dimension temporelle constitue un autre point partagé entre ces modèles.</sentence>
+				<sentence xml:id="P1E69">L’innovation est en effet un processus dynamique, que l’on peut approcher en identifiant les différentes phases qu’il traverse.</sentence>
+				<sentence xml:id="P1E70">Une première approche consiste à repérer les étapes classiques de l’ingénierie pédagogique, qui enchaîne les phases d’analyse, de conception, de développement, d’évaluation (Peraya et al., 2005).</sentence>
+				<sentence xml:id="P1E71">D’autres temporalités peuvent être plus pertinentes, en s’appuyant sur le repérage d’incidents critiques qui touchent les projets et conduisent à des phases d’enthousiasme, suivies de phases de désillusion, voire d’arrêt des innovations (Cuban, 1986).</sentence>
+				<sentence xml:id="P1E72">D’autres structurations sont également possibles, comme celles qui identifient des phases d’adoption, d’implantation et de routinisation, que l’on peut reprendre en termes d’appropriation, de structuration des usages, de diffusion et stabilisation des usages afin de marquer plus nettement l’importance à accorder aux réseaux d’acteurs (Depover et al., 2007).</sentence>
+				<sentence xml:id="P1E73">Modèles de l’innovation, approche sociologique Deux modèles de l’innovation retiennent ici notre attention.</sentence>
+				<sentence xml:id="P1E74">Le premier, celui de la diffusion (<ENAMEX type="BUSINESS">Roger</ENAMEX>, 2003), met au centre la qualité d’une innovation et sa capacité à se répandre par simple contagion.</sentence>
+				<sentence xml:id="P1E75">Dans ce modèle, les acteurs sont passifs, ils s’adaptent ou abandonnent.</sentence>
+				<sentence xml:id="P1E76">L’innovation est le fait d’un cercle étroit de décideurs, elle se coupe ainsi de son environnement socioéconomique (Akrich et al., 1988).</sentence>
+				<sentence xml:id="P1E77">Le second modèle, celui de la traduction (ou de l’intéressement), se focalise sur les liens entre les différentes acteurs, même en l’absence de consensus (Callon, 1986 ; Latour, 2005).</sentence>
+				<sentence xml:id="P1E78">Il appréhende la façon dont les acteurs se saisissent ou se détournent des objets nécessaires.</sentence>
+				<sentence xml:id="P1E79">Il montre comment le réseau d’interactions entre ces acteurs assure leur intéressement, en prenant en compte des aspects technologiques et socioéconomiques, même lorsque les points de vue divergent.</sentence>
+				<sentence xml:id="P1E80">Ce modèle stipule l’existence de points de passage obligés (Akrich et al., 1988), qui se présentent comme des objets incontournables que chaque acteur s’engage à respecter (chartes pédagogiques, normes, règles ou scénarios standards par exemple).</sentence>
+				<sentence xml:id="P1E81">Des acteurs particuliers peuvent jouer différents rôles (Noblet, 2011).</sentence>
+				<sentence xml:id="P1E82">Les traducteurs assurent une phase de problématisation qui permet à chacun de passer d’une position individuelle à une logique acceptée de réseau.</sentence>
+				<sentence xml:id="P1E83">Ils transforment, reformulent, réinterprètent les attendus de l’innovation pour enrôler d’autres acteurs.</sentence>
+				<sentence xml:id="P1E84">Les porte-paroles prennent en charge la négociation entre entités de l’innovation et rendent possibles des actions concertées.</sentence>
+				<sentence xml:id="P1E85">Le modèle de la traduction ne requiert pas l’existence d’un consensus entre acteurs pour que l’innovation réussisse.</sentence>
+				<sentence xml:id="P1E86">Il intègre tout au contraire la diversité des points de vue d’acteurs issus de mondes sociaux différents.</sentence>
+				<sentence xml:id="P1E87">Il ne fait pas l’hypothèse d’une logique de développement linéaire, mais reconnaît la possibilité de régressions.</sentence>
+				<sentence xml:id="P1E88">Le modèle de la traduction identifie, dans la vie des innovations, les différentes étapes que sont la problématisation, définition provisoire du projet, l’intéressement, qui voit des acteurs chercher à rallier d’autres acteurs, l’enrôlement, où chacun se voit attribuer un rôle et la mobilisation lorsqu’une masse critique d’acteurs est impliquée.</sentence>
+				<sentence xml:id="P1E89">Contexte La formation à distance initiale En 2010, l’université de <ENAMEX type="LOCATION">Cergy</ENAMEX>-<ENAMEX type="LOCATION">Pontoise</ENAMEX> s’est trouvée partie prenante de la formation à distance <ENAMEX type="ORGANISATION">ACREDITE</ENAMEX> dont l’objectif est de former aux technologies éducatives des enseignants et des responsables de formation (Depover et al., 2011).</sentence>
+				<sentence xml:id="P1E90">Cette université devenait coordonnatrice en remplacement de l’université de <ENAMEX type="LOCATION">Strasbourg</ENAMEX>, au sein d’un consortium réunissant les universités de <ENAMEX type="LOCATION">Mons</ENAMEX> et de <ENAMEX type="LOCATION">Genève</ENAMEX>.</sentence>
+				<sentence xml:id="P1E91">Elle se trouva ainsi dotée de chercheurs experts en enseignement à distance et d’un dispositif de formation existant depuis 2001 et très reconnu (Peraya et al, 2013).</sentence>
+				<sentence xml:id="P1E92">Ce dispositif à distance intègre certains aspects des modèles industriels, comme la division du travail entre concepteurs et tuteurs.</sentence>
+				<sentence xml:id="P1E93">Il intègre également des aspects de suivi (<ENAMEX type="BUSINESS">Depover</ENAMEX>, 2012) qui montrent que la réduction des coûts n’est pas sa priorité.</sentence>
+				<sentence xml:id="P1E94">En effet, il vise un public de « niche », assure un suivi étroit de l’apprenant quitte à accroître le nombre de connexions synchrones, il instaure une mobilité entre acteurs amenés à assurer indifféremment les fonctions de responsables, de tuteurs ou de concepteurs.</sentence>
+				<sentence xml:id="P1E95">La coexistence, au sein de ce dispositif, de formes de rationalisation qui concernent à la fois le contenu et les médiations montre que cette forme d’industrialisation n’implique pas nécessairement la massification et qu’elle peut même correspondre à une industrialisation des services qui prend en compte la personnalisation (Mœglin, 2005).</sentence>
+				<sentence xml:id="P1E96">Le modèle de cette formation vise un apprentissage de type socioconstructiviste.</sentence>
+				<sentence xml:id="P1E97">Il pose comme hypothèse que l’apprentissage résulte d’interactions entre un étudiant et son environnement culturel et social.</sentence>
+				<sentence xml:id="P1E98">L’enseignement s’organise autour de la résolution de situations problèmes et s’appuie sur des démarches collaboratives entre pairs ainsi qu’une fréquence soutenue d’échanges avec le tuteur (Jaillet, 2004).</sentence>
+				<sentence xml:id="P1E99">La plateforme utilisée (Espace) découle étroitement de ce modèle.</sentence>
+				<sentence xml:id="P1E100">Les enseignements se déroulent dans des salles de séminaires, lieux d’interactions entre un groupe d’une quinzaine d’étudiants et leur tuteur.</sentence>
+				<sentence xml:id="P1E101">Ces lieux sont dotés de différents outils (chats, messagerie, forum, etc.) et donnent accès à des salles d’équipes dédiées à la résolution de situations problèmes par groupes de 4 étudiants.</sentence>
+				<sentence xml:id="P1E102">Le modèle pédagogique est en rupture avec celui du présentiel, du fait de la dissociation qu’il impose entre les temps d’apprentissage et d’enseignement (Jaillet, 2004 ; Depover et al., 2011).</sentence>
+				<sentence xml:id="P1E103">Ce dispositif comprend l’existence d’un service pédagogique et technique, dédié à l’enseignement à distance.</sentence>
+				<sentence xml:id="P1E104">Dans ce service, des techniciens formés aux pratiques pédagogiques, les coordinateurs, organisent et orchestrent les différents temps de l’apprentissage (recueil des cours, lancement des enseignements, organisation des situations problèmes, recueil des notes, etc.).</sentence>
+				<sentence xml:id="P1E105">La nouvelle modalité à distance des formations d’enseignants La composante <ENAMEX type="ORGANISATION">Institut d’éducation de l’université de Cergy-Pontoise</ENAMEX> (qui a succédé à l’<ENAMEX type="ORGANISATION">IUFM</ENAMEX>) dispense depuis de longues années, en présentiel, des formations d’enseignants (professeurs d’école, de lycée professionnel, de français pour adultes en difficulté d’insertion, etc.).</sentence>
+				<sentence xml:id="P1E106">En 2010, elle mit en place une modalité à distance pour ces formations, en reprenant le dispositif, le modèle et la plateforme déjà opérationnels pour la formation <ENAMEX type="ORGANISATION">ACREDITE</ENAMEX>.</sentence>
+				<sentence xml:id="P1E107">La mise en œuvre de cette modalité fut confiée au service pédagogique et technique qui gérait déjà la formation <ENAMEX type="ORGANISATION">ACREDITE</ENAMEX>.</sentence>
+				<sentence xml:id="P1E108">Dès la rentrée 2010, quelques enseignements de ces formations se déroulèrent à distance.</sentence>
+				<sentence xml:id="P1E109">À partir de la rentrée suivante, ces formations furent proposées intégralement à distance tout en se poursuivant, par ailleurs, en présentiel.</sentence>
+				<sentence xml:id="P1E110">La figure 1 présente quelques caractéristiques des enseignants, tous volontaires, engagés dans la modalité à distance en 2012-2013.</sentence>
+				<sentence xml:id="P1E111">Trois différences opposent la formation <ENAMEX type="BUSINESS">ACREDITE</ENAMEX> et les formations à distance d’enseignants.</sentence>
+				<sentence xml:id="P1E112">La première porte sur leurs effectifs, puisqu’en 2012-2013, les nombres d’étudiants inscrits à <ENAMEX type="ORGANISATION">ACREDITE</ENAMEX> et dans les autres formations étaient respectivement de 46 et de 369.</sentence>
+				<sentence xml:id="P1E113">La seconde porte sur l’expérience des tuteurs.</sentence>
+				<sentence xml:id="P1E114">Les 96 tuteurs des formations d’enseignants n’avaient au mieux qu’une courte expérience de deux ans (début du dispositif) alors que les 7 enseignants d’ACREDITE basés à <ENAMEX type="LOCATION">Cergy-Pontoise</ENAMEX> étaient soit des chercheurs chevronnés, soit d’anciens étudiants à distance de cette même formation donc rompus aux pratiques tutorales.</sentence>
+				<sentence xml:id="P1E115">La troisième différence concerne l’existence de responsables d’équipe pour les formations d’enseignants, nécessitée par la variété et le volume des disciplines et formations proposées, alors que la formation ACREDITE n’en compte pas, étant donnée sa faible taille.</sentence>
+				<sentence xml:id="P1E116">Figure 1 : Quelques données sur les 96 enseignants à distance.</sentence>
+				<sentence xml:id="P1E117">Les statuts mentionnés sont professeur d’université (PU), certifié (<ENAMEX type="ORGANISATION">PRCE</ENAMEX>), agrégé (<ENAMEX type="ORGANISATION">PRAG</ENAMEX>), d’école (<ENAMEX type="ORGANISATION">PREC</ENAMEX>), de lycée d’enseignement professionnel (PLP), maître de conférences (<ENAMEX type="BUSINESS">MCF</ENAMEX>), <ENAMEX type="ORGANISATION">ATER</ENAMEX> ou doctorant (DOC).</sentence>
+				<sentence xml:id="P1E118">Aucun enseignant-chercheur, excepté l’auteur de cet article, n’a fait de l’enseignement à distance son domaine de recherche.</sentence>
+				<sentence xml:id="P1E119">L’origine et la mission des responsables d’équipe En 2010 se posa la question de savoir quels acteurs allaient piloter la conception des supports et l’élaboration des scénarios pédagogique pour les formations d’enseignants nouvellement à distance.</sentence>
+				<sentence xml:id="P1E120">Les interlocuteurs naturels étaient les responsables des départements disciplinaires ou de formations.</sentence>
+				<sentence xml:id="P1E121">Ces structures, en effet, sont décisionnaires sur les contenus d’enseignements, les modalités à mettre en œuvre, l’organisation des évaluations.</sentence>
+				<sentence xml:id="P1E122">Pour autant, ces instances ne furent pas retenues.</sentence>
+				<sentence xml:id="P1E123">Parmi les raisons, citons l’inexpérience de leurs responsables en enseignement à distance, les manifestations de rejet de la modalité à distance par un certain nombre d’enseignants et la volonté de raccrocher au service pédagogique et technique compétent tout ce qui relevait de cette modalité d’enseignement.</sentence>
+				<sentence xml:id="P1E124">La composante <ENAMEX type="ORGANISATION">Institut d’éducation de l’université de Cergy-Pontoise</ENAMEX> et ses différents conseils firent donc appel à certains enseignants « ordinaires », sans expérience de la distance, qui furent volontaires pour devenir responsables d’équipe.</sentence>
+				<sentence xml:id="P1E125">Leur mission fut de concevoir la déclinaison à distance des enseignements de leurs disciplines ou de leurs formations ainsi que de recruter et piloter une équipe de pairs.</sentence>
+				<sentence xml:id="P1E126">Notons que l’Institut d’éducation, même s’il rémunérait leur fonction, ne leur conférait institutionnellement aucune autorité.</sentence>
+				<sentence xml:id="P1E127">Ils ne devaient la considération de leurs pairs qu’à leurs seules maîtrise et expertise de la modalité à distance.</sentence>
+				<sentence xml:id="P1E128">La figure 2 propose quelques données sur ces responsables d’équipes.</sentence>
+				<sentence xml:id="P1E129">Ils sont globalement plus jeunes que l’ensemble des enseignants à distance, leurs statuts sont plus resserrés et leur répartition par genre plus équilibrée.</sentence>
+				<sentence xml:id="P1E130">Figure 2 : <ENAMEX type="BUSINESS">Quelques</ENAMEX> données sur les 21 responsables d’équipes.</sentence>
+				<sentence xml:id="P1E131">Cette présentation s’appuie sur les mêmes explications qu’à la figure 1. Étude des responsables d’équipe Recueil de données et méthodologie Entre novembre 2012 et mars 2013, chacun des 21 responsables d’équipe fit l’objet d’un questionnaire en ligne et d’un entretien semi-directif.</sentence>
+				<sentence xml:id="P1E132">Le recueil des 2 types de données eut lieu au cours d’une entrevue individuelle de 1 h 30 environ.</sentence>
+				<sentence xml:id="P1E133">La longueur du questionnaire (70 questions) et l’importance du temps exigé pour le renseigner ont milité pour la présence de l’interviewer, auteur de cet article.</sentence>
+				<sentence xml:id="P1E134">Cette présence a permis de lever des ambiguïtés suscitées par des questions portant sur un domaine mal connu des responsables d’équipe.</sentence>
+				<sentence xml:id="P1E135">L’entretien se déroula en même temps que le questionnaire.</sentence>
+				<sentence xml:id="P1E136">Il porta sur des points prévus et s’enrichit des réactions spontanées suscitées par les questions et qui furent développées.</sentence>
+				<sentence xml:id="P1E137">Cette démarche permit d’aborder un ensemble de questions vives portées par les responsables d’équipe.</sentence>
+				<sentence xml:id="P1E138">Les réponses au questionnaire et les contenus des entretiens, retranscrits et regroupés en thèmes, contribuèrent à éclairer les trajectoires individuelles des responsables d’équipe, leurs pratiques à distance et leur façon d’animer et d’enrôler leur équipe.</sentence>
+				<sentence xml:id="P1E139">Entre mi-juin et mi-juillet 2013, nous avons procédé à une contre-enquête en ligne auprès de l’ensemble des collègues, l’objectif étant de confronter les déclarations des responsables d’équipe avec la perception des enseignants.</sentence>
+				<sentence xml:id="P1E140">Le taux de réponse (57 %) et leur répartition entre équipes (conforme à la répartition de l’ensemble de la communauté) permirent de prendre en compte leurs réponses.</sentence>
+				<sentence xml:id="P1E141">Principaux résultats Nous donnons ci-dessous, en trois points, une synthèse globale et succincte des résultats obtenus.</sentence>
+				<sentence xml:id="P1E142">La diversité des configurations d’équipe Un simple examen de la figure 3 permet de prendre la mesure des différences entre équipes.</sentence>
+				<sentence xml:id="P1E143">Dans les équipes qui assuraient un nombre d’heures conséquent, la division du travail entre concepteurs et tuteurs fut appliquée avec rigueur (équipe 1, figure 3), au contraire des équipes à effectifs réduits où les rôles furent moins marqués (équipe 4, figure 3).</sentence>
+				<sentence xml:id="P1E144">Dans certains cas, la géométrie des équipes résulta de la difficulté à impliquer leurs pairs.</sentence>
+				<sentence xml:id="P1E145">Par exemple, une équipe ayant peu de tuteurs et son responsable comme unique concepteur attesta de la difficulté à enrôler des collègues (équipe 3, figure 3), même pour rédiger des supports d’apprentissage, activité jugée lourde et mal définie.</sentence>
+				<sentence xml:id="P1E146">Dans d’autres cas, cependant, les configurations des équipes provinrent des choix de leurs responsables.</sentence>
+				<sentence xml:id="P1E147">Certains ont beaucoup recruté, pour ne pas créer un corps de spécialistes de la distance (équipe 2, figure 3).</sentence>
+				<sentence xml:id="P1E148">D’autres ont imposé à chaque concepteur d’être également tuteur, pour mieux inscrire leurs productions dans des usages (équipe du master EEME, français, M2).</sentence>
+				<sentence xml:id="P1E149">D’autres encore sollicitèrent de nombreux concepteurs, pour bénéficier des apports de spécialistes reconnus (équipe du master EEME, littérature de jeunesse).</sentence>
+				<sentence xml:id="P1E150">D’autres limitèrent le nombre de concepteurs, pour qu’une équipe resserrée homogénéise un matériel d’apprentissage préexistant et applique une ligne éditoriale définie (équipe 1, figure 3).</sentence>
+				<sentence xml:id="P1E151">Le cas des formations pluridisciplinaires à faible effectif (équipe 5, figure 3) est particulier.</sentence>
+				<sentence xml:id="P1E152">Chaque enseignant est en effet le seul à dispenser sa discipline, l’équipe comprend donc nécessairement autant de tuteurs que de concepteurs.</sentence>
+				<sentence xml:id="P1E153">Des acteurs engagés, qui s’investissent dans cette modalité d’enseignement malgré des questions et des limites Les responsables d’équipe furent des praticiens actifs, engagés dès le début de la modalité à distance.</sentence>
+				<sentence xml:id="P1E154">Ils furent quasiment tous tuteurs et concepteurs avec l’intention de le rester.</sentence>
+				<sentence xml:id="P1E155">Leur engagement provenait de leur intérêt pour une innovation et de leur volonté de fédérer un groupe.</sentence>
+				<sentence xml:id="P1E156">Ils étaient animés par des valeurs, telles que répondre aux attentes sociales des étudiants.</sentence>
+				<sentence xml:id="P1E157">Ils étaient tous novices en enseignement à distance, même si quelques-uns avaient côtoyé d’autres dispositifs de formation en ligne.</sentence>
+				<sentence xml:id="P1E158">Les responsables s’impliquèrent dans une réflexion pédagogique afin de s’approprier le modèle à distance.</sentence>
+				<sentence xml:id="P1E159">Ils investirent les outils de la plateforme (chats, forums), développèrent des pratiques et postures personnelles pour les exploiter sur le plan pédagogique.</sentence>
+				<sentence xml:id="P1E160">Ils conçurent des scénarios pédagogiques pour articuler les différents temps d’apprentissage, en élaborant des usages pour les nouveaux outils qu’ils découvraient.</sentence>
+				<sentence xml:id="P1E161">Pour autant, les responsables d’équipe ont exprimé des difficultés à se saisir de certaines dimensions du modèle à distance.</sentence>
+				<sentence xml:id="P1E162">Ils ont peiné à susciter et à structurer le travail collaboratif entre étudiants.</sentence>
+				<sentence xml:id="P1E163">Ils ont exprimé des doutes, voire des frustrations, sur le modèle de la distance et sur ses outils, par exemple lorsqu’ils ne parvenaient pas à retrouver le rythme et la réactivité du présentiel.</sentence>
+				<sentence xml:id="P1E164">Ces éléments montrent que leur appropriation de la distance, qui découple le temps d’apprentissage et le temps d’enseignement, n’était pas encore achevée.</sentence>
+				<sentence xml:id="P1E165">Les responsables restèrent cependant actifs, inventifs, en mouvement, en perpétuelle recherche.</sentence>
+				<sentence xml:id="P1E166">Ils furent capables de porter, à la lumière de leur expérience, un regard critique sur le matériel pédagogique déjà produit.</sentence>
+				<sentence xml:id="P1E167">Ils n’hésitèrent pas à investir des outils hors plateforme (partages de fichiers, de sons, de vidéos), souvent issus de leurs pratiques privées.</sentence>
+				<sentence xml:id="P1E168">Leur intérêt pour la pédagogie et leur dynamique ont d’ailleurs amené certains d’entre eux à modifier leurs pratiques de présentiel en y important les dimensions novatrices expérimentées à distance.</sentence>
+				<sentence xml:id="P1E169">Figure 3 : Exemples de données de 5 des 21 équipes, attestant d’une grande variété de configurations.</sentence>
+				<sentence xml:id="P1E170">Certains enseignants peuvent être comptabilisés deux fois, comme tuteurs et comme concepteurs Un rôle de responsable pris très au sérieux, un suivi étroit de leurs pairs Les responsables se sentirent investis d’une mission particulière auprès de leurs pairs.</sentence>
+				<sentence xml:id="P1E171">Ils estimaient, dans leur ensemble, que leurs collègues étaient démunis et inexpérimentés en enseignement à distance.</sentence>
+				<sentence xml:id="P1E172">Ils mirent en place un fonctionnement d’équipe centralisé, cherchèrent à harmoniser les pratiques et à diffuser des aides et des conseils.</sentence>
+				<sentence xml:id="P1E173">Ils estimaient que leur rôle était aussi de dédramatiser, de rassurer, de mettre à l’aise.</sentence>
+				<sentence xml:id="P1E174">Les responsables s’attachèrent à suivre les pratiques de leurs pairs, de façon soutenue et régulière.</sentence>
+				<sentence xml:id="P1E175">Divers moyens furent utilisés, de façon plus ou moins pressante, depuis des demandes de remontées d’expériences jusqu’à l’exploration directe des traces des tuteurs (chat, forums) ou au recueil de bilans d’étudiants.</sentence>
+				<sentence xml:id="P1E176">Les responsables cherchèrent ainsi à rester étroitement en prise avec les pratiques de leurs collègues.</sentence>
+				<sentence xml:id="P1E177">La contre-enquête montre que les enseignants attendaient de leur responsable la diffusion d’aides et de bonnes pratiques, sans être pour autant demandeurs d’un suivi étroit de leur activité.</sentence>
+				<sentence xml:id="P1E178">Comme le prouve encore la contre-enquête, les responsables d’équipe disposaient d’une bonne vision des motivations de leurs collègues, entre avantages (pouvoir travailler de chez soi) et attirance pour des changements de pratiques.</sentence>
+				<sentence xml:id="P1E179">La vie des équipes fut conviviale, leurs membres proactifs et les échanges fréquents.</sentence>
+				<sentence xml:id="P1E180">Les responsables cherchèrent à installer dans leur équipe des valeurs d’écoute et d’entraides mutuelles, au service des étudiants.</sentence>
+				<sentence xml:id="P1E181">Ils cherchèrent à instrumenter la diffusion des pratiques, en élaborant des fiches de suivi ou en instaurant un tuteur générique qui permettait à chacun de visiter les salles de ses collègues.</sentence>
+				<sentence xml:id="P1E182">Les responsables ont veillé également à l’implication de tous.</sentence>
+				<sentence xml:id="P1E183">Ils ont estimé que l’intégration des concepteurs non tuteurs était difficile, ceux-ci restant en marge des débats de l’équipe voire déconnectés des travaux en cours.</sentence>
+				<sentence xml:id="P1E184">Pour pallier cette difficulté, certains ont rendu obligatoire la prise en charge d’un tutorat pour les concepteurs, d’autres ont mis en débat les travaux des concepteurs, amendés et revisités par l’équipe.</sentence>
+				<sentence xml:id="P1E185">La communication au sein de l’équipe se fit via des dispositifs anciens, tels que la messagerie électronique, le téléphone ou des rencontres en présentiel, formelles ou improvisées.</sentence>
+				<sentence xml:id="P1E186">Ainsi, l’utilisation de la plateforme ne modifia pas les pratiques d’échanges entre collègues, même si quelques équipes utilisèrent des moyens plus évolués (partage de documents), voire une salle de la plateforme dédiée à l’équipe, avec tous ses outils d’interaction (forums, dépôts de documents).</sentence>
+				<sentence xml:id="P1E187">Discussion Innovation et déploiement de la distance Le dispositif à distance ACREDITE n’est pas une innovation pour ses acteurs.</sentence>
+				<sentence xml:id="P1E188">Ses enseignants sont enseignants-chercheurs du domaine ou anciens étudiants à distance de cette même formation et sont donc rompus aux pratiques d’enseignement en ligne.</sentence>
+				<sentence xml:id="P1E189">En revanche, pour les enseignants des autres formations, la modalité à distance relève bien d’une innovation.</sentence>
+				<sentence xml:id="P1E190">En effet, dans notre contexte, l’enseignement à distance comporte un changement de pédagogie pour des enseignants issus du présentiel.</sentence>
+				<sentence xml:id="P1E191">La pédagogie à l’œuvre dans nos formations présentielles est essentiellement directive, parfois transmissive, alors qu’elle se fonde dans notre dispositif à distance sur l’autonomie des étudiants et les interactions avec le tuteur.</sentence>
+				<sentence xml:id="P1E192">Cette évolution de pédagogie déplace la ligne de vigilance des processus d’enseignement vers les processus d’apprentissage (<ENAMEX type="BUSINESS">Barbot</ENAMEX> et al., 2011 ; Barbot et al., 2008), les premiers étant attachés dans notre cas au présentiel et les seconds à la distance.</sentence>
+				<sentence xml:id="P1E193">Ce changement de pédagogie rend ainsi inopérante, pour les enseignants des autres formations, toute tentative de transférer les pratiques du présentiel à la distance (Jaillet, 2014 ; Depover, 2011).</sentence>
+				<sentence xml:id="P1E194">L’expérience en présentiel des enseignants, que l’on pourrait imaginer être un point d’appui, se révèle être une gêne sérieuse.</sentence>
+				<sentence xml:id="P1E195">En passant du présentiel à la distance, les enseignants se voient imposer un changement de pratiques, ce qui est la marque des innovations (voir paragraphe 2.1).</sentence>
+				<sentence xml:id="P1E196">Le discours des responsables d’équipe porte d’ailleurs la trace de cette difficulté à refonder des pratiques nouvelles qui intègrent les échanges collaboratifs entre pairs et son articulation avec les autres phases de travail.</sentence>
+				<sentence xml:id="P1E197">Industrialisation de la formation des enseignants Comme nous l’avons évoqué au paragraphe 2.2, la seule apparition d’une plateforme d’enseignement dans une formation ne suffit pas à témoigner de son industrialisation.</sentence>
+				<sentence xml:id="P1E198">De même, un changement d’échelle entre les effectifs d’une formation à distance initiale (<ENAMEX type="ORGANISATION">ACREDITE</ENAMEX>) et celle d’une formation cible (celle des enseignants) ne permet pas d’affirmer qu’une dynamique d’industrialisation est à l’œuvre.</sentence>
+				<sentence xml:id="P1E199">Pour examiner la question de l’industrialisation, nous allons nous resituer dans chacun des trois processus identifiés par <ENAMEX type="PERSON">P. Mœglin</ENAMEX> (voir paragraphe 2.2).</sentence>
+				<sentence xml:id="P1E200">La technologisation est à l’œuvre en ce qui concerne la production des supports de cours.</sentence>
+				<sentence xml:id="P1E201">Le format <ENAMEX type="BUSINESS">SCORM</ENAMEX>, standard d’échanges entre plateformes, assure leur réutilisabilité entre les groupes et dans le temps.</sentence>
+				<sentence xml:id="P1E202">En revanche, pour les activités de tutorat, activités de service, la technologisation n’est pas avancée.</sentence>
+				<sentence xml:id="P1E203">La focalisation sur les interactions synchrones et la gestion de leur interaction n’a pas incité les équipes et leurs responsables à automatiser certaines phases d’encadrement, comme des envois automatiques de messages aux étudiants qui décrochent.</sentence>
+				<sentence xml:id="P1E204">L’idéologisation qui vise à diffuser une culture de la rentabilité est inscrite dans le calcul des heures d’enseignement, question toujours vive parmi les enseignants.</sentence>
+				<sentence xml:id="P1E205">Le tutorat est moitié moins rémunéré que les cours de présentiel.</sentence>
+				<sentence xml:id="P1E206">La rémunération de la conception de supports d’apprentissage est fortement dégressive, passant d’une fois et demie le volume horaire du présentiel pour la première année à sa moitié dès la seconde.</sentence>
+				<sentence xml:id="P1E207">Le calcul des services porte ainsi en permanence l’empreinte de l’idéologisation de la modalité à distance.</sentence>
+				<sentence xml:id="P1E208">La rationalisation qui vise l’optimisation des méthodes d’organisation et de gestion, s’exprime dans la réutilisabilité des supports d’apprentissage dans le temps (pour 3 années) et le fait qu’ils soient conçus une seule fois pour tous les groupes.</sentence>
+				<sentence xml:id="P1E209">Cette division du travail entre concepteurs et tuteurs autorise des économies d’échelle, particulièrement avérées pour les équipes ayant un nombre conséquent de groupes d’étudiants.</sentence>
+				<sentence xml:id="P1E210">Certains phénomènes troublent cependant cette rationalisation.</sentence>
+				<sentence xml:id="P1E211">Tuteurs et concepteurs sont, en effet, à égalité d’expertise et de statut.</sentence>
+				<sentence xml:id="P1E212">Certains tuteurs se sentent ainsi légitimes pour contester les choix pédagogiques et didactiques des concepteurs et vont jusqu’à exploiter à titre individuel leur propre matériel d’apprentissage, généralement issu du présentiel.</sentence>
+				<sentence xml:id="P1E213">Les débats qui en découlent et le surcroît global de travail vont ainsi à l’encontre du processus d’industrialisation.</sentence>
+				<sentence xml:id="P1E214">Ces considérations nous amènent à penser que pour les formations à distance d’enseignants, le processus d’industrialisation, qui ne peut concerner que certains pans du dispositif (<ENAMEX type="LOCATION">Moeglin</ENAMEX>, 2005), est bien à l’œuvre, même si l’extension de son champ d’action reste encore possible.</sentence>
+				<sentence xml:id="P1E215">Responsables d’équipe et modèles de l’innovation Les modèles de l’innovation techno-pédagogique (voir paragraphe 2.3) nous aident à situer nos analyses.</sentence>
+				<sentence xml:id="P1E216">Notre démarche ne doit pas être centrée sur l’artefact, ici la plateforme.</sentence>
+				<sentence xml:id="P1E217">Notre approche doit être systémique et permettre d’appréhender le dispositif dans son ensemble, en incluant les aspects institutionnels.</sentence>
+				<sentence xml:id="P1E218">Notre attention au rôle des responsables d’équipe nous place ainsi à un niveau « méso » (celui des acteurs) et dans une temporalité assez tardive de la vie de l’innovation.</sentence>
+				<sentence xml:id="P1E219">En effet, les enseignants n’ont été mobilisés qu’après la décision de l’institution de déployer en interne la modalité à distance.</sentence>
+				<sentence xml:id="P1E220">Ils ne furent ni consultés ni associés à cette décision, pas plus qu’au choix du modèle pédagogique et de la plateforme.</sentence>
+				<sentence xml:id="P1E221">Les responsables d’équipe interviennent tard dans le déploiement, lors de la phase finale de mise en œuvre.</sentence>
+				<sentence xml:id="P1E222">En première approche, dans une perspective sociologique (voir paragraphe 2.4), nous pourrions penser que le modèle de la diffusion est ici à l’œuvre.</sentence>
+				<sentence xml:id="P1E223">En apparence, l’innovation décidée par l’institution a rallié à sa cause, par ses qualités intrinsèques, des enseignants restés majoritairement passifs.</sentence>
+				<sentence xml:id="P1E224">Plusieurs éléments affaiblissent cette thèse.</sentence>
+				<sentence xml:id="P1E225">En effet, ce serait faire peu de cas de l’hostilité marquée de nombre d’enseignants à cette innovation et surtout du rôle majeur joué par les responsables d’équipe dans le processus de déploiement.</sentence>
+				<sentence xml:id="P1E226">Loin d’être passifs, ces derniers ont porté l’innovation en déclinant en pleine autonomie le modèle pédagogique de la distance à leurs disciplines, ainsi qu’en recrutant et dynamisant une équipe de pairs.</sentence>
+				<sentence xml:id="P1E227">Leur activité et leur rôle nous incitent à penser que le modèle de la traduction permet de mieux appréhender leurs apports.</sentence>
+				<sentence xml:id="P1E228">Le modèle pédagogique de la distance a constitué le point de passage non négociable auquel se sont référés tous les acteurs.</sentence>
+				<sentence xml:id="P1E229">Même en l’absence de consensus auprès de leurs pairs, les responsables ont su trouver les ressources nécessaires pour intégrer un réseau et interagir avec leur environnement.</sentence>
+				<sentence xml:id="P1E230">Leur rôle de traducteurs leur a permis de problématiser les enjeux à leur niveau, celui de leurs disciplines et de leurs formations.</sentence>
+				<sentence xml:id="P1E231">Ils ont franchi cette étape en adaptant le modèle pédagogique de la distance à leurs enseignements et en construisant une expertise d’enseignant en ligne.</sentence>
+				<sentence xml:id="P1E232">Ils ont ainsi transformé, reformulé les attendus de l’innovation afin d’intéresser d’autres acteurs qui sont passés d’une logique individuelle à une logique de réseau malgré des points de vue divergents.</sentence>
+				<sentence xml:id="P1E233">Les responsables ont servi leurs propres intérêts en traduisant les intérêts de leurs pairs, devenus des alliés.</sentence>
+				<sentence xml:id="P1E234">Les responsables ont également joué le rôle de porte-paroles en négociant avec les différents acteurs, institution comme enseignants.</sentence>
+				<sentence xml:id="P1E235">S’ils étaient absents lors des premières phases du processus, comme la controverse et la définition provisoire du projet, ils ont été les seuls à intéresser leurs pairs, à les enrôler en leur attribuant les rôles de concepteurs et de tuteurs et à les mobiliser, une fois les équipes constituées.</sentence>
+				<sentence xml:id="P1E236">Conclusion Notre étude s’intéresse à un processus particulier, celui du déploiement en interne d’une innovation, qui voit un dispositif existant dans une formation être porté vers d’autres composantes de la même institution, avec un changement d’échelle.</sentence>
+				<sentence xml:id="P1E237">Dans notre contexte, nous avons mis en lumière le rôle d’acteurs clés, les responsables d’équipe, qui eurent pour mission de décliner le modèle pédagogique de la distance, de constituer une équipe et de la piloter.</sentence>
+				<sentence xml:id="P1E238">La dynamique générale est celle d’une innovation, décidée par la seule institution et qui porte les marques d’une industrialisation encore naissante.</sentence>
+				<sentence xml:id="P1E239">Les responsables ont joué le rôle de traducteurs auprès de leurs collègues qu’ils ont intéressés, enrôlés et mobilisés.</sentence>
+				<sentence xml:id="P1E240">Notre configuration montre comment une institution peut s’appuyer sur des acteurs relais, très engagés, capables de porter un projet dont ils ne sont pas auteurs.</sentence>
+				<sentence xml:id="P1E241">Elle est à opposer à d’autres modes de déploiements d’innovations où des équipes d’enseignants initient d’elles-mêmes un projet, le portent et le développent en s’appuyant ou non sur des leviers externes (Bourdet et al., 2014).</sentence>
+				<sentence xml:id="P1E242">Les responsables d’équipe, issus de notre processus de dissémination, portent des valeurs partagées (être au service des étudiants) et font preuve d’un engagement pédagogique fort qui les pousse à innover.</sentence>
+				<sentence xml:id="P1E243">Leur étude a montré, chez ces acteurs, l’émergence d’une identité professionnelle (<ENAMEX type="ORGANISATION">Dubar</ENAMEX>, 2000), à travers une identité pour soi, en cohérence avec leur trajectoire individuelle, et une identité pour autrui, fondée sur la reconnaissance de leurs compétences par leur institution et par leurs pairs.</sentence>
+				<sentence xml:id="P1E244">Pour autant, l’ensemble de ces responsables ne constitue pas un groupe professionnel.</sentence>
+				<sentence xml:id="P1E245">Leur emploi principal (enseignant en présentiel) prime encore sur leur fonction de responsables.</sentence>
+				<sentence xml:id="P1E246">Leur communauté n’est pas constituée, leurs logiques identitaires restent plurielles, même si, en tant qu’enseignants à distance d’une même institution, une même identité culturelle les réunit (Glikman, 2011).</sentence>
+				<sentence xml:id="P1E247">Plus largement, l’existence des responsables d’équipe interroge la place des enseignants dans les innovations, en particulier lorsqu’elles résultent de choix politiques d’établissements qui, sujets à diverses pressions, décident de développer à court terme des offres massives.</sentence>
+				<sentence xml:id="P1E248">La réactivité nécessaire pour rester dans la course et bâtir des offres concurrentielles pousse les établissements à associer parfois tardivement les enseignants au processus.</sentence>
+				<sentence xml:id="P1E249">Ce fut le cas à l’université de <ENAMEX type="LOCATION">Cergy-Pontoise</ENAMEX>, où la modalité à distance suscita des oppositions farouches parmi ces acteurs.</sentence>
+				<sentence xml:id="P1E250">Les espaces de liberté offerts aux responsables d’équipe, leur position de traducteurs et de porte-paroles d’une innovation prouve que l’implication des enseignants dans ces dispositifs n’est pas fatalement la marque d’une dévalorisation de leur métier ou de leur rôle.</sentence>
+				<sentence xml:id="P1E251">Dans ces contextes en constante évolution, exacerbés par la dynamique propre du développement des technologies, la place des enseignants doit être pensée avec attention.</sentence>
+				<sentence xml:id="P1E252">L’instauration de la division de travail entre tuteurs et concepteurs, par exemple, comportait deux alternatives (<ENAMEX type="BUSINESS">Moeglin</ENAMEX>, 2005).</sentence>
+				<sentence xml:id="P1E253">La première, positive, s’inscrivait dans une dynamique de spécialisation des tâches, où les enseignants gagnaient en qualification et professionnalisation.</sentence>
+				<sentence xml:id="P1E254">La seconde, non souhaitable, s’inscrivait dans une approche taylorienne et conduisait à un appauvrissement des missions des enseignants et à leur déqualification.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P2">
+				<sentence xml:id="P2E0">http://dms.revues.org/1056</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P3">
+				<sentence xml:id="P3E0">10.4000/dms.1056</sentence>
+			</p>
+		</document>
+	</subcorpus>
+</corpus>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<corpus>
+	<subcorpus>
+		<document name="nerd-openedition-mimmoc-004">
+			<p xml:lang="fr" xml:id="P0">
+				<sentence xml:id="P0E0"><ENAMEX type="PERSON">Charles Péguy</ENAMEX>, poète et épistémologue de l&apos;histoire et de la politique</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P1">
+				<sentence xml:id="P1E0">Au début du XXe siècle, alors que l’histoire universitaire s’efforçait de mettre en œuvre des méthodes de travail scientifiques, le polémiste dreyfusard Péguy mettait en cause des professeurs d’histoire de la <ENAMEX type="LOCATION">Sorbonne</ENAMEX> et dénonçait une histoire qui lui paraissait étriquée, besogneuse, sans souffle.</sentence>
+				<sentence xml:id="P1E1">Outre une écriture terne, il reprochait également à cette école dite méthodique d’instiller une interprétation politisée de l’histoire.</sentence>
+				<sentence xml:id="P1E2">Nommément désigné à la vindicte des lecteurs des Cahiers de la <ENAMEX type="LOCATION">Quinzaine</ENAMEX>, le professeur d’histoire moderne <ENAMEX type="BUSINESS">Charles Langlois</ENAMEX> fit particulièrement les frais des diatribes péguystes.</sentence>
+				<sentence xml:id="P1E3">Le succès de l’histoire méthodique et la virulence des termes employés par <ENAMEX type="LOCATION">Péguy</ENAMEX> contribuèrent à discréditer sa critique, tandis que sa rupture avec l’internationalisme socialiste et sa conversion au catholicisme firent peser la suspicion sur sa démarche, considérée comme relevant de l’apologétique, ainsi que sur le bien fondé de ses interprétations.</sentence>
+				<sentence xml:id="P1E4">Si bien que, s’il est aujourd’hui admiré (ou détesté) comme écrivain, son apport à l’histoire est tenu pour négligeable.</sentence>
+				<sentence xml:id="P1E5">Or l’histoire tient une place importante dans l’œuvre de <ENAMEX type="PERSON">Charles Péguy</ENAMEX>.</sentence>
+				<sentence xml:id="P1E6">Cet homme, qui vécut chaque moment de sa vie avec passion, de l’engagement dreyfusard à la conversion religieuse, accorda une grande importance à l’émotion que suscitait le passé et s’exprima souvent sur la nature de l’histoire et le rôle qu’elle devait tenir dans la société.</sentence>
+				<sentence xml:id="P1E7">Il ne nous paraît donc pas inopportun de dépasser une lecture convenue de <ENAMEX type="LOCATION">Péguy</ENAMEX> et de relire ses textes relatifs à l’histoire afin de comprendre sa démarche.</sentence>
+				<sentence xml:id="P1E8">Nous distinguerons trois facettes de <ENAMEX type="LOCATION">Péguy</ENAMEX> historien, qui se complètent et s’éclairent mutuellement : il fut un critique de l’histoire-science, un poète du passé et un philosophe méditant sur le temps.</sentence>
+				<sentence xml:id="P1E9">Ces trois aspects, étroitement entremêlés, sont fréquemment abordés par <ENAMEX type="BUSINESS">Péguy</ENAMEX> même si, pour la commodité de l’exposé, nous nous contentons de dégager les traits saillants de certaines œuvres.</sentence>
+				<sentence xml:id="P1E10">Nous avons eu l’illusion, dans un premier temps, qu’il était possible de reconstituer une évolution de la pensée de <ENAMEX type="BUSINESS">Péguy</ENAMEX> relativement à l’histoire, qui aurait été de pair avec ses engagements politiques et, le cas échéant, l’ensemble de son œuvre littéraire.</sentence>
+				<sentence xml:id="P1E11">Nous nous sommes rendu compte qu’établir une chronologie était vain, car la pensée comme l’écriture de <ENAMEX type="LOCATION">Péguy</ENAMEX> ne se prêtent pas à de telles constructions.</sentence>
+				<sentence xml:id="P1E12">La préoccupation de l’histoire constitue l’un des fils directeurs de sa pensée ; il l’aborda par différentes facettes, délaissa parfois certains chantiers pour y revenir plus tard.</sentence>
+				<sentence xml:id="P1E13">En outre, au-delà de la diversité de ses écrits, transparaît une indéniable cohérence quant au rapport entretenu avec le passé.</sentence>
+				<sentence xml:id="P1E14">C’est pourquoi nous avons en définitive choisi une approche thématique qui permet de dégager les différents aspects de son rapport à l’histoire tout en ayant bien conscience de l’appauvrissement qui en découle nécessairement.</sentence>
+				<sentence xml:id="P1E15">Péguy polémiste : la dénonciation de l’histoire-science Lorsque <ENAMEX type="PERSON">Charles Péguy</ENAMEX> atteignit sa maturité intellectuelle, l’histoire s’affirmait, sous l’égide de la <ENAMEX type="LOCATION">Revue historique</ENAMEX>, fondée en 1876 par <ENAMEX type="PERSON">Gabriel Monod</ENAMEX>, comme une discipline scientifique, répondant à des méthodes définies avec précision, mettant en place des protocoles rigoureux, ayant recours à des techniques auxiliaires comme la papyrologie, la sigillographie, la sémiologie, etc. L’axiologie historienne en était transformée.</sentence>
+				<sentence xml:id="P1E16">Les historiens entendaient ne plus être considérés avant tout comme des écrivains capables de charmer mais comme des spécialistes de l’archive et de la critique documentaire.</sentence>
+				<sentence xml:id="P1E17">En matière politique, ils affirmaient être absolument neutres.</sentence>
+				<sentence xml:id="P1E18">Être historien était désormais un métier, qui s’apprenait à l’université, au contact des plus grands maîtres.</sentence>
+				<sentence xml:id="P1E19">Ernest Lavisse incarnait cette volonté de rénover les études d’histoire et la formation des historiens.</sentence>
+				<sentence xml:id="P1E20">En 1898, <ENAMEX type="PERSON">Charles-Victor Langlois</ENAMEX> et <ENAMEX type="PERSON">Charles Seignobos</ENAMEX> publièrent, à l’intention des étudiants des facultés de lettres qui se destinaient à l’histoire, le premier manuel de méthodologie.</sentence>
+				<sentence xml:id="P1E21">Les attaques de <ENAMEX type="LOCATION">Péguy</ENAMEX> furent dirigées contre des historiens de renom, accusés d’être plus au service de la politique que de la science.</sentence>
+				<sentence xml:id="P1E22"><ENAMEX type="BUSINESS">Lavisse</ENAMEX> et <ENAMEX type="ORGANISATION">Langlois</ENAMEX> furent ses bêtes noires.</sentence>
+				<sentence xml:id="P1E23">Tous deux étaient professeurs à la <ENAMEX type="LOCATION">Sorbonne</ENAMEX> et leur influence sur le milieu universitaire était importante.</sentence>
+				<sentence xml:id="P1E24">En 1899, <ENAMEX type="LOCATION">Péguy</ENAMEX> réagit à un article qu’Ernest Lavisse avait consacré à l’Affaire Dreyfus dans la <ENAMEX type="ORGANISATION">Revue de Paris</ENAMEX>.</sentence>
+				<sentence xml:id="P1E25">Celui-ci expliquait les positions des deux camps par des considérations historico-sociologiques.</sentence>
+				<sentence xml:id="P1E26">En particulier, il expliquait l’action des anti-dreyfusards par le caractère des deux institutions qu’étaient l’Armée et l’Église, par tradition portées à respecter l’ordre établi et l’autorité.</sentence>
+				<sentence xml:id="P1E27">Aux yeux de <ENAMEX type="LOCATION">Péguy</ENAMEX>, <ENAMEX type="BUSINESS">Lavisse</ENAMEX> avait simplifié à outrance la réalité pour décrire deux camps opposés, dreyfusisme et anti-dreyfusisme, qu’il rendait du coup tous deux également respectables.</sentence>
+				<sentence xml:id="P1E28">Son intention était de proposer une voie de réconciliation.</sentence>
+				<sentence xml:id="P1E29">Péguy accusa Lavisse de simplifier, de déformer, voire d’imaginer, pour les besoins de sa comparaison, deux idéologies sans rapport avec les faits.</sentence>
+				<sentence xml:id="P1E30">Au passage, <ENAMEX type="BUSINESS">Péguy</ENAMEX> égratignait d’autres publications de <ENAMEX type="LOCATION">Lavisse</ENAMEX>, aussi bien son Histoire de <ENAMEX type="BUSINESS">France</ENAMEX> pour les élèves que sa <ENAMEX type="BUSINESS">Vue générale de l’Histoire</ENAMEX> politique de l’<ENAMEX type="LOCATION">Europe</ENAMEX>.</sentence>
+				<sentence xml:id="P1E31">Péguy critiqua également le professeur Langlois.</sentence>
+				<sentence xml:id="P1E32">Le titre de son pamphlet de 1912, <ENAMEX type="BUSINESS">Langlois</ENAMEX> tel qu’on le parle, publié dans les Cahiers de la Quinzaine, annonçait la virulence de l’attaque.</sentence>
+				<sentence xml:id="P1E33">Péguy répondait à un article sévère de <ENAMEX type="PERSON">Langlois</ENAMEX>, publié sous le pseudonyme de <ENAMEX type="PERSON">Pons Daumelas</ENAMEX> dans la <ENAMEX type="LOCATION">Revue critique des</ENAMEX> livres nouveaux, dans lequel l’universitaire l’éreintait, lui reprochant son style, son orgueil, le nombre limité de ses lecteurs.</sentence>
+				<sentence xml:id="P1E34">Piqué au vif, il se défendit par ce pamphlet acerbe et féroce, d’une trentaine de pages ; il doubla son attaque ad hominem d’une condamnation implicite de la fameuse méthode définie par <ENAMEX type="PERSON">Langlois</ENAMEX> et Seignobos.</sentence>
+				<sentence xml:id="P1E35">Plus argumentée était la dénonciation de l’histoire telle qu’elle était enseignée et pratiquée à la <ENAMEX type="LOCATION">Sorbonne</ENAMEX>.</sentence>
+				<sentence xml:id="P1E36">Zangwill, publié en 1904, fut consacré à cette question de la méthode historienne.</sentence>
+				<sentence xml:id="P1E37">Le texte de <ENAMEX type="LOCATION">Péguy</ENAMEX>, préface de la version française de l’ouvrage d’<ENAMEX type="PERSON">Israël Zangwill Chad Godya</ENAMEX>, était en fait une attaque en règle non seulement contre la prétention de faire de l’histoire une science, mais plus largement encore contre l’esprit scientifique moderne.</sentence>
+				<sentence xml:id="P1E38">Au premier degré, la critique pourrait paraître anodine : Péguy moquait le goût, voire l’obsession du détail qui animait les historiens.</sentence>
+				<sentence xml:id="P1E39">Il leur reprochait de découper leur sujet en une multitude de tranches, pour décortiquer une multitude de détails, lesquels n’avaient en définitive plus rien à voir avec la réalité.</sentence>
+				<sentence xml:id="P1E40">Nos modernes rompent sans effort les réalités qu’ils étudient ; reste à savoir si les réalités historiques s’accommodent de ce traitement.</sentence>
+				<sentence xml:id="P1E41">Un historien doit conserver, au contraire ; il est essentiellement un conservateur de l’univers passé.</sentence>
+				<sentence xml:id="P1E42">Comment conserver si on brise ?</sentence>
+				<sentence xml:id="P1E43">Telle est non point la caricature et la contrefaçon des méthodes historiques modernes, mais leur mode même, leur schème, l’arrière-pensée de ceux qui les ont introduites avant nous, de ceux qui les pratiquent parmi nous ; assistez à une soutenance de thèse historique ; la plupart des reproches que le jury adresse au candidat reviennent à ceci : que le candidat n’a point épuisé toute l’indéfinité, toute l’infinité du détail ; je ne dis pas que les membres du jury l’épuisent dans leurs propres travaux ; mais ce que je dis, si vous assistez à une soutenance de thèse et que vous entendiez bien, que vous interprétiez les critiques du jury, c’est qu’elles reviennent généralement à cela ; il faut avoir épuisé l’infinité du détail pour arriver au sujet ; et dans le sujet même il faut, par multipartition, avoir épuisé une infinité d’infinité du détail ; la manière dont on traite le sujet, quand on est parvenu au sujet, revient en effet à le traiter lui-même comme un chemin, comme un parcours, comme un lieu de passage indéfiniment détaillé, comme un circuit lui-même, à faire en définitive comme s’il n’était pas le sujet, à faire qu’il ne soit pas le sujet.</sentence>
+				<sentence xml:id="P1E44">Avant de commencer, une infinité du détail par circulation ; au moment de commencer, une infinité d’infinité du détail par multipartition.</sentence>
+				<sentence xml:id="P1E45">Épuiser l’indéfinité, l’infinité du détail dans la connaissance de tout le réel, c’est la haute, c’est la divine, c’est la folle ambition, et qu’on le veuille ou non c’est l’infinie faiblesse d’une méthode que je suis bien forcé de nommer de son nom scolaire la méthode discursive […] en histoire, c’est la méthode discursive qui est surhumaine, orgueilleuse, mystérieuse, agnosticiste ; et c’est la méthode intuitive qui est humaine, modeste, claire et distincte autant que nous le pouvons, scientifique.</sentence>
+				<sentence xml:id="P1E46">Pour Péguy, non seulement le regard des historiens était obsédé par les détails, mais de plus il ne se portait que sur les grands personnages et les grands événements.</sentence>
+				<sentence xml:id="P1E47">Péguy précisa à plusieurs reprises que, à ses yeux, l’histoire ne se souciait pas assez des petits ni des réalités qui concernaient les humbles.</sentence>
+				<sentence xml:id="P1E48">Péguy l’écrivit dans Notre jeunesse, qui constituait la préface de l’histoire de la famille républicaine des Milliet.</sentence>
+				<sentence xml:id="P1E49">Il fit le même constat lorsqu’il s’efforça, dix ans après, d’évaluer ce qui restait du combat qu’avaient mené les dreyfusards.</sentence>
+				<sentence xml:id="P1E50">Qu’importe que nous ayons été grands en réalité ?</sentence>
+				<sentence xml:id="P1E51">L’histoire ne s’occupe pas des réalités.</sentence>
+				<sentence xml:id="P1E52">Elle n’a que faire de la réalité.</sentence>
+				<sentence xml:id="P1E53">Elle s’occupe de ce qui fait figure.</sentence>
+				<sentence xml:id="P1E54">Elle s’occupe des figures ainsi faites, ainsi obtenues, et de les mesurer, comme elle peut.</sentence>
+				<sentence xml:id="P1E55">Elle s’occupe de ce qui apparaît.</sentence>
+				<sentence xml:id="P1E56">Science de mesure, comme toute science communément admise, <ENAMEX type="ORGANISATION">science des mesures de l’événement</ENAMEX>, et de mesures communément, généralement grossières, puisqu’il faut qu’elles soient communément admises, puisqu’il faut que ça s’enseigne, et ainsi que ça se transmette, elle ne peut s’occuper, elle ne s’occupera jamais que de ce qui est mesurable.</sentence>
+				<sentence xml:id="P1E57">La « méthode » de <ENAMEX type="PERSON">Langlois</ENAMEX> et <ENAMEX type="BUSINESS">Seignobos</ENAMEX> avait substitué à l’histoire narrée, vivante et dynamique, une histoire austère, sérieuse, ennuyeuse même.</sentence>
+				<sentence xml:id="P1E58">[…] nous avons remplacé les anciennes anecdotes, les anecdotes amusantes, souvent fausses, presque toujours expressives, par un nouveau genre d’anecdotes, les anecdotes savantes, ennuyeuses, vraies souvent, presque toujours inexpressives ; les statistiques aussi sont des anecdotes, combien tristes, et combien peu significatives…  Dépassant l’apparent désordre de l’argumentation de <ENAMEX type="LOCATION">Péguy</ENAMEX>, nous pouvons noter que la critique atteignait fondamentalement l’historien quant à sa manière de penser et d’être.</sentence>
+				<sentence xml:id="P1E59">Derrière cette question du détail point le vrai reproche, fondamental celui-là, qui mettait en cause non seulement l’histoire mais toutes les sciences : le savant rationaliste finissait par prendre la place de Dieu, par se croire Dieu.</sentence>
+				<sentence xml:id="P1E60">Épuiser l’immensité, l’indéfinité, l’infinité du détail pour obtenir la connaissance de tout le réel, telle est la surhumaine ambition de la méthode discursive ; partir du plus loin possible ; parvenir le plus tard possible ; à peine arrivés repartir pour un voyage intérieur le plus long possible ; mais si du départ le plus éloigné possible à l’arrivée la plus retardée possible et dans cette arrivée même une série indéfinie, infinie de détail s’interpose immense, comment épuiser ce détail ; un Dieu seul y suffirait.</sentence>
+				<sentence xml:id="P1E61">[…] Telle est bien l’ambition inouïe du monde moderne ; ambition non encore éprouvée ; le savant chassant Dieu de partout, inconsidérément, aveuglément, ensemble de la science, où en effet peut-être il n’a que faire, et de la métaphysique, où peut-être on lui pourrait trouver quelque occupation ; Dieu chassé de l’histoire ; et par une singulière ironie, par un nouveau retour, Dieu se retrouvant dans le savant historien, Dieu non chassé du savant historien, c’est-à-dire, littéralement, l’historien ayant conçu sa science selon une méthode qui requiert de lui exactement les qualités d’un Dieu.</sentence>
+				<sentence xml:id="P1E62">Telle est bien la pensée de derrière la tête de tous ceux qui ont fondé la science historique moderne, introduit les méthodes historiques modernes, c’est-à-dire de tous ceux qui ont transporté en bloc dans le domaine de l’histoire les méthodes scientifiques empruntées aux sciences qui ne sont pas les sciences de l’histoire ; une humanité toute maîtresse de son histoire ; une humanité ayant épuisé tout le détail de toute son histoire, ayant parcouru toute une indéfinité, toute une infinité de chemins indéfinis, infinis, ayant donc littéralement épuisé tout un univers indéfini, infini, de détails ; une humanité Dieu, ayant acquis, englobé toute connaissance dans l’univers de sa totale mémoire.</sentence>
+				<sentence xml:id="P1E63">Une humanité devenue Dieu par la totale infinité de sa connaissance, par l’amplitude infinie de sa mémoire totale, cette idée est partout dans <ENAMEX type="BUSINESS">Renan</ENAMEX> ; elle fut vraiment le viatique, la consolation, l’espérance, la secrète ardeur, le feu intérieur, l’eucharistie laïque de toute une génération, de toute une levée d’historiens, de la génération qui, dans le domaine de l’histoire inaugurait justement le monde moderne […]  Partant de l’histoire, <ENAMEX type="BUSINESS">Péguy</ENAMEX> posait le problème de la connaissance scientifique tout entière.</sentence>
+				<sentence xml:id="P1E64">Il rejoignait un courant philosophique qui, depuis quelques années, mettait en cause le culte de la raison, du progrès et de la science.</sentence>
+				<sentence xml:id="P1E65">Péguy, qui avait eu le philosophe Bergson comme professeur à l’<ENAMEX type="BUSINESS">ENS</ENAMEX> en 1897-1898 et avait suivi son cours au collège de <ENAMEX type="LOCATION">France</ENAMEX> en 1900, s’insérait donc dans un débat en cours, qu’il s’appropriait et auquel il donnait écho à sa manière.</sentence>
+				<sentence xml:id="P1E66">Il contribua à dénoncer le rationalisme comme unique moyen d’accéder sûrement à la connaissance dans un essai qu’il consacra à <ENAMEX type="LOCATION">Bergson</ENAMEX> en 1912 : « Il faut renoncer à cette idée que la passion soit trouble (ou obscure) et que la raison soit claire, que la passion soit confuse et que la raison soit distincte.</sentence>
+				<sentence xml:id="P1E67">Nous connaissons tous des passions qui sont claires comme des fontaines et des raisons au contraire qui courent toujours après les encombrements de leurs trains de bagages.</sentence>
+				<sentence xml:id="P1E68">» N’allons pas croire pour autant que Péguy se déchaînait ainsi contre les historiens de renom sans savoir que faire l’histoire n’était pas chose facile.</sentence>
+				<sentence xml:id="P1E69">Il ne se contenta pas de dénoncer les interprétations officielles, écrites par des historiens stipendiés, qui auraient été chargés de promouvoir une histoire républicaine.</sentence>
+				<sentence xml:id="P1E70">Il se heurta lui-même à cette tâche ardue.</sentence>
+				<sentence xml:id="P1E71">De la difficulté d’écrire l’histoire Se détournant de la fameuse méthode, <ENAMEX type="LOCATION">Péguy</ENAMEX> s’essaya à écrire le passé selon différents modes : l’essai, la publication de documents, le théâtre.</sentence>
+				<sentence xml:id="P1E72">Si un historien comme Lavisse interprétait faussement l’affaire <ENAMEX type="BUSINESS">Dreyfus</ENAMEX>, le témoin et protagoniste qu’avait été Péguy se trouva néanmoins bien en peine lorsqu’il entreprit dès 1903 d’en écrire l’histoire dans un essai inédit intitulé <ENAMEX type="PERSON">Bernard Lazare</ENAMEX>.</sentence>
+				<sentence xml:id="P1E73">Il reprit ce chantier quelques années plus tard, dans Notre Jeunesse, qui s’apparente plus à un essai sur la mystique politique des dreyfusards qu’à un travail d’historien.</sentence>
+				<sentence xml:id="P1E74">Confronté à la difficulté de dire le passé, le responsable des Cahiers de la <ENAMEX type="BUSINESS">Quinzaine</ENAMEX> qu’était Péguy s’efforça également de livrer à ses lecteurs des sources de première main.</sentence>
+				<sentence xml:id="P1E75">Il tenait par exemple à rendre compte à ses lecteurs, le plus objectivement possible, des Congrès socialistes.</sentence>
+				<sentence xml:id="P1E76">Il envisagea de demander à un témoin de résumer les échanges, mais craignit la partialité.</sentence>
+				<sentence xml:id="P1E77">Il fit le choix de s’en tenir aux officiels comptes rendus sténographiques sans être jamais totalement satisfait de cette solution.</sentence>
+				<sentence xml:id="P1E78">Certes, la part de la déformation était ainsi réduite au minimum inévitable, mais publier l’intégralité des échanges était impossible.</sentence>
+				<sentence xml:id="P1E79">En 1905, il décida de s’en tenir aux comptes rendus officiels, conscient qu’ils n’étaient pas particulièrement exacts mais parce que les déformations étaient plus faciles à décrypter.</sentence>
+				<sentence xml:id="P1E80">Péguy se fit également éditeur de textes relatifs à l’histoire de la République ou, plutôt, des républicains.</sentence>
+				<sentence xml:id="P1E81">Soucieux de dépasser l’histoire officielle, héroïsante, qui mettait en avant les faits et gestes des « pères fondateurs » de la <ENAMEX type="LOCATION">Troisième République</ENAMEX>, il entreprit de publier l’histoire d’une « famille de républicains fouriéristes.</sentence>
+				<sentence xml:id="P1E82">Les Milliet », comme il avait dressé le portrait, dès 1899, d’un artisan républicain.</sentence>
+				<sentence xml:id="P1E83">A ses yeux, l’histoire des grands, des ministres, des hommes politiques, fussent-ils républicains, ne rendait pas compte de la réalité, qui était la vie des humbles, des petits, des anonymes.</sentence>
+				<sentence xml:id="P1E84">Les Milliet avaient à ses yeux autant contribué à construire la république que <ENAMEX type="PERSON">Victor Hugo</ENAMEX>, <ENAMEX type="PERSON">Edgar Quinet</ENAMEX>, <ENAMEX type="BUSINESS">Raspail</ENAMEX> et Blanqui.</sentence>
+				<sentence xml:id="P1E85">Péguy reprenait, à sa manière, un programme déjà énoncé par <ENAMEX type="PERSON">Augustin Thierry</ENAMEX> mais jamais encore véritablement mis en œuvre.</sentence>
+				<sentence xml:id="P1E86">Car les petits ne laissent pas d’archives, pas de traces, constatait-il.</sentence>
+				<sentence xml:id="P1E87">Sur les grands patrons, sur les chefs, l’histoire nous renseignera toujours, tant bien que mal, plutôt mal que bien, c’est son métier, et à défaut de l’histoire les historiens, et à défaut des historiens les professeurs (d’histoire).</sentence>
+				<sentence xml:id="P1E88">Ce que nous voulons savoir et ce que nous ne pouvons pas inventer, ce que nous voulons connaître, ce que nous voulons apprendre, ce n’est point les premiers rôles, les grands masques, le grand jeu, le théâtre et la représentation ; ce que nous voulons savoir c’est ce qu’il y avait derrière, ce qu’il y avait dessous, comment était fait ce peuple de <ENAMEX type="LOCATION">France</ENAMEX>, enfin ce que nous voulions savoir c’est quel était, en cet âge héroïque, le tissu même du peuple et du parti républicain.</sentence>
+				<sentence xml:id="P1E89">Le rédacteur des Cahiers de la Quinzaine se fit donc humble et modeste.</sentence>
+				<sentence xml:id="P1E90">Ses abonnés étaient capables de se faire une idée par eux-mêmes.</sentence>
+				<sentence xml:id="P1E91">Point n’était besoin d’écrire une histoire de ces événements récents.</sentence>
+				<sentence xml:id="P1E92">Des témoignages ou des comptes rendus officiels feraient le miel des lecteurs.</sentence>
+				<sentence xml:id="P1E93">Ces difficultés conduisirent sans doute Péguy à se tourner vers une autre écriture du passé.</sentence>
+				<sentence xml:id="P1E94">Admirateur de <ENAMEX type="PERSON">Jules Michelet</ENAMEX>, il ne chercha pas cependant à imiter la prose épique et les accents grandiloquents de l’historien romantique mais fit sien cependant le souci de rendre le passé vivant et de redonner vie, par son écriture, aux hommes et aux événements.</sentence>
+				<sentence xml:id="P1E95">En témoigne la partie de son œuvre qu’il consacra à <ENAMEX type="PERSON">Jeanne d’Arc</ENAMEX>, dont nous retiendrons principalement le drame en trois pièces intitulé Jeanne d’Arc, commencé en 1895 et terminé en 1897 ; le Mystère de la Charité de <ENAMEX type="PERSON">Jeanne d’Arc</ENAMEX>, qui initialement était une réécriture du premier et fut publié en 1910 ; la <ENAMEX type="LOCATION">Tapisserie</ENAMEX> de Sainte Geneviève et de <ENAMEX type="PERSON">Jeanne d’Arc</ENAMEX>, publiée en 1912.</sentence>
+				<sentence xml:id="P1E96">Certes, en cette fin de siècle nationaliste, <ENAMEX type="PERSON">Jeanne d’</ENAMEX>Arc était une figure à la mode.</sentence>
+				<sentence xml:id="P1E97">Cérémonies, statues, édifices lui étaient dédiés.</sentence>
+				<sentence xml:id="P1E98">Les publications qui lui étaient consacrées étaient légion, depuis les travaux savants jusqu’aux livres pour enfants.</sentence>
+				<sentence xml:id="P1E99">Mais Péguy encore étudiant ne cherchait pas à récupérer une thématique en vogue, comme le faisaient les hommes politiques.</sentence>
+				<sentence xml:id="P1E100">Son souci principal n’était pas de narrer les événements, comme <ENAMEX type="PERSON">Jules Michelet</ENAMEX>, ni de publier les documents originaux, comme <ENAMEX type="PERSON">Jules Quicherat</ENAMEX>, ni de retrouver par le menu les faits et gestes de l’héroïne, ni d’identifier avec précision les lieux johanniques, comme divers érudits le faisaient.</sentence>
+				<sentence xml:id="P1E101">Partant des documents originaux à sa disposition, il poursuivait un objectif bien précis – faire l’histoire intérieure de <ENAMEX type="PERSON">Jeanne d</ENAMEX>’Arc - et eut recours à un autre genre, également en vogue : le drame historique.</sentence>
+				<sentence xml:id="P1E102">Je tiens à finir pour la Toussaint la lecture des documents.</sentence>
+				<sentence xml:id="P1E103">Je me suis rendu compte aussi qu’il était décidément impossible avec l’histoire telle qu’on est forcé de l’écrire, de faire l’histoire de cette vie intérieure.</sentence>
+				<sentence xml:id="P1E104">Il m’est venu alors une idée que j’ai fini par avoir l’audace d’accueillir : celle d’emprunter au drame et au vers, s’il y a lieu, toutes ses ressources.</sentence>
+				<sentence xml:id="P1E105">Avec le théâtre, Péguy pourrait tenter de retrouver les paroles et les pensées de Jeanne.</sentence>
+				<sentence xml:id="P1E106">Il n’innova pas en décidant de prendre la Pucelle pour sujet d’une œuvre de théâtre.</sentence>
+				<sentence xml:id="P1E107">Il est probable que l’idée lui vint en contemplant les fêtes que la ville d’Orléans donnait chaque année en l’honneur de Jeanne.</sentence>
+				<sentence xml:id="P1E108">Depuis le premier mystère joué à <ENAMEX type="LOCATION">Orléans</ENAMEX> en 1439, pas moins d’une cinquantaine de pièces auraient été produites en <ENAMEX type="LOCATION">France</ENAMEX>.</sentence>
+				<sentence xml:id="P1E109">Le XIXe siècle vit de nombreuses versions, depuis le drame de <ENAMEX type="BUSINESS">Schiller</ENAMEX>, souvent traduit et réédité, jusqu’au <ENAMEX type="LOCATION">Mystère du siège d’Orléans</ENAMEX> composé par Émile Eude pour les fêtes johanniques du 6 mai 1894.</sentence>
+				<sentence xml:id="P1E110"><ENAMEX type="PERSON">Sarah Bernard</ENAMEX> elle-même ne dédaigna pas de prêter ses traits et sa voix à la Pucelle en 1891 dans la pièce de <ENAMEX type="PERSON">Jules Barbier</ENAMEX>.</sentence>
+				<sentence xml:id="P1E111">Le sénateur <ENAMEX type="PERSON">Joseph Fabre</ENAMEX>, infatigable promoteur d’une fête nationale en l’honneur de <ENAMEX type="PERSON">Jeanne d’Arc</ENAMEX>, donna sa version en 1891.</sentence>
+				<sentence xml:id="P1E112">Reconstituer la vie intérieure de Jeanne ne signifiait pas pour Péguy dresser le portrait idéalisé d’une jeune fille parfaite.</sentence>
+				<sentence xml:id="P1E113">Il ne s’agissait pas de chanter les louanges de l’héroïne – beaucoup l’avaient fait avant lui - mais tenter de comprendre quelle femme elle avait été, c’est-à-dire comment elle avait pris conscience de sa mission, comment elle en était venue à quitter son village, quels rapports elle avait eus avec les soldats et avec les clercs, comment elle considérait les hommes de son temps.</sentence>
+				<sentence xml:id="P1E114">A chaque étape de sa vie, les tourments de <ENAMEX type="PERSON">Jeanne</ENAMEX> constituaient le fil directeur des écrits johanniques de <ENAMEX type="LOCATION">Péguy</ENAMEX>.</sentence>
+				<sentence xml:id="P1E115">Ajoutons en outre que Péguy plongeait le lecteur dans un univers médiéval par une écriture historienne qui rompait avec les textes scientifiques.</sentence>
+				<sentence xml:id="P1E116">Pour mettre en scène les hommes du passé, il eut recours à des archaïsmes verbaux (messire, partance…) et des tournures populaires.</sentence>
+				<sentence xml:id="P1E117">Son drame mêle hardiment la prose, qui est réservée en priorité aux événements quotidiens, aux batailles et au procès, aux alexandrins, qui traduisent les émotions, les sentiments, tout ce qui relevait de l’esprit.</sentence>
+				<sentence xml:id="P1E118">Péguy emprunta ensuite au Moyen Âge cette forme littéraire ancienne qu’est le mystère.</sentence>
+				<sentence xml:id="P1E119">Il publia en 1910 le Mystère de la Charité de <ENAMEX type="PERSON">Jeanne d’Arc</ENAMEX>.</sentence>
+				<sentence xml:id="P1E120">Il écrivit en vers libre ; sa poésie était rythmée, martelée.</sentence>
+				<sentence xml:id="P1E121">Les répétitions produisent un effet de ritournelle mais la poésie ne sombre jamais dans la monotonie : des digressions, parfois très longues, comme le récit de la passion du Christ, rompent sans prévenir une musicalité quelque peu lancinante, surprennent le lecteur, le plongent dans une atmosphère d’émotion et de souffrance.</sentence>
+				<sentence xml:id="P1E122">Les tourments de <ENAMEX type="PERSON">Jeanne d’</ENAMEX>Arc prennent une forme concrète.</sentence>
+				<sentence xml:id="P1E123">Celle-ci est en quelque sorte dédoublée et dialogue avec elle-même, déchirée devant un choix à effectuer.</sentence>
+				<sentence xml:id="P1E124">Elle est Jeanne femme d’action, refusant toute concession, prête à la violence pour accomplir sa mission.</sentence>
+				<sentence xml:id="P1E125">Elle est entière jusqu’à frôler l’orgueil : « je n’aurais pas trahi Jésus au jardin des oliviers », s’exclame-t-elle.</sentence>
+				<sentence xml:id="P1E126">Mais elle est également la religieuse Mme <ENAMEX type="PERSON">Gervaise</ENAMEX>, qui représente l’Église sage en choisissant la prière et la souffrance discrètes pour sauver les âmes.</sentence>
+				<sentence xml:id="P1E127">Elle représente la sagesse et la raison, tandis que Jeanne exprime l’irrésistible besoin d’agir, de tout laisser pour être fidèle à un amour, à un idéal de justice.</sentence>
+				<sentence xml:id="P1E128">Ce dédoublement lui permet de dire les doutes, les questionnements, les provocations.</sentence>
+				<sentence xml:id="P1E129">Il est probable que <ENAMEX type="LOCATION">Péguy</ENAMEX>, comme tout converti de fraîche date, traduisit sa propre aspiration à l’absolu et sa déception devant l’Église qui lui paraissait infidèle à sa mission.</sentence>
+				<sentence xml:id="P1E130">S’il s’identifiait à Jeanne la combattante, il était également Mme <ENAMEX type="PERSON">Gervaise</ENAMEX>, qui se reconnaît faible et s’en remet à Dieu pour combattre la misère des hommes.</sentence>
+				<sentence xml:id="P1E131">Péguy inventa, enfin, cette forme littéraire sans pareille de la <ENAMEX type="LOCATION">Tapisserie</ENAMEX>, qui associait cette fois <ENAMEX type="BUSINESS">Sainte Geneviève</ENAMEX> à <ENAMEX type="PERSON">Jeanne d’Arc</ENAMEX>, celle-là contemplant, depuis les cieux, les luttes temporelles de celle-ci.</sentence>
+				<sentence xml:id="P1E132">Il devait s’agir initialement d’une neuvaine de sonnets, que Péguy intitula « les jours ».</sentence>
+				<sentence xml:id="P1E133">Le poète malmena les formes les plus classiques de la poésie : dès le troisième jour, la forme du sonnet est transgressée.</sentence>
+				<sentence xml:id="P1E134">Le neuvième poème ne comprend pas moins de vingt-neuf quatrains et deux tercets.</sentence>
+				<sentence xml:id="P1E135">Les vers ont acquis une partie de la liberté de la prose.</sentence>
+				<sentence xml:id="P1E136">Comme Jeanne, qui ne se laissait pas enfermer dans les conformismes de son temps, Péguy bouscule en permanence les règles les plus classiques, multipliant les digressions et les répétitions pour affiner sa pensée et exprimer ses émotions.</sentence>
+				<sentence xml:id="P1E137">Comme dans une tapisserie, les détails semblent désordonnés mais l’ensemble est ordonné et signifiant.</sentence>
+				<sentence xml:id="P1E138">L’auteur reprit les mots mêmes de Jeanne.</sentence>
+				<sentence xml:id="P1E139">Il ne fait aucun doute qu’il s’était appuyé sur les actes du procès de réhabilitation, qui avaient été publiés par <ENAMEX type="PERSON">Jules Quicherat</ENAMEX> et qui constituent un document absolument irremplaçable.</sentence>
+				<sentence xml:id="P1E140">Ne voulant pas déformer ses propos, il les met dans sa bouche et lui donne la parole.</sentence>
+				<sentence xml:id="P1E141">Il met en scène Jeannette, qui prend peu à peu conscience de sa mission et devient Jeanne.</sentence>
+				<sentence xml:id="P1E142">Il accorde également une grande importance au concret, au matériel, au charnel.</sentence>
+				<sentence xml:id="P1E143">La chaleur, le soleil, l’eau sont présents et donnent vie aux personnages.</sentence>
+				<sentence xml:id="P1E144">Pour comprendre l’arrachement que signifia son départ, il se rendit à Domrémy et dépeignit l’émotion qui, selon lui, habita la jeune fille au moment de quitter sa <ENAMEX type="LOCATION">Lorraine</ENAMEX>, de dire « adieu [à la] Meuse endormeuse et douce à [son] enfance ».</sentence>
+				<sentence xml:id="P1E145">Péguy fut en quelque sorte un historien du sensible, soucieux de donner chair et parole aux personnages du passé.</sentence>
+				<sentence xml:id="P1E146">Dans la longue digression incluse dans le mystère de la charité de <ENAMEX type="PERSON">Jeanne d’Arc</ENAMEX>, il fit de même pour dire la Passion du <ENAMEX type="BUSINESS">Christ</ENAMEX>, dont la souffrance en vue à travers la souffrance de sa mère.</sentence>
+				<sentence xml:id="P1E147">Car le personnage qui fascinait <ENAMEX type="BUSINESS">Péguy</ENAMEX> et qu’il entendait retrouver par son écriture, c’est une mystique.</sentence>
+				<sentence xml:id="P1E148">Une mystique trahie par le roi et par l’Église.</sentence>
+				<sentence xml:id="P1E149">Une mystique dépassée par sa vocation, cet appel irrésistible à prendre les armes.</sentence>
+				<sentence xml:id="P1E150">Une mystique hantée par la souffrance et la damnation dont elle est la cause car la guerre est laide, même lorsqu’elle est faite pour une cause juste.</sentence>
+				<sentence xml:id="P1E151">Il y a, bien sûr, beaucoup de <ENAMEX type="LOCATION">Péguy</ENAMEX> dans sa Jeanne.</sentence>
+				<sentence xml:id="P1E152">Il est incontestable que Péguy réussit à en faire un personnage de chair et de sang, alors que l’Église catholique était en passe de faire d’elle une sainte et la République une héroïne nationale.</sentence>
+				<sentence xml:id="P1E153">Dans les deux cas, il s’agissait d’un personnage inaccessible, désincarné.</sentence>
+				<sentence xml:id="P1E154">Historien de <ENAMEX type="PERSON">Jeanne d’Arc</ENAMEX>, <ENAMEX type="PERSON">Péguy</ENAMEX> ne le fut ni sur le plan de la méthode – il ne fit pas de recherche archivistique – ni sur celui de la narration de faits.</sentence>
+				<sentence xml:id="P1E155">Son travail d’écriture permet toutefois de voir en lui un poète de l’histoire johannique.</sentence>
+				<sentence xml:id="P1E156">S’appuyant sur la lecture des documents originaux, il s’efforça de reconstituer la vie intérieure de la <ENAMEX type="LOCATION">Lorraine</ENAMEX>, tourmentée entre deux exigences en apparence contradictoires.</sentence>
+				<sentence xml:id="P1E157">L’expérience que connaissait Péguy lui-même contribua sans doute à lui donner quelques clés de lecture de l’énigme que constitue le mystère de la bergère devenue soldat.</sentence>
+				<sentence xml:id="P1E158">Dialogue de <ENAMEX type="LOCATION">Péguy</ENAMEX> avec <ENAMEX type="PERSON">Clio Ni</ENAMEX> narration, ni synthèse, ni témoignage, l’histoire était décidément un genre bien difficile.</sentence>
+				<sentence xml:id="P1E159">Ceci explique probablement pourquoi la réflexion sur l’histoire fut centrale pour <ENAMEX type="LOCATION">Péguy</ENAMEX>.</sentence>
+				<sentence xml:id="P1E160">Il eut le projet, plusieurs fois annoncé, de lui consacrer une thèse de philosophie.</sentence>
+				<sentence xml:id="P1E161">Dépassant les polémiques, sa pensée le conduisit à une réflexion approfondie sur le temps et sur l’être de l’homme.</sentence>
+				<sentence xml:id="P1E162">Sa thèse, dont les brouillons furent publiés, resta à l’état d’ébauche.</sentence>
+				<sentence xml:id="P1E163">Mais la pensée de <ENAMEX type="PERSON">Péguy</ENAMEX> sur le temps et sur l’engagement de l’homme dans la cité, sur l’histoire et sur la politique, prit d’autres formes, moins académiques.</sentence>
+				<sentence xml:id="P1E164">Péguy donna la parole à <ENAMEX type="PERSON">Clio</ENAMEX>.</sentence>
+				<sentence xml:id="P1E165">La muse de l’histoire fit son apparition sous sa plume en 1909 dans A nos amis, à nos abonnés.</sentence>
+				<sentence xml:id="P1E166">Clio parle durement.</sentence>
+				<sentence xml:id="P1E167">Elle est reine des temps modernes et des temps futurs, maîtresse de tout jugement.</sentence>
+				<sentence xml:id="P1E168">Elle est cynique.</sentence>
+				<sentence xml:id="P1E169">Elle dédaigne ceux qui n’ont pas laissé de trace de leur action, pas de preuves, pas de monuments, pas de documents, pas de papiers, pas de cérémonies, pas de mémoire.</sentence>
+				<sentence xml:id="P1E170">Dans <ENAMEX type="PERSON">Clio</ENAMEX>.</sentence>
+				<sentence xml:id="P1E171">Dialogue de l’histoire et de l’âme païenne, écrit en 1910-11 mais qui ne fut publié qu’en 1932, <ENAMEX type="PERSON">Clio</ENAMEX> est une vieille femme, usée et désillusionnée, qui fait comprendre à l’historien la vanité de sa tâche.</sentence>
+				<sentence xml:id="P1E172">La durée est contingente et, contrairement à ce que les historiens font croire, inintelligible.</sentence>
+				<sentence xml:id="P1E173">S’inspirant des réflexions bergsoniennes, <ENAMEX type="LOCATION">Péguy</ENAMEX> lui fait dire que le temps est à tort pensé comme un espace géométrique, une ligne infinie, continue, homogène, représentant un progrès perpétuel.</sentence>
+				<sentence xml:id="P1E174">L’événement est arbitraire.</sentence>
+				<sentence xml:id="P1E175">Il survient là où les hommes ne l’attendent pas.</sentence>
+				<sentence xml:id="P1E176">Il rompt les habitudes, remet en cause l’ordre établi.</sentence>
+				<sentence xml:id="P1E177">Mais il est précaire et commence immédiatement à se défaire.</sentence>
+				<sentence xml:id="P1E178">Il se corrode jusqu’à disparaître.</sentence>
+				<sentence xml:id="P1E179">« Il y a une déperdition perpétuelle, une usure, un frottement, un irréversible qui est dans la nature même, dans l’essence même et dans l’événement, au cœur même de l’événement.</sentence>
+				<sentence xml:id="P1E180">D’un mot, il y a le vieillissement.</sentence>
+				<sentence xml:id="P1E181">» Le pessimisme de <ENAMEX type="LOCATION">Péguy</ENAMEX> transparaît derrière le constat de cette usure.</sentence>
+				<sentence xml:id="P1E182"><ENAMEX type="PERSON">Clio</ENAMEX> est fille de <ENAMEX type="BUSINESS">Memoria</ENAMEX> et, comme elle, mène une lutte perdue d’avance contre l’effacement.</sentence>
+				<sentence xml:id="P1E183">Péguy applique ce constat à l’histoire du dreyfusisme.</sentence>
+				<sentence xml:id="P1E184">Les vainqueurs d’un jour glorieux, les dreyfusards, ont été à la longue vaincus par le temps, les dix années écoulées depuis leur apparente victoire, qui ont fait sombrer dans l’oubli l’Affaire Dreyfus.</sentence>
+				<sentence xml:id="P1E185">Nous sommes une génération sacrifiée.</sentence>
+				<sentence xml:id="P1E186">Nous ne sommes pas seulement des vaincus, une génération vaincue.</sentence>
+				<sentence xml:id="P1E187">Cela ne serait rien.</sentence>
+				<sentence xml:id="P1E188">Il y a des défaites glorieuses, des désastres retentissants, plus assis, qui fixent mieux la gloire, plus beaux, plus admis, plus commémorés que n’importe quel triomphe.</sentence>
+				<sentence xml:id="P1E189">Mais notre défaite est la pire de toutes, une défaite obscure, et nous ne serons pas même méprisés : nous serons ignorés ; tout au plus nous serons peut-être grotesques.</sentence>
+				<sentence xml:id="P1E190">Il y a des défaites, <ENAMEX type="BUSINESS">Waterloo</ENAMEX> morne plaine, qui plus que des victoires, plus avantageusement, se fixent dans les mémoires des hommes, dans la commune mémoire de l’humanité.</sentence>
+				<sentence xml:id="P1E191">Nous serons mesquins, nous serons petits, nous serons ordinaires, nous serons moyens, ou plutôt nous ne serons pas du tout.</sentence>
+				<sentence xml:id="P1E192">On ne s’occupera pas de nous.</sentence>
+				<sentence xml:id="P1E193">Nous passerons inaperçus.</sentence>
+				<sentence xml:id="P1E194">Pour autant, <ENAMEX type="LOCATION">Péguy</ENAMEX> ne sombre pas dans la désespérance.</sentence>
+				<sentence xml:id="P1E195">Cette précarité donne sa valeur au temps, à l’action, à la vie.</sentence>
+				<sentence xml:id="P1E196">Exister, c’est commencer à disparaître.</sentence>
+				<sentence xml:id="P1E197">L’homme doit consentir au temps pour être pleinement homme.</sentence>
+				<sentence xml:id="P1E198">En outre, Péguy admet implicitement la responsabilité de l’historien : il combat l’oubli.</sentence>
+				<sentence xml:id="P1E199">Le regard vers le passé n’est pas une fuite, une recherche de l’âge d’or.</sentence>
+				<sentence xml:id="P1E200">Le passé permet de donner sens au présent.</sentence>
+				<sentence xml:id="P1E201">La responsabilité de l’historien est donc immense car il doit ne pas déformer, être infidèle aux réalités qu’il découvre.</sentence>
+				<sentence xml:id="P1E202">Sa mission ne se définit donc pas par une technique, une méthode, un ensemble de règles qu’il applique scrupuleusement, mais par ses qualités humaines.</sentence>
+				<sentence xml:id="P1E203">L’historien doit être probe, honnête, modeste.</sentence>
+				<sentence xml:id="P1E204">L’histoire n’est pas une science mais une éthique.</sentence>
+				<sentence xml:id="P1E205">Conclusion Cette lecture des textes de <ENAMEX type="LOCATION">Péguy sur l’histoire</ENAMEX> nous a permis de comprendre le lien que faisait l’auteur entre l’histoire et la politique.</sentence>
+				<sentence xml:id="P1E206">L’histoire, la politique et l’écriture avaient pour lui le même rôle, de sublimer la société contemporaine et de l’arracher aux mesquineries de la quotidienneté en lui procurant du rêve et en lui donnant du sens. Dans Notre Jeunesse, il écrivit que les dreyfusards avaient été des héros sublimes.</sentence>
+				<sentence xml:id="P1E207">Le rôle de l’historien sera de retrouver leur héroïsme, de le transmettre, de le faire vivre.</sentence>
+				<sentence xml:id="P1E208">De ne pas se contenter des faits, des actions, des événements au jour le jour mais de retrouver l’état d’esprit que les animait.</sentence>
+				<sentence xml:id="P1E209">Dans tous les cas, <ENAMEX type="BUSINESS">Péguy</ENAMEX> médite sur la condition humaine.</sentence>
+				<sentence xml:id="P1E210">L’historien ne doit pas en rester à la surface des choses mais doit pénétrer dans l’intimité des personnages à jamais disparus pour comprendre de l’intérieur, dans la mesure du possible, par intuition si besoin, non pas le comment mais le pourquoi de leurs faits, leurs gestes et leurs paroles.</sentence>
+				<sentence xml:id="P1E211">L’intuition de <ENAMEX type="LOCATION">Péguy</ENAMEX> rejoint ainsi les critiques qui amenèrent, quelques années plus tard, à la révolution épistémologique dont la revue des Annales fut la principale initiatrice et qui nourrit une partie de ses analyses des questionnements de l’anthropologie.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P2">
+				<sentence xml:id="P2E0">http://mimmoc.revues.org/1011</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P3">
+				<sentence xml:id="P3E0">10.4000/mimmoc.1011</sentence>
+			</p>
+		</document>
+	</subcorpus>
+</corpus>

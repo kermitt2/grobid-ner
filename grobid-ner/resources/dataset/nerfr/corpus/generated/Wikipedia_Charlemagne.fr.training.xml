@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<corpus>
+	<subcorpus>
+		<document name="Wikipedia_Charlemagne.fr">
+			<p xml:lang="fr" xml:id="P0">
+				<sentence xml:id="P0E0">Charlemagne, du latin <ENAMEX type="PERSON">Carolus Magnus</ENAMEX>, ou <ENAMEX type="PERSON">Charles Ier</ENAMEX> dit « le Grand », né le 2 avril 742 (voire 747 ou 748)2, mort le 28 janvier 814 à <ENAMEX type="LOCATION">Aix</ENAMEX>-la-Chapelle3, est un roi des Francs et empereur.</sentence>
+				<sentence xml:id="P0E1">Il appartient à la dynastie des Carolingiens, à laquelle il a donné son nom.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P1">
+				<sentence xml:id="P1E0">Fils de <ENAMEX type="LOCATION">Pépin</ENAMEX> le Bref, il est roi des Francs à partir de 768, devient par conquête roi des Lombards en 774 et est couronné empereur à <ENAMEX type="LOCATION">Rome</ENAMEX> par le pape Léon III le 25 décembre 800, relevant une dignité disparue depuis la chute de l&apos;<ENAMEX type="ORGANISATION">Empire romain d&apos;Occident</ENAMEX> en 476.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P2">
+				<sentence xml:id="P2E0">Roi guerrier, il agrandit notablement son royaume par une série de campagnes militaires, en particulier contre les Saxons païens dont la soumission fut difficile et violente (772-804), mais aussi contre les Lombards en <ENAMEX type="LOCATION">Italie</ENAMEX> et les musulmans d&apos;<ENAMEX type="BUSINESS">Al-Andalus</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P3">
+				<sentence xml:id="P3E0">Souverain réformateur, soucieux d&apos;orthodoxie religieuse et de culture, il protège les arts et les lettres et est à l&apos;origine de la « renaissance carolingienne ».</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P4">
+				<sentence xml:id="P4E0">Son œuvre politique immédiate, l&apos;empire, ne lui survit cependant pas longtemps.</sentence>
+				<sentence xml:id="P4E1">Se conformant à la coutume successorale germanique, <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> prévoit dès 806 le partage de l&apos;Empire entre ses trois fils4.</sentence>
+				<sentence xml:id="P4E2">Après de nombreuses péripéties, l&apos;empire ne sera finalement partagé qu&apos;en 843 entre trois de ses petits-fils, lors du traité de <ENAMEX type="LOCATION">Verdun</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P5">
+				<sentence xml:id="P5E0">Le morcellement féodal des siècles suivants, puis la formation en <ENAMEX type="LOCATION">Europe</ENAMEX> des <ENAMEX type="BUSINESS">États-Nations</ENAMEX> rivaux condamnent à l&apos;impuissance ceux qui tentent explicitement de restaurer l&apos;empire universel de <ENAMEX type="BUSINESS">Charlemagne</ENAMEX>, en particulier les souverains du <ENAMEX type="LOCATION">Saint-Empire</ENAMEX> romain germanique, d&apos;<ENAMEX type="PERSON">Otton Ier</ENAMEX> en 962 à <ENAMEX type="PERSON">Charles Quint</ENAMEX> au XVIe siècle, voire <ENAMEX type="LOCATION">Napoléon Ier</ENAMEX>, hanté par l&apos;exemple du plus éminent des Carolingiens5.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P6">
+				<sentence xml:id="P6E0">La figure de <ENAMEX type="LOCATION">Charlemagne</ENAMEX> a été l&apos;objet de déchirements en <ENAMEX type="LOCATION">Europe</ENAMEX>, notamment d&apos;enjeux politiques entre le XIIe et XIXe siècles entre la nation germanique qui considère le <ENAMEX type="ORGANISATION">Saint-Empire</ENAMEX> romain comme le successeur légitime de l&apos;empereur carolingien et la nation française qui en fait un élément central de la continuité dynastique des Capétiens.</sentence>
+				<sentence xml:id="P6E1">Il est parfois considéré comme le « Père de l&apos;<ENAMEX type="LOCATION">Europe</ENAMEX> »6,7,8,9 pour avoir assuré le regroupement d&apos;une partie notable de l&apos;<ENAMEX type="LOCATION">Europe occidentale</ENAMEX>, et posé des principes de gouvernement dont ont hérité les grands États européens10.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P7">
+				<sentence xml:id="P7E0">Les deux principaux textes du IXe siècle qui dépeignent le <ENAMEX type="ORGANISATION">Charlemagne réel</ENAMEX>, la <ENAMEX type="PERSON">Vita Caroli d&apos;Éginhard</ENAMEX> et la <ENAMEX type="LOCATION">Gesta Karoli Magni</ENAMEX> attribuée au moine de <ENAMEX type="LOCATION">Saint-Gall</ENAMEX> Notker le Bègue, l&apos;auréolent également de légendes et de mythes repris au cours des siècles suivants : « Il y a le Charlemagne de la société vassalique et féodale, le <ENAMEX type="ORGANISATION">Charlemagne de la Croisade et de la Reconquête</ENAMEX>, le <ENAMEX type="ORGANISATION">Charlemagne inventeur de la Couronne de France</ENAMEX> ou de la <ENAMEX type="LOCATION">Couronne</ENAMEX> impériale, le <ENAMEX type="ORGANISATION">Charlemagne</ENAMEX> mal canonisé mais tenu pour vrai saint de l&apos;Église, le Charlemagne des bons écoliers »11.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P8">
+				<sentence xml:id="P8E0">Charlemagne est, par tolérance du pape Benoît XIV, un bienheureux catholique fêté localement le 28 janvier12.</sentence>
+				<sentence xml:id="P8E1">En effet, en 1165, l&apos;empereur <ENAMEX type="PERSON">Frédéric Ier Barberousse</ENAMEX> obtient la canonisation de Charlemagne par l&apos;anti-pape <ENAMEX type="PERSON">Pascal</ENAMEX> III12,13.</sentence>
+				<sentence xml:id="P8E2">De nombreux diocèses du nord de la <ENAMEX type="LOCATION">France</ENAMEX> inscrivent alors <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> à leur calendrier et, en 1661, l&apos;<ENAMEX type="ORGANISATION">université de Paris</ENAMEX> le choisit pour saint patron12.</sentence>
+				<sentence xml:id="P8E3">Aujourd&apos;hui encore, la cathédrale d&apos;<ENAMEX type="LOCATION">Aix-la-Chapelle</ENAMEX> fait vénérer ses reliques12.</sentence>
+				<sentence xml:id="P8E4">Pourtant, l&apos;Église catholique a retiré de son calendrier « l&apos;empereur qui convertit les Saxons par l&apos;épée plutôt que par la prédication pacifique de l&apos;Évangile »12.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P10">
+				<sentence xml:id="P10E0">On dispose de 164 diplômes du règne de <ENAMEX type="BUSINESS">Charlemagne</ENAMEX>, dont 47 originaux ; de 107 capitulaires, souvent connus par plusieurs copies encore existantes ; des comptes rendus de certaines assemblées ecclésiastiques (synodes ou conciles).</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P11">
+				<sentence xml:id="P11E0">On dispose de 270 lettres écrites par <ENAMEX type="BUSINESS">Alcuin</ENAMEX>, dont un bon nombre adressées à <ENAMEX type="BUSINESS">Charlemagne</ENAMEX>.</sentence>
+				<sentence xml:id="P11E1">Elles sont en général très verbeuses15.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P12">
+				<sentence xml:id="P12E0">On a aussi 98 lettres adressées par les papes aux Carolingiens (2 à <ENAMEX type="PERSON">Charles Martel</ENAMEX>, 42 à <ENAMEX type="LOCATION">Pépin</ENAMEX> le Bref et 54 à <ENAMEX type="BUSINESS">Charlemagne</ENAMEX>), réunies à la demande de celui-ci en un volume, le Codex carolinus.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P13">
+				<sentence xml:id="P13E0">La tenue d&apos;annales est une pratique qui débute en <ENAMEX type="LOCATION">Angleterre</ENAMEX> au VIIe siècle et se répand sur le continent au VIIIe.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P14">
+				<sentence xml:id="P14E0">Les Annales regni Francorum.</sentence>
+				<sentence xml:id="P14E1">En 788, <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> décide d&apos;établir des annales royales, en les faisant commencer rétroactivement à 741, date de la mort de <ENAMEX type="PERSON">Charles Martel</ENAMEX>.</sentence>
+				<sentence xml:id="P14E2">Ces annales royales sont effectivement réalisées et poursuivies jusqu&apos;en 829.</sentence>
+				<sentence xml:id="P14E3">Les historiens discernent le travail de plusieurs auteurs : le premier opère la compilation des années 741-788 et rédige les annales jusqu&apos;en 797 ; d&apos;autres interviennent dans les années suivantes.</sentence>
+				<sentence xml:id="P14E4">Ces Annales sont connues dans 5 versions couvrant des périodes différentes, dont 4 sont proches dans la façon de rédiger (A, <ENAMEX type="BUSINESS">B</ENAMEX>, <ENAMEX type="BUSINESS">C</ENAMEX>, D), tandis qu&apos;une cinquième (E) présente de notables différences.</sentence>
+				<sentence xml:id="P14E5">La version E valorise plus la personne de <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> que les autres qui exaltent plutôt les Francs en général ; en même temps, elle est beaucoup plus réaliste, et évoque de nombreuses difficultés, défaites ou révoltes, qui sont passées sous silence dans les autres : par exemple, l&apos;attaque de <ENAMEX type="LOCATION">Roncevaux</ENAMEX>.</sentence>
+				<sentence xml:id="P14E6">Les versions A-D apparaissent comme une histoire officielle, parfois mensongère16, la version E comme plus critique.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P15">
+				<sentence xml:id="P15E0">Le Liber Pontificalis sont des annales constituées en fonction des règnes des différents papes (en ce qui concerne <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> : Étienne <ENAMEX type="BUSINESS">III</ENAMEX>, <ENAMEX type="BUSINESS">Hadrien I</ENAMEX>, <ENAMEX type="LOCATION">Léon III</ENAMEX>).</sentence>
+				<sentence xml:id="P15E1">Il s&apos;agit d&apos;une histoire officielle du point de vue de la papauté.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P16">
+				<sentence xml:id="P16E0">Les annales monastiques les plus importantes couvrant la période sont les Annales mettenses priores (<ENAMEX type="BUSINESS">Metz</ENAMEX>), les Annales mosellani, les <ENAMEX type="BUSINESS">Annales de Lorsch</ENAMEX>, et la <ENAMEX type="LOCATION">Chronique de Moissac</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P17">
+				<sentence xml:id="P17E0">Après Grégoire de <ENAMEX type="LOCATION">Tours</ENAMEX> au VIe siècle, la période mérovingienne a au VIIe siècle un chroniqueur appelé Frédégaire, auteur du Liber historiae Francorum ou Chronique de Frédégaire qui est prolongée par des continuations, réalisées sous l&apos;égide de la famille carolingienne.</sentence>
+				<sentence xml:id="P17E1">La troisième continuation concerne la période 753-768.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P18">
+				<sentence xml:id="P18E0">Quelques données sur le règne de <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> apparaissent dans des chroniques secondaires : la <ENAMEX type="ORGANISATION">Vie de Sturm</ENAMEX> (abbé de <ENAMEX type="LOCATION">Fulda</ENAMEX>) ; les Actes des saints Pères de l&apos;abbaye de Saint-Wandrille ainsi que dans les ouvrages concernant <ENAMEX type="PERSON">Louis le Pieux</ENAMEX> : Vie de l&apos;empereur <ENAMEX type="PERSON">Louis de Thegan</ENAMEX> (évêque de <ENAMEX type="LOCATION">Trèves</ENAMEX>), Poème sur <ENAMEX type="PERSON">Louis le Pieux d&apos;Ermold le Noir</ENAMEX>, <ENAMEX type="BUSINESS">Vie de Louis</ENAMEX> le <ENAMEX type="ORGANISATION">Pieux de l&apos;Astronome</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P19">
+				<sentence xml:id="P19E0">Le texte le plus important est la <ENAMEX type="PERSON">Vita Caroli</ENAMEX> rédigée par <ENAMEX type="BUSINESS">Éginhard</ENAMEX> après la mort de l&apos;empereur, mais présent à la cour et membre du cercle des proches à partir des années 790.</sentence>
+				<sentence xml:id="P19E1">La plupart des biographes médiévaux flattent leur commanditaire, Éginhard ne déroge pas à la règle en présentant <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> comme un être de lumière, un monarque surhumain.</sentence>
+				<sentence xml:id="P19E2">Sa biographie est cependant considérée comme un compte-rendu assez fidèle de la vie de <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> et de son époque17.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P20">
+				<sentence xml:id="P20E0">Deux textes d&apos;auteurs postérieurs à l&apos;époque de <ENAMEX type="LOCATION">Charlemagne</ENAMEX>, le Poète saxon et le <ENAMEX type="ORGANISATION">Moine de Saint-Gall</ENAMEX>, présentent un certain intérêt.</sentence>
+				<sentence xml:id="P20E1">Le dernier, identifié en général avec Notker le Bègue, est à l&apos;origine d&apos;un certain nombre d&apos;anecdotes devenues des images d&apos;<ENAMEX type="LOCATION">Épinal</ENAMEX> au XIXe siècle (<ENAMEX type="BUSINESS">Charlemagne</ENAMEX> glorifiant les élèves pauvres mais méritants et rejetant les riches paresseux).</sentence>
+				<sentence xml:id="P20E2">Le Poète saxon, malgré son origine, est écrit d&apos;un point de vue parfaitement conforme à celui des Francs, et exalte l&apos;œuvre de christianisation de <ENAMEX type="BUSINESS">Charlemagne</ENAMEX>.</sentence>
+				<sentence xml:id="P20E3">La chronique du Pseudo-<ENAMEX type="BUSINESS">Turpin</ENAMEX> rédigée dans la première moitié du XIIe siècle est une histoire légendaire écrite en prose sur les expéditions de <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> outre Pyrénées jusqu&apos;à sa mort18.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P21">
+				<sentence xml:id="P21E0">Parmi les auteurs non francs, les sources sont assez limitées.</sentence>
+				<sentence xml:id="P21E1">Une des plus intéressantes est la chronique de <ENAMEX type="PERSON">Crantz</ENAMEX> (Creontius), chancelier du roi de <ENAMEX type="PERSON">Bavière Tassilon</ENAMEX>.</sentence>
+				<sentence xml:id="P21E2">Cette chronique est connue seulement par l&apos;intermédiaire tardif d&apos;un humaniste allemand du XVe siècle, <ENAMEX type="PERSON">Jean Tumair</ENAMEX>, dit « Aventinus », qui a utilisé un manuscrit plus ancien.</sentence>
+				<sentence xml:id="P21E3">Il existe aussi des mentions concernant <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> dans les écrits historiques du byzantin Théophane.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P23">
+				<sentence xml:id="P23E0">L&apos;épigraphie fournit un nombre assez limité d&apos;informations.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P25">
+				<sentence xml:id="P25E0">La numismatique est plus intéressante en ce qui concerne la titulature de <ENAMEX type="BUSINESS">Charlemagne</ENAMEX>, mais aussi parce qu&apos;on trouve parfois sur les pièces un portrait de <ENAMEX type="LOCATION">Charlemagne</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P26">
+				<sentence xml:id="P26E0">Charlemagne est le plus illustre représentant des souverains de la dynastie carolingienne, qui lui doit d&apos;ailleurs son nom.</sentence>
+				<sentence xml:id="P26E1">Petit-fils de <ENAMEX type="PERSON">Charles Martel</ENAMEX>, il est le fils de <ENAMEX type="LOCATION">Pépin</ENAMEX> le Bref et de <ENAMEX type="PERSON">Berthe de Laon</ENAMEX> dite « au <ENAMEX type="BUSINESS">Grand Pied</ENAMEX> ».</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P27">
+				<sentence xml:id="P27E0">La date et le lieu de naissance de <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> sont l’objet de controverses, en raison de l’absence de renseignements concordants dans les documents d’époque19.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P28">
+				<sentence xml:id="P28E0">On dispose d’une indication sur le jour de sa naissance : un calendrier du début du IXe siècle de l&apos;abbaye de <ENAMEX type="BUSINESS">Lorsch</ENAMEX> indique que la naissance de <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> a eu lieu « le 4 des nones d&apos;avril »20, soit le 2 avril.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P29">
+				<sentence xml:id="P29E0">En ce qui concerne l’année, il existe trois possibilités : 742, 747 ou 748.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P30">
+				<sentence xml:id="P30E0">La date de 742 se fonde sur un énoncé d’<ENAMEX type="BUSINESS">Eginhard</ENAMEX>, selon lequel <ENAMEX type="ORGANISATION">Charlemagne</ENAMEX> est mort dans sa soixante-douzième année21.</sentence>
+				<sentence xml:id="P30E1">Mais il est apparu22 qu&apos;Eginhard paraphrasait la <ENAMEX type="ORGANISATION">Vie des douze Césars de Suétone</ENAMEX>, de sorte que l&apos;âge qu&apos;il attribue à <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> n&apos;est pas totalement fiable.</sentence>
+				<sentence xml:id="P30E2">À noter qu’Eginhard se refuse explicitement à traiter le sujet de la naissance et que la date de 742 est obtenue de façon indirecte.</sentence>
+				<sentence xml:id="P30E3">On trouve cependant aussi l&apos;indication de l&apos;âge de 71 ans dans les Annales Regni Francorum23.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P31">
+				<sentence xml:id="P31E0">Les dates de 747/748 se fondent sur un énoncé des Annales Petaviani (<ENAMEX type="ORGANISATION">Annales de Petau</ENAMEX>) qui donnent la date de 747.</sentence>
+				<sentence xml:id="P31E1">Cela pose cependant un problème, si on retient le jour anniversaire du 2 avril, car ces annales indiquent que <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> est né après le départ de son oncle Carloman pour <ENAMEX type="BUSINESS">Rome</ENAMEX>, évènement qui a eu lieu après le 15 août 74724.</sentence>
+				<sentence xml:id="P31E2">De plus, en 747, Pâques est tombé le 2 avril et les chroniqueurs n&apos;auraient pas manqué de signaler cette coïncidence.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P33">
+				<sentence xml:id="P33E0">L’enjeu de la date de naissance de <ENAMEX type="LOCATION">Charlemagne</ENAMEX></sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P34">
+				<sentence xml:id="P34E0">Cette absence de certitude concernant l’année de sa naissance est probablement liée au fait que Pépin et <ENAMEX type="BUSINESS">Berthen</ENAMEX> 1 ne se sont mariés (religieusement) qu’en 743 ou 744.</sentence>
+				<sentence xml:id="P34E1">Par conséquent, la naissance de <ENAMEX type="LOCATION">Charlemagne</ENAMEX> serait, du point de vue de l’Église, illégitime en 742, légitime en 747/748.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P35">
+				<sentence xml:id="P35E0">Un autre aspect concerne son âge lors des événements de sa jeunesse : 26 ans ou 20 ans en 768 à son avènement.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P36">
+				<sentence xml:id="P36E0">Quelques arguments en faveur de 747/748</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P37">
+				<sentence xml:id="P37E0">Carloman étant né en 751, la naissance de <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> en 742 représente un trop grand écart (<ENAMEX type="BUSINESS">Karl Werner</ENAMEX>, 1973, cité par Minois 2010, p. 107).</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P38">
+				<sentence xml:id="P38E0">Vers 775, un clerc irlandais du nom de <ENAMEX type="ORGANISATION">Cathwulf25</ENAMEX> rappelle à <ENAMEX type="LOCATION">Charlemagne</ENAMEX> dans une lettre que tout le clergé a prié avant sa naissance pour que ses parents aient un enfant, ce qui suppose qu’ils étaient déjà mariés.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P40">
+				<sentence xml:id="P40E0">Les positions des historiens contemporains</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P42">
+				<sentence xml:id="P42E0">La date de 742, retenue de longue date (notamment par le père Anselme) a été remise en question en 1973 par <ENAMEX type="PERSON">Karl Ferdinand Werner</ENAMEX>.</sentence>
+				<sentence xml:id="P42E1">Cependant, des écrits postérieurs maintiennent la validité de la date de 742.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P43">
+				<sentence xml:id="P43E0">Divers lieux ont été évoqués : <ENAMEX type="LOCATION">Quierzy-sur-Oise39</ENAMEX>, <ENAMEX type="ORGANISATION">Ingelheim am Rhein</ENAMEX> selon <ENAMEX type="PERSON">Godefroi de Viterbe40</ENAMEX>, <ENAMEX type="LOCATION">Aix-la-Chapelle</ENAMEX> (selon <ENAMEX type="PERSON">Victor Hugo41</ENAMEX>).</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P44">
+				<sentence xml:id="P44E0">Le lieu de la naissance de <ENAMEX type="LOCATION">Charlemagne</ENAMEX> n&apos;est mentionné dans aucune source d&apos;époque.</sentence>
+				<sentence xml:id="P44E1">La plus ancienne indication, qui concerne Ingelheim, vient de <ENAMEX type="PERSON">Godefroi de Viterbe</ENAMEX> (auteur italien du XIIe siècle42) et est retenue par certains auteurs43,44.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P45">
+				<sentence xml:id="P45E0">Un autre lieu de naissance envisagé est <ENAMEX type="LOCATION">Quierzy-sur-Oise39</ENAMEX> qui est une ancienne villa royale mérovingienne dans l&apos;<ENAMEX type="LOCATION">Aisne</ENAMEX>, entre <ENAMEX type="BUSINESS">Noyon</ENAMEX> et <ENAMEX type="ORGANISATION">Chauny45</ENAMEX>.</sentence>
+				<sentence xml:id="P45E1">Ses parents s&apos;y sont mariés.</sentence>
+				<sentence xml:id="P45E2">Cette petite commune a été entre 600 et 900, capitale de la <ENAMEX type="LOCATION">France</ENAMEX>.</sentence>
+				<sentence xml:id="P45E3">De nombreux événements s&apos;y sont produits, dont 3 conciles.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P46">
+				<sentence xml:id="P46E0">Selon d&apos;autres historiens, <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> aurait vu le jour en <ENAMEX type="LOCATION">Austrasie</ENAMEX>, en particulier dans l&apos;actuelle région de <ENAMEX type="LOCATION">Liège</ENAMEX>, à <ENAMEX type="BUSINESS">Herstal</ENAMEX> ou Jupille46, résidence la plus fréquente47 de <ENAMEX type="LOCATION">Pépin</ENAMEX> le Bref et de certains ancêtres des Carolingiens, notamment Pépin le Gros, le père de <ENAMEX type="PERSON">Charles Martel48</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P47">
+				<sentence xml:id="P47E0">Les renseignements jusqu’à son avènement sont limités.</sentence>
+				<sentence xml:id="P47E1">Charlemagne est mentionné pour la première fois dans un diplôme de 760 concernant l’abbaye de <ENAMEX type="PERSON">Saint-Calais</ENAMEX>.</sentence>
+				<sentence xml:id="P47E2">En ce qui concerne la période du règne de son père, on sait que <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> a pris part à un certain nombre d&apos;événements.</sentence>
+				<sentence xml:id="P47E3">Il est à la tête de la délégation qui accueille le pape Étienne <ENAMEX type="BUSINESS">III</ENAMEX> en Champagne en 754 (à 12 ou 6 ans) et il est peu après sacré par le pape, en même temps que son frère Carloman.</sentence>
+				<sentence xml:id="P47E4">Il participe aux opérations en <ENAMEX type="LOCATION">Aquitaine</ENAMEX> en 767-768 et il est avec sa mère dans le cortège qui ramène Pépin le Bref malade à <ENAMEX type="LOCATION">Saint-Denis</ENAMEX>.</sentence>
+				<sentence xml:id="P47E5">En ce qui concerne son éducation, on retient qu’il n’a pas appris à écrire jeune, puisqu’il s’y exerce à l’âge adulte.</sentence>
+				<sentence xml:id="P47E6">Mais il s’agit peut-être de calligraphie, plutôt que d’écriture basique.</sentence>
+				<sentence xml:id="P47E7">En revanche il sait lire et connaît le latin.</sentence>
+				<sentence xml:id="P47E8">Sa langue maternelle est le francique.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P48">
+				<sentence xml:id="P48E0">Début du règne : avec <ENAMEX type="BUSINESS">Carloman</ENAMEX> (768-771)</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P49">
+				<sentence xml:id="P49E0">Avant sa mort, le 24 septembre 768, <ENAMEX type="LOCATION">Pépin</ENAMEX> a prévu un partage du royaume entre <ENAMEX type="BUSINESS">Charles</ENAMEX> et <ENAMEX type="BUSINESS">Carloman</ENAMEX> ; les territoires qui leur sont attribués sont disposés de façon assez curieuse : ceux de <ENAMEX type="LOCATION">Charlemagne</ENAMEX> forment un arc occidental de la <ENAMEX type="LOCATION">Garonne</ENAMEX> au Rhin, ceux de <ENAMEX type="PERSON">Carloman</ENAMEX> sont regroupés autour de l’Alémanie ; l’<ENAMEX type="LOCATION">Austrasie</ENAMEX>, la <ENAMEX type="LOCATION">Neustrie et l’Aquitaine</ENAMEX> sont partagées entre eux.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P50">
+				<sentence xml:id="P50E0">Charlemagne et Carloman se font proclamer roi par leurs fidèles respectivement à <ENAMEX type="LOCATION">Noyon</ENAMEX> et <ENAMEX type="BUSINESS">Soissons</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P51">
+				<sentence xml:id="P51E0">Charlemagne est ensuite occupé par les affaires d’<ENAMEX type="BUSINESS">Aquitaine</ENAMEX> (voir infra), qu’il réussit à régler sans l’aide de son frère.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P52">
+				<sentence xml:id="P52E0">Puis intervient la question des mariages lombards, qui occupe les années 769-771.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P53">
+				<sentence xml:id="P53E0">En 771, après un peu plus de trois années de règne et de paix relative entre les deux frères, <ENAMEX type="BUSINESS">Carloman</ENAMEX> meurt brusquement au palais carolingien de Samoussy49, près de <ENAMEX type="LOCATION">Laon</ENAMEX>.</sentence>
+				<sentence xml:id="P53E1">Dès le lendemain de sa mort, <ENAMEX type="BUSINESS">Charles</ENAMEX> s&apos;empare de son royaume, usurpant l&apos;héritage de ses neveux.</sentence>
+				<sentence xml:id="P53E2">La veuve de <ENAMEX type="PERSON">Carloman</ENAMEX>, Gerberge de <ENAMEX type="LOCATION">Lombardie</ENAMEX>, se réfugie en <ENAMEX type="LOCATION">Italie</ENAMEX> auprès du roi des Lombards, avec ses fils et quelques partisans.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P54">
+				<sentence xml:id="P54E0">Charles est désormais souverain de tout le royaume franc.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P55">
+				<sentence xml:id="P55E0">Les conditions de l’expansion territoriale</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P56">
+				<sentence xml:id="P56E0">Le royaume franc en 768 et son environnement</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P57">
+				<sentence xml:id="P57E0">Reconstitution d&apos;un guerrier carolingien armé d&apos;un spangenhelm, d&apos;une cotte de mailles, d&apos;une lance et d&apos;un bouclier, montant un cheval de guerre (<ENAMEX type="LOCATION">VIIIe-Xe siècles</ENAMEX>).</sentence>
+				<sentence xml:id="P57E1">Mannequin exposé à la mairie d&apos;<ENAMEX type="LOCATION">Aix-la-Chapelle</ENAMEX> en juin 2014, lors de la commémoration du 1200e anniversaire de la mort de <ENAMEX type="PERSON">Charlemagne</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P58">
+				<sentence xml:id="P58E0">Le royaume inclut des territoires solidement tenus par les Francs : <ENAMEX type="LOCATION">Austrasie</ENAMEX>, <ENAMEX type="LOCATION">Neustrie</ENAMEX>, <ENAMEX type="BUSINESS">Bourgogne</ENAMEX>, <ENAMEX type="BUSINESS">Provence</ENAMEX>, <ENAMEX type="LOCATION">Alémanie</ENAMEX> et des territoires semi-autonomes : l’<ENAMEX type="LOCATION">Aquitaine</ENAMEX> (avec la <ENAMEX type="LOCATION">Vasconie</ENAMEX> et la Septimanie), la <ENAMEX type="LOCATION">Bavière</ENAMEX> et la <ENAMEX type="LOCATION">Frise</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P59">
+				<sentence xml:id="P59E0">Plus éloignés : les Scandinaves du <ENAMEX type="LOCATION">Danemark</ENAMEX> ; les Slaves (Wilzes, Abodrites, <ENAMEX type="BUSINESS">Linons</ENAMEX>, Sorbes), au-delà de l’<ENAMEX type="BUSINESS">Elbe</ENAMEX> ; les Avars (semi-nomades turcophones) en <ENAMEX type="LOCATION">Pannonie</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P61">
+				<sentence xml:id="P61E0">L’empire byzantin en <ENAMEX type="LOCATION">Asie</ENAMEX> a perdu beaucoup de territoire du fait de l’expansion arabo-musulmane ; dans l’ensemble, les relations des Byzantins avec les Francs sont plutôt tendues.</sentence>
+				<sentence xml:id="P61E1">L’empire musulman, en <ENAMEX type="LOCATION">Asie</ENAMEX> et en <ENAMEX type="LOCATION">Afrique</ENAMEX>, est dirigé par le califat des Abbassides de <ENAMEX type="LOCATION">Bagdad</ENAMEX>, avec lequel au contraire les relations sont plutôt bonnes, en l’absence d’hostilité religieuse, alors qu’il existe un contentieux religieux avec <ENAMEX type="BUSINESS">Byzance</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P63">
+				<sentence xml:id="P63E0">La papauté est toujours sous tutelle de l&apos;<ENAMEX type="ORGANISATION">Empire byzantin</ENAMEX>.</sentence>
+				<sentence xml:id="P63E1">Cependant, accaparé par sa lutte contre l&apos;empire musulman, le Basileus n&apos;a plus les moyens de protéger <ENAMEX type="BUSINESS">Rome</ENAMEX> menacée par les Lombards.</sentence>
+				<sentence xml:id="P63E2">La papauté se tourne donc de plus en plus vers les Francs50, en particulier vers la famille carolingienne que les papes soutiennent depuis l&apos;époque de <ENAMEX type="PERSON">Charles Martel</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P64">
+				<sentence xml:id="P64E0">La guerre entre <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> et les Saxons.</sentence>
+				<sentence xml:id="P64E1">Éginhard, <ENAMEX type="PERSON">Vita Karoli Magni</ENAMEX>, XIIIe siècle.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P65">
+				<sentence xml:id="P65E0">L&apos;organisation politique du royaume franc</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P67">
+				<sentence xml:id="P67E0">Dans le royaume franc, les puissants (principalement les ducs, comtes et marquis) accueillent des hommes libres qu&apos;ils éduquent, protègent et nourrissent.</sentence>
+				<sentence xml:id="P67E1">L&apos;entrée dans ces groupes se fait par la cérémonie de la recommandation : ces hommes deviennent des guerriers domestiques (vassi) attachés à la personne du seniorn 2. Le seigneur doit entretenir cette clientèle par des dons pour entretenir sa fidélité51.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P69">
+				<sentence xml:id="P69E0">La monnaie d&apos;or devenant rare du fait de la distension des liens commerciaux avec <ENAMEX type="BUSINESS">Byzance</ENAMEX> (qui perd le contrôle de la Méditerranée occidentale au profit des musulmans), la richesse ne peut guère provenir que de la guerre.</sentence>
+				<sentence xml:id="P69E1">Celle-ci procure du butin et permet éventuellement de conquérir des terres qui peuvent être redistribuées52.</sentence>
+				<sentence xml:id="P69E2">En l&apos;absence d&apos;expansion territoriale, les liens vassaliques se distendent.</sentence>
+				<sentence xml:id="P69E3">Pour se pérenniser, une puissance doit s&apos;étendre.</sentence>
+				<sentence xml:id="P69E4">Depuis des générations, les Pippinides étendent ainsi leurs dominations, et leurs comtes, s&apos;enrichissant, cèdent des terres à leurs propres vassaux.</sentence>
+				<sentence xml:id="P69E5"><ENAMEX type="PERSON">Charles Martel</ENAMEX> et Pépin le Bref reprennent à l&apos;Église une grande partie de ses biens pour les distribuer aux vassaux.</sentence>
+				<sentence xml:id="P69E6">Ceci leur permet, tout en stabilisant leurs acquis, d&apos;avoir les moyens d&apos;être à la tête d&apos;une armée sans égale dans l&apos;Occident médiéval53.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P71">
+				<sentence xml:id="P71E0">Charlemagne se retrouve avec le même problème : il doit s&apos;étendre en permanence pour entretenir ses vassaux et éviter la dissolution de ses possessions.</sentence>
+				<sentence xml:id="P71E1">Pendant tout son règne, il tente de les fidéliser par tous les moyens : en leur faisant prêter serment, en leur allouant des terres (seule richesse de l&apos;époque) qu&apos;ils doivent lui restituer à leur mort, en envoyant des missi dominici pour les contrôler et pour surveiller ce qui se trame à travers son empire54.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P72">
+				<sentence xml:id="P72E0">L&apos;armée et la guerre à l&apos;époque de <ENAMEX type="ORGANISATION">Charlemagne</ENAMEX></sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P74">
+				<sentence xml:id="P74E0">Le principe fondamental de l&apos;armée de <ENAMEX type="LOCATION">Charlemagne</ENAMEX> reste celui de l&apos;armée franque : elle est composée par les hommes libres qui ont le droit et le devoir de participer à l&apos;armée (y compris ceux des territoires récemment conquis).</sentence>
+				<sentence xml:id="P74E1">L&apos;armée peut être convoquée chaque année pendant la période de guerre (printemps-été).</sentence>
+				<sentence xml:id="P74E2">De fait sur les 46 années du règne de <ENAMEX type="LOCATION">Charlemagne</ENAMEX>, on ne trouve que deux années où il n&apos;y ait pas eu de convocation de l&apos;armée (790 et 807).</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P76">
+				<sentence xml:id="P76E0">Les historiens estiment les effectifs potentiellement mobilisables de 10 000 à 40 000 hommes.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P78">
+				<sentence xml:id="P78E0">Concrètement, il y a chaque année une assemblée des grands du royaume, censés représenter l&apos;ensemble du peuple des libres, couramment appelée lors du champ de mai ; cette assemblée prend diverses décisions (ou plutôt : entérine les décisions du roi) et en particulier celle de lancer une expédition contre tel ou tel ennemi.</sentence>
+				<sentence xml:id="P78E1">Cette décision est diffusée auprès des intéressés, soit par les vassaux directs du roi auprès de leurs dépendants, soit par les comtes, évêques et abbés auprès des habitants de leur ressort.</sentence>
+				<sentence xml:id="P78E2">Chaque guerrier mobilisé doit apporter son équipement et ses vivres pour trois mois55 et se rendre au point de rassemblement de l&apos;armée (ou des différents corps prévus).</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P80">
+				<sentence xml:id="P80E0">Les forces mobilisées se décomposent entre la cavalerie lourde, la cavalerie légère et l&apos;infanterie.</sentence>
+				<sentence xml:id="P80E1">L&apos;armée de <ENAMEX type="LOCATION">Charlemagne</ENAMEX> ne semble pas utiliser beaucoup de matériel technique, en particulier lors des quelques sièges de ville qui ont eu lieu (<ENAMEX type="LOCATION">Pavie</ENAMEX>, <ENAMEX type="LOCATION">Saragosse</ENAMEX>, Barcelone…).</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P82">
+				<sentence xml:id="P82E0">Par ailleurs, <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> dispose d&apos;un certain nombre de guerriers dépendant directement de lui, qui forment sa garde, et qui peuvent être utilisés pour des opérations urgentes.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P83">
+				<sentence xml:id="P83E0">La consolidation et l&apos;élargissement du territoire</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P84">
+				<sentence xml:id="P84E0">Extension de l&apos;empire carolingien sous <ENAMEX type="BUSINESS">Charlemagne</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P86">
+				<sentence xml:id="P86E0">à la mort de <ENAMEX type="PERSON">Pépin</ENAMEX> le Bref 768</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P87">
+				<sentence xml:id="P87E0">Conquêtes de <ENAMEX type="LOCATION">Charlemagne</ENAMEX> (768-814)</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P88">
+				<sentence xml:id="P88E0">Royaumes versant un tribut</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P90">
+				<sentence xml:id="P90E0">Durant les trois premières décennies du règne de <ENAMEX type="BUSINESS">Charlemagne</ENAMEX>, le territoire du royaume s&apos;accroît nettement, quoique de façon plus ou moins solide : intégration complète des duchés d&apos;<ENAMEX type="BUSINESS">Aquitaine</ENAMEX> et de <ENAMEX type="LOCATION">Bavière</ENAMEX> ; conquête du royaume des Lombards (774), de la <ENAMEX type="LOCATION">Saxe</ENAMEX>, de quelques territoires en <ENAMEX type="LOCATION">Espagne</ENAMEX>, dans les possessions byzantines et dans les pays slaves ; expéditions contre les Avars et les Bretons.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P91">
+				<sentence xml:id="P91E0"><ENAMEX type="PERSON">L’Aquitaine</ENAMEX> et la <ENAMEX type="LOCATION">Vasconie</ENAMEX></sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P93">
+				<sentence xml:id="P93E0">En 768, <ENAMEX type="LOCATION">Pépin</ENAMEX>, juste avant de mourir, a obtenu la soumission de l’<ENAMEX type="BUSINESS">Aquitaine</ENAMEX> et de la <ENAMEX type="LOCATION">Vasconie</ENAMEX>, le duc Waïfre ayant été assassiné par des gens de son entourage.</sentence>
+				<sentence xml:id="P93E1">De 768 à 771, le duché est partagé entre <ENAMEX type="BUSINESS">Charles</ENAMEX> et <ENAMEX type="BUSINESS">Carloman</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P95">
+				<sentence xml:id="P95E0">En 769, le père de <ENAMEX type="LOCATION">Waïfre</ENAMEX>, <ENAMEX type="PERSON">Hunald Ier</ENAMEX>, sort du monastère où il avait été relégué et entre en rébellion.</sentence>
+				<sentence xml:id="P95E1">Traqué par l’armée franque, il se réfugie en <ENAMEX type="LOCATION">Vasconie</ENAMEX> ultérieure, mais le duc Loup II préfère se soumettre et livre <ENAMEX type="PERSON">Hunald Ier à Charlemagne</ENAMEX>.</sentence>
+				<sentence xml:id="P95E2">Dès lors l’<ENAMEX type="LOCATION">Aquitaine</ENAMEX> revient sous le contrôle des Francs qui en avaient perdu la jouissance en 660 au profit des Vascons.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P97">
+				<sentence xml:id="P97E0">En 781, <ENAMEX type="BUSINESS">Louis</ENAMEX> (dit <ENAMEX type="PERSON">Louis le Pieux</ENAMEX> ou Louis le Débonnaire) est couronné à <ENAMEX type="BUSINESS">Rome</ENAMEX> roi d’<ENAMEX type="BUSINESS">Aquitaine</ENAMEX>.</sentence>
+				<sentence xml:id="P97E1">Ce royaume d’<ENAMEX type="BUSINESS">Aquitaine</ENAMEX> reste en place jusqu’à l’avènement à l’empire de <ENAMEX type="PERSON">Louis</ENAMEX> en 814, avec deux dépendances : le duché de <ENAMEX type="LOCATION">Vasconie</ENAMEX>, au sud de la <ENAMEX type="LOCATION">Garonne</ENAMEX>, où <ENAMEX type="PERSON">Sanche Ier Loup</ENAMEX> succède à <ENAMEX type="LOCATION">Loup II</ENAMEX> ; le comté de Septimanie (<ENAMEX type="LOCATION">Narbonne</ENAMEX>, <ENAMEX type="BUSINESS">Carcassonne</ENAMEX>), dirigé par le comte Milon, un Wisigoth, puis par <ENAMEX type="PERSON">Guillaume de Gellone</ENAMEX>, comte de <ENAMEX type="LOCATION">Toulouse</ENAMEX> et marquis de Septimanie à partir de 790 environ.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P99">
+				<sentence xml:id="P99E0">Cependant, dès 812, les Vascons sont de nouveau astreint à la soumission de <ENAMEX type="PERSON">Louis</ENAMEX> le Débonnaire et cela ne semble pas les satisfaire.</sentence>
+				<sentence xml:id="P99E1">Semen <ENAMEX type="BUSINESS">Ier Loup</ENAMEX> et ses hommes, des Euskariens des deux versants des Pyrénées, reprennent les armes quelque temps après et se révoltent contre les Francs.</sentence>
+				<sentence xml:id="P99E2">Au plaid annuel tenu à <ENAMEX type="LOCATION">Toulouse</ENAMEX> en 812, Louis le Débonnaire exige « qu&apos;on châtiât cet esprit de rébellion56 », ce que l&apos;assemblée décida comme par acclamation57.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P101">
+				<sentence xml:id="P101E0">Une nouvelle expédition de <ENAMEX type="PERSON">Louis</ENAMEX> le Débonnaire, arriva jusqu&apos;à <ENAMEX type="LOCATION">Pampelune</ENAMEX> en passant par <ENAMEX type="BUSINESS">Dax</ENAMEX> puis par le difficile passage des Pyrénées.</sentence>
+				<sentence xml:id="P101E1">Son objectif est d&apos;y raffermir son autorité chancelante.</sentence>
+				<sentence xml:id="P101E2">Selon son biographe <ENAMEX type="PERSON">Vita Hludovici Pii</ENAMEX>, dans la <ENAMEX type="LOCATION">Vasconie</ENAMEX> transpyrénéenne, <ENAMEX type="PERSON">Louis</ENAMEX> était libre d&apos;exiger toute futilité publique et particulière58.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P103">
+				<sentence xml:id="P103E0">Après avoir séjourné à <ENAMEX type="LOCATION">Pampelune</ENAMEX>, <ENAMEX type="PERSON">Louis</ENAMEX> retourne en <ENAMEX type="LOCATION">Aquitaine</ENAMEX> par la route de <ENAMEX type="LOCATION">Roncevaux</ENAMEX> et prend la précaution, cette fois-ci, afin de ne pas répéter la défaite de 778, de s&apos;emparer comme otages des femmes et des enfants vascons qu&apos;il ne libéra qu&apos;une fois arrivé dans une zone sûre où son armée ne risquait plus d&apos;embuscade.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P105">
+				<sentence xml:id="P105E0">Quand <ENAMEX type="PERSON">Louis le Pieux</ENAMEX> succède à <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> en 814, la présence carolingienne sur la totalité de son immense territoire reste fragile.</sentence>
+				<sentence xml:id="P105E1">L&apos;absence de <ENAMEX type="PERSON">Louis le Pieux</ENAMEX> dans la <ENAMEX type="LOCATION">Marche</ENAMEX> hispanique, la <ENAMEX type="LOCATION">Septimanie</ENAMEX>, la <ENAMEX type="LOCATION">Vasconie</ENAMEX> et même le Toulousain se fait sentir.</sentence>
+				<sentence xml:id="P105E2">Cependant, à l&apos;exception sans doute de la <ENAMEX type="LOCATION">Vasconie</ENAMEX>, la légitimité carolingienne s&apos;enracine59.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P106">
+				<sentence xml:id="P106E0">L&apos;<ENAMEX type="LOCATION">Italie</ENAMEX></sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P108">
+				<sentence xml:id="P108E0">De toutes les guerres de <ENAMEX type="LOCATION">Charlemagne</ENAMEX>, celles qu&apos;il entreprit contre les Lombards sont les plus importantes par leurs conséquences politiques et celles aussi où se montre le plus clairement le lien qui rattache intimement la conduite de <ENAMEX type="PERSON">Charles</ENAMEX> à celle de son père.</sentence>
+				<sentence xml:id="P108E1">L&apos;alliance avec la papauté les imposait, non seulement dans l&apos;intérêt du pays, mais dans celui même du roi des Francs.</sentence>
+				<sentence xml:id="P108E2">Pépin le Bref avait espéré, à la fin de son règne, un arrangement pacifique avec les Lombards.</sentence>
+				<sentence xml:id="P108E3">Charles épousa Désirée la fille de leur roi Didier.</sentence>
+				<sentence xml:id="P108E4">Mais ce mariage ne servit à rien.</sentence>
+				<sentence xml:id="P108E5">Les Lombards continuèrent de menacer <ENAMEX type="BUSINESS">Rome</ENAMEX> et leur roi noua même contre son gendre de dangereuses intrigues avec le duc des Bavarois et avec la propre belle-sœur de Charles60.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P110">
+				<sentence xml:id="P110E0">En 773, <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> intervient à la demande du pape contre Didier.</sentence>
+				<sentence xml:id="P110E1">L&apos;armée franque traverse les Alpes durant l&apos;été 773, met le siège devant <ENAMEX type="LOCATION">Pavie</ENAMEX> (septembre) et occupe assez facilement le reste du royaume lombard.</sentence>
+				<sentence xml:id="P110E2">Pavie affamée et en proie à des épidémies tombe en juin 774.</sentence>
+				<sentence xml:id="P110E3">Charlemagne s&apos;adjuge lui-même le titre de roi des Lombards <ENAMEX type="PERSON">Gratia Dei Rex Francorum</ENAMEX> et <ENAMEX type="BUSINESS">Langobardorum</ENAMEX> (« roi des Francs et des Lombards par la grâce de Dieu ») le 10 juillet 774 tandis que certains historiens affirment qu&apos;il est proclamé roi par l&apos;archevêque de <ENAMEX type="PERSON">Milan</ENAMEX> qui lui aurait posé la couronne de fer de <ENAMEX type="LOCATION">Lombardie</ENAMEX> sur la tête61.</sentence>
+				<sentence xml:id="P110E4">Charlemagne prend alors le titre de roi des Lombards ; Didier est envoyé comme moine à <ENAMEX type="BUSINESS">Corbie</ENAMEX>, le reste de sa famille est aussi neutralisé, à l&apos;exception d&apos;Adalgis qui se réfugie à <ENAMEX type="LOCATION">Constantinople</ENAMEX>.</sentence>
+				<sentence xml:id="P110E5">Le duché de <ENAMEX type="LOCATION">Spolète</ENAMEX> se soumet à la domination franque en acceptant comme duc un protégé du pape, <ENAMEX type="BUSINESS">Hildebrand</ENAMEX>.</sentence>
+				<sentence xml:id="P110E6">Le duché de <ENAMEX type="LOCATION">Bénévent</ENAMEX> reste aux mains d&apos;<ENAMEX type="BUSINESS">Arigis</ENAMEX>, gendre de <ENAMEX type="PERSON">Didier</ENAMEX>, mais doit fournir des otages, en particulier son fils Grimoald, qui sera élevé à la cour.</sentence>
+				<sentence xml:id="P110E7">En 776, les Francs conquièrent le duché de <ENAMEX type="PERSON">Frioul</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P112">
+				<sentence xml:id="P112E0">En 781, le second fils de <ENAMEX type="LOCATION">Charlemagne</ENAMEX>, <ENAMEX type="BUSINESS">Carloman</ENAMEX>, alors rebaptisé Pépin, est couronné à <ENAMEX type="LOCATION">Rome</ENAMEX> roi d&apos;<ENAMEX type="LOCATION">Italie</ENAMEX>, titre qui ne correspond pas à un État formel ; par la suite, Pépin assume sous le contrôle de Charlemagne la fonction de roi des Lombards.</sentence>
+				<sentence xml:id="P112E1">La principale personnalité du royaume au début du règne de <ENAMEX type="LOCATION">Pépin</ENAMEX> est Adalard, cousin de <ENAMEX type="LOCATION">Charlemagne</ENAMEX>.</sentence>
+				<sentence xml:id="P112E2">Les problèmes sont assez nombreux : relations avec <ENAMEX type="BUSINESS">Arigis</ENAMEX> et avec les Byzantins.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P114">
+				<sentence xml:id="P114E0">Ainsi, l&apos;État lombard, dont la naissance avait mis fin à l&apos;unité politique de l&apos;<ENAMEX type="LOCATION">Italie</ENAMEX>, attira sur elle, en mourant, la conquête étrangère.</sentence>
+				<sentence xml:id="P114E1">Elle n&apos;était plus désormais qu&apos;un appendice de la monarchie franque et elle ne devait s&apos;en détacher, à la fin du IXe siècle, que pour tomber bientôt après sous la domination allemande.</sentence>
+				<sentence xml:id="P114E2">Par un renversement complet du sens de l&apos;histoire, elle qui avait jadis annexé le nord de l&apos;<ENAMEX type="LOCATION">Europe</ENAMEX> était maintenant annexée par lui ; et cette destinée n&apos;est en un sens qu&apos;une conséquence des bouleversements politiques qui avaient transporté de la Méditerranée au nord de la Gaule le centre de gravité du monde occidental.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P116">
+				<sentence xml:id="P116E0">Et pourtant, c&apos;est <ENAMEX type="BUSINESS">Rome</ENAMEX>, mais la <ENAMEX type="LOCATION">Rome</ENAMEX> des papes, qui a décidé de son sort.</sentence>
+				<sentence xml:id="P116E1">On ne voit pas quel intérêt aurait poussé les Carolingiens à attaquer et à conquérir le royaume lombard si leur alliance avec la papauté ne les y avait contraints.</sentence>
+				<sentence xml:id="P116E2">L&apos;influence que l&apos;Église, débarrassée de la tutelle de <ENAMEX type="LOCATION">Byzance</ENAMEX>, va désormais exercer sur la politique de l&apos;<ENAMEX type="LOCATION">Europe</ENAMEX>, apparaît ici pour la première fois en pleine lumière.</sentence>
+				<sentence xml:id="P116E3">L’État ne peut désormais se passer de l&apos;Église.</sentence>
+				<sentence xml:id="P116E4">Entre elle et lui se forme une association de services mutuels qui, les mêlant sans cesse l&apos;un à l&apos;autre, mêle aussi continuellement les questions spirituelles aux questions temporelles et fait de la religion un facteur essentiel de l&apos;ordre politique.</sentence>
+				<sentence xml:id="P116E5">La reconstitution de l&apos;<ENAMEX type="ORGANISATION">Empire romain</ENAMEX>, en 800, est la manifestation définitive de cette situation nouvelle et le gage de sa durée dans l&apos;avenir60.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P117">
+				<sentence xml:id="P117E0">La <ENAMEX type="PERSON">Saxe</ENAMEX></sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P118">
+				<sentence xml:id="P118E0">La guerre entre <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> et les Saxons.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P120">
+				<sentence xml:id="P120E0">Au-delà du Rhin, un puissant peuple conservait encore, avec son indépendance, la fidélité au vieux culte national : les Saxons, répartis entre quatre groupes (Westphales, Ostphales, <ENAMEX type="BUSINESS">Angrivarii</ENAMEX>, Nordalbingiens) et établis entre l&apos;<ENAMEX type="ORGANISATION">Ems et l&apos;Elbe</ENAMEX>, depuis les côtes de la <ENAMEX type="BUSINESS">Mer</ENAMEX> du Nord jusqu&apos;aux montagnes du <ENAMEX type="ORGANISATION">Harz</ENAMEX>.</sentence>
+				<sentence xml:id="P120E1">Seuls de tous les Germains, c&apos;est par mer qu&apos;à l&apos;époque du grand ébranlement des invasions, ils étaient allés chercher des terres nouvelles.</sentence>
+				<sentence xml:id="P120E2">Durant tout le Ve siècle, leurs barques avaient inquiété les côtes de <ENAMEX type="PERSON">Gaule</ENAMEX> aussi bien que celles de <ENAMEX type="LOCATION">Grande-Bretagne</ENAMEX>.</sentence>
+				<sentence xml:id="P120E3">Il y eut des établissements saxons, encore reconnaissables aujourd&apos;hui à la forme des noms de lieux, à l&apos;embouchure de la <ENAMEX type="BUSINESS">Canche</ENAMEX> et à celle de la <ENAMEX type="BUSINESS">Loire</ENAMEX>.</sentence>
+				<sentence xml:id="P120E4">Mais c&apos;est seulement en <ENAMEX type="LOCATION">Grande-Bretagne</ENAMEX> que des Saxons et des <ENAMEX type="BUSINESS">Angles</ENAMEX>, peuples du sud du Jutland étroitement apparentés à eux, s&apos;établirent durablement.</sentence>
+				<sentence xml:id="P120E5">Ils refoulèrent la population celtique de l&apos;île dans les districts montagneux de l&apos;Ouest, Cornouailles et pays de <ENAMEX type="PERSON">Galles</ENAMEX> d&apos;où, se trouvant trop à l&apos;étroit, elle émigra au VIe siècle en <ENAMEX type="LOCATION">Armorique</ENAMEX>, qui prit dès lors le nom de <ENAMEX type="LOCATION">Bretagne</ENAMEX> comme la partie conquise de la <ENAMEX type="LOCATION">Grande-Bretagne</ENAMEX> reçut le nom d&apos;<ENAMEX type="LOCATION">Angleterre</ENAMEX>.</sentence>
+				<sentence xml:id="P120E6">Ces Saxons insulaires ne conservèrent pas de rapports avec leurs compatriotes du continent.</sentence>
+				<sentence xml:id="P120E7">Ils les avaient si bien oubliés qu&apos;à l&apos;époque où, après avoir été évangélisés par Grégoire le Grand, ils entreprirent la conversion des Germains, ce n&apos;est pas vers eux, mais vers la Haute-<ENAMEX type="LOCATION">Allemagne</ENAMEX> que leurs missionnaires dirigèrent leurs efforts.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P122">
+				<sentence xml:id="P122E0">Au milieu du VIIIe siècle, les Saxons continentaux étaient donc encore relativement préservés de l&apos;influence romaine et chrétienne.</sentence>
+				<sentence xml:id="P122E1">Pendant que leurs voisins se romanisaient ou se convertissaient, leurs institutions et leur culte national propres s&apos;étaient développés et affermis.</sentence>
+				<sentence xml:id="P122E2">Le royaume franc, dont ils étaient limitrophes, n&apos;était pas en mesure d&apos;exercer sur eux le prestige et l&apos;attraction dont l&apos;Empire romain avait jadis été l&apos;objet de la part des barbares.</sentence>
+				<sentence xml:id="P122E3">À côté de lui, ils conservaient leur indépendance à laquelle ils tenaient d&apos;autant plus qu&apos;elle leur permettait d&apos;en piller les provinces limitrophes.</sentence>
+				<sentence xml:id="P122E4">Ils étaient attachés à leur religion comme à la marque et à la garantie de leur indépendance62.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P124">
+				<sentence xml:id="P124E0">Depuis 748, ils sont tributaires du royaume franc ; le tribut, établi en 758 à 300 chevaux par an, n&apos;est cependant pas payé à la fin du règne de <ENAMEX type="LOCATION">Pépin</ENAMEX> le Bref et le royaume subit régulièrement des incursions saxonnes.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P126">
+				<sentence xml:id="P126E0">Charlemagne fait sa première expédition en <ENAMEX type="LOCATION">Saxe</ENAMEX> en 772, détruisant en particulier le principal sanctuaire, l&apos;Irminsul, symbole de la résistance du paganisme saxon et lieu de réunion des Païens qui lui apportaient une offrande après chaque victoire ; puis, à partir de 776, après l&apos;intermède italien, commence une guerre acharnée contre les Saxons, qui, commandés par <ENAMEX type="PERSON">Widukind</ENAMEX>, un chef westphalien, lui opposent une vigoureuse résistance.</sentence>
+				<sentence xml:id="P126E1">Après plusieurs campagnes marquées par la dévastation de différentes parties de la <ENAMEX type="LOCATION">Saxe</ENAMEX> et la soumission provisoire de chefs, mais aussi par un revers grave des Francs en 782 au Süntel, près de la <ENAMEX type="PERSON">Weser</ENAMEX>.</sentence>
+				<sentence xml:id="P126E2">Cette défaite entraîne une opération de représailles qui s&apos;achève par le massacre de 4 500 Saxons à <ENAMEX type="BUSINESS">Verden</ENAMEX>.</sentence>
+				<sentence xml:id="P126E3">Widukind finit par se soumettre en 785 et se fait baptiser.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P128">
+				<sentence xml:id="P128E0">Charlemagne impose alors le <ENAMEX type="ORGANISATION">Capitulaire De partibus Saxoniae</ENAMEX> (premier capitulaire saxon), une législation d&apos;exception qui prévoit la peine de mort pour de nombreuses infractions, en particulier pour toute manifestation de paganisme (crémation des défunts, refus du baptême pour les nouveau-nés).</sentence>
+				<sentence xml:id="P128E1">Une politique de déportation des Saxons et de colonisation par des Francs a lieu en même temps.</sentence>
+				<sentence xml:id="P128E2">La législation d&apos;exception prend fin en 797 (troisième capitulaire saxon), mais la soumission définitive n&apos;est vraiment atteinte qu&apos;en 804.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P130">
+				<sentence xml:id="P130E0">Jusqu&apos;alors le christianisme s&apos;était répandu relativement paisiblement parmi les Germains.</sentence>
+				<sentence xml:id="P130E1">En <ENAMEX type="LOCATION">Saxe</ENAMEX> cependant, <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> employa la force : de là les violences contre tous ceux qui sacrifieraient encore aux « idoles » et de là aussi l&apos;acharnement que mirent les Saxons à défendre leurs dieux devenus les protecteurs de leurs libertés.</sentence>
+				<sentence xml:id="P130E2">Dans certains milieux nationalistes allemands l&apos;image de <ENAMEX type="LOCATION">Charlemagne</ENAMEX> est celle du « Bourreau des Saxons » issue du massacre de Verden63.</sentence>
+				<sentence xml:id="P130E3">Ainsi en 1935, pour commémorer l&apos;événement, le régime nazi construisit le monument de <ENAMEX type="PERSON">Sachsenhain</ENAMEX> (de).</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P132">
+				<sentence xml:id="P132E0">La conquête des Saxons permettait également de mettre fin une fois pour toutes à la menace permanente que les Saxons faisaient peser sur la sécurité du royaume franc.</sentence>
+				<sentence xml:id="P132E1">Une fois l&apos;annexion et la conversion de la <ENAMEX type="LOCATION">Saxe</ENAMEX>, dernier élément de l&apos;ancienne Germanie, achevées, la frontière orientale de l&apos;Empire carolingien atteignit l&apos;<ENAMEX type="BUSINESS">Elbe</ENAMEX> et la <ENAMEX type="BUSINESS">Saale</ENAMEX>.</sentence>
+				<sentence xml:id="P132E2">Elle se dirigeait de là jusqu&apos;au fond de l&apos;Adriatique par les montagnes de <ENAMEX type="PERSON">Bohême</ENAMEX> et le Danube, englobant le pays des Bavarois64.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P133">
+				<sentence xml:id="P133E0">L&apos;<ENAMEX type="LOCATION">Espagne</ENAMEX></sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P135">
+				<sentence xml:id="P135E0">Depuis leur défaite à <ENAMEX type="LOCATION">Poitiers</ENAMEX>, les musulmans n&apos;avaient plus menacé la <ENAMEX type="LOCATION">Gaule</ENAMEX>.</sentence>
+				<sentence xml:id="P135E1">L&apos;arrière-garde qu&apos;ils avaient laissée dans le pays de <ENAMEX type="LOCATION">Narbonne</ENAMEX> en avait été refoulée par <ENAMEX type="LOCATION">Pépin</ENAMEX> le Bref.</sentence>
+				<sentence xml:id="P135E2">L&apos;<ENAMEX type="LOCATION">Espagne</ENAMEX>, où venait de s&apos;installer l&apos;émirat de <ENAMEX type="LOCATION">Cordoue</ENAMEX>, ne regardait plus vers le <ENAMEX type="BUSINESS">Nord</ENAMEX> et dirigeait son activité vers les établissements islamiques proches de la <ENAMEX type="BUSINESS">Méditerranée</ENAMEX>.</sentence>
+				<sentence xml:id="P135E3">La rapidité des progrès de l&apos;islam dans les sciences, les arts, l&apos;industrie, le commerce est aussi rapide que ses conquêtes.</sentence>
+				<sentence xml:id="P135E4">Mais ces progrès eurent pour conséquence de le détourner des grandes entreprises de prosélytisme pour les concentrer sur lui-même.</sentence>
+				<sentence xml:id="P135E5">En même temps que les sciences se développèrent et que l&apos;art s&apos;épanouit, surgirent des querelles religieuses et politiques.</sentence>
+				<sentence xml:id="P135E6">L&apos;<ENAMEX type="LOCATION">Espagne</ENAMEX> n&apos;en était pas plus épargnée que le reste du monde musulman.</sentence>
+				<sentence xml:id="P135E7">C&apos;est l&apos;une d&apos;elles qui provoqua l&apos;expédition de <ENAMEX type="PERSON">Charles</ENAMEX> au-delà des Pyrénées65.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P137">
+				<sentence xml:id="P137E0">L&apos;alliance avec <ENAMEX type="PERSON">Suleyman Ibn al-Arabi</ENAMEX> (777)</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P139">
+				<sentence xml:id="P139E0">En 777, lors de l&apos;assemblée de <ENAMEX type="LOCATION">Paderborn</ENAMEX>, en <ENAMEX type="LOCATION">Saxe</ENAMEX>, <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> reçoit des émissaires de plusieurs gouverneurs musulmans d&apos;<ENAMEX type="LOCATION">Espagne</ENAMEX>, y compris celui de <ENAMEX type="LOCATION">Barcelone</ENAMEX>, en rébellion contre l&apos;émirat de <ENAMEX type="LOCATION">Cordoue</ENAMEX>.</sentence>
+				<sentence xml:id="P139E1">Sulayman s&apos;engage à permettre aux Francs de s&apos;emparer de <ENAMEX type="LOCATION">Saragosse</ENAMEX>.</sentence>
+				<sentence xml:id="P139E2">Charlemagne décide de donner suite et d&apos;intervenir dans le nord de l&apos;<ENAMEX type="LOCATION">Espagne</ENAMEX>, sans doute pas pour des raisons religieuses (des lettres du pape de cette époque montrent que celui-ci préférerait une intervention en <ENAMEX type="LOCATION">Italie</ENAMEX>, contre des chrétiens), mais plutôt pour sécuriser la frontière sud de l&apos;<ENAMEX type="LOCATION">Aquitaine</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P141">
+				<sentence xml:id="P141E0">L&apos;expédition de 778</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P143">
+				<sentence xml:id="P143E0">Une double expédition est mise sur pied au printemps 778, et durant l&apos;été les deux armées se rejoignent devant <ENAMEX type="LOCATION">Saragosse</ENAMEX>, mais à ce moment, la ville est tenue par des loyalistes, contrairement à ce que prétendait Suleyman.</sentence>
+				<sentence xml:id="P143E1">Menacés d&apos;une intervention de l&apos;émir de <ENAMEX type="LOCATION">Cordoue</ENAMEX>, les Francs lèvent le siège et quittent l&apos;<ENAMEX type="LOCATION">Espagne</ENAMEX>, après avoir pillé <ENAMEX type="LOCATION">Pampelune</ENAMEX>.</sentence>
+				<sentence xml:id="P143E2">Cet échec est augmenté du revers assez grave subi par l&apos;arrière-garde de Charlemagne par les Vascons lors de la traversée des Pyrénées.</sentence>
+				<sentence xml:id="P143E3">L&apos;embuscade66, est principalement menée par des Basques, mais il est probable qu&apos;y participent aussi des habitants de <ENAMEX type="LOCATION">Pampelune</ENAMEX> et des ex-alliés musulmans de <ENAMEX type="ORGANISATION">Charlemagne67</ENAMEX>, mécontents d&apos;une retraite aussi rapide (les otages remis par Suleyman sont libérés au cours de l&apos;opération).</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P145">
+				<sentence xml:id="P145E0">Pour les contemporains, cette expédition passa à peu près inaperçue.</sentence>
+				<sentence xml:id="P145E1">Le souvenir du comte <ENAMEX type="BUSINESS">Roland</ENAMEX> tué dans l&apos;embuscade ne se perpétua tout d&apos;abord que parmi les gens de sa province, dans le pays de <ENAMEX type="ORGANISATION">Coutances</ENAMEX>.</sentence>
+				<sentence xml:id="P145E2">Il fallut l&apos;enthousiasme religieux et guerrier qui s&apos;empara de l&apos;<ENAMEX type="LOCATION">Europe</ENAMEX> à l&apos;époque de la première Croisade pour faire de <ENAMEX type="PERSON">Roland</ENAMEX> le plus héroïque des preux de l&apos;épopée française et chrétienne et transformer la campagne dans laquelle il trouva la mort en une lutte gigantesque entreprise contre l&apos;Islam par « Carles li reis nostre emperere magne »68.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P147">
+				<sentence xml:id="P147E0">La constitution de la marche d&apos;<ENAMEX type="LOCATION">Espagne</ENAMEX> (785-810)</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P149">
+				<sentence xml:id="P149E0">Par la suite, <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> n&apos;intervient plus personnellement en <ENAMEX type="LOCATION">Espagne</ENAMEX>, laissant le soin des opérations aux responsables militaires de l&apos;<ENAMEX type="LOCATION">Aquitaine</ENAMEX>, les comtes de <ENAMEX type="PERSON">Toulouse Chorson</ENAMEX>, puis <ENAMEX type="PERSON">Guillaume de Gellone</ENAMEX>, puis le roi Louis lui-même.</sentence>
+				<sentence xml:id="P149E1">Malgré une défaite subie par <ENAMEX type="PERSON">Guillaume</ENAMEX> en <ENAMEX type="LOCATION">Septimanie</ENAMEX> (793), les Aquitains réussissent à conquérir quelques territoires en <ENAMEX type="LOCATION">Espagne</ENAMEX> : notamment <ENAMEX type="LOCATION">Gerone</ENAMEX>, <ENAMEX type="BUSINESS">Barcelone</ENAMEX> (801), la <ENAMEX type="LOCATION">Cerdagne</ENAMEX> et <ENAMEX type="BUSINESS">Urgell</ENAMEX>.</sentence>
+				<sentence xml:id="P149E2">En revanche, malgré trois tentatives menées par <ENAMEX type="PERSON">Louis</ENAMEX>, ils échouent à reprendre <ENAMEX type="BUSINESS">Tortosa</ENAMEX>.</sentence>
+				<sentence xml:id="P149E3">En 814, <ENAMEX type="LOCATION">Saragosse</ENAMEX> et la vallée de l&apos;Ebre restent donc musulmans, pour encore très longtemps.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P151">
+				<sentence xml:id="P151E0">Les territoires reconquis forment la <ENAMEX type="LOCATION">Marche</ENAMEX> d&apos;<ENAMEX type="LOCATION">Espagne</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P152">
+				<sentence xml:id="P152E0">Autres</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P153">
+				<sentence xml:id="P153E0">Diplôme de <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> donné le 31 mars 797.</sentence>
+				<sentence xml:id="P153E1">Archives nationales, <ENAMEX type="BUSINESS">AE</ENAMEX>/II/42</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P155">
+				<sentence xml:id="P155E0">La <ENAMEX type="LOCATION">Bavière</ENAMEX></sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P157">
+				<sentence xml:id="P157E0">Depuis 748, elle est dirigée par le duc Tassilon, petit-fils de <ENAMEX type="PERSON">Charles Martel</ENAMEX>, imposé par <ENAMEX type="LOCATION">Pépin</ENAMEX> le Bref à la mort du duc Odilon.</sentence>
+				<sentence xml:id="P157E1">Cependant Tassilon cherche à préserver son indépendance, épousant en 763 Liutberge, fille de Didier de <ENAMEX type="LOCATION">Lombardie</ENAMEX> et futur belle-sœur de <ENAMEX type="LOCATION">Charlemagne</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P159">
+				<sentence xml:id="P159E0">Bien que Tassilon ne soit pas intervenu lors de la campagne contre les Lombards en 773-774, <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> s&apos;efforce de renforcer son contrôle.</sentence>
+				<sentence xml:id="P159E1">Tassilon doit prêter serment de fidélité en 781, puis de nouveau en 787.</sentence>
+				<sentence xml:id="P159E2">En 788, il est mis en jugement devant l&apos;assemblée, condamné à mort, puis gracié et enfermé dans un monastère ainsi que son épouse et ses deux fils.</sentence>
+				<sentence xml:id="P159E3">Charlemagne nomme des comtes pour la <ENAMEX type="LOCATION">Bavière</ENAMEX> et place son beau-frère Gérold à la tête de l&apos;armée avec le titre de praefectus.</sentence>
+				<sentence xml:id="P159E4">En 794, Tassilon comparaît de nouveau devant l&apos;assemblée et proclame sa renonciation au trône de <ENAMEX type="LOCATION">Bavière</ENAMEX>, désormais totalement intégrée au royaume franc.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P161">
+				<sentence xml:id="P161E0">Les Avars</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P163">
+				<sentence xml:id="P163E0">Ce peuple de cavaliers, d&apos;origine turque, avait au VIe siècle anéanti les Gépides (avec l&apos;aide des Lombards) et s&apos;était depuis lors installés dans la vallée du Danube, d&apos;où il harcelait à la fois l&apos;<ENAMEX type="ORGANISATION">Empire byzantin</ENAMEX> et la <ENAMEX type="LOCATION">Bavière</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P165">
+				<sentence xml:id="P165E0">En 791, avec l&apos;aide de son fils Pépin d&apos;<ENAMEX type="LOCATION">Italie</ENAMEX>, <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> mène contre les Avars une première expédition.</sentence>
+				<sentence xml:id="P165E1">En 795, il réussit à s&apos;emparer de leur camp retranché, le Ring avar, avec un trésor considérable, fruit de plusieurs dizaines d&apos;années de pillage.</sentence>
+				<sentence xml:id="P165E2">En 805, les derniers Avars rebelles sont définitivement soumis.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P167">
+				<sentence xml:id="P167E0">Ce furent des campagnes d&apos;extermination.</sentence>
+				<sentence xml:id="P167E1">Les Avars furent massacrés au point de disparaître en tant que peuple.</sentence>
+				<sentence xml:id="P167E2">L&apos;opération terminée, <ENAMEX type="BUSINESS">Charles</ENAMEX>, pour parer à de nouvelles agressions, jeta en travers de la vallée du Danube une marche, c&apos;est-à-dire un territoire de garde soumis à une administration militaire.</sentence>
+				<sentence xml:id="P167E3">Ce fut la « marche » orientale (marca orientalis), point de départ de l&apos;<ENAMEX type="LOCATION">Autriche</ENAMEX> moderne qui en a conservé le nom69.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P169">
+				<sentence xml:id="P169E0">Les Frisons</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P171">
+				<sentence xml:id="P171E0">L&apos;annexion de la <ENAMEX type="LOCATION">Frise orientale</ENAMEX> (la région s&apos;étendant du Zuiderzee jusqu&apos;à l&apos;embouchure de la <ENAMEX type="BUSINESS">Weser</ENAMEX>) par les Francs n&apos;est acquise, en apparence, qu&apos;après 782, voire 785.</sentence>
+				<sentence xml:id="P171E1">La situation demeura tendue encore plusieurs années pour les Francs.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P173">
+				<sentence xml:id="P173E0">Les Bretons</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P175">
+				<sentence xml:id="P175E0">Venus au <ENAMEX type="LOCATION">Ve siècle de Bretagne</ENAMEX>, les Bretons sont des chrétiens organisés en chefferies, dirigées par les machtiern.</sentence>
+				<sentence xml:id="P175E1">Ils occupent l&apos;ouest de la péninsule armoricaine (Domnonée, <ENAMEX type="LOCATION">Cornouaille</ENAMEX> et <ENAMEX type="BUSINESS">Vannetais</ENAMEX>).</sentence>
+				<sentence xml:id="P175E2">Le Vannetais (<ENAMEX type="ORGANISATION">Broerec pour les Bretons</ENAMEX>) a cependant été repris par les Francs ; à la fin du VIIIe siècle, les comtés de <ENAMEX type="LOCATION">Nantes</ENAMEX>, <ENAMEX type="BUSINESS">Rennes</ENAMEX> et <ENAMEX type="BUSINESS">Vannes</ENAMEX> forment la marche de <ENAMEX type="LOCATION">Bretagne</ENAMEX>.</sentence>
+				<sentence xml:id="P175E3">Les Bretons sont en principe tributaires du royaume franc, mais cela n&apos;empêche pas des opérations de pillage.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P177">
+				<sentence xml:id="P177E0">En 786, <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> envoie des forces considérables pour soumettre les machtiern.</sentence>
+				<sentence xml:id="P177E1">D&apos;autres expéditions sont organisées par la suite en 799, avec le comte <ENAMEX type="ORGANISATION">Guy de Nantes</ENAMEX>, puis en 811, toujours avec un succès limité.</sentence>
+				<sentence xml:id="P177E2">Malgré cela, une partie de l&apos;aristocratie bretonne ralliée fournit des cadres à la monarchie franque ; c&apos;est d&apos;elle que, sous le règne de <ENAMEX type="PERSON">Louis le Pieux</ENAMEX>, sortira Nominoë.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P179">
+				<sentence xml:id="P179E0">Les Slaves</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P181">
+				<sentence xml:id="P181E0">Dès avant la fin du VIIe siècle, les Slaves s&apos;étaient avancés en <ENAMEX type="LOCATION">Europe centrale</ENAMEX>.</sentence>
+				<sentence xml:id="P181E1">Ils avaient pris possession du pays abandonné par les Germains entre la Vistule et l&apos;<ENAMEX type="BUSINESS">Elbe</ENAMEX>, par les Lombards et les Gépides en Bohême et <ENAMEX type="LOCATION">Moravie</ENAMEX>.</sentence>
+				<sentence xml:id="P181E2">De là ils avaient franchi le Danube et s&apos;étaient introduits en Thrace où ils s&apos;étaient répandus jusque sur les côtes de l&apos;Adriatique.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P183">
+				<sentence xml:id="P183E0">De ce côté encore, il fallait assurer la sécurité de l&apos;Empire.</sentence>
+				<sentence xml:id="P183E1">Depuis 807 d&apos;autres « marches » furent établies le long de l&apos;<ENAMEX type="BUSINESS">Elbe</ENAMEX> et de la <ENAMEX type="BUSINESS">Saale</ENAMEX>, barrant le passage aux tribus slaves des Sorabes et des Abodrites.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P185">
+				<sentence xml:id="P185E0">Cette frontière fut en même temps, comme le Rhin l&apos;avait été aux IVe et <ENAMEX type="BUSINESS">Ve siècles</ENAMEX>, la frontière entre l&apos;<ENAMEX type="LOCATION">Europe</ENAMEX> chrétienne et le paganisme.</sentence>
+				<sentence xml:id="P185E1">Il est intéressant pour l&apos;appréciation des idées religieuses de ce temps, de constater qu&apos;il y eut là momentanément un renouveau de l&apos;esclavage.</sentence>
+				<sentence xml:id="P185E2">Le paganisme des Slaves les mettant en dehors de l&apos;humanité, ceux d&apos;entre eux qui étaient faits prisonniers étaient vendus comme du bétail.</sentence>
+				<sentence xml:id="P185E3">Aussi le mot qui dans la plupart des langues occidentales désigne l&apos;esclave (esclave, sklave, slaaf) n&apos;est pas autre chose que le nom même du peuple slave70.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P186">
+				<sentence xml:id="P186E0">Étendue territoriale</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P188">
+				<sentence xml:id="P188E0">À son apogée, l&apos;Empire carolingien recouvre les territoires actuels de la <ENAMEX type="LOCATION">France</ENAMEX>, de la <ENAMEX type="LOCATION">Belgique</ENAMEX>, des <ENAMEX type="LOCATION">Pays-Bas</ENAMEX>, du <ENAMEX type="LOCATION">Luxembourg</ENAMEX>, de l&apos;<ENAMEX type="LOCATION">Allemagne</ENAMEX>, de la <ENAMEX type="LOCATION">Suisse</ENAMEX>, de l&apos;<ENAMEX type="LOCATION">Autriche</ENAMEX>, de la <ENAMEX type="LOCATION">Hongrie</ENAMEX> et de la <ENAMEX type="LOCATION">Slovénie</ENAMEX>, une bonne moitié de l&apos;<ENAMEX type="LOCATION">Italie</ENAMEX> et une petite partie de l&apos;<ENAMEX type="LOCATION">Espagne</ENAMEX>, ainsi que les îles anglo-normandes et les principautés d&apos;<ENAMEX type="LOCATION">Andorre</ENAMEX>, de <ENAMEX type="LOCATION">Monaco</ENAMEX> et de <ENAMEX type="LOCATION">Liechtenstein</ENAMEX>.</sentence>
+				<sentence xml:id="P188E1">Il exerce également une autorité indirecte sur les États pontificaux, la <ENAMEX type="LOCATION">Silésie</ENAMEX>, la <ENAMEX type="LOCATION">Bohême</ENAMEX>, la <ENAMEX type="LOCATION">Moravie</ENAMEX>, la <ENAMEX type="LOCATION">Slovaquie</ENAMEX> et la <ENAMEX type="LOCATION">Croatie</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P189">
+				<sentence xml:id="P189E0">Le couronnement impérial (25 décembre 800)</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P190">
+				<sentence xml:id="P190E0">Couronnement de <ENAMEX type="BUSINESS">Charlemagne</ENAMEX>.</sentence>
+				<sentence xml:id="P190E1"><ENAMEX type="BUSINESS">Grandes Chroniques de France</ENAMEX> (version enluminée par <ENAMEX type="PERSON">Jean Fouquet</ENAMEX>).</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P191">
+				<sentence xml:id="P191E0">Les facteurs généraux du couronnement</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P193">
+				<sentence xml:id="P193E0">La situation en <ENAMEX type="LOCATION">Europe occidentale</ENAMEX></sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P195">
+				<sentence xml:id="P195E0">Élargi par la conquête à l&apos;Est jusqu&apos;à l&apos;<ENAMEX type="BUSINESS">Elbe</ENAMEX> et au <ENAMEX type="ORGANISATION">Danube</ENAMEX>, au sud jusqu&apos;à <ENAMEX type="LOCATION">Bénévent</ENAMEX> et jusqu&apos;à l&apos;Èbre, la monarchie franque, à la fin du VIIIe siècle, renferme à peu près tout l&apos;Occident chrétien.</sentence>
+				<sentence xml:id="P195E1">Les petits royaumes anglo-saxons et espagnols, qu&apos;elle n&apos;a pas absorbés, ne sont qu&apos;une quantité négligeable et ils lui prodiguent d&apos;ailleurs les témoignages d&apos;une déférence qui pratiquement équivaut à la reconnaissance de son protectorat.</sentence>
+				<sentence xml:id="P195E2">En fait, la puissance de <ENAMEX type="PERSON">Charles</ENAMEX> s&apos;étend à tous les pays et à tous les hommes qui reconnaissent dans le pape de <ENAMEX type="LOCATION">Rome</ENAMEX> le vicaire du Christ et le chef de l&apos;Église.</sentence>
+				<sentence xml:id="P195E3">En dehors d&apos;elle, ou c&apos;est le monde barbare du paganisme, ou le monde ennemi de l&apos;Islam, ou enfin le vieil <ENAMEX type="ORGANISATION">Empire byzantin</ENAMEX>, chrétien sans doute, mais d&apos;une orthodoxie bien capricieuse et de plus en plus se groupant autour du patriarche de <ENAMEX type="LOCATION">Constantinople</ENAMEX> et laissant le pape à l&apos;écart.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P197">
+				<sentence xml:id="P197E0">L’idée même d’empire, d’imperium, est présente dans les esprits de plusieurs personnalités à la fin des années 790, en particulier chez <ENAMEX type="BUSINESS">Alcuin</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P199">
+				<sentence xml:id="P199E0">« De plus, le souverain de cette immense monarchie est à la fois l&apos;obligé et le protecteur de l&apos;Église.</sentence>
+				<sentence xml:id="P199E1">Sa foi est aussi solide que son zèle pour la religion est ardent.</sentence>
+				<sentence xml:id="P199E2">Peut-on s&apos;étonner dans de semblables conditions que l&apos;idée se soit présentée de profiter d&apos;un moment si favorable pour reconstituer l&apos;<ENAMEX type="ORGANISATION">Empire romain</ENAMEX>, mais un Empire romain dont le chef, couronné par le pape au nom de <ENAMEX type="PERSON">Dieu</ENAMEX>, ne devra son pouvoir qu&apos;à l&apos;Église, et n&apos;existera que pour l&apos;aider dans sa mission, un Empire qui, n&apos;ayant pas d&apos;origine laïque, ne devant rien aux hommes, ne formera pas à proprement parler un État, mais se confondra avec la communauté des fidèles dont il sera l&apos;organisation temporelle, dirigée et inspirée par l&apos;autorité spirituelle du successeur de <ENAMEX type="BUSINESS">Saint Pierre</ENAMEX> ?</sentence>
+				<sentence xml:id="P199E3">Ainsi, la société chrétienne recevrait sa forme définitive.</sentence>
+				<sentence xml:id="P199E4">L&apos;autorité du pape et de l&apos;empereur, tout en restant distinctes l&apos;une de l&apos;autre, seront pourtant aussi étroitement associées que, dans le corps de l&apos;homme, l&apos;âme l&apos;est à la chair.</sentence>
+				<sentence xml:id="P199E5">Le vœu de <ENAMEX type="ORGANISATION">Saint Augustin</ENAMEX> serait accompli.</sentence>
+				<sentence xml:id="P199E6">La cité terrestre ne serait que la préparation de l&apos;acheminement à la cité céleste.</sentence>
+				<sentence xml:id="P199E7">Il s&apos;agit d&apos;une conception grandiose mais uniquement ecclésiastique, dont <ENAMEX type="BUSINESS">Charles</ENAMEX> n&apos;a jamais saisi exactement, semble-t-il, toute la portée et toutes les conséquences.</sentence>
+				<sentence xml:id="P199E8">»71</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P201">
+				<sentence xml:id="P201E0">La situation dans l’<ENAMEX type="ORGANISATION">Empire byzantin</ENAMEX></sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P203">
+				<sentence xml:id="P203E0">Depuis 792, l’empire est de fait dirigé par <ENAMEX type="PERSON">Irène</ENAMEX>, mère de l&apos;empereur Constantin VI, mais en 797, elle assume officiellement le titre de basileus, ce qui dans la société de l’époque est un peu incongru, d&apos;autant que son fils est mort peu après avoir été aveuglé sur l&apos;ordre d&apos;Irène.</sentence>
+				<sentence xml:id="P203E1">Les milieux carolingiens estiment que dans ces conditions, le titre impérial byzantin n’est plus porté.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P205">
+				<sentence xml:id="P205E0">La situation de la papauté</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P207">
+				<sentence xml:id="P207E0">Cette section est vide, insuffisamment détaillée ou incomplète.</sentence>
+				<sentence xml:id="P207E1">Votre aide est la bienvenue !</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P209">
+				<sentence xml:id="P209E0">Un autre facteur est la relation entre le pape et les autorités byzantines : l&apos;empereur et le patriarche de <ENAMEX type="LOCATION">Constantinople</ENAMEX>.</sentence>
+				<sentence xml:id="P209E1">L’autorité du pape est considérée comme faible face à celle du patriarche de <ENAMEX type="LOCATION">Constantinople</ENAMEX>, soutenu par un État encore riche et puissant.</sentence>
+				<sentence xml:id="P209E2">Le prestige de <ENAMEX type="LOCATION">Rome</ENAMEX> ne peut remonter que si le pape s’appuie lui-même sur un État puissant, ce que la papauté a trouvé dans le royaume franc des Carolingiens, et tout accroissement du prestige du royaume franc serait favorable pour la papauté.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P211">
+				<sentence xml:id="P211E0">En 796, le pape <ENAMEX type="PERSON">Adrien Ier</ENAMEX> est remplacé par <ENAMEX type="LOCATION">Léon III</ENAMEX>, dont la position à <ENAMEX type="LOCATION">Rome</ENAMEX> est beaucoup plus faible que celle de son prédécesseur face à la hiérarchie ecclésiastique et face à la noblesse romaine, bien qu’il ait été élu très rapidement et très facilement.</sentence>
+				<sentence xml:id="P211E1">Il est notamment poursuivi par des rumeurs sur l’immoralité de son comportement.</sentence>
+				<sentence xml:id="P211E2">Léon <ENAMEX type="BUSINESS">III</ENAMEX> est donc très dépendant de la protection de <ENAMEX type="PERSON">Charlemagne</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P212">
+				<sentence xml:id="P212E0">L’attentat contre Léon <ENAMEX type="BUSINESS">III</ENAMEX> (25 avril 799) et ses conséquences</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P214">
+				<sentence xml:id="P214E0">Le 25 avril 799, <ENAMEX type="LOCATION">Léon III</ENAMEX> subit un véritable attentat : au cours de la procession des <ENAMEX type="BUSINESS">Grandes Litanies</ENAMEX>, il est jeté à bas de sa mule, et molesté, puis emprisonné ; le bruit court que ses assaillants lui ont coupé la langue et crevé les yeux, ce qui se révèlera inexact, mais permettra de parler de miracle.</sentence>
+				<sentence xml:id="P214E1">Quelques jours plus tard, il est délivré grâce à l’intervention du duc franc Winigis de <ENAMEX type="LOCATION">Spolète</ENAMEX>, qui l’emmène à <ENAMEX type="LOCATION">Spolète</ENAMEX>, puis, avec des missi de <ENAMEX type="LOCATION">Charlemagne</ENAMEX>, est organisé un voyage pontifical à <ENAMEX type="LOCATION">Paderborn</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P215">
+				<sentence xml:id="P215E0">De <ENAMEX type="LOCATION">Paderborn</ENAMEX> à <ENAMEX type="LOCATION">Rome</ENAMEX> (été 799-novembre 800)</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P217">
+				<sentence xml:id="P217E0">Léon III passe environ un mois à <ENAMEX type="BUSINESS">Paderborn</ENAMEX>, rencontrant plusieurs fois <ENAMEX type="BUSINESS">Charlemagne</ENAMEX>.</sentence>
+				<sentence xml:id="P217E1">Le contenu politique de leurs discussions est ignoré ; on ne sait pas en particulier si l’attribution du titre impérial a été discutée.</sentence>
+				<sentence xml:id="P217E2">Mais on peut noter qu’un poème écrit durant cette entrevue, parle de <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> comme du Père de l’<ENAMEX type="LOCATION">Europe et d’Aix-la-Chapelle</ENAMEX> comme de la Troisième <ENAMEX type="BUSINESS">Rome</ENAMEX>.</sentence>
+				<sentence xml:id="P217E3">En tout cas, <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> s&apos;engage à venir à <ENAMEX type="BUSINESS">Rome</ENAMEX> pour traiter le différend entre Léon et ses adversaires.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P219">
+				<sentence xml:id="P219E0">Il semble que <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> ait envisagé un voyage à <ENAMEX type="BUSINESS">Rome</ENAMEX> dès le début de 799, avant cette crise, puisque, dans une lettre, <ENAMEX type="BUSINESS">Alcuin</ENAMEX> demande à en être dispensé pour raisons de santé.</sentence>
+				<sentence xml:id="P219E1">Le voyage est confirmé à <ENAMEX type="BUSINESS">Paderborn</ENAMEX>, mais Charlemagne ne se précipite pas à <ENAMEX type="LOCATION">Rome</ENAMEX>.</sentence>
+				<sentence xml:id="P219E2">Il faut laisser le temps à <ENAMEX type="LOCATION">Léon</ENAMEX> de rétablir sa position à <ENAMEX type="LOCATION">Rome</ENAMEX>.</sentence>
+				<sentence xml:id="P219E3">Il est aussi possible qu&apos;il ait paru judicieux d&apos;être à <ENAMEX type="BUSINESS">Rome</ENAMEX> pour la Noël de l’an 800.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P221">
+				<sentence xml:id="P221E0">Léon est de retour à <ENAMEX type="BUSINESS">Rome</ENAMEX>, avec une escorte et quelques hauts dignitaires francs, à la fin octobre 799 ; les missi reçoivent une plainte officielle contre lui.</sentence>
+				<sentence xml:id="P221E1">Une commission est réunie au <ENAMEX type="ORGANISATION">Latran72</ENAMEX> et une enquête est menée.</sentence>
+				<sentence xml:id="P221E2">Dans l&apos;ensemble, malgré tout, la situation de <ENAMEX type="LOCATION">Léon</ENAMEX> est à peu près rétablie.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P223">
+				<sentence xml:id="P223E0">Charlemagne passe le printemps et l&apos;été 800 dans une tournée en <ENAMEX type="LOCATION">Neustrie</ENAMEX>, s&apos;attardant particulièrement à <ENAMEX type="LOCATION">Boulogne</ENAMEX>, où est envisagé le problème de la défense des côtes, puis à <ENAMEX type="LOCATION">Tours</ENAMEX>, où il rencontre <ENAMEX type="BUSINESS">Alcuin</ENAMEX>, mais aussi <ENAMEX type="PERSON">Louis d&apos;Aquitaine</ENAMEX>.</sentence>
+				<sentence xml:id="P223E1">Il part ensuite pour l&apos;<ENAMEX type="LOCATION">Italie</ENAMEX>, une expédition militaire contre Bénévent étant aussi envisagée.</sentence>
+				<sentence xml:id="P223E2">Le cortège fait étape à <ENAMEX type="LOCATION">Ravenne</ENAMEX> : Pépin est envoyé contre Bénévent tandis que <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> part pour <ENAMEX type="BUSINESS">Rome</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P225">
+				<sentence xml:id="P225E0">Il arrive aux abords de <ENAMEX type="LOCATION">Rome</ENAMEX> le 23 novembre.</sentence>
+				<sentence xml:id="P225E1">Selon le protocole byzantin, le basileus, s&apos;il venait à <ENAMEX type="BUSINESS">Rome</ENAMEX>, devrait être accueilli par le pape lui-même à 6 milles de <ENAMEX type="LOCATION">Rome</ENAMEX>.</sentence>
+				<sentence xml:id="P225E2">Il est donc significatif que <ENAMEX type="BUSINESS">Charlemagne</ENAMEX>, seulement roi des Francs et des Lombards, soit accueilli par le pape à 12 milles, à Mentana73.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P227">
+				<sentence xml:id="P227E0">Charlemagne gagne <ENAMEX type="BUSINESS">Rome</ENAMEX> le 24 et s&apos;établit au <ENAMEX type="LOCATION">Vatican</ENAMEX>, en dehors des murs de la ville.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P228">
+				<sentence xml:id="P228E0">Décembre 800</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P230">
+				<sentence xml:id="P230E0">Après une semaine de cérémonies religieuses et de <ENAMEX type="BUSINESS">Laudes</ENAMEX>, <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> décide de procéder à un jugement de <ENAMEX type="LOCATION">Léon III</ENAMEX> et, en même temps, des conjurés de 799.</sentence>
+				<sentence xml:id="P230E1">Une assemblée de prélats francs et romains, présidée par <ENAMEX type="BUSINESS">Charlemagne</ENAMEX>, est réunie à <ENAMEX type="LOCATION">Saint-Pierre</ENAMEX> : elle va durer jusqu&apos;au 23 décembre.</sentence>
+				<sentence xml:id="P230E2">Les responsables de l&apos;attentat, en présence de <ENAMEX type="LOCATION">Charlemagne</ENAMEX>, renoncent à accuser le pape, et chacun d&apos;entre eux s&apos;efforce de rejeter la responsabilité sur les autres.</sentence>
+				<sentence xml:id="P230E3">Ils seront condamnés à mort, la peine étant ensuite commuée en bannissement.</sentence>
+				<sentence xml:id="P230E4">En ce qui concerne <ENAMEX type="LOCATION">Léon III</ENAMEX>, en l&apos;absence d&apos;accusateurs, <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> aurait pu s&apos;en tenir là.</sentence>
+				<sentence xml:id="P230E5">Mais il veut que les choses soient mises au net et impose à <ENAMEX type="LOCATION">Léon</ENAMEX> une procédure de jugement par serment purgatoire, une procédure germanique74.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P232">
+				<sentence xml:id="P232E0">Le serment a lieu le 23 décembre : Léon jure qu&apos;il n&apos;a commis aucun des crimes dont il a été accusé.</sentence>
+				<sentence xml:id="P232E1">Puis l&apos;assemblée évoque la question de l&apos;accession de <ENAMEX type="LOCATION">Charlemagne</ENAMEX> au titre impérial.</sentence>
+				<sentence xml:id="P232E2">Les arguments utilisés, sans doute par les prélats de la suite de <ENAMEX type="ORGANISATION">Charlemagne75</ENAMEX>, concernent la vacance du trône à <ENAMEX type="LOCATION">Constantinople</ENAMEX> et le fait que <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> ait sous son contrôle les anciennes résidences impériales d&apos;Occident, notamment <ENAMEX type="BUSINESS">Rome</ENAMEX>, mais aussi Ravenne, <ENAMEX type="BUSINESS">Milan</ENAMEX>, <ENAMEX type="LOCATION">Trèves</ENAMEX>.</sentence>
+				<sentence xml:id="P232E3">L&apos;assemblée accueille favorablement ces arguments et <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> accepte l&apos;honneur qui lui est proposé.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P234">
+				<sentence xml:id="P234E0">Il est prévu qu&apos;une cérémonie ait lieu le 25 décembre, à l&apos;occasion de la messe de Noël, qui a lieu habituellement à <ENAMEX type="LOCATION">Saint-Jean-de-Latran</ENAMEX>, mais aura lieu cette fois dans la basilique <ENAMEX type="BUSINESS">Saint-Pierre</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P235">
+				<sentence xml:id="P235E0">La cérémonie du 25 décembre</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P237">
+				<sentence xml:id="P237E0">Le jour de Noël de l&apos;an 800, <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> est donc couronné empereur d&apos;Occident par le pape Léon III.</sentence>
+				<sentence xml:id="P237E1">Il se montre courroucé que les rites de son couronnement soient inversés au profit du pape.</sentence>
+				<sentence xml:id="P237E2">En effet, ce dernier lui dépose subitement la couronne sur la tête alors qu&apos;il est en train de prier, et ensuite seulement le fait acclamer et se prosterne devant lui.</sentence>
+				<sentence xml:id="P237E3">Une manière de signifier que c&apos;est lui, le pape, qui fait l&apos;empereur – ce qui anticipe sur les longues querelles des siècles ultérieurs entre l&apos;<ENAMEX type="LOCATION">Église</ENAMEX> et l&apos;<ENAMEX type="ORGANISATION">Empire</ENAMEX>.</sentence>
+				<sentence xml:id="P237E4">Selon Eginhard, le biographe de <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> (<ENAMEX type="BUSINESS">Vie de Charlemagne76</ENAMEX>), l&apos;empereur serait sorti furieux de la cérémonie : il aurait préféré que l&apos;on suive le rituel byzantin, à savoir l&apos;acclamation, le couronnement et enfin l&apos;adoration – c&apos;est-à-dire, selon les <ENAMEX type="ORGANISATION">Annales Royales</ENAMEX>, le rituel de la proskynèse (prosternation), le pape s&apos;agenouillant devant l&apos;empereur.</sentence>
+				<sentence xml:id="P237E5">Éginhard évoque même que &quot;Charlemagne aurait renoncé à entrer dans l&apos;Église ce jour-là, s&apos;il avait pu connaître d’avance le dessein du pontife&quot;.C&apos;est en se souvenant[réf.</sentence>
+				<sentence xml:id="P237E6">souhaitée] de cet épisode que <ENAMEX type="LOCATION">Napoléon</ENAMEX> prend soin, un millénaire plus tard, lors de son couronnement en présence du pape, de se poser la couronne lui-même sur la tête.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P238">
+				<sentence xml:id="P238E0">Mosaïque de la <ENAMEX type="LOCATION">Basilique Saint-Jean</ENAMEX> de <ENAMEX type="PERSON">Latran</ENAMEX></sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P239">
+				<sentence xml:id="P239E0">Mosaïque de l&apos;archibasilique <ENAMEX type="BUSINESS">Saint-Jean</ENAMEX>-de-Latran de <ENAMEX type="LOCATION">Rome</ENAMEX> présentant sur la droite le pape Léon III et <ENAMEX type="BUSINESS">Charlemagne</ENAMEX>, agenouillés aux pieds de <ENAMEX type="BUSINESS">Saint Pierre</ENAMEX>.</sentence>
+				<sentence xml:id="P239E1">Ce dernier leur remet les clefs et la bannière, symboles de leurs pouvoirs respectifs.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P241">
+				<sentence xml:id="P241E0">En 813, <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> fit changer, en faveur de son fils <ENAMEX type="PERSON">Louis le Pieux</ENAMEX>, le cérémonial qui l&apos;avait froissé : la couronne fut posée sur l&apos;autel et Louis la plaça lui-même sur sa tête, sans l&apos;intervention du pape.</sentence>
+				<sentence xml:id="P241E1">Cette nouveauté, qui disparut par la suite, ne changeait rien au caractère de l&apos;<ENAMEX type="BUSINESS">Empire</ENAMEX>.</sentence>
+				<sentence xml:id="P241E2">Bon gré, mal gré, il restait une création de l&apos;Église, quelque chose d&apos;extérieur et de supérieur au monarque et à la dynastie.</sentence>
+				<sentence xml:id="P241E3">C&apos;était à <ENAMEX type="LOCATION">Rome</ENAMEX> qu&apos;en était l&apos;origine et c&apos;était le pape seul qui en disposait comme successeur et représentant de <ENAMEX type="BUSINESS">Saint Pierre</ENAMEX>.</sentence>
+				<sentence xml:id="P241E4">De même qu&apos;il tient son autorité de l&apos;apôtre, c&apos;est au nom de l&apos;apôtre qu&apos;il confère le pouvoir impérial77.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P242">
+				<sentence xml:id="P242E0">Mais l&apos;empire byzantin refuse de reconnaître le couronnement impérial de <ENAMEX type="LOCATION">Charlemagne</ENAMEX>, le vivant comme une usurpation.</sentence>
+				<sentence xml:id="P242E1">Charles et ses conseillers objectent que l&apos;empire d&apos;Orient étant tombé aux mains d&apos;une femme, l&apos;impératrice Irène de <ENAMEX type="LOCATION">Byzance</ENAMEX>, cela équivaut à une déshérence pure et simple du titre impérial, qui ne peut être assumé que par un mâle.</sentence>
+				<sentence xml:id="P242E2">Irène cherche la paix avec les Francs, mais le couronnement de Charlemagne comme empereur des Romains est regardé à <ENAMEX type="LOCATION">Constantinople</ENAMEX> comme un acte de rébellion.</sentence>
+				<sentence xml:id="P242E3">À l&apos;automne 801, elle propose à <ENAMEX type="LOCATION">Charlemagne</ENAMEX> un projet d&apos;union matrimoniale destiné à réunifier l&apos;Empire romain mais l&apos;aristocratie byzantine, hostile à <ENAMEX type="PERSON">Irène</ENAMEX>, voyant dans ce projet un acte sacrilège, organise un coup d&apos;État en octobre 802 contre l&apos;impératrice78.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P243">
+				<sentence xml:id="P243E0">Avec le traité de paix d’<ENAMEX type="LOCATION">Aix-la-Chapelle</ENAMEX> en 812, l’empereur d&apos;Orient <ENAMEX type="PERSON">Michel Ier Rhangabé</ENAMEX> daigne parer <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> du titre d&apos;empereur mais en utilisant des formules détournées évitant de se prononcer sur la légitimité du titre, telles que : « Charles, roi des Francs (…), que l&apos;on appelle leur empereur ».</sentence>
+				<sentence xml:id="P243E1">C&apos;est l&apos;empereur byzantin Léon V l&apos;Arménien qui accepte vraiment de lui reconnaître le titre d&apos;empereur d&apos;Occident en 81379.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P244">
+				<sentence xml:id="P244E0">Charlemagne considère que la dignité impériale ne lui est conférée qu&apos;à titre personnel, pour ses exploits, et que son titre n&apos;est pas appelé à lui survivre.</sentence>
+				<sentence xml:id="P244E1">Dans ses actes, le souverain se titre « empereur gouvernant l’Empire romain, roi des Francs et des Lombards » (Karolus, serenissimus augustus, a Deo coronatus, magnus et pacificus imperator, Romanum gubernans imperium, qui et per misericordiam <ENAMEX type="BUSINESS">Dei rex Francorum</ENAMEX> et <ENAMEX type="BUSINESS">Langobardorum</ENAMEX>).</sentence>
+				<sentence xml:id="P244E2">Dans son testament, en l&apos;an 806, il partage l&apos;empire entre ses fils, suivant la coutume franque, et ne fait aucune mention de la dignité d&apos;empereur.</sentence>
+				<sentence xml:id="P244E3">C&apos;est seulement en 813, quand il n&apos;a plus qu&apos;un seul fils encore vivant, le futur <ENAMEX type="PERSON">Louis le Pieux</ENAMEX>, que <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> décide dans son testament du maintien de l&apos;intégralité de l&apos;empire et du titre impérial.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P245">
+				<sentence xml:id="P245E0">Selon les lettrés de l&apos;époque, comme <ENAMEX type="BUSINESS">Alcuin</ENAMEX>, le prince idéal doit avoir un but religieux, et lutter contre les hérétiques et les païens, y compris hors des frontières.</sentence>
+				<sentence xml:id="P245E1">Mais il doit avoir aussi un but politique : ne pas se contenter de la dignité royale, et devenir empereur d&apos;<ENAMEX type="BUSINESS">Occident</ENAMEX>.</sentence>
+				<sentence xml:id="P245E2">Léon <ENAMEX type="BUSINESS">III</ENAMEX> va dans ce sens, mais pour lui le pouvoir spirituel l&apos;emporte sur le pouvoir temporel, ce qui explique cette organisation lors du couronnement de <ENAMEX type="LOCATION">Charlemagne</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P246">
+				<sentence xml:id="P246E0">Avec ce sacre, <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> est désormais présenté comme un « nouveau <ENAMEX type="PERSON">David »</ENAMEX>, un Christus domini (un « prêtre-roi »)80.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P247">
+				<sentence xml:id="P247E0">Perséphone représentée sur le sarcophage paléochrétien de <ENAMEX type="LOCATION">Charlemagne</ENAMEX>, datant du IIe siècle.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P248">
+				<sentence xml:id="P248E0">Partie du suaire mortuaire de <ENAMEX type="LOCATION">Charlemagne</ENAMEX>.</sentence>
+				<sentence xml:id="P248E1">Il représente un quadrige et fut fabriqué à <ENAMEX type="LOCATION">Constantinople</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P249">
+				<sentence xml:id="P249E0">Son fils Pépin d&apos;<ENAMEX type="LOCATION">Italie</ENAMEX> meurt en 810 et le cadet <ENAMEX type="PERSON">Charles</ENAMEX> en 811.</sentence>
+				<sentence xml:id="P249E1">En 813, il fait prendre, par cinq synodes provinciaux, une série de dispositions concernant l&apos;organisation de l&apos;<ENAMEX type="BUSINESS">Empire</ENAMEX> (pour plus de détails, cf. concile de <ENAMEX type="LOCATION">Tours</ENAMEX> (813), concile de <ENAMEX type="LOCATION">Mayence</ENAMEX> (813), conciles d&apos;<ENAMEX type="BUSINESS">Arles</ENAMEX>, concile de <ENAMEX type="LOCATION">Chalon</ENAMEX>).</sentence>
+				<sentence xml:id="P249E2">Elles sont ratifiées la même année par une Assemblée générale convoquée à <ENAMEX type="LOCATION">Aix-la-Chapelle</ENAMEX>, au cours de laquelle il prend la précaution de poser lui-même la couronne impériale sur la tête de <ENAMEX type="PERSON">Louis</ENAMEX>, l&apos;unique survivant de ses fils.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P250">
+				<sentence xml:id="P250E0">Charlemagne meurt le 28 janvier 814 à <ENAMEX type="LOCATION">Aix-la-Chapelle</ENAMEX>, d&apos;une affection aiguë qui semble avoir été une pneumonie81.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P251">
+				<sentence xml:id="P251E0">Châsse en or et en argent abritant les reliques de <ENAMEX type="ORGANISATION">Charlemagne82</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P252">
+				<sentence xml:id="P252E0">Selon Éginhard 83, <ENAMEX type="BUSINESS">Charlemagne</ENAMEX> n&apos;ayant laissé aucune indication concernant ses funérailles, après de simples cérémonies mortuaires dans la cathédrale d&apos;<ENAMEX type="LOCATION">Aix-la-Chapelle</ENAMEX> (l&apos;embaumement et la mise en bière précèdent cette cérémonie au cours de laquelle une « effigie84 vivante » est probablement placée sur son cercueil pour le représenter85), il est inhumé dans une fosse le jour même sous le dallage de la Chapelle palatine.</sentence>
+				<sentence xml:id="P252E1">Le moine Adémar de <ENAMEX type="PERSON">Chabannes</ENAMEX>, dans son Chronicon, chronique rédigée entre 1024 et 1029, rend ces funérailles plus fastueuses, créant le mythe d&apos;un <ENAMEX type="ORGANISATION">Otton III</ENAMEX> qui a retrouvé un caveau voûté dans lequel l’Empereur « à la barbe fleurie » est assis sur un siège d’or, revêtu de ses insignes impériaux, ceint de son épée d’or, avec dans ses mains un évangéliaire d’or, et sur sa tête un diadème avec un morceau de la <ENAMEX type="LOCATION">Vraie Croix86</ENAMEX>.</sentence>
+				<sentence xml:id="P252E2">En 1166, <ENAMEX type="ORGANISATION">Frédéric Barberousse</ENAMEX>, après avoir obtenu la canonisation de <ENAMEX type="LOCATION">Charlemagne</ENAMEX>, fait rouvrir le tombeau pour déposer ses restes dans un sarcophage en marbre dit « sarcophage de <ENAMEX type="LOCATION">Proserpine</ENAMEX> ».</sentence>
+				<sentence xml:id="P252E3">Le 27 juillet 1215, <ENAMEX type="BUSINESS">Frédéric II</ENAMEX> entreprend une seconde translatio dans une châsse en or et en argent87.</sentence>
+				<sentence xml:id="P252E4">Selon la légende, à l&apos;occasion de cette exhumation, fut trouvé pendu au cou de <ENAMEX type="LOCATION">Charlemagne</ENAMEX> le talisman qu&apos;il portait constamment sur lui88.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P253">
+				<sentence xml:id="P253E0">Au lendemain de sa mort en 814, son vaste empire est borné à l&apos;ouest par l&apos;océan Atlantique (sauf la <ENAMEX type="LOCATION">Bretagne</ENAMEX>), au sud, par l&apos;Èbre, en <ENAMEX type="LOCATION">Espagne</ENAMEX>, par le <ENAMEX type="BUSINESS">Volturno</ENAMEX>, en <ENAMEX type="LOCATION">Italie</ENAMEX> ; à l&apos;est par la <ENAMEX type="LOCATION">Saxe</ENAMEX>, la rivière <ENAMEX type="BUSINESS">Tisza</ENAMEX>, les contreforts des <ENAMEX type="LOCATION">Carpates et l&apos;Oder</ENAMEX> ; au nord par la Baltique, le fleuve <ENAMEX type="BUSINESS">Eider</ENAMEX>, la mer du Nord et la Manche.</sentence>
+			</p>
+		</document>
+	</subcorpus>
+</corpus>

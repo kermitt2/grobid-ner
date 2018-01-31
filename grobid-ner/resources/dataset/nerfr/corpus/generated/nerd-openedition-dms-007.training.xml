@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<corpus>
+	<subcorpus>
+		<document name="nerd-openedition-dms-007">
+			<p xml:lang="fr" xml:id="P0">
+				<sentence xml:id="P0E0">Ressentis sur les Mooc dans une université</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P1">
+				<sentence xml:id="P1E0">Introduction Les enseignants du supérieur bénéficient d’une marge de liberté pour décider de leurs contenus pédagogiques.</sentence>
+				<sentence xml:id="P1E1">Ce faisant, ils endossent la responsabilité de les adapter aux besoins des apprenants.</sentence>
+				<sentence xml:id="P1E2">Simultanément, ces apprenants détournent de leurs usages des applications de réseautage de loisir telles que Facebook et les emploient comme des plateformes logistiques de formation.</sentence>
+				<sentence xml:id="P1E3">Peu à peu, les équipes d’encadrement ont fini par apprécier la cohabitation avec ces outils externes.</sentence>
+				<sentence xml:id="P1E4">Quand ils ne dispersent pas l’attention pendant la séance, ils fluidifient l’organisation matérielle sans empiéter sur la souveraineté institutionnelle.</sentence>
+				<sentence xml:id="P1E5">Aussi, l’annonce de la création de <ENAMEX type="ORGANISATION">France université numérique</ENAMEX> (Fun), en octobre 2013, aurait pu passer inaperçue.</sentence>
+				<sentence xml:id="P1E6">Alors que le portail de <ENAMEX type="BUSINESS">Mooc</ENAMEX> pouvait potentiellement être considéré comme un élément parmi d’autres dans la chaîne des dispositifs numériques, il y eut des réactions, visibles dans la presse et les revues syndicales.</sentence>
+				<sentence xml:id="P1E7">Elles se sont estompées.</sentence>
+				<sentence xml:id="P1E8">Néanmoins, entre promesses de la technologie, craintes de ce dont elle pourrait se saisir et progrès à faire, le débat sur l’articulation entre médiations techniques internes et externes devient un enjeu en formation à distance (<ENAMEX type="ORGANISATION">FAD</ENAMEX>).</sentence>
+				<sentence xml:id="P1E9">C’est pourquoi cette communication, conduite selon une méthodologie de recherche-action, porte sur les ressentis des différents acteurs d’une université partenaire du développement de <ENAMEX type="ORGANISATION">Fun</ENAMEX>.</sentence>
+				<sentence xml:id="P1E10">Contexte : un paradoxe à l’université Les universités vivent un paradoxe.</sentence>
+				<sentence xml:id="P1E11">Censées se situer à la pointe de l’innovation, elles semblent accuser, pour près de deux tiers des étudiants, un certain « retard » quant à l’utilisation des technologies numériques en apprentissage (Opinionway, 2013, p. 6).</sentence>
+				<sentence xml:id="P1E12">L’école est la référence pour ces apprenants, car elle est encore récente dans leur parcours de vie.</sentence>
+				<sentence xml:id="P1E13">Or, si le secondaire multiplie les expérimentations, l’enseignement supérieur paraît plus attentiste et moins équipé.</sentence>
+				<sentence xml:id="P1E14">Certes, des salles informatiques et des espaces numériques de travail (ENT) existent, le certificat informatique et <ENAMEX type="BUSINESS">Internet</ENAMEX> (C2i) fonctionne, les services communiquent sur les pratiques innovantes de leurs établissements et une fraction significative de chercheurs s’y intéresse.</sentence>
+				<sentence xml:id="P1E15">Toutefois, ces éléments sont en deçà des démarches plus volontaristes mises en place dans les lycées et des collèges par les régions et les départements dans le cadre de leurs compétences territoriales.</sentence>
+				<sentence xml:id="P1E16">Un événement récent est peut-être en train de faire bouger les lignes.</sentence>
+				<sentence xml:id="P1E17">L’annonce de la création du portail de <ENAMEX type="BUSINESS">Massive Open Online Courses</ENAMEX> (<ENAMEX type="ORGANISATION">Mooc) France université numérique</ENAMEX> (Fun) a interpellé les personnels dans les universités.</sentence>
+				<sentence xml:id="P1E18">S’agirait-il d’une étape vers la privatisation des cours voire d’une « incompréhension des enjeux liés au numérique » (<ENAMEX type="BUSINESS">Neveu &amp; Guesdon</ENAMEX>, 2014, p. 20) ?</sentence>
+				<sentence xml:id="P1E19">Il existait pourtant déjà quelques cours en ligne ouverts et massifs (Clom) francophones et précurseurs comme <ENAMEX type="BUSINESS">Itypa</ENAMEX>.</sentence>
+				<sentence xml:id="P1E20">De même, les apprenants utilisaient antérieurement les apports d<ENAMEX type="BUSINESS">’Internet</ENAMEX>.</sentence>
+				<sentence xml:id="P1E21">Pour s’organiser entre eux et enrichir leurs savoirs, ils détournaient les fonctionnalités des sites sociaux et allaient jusqu’à tester des plateformes pédagogiques (<ENAMEX type="LOCATION">Gobert</ENAMEX>, 2014).</sentence>
+				<sentence xml:id="P1E22">Mais Fun a réveillé, au moins temporairement, des craintes anciennes comme la « désertification » des cours magistraux et la perte de prérogatives pédagogiques locales au profit d’une centralisation jacobine de production des contenus (<ENAMEX type="BUSINESS">Brafman</ENAMEX>, 2013).</sentence>
+				<sentence xml:id="P1E23">Ce phénomène est amplifié par le contexte politique d’une « stratégie nationale » faisant écho à la loi du 22 juillet 2013 qui a « reconnu le rôle stratégique de l’État dans l’enseignement et la recherche » (<ENAMEX type="BUSINESS">Mesr</ENAMEX>, 2012) et intègre, pour la première fois, la notion « d’usages » dans les textes.</sentence>
+				<sentence xml:id="P1E24">Comment l’institution et les personnes potentiellement concernées par ces dispositifs réagissent-elles ?</sentence>
+				<sentence xml:id="P1E25">Il est intéressant d’observer comment, face aux stratégies politiques, les institutionnels locaux et les individus tentent d’adapter leurs usages et pratiques à l’œuvre entre action enseignante et consultation de ressources numériques internes et externes.</sentence>
+				<sentence xml:id="P1E26">Nous nous demandons en quoi l’irruption d’une proposition technologique extérieure à l’organisation peut modifier ou non les usages préexistants et exacerber les ressentis.</sentence>
+				<sentence xml:id="P1E27">Notre hypothèse est que l’identité de l’émetteur d’un dispositif nouveau conditionne partiellement les représentations qu’en ont les acteurs dans la structure en fonction de leur estime de soi et de leurs stratégies de perpétuation des statuts professionnels.</sentence>
+				<sentence xml:id="P1E28">Cette tendance a un impact sur les choix des outils en apprentissage qui sont sociologiquement significatifs.</sentence>
+				<sentence xml:id="P1E29">Ce n’est pas sans conséquence, car ces choix fixent, pour partie, les modalités de prospection des savoirs de la génération des apprenants à qui ils sont administrés.</sentence>
+				<sentence xml:id="P1E30">Aussi, après avoir précisé les ancrages théoriques du travail en recherche-action interactionniste, cet article s’intéresse aux ressentis d’un groupe d’enseignants-chercheurs en sciences humaines et sociales sur le nouveau portail de <ENAMEX type="BUSINESS">Mooc</ENAMEX> francophone Fun.</sentence>
+				<sentence xml:id="P1E31">Puis, ces ressentis sont mis en relation avec une éventuelle méconnaissance des projets pilotes de l’établissement et des dispositifs existants.</sentence>
+				<sentence xml:id="P1E32">Les résultats explicitent la manière dont les enseignants-chercheurs configurent et reconfigurent leurs modes d’appréhension de l’exploitation des ressources en fonction de variables qui ne portent ni sur la pédagogie ni sur les concepts, mais sur la réception qui impacte la transmission des savoirs.</sentence>
+				<sentence xml:id="P1E33">Dans cet article, <ENAMEX type="PERSON">Mooc</ENAMEX> en anglais et <ENAMEX type="PERSON">Clom</ENAMEX> en français sont employés comme des synonymes.</sentence>
+				<sentence xml:id="P1E34">Ancrages théoriques en recherche-action La nature du lieu d’investigation, à savoir l’intérieur des murs d’une université, invite à convoquer les méthodes d’observation participante popularisées par <ENAMEX type="PERSON">Ervin Goffman</ENAMEX> (1973) qui avait lui-même travaillé dans des cadres institutionnels.</sentence>
+				<sentence xml:id="P1E35">Ces méthodes sont utilisées dans les recherches en éducation (<ENAMEX type="BUSINESS">Perriault</ENAMEX>, 1989 ; Papi, 2012) et en sciences de l’information et de la communication (<ENAMEX type="BUSINESS">SIC</ENAMEX>) (<ENAMEX type="PERSON">Meyer</ENAMEX>, 2006 ; <ENAMEX type="PERSON">Bernard &amp;amp</ENAMEX>; Durampart, 2014).</sentence>
+				<sentence xml:id="P1E36">Leur ancrage théorique dans la tradition ethnographique implique un regard sur la société, car « si on participe à sa vie, c’est pour mieux la regarder » (<ENAMEX type="BUSINESS">Lapassade</ENAMEX>, 1983).</sentence>
+				<sentence xml:id="P1E37">L’assertion est reprise par <ENAMEX type="PERSON">Vincent Meyer</ENAMEX> qui substitue le mot « organisation » au possessif « sa » (<ENAMEX type="PERSON">Meyer</ENAMEX>, ibid.)</sentence>
+				<sentence xml:id="P1E38">, rappelant ainsi la dimension sociale attachée à l’objet étudié, car « l’usage n’est pas un objet naturel mais un construit social » (Chambat, 1994, p. 253).</sentence>
+				<sentence xml:id="P1E39">Pratiquée ainsi, l’observation est centrifuge, c’est-à-dire que le chercheur vient du dehors pour décrire ce qui se passe à l’intérieur.</sentence>
+				<sentence xml:id="P1E40">Pour des raisons déontologiques, il doit a priori en demander l’autorisation.</sentence>
+				<sentence xml:id="P1E41">À défaut, il court le risque de ne plus pouvoir exploiter son corpus lorsqu’il se dévoile en fin d’activité.</sentence>
+				<sentence xml:id="P1E42">Cela dit, la présence de l’observateur peut engendrer des biais méthodologiques.</sentence>
+				<sentence xml:id="P1E43">La gérer est d’autant plus important que le microcosme universitaire est sensible aux questionnements posés par la distanciation du chercheur par rapport à son objet d’étude.</sentence>
+				<sentence xml:id="P1E44">Il est en outre davantage habitué à observer qu’à être observé.</sentence>
+				<sentence xml:id="P1E45">La démarche ethnographique convient donc, mais avec des limites lorsqu’elle est appliquée à ce terrain qui « résiste » (<ENAMEX type="LOCATION">Péquignot</ENAMEX>, 2011).</sentence>
+				<sentence xml:id="P1E46">C’est pourquoi, après différents essais, nous avons choisi de convoquer un autre paradigme.</sentence>
+				<sentence xml:id="P1E47">La recherche-action trouve sa source dans la problématique interactionniste du dedans (Strauss, 1992), en lien avec la tradition sociologique de l’école de <ENAMEX type="LOCATION">Chicago</ENAMEX> (<ENAMEX type="LOCATION">Chapoulie</ENAMEX>, 2001).</sentence>
+				<sentence xml:id="P1E48">Certes le regard du chercheur importe, notamment lorsqu’il s’agit de produire un discours savant sur la réalité observée, mais ici, il se concentre avant tout sur des actions en cours de réalisation.</sentence>
+				<sentence xml:id="P1E49">Cela implique une cogestion à toutes les étapes du dispositif de recherche avec les acteurs du terrain.</sentence>
+				<sentence xml:id="P1E50">Ces derniers, généralement néophytes en matière de SHS, sont des professionnels dans leur domaine.</sentence>
+				<sentence xml:id="P1E51">Ils passent commande d’une expertise de recherche, avec l’objectif avoué d’influencer directement le monde de la pratique.</sentence>
+				<sentence xml:id="P1E52">« La recherche-action » peut donc se définir comme un « processus collectif mettant en relation des chercheurs et des praticiens visant à produire un savoir en prise directe sur les pratiques des acteurs sociaux » (Hess, 1983, p. 9).</sentence>
+				<sentence xml:id="P1E53">La justification de la présence in situ du chercheur pose logiquement moins de problèmes lorsqu’elle est sollicitée.</sentence>
+				<sentence xml:id="P1E54">Elle n’est pas neutre pour autant.</sentence>
+				<sentence xml:id="P1E55">Des orientations théoriques (et parfois idéologiques) peuvent œuvrer dans une direction retenue par avance.</sentence>
+				<sentence xml:id="P1E56">Par ailleurs, l’interculturalité professionnelle ne rend pas moins difficile la compréhension entre locuteurs porteurs de catégories de discours et de champs disciplinaires différents.</sentence>
+				<sentence xml:id="P1E57">Elle met également en tension la théorisation et la mise à l’épreuve empirique des conceptualisations.</sentence>
+				<sentence xml:id="P1E58">Pour les chercheurs familiarisés avec ce mode opératoire, « ce qui est appelé théorie apparaît comme un discours situé de sujets, même s’il porte sur des régularités construites.</sentence>
+				<sentence xml:id="P1E59">Ce qui est appelé pratique n’est souvent que le discours qu’un sujet tient sur sa propre activité » (<ENAMEX type="BUSINESS">Barbier &amp; Clerc</ENAMEX>, 2008, p. 135).</sentence>
+				<sentence xml:id="P1E60">Particulièrement féconde, cette démarche (Coulon, 1992 ; Woods, 1992 ; Pessin, 2004) a permis de concrétiser des terrains dans des milieux professionnels variés, dont celui de l’enseignement (<ENAMEX type="BUSINESS">Becker</ENAMEX>, 1952 ; Stenhouse, 1975).</sentence>
+				<sentence xml:id="P1E61">Ainsi, nous rejoignons le questionnement épistémologique de <ENAMEX type="PERSON">Joëlle Le Marec</ENAMEX> qui s’interroge, dans son travail d’habilitation à diriger des recherches, sur « ce que le terrain fait aux concepts » (<ENAMEX type="ORGANISATION">Le Marec</ENAMEX>, 2001, p. 52).</sentence>
+				<sentence xml:id="P1E62">Que se passe-t-il lorsque le chercheur, impliqué dans la situation qu’il observe, travaille avec des acteurs du terrain, des professionnels, qui sont eux-mêmes des chercheurs, au moins pour un certain nombre d’entre eux ?</sentence>
+				<sentence xml:id="P1E63">En premier lieu, il est certainement possible de s’attendre à un foisonnement de discours savants entrant en compétition dans l’écologie des idées et de l’espace éditorial...</sentence>
+				<sentence xml:id="P1E64">De même, les poids institutionnels des uns et des autres n’étant pas identiques, il est difficile d’exclure l’influence des variables socioculturelles, même si elles sont le plus souvent ignorées dans les travaux sur l’apprentissage (Fluckiger, 2012, p. 32).</sentence>
+				<sentence xml:id="P1E65">Bien que très influencées par la sociologie compréhensive, les sciences de l’éducation mettent davantage l’accent sur l’efficacité de la transmission des savoirs et des processus d’intégration que sur les aspects relationnels que la situation favorise, ce qui est davantage une problématique de <ENAMEX type="BUSINESS">SIC</ENAMEX>.</sentence>
+				<sentence xml:id="P1E66">À la confluence, <ENAMEX type="BUSINESS">Lawrence Stenhouse</ENAMEX>, spécialisé dans l’innovation éducative des teaching projects, ajoute aux enseignants sur le terrain un rôle de chercheur associé dans toutes les étapes de l’étude (<ENAMEX type="LOCATION">Stenhouse</ENAMEX>, 1975).</sentence>
+				<sentence xml:id="P1E67">Sa « nouvelle recherche-action », au demeurant très prisée, peut être comprise comme une « méthodologie de la complexité » (Bataille, 1983, p. 32).</sentence>
+				<sentence xml:id="P1E68">Cette méthodologie offre des terrains inédits dans l’espace social où elle procède, par souci d’empirisme, à la description minutieuse des faits dont elle propose une lecture distanciée.</sentence>
+				<sentence xml:id="P1E69">Quand les chercheurs de l’université sont pris comme sujets d’observation, ils endossent simultanément les deux statuts de chercheur et de chercheur associé tout en étant sujets.</sentence>
+				<sentence xml:id="P1E70">Cette posture originale « de praticien chercheur veut dire la coexistence de deux statuts » (<ENAMEX type="PERSON">Canter Kohn</ENAMEX>, 2001, p. 31) où les acteurs sont des « apprenants experts » (Poissant, 1996, p. 163 ; Paquette, 2002, p. 402 ; <ENAMEX type="BUSINESS">Gobert</ENAMEX>, 2013, p. 66) de leurs propres pratiques.</sentence>
+				<sentence xml:id="P1E71">C’est pourquoi « il faut intégrer les catégories et leurs propriétés […].</sentence>
+				<sentence xml:id="P1E72">Si les données sont collectées par un échantillonnage théorique en même temps qu’elles sont analysées, l’intégration de la théorie émerge plus facilement » (Strauss, 1992, p. 292).</sentence>
+				<sentence xml:id="P1E73">Ce n’est pas facile, car la logique hypothético-déductive, qui dessine le périmètre de la recherche, doit céder le pas à une démarche inductive où les concepts se coconstruisent avec l’ensemble des partenaires au fur et à mesure du déroulement de la séquence de recherche.</sentence>
+				<sentence xml:id="P1E74">Cela revient à donner du sens à la pratique, aux usages et aux comportements.</sentence>
+				<sentence xml:id="P1E75">Ainsi, le dysfonctionnement originel ou la situation de crise qui a généralement conduit à appeler le chercheur est observé puis analysé.</sentence>
+				<sentence xml:id="P1E76">Le résultat de cette analyse est ensuite réinjecté dans l’organisation et le processus d’observation recommence en intégrant ces modifications.</sentence>
+				<sentence xml:id="P1E77">Ce mode opératoire de recherche participationniste (<ENAMEX type="LOCATION">Lewin</ENAMEX>, 1943), participante (<ENAMEX type="BUSINESS">Goffman</ENAMEX>, 1986) et participative (<ENAMEX type="LOCATION">Anadón</ENAMEX>, 2007) est testé dans le cadre de l’université de <ENAMEX type="PERSON">Perpignan Via Domitia</ENAMEX>, auprès d’une fraction de la communauté des enseignants-chercheurs de lettres et sciences humaines (<ENAMEX type="ORGANISATION">LSH</ENAMEX>) et de l<ENAMEX type="ORGANISATION">’institut universitaire de technologie</ENAMEX> (<ENAMEX type="BUSINESS">IUT</ENAMEX>).</sentence>
+				<sentence xml:id="P1E78">Méconnaissance par les enseignants-chercheurs des projets numériques et de l’<ENAMEX type="BUSINESS">ENT L’université de Perpignan Via Domitia</ENAMEX> (<ENAMEX type="ORGANISATION">UPVD</ENAMEX>) est située en région transfrontalière dans le Roussillon, tout au sud de l’hexagone.</sentence>
+				<sentence xml:id="P1E79">Elle accueille sensiblement 9 000 étudiants et 900 personnels, toutes catégories et statuts confondus.</sentence>
+				<sentence xml:id="P1E80">Dans le contexte des regroupements contemporains, il s’agit d’une petite structure.</sentence>
+				<sentence xml:id="P1E81">Nombre de jeunes de la région vont d’ailleurs à <ENAMEX type="LOCATION">Toulouse</ENAMEX>, <ENAMEX type="BUSINESS">Montpellier</ENAMEX> et en <ENAMEX type="ORGANISATION">PACA</ENAMEX> pour réaliser tout ou partie de leur cursus.</sentence>
+				<sentence xml:id="P1E82">Cela dit, l’<ENAMEX type="ORGANISATION">UPVD</ENAMEX> est un acteur significatif.</sentence>
+				<sentence xml:id="P1E83">Elle est l’un des premiers employeurs du département des <ENAMEX type="LOCATION">Pyrénées-Orientales</ENAMEX> et tisse des liens forts jusqu’au niveau international avec des partenaires privés et institutionnels pour conduire des projets structurants.</sentence>
+				<sentence xml:id="P1E84">Ces projets concernent, entre autres, le numérique.</sentence>
+				<sentence xml:id="P1E85">Il y a de cela peu de temps, l’établissement ne disposait que de quelques salles informatiques.</sentence>
+				<sentence xml:id="P1E86">Il avait mis en place le C2i, installé trois espaces de visioconférences et déployé un premier espace numérique de travail (ENT).</sentence>
+				<sentence xml:id="P1E87">Une étape nouvelle a été franchie en 2013.</sentence>
+				<sentence xml:id="P1E88">Deux projets associent les technologies innovantes à des bâtiments basses consommations (<ENAMEX type="BUSINESS">BBC</ENAMEX>).</sentence>
+				<sentence xml:id="P1E89">Le rapprochement du foncier « durable » et de la pédagogie instrumentée par des dispositifs numériques décline au niveau local deux politiques publiques qui se sont succédé dans l’histoire récente du pays : « l’entrée de la <ENAMEX type="BUSINESS">France</ENAMEX> dans la société de l’information » et « l’écoresponsabilité ».</sentence>
+				<sentence xml:id="P1E90">Toutes deux sont des leviers, médiatisés dans le but de favoriser une intégration citoyenne en produisant de la responsabilisation socio-individuelle, c’est-à-dire la conscience que la somme des conduites personnelles aurait le pouvoir d’agir sur de grandes orientations collectives.</sentence>
+				<sentence xml:id="P1E91">À l’échelle de l’<ENAMEX type="ORGANISATION">UPVD</ENAMEX>, cet assemblage est mis en œuvre par des travaux de rénovation, la nomination d’un vice-président à la vie numérique et le lancement de deux projets de grande envergure : Miro et Pl@tinium +.</sentence>
+				<sentence xml:id="P1E92">Miro est un démonstrateur de pédagogie innovante inscrit dans les initiatives d’excellence en formations innovantes (<ENAMEX type="BUSINESS">IDEFI</ENAMEX>) lancées fin 2011 par l’<ENAMEX type="ORGANISATION">Agence nationale de la recherche</ENAMEX> (<ENAMEX type="ORGANISATION">ANR</ENAMEX>) dans le cadre du grand emprunt.</sentence>
+				<sentence xml:id="P1E93">Ce master en ligne, centré sur la valorisation touristique des patrimoines, fédère quatre universités partenaires et dispensera en 2015 des contenus en quatre langues.</sentence>
+				<sentence xml:id="P1E94">Pl@tinium +, quant à lui, est un service commun de développement.</sentence>
+				<sentence xml:id="P1E95">Cela concerne la pédagogie numérique, l’accompagnement des enseignants-chercheurs, la publication dématérialisée, l’animation des réseaux, la certification des compétences et la veille technologique.</sentence>
+				<sentence xml:id="P1E96">Les observations qui sont relatées dans cette communication sont liées à la constitution des dossiers de financement de Pl@tinium +.</sentence>
+				<sentence xml:id="P1E97">Le chercheur a été invité à faire émerger les besoins et à les intégrer sous forme de synthèse dans le dossier de projet de ce nouveau dispositif.</sentence>
+				<sentence xml:id="P1E98">Cette proximité de l’action est une source de savoirs pour la recherche en termes d’accompagnement du changement (Macaire, 2010, p. 21).</sentence>
+				<sentence xml:id="P1E99">Les deux projets bénéficient d’une forte visibilité.</sentence>
+				<sentence xml:id="P1E100">Les usagers de l’université peuvent difficilement les ignorer.</sentence>
+				<sentence xml:id="P1E101">Pourtant, les premiers entretiens montrent que ces grands chantiers sont méconnus.</sentence>
+				<sentence xml:id="P1E102">Alors que l’établissement communique tous azimuts, leurs désignations ont « été entendues », elles « disent quelque chose ».</sentence>
+				<sentence xml:id="P1E103">Leur perception manque de précision.</sentence>
+				<sentence xml:id="P1E104">Les personnes qui ne sont pas directement impliquées se sentent peu concernées.</sentence>
+				<sentence xml:id="P1E105">Cela correspond aux contenus discursifs classiques recueillis dans les organisations dès lors qu’ils concernent leur gouvernance.</sentence>
+				<sentence xml:id="P1E106">Toutefois, ladite organisation étant un établissement d’enseignement supérieur, nous l’avons supposée ouverte à l’investigation du chercheur.</sentence>
+				<sentence xml:id="P1E107">Cet a priori positif a été confirmé, car les « sujets » ont accueilli favorablement la démarche de recherche.</sentence>
+				<sentence xml:id="P1E108">Une étape initiale de familiarisation avec le terrain a été réalisée en présentiel.</sentence>
+				<sentence xml:id="P1E109">Elle a été complétée par un questionnaire en ligne réalisé avec <ENAMEX type="PERSON">Google Form</ENAMEX>.</sentence>
+				<sentence xml:id="P1E110">Comme il s’agit d’une étape préliminaire, nous ne nous étendrons pas sur les problématiques méthodologiques que pose ce mode d’administration.</sentence>
+				<sentence xml:id="P1E111">La disparité, l’incomplétude des réponses et le peu de personnes atteintes n’ont pas permis valider cette approche, pour ce terrain avec cette population et dans ce cadre.</sentence>
+				<sentence xml:id="P1E112">Alors que cette méthode en ligne était supposée moins intrusive, elle a parfois été interprétée comme de la négligence ou un dérangement lié à son caractère inhabituel.</sentence>
+				<sentence xml:id="P1E113">Cette démarche a néanmoins permis d’identifier cinq personnes-ressources.</sentence>
+				<sentence xml:id="P1E114">À leur tour, elles ont suscité d’autres vocations.</sentence>
+				<sentence xml:id="P1E115">Au final, 24 collègues sur la centaine de chercheurs et d’agrégés ont participé au projet.</sentence>
+				<sentence xml:id="P1E116">Les résultats ne sont donc pas généralisables.</sentence>
+				<sentence xml:id="P1E117">La recherche-action elle-même a été réalisée en trois temps : recueil d’un corpus des représentations initiales (1), introduction d’une sensibilisation à Fun et explicitation des grands projets numériques de l’établissement (2), description de deux Mooc et réflexion sur l’intégration potentielle de produits de même nature dans la pédagogie (3).</sentence>
+				<sentence xml:id="P1E118">À chaque étape, il a été demandé de réfléchir aux implications potentielles sans se censurer.</sentence>
+				<sentence xml:id="P1E119">Toutefois, la majorité des sujets produit une séquence discursive récurrente à base d’approches sociotechniques, puis d’inférences statutaires avant d’aborder les articulations pédagogiques et, pour une minorité, un intérêt à l’élaboration des dispositifs.</sentence>
+				<sentence xml:id="P1E120">Trois étapes de la recherche-action Premier temps d’analyse : segmentation professionnelle des construits Le premier temps de l’analyse montre une segmentation entre la communication institutionnelle de l’établissement sur les projets et les autres personnels qui les reçoivent.</sentence>
+				<sentence xml:id="P1E121">Les entretiens ont rappelé, s’il en était besoin, que chaque corps de métiers gère les préoccupations qui relèvent de ses missions et méconnaît ce qui se fait ailleurs.</sentence>
+				<sentence xml:id="P1E122">L’activité de veille des opportunités ministérielles et des collectivités, l’anticipation des conseils d’administration (CA) et les stratégies de mutualisation des moyens ne touchent pas l’ensemble des acteurs.</sentence>
+				<sentence xml:id="P1E123">Seule une frange développe un intérêt pour ces missions.</sentence>
+				<sentence xml:id="P1E124">Cette minorité était déjà informée de la création de <ENAMEX type="BUSINESS">Fun</ENAMEX> et capable d’en tracer les grandes lignes avant son annonce dans la presse.</sentence>
+				<sentence xml:id="P1E125">Ce clivage entre la communication publique de la gouvernance et sa réception par les enseignants-chercheurs est un classique de la théorie des organisations.</sentence>
+				<sentence xml:id="P1E126">Ses mécanismes de fonctionnement rejoignent ceux des autres mondes professionnels.</sentence>
+				<sentence xml:id="P1E127">Qui ne se plaint pas des contraintes administratives ?</sentence>
+				<sentence xml:id="P1E128">Ainsi, à propos des Mooc, l’annonce par le ministère de la création de Fun a engendré quatre sortes de réactions : des interrogations sur les applications pédagogiques, des discours sur l’évolution des statuts, un questionnement sur leur opérationnalisation et des conseils d’attentisme.</sentence>
+				<sentence xml:id="P1E129">Un parallèle est fait avec l’<ENAMEX type="BUSINESS">ENT</ENAMEX> et l’accès aux publications scientifiques sur le serveur de la bibliothèque.</sentence>
+				<sentence xml:id="P1E130">Pour une <ENAMEX type="BUSINESS">MCF</ENAMEX> d’histoire, « on nous promet monts et merveilles, mais nous ne sommes même pas abonnés à <ENAMEX type="ORGANISATION">Open Edition »</ENAMEX>.</sentence>
+				<sentence xml:id="P1E131">Pourquoi le ministère ne propose-t-il pas un même bouquet de revues pour l’ensemble des universités ?</sentence>
+				<sentence xml:id="P1E132">La majorité des enseignants-chercheurs qui n’ont pas fait le choix d’un engagement électif sont pris par leurs terrains, leurs étudiants et leurs tâches administratives.</sentence>
+				<sentence xml:id="P1E133">Ils disent « faire tourner la boutique » et opérer des choix quant au traitement des informations qui leur parviennent.</sentence>
+				<sentence xml:id="P1E134">La création de Fun les a interpellés, car ils ont été pétris par les traditions de l’autoformation et de l’autonomie dans la construction des connaissances (Varela, 1989, p. 9).</sentence>
+				<sentence xml:id="P1E135">Les Mooc ne leur sont pourtant pas ou peu connus.</sentence>
+				<sentence xml:id="P1E136">Dans le premier temps de l’analyse, ces « cours en vidéo » sont apparus comme une concurrence, même s’ils ne remplaceront « jamais » le professeur et ses ficelles pédagogiques.</sentence>
+				<sentence xml:id="P1E137">La référence est le polycopié, que l’on donne ou pas, au risque de vider les amphithéâtres.</sentence>
+				<sentence xml:id="P1E138">En filigrane, cette réflexion interroge sur la valeur ajoutée de la présence en cours.</sentence>
+				<sentence xml:id="P1E139">La massification des technologies innovantes amplifie ainsi un débat entamé avec les supports papier.</sentence>
+				<sentence xml:id="P1E140">La pression est cependant plus forte.</sentence>
+				<sentence xml:id="P1E141">Les produits immatériels se diffusent aisément et acquièrent une forme d’autonomie dès lors qu’ils ont été accessibles en ligne, même pendant un court laps de temps.</sentence>
+				<sentence xml:id="P1E142">La multiplication potentielle des copies, sans limites de durée, peut être vécue comme une perte de contrôle, c’est-à-dire une rupture dans les habitus pédagogiques.</sentence>
+				<sentence xml:id="P1E143">Second temps d’analyse : focalisation sur les outils Le second temps de l’analyse a explicité ce qu’est l’accompagnement aux compétences numériques qui était interprété de différentes manières selon les personnes interrogées.</sentence>
+				<sentence xml:id="P1E144">Le top of mind des sujets contactés donne la priorité au besoin de formations techniques (1), à l’assistance in situ pour la mise en œuvre de matériels pédagogiques (2), à la prestation de services tels que la prise en charge des numérisations de contenus (3).</sentence>
+				<sentence xml:id="P1E145">Les réponses verbales sont ponctuées par des interrogations sur la reconnaissance matérielle des personnes qui s’investissent dans les activités numériques (a) et sur l’assiduité des apprenants si les ressources pédagogiques sont disponibles (b).</sentence>
+				<sentence xml:id="P1E146">Ces éléments plaident pour la mise en place de formations à l’informatique et la bureautique, actuellement peu valorisées.</sentence>
+				<sentence xml:id="P1E147">Selon les personnalités, l’accompagnement se conçoit comme une facilitation de la recherche d’autonomie (principalement au plan technique), une découverte des possibles, une cohérence globale (mais avec le moins de contraintes possible) à l’échelle de lettres et sciences humaines (LSH), de l’<ENAMEX type="ORGANISATION">IUT</ENAMEX>, voire de l’université.</sentence>
+				<sentence xml:id="P1E148">Les entretiens signent le désir de considérer les démarches innovantes comme une opportunité identitaire dans le creuset communautaire.</sentence>
+				<sentence xml:id="P1E149">Toutefois, une minorité de personnes déclare ne pas disposer de suffisamment de temps pour s’impliquer, car « nous portons déjà tous nos deux casquettes administratives ».</sentence>
+				<sentence xml:id="P1E150">Le numérique est certes une opportunité, mais celle-ci ressemble à s’y méprendre à une injonction de la technologie, car « il n’est plus possible de faire autrement » puisque « le ministère l’impose ».</sentence>
+				<sentence xml:id="P1E151">Des tensions peuvent naître entre le chercheur et les acteurs du terrain du fait de la nécessité d’harmoniser différentes catégories de discours.</sentence>
+				<sentence xml:id="P1E152">Alors que les professionnels sont des enseignants-chercheurs et partagent un terreau commun de capacités de conceptualisation, les incompréhensions sont fréquentes.</sentence>
+				<sentence xml:id="P1E153">Elles augmentent au fur et à mesure que l’on aborde le monde des concepts, alors qu’il semblait a priori que cette étape du travail serait relativement aisée...</sentence>
+				<sentence xml:id="P1E154">Les enseignants-chercheurs ne sont pas seulement des professionnels ; ils relèvent aussi des sphères publiques et privées.</sentence>
+				<sentence xml:id="P1E155">Soumis aux mêmes agressions médiatiques que le reste de la population, ils développent en outre un sens critique qui est leur marque de fabrique.</sentence>
+				<sentence xml:id="P1E156">Ainsi, le « retard » supposé de l’université en matière de nouvelles technologies a-t-il été associé à une volonté du pouvoir (<ENAMEX type="BUSINESS">De Rosnay</ENAMEX>, 1991).</sentence>
+				<sentence xml:id="P1E157">Cela ne concerne pas l’ensemble des dispositifs, mais les descriptions sont plutôt globalisantes.</sentence>
+				<sentence xml:id="P1E158">Les Mooc sont considérés comme relevant de pratiques extraéducatives peu susceptibles de concurrencer l’apprentissage institutionnel.</sentence>
+				<sentence xml:id="P1E159">Le portage du projet par le ministère a inspiré quelques interrogations, car les premiers produits, consultés hâtivement, rappellent la télévision éducative des années 1980.</sentence>
+				<sentence xml:id="P1E160">C’est ignorer l’accompagnement en distanciel qu’implique l’inscription à un Mooc.</sentence>
+				<sentence xml:id="P1E161">L’approche consultative est donc un dévoiement effectué par habitude en référence à la granularité des tutoriels disponibles sur le web et vus par effet de curiosité.</sentence>
+				<sentence xml:id="P1E162">Un Mooc demande que l’on s’y intéresse, que ce soit pour y participer ou pour le créer.</sentence>
+				<sentence xml:id="P1E163">Cette disponibilité n’est plus l’apanage de la fonction publique.</sentence>
+				<sentence xml:id="P1E164">Le monde de l’entreprise commence à s’investir et à réfléchir à des solutions qui retiennent l’attention.</sentence>
+				<sentence xml:id="P1E165">Le risque est qu’une fois que des formules pédagogiques seront bien identifiées, des maquettes préformatées ne soient proposées et labellisées sous forme d’outils de « consocréation » (<ENAMEX type="BUSINESS">Gobert</ENAMEX>, 2014).</sentence>
+				<sentence xml:id="P1E166">Troisième temps d’analyse : les Mooc, une stratégie de valorisation globale ?</sentence>
+				<sentence xml:id="P1E167">L’observation de l’un des Mooc (au choix dans la liste) mis en ligne sur Fun n’a pas permis aux sujets de se faire une idée complète de la réalité du concept.</sentence>
+				<sentence xml:id="P1E168">Il aurait fallu « participer ».</sentence>
+				<sentence xml:id="P1E169">Contrairement aux propos recueillis lors de l’étape 2, le sérieux de la formation a toutefois été remarqué et recrédibiliserait Internet sur ce plan.</sentence>
+				<sentence xml:id="P1E170">Aussi, nous avons recherché des productions francophones ayant déjà fonctionné pendant une ou deux « saisons ».</sentence>
+				<sentence xml:id="P1E171">Itypa2 est la plus connue, car elle a laissé beaucoup de traces sur la toile.</sentence>
+				<sentence xml:id="P1E172">Ce « Mooc pour construire son environnement d’apprentissage » est fortement présent sur le réseau.</sentence>
+				<sentence xml:id="P1E173">Les thématiques abordées y sont variées, la participation importante.</sentence>
+				<sentence xml:id="P1E174">Des lettres quotidiennes, des médiations en distanciel ainsi que des outils d’échanges collaboratifs et socionumériques maintiennent la motivation.</sentence>
+				<sentence xml:id="P1E175">À ce stade, les sujets constatent qu’il ne s’agit pas seulement de cours en vidéo comme ce qui avait été perçu pendant la phase 2 de l’enquête.</sentence>
+				<sentence xml:id="P1E176">Les possibilités semblent beaucoup plus vastes, car non seulement ce Mooc intègre potentiellement toutes les fonctionnalités communicatives d’<ENAMEX type="BUSINESS">Internet</ENAMEX>, mais de plus, l’accès à la ressource pour les apprenants est indissociable de la participation à la vie du groupe modérée par un tuteur.</sentence>
+				<sentence xml:id="P1E177">Cette découverte, car cela en est une pour la totalité des sujets, fait surgir un questionnement sur le caractère « académique » des <ENAMEX type="BUSINESS">Mooc</ENAMEX>.</sentence>
+				<sentence xml:id="P1E178">Cette formulation provocatrice met en lumière une préoccupation sensible.</sentence>
+				<sentence xml:id="P1E179">Sont-ils conçus pour répondre aux problématiques de sous-effectifs des universités ?</sentence>
+				<sentence xml:id="P1E180">Des établissements publics pourraient bien mettre l’accent sur une revitalisation massive de leurs <ENAMEX type="BUSINESS">ENT</ENAMEX> en les enrichissant de l’ensemble des services évoqués.</sentence>
+				<sentence xml:id="P1E181">À l’<ENAMEX type="ORGANISATION">UPVD</ENAMEX>, le dynamisme numérique que mettent en lumière Miro, Pl@tinium + et le nouvel ENT modernisé pourrait alimenter de tels débats.</sentence>
+				<sentence xml:id="P1E182">Au niveau recherche, le fait qu’une réflexion sur les « humanités numériques » traverse le futur laboratoire de <ENAMEX type="BUSINESS">SHS fédérateur de l’université</ENAMEX> (Cresem) y concourt.</sentence>
+				<sentence xml:id="P1E183">Ce serait toutefois laisser de côté cette vision de la « formation innovante » où le numérique peut, certes, être sollicité en appui, mais pas nécessairement et seulement quand les pédagogues le décident.</sentence>
+				<sentence xml:id="P1E184">Cette partie du message semble d’ailleurs difficile à faire passer tant la culture de l’outil, héritée de trente ans de plans médias, est omniprésente.</sentence>
+				<sentence xml:id="P1E185">Par ailleurs, l’approche française diffère de l’obédience américaine qui vise à proposer des contenus pédagogiques à des populations défavorisées sur les plans budgétaires et géographiques.</sentence>
+				<sentence xml:id="P1E186">Les réalités hexagonales sont différentes.</sentence>
+				<sentence xml:id="P1E187">Certes les Mooc sont ouverts à tous et partout, mais ils peuvent également être investis intra muros sans pour autant se substituer à la présence des enseignants-chercheurs.</sentence>
+				<sentence xml:id="P1E188">D’une part, les apprenants sont friands de sessions instrumentées par de tels dispositifs et, d’autre part, certains ne semblent s’inscrire que pour obtenir une bourse (<ENAMEX type="BUSINESS">Kremer</ENAMEX>, 2013).</sentence>
+				<sentence xml:id="P1E189">Tous ont donc la possibilité matérielle d’être présents sur les sites.</sentence>
+				<sentence xml:id="P1E190">L’université, en combinant activités innovantes internes et externes pourrait bénéficier d’un levier de motivation supplémentaire.</sentence>
+				<sentence xml:id="P1E191">Toutefois, les sujets s’interrogent sur les effets de ces dispositifs, car « démocratiser l’offre ne signifie pas démocratiser l’accès et encore moins la demande » (<ENAMEX type="LOCATION">Meirieu</ENAMEX>, 2013).</sentence>
+				<sentence xml:id="P1E192">La qualité de l’accompagnement, quelle que soit sa forme, est décrite comme essentielle.</sentence>
+				<sentence xml:id="P1E193">Dans les communications à destination de l’espace social, les Mooc sont implicitement présentés comme une reviviscence des débuts de l’Internet.</sentence>
+				<sentence xml:id="P1E194">La technologie rendrait libre et permettrait à chacun de se former.</sentence>
+				<sentence xml:id="P1E195">Il fut d’ailleurs un temps où la population constituait des collectionnites de <ENAMEX type="BUSINESS">CD</ENAMEX>-ROM « culturels ».</sentence>
+				<sentence xml:id="P1E196">Les disques durs furent saturés de documents jamais regardés.</sentence>
+				<sentence xml:id="P1E197">Puis, des banques d’adresses URL non consultées se sont accumulées dans les navigateurs.</sentence>
+				<sentence xml:id="P1E198">En sera-t-il de même avec les ressources pédagogiques en ligne ?</sentence>
+				<sentence xml:id="P1E199">Les supports numériques entretiennent des illusions de contrôle et de compétence (<ENAMEX type="BUSINESS">Gobert</ENAMEX>, 2014a).</sentence>
+				<sentence xml:id="P1E200">L’utilisateur est amené par la mercatique à considérer qu’une fois géré l’accès à la ressource, « il n’y a plus qu’à apprendre » à l’employer (<ENAMEX type="LOCATION">Gobert</ENAMEX>, 2014b).</sentence>
+				<sentence xml:id="P1E201">Le niveau des représentations, ainsi travaillé par le marketing, influence la réception des produits.</sentence>
+				<sentence xml:id="P1E202">Le risque de multiplier le nombre de sujets incapables de franchir le cap motivationnel pour travailler leur apprentissage est important.</sentence>
+				<sentence xml:id="P1E203">Comment, dès lors, accompagner ces « apprenants prospects » vers une évaluation ou une certification ?</sentence>
+				<sentence xml:id="P1E204">Les <ENAMEX type="ORGANISATION">MOOC</ENAMEX>, dans le concert des autres activités pédagogiques Les enseignants-chercheurs formulent des remarques pragmatiques.</sentence>
+				<sentence xml:id="P1E205">Comment s’y prendre pour utiliser les produits existants, ou mieux : les fabriquer ?</sentence>
+				<sentence xml:id="P1E206">Tels qu’ils sont présentés, ils ne semblent pas destinés à être projetés dans l’amphithéâtre ni même à être employés dans les murs de l’université.</sentence>
+				<sentence xml:id="P1E207">Ces remarques ont été faites par l’intégralité des acteurs.</sentence>
+				<sentence xml:id="P1E208">Tous ont envisagé une orientation visant à les secondariser.</sentence>
+				<sentence xml:id="P1E209">Si les conférences étaient faites par des pontes en e-learning, combien d’années faudrait-il à un jeune <ENAMEX type="BUSINESS">MCF</ENAMEX> pour « sortir » des travaux dirigés ?</sentence>
+				<sentence xml:id="P1E210">Ces discours corporatistes sont revenus à chaque étape du travail.</sentence>
+				<sentence xml:id="P1E211">Ils ont régressé au regard de la multiplicité de thématiques à créer, des adaptations et des apprentissages nécessaires.</sentence>
+				<sentence xml:id="P1E212">Un <ENAMEX type="LOCATION">Mooc n’</ENAMEX>est pas une vidéoconférence ni un tutoriel.</sentence>
+				<sentence xml:id="P1E213">Une préparation conceptuelle spécifique est requise.</sentence>
+				<sentence xml:id="P1E214">Alors qu’il est déjà difficile d’entretenir la motivation de l’apprenant dans un contexte classique, comment s’y prendre sans feedback synchrone dans ce nouvel univers ?</sentence>
+				<sentence xml:id="P1E215">Les équipes telles que celles de <ENAMEX type="PERSON">Miro</ENAMEX> et Pl@tinum +, qui ont des homologues dans d’autres d’établissements, ont vocation à assister la scénarisation et la réalisation des ressources.</sentence>
+				<sentence xml:id="P1E216">Cette assistance ne peut pas être neutre.</sentence>
+				<sentence xml:id="P1E217">D’une part, elle risque de proposer un canevas standardisé des séquences de contenus qui limiterait l’improvisation.</sentence>
+				<sentence xml:id="P1E218">D’autre part, elle peut imposer des objectifs supérieurs à ceux que se donneraient les enseignants eux-mêmes.</sentence>
+				<sentence xml:id="P1E219">Cet accompagnement pourrait aussi rassurer au niveau des techniques de la pédagogie en ligne et de la captation audiovisuelle.</sentence>
+				<sentence xml:id="P1E220">La moitié des sujets considère en effet qu’elle n’a pas à gérer le soubassement matériel en plus du surcroît de travail que donne la transformation d’un cours académique en un Mooc.</sentence>
+				<sentence xml:id="P1E221">Quelles formes de reconnaissance institutionnelle seront privilégiées ?</sentence>
+				<sentence xml:id="P1E222">Lors des séances de travail, les enseignants-chercheurs ont unanimement déclaré « en faire plus qu’on ne leur en demande ».</sentence>
+				<sentence xml:id="P1E223">Des débats s’engagent alors sur la compétition potentielle entre produits numériques et qualités de suivi.</sentence>
+				<sentence xml:id="P1E224">Rappelons que les universitaires qui ont conçu les Mooc n’allaient pas jeter l’<ENAMEX type="BUSINESS">Alma</ENAMEX> mater.</sentence>
+				<sentence xml:id="P1E225">Le « c » de course rappelle que ces cours ont des objectifs pédagogiques.</sentence>
+				<sentence xml:id="P1E226">Cette pédagogie serait active, qu’elle soit gérée par le public, le privé ou des groupements mixtes comme pour Fun.</sentence>
+				<sentence xml:id="P1E227">À ce stade, la distinction méconnue entre xMooc et cMooc pourrait interpeller.</sentence>
+				<sentence xml:id="P1E228">Mis à part l’emploi de ressources en ligne, le premier est relativement proche du métier.</sentence>
+				<sentence xml:id="P1E229">Le second « vise à créer du savoir en connectant des personnes et des ressources autour d’un thème donné » (Cisel, 2013, p. 3).</sentence>
+				<sentence xml:id="P1E230">Il fait appel à des compétences pour lesquelles les universitaires sont moins formés et nécessite plus de ressources d’animation et d’accompagnement que de cours.</sentence>
+				<sentence xml:id="P1E231">Il est davantage typé « grandes écoles » où les diverses formes de tutorat sont omniprésentes.</sentence>
+				<sentence xml:id="P1E232">Le parcours de réflexion a conduit les enseignants-chercheurs à considérer que, quel que soit le type de <ENAMEX type="BUSINESS">Mooc</ENAMEX>, « s’il est bien fait et bien animé », il pourra enfin apporter une valeur ajoutée aux moyens numériques qui ne « relèvent pas de l’amusement ou de la jambe de bois ».</sentence>
+				<sentence xml:id="P1E233">Ces apports potentiels ont un prix, un prix difficile à quantifier.</sentence>
+				<sentence xml:id="P1E234">Comment peut-on mesurer l’investissement dans la gestion de l’accompagnement ?</sentence>
+				<sentence xml:id="P1E235">À chaque support correspond un ensemble de tâches lourdes d’animation, de management et de certification.</sentence>
+				<sentence xml:id="P1E236">En outre, un temps d’acquisition des nouvelles compétences est inhérent à ce type d’activité.</sentence>
+				<sentence xml:id="P1E237">Le on-dit qu’à l’université de <ENAMEX type="LOCATION">Lausanne</ENAMEX>, les personnels ne seraient pas rémunérés pour leur participation à un Mooc mais bénéficieraient de financements de leurs travaux de recherche suscite davantage de réflexion que d’adhésion...</sentence>
+				<sentence xml:id="P1E238">D’un autre côté, trois sujets sur les 24 abordés lors de ce travail ont évoqué la potentialité de créer une béquille pédagogique.</sentence>
+				<sentence xml:id="P1E239">Le Mooc relèverait davantage de la synthèse que de la créativité et permettrait de demander aux apprenants en difficulté de combler leurs lacunes en ligne.</sentence>
+				<sentence xml:id="P1E240">Venu du monde anglo-saxon, il utiliserait moins l’évaluation que le contrôle social intragroupe pour fidéliser les apprenants.</sentence>
+				<sentence xml:id="P1E241">Ce contrôle est d’ailleurs géré par des modérateurs et des tuteurs dont le rôle signe, s’il en était besoin, la nécessité d’une présence humaine.</sentence>
+				<sentence xml:id="P1E242">Dans une profession postdoctorale où l’autoformation est la règle, les Mooc peuvent être compris comme une opportunité pour les chercheurs et facteur d’autodiscipline pour les étudiants.</sentence>
+				<sentence xml:id="P1E243">Ces nouvelles modalités de transmission du savoir seraient complémentaires des dyades pédagogiques classiques.</sentence>
+				<sentence xml:id="P1E244">Dans l’avenir, elles constitueront certainement une solution parmi d’autres dans l’arsenal des produits éducatifs.</sentence>
+				<sentence xml:id="P1E245">Les apprenants pourront exploiter ces ressources, éventuellement citées comme des « lectures » obligatoires dans les enseignements.</sentence>
+				<sentence xml:id="P1E246">En théorie, rien n’empêche de les intégrer dans le cursus, de proposer la participation à un <ENAMEX type="BUSINESS">Mooc</ENAMEX>, voire de le coconstruire avec des apprenants experts.</sentence>
+				<sentence xml:id="P1E247">Les démarches sont différentes, mais cette étude a souligné, s’il en était besoin, que l’ensemble des compétences est déjà présent dans les universités.</sentence>
+				<sentence xml:id="P1E248">Ce qui fait défaut, c’est le temps et… le volontariat.</sentence>
+				<sentence xml:id="P1E249">Enfin, un élément inattendu s’est immiscé dans la séquence : la recherche-action semble avoir influencé la perception des sujets concernant l’investissement de l’établissement dans les projets à dominante numérique qui sont désormais compris en termes stratégiques par les participants.</sentence>
+				<sentence xml:id="P1E250">Au-delà des modalités pratiques et statutaires attachées aux outils, l’étude a sensibilisé à l’importance des logiques de gouvernance dans un concert plus large que celui de l’université.</sentence>
+				<sentence xml:id="P1E251">La réflexion sur la pédagogie et la formation innovantes constituent un nouveau moteur de développement de la notoriété aux niveaux local, <ENAMEX type="ORGANISATION">national et international</ENAMEX>.</sentence>
+				<sentence xml:id="P1E252">Conclusion Au cours de cette étude, nous nous sommes intéressés à la réception des <ENAMEX type="BUSINESS">Mooc</ENAMEX> francophones par des enseignants-chercheurs, au moment où le ministère a communiqué son intention de produire des formations en ligne.</sentence>
+				<sentence xml:id="P1E253">Le travail est ancré dans un cadre théorique et une méthodologie de recherche-action dont la spécificité est de produire du changement dans les pratiques.</sentence>
+				<sentence xml:id="P1E254">Il a mis en lumière l’évolution des conduites, sur un terrain qui résiste, et tente de s’opposer à ce qu’en matière de technologies, « tout un délire ne traverse le social » (<ENAMEX type="BUSINESS">Durand</ENAMEX>, 1993).</sentence>
+				<sentence xml:id="P1E255">Au cours des trois étapes de l’étude, la réception de ces produits a sensiblement évolué.</sentence>
+				<sentence xml:id="P1E256">Aux craintes statutaires d’une pédagogie externalisée et de la toute-puissance technique (1) ont succédé un discrédit des dispositifs numériques externes (2) puis la possibilité de les employer de manière raisonnée (3).</sentence>
+				<sentence xml:id="P1E257">Chez les enseignants-chercheurs participant à la séquence, ce rapprochement est actuellement plutôt une source de réflexion qu’une pratique.</sentence>
+				<sentence xml:id="P1E258">L’intégration d’un dispositif dans la panoplie existante ne relève pas d’un enseignement sans enseignants.</sentence>
+				<sentence xml:id="P1E259">Ces derniers changent de situation, mais leur présence, en distanciel ou dissimulée, est encore d’actualité.</sentence>
+				<sentence xml:id="P1E260">Ils soulignent par ailleurs la nécessité d’investir davantage l’accompagnement et l’innovation pédagogique personnelle que la médiation des dispositifs et optent pour la création de centres de soutien technique.</sentence>
+				<sentence xml:id="P1E261">L’apport d’une recherche-action auprès de sujets experts comme des universitaires, réside plus particulièrement dans la mutualisation de la réflexion sur la pédagogie, la circulation des projets au sein de la communauté comme source de liens, la compréhension des stratégies politiques de l’établissement.</sentence>
+				<sentence xml:id="P1E262">Les résultats font apparaître, s’il en était besoin, que les compétences existent in situ.</sentence>
+				<sentence xml:id="P1E263">Il ne serait pas nécessaire de mobiliser des ressources externes pour développer des productions de type Mooc à l’heure où des organisations à but lucratif s’insèrent sur le marché de la formation.</sentence>
+				<sentence xml:id="P1E264">Si les aspects techniques semblent finalement assez aisés à maîtriser, les ressentis sont ambivalents.</sentence>
+				<sentence xml:id="P1E265">D’une part, la sociotechnique apporte de l’innovation et des changements auxquels il peut être enthousiasmant de participer ; d’autre part, elle effraie à cause des contraintes qu’elle exerce, de l’absence d’éthique supposée de ses concepteurs et des transformations sociales qu’elle peut engendrer.</sentence>
+				<sentence xml:id="P1E266">La qualité de réflexion en amont de la conception des séquences et de l’accompagnement, quels que soient les dispositifs, semble encore au centre des valeurs et des attentes.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P2">
+				<sentence xml:id="P2E0">http://dms.revues.org/1081</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P3">
+				<sentence xml:id="P3E0">10.4000/dms.1081</sentence>
+			</p>
+		</document>
+	</subcorpus>
+</corpus>

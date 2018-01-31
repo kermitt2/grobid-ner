@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<corpus>
+	<subcorpus>
+		<document name="nerd-openedition-anthropodev-001">
+			<p xml:lang="fr" xml:id="P0">
+				<sentence xml:id="P0E0">Enquêter entre interdictions et non-dits au sein d’un programme de coopération bilatérale au <ENAMEX type="LOCATION">Vietnam</ENAMEX></sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P1">
+				<sentence xml:id="P1E0">Introduction Avant l’ouverture du pays avec le Doi moi (renouveau) adopté en 1989, <ENAMEX type="PERSON">Dinh Trong Hieu</ENAMEX> recensait les difficultés d’accès au terrain pour un chercheur en sciences sociales dans la République Socialiste du <ENAMEX type="LOCATION">Vietnam</ENAMEX> (<ENAMEX type="PERSON">Dinh Trong Hieu</ENAMEX>, 1986).</sentence>
+				<sentence xml:id="P1E1">Selon lui, la « méfiance idéologique » du gouvernement, craignant la contamination capitaliste, était une des raisons du contrôle exercé sur les activités des chercheurs étrangers.</sentence>
+				<sentence xml:id="P1E2">L’« espionite », liée à l’héritage historique du <ENAMEX type="LOCATION">Vietnam</ENAMEX> au XXe siècle marqué par la quasi permanence de la guerre (contre le <ENAMEX type="LOCATION">Japon</ENAMEX>, la <ENAMEX type="LOCATION">France</ENAMEX>, les <ENAMEX type="LOCATION">États-Unis</ENAMEX>, le <ENAMEX type="LOCATION">Cambodge</ENAMEX>, la <ENAMEX type="LOCATION">Chine</ENAMEX>, etc.), aurait alimenté cette paranoïa gouvernementale.</sentence>
+				<sentence xml:id="P1E3">Dinh <ENAMEX type="PERSON">Trong Hieu</ENAMEX> relevait par ailleurs le caractère utilitariste et positiviste de la culture scientifique socialiste.</sentence>
+				<sentence xml:id="P1E4">L’approche empirique et qualitative des sciences sociales serait alors incompatible avec la manière dont le gouvernement vietnamien décrète le réel (<ENAMEX type="PERSON">Scott</ENAMEX> et al., 2006) sur la base de l’idéal révolutionnaire d’une marche moderniste vers le progrès.</sentence>
+				<sentence xml:id="P1E5">Le principe même de l’enquête ethnographique poserait donc problème dans ce contexte de contrôle suspicieux doublé d’une incompréhension fondamentale du travail du chercheur.</sentence>
+				<sentence xml:id="P1E6">Depuis les années 1990, le <ENAMEX type="LOCATION">Vietnam</ENAMEX> a adopté une forme de capitalisme d’Etat et s’est ouvert aux investissements étrangers.</sentence>
+				<sentence xml:id="P1E7">Le pays accueille désormais massivement des projets de développement, soutenu dans sa communication par certains chercheurs proches des bailleurs internationaux, vantant la vitalité de la « société civile » vietnamienne (Nørlund, 2007).</sentence>
+				<sentence xml:id="P1E8">Du fait de cette évolution majeure, il convient de questionner à nouveau les conditions pratiques d’une enquête ethnographique en contexte vietnamien.</sentence>
+				<sentence xml:id="P1E9">Ma réflexion mobilisera des données ethnographiques produites en 2011 lors d’une enquête réalisée au sein d’un programme de développement mené conjointement par une administration provinciale vietnamienne et un organisme de coopération européen.</sentence>
+				<sentence xml:id="P1E10">Destinée à améliorer la gestion des déchets et l’irrigation rurale dans différents districts d’une province du centre du pays, cette institution bilatérale m’a accueillie afin que je réalise une enquête indépendante sur la question des déchets dans deux localités concernées par ses actions.</sentence>
+				<sentence xml:id="P1E11">Si le projet initial était celui-ci, des difficultés m’ont amenée à revoir mon enquête.</sentence>
+				<sentence xml:id="P1E12">J’ai alors produit deux types de matériaux empiriques.</sentence>
+				<sentence xml:id="P1E13">(1) Le premier, que je qualifie de conventionnel (nous verrons que cela n’est pas synonyme d’officiel, ni d’autorisé), repose sur divers séjours dans deux petites villes concernées par le projet.</sentence>
+				<sentence xml:id="P1E14">Il s’agissait d’étudier la question des déchets sous l’angle de la gouvernance urbaine dans son « usage exploratoire et descriptif » des pratiques de gestion d’un problème public urbain (Blundo et <ENAMEX type="ORGANISATION">Le Meur</ENAMEX>, 2009 : 8).</sentence>
+				<sentence xml:id="P1E15">J’ai réalisé des entretiens avec les usagers de la collecte des ordures, les employés des services de gestion et les fonctionnaires locaux.</sentence>
+				<sentence xml:id="P1E16">(2) L’autre matériau empirique a été produit de manière non conventionnelle : la situation d’enquête n’a jamais été explicitée auprès de mes interlocuteurs, les membres du projet installés dans la capitale provinciale.</sentence>
+				<sentence xml:id="P1E17">C’est en partageant le quotidien de l’institution, depuis certaines réunions internes, aux activités officielles, en passant par des discussions informelles sur les arcanes du projet, que j’ai pu constituer ce matériau.</sentence>
+				<sentence xml:id="P1E18">La réflexion sur ces deux types d’enquête sera organisée autour de la notion d’information, considérée à la fois comme discours et comme pratique inscrite dans des interactions.</sentence>
+				<sentence xml:id="P1E19">Je présenterai les enjeux de pouvoir liés à l’accès, à la circulation ou encore à l’instrumentalisation de contenus informationnels dans mon rapport avec les institutions locales.</sentence>
+				<sentence xml:id="P1E20">Il ne s’agit pas de décrire des difficultés d’enquête en soi, mais bien de questionner la valeur heuristique de la mise en lumière de tels usages informationnels pour la construction du sens dans la recherche anthropologique.</sentence>
+				<sentence xml:id="P1E21">Aussi, la notion d’information sera également utilisée dans le sens d’une « matrice organisationnelle » (<ENAMEX type="PERSON">Morin</ENAMEX>, 2005 : 37), c’est-à-dire dans sa capacité à mettre en évidence les logiques d’acteurs, leurs réseaux d’interrelations et les logiques institutionnelles que la socio-anthropologie du développement et des politiques publiques se donne pour but d’étudier.</sentence>
+				<sentence xml:id="P1E22">Négocier l’enquête : aiguillages, blocages et détours Dans un premier temps, je proposerai de réfléchir aux différentes contraintes qui s’exercent sur le chercheur dans son accession au terrain et à la manière dont il en négocie les contours avec les différentes institutions auxquelles il est confronté.</sentence>
+				<sentence xml:id="P1E23">Les aiguillages, blocages et détournements de la recherche permettront de mettre en évidence des représentations ainsi que des pratiques institutionnelles alimentant la réflexion sur l’objet d’étude initial.</sentence>
+				<sentence xml:id="P1E24">Intercessions, filtrages et lignes tracées Si l’époque indochinoise est révolue, la capitale provinciale, siège du projet de développement et première escale de l’anthropologue, pourrait s’apparenter à un « pré-terrain » postcolonial, où le chercheur s’insère dans la réalité locale par un jeu d’assignations identitaires (<ENAMEX type="PERSON">Condominas</ENAMEX>, 1965).</sentence>
+				<sentence xml:id="P1E25">C’est un lieu de rencontres, où il se confronte à diverses représentations sur le terrain et sur la manière dont il doit l’aborder.</sentence>
+				<sentence xml:id="P1E26">C’est aussi, plus concrètement, le lieu où se négocie le partenariat tacite avec l’institution du projet.</sentence>
+				<sentence xml:id="P1E27">Peu d’étrangers « blancs » résident durablement dans la capitale provinciale (une douzaine maximum).</sentence>
+				<sentence xml:id="P1E28">Ce groupe est caractérisé par un certain entre soi, lié à la fréquentation des mêmes immeubles d’habitation « luxueux » aux yeux de beaucoup de Vietnamiens, des mêmes restaurants, des mêmes commerces.</sentence>
+				<sentence xml:id="P1E29">La majorité ne parle pas le vietnamien, bien que beaucoup disent avoir essayé au début et renoncé par la suite du fait de la difficulté de la langue et de leurs obligations professionnelles.</sentence>
+				<sentence xml:id="P1E30">Leur réseau de connaissances vietnamiennes (hors recours à un interprète dans le cadre du travail) est donc majoritairement anglophone.</sentence>
+				<sentence xml:id="P1E31">Mes premiers contacts avec des Vietnamiens étaient donc déterminés par ce réseau de connaissances.</sentence>
+				<sentence xml:id="P1E32">A l’évocation de mon idée d’enquête, ces interlocuteurs m’ont en général mise en garde contre ce projet délirant de vivre dans les districts (c’est-à-dire à la campagne).</sentence>
+				<sentence xml:id="P1E33">Mon professeur de vietnamien, par ailleurs investi dans divers projets de développement (<ENAMEX type="BUSINESS">Banque Mondiale</ENAMEX>, <ENAMEX type="PERSON">Unicef</ENAMEX>, <ENAMEX type="BUSINESS">Handicap International</ENAMEX>, etc.), a ainsi dépeint une image négative de la campagne en me recommandant de n’y faire que des allers-retours d’une journée en voiture avec chauffeur, ce que font d’ailleurs tous les expatriés, selon lui.</sentence>
+				<sentence xml:id="P1E34">« Mais, es-tu au moins déjà allée à la campagne au <ENAMEX type="LOCATION">Vietnam</ENAMEX> […] ?</sentence>
+				<sentence xml:id="P1E35">» m’a ainsi demandé une amie des membres du projet, déconcertée, « Parce que c’est très pauvre […], c’est très rudimentaire… ».</sentence>
+				<sentence xml:id="P1E36">J’ai ainsi été assignée au groupe jugé homogène des « blancs », attachés au confort moderne, aux distractions citadines, à la <ENAMEX type="ORGANISATION">santé fragile</ENAMEX>, etc. Au-delà de ces projections identitaires, ce sont aussi des représentations de la campagne nourries par certains citadins vietnamiens qui déterminent ce discours.</sentence>
+				<sentence xml:id="P1E37">Le gouvernement socialiste est d’ailleurs marqué par une représentation ambivalente du monde rural.</sentence>
+				<sentence xml:id="P1E38">La campagne est d’un côté une source de résistances au changement et subit donc une politique volontariste, notamment avec la révolution verte.</sentence>
+				<sentence xml:id="P1E39">Alors qu’en parallèle, le gouvernement glorifie les révoltes « paysannes » contre l’oppresseur étranger ou capitaliste (comme dans le musée de l’une des localités de l’enquête).</sentence>
+				<sentence xml:id="P1E40">Dans ces conditions, il fût difficile de trouver un interprète (mon vietnamien étant balbutiant) acceptant de m’accompagner pour plusieurs jours dans les districts.</sentence>
+				<sentence xml:id="P1E41">Ce sont finalement deux étudiantes, jeunes diplômées de l’université d’anglais et issues de milieux modestes, qui m’ont accompagnée tour à tour.</sentence>
+				<sentence xml:id="P1E42">La première, troisième enfant d’une grande fratrie de la campagne du centre, a été d’une grande aide pour « débloquer » l’enquête.</sentence>
+				<sentence xml:id="P1E43">Outre l’influence de ces représentations croisées sur ce que devait être la recherche de terrain, le caractère ambigu de mon accord avec le projet de développement a entraîné une négociation permanente de mon enquête.</sentence>
+				<sentence xml:id="P1E44">Mon objectif initial était essentiellement d’être soutenue (notamment auprès de l’administration vietnamienne), en échange d’une étude sur la gestion des déchets qui intéresserait les membres du projet.</sentence>
+				<sentence xml:id="P1E45">Durant ma première entrevue avec le directeur européen, qui m’avait d’emblée déclarée « freelance » et sans obligations à tenir vis-à-vis du projet, je lui ai demandé son avis pour choisir deux communes, dans les districts concernés par leurs actions : « Le district 1 semble tranquille et proche de la capitale.</sentence>
+				<sentence xml:id="P1E46">[…] Le district 4 est une très mauvaise idée parce qu&apos;il y a des problèmes.</sentence>
+				<sentence xml:id="P1E47">Mais ce ne sont pas des problèmes intéressants par rapport aux déchets, ce sont des problèmes liés au développement en général.</sentence>
+				<sentence xml:id="P1E48">Ils profitent de la présence de projets étrangers.</sentence>
+				<sentence xml:id="P1E49">[…] Ils savent communiquer et recevoir les experts, mais dans les faits ils ne font rien d&apos;intéressant.</sentence>
+				<sentence xml:id="P1E50">» (Carnet de terrain, 30.08.2011) Malgré ma curiosité pour le district 4, où des enjeux liés à la captation de l’aide au développement semblaient se dessiner, j’ai suivi la voie proposée.</sentence>
+				<sentence xml:id="P1E51">Si le district 1 est tranquille, outre son environnement bucolique, c’est que les partenaires locaux sont jugés coopérants avec le projet.</sentence>
+				<sentence xml:id="P1E52">Aussi, après quelques temps, j’ai choisi une seconde localité où certains problèmes liés à la politique du projet pouvaient émerger, notamment un conflit lié à la localisation d’un site de décharge d’ordures dont j’avais eu vent.</sentence>
+				<sentence xml:id="P1E53">Cette ville du district 2 faisait face à des enjeux proches de la première (taille équivalente, accession à un statut urbain supérieur en cours), aussi j’ai proposé au directeur une comparaison, qu’il accepta.</sentence>
+				<sentence xml:id="P1E54">Cependant il me déconseilla de m’intéresser au site de décharge.</sentence>
+				<sentence xml:id="P1E55">L’intérêt pour lui résidait dans les pratiques quotidiennes des citadins avec leurs déchets, un sujet de recherche a priori déconnecté des enjeux politiques locaux dans lesquels le projet était pris.</sentence>
+				<sentence xml:id="P1E56">Si l’indépendance est un leurre vite écarté, le compromis entre les deux parties et les concessions dans la recherche déterminent au contraire sa pérennisation.</sentence>
+				<sentence xml:id="P1E57">Aussi les membres du projet, se représentant les localités partenaires et imaginant les bénéfices qu’ils peuvent tirer d’une étude de leur « terrain », influencent-ils inévitablement l’enquête.</sentence>
+				<sentence xml:id="P1E58">Celle-ci est par ailleurs alimentée par ces nouvelles informations, qui permettent aussi au chercheur de s’orienter.</sentence>
+				<sentence xml:id="P1E59">Par la suite, il a été très fructueux d’analyser le décalage entre mes observations dans ces deux districts et les représentations des membres du projet sur leurs « facilités » ou leurs « difficultés » de coopération.</sentence>
+				<sentence xml:id="P1E60">Parcours institutionnels et réseaux d’interlocuteurs Le gouvernement vietnamien exige des chercheurs qu’ils possèdent des autorisations d’enquête délivrées par les autorités administratives compétentes.</sentence>
+				<sentence xml:id="P1E61">Certains témoignent avoir modifié leur objet de recherche dans leur quête délicate pour obtenir les « tampons rouges » (<ENAMEX type="PERSON">Scott</ENAMEX> et al., 2006 : 31 ; Turner et al. , 2011).</sentence>
+				<sentence xml:id="P1E62">Ils soulignent également la difficulté à tenir leur objectif d’empirisme quand les procédures pour organiser des rencontres sont si lourdes et que les contrôles administratifs sont si pressants (Bonnin, 2011).</sentence>
+				<sentence xml:id="P1E63">Ma recherche n’a pas échappé à ces règles.</sentence>
+				<sentence xml:id="P1E64">Mais tous ces contacts parfois embarrassants avec l’administration doivent être considérés comme des moments privilégiés d’appréhension du fonctionnement de l’Etat local au quotidien.</sentence>
+				<sentence xml:id="P1E65">Un des principaux obstacles de mon accès à l’information réside dans mes difficultés à obtenir une lettre de recommandation, document nécessaire pour effectuer une recherche en règle.</sentence>
+				<sentence xml:id="P1E66">Elle devait m’être délivrée par l’administration provinciale associée à la coopération européenne, représentée par le vice-directeur vietnamien de la cellule de pilotage du projet.</sentence>
+				<sentence xml:id="P1E67">A chaque pas en avant, la procédure d’obtention se complexifiait car le vice-directeur déclarait certains documents non conformes, demandait de nouveaux justificatifs et de nouvelles précisions sur mon projet.</sentence>
+				<sentence xml:id="P1E68">Les autorités vietnamiennes ont parallèlement lancé une enquête, apparemment d’usage pour tout étranger prétendant travailler au <ENAMEX type="LOCATION">Vietnam</ENAMEX>, sur ma personne.</sentence>
+				<sentence xml:id="P1E69">Sans la lettre, les fonctionnaires du projet m’ont d’abord expliqué que je n’avais pas le droit de me rendre dans les districts.</sentence>
+				<sentence xml:id="P1E70">Faute de temps, j’ai décidé de commencer l’enquête sans ce document, sillonnant les communes à la rencontre des habitants et cherchant à obtenir quelques rendez-vous avec des petits fonctionnaires.</sentence>
+				<sentence xml:id="P1E71">Dans la commune du district 2, les débuts de l’enquête ont été particulièrement laborieux.</sentence>
+				<sentence xml:id="P1E72">Dès l’enregistrement auprès des autorités de police (procédure obligatoire pour tout étranger), les officiers voulaient que je parte de la commune, avant finalement de m’autoriser à séjourner à l’hôtel.</sentence>
+				<sentence xml:id="P1E73">C’est en négociant âprement que mon interprète et moi avons eu l’autorisation de rester chez l’habitant.</sentence>
+				<sentence xml:id="P1E74">Notre deuxième séjour nous permit de découvrir qu’il ne s’agissait que d’un répit temporaire car notre logeuse initiale refusa tout contact avec nous, arguant que la police était venue la questionner chez elle après notre départ.</sentence>
+				<sentence xml:id="P1E75">Après avoir trouvé une nouvelle hôtesse, nous sommes allées déclarer notre présence à la police.</sentence>
+				<sentence xml:id="P1E76">La police nous offrit une seule nuit de répit avant de venir enquêter chez notre nouvelle logeuse en notre absence.</sentence>
+				<sentence xml:id="P1E77">De retour d’une journée de travail, elle nous somma de quitter sa maison, inquiète d’être mêlée à nos activités et effrayée par le policier venu l’interroger : « j’ai pensé qu’il s’agissait d’un crime !</sentence>
+				<sentence xml:id="P1E78">».</sentence>
+				<sentence xml:id="P1E79">Il est difficile de définir l’événement comme un contrôle de routine ou un traitement spécial réservé à un enquêteur non désiré.</sentence>
+				<sentence xml:id="P1E80">La règle est d’ailleurs elle-même sujette à interprétations : certains Vietnamiens sont persuadés qu’héberger des étrangers est formellement interdit, quand d’autres les accueillent volontiers.</sentence>
+				<sentence xml:id="P1E81">Tant que la police locale est mise au courant et qu’elle tolère la pratique, il ne semble pas y avoir de problème.</sentence>
+				<sentence xml:id="P1E82">Cependant, dans un cas d’asymétrie dans l’information sur le droit en vigueur et de variations dans l’application de la règle, contrôles et intimidations policières risquent d’être plus fréquents et de mettre un sérieux frein à la recherche.</sentence>
+				<sentence xml:id="P1E83">Si l’institution bureaucratique dans son ensemble peut être vue comme un obstacle, notamment lorsqu’elle se double de contrôles policiers, dans le quotidien de l’enquête l’ethnographe interagit avec des personnes situées au sein d’un système réticulaire régi par des mécanismes de fermeture et d’ouverture.</sentence>
+				<sentence xml:id="P1E84">Des gatekeepers « directement ou indirectement, facilitent ou entravent l’accès des chercheurs à des ressources telles que des personnes, des institutions, des informations et des éléments de logistique.</sentence>
+				<sentence xml:id="P1E85">» (<ENAMEX type="BUSINESS">Bonnin</ENAMEX>, 2011 : 12) Dans ce réseau constitué, l’ethnographe navigue à vue et, de proche en proche, se voit faciliter des rencontres ou, au contraire, se « ferme » une partie du terrain.</sentence>
+				<sentence xml:id="P1E86">Si certaines personnes ont fait rempart à mon enquête, comme le vice-directeur du projet faisant des difficultés pour me délivrer l’autorisation de recherche, d’autres l’ont soudainement facilitée.</sentence>
+				<sentence xml:id="P1E87">Notre dernière logeuse dans la seconde commune fait partie de ces gateopeners providentiels, dans un contexte de contrôle policier très marqué.</sentence>
+				<sentence xml:id="P1E88">C’est à l’occasion de multiples visites au <ENAMEX type="ORGANISATION">Comité Populaire</ENAMEX> de la commune que nous avons rencontré cette jeune fonctionnaire en charge de questions agricoles.</sentence>
+				<sentence xml:id="P1E89">En sympathisant, elle nous a proposé de nous loger.</sentence>
+				<sentence xml:id="P1E90">Du fait des multiples déboires avec nos précédentes hôtesses, je craignais que la police ne vienne l’intimider.</sentence>
+				<sentence xml:id="P1E91">Elle m’assura qu’il n’y avait rien à craindre car elle connaissait les fonctionnaires de police du commissariat communal.</sentence>
+				<sentence xml:id="P1E92">Etant elle-même fonctionnaire communale, de père ancien fonctionnaire communal et désormais représentant de quartier, elle semblait jouir des relations qui nous manquaient jusque-là.</sentence>
+				<sentence xml:id="P1E93">A l’inverse, l’enquête dans la première commune, qui se déroulait sans encombre depuis le début, s’est soudainement « refermée ».</sentence>
+				<sentence xml:id="P1E94">A chaque visite au commissariat pour m’enregistrer, je n’ai eu aucun problème sauf lors de mon dernier séjour, où j’ai été convoquée par un officier supérieur : Le policier gradé nous explique que des gens sont venus se plaindre à lui de mes interviews.</sentence>
+				<sentence xml:id="P1E95">On lui a dit que les questions que je pose relèvent d’ « affaires nationales » et que mes interlocuteurs se sont sentis en danger de répondre.</sentence>
+				<sentence xml:id="P1E96">« […] Je devrais m’en tenir à des questions strictement liées aux déchets et à l’environnement et ne pas poser de questions sur la population des zones résidentielles.</sentence>
+				<sentence xml:id="P1E97">Ces informations, je dois les lui demander et il jugera de mon droit à les avoir.</sentence>
+				<sentence xml:id="P1E98">[…] Ce n’est pas normal de ne pas passer par les autorités et d’aller directement dans les zones résidentielles.</sentence>
+				<sentence xml:id="P1E99">» (Carnet de terrain, 28.11.2011) Lors d’une réunion entre fonctionnaires locaux, dont la police communale et les représentants de quartier, un représentant aura évoqué mon enquête.</sentence>
+				<sentence xml:id="P1E100">Ne connaissant pas les détails de mes agissements, le policier a dû se sentir remis en cause dans sa capacité de contrôle.</sentence>
+				<sentence xml:id="P1E101">La convocation suivante est restée courtoise mais le résultat a été immédiat.</sentence>
+				<sentence xml:id="P1E102">De nombreuses rencontres ont soudainement été annulées : « J’ai entendu dire par d’autres représentants des unions que vos questions n’étaient pas agréables donc je ne veux pas vous rencontrer », répondit un fonctionnaire au téléphone.</sentence>
+				<sentence xml:id="P1E103">Un représentant de quartier, jusque-là accueillant et conciliant, vint également me dire qu’il avait eu des ennuis et qu’il lui était désormais interdit de me faire participer à quelque événement que ce soit.</sentence>
+				<sentence xml:id="P1E104">La sensation de « terrain facile » que j’avais eue jusque-là correspondait au temps nécessaire pour faire remonter les informations depuis les derniers échelons jusqu’aux autorités.</sentence>
+				<sentence xml:id="P1E105">Ma présence devenait envahissante, le réseau de mes contacts s’est alors grippé, comme un mécanisme de fermeture à retardement.</sentence>
+				<sentence xml:id="P1E106">Énoncer, dénoncer, déformer Si le contrôle gouvernemental s’exerce sur le chercheur durant son enquête, il s’exerce aussi sur les Vietnamiens et en premier lieu sur leur discours.</sentence>
+				<sentence xml:id="P1E107">Dans un contexte où le discours officiel construit la société idéale, la mise à mal du consensus est dangereuse pour la reproduction du régime.</sentence>
+				<sentence xml:id="P1E108">Avant même la critique ouverte des autorités, l’énonciation des problèmes, une « parole créatrice, qui fait exister ce qu’elle énonce », fait émerger des lignes de fractures dans un monde social fantasmé (<ENAMEX type="PERSON">Bourdieu</ENAMEX>, 1982 : 21).</sentence>
+				<sentence xml:id="P1E109">La forme classique du contrôle latent exercé sur la parole est la neutralisation du discours : afin d’éviter d’énoncer des problèmes liés aux ordures, notamment devant un étranger, mes interlocuteurs ont souvent eu recours à l’idiome « cung duoc », signifiant « ça va », « rien à signaler », quand bien même la collecte dysfonctionnait gravement dans leur quartier.</sentence>
+				<sentence xml:id="P1E110">Devant une parole plus déliée, le contrôle peut être assuré par un tiers comme lorsqu’un habitué du café où j’enquêtais sermonna mon interlocutrice évoquant la corruption des fonctionnaires : « tu parles trop, on va t’emmener en prison !</sentence>
+				<sentence xml:id="P1E111">».</sentence>
+				<sentence xml:id="P1E112">Beaucoup de mes entretiens avec des fonctionnaires se sont également déroulés en la présence d’un « chaperon », issu d’un autre service et mandaté pour rapporter aux supérieurs les propos tenus.</sentence>
+				<sentence xml:id="P1E113">Le résultat en est une parole convenue : les fonctionnaires comme certains habitants ont tendance à dresser « un portrait des situations comme les choses doivent être plutôt que comme elles sont réellement » (<ENAMEX type="PERSON">Scott</ENAMEX> et al., 2006 : 33).</sentence>
+				<sentence xml:id="P1E114">Du fait de la prise de risque que suppose le fait même de décrire les problèmes liés à la gestion des déchets, les stratégies de prise de parole sont marquées par des détournements.</sentence>
+				<sentence xml:id="P1E115">C’est notamment l’usage de métaphores ou de références au passé national qui permettent de donner de l’aplomb et une légitimité à un discours dénonciateur : « Certains fonctionnaires semblent avoir oublié la camaraderie de la guerre » expliqua un professeur de littérature évoquant la richesse accumulée du président de la province.</sentence>
+				<sentence xml:id="P1E116">Certains lieux marqués par l’informalité, comme les cafés, sont par ailleurs propices à la libération de la parole.</sentence>
+				<sentence xml:id="P1E117">Ils permettent de jouer sur différentes identités sociales.</sentence>
+				<sentence xml:id="P1E118">Au café, M. <ENAMEX type="PERSON">X n</ENAMEX>’est plus haut fonctionnaire du ministère de l’environnement risquant la trahison nationale, mais « expert environnemental » indépendant : Par courriel : « Si vous n’avez pas de lettre de recommandation, nous pouvons nous rencontrer dans un café.</sentence>
+				<sentence xml:id="P1E119">[…] Mais je vous rencontrerai en tant qu’expert environnemental.</sentence>
+				<sentence xml:id="P1E120">» Au café : « […] Ici, nous sommes dans les divisions de gestion, le gouvernement.</sentence>
+				<sentence xml:id="P1E121">Peut-être que si vous aviez demandé à rencontrer quelqu’un de ces divisions-là (il montre la colonne de droite sur l’organigramme du ministère), cela aurait été plus facile.</sentence>
+				<sentence xml:id="P1E122">C’est parce que ce sont des centres de recherche.</sentence>
+				<sentence xml:id="P1E123">Ils sont beaucoup plus accessibles.</sentence>
+				<sentence xml:id="P1E124">» (Il rit) […] « Est-ce alors un problème que nous nous rencontrions dans un café sans cette lettre ?</sentence>
+				<sentence xml:id="P1E125">» « Non, non.</sentence>
+				<sentence xml:id="P1E126">C’est la même chose.</sentence>
+				<sentence xml:id="P1E127">C’est juste que pour rentrer dans les bureaux il aurait fallu que je demande la permission à mon supérieur.</sentence>
+				<sentence xml:id="P1E128">Et puis la salle de réunion était prise cet après-midi.</sentence>
+				<sentence xml:id="P1E129">[…] J’aurais demandé la permission, réservé la salle de réunion et ensuite, j’aurais dû faire un rapport à mon supérieur sur ce dont nous aurions parlé.</sentence>
+				<sentence xml:id="P1E130">Il m’aurait demandé des détails sur la discussion.</sentence>
+				<sentence xml:id="P1E131">Mais ce que je dis maintenant, c’est la même chose que ce que j’aurais dit au bureau.</sentence>
+				<sentence xml:id="P1E132">C’est juste plus facile.</sentence>
+				<sentence xml:id="P1E133">[…] » (<ENAMEX type="BUSINESS">Carnet</ENAMEX> de terrain, 11.11.2011) Quoi qu’il en dise, l’entretien avec M. X aurait été différent dans la salle de réunion, avec la présence éventuelle d’un chaperon.</sentence>
+				<sentence xml:id="P1E134">Ce que lui juge être un contenu informatif (sur la législation environnementale par exemple) peut être identique au café et au bureau.</sentence>
+				<sentence xml:id="P1E135">Mais c’est dans ses détours de langage et ses plaisanteries a priori anodines que l’on peut découvrir de nouvelles informations sur l’organisation institutionnelle : les chercheurs sont accessibles, les gestionnaires non, et ce probablement parce qu’ils manipulent le budget.</sentence>
+				<sentence xml:id="P1E136">C’est aussi à cela que s’évalue la transparence des comptes et de la prise de décision.</sentence>
+				<sentence xml:id="P1E137">Parmi les contraintes qui s’exercent sur la parole des interlocuteurs du chercheur, la présence d’un interprète occupe une place particulière qu’il convient d’analyser plus avant.</sentence>
+				<sentence xml:id="P1E138">Au <ENAMEX type="LOCATION">Vietnam</ENAMEX>, le recours à des assistants de recherche est parfois imposé par les institutions locales, même dans le cas où le chercheur maîtrise suffisamment la langue locale pour conduire son enquête seul (<ENAMEX type="PERSON">Turner</ENAMEX>, 2013).</sentence>
+				<sentence xml:id="P1E139">Dans mon cas, c’est plutôt la faible maîtrise de la langue qui a motivé le recours à deux interprètes successives.</sentence>
+				<sentence xml:id="P1E140">La traduction n’est évidemment pas transparente et le rôle primordial de mes interprètes dans la production de l’information mérite d’être analysé.</sentence>
+				<sentence xml:id="P1E141">Leur statut a oscillé entre celui de l’assistante de recherche stimulante, s’improvisant traductrice culturelle, et le rôle d’un inquisiteur infiltré, contrôlant le contenu des entretiens.</sentence>
+				<sentence xml:id="P1E142">Se réappropriant la recherche afin de mener les entretiens, mes interprètes se sont focalisées sur une définition très restrictive de mon étude, autour de questions selon elles « strictement liées » aux déchets et à l’environnement : les pratiques quotidiennes des habitants avec les ordures, leur perception de l’environnement.</sentence>
+				<sentence xml:id="P1E143">Quand il s’agissait d’étudier les politiques de gestion, le fonctionnement de l’administration, nous étions déjà « hors cadre ».</sentence>
+				<sentence xml:id="P1E144">Or, il est difficile de dissocier la question des déchets des politiques publiques associées et donc des problèmes financiers, institutionnels ou politiques.</sentence>
+				<sentence xml:id="P1E145">A l’image d’Anne Doquet en pays Dogon, qui s’est vue « accusée, sous le mode d’une plaisanterie sérieuse, d’arracher stratégiquement les informations au moyen de questions innocentes », il m’a fallu constamment expliquer l’intérêt de mes questions pour ma recherche (Doquet, 2007 : 213).</sentence>
+				<sentence xml:id="P1E146">Durant une réunion de travail avec d’autres étudiantes chargées de retraduire des enregistrements, l’une d’elle manifesta sa désapprobation vis-à-vis de mes méthodes, ne comprenant pas pourquoi j’interviewais des fonctionnaires alors que je travaillais sur des questions environnementales.</sentence>
+				<sentence xml:id="P1E147">L’ « espionite » et la suspicion envers les étrangers auraient donc contaminé jusqu’aux jeunes étudiantes (<ENAMEX type="PERSON">Dinh Trong Hieu</ENAMEX>, 1986).</sentence>
+				<sentence xml:id="P1E148">Durant un entretien, ma première interprète refusa également de traduire les paroles d’un de nos interlocuteurs qui évoquait des problèmes de corruption et de mauvaise gestion publique, prétextant que cela n’avait rien à voir avec la question des déchets.</sentence>
+				<sentence xml:id="P1E149">Elle le fît a posteriori du fait de mon insistance et de notre complicité naissante, ce qui aboutit finalement à des discussions très riches au sujet des carrières de fonctionnaires ou encore de la corruption des policiers.</sentence>
+				<sentence xml:id="P1E150">Durant un entretien au café, ma seconde interprète s’est vue faire la leçon par la présidente de l’<ENAMEX type="ORGANISATION">Union des Femmes</ENAMEX> de la première commune, accompagnée d’un collègue du département de la culture.</sentence>
+				<sentence xml:id="P1E151">Tout en lui demandant de ne pas traduire ses propos, elle lui a expliqué que le rôle d’une jeune <ENAMEX type="BUSINESS">Vietnamienne</ENAMEX> était de montrer « les belles choses » de son pays aux étrangers et qu’au lieu de m’accompagner sur des sites de décharge d’ordures, elle devait me montrer le musée et les chutes d’eau, les deux grands lieux touristiques des environs.</sentence>
+				<sentence xml:id="P1E152">En discutant de cet entretien laborieux par la suite, mon interprète me confirma que ces propos reflétaient en substance les consignes générales données aux jeunes Vietnamiens à l’école.</sentence>
+				<sentence xml:id="P1E153">Elle m’a affirmé avoir trouvé cette femme tout à fait désagréable et la discussion qui s’ensuivit me permit de connaître sa perception critique des rapports avec les fonctionnaires au quotidien.</sentence>
+				<sentence xml:id="P1E154">A l’issue de cette analyse de l’enquête conventionnelle, on voit comment les errances du chercheur dans son accès à l’information renseignent sur le fonctionnement des institutions et sur les représentations du monde social des différents acteurs.</sentence>
+				<sentence xml:id="P1E155">Si le contexte est a priori consensuel, après examen, des lignes de fractures émergent et font entrevoir la latitude des acteurs face au système bureaucratique et leur pouvoir (certes relatif) de contestation.</sentence>
+				<sentence xml:id="P1E156">Écouter et se taire : l’enquête au sein d’un projet bilatéral Au vu des lenteurs de l’enquête conventionnelle, j’ai cherché à participer aux activités du projet qui m’étaient accessibles, afin de développer ma connaissance sur la gestion des déchets et mon réseau d’interlocuteurs.</sentence>
+				<sentence xml:id="P1E157">Je me suis ainsi insérée dans l’institution bilatérale, partageant le quotidien des employés, développant une forme d’intimité avec certains des membres du projet et cultivant un « état de veille ethnographique » (<ENAMEX type="PERSON">Bouju</ENAMEX>, 2007 : 141).</sentence>
+				<sentence xml:id="P1E158">C’est par ce point de vue, au départ assez extérieur puis finalement impliqué, que j’ai pu comprendre le fonctionnement de cette institution, notamment à travers les usages stratégiques de l’information.</sentence>
+				<sentence xml:id="P1E159">Une alliance institutionnelle conflictuelle Le projet repose sur une alliance bilatérale entre le gouvernement vietnamien, représenté par la <ENAMEX type="ORGANISATION">Division de Planification et d’Investissement du Comité Populaire de la province</ENAMEX>, et un gouvernement européen, représenté par l’organisme de coopération.</sentence>
+				<sentence xml:id="P1E160">Ces deux organismes gouvernementaux, résilients de par leurs traditions institutionnelles sédimentées, se rencontrent dans une petite équipe coordonnant des activités avec divers partenaires locaux.</sentence>
+				<sentence xml:id="P1E161">Le projet vise essentiellement à développer des infrastructures, mais une experte et deux assistantes travaillent également sur la « conscientisation » et le « développement des capacités » des acteurs locaux (le « soft component »).</sentence>
+				<sentence xml:id="P1E162">Dans cette cellule de pilotage, seuls le directeur du projet, un ingénieur d’environ soixante ans, et les deux assistantes, âgées de vingt-cinq à trente ans, sont des européens expatriés.</sentence>
+				<sentence xml:id="P1E163">Dans un premier temps, il est nécessaire de décrire l’administration provinciale qui accueille les locaux de la cellule de pilotage du projet afin d’en comprendre la mécanique institutionnelle.</sentence>
+				<sentence xml:id="P1E164">Au sein de la <ENAMEX type="ORGANISATION">Division de Planification et d’Investissement</ENAMEX> (DPI), les rapports de pouvoir hiérarchiques sont prégnants, comme en témoigne cette description d’une réception organisée dans la cour centrale suite à un tournoi de badminton, le jour de la fête d’indépendance du <ENAMEX type="LOCATION">Vietnam</ENAMEX> : […] Plusieurs tables rondes sont installées au milieu de la cour.</sentence>
+				<sentence xml:id="P1E165">Je me retrouve avec le directeur, sa compagne, une assistante, ainsi qu’une collègue d’un autre service et la traductrice du directeur, à la table des deux grands « patrons » : le président du projet et le président de la DPI.</sentence>
+				<sentence xml:id="P1E166">[…] Le plus haut placé est manchot.</sentence>
+				<sentence xml:id="P1E167">Le directeur m&apos;explique les rudiments des règles pour le repas.</sentence>
+				<sentence xml:id="P1E168">[…] Il a l&apos;air de rechigner à participer à cette réception, mais c&apos;est une obligation […].</sentence>
+				<sentence xml:id="P1E169">Le principe est que l&apos;on mange et que l&apos;on boit ensemble, tout en respectant la hiérarchie.</sentence>
+				<sentence xml:id="P1E170">Aux autres tables, on trinque souvent : « Môt hai ba, Yo !</sentence>
+				<sentence xml:id="P1E171">» Et tous enfilent leur verre d&apos;une traite […].</sentence>
+				<sentence xml:id="P1E172">Etant placés à la table des « patrons », nous recevons au compte-goutte la visite des convives des autres tables.</sentence>
+				<sentence xml:id="P1E173">Ils viennent trinquer par dessous avec les « patrons » et trinquent d&apos;égal à égal avec le reste de la tablée.</sentence>
+				<sentence xml:id="P1E174">Le directeur me conseille judicieusement de ne pas boire trop au début.</sentence>
+				<sentence xml:id="P1E175">Chaque visiteur se doit de finir son verre d&apos;une traite et de le montrer au « patron » qui fait mine de s&apos;en fiche : il regarde d&apos;un œil distrait.</sentence>
+				<sentence xml:id="P1E176">[…] Parmi les convives qui viennent saluer leurs supérieurs, une jeune femme s&apos;approche avec un verre de bière plein.</sentence>
+				<sentence xml:id="P1E177">Visiblement intimidée, elle trinque avec les deux « patrons », boit son verre de bière d&apos;une traite après avoir fait de gros yeux et reprit son souffle.</sentence>
+				<sentence xml:id="P1E178">C&apos;est un peu laborieux.</sentence>
+				<sentence xml:id="P1E179">On sent bien qu&apos;il s&apos;agit d&apos;une obligation.</sentence>
+				<sentence xml:id="P1E180">Tout en souriant timidement, elle montre ensuite à un des supérieurs qu&apos;elle a bien fini son verre.</sentence>
+				<sentence xml:id="P1E181">Il lui fait un geste voulant probablement dire « d&apos;accord, c&apos;est bon » assez nonchalamment.</sentence>
+				<sentence xml:id="P1E182">Elle attend l&apos;aval de l&apos;autre supérieur, qui ne s&apos;intéresse pas à elle.</sentence>
+				<sentence xml:id="P1E183">Il lui faut visiblement attendre le contrôle pour pouvoir quitter la table […].</sentence>
+				<sentence xml:id="P1E184">Finalement, le second « patron » lui fait signe et elle s&apos;en va.</sentence>
+				<sentence xml:id="P1E185">Une autre scène marquante est celle de l’assistante étrangère, sollicitée par le supérieur manchot pour lui décortiquer un quartier de pomélo en fin de repas.</sentence>
+				<sentence xml:id="P1E186">Après lui avoir fait la cour en lui parlant de mariage et de grande maison […], ce qui est apparemment habituel, il s&apos;adonne à un jeu qui n&apos;est pas du tout du goût du directeur.</sentence>
+				<sentence xml:id="P1E187">Celui-ci regarde la scène avec dégoût en me disant « oh, c&apos;est tellement bizarre...</sentence>
+				<sentence xml:id="P1E188">».</sentence>
+				<sentence xml:id="P1E189">En effet, le manchot veut que l’assistante lui donne la béquée : elle doit porter le quartier de pomélo dépiauté à sa bouche, ce qu&apos;elle rechigne à faire.</sentence>
+				<sentence xml:id="P1E190">Il insiste.</sentence>
+				<sentence xml:id="P1E191">Elle rit, gênée, mais se résout à porter le quartier de pomélo à la bouche du manchot, un brin dégoûtée.</sentence>
+				<sentence xml:id="P1E192">Tous les convives observent la scène entre curiosité, rire et gêne.</sentence>
+				<sentence xml:id="P1E193">La pluie tombe soudainement et le directeur dit à sa compagne : « je crois que c&apos;est le bon moment pour que cela se termine ».</sentence>
+				<sentence xml:id="P1E194">Ils partent en catimini.</sentence>
+				<sentence xml:id="P1E195">[…] » (Carnet de terrain, 31.08.2011) La scène est assez représentative des autres repas de travail avec les « patrons » auxquels j’ai pu assister et elle est symptomatique du fonctionnement de la <ENAMEX type="BUSINESS">DPI</ENAMEX>.</sentence>
+				<sentence xml:id="P1E196">Le rôle central du président de la <ENAMEX type="BUSINESS">DPI</ENAMEX> et du président du projet (désignés par le terme de « patrons ») et leur liberté d’action en font des personnages à la fois respectés, craints et parfois raillés (certaines de leurs pratiques étant à la limite de la décence).</sentence>
+				<sentence xml:id="P1E197">Une des assistantes du projet, qui est incommodée par la bière, s’oblige d’ailleurs à en consommer dans les repas officiels alors qu’elle ne boit que de l’eau dans les repas amicaux.</sentence>
+				<sentence xml:id="P1E198">Il s’agit bien de respecter la norme du service administratif.</sentence>
+				<sentence xml:id="P1E199">La mise en scène d’un repas officiel illustre par de nombreux aspects la hiérarchie institutionnelle tout comme les rapports de genre institués.</sentence>
+				<sentence xml:id="P1E200">Si la hiérarchie est stricte dans l’administration vietnamienne, au sein de la cellule de pilotage, les rapports de forces sont bouleversés par les pratiques de contournements de différents acteurs.</sentence>
+				<sentence xml:id="P1E201">Tout d’abord, deux hiérarchies parallèles existent dans le projet : d’un côté le président de la <ENAMEX type="ORGANISATION">DPI</ENAMEX>, le président du projet, le vice-directeur du projet, le comptable, sa secrétaire et les ingénieurs techniques sont tous des fonctionnaires vietnamiens ; de l’autre, le directeur étranger, sa traductrice, l’experte vietnamienne et les deux assistantes sont employés par le projet et donc payés par la coopération.</sentence>
+				<sentence xml:id="P1E202">Outre une juxtaposition de grilles de salaire très hétérogènes provocant des jalousies, les autorités devant qui ces employés sont responsables sont différentes.</sentence>
+				<sentence xml:id="P1E203">Aussi, les relations de travail franchissant cette frontière interne sont-elles en général conflictuelles.</sentence>
+				<sentence xml:id="P1E204">Le statut des assistantes est plus que représentatif du bouleversement hiérarchique.</sentence>
+				<sentence xml:id="P1E205">Dernier maillon de la chaîne sur l’organigramme théorique de l’institution, elles sont mieux rémunérées que l’experte pour qui elles travaillent et outrepassent facilement les échelons hiérarchiques pour défendre leurs points de vue.</sentence>
+				<sentence xml:id="P1E206">Elles sont toutes deux en conflits avec le vice-directeur.</sentence>
+				<sentence xml:id="P1E207">Subordonné au président du projet et pressé par les injonctions du directeur expatrié, cet ingénieur vietnamien use abondamment de son pouvoir d’obstruction, probablement afin de s’affirmer dans l’institution.</sentence>
+				<sentence xml:id="P1E208">Les assistantes cherchent donc souvent à le court-circuiter pour accélérer les procédures.</sentence>
+				<sentence xml:id="P1E209">Suite à la proposition d’une assistante avec laquelle il était en désaccord, le vice-directeur la renvoya un jour à son statut subalterne : « Vous n’êtes pas en position de poser cette question ».</sentence>
+				<sentence xml:id="P1E210">Formel sur son refus, il lui proposa de soutenir sa proposition au président, son supérieur direct.</sentence>
+				<sentence xml:id="P1E211">Provoquée, l’assistante le fit et obtint gain de cause.</sentence>
+				<sentence xml:id="P1E212">Depuis, les assistantes et le vice-directeur, bien qu’amicaux dans les couloirs, s’opposent presque systématiquement dans les réunions.</sentence>
+				<sentence xml:id="P1E213">C’est ce même vice-directeur qui devait me délivrer une lettre de recommandation en plaidant mon dossier auprès du président du projet.</sentence>
+				<sentence xml:id="P1E214">Or il me semble que j’ai été assimilée aux deux assistantes du fait de nos habitudes communes, de notre ressemblance physique et de ma complicité avec l’une d’elle (qui m’hébergeait gracieusement lors de mes séjours à la capitale provinciale).</sentence>
+				<sentence xml:id="P1E215">J’ai donc été « encliquée » (<ENAMEX type="PERSON">Olivier de Sardan</ENAMEX>, 2008) et, dans la géographie institutionnelle, je pourrais situer mon point d’ancrage aisément.</sentence>
+				<sentence xml:id="P1E216">Outre mon statut d’enquêtrice suspecte, il me semble alors que certains conflits institués se sont quasiment mécaniquement reportés sur moi, gênant notamment mes démarches administratives.</sentence>
+				<sentence xml:id="P1E217">Pratiques informationnelles et tabous de l’institution Pour autant, cette réalité conflictuelle ne peut pas être le seul principe organisationnel à l’œuvre, car la reproduction de l’institution dans le temps serait dans ce cas menacée d’éclatement.</sentence>
+				<sentence xml:id="P1E218">Il devient alors nécessaire de comprendre le projet de développement comme une institution combinant un principe de conflit et un principe de stabilité.</sentence>
+				<sentence xml:id="P1E219">Cela se traduit dans les pratiques quotidiennes des acteurs qui, comme dans toute institution, « veulent que la communauté survive sans pour autant abandonner leur autonomie individuelle » (<ENAMEX type="PERSON">Douglas</ENAMEX>, 2004 : 75).</sentence>
+				<sentence xml:id="P1E220">Un aspect de ce principe de stabilité institutionnelle, ainsi que j’ai pu l’observer, se trouve dans l’usage stratégique de l’information et de la censure par les membres du projet.</sentence>
+				<sentence xml:id="P1E221">Malgré certains conflits provinciaux, le directeur se doit d’être « transparent » dans sa gestion locale du projet en informant le siège de la coopération installé à <ENAMEX type="LOCATION">Hanoï</ENAMEX>.</sentence>
+				<sentence xml:id="P1E222">Il s’autorise cependant à ne pas évoquer des dissensions internes à l’équipe lorsqu’il considère que le siège ne doit pas en avoir vent.</sentence>
+				<sentence xml:id="P1E223">Avant une réunion à <ENAMEX type="LOCATION">Hanoï</ENAMEX>, une assistante demande si la question actuellement en débat d’un voyage d’étude pour les fonctionnaires locaux sera évoquée : « Non, non, dit le directeur, pas un mot du voyage d’études à <ENAMEX type="LOCATION">Hanoï</ENAMEX>.</sentence>
+				<sentence xml:id="P1E224">C’est quelque chose entre nous et la province !</sentence>
+				<sentence xml:id="P1E225">Pas besoin que le siège soit au courant ».</sentence>
+				<sentence xml:id="P1E226">Le directeur du projet a jugé bon de taire la question soulevée et de réserver sa résolution à une discussion interne à l’équipe provinciale.</sentence>
+				<sentence xml:id="P1E227">A l’inverse, lorsqu’il juge que le soutien du siège peut être bénéfique à la résolution d’une question locale, le directeur fait remonter des informations à ses supérieurs.</sentence>
+				<sentence xml:id="P1E228">C’est le cas de la question des sites de décharge qui engendre des conflits entre communes.</sentence>
+				<sentence xml:id="P1E229">La province veut attribuer un site de décharge à chaque district pour contenter tout le monde.</sentence>
+				<sentence xml:id="P1E230">Le directeur, convaincu que c’est une erreur, aimerait que le siège de la coopération fasse pression, par le biais de l’ambassadeur lui-même et par répercussion sur toute la pyramide administrative vietnamienne, pour influencer la décision provinciale.</sentence>
+				<sentence xml:id="P1E231">Cependant, à <ENAMEX type="LOCATION">Hanoï</ENAMEX>, on lui a dit « pas de vagues ».</sentence>
+				<sentence xml:id="P1E232">Le choix de l’interlocuteur et du circuit de l’information est pensé en amont pour améliorer l’efficacité de l’action.</sentence>
+				<sentence xml:id="P1E233">Tout n’est pourtant pas bon à dire et tout interlocuteur ne doit pas être contacté, comme en témoigne l’injonction au silence du siège.</sentence>
+				<sentence xml:id="P1E234">De manière générale, l’information est une ressource pour défendre des intérêts personnels ou les intérêts d’une faction.</sentence>
+				<sentence xml:id="P1E235">Au siège national de la coopération, une fonctionnaire vietnamienne, chargée de la supervision du projet provincial, s’immisce dans les affaires locales en voulant imposer le recrutement d’un expert qui n’a pas satisfait les membres du projet sur le papier.</sentence>
+				<sentence xml:id="P1E236">Jouant des divisions internes pour imposer son choix, elle argue que les Vietnamiens ont été spoliés dans la procédure et qu’ils n’auraient pas été informés par les expatriés du choix final.</sentence>
+				<sentence xml:id="P1E237">Jugeant que cette femme a détruit un lien de confiance ténu entre les deux parties du projet, la réaction du directeur est sans appel : « Elle travaille contre nous !</sentence>
+				<sentence xml:id="P1E238">Elle ne travaille pas pour les intérêts de la coopération mais pour les intérêts vietnamiens.</sentence>
+				<sentence xml:id="P1E239">Et cette fois-ci, je vais me venger.</sentence>
+				<sentence xml:id="P1E240">[…] Je peux la faire plonger.</sentence>
+				<sentence xml:id="P1E241">J’ai deux dossiers sur elle que je n’ai pas encore utilisés.</sentence>
+				<sentence xml:id="P1E242">Il y a beaucoup de choses à dire.</sentence>
+				<sentence xml:id="P1E243">Y compris sur des affaires de corruption.</sentence>
+				<sentence xml:id="P1E244">» (<ENAMEX type="BUSINESS">Carnet</ENAMEX> de terrain, 27.10.2011) Sous couvert d’une dénonciation reposant sur des valeurs – la lutte contre la corruption –, qui ne sont en réalité mobilisées que de manière stratégique, la principale ligne de fracture dans l’alliance bilatérale en question n’est pas horizontale (entre le local et le siège), mais bien verticale et diplomatique.</sentence>
+				<sentence xml:id="P1E245">Ce sont des intérêts nationaux qui sont mis en conflits : « nous » et les Vietnamiens.</sentence>
+				<sentence xml:id="P1E246">Au vu des enjeux internes à la mécanique du projet, la cohésion de l’équipe est en permanence sur la sellette.</sentence>
+				<sentence xml:id="P1E247">Cette instabilité institutionnelle est à mon sens compensée par une forme de censure que je qualifie de stratégique : en interne, l’information peut faire l’objet de diverses manipulations mais, vis-à-vis de l’extérieur, il faut témoigner d’une union sans faille, dont l’apparence est indispensable à la pérennité du projet.</sentence>
+				<sentence xml:id="P1E248">On peut considérer que la diffusion de l’information répond à une logique de cercles concentriques déterminant le degré de confidence dont les différents acteurs internes, partenaires et externes bénéficient.</sentence>
+				<sentence xml:id="P1E249">Les journalistes, partenaires convoités du projet lorsqu’il faut donner de la visibilité aux actions, se changent en indésirables gêneurs dans les cas difficiles, comme lors de la restitution de l’évaluation intermédiaire du projet, faite par une équipe internationale d’évaluateurs indépendants dans un grand hôtel public de la capitale provinciale : A la pause, le directeur embarrassé arrive auprès du consultant ayant présenté l’évaluation ainsi qu’un de ses collègues avec qui nous discutions l’assistante et moi.</sentence>
+				<sentence xml:id="P1E250">« Nous avons un problème.</sentence>
+				<sentence xml:id="P1E251">Il y a un journaliste dans l’audience.</sentence>
+				<sentence xml:id="P1E252">Nous ne savons pas qui l’a invité, comment il est arrivé là.</sentence>
+				<sentence xml:id="P1E253">J’imagine que ce n’est pas vous, hein (sourire gêné) ?</sentence>
+				<sentence xml:id="P1E254">Les Vietnamiens sont très mécontents.</sentence>
+				<sentence xml:id="P1E255">Parce que ce n’est pas bon que ce soit public.</sentence>
+				<sentence xml:id="P1E256">C’était dur !</sentence>
+				<sentence xml:id="P1E257">» […] « Tout de même, vous disiez que nous avons des &quot;résultats pauvres&quot; en renforcement des capacités.</sentence>
+				<sentence xml:id="P1E258">Je trouve que c’est très dur.</sentence>
+				<sentence xml:id="P1E259">Et puis en ce qui concerne les délais, vous ne prenez pas en compte tous les éléments.</sentence>
+				<sentence xml:id="P1E260">» Le directeur se lance dans une explication par A+B, en montrant ses doigts : « premièrement, […] deuxièmement, […] » Ce sont les procédures et les autorisations de la coopération étrangère qui ralentissent.</sentence>
+				<sentence xml:id="P1E261">Aussi il termine : « Non, je pense que le projet a fait du bon travail jusque-là, et nous sommes dans les temps.</sentence>
+				<sentence xml:id="P1E262">» […] Le directeur nie les critiques.</sentence>
+				<sentence xml:id="P1E263">Un des consultants est visiblement un peu ennuyé d’être contesté.</sentence>
+				<sentence xml:id="P1E264">« On n’est pas à l’ONU !</sentence>
+				<sentence xml:id="P1E265">», blague-t-il.</sentence>
+				<sentence xml:id="P1E266">« On est indépendant, on peut émettre des critiques constructives.</sentence>
+				<sentence xml:id="P1E267">C’est notre avis.</sentence>
+				<sentence xml:id="P1E268">» (<ENAMEX type="BUSINESS">Carnet</ENAMEX> de terrain, 13.12.2011) Au-delà d’une vision culturaliste des usages de la censure dans la fonction publique vietnamienne, on voit que le directeur expatrié euphémise lui aussi les problèmes ou tait certaines réalités.</sentence>
+				<sentence xml:id="P1E269">Les acteurs habituellement en conflit dans l’alliance se retrouvent finalement.</sentence>
+				<sentence xml:id="P1E270">L’alliance institutionnelle se maintient parce qu’elle fonctionne aussi sur la base d’un principe de censure stratégique : « Il faut que certaines choses soient continuellement oubliées pour qu’un système cognitif quel qu’il soit puisse fonctionner.</sentence>
+				<sentence xml:id="P1E271">» (<ENAMEX type="PERSON">Douglas</ENAMEX>, 2004 : 113) Engagements réciproques Dans ce contexte conflictuel, où l’information est une arme précieusement préservée parce que menaçante pour la cohésion institutionnelle, un chercheur peut éventuellement écouter, mais doit surtout se taire.</sentence>
+				<sentence xml:id="P1E272">A la suite de ma participation, pourtant autorisée par le directeur, à une importante réunion à <ENAMEX type="LOCATION">Hanoï</ENAMEX>, j’ai senti un basculement dans mon statut.</sentence>
+				<sentence xml:id="P1E273">Touchant de près à des enjeux diplomatiques forts, ma nature allogène s’est soudainement révélée problématique aux yeux du directeur.</sentence>
+				<sentence xml:id="P1E274">A la fin de la réunion, il m’a sollicitée en aparté pour me dire, seuls à seuls, que nous devions discuter sérieusement de ma recherche et des bénéfices qu’en retirerait son projet.</sentence>
+				<sentence xml:id="P1E275">Par la suite, ma présence fût refusée aux réunions internes de l’équipe.</sentence>
+				<sentence xml:id="P1E276">J’ai pu uniquement assister à des activités dans les communes et des réunions « publiques ».</sentence>
+				<sentence xml:id="P1E277">L’implication du directeur dans la définition de ma recherche est allée croissante, mais c’est lorsque ma restitution devant l’équipe du projet approchait, qu’il a frôlé la censure de mon étude.</sentence>
+				<sentence xml:id="P1E278">Il m’a convoquée quelques jours à l’avance pour « discuter » du contenu de mon diaporama.</sentence>
+				<sentence xml:id="P1E279">Comme l’assistante qui m’hébergeait m’avait déconseillée à de multiples reprises d’évoquer des questions institutionnelles (y compris communales), j’ai moi-même largement édulcoré mon propos et j’ai concentré ma présentation sur les pratiques des habitants vis-à-vis des ordures.</sentence>
+				<sentence xml:id="P1E280">Le vice-directeur, manifestant son désintérêt pour mon travail, refusa quant à lui d’assister à ma présentation.</sentence>
+				<sentence xml:id="P1E281">Après de longues palabres, il s’est présenté avec plus d’une heure de retard, faisant attendre l’équipe.</sentence>
+				<sentence xml:id="P1E282">Il a enfin largement commenté mon travail jusqu’à me faire modifier des phrases qu’il n’approuvait pas dans certaines diapositives.</sentence>
+				<sentence xml:id="P1E283">Il faut bien admettre qu’une enquête en situation de développement « transforme un regard auto-critique » en un regard impliqué de « l’anthropologue-acteur […] parlant du dedans et à la première personne » (<ENAMEX type="LOCATION">Mosse</ENAMEX>, 2005 : 11).</sentence>
+				<sentence xml:id="P1E284">L’acception classique de la recherche sur un objet autonome, comme le développement, laisse place à celle d’une anthropologie impliquée, qui prend en compte la réflexivité du chercheur.</sentence>
+				<sentence xml:id="P1E285">Cette implication soulève par ailleurs une grande difficulté à restituer le travail de recherche hors de l’institution, d’autant plus dans le cas d’un matériau empirique non conventionnel.</sentence>
+				<sentence xml:id="P1E286">Quel doit être l’engagement du chercheur vis-à-vis de ses interlocuteurs ?</sentence>
+				<sentence xml:id="P1E287">L’éthique de l’anthropologue réside à mon sens dans la rigueur ethnographique, pour laquelle plaide <ENAMEX type="PERSON">Oliver de Sardan</ENAMEX> (2008), qui permet à la production scientifique d’« être conséquent[e] » (<ENAMEX type="BUSINESS">Fassin</ENAMEX>, 2005).</sentence>
+				<sentence xml:id="P1E288">La justesse du propos, au service de la science anthropologique et non tournée vers la personne du chercheur, est une manière de créer cette « symétrie […] de concernement » et d’implication dans les histoires vécues de nos interlocuteurs (Héraut, 2007 : 105).</sentence>
+				<sentence xml:id="P1E289">Conclusion En 1990, Bourdieu faisait le constat suivant : « Je pense que si la théorie de l’Etat, dans l’état de délabrement où elle se trouve, […] peut se perpétuer, c’est parce qu’elle se promène dans un univers indépendant de la réalité » (Bourdieu, 2012 : 46).</sentence>
+				<sentence xml:id="P1E290">Cet appel à conjuguer empirie et théorie dans la production du savoir sur l’Etat me paraît fondamental dans le projet qui est le nôtre d’étudier les politiques publiques en contexte de développement.</sentence>
+				<sentence xml:id="P1E291">N’est-ce pas en expérimentant les institutions, pour le meilleur et pour le pire, que le chercheur peut comprendre leurs mécanismes de fonctionnement ?</sentence>
+				<sentence xml:id="P1E292">Les institutions, « inventions organisationnelles », visent à transformer le réel sur la base d’un point de vue situé sur le monde social.</sentence>
+				<sentence xml:id="P1E293">Aussi, et parce qu’« une fiction sociale n’est pas fictive » (Bourdieu, 2012 : 53), il est intéressant de comprendre les processus de production du discours par les institutions, les mécanismes du consensus, de la censure et d’analyser les usages stratégiques de l’information par les acteurs.</sentence>
+				<sentence xml:id="P1E294">Le tropisme réflexif du socio-anthropologue, analysant les conditions pratiques de son accès à l’information, ses difficultés à obtenir des autorisations de recherche, etc., est alors un positionnement heuristique pour analyser un fonctionnement institutionnel.</sentence>
+				<sentence xml:id="P1E295">La question de la réflexivité doit donc être vue comme un appel à construire une « épistémologie de terrain » (<ENAMEX type="PERSON">Olivier De Sardan</ENAMEX>, 2008), alimentant en permanence la réflexion théorique par l’expérience empirique du chercheur.</sentence>
+				<sentence xml:id="P1E296">A la manière du judoka, utilisant la force de son adversaire pour lui infliger une défaite, les contretemps d’une enquête ethnographique en situation de développement peuvent nourrir durablement la réflexion théorique du chercheur sur les contextes d’interventions.</sentence>
+			</p>
+		</document>
+	</subcorpus>
+</corpus>

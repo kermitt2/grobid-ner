@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<corpus>
+	<subcorpus>
+		<document name="nerd-openedition-tem-008">
+			<p xml:lang="fr" xml:id="P0">
+				<sentence xml:id="P0E0">Les enjeux portuaires de la <ENAMEX type="LOCATION">Russie en mer Baltique</ENAMEX></sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P1">
+				<sentence xml:id="P1E0">Introduction La disparition de l’<ENAMEX type="LOCATION">URSS</ENAMEX> et l’indépendance des trois républiques baltes en décembre 1991, puis leur entrée dans l’<ENAMEX type="ORGANISATION">Union européenne</ENAMEX> en mai 2004, ont modifié le paysage portuaire de la <ENAMEX type="ORGANISATION">Baltique orientale</ENAMEX>.</sentence>
+				<sentence xml:id="P1E1">Outre une situation géopolitique inédite, ces évènements ont entraîné des transformations de la géographie des flux et de la hiérarchie des ports dans la région.</sentence>
+				<sentence xml:id="P1E2">La <ENAMEX type="LOCATION">Russie</ENAMEX>, principal exportateur et importateur, a décidé de se doter de nouvelles capacités portuaires pour mieux maîtriser et tirer profit de ses échanges internationaux en réduisant sa dépendance des ports post-soviétiques devenus étrangers.</sentence>
+				<sentence xml:id="P1E3">Ces derniers, dans un environnement devenu libéral et concurrentiel, cherchent à conserver des parts de marché dans la Communauté des <ENAMEX type="BUSINESS">États Indépendants</ENAMEX>.</sentence>
+				<sentence xml:id="P1E4">Des ports ont été fondés en <ENAMEX type="LOCATION">Russie</ENAMEX> (<ENAMEX type="BUSINESS">Primorsk</ENAMEX> et <ENAMEX type="BUSINESS">Ust-Luga</ENAMEX>), alors que dans les ports anciens les structures et les modes de gestion ont été transformés avec l’entrée de nouveaux acteurs pour la plupart privés et que de nouveaux aménagements y ont été réalisés.</sentence>
+				<sentence xml:id="P1E5">1. Les nouveaux enjeux L’environnement des ports post-soviétiques s’est brutalement transformé.</sentence>
+				<sentence xml:id="P1E6">La planification centralisée soviétique a cédé place à la fragmentation territoriale et à une économie de marché concurrentielle.</sentence>
+				<sentence xml:id="P1E7">Au cours de la décennie 1990 ils ont du, non sans difficultés, s’adapter au nouveau contexte politique et économique caractérisé par le morcellement du territoire soviétique et l’instauration d’une économie de type capitaliste libéral.</sentence>
+				<sentence xml:id="P1E8">1.1. Fragmentation et partage A la veille de la disparition de l’<ENAMEX type="LOCATION">URSS</ENAMEX>, les ports soviétiques de la Baltique manutentionnaient un peu moins d’un quart du trafic maritime du pays (Serry 2006).</sentence>
+				<sentence xml:id="P1E9">Ils se répartissaient en quatre ports généralistes : Leningrad en <ENAMEX type="LOCATION">Russie</ENAMEX>, <ENAMEX type="LOCATION">Tallinn-Muuga</ENAMEX> en <ENAMEX type="LOCATION">Estonie</ENAMEX>, Riga en <ENAMEX type="LOCATION">Lettonie</ENAMEX> et <ENAMEX type="BUSINESS">Klaïpeda</ENAMEX> en <ENAMEX type="LOCATION">Lituanie</ENAMEX>, un port d’exportation de pétrole brut et de produits pétroliers, <ENAMEX type="LOCATION">Ventspils</ENAMEX> en <ENAMEX type="LOCATION">Lettonie</ENAMEX>, et quelques ports secondaires d’intérêt régional ou local (figure 1).</sentence>
+				<sentence xml:id="P1E10">Ces ports faisaient partie du système soviétique intégré de transports.</sentence>
+				<sentence xml:id="P1E11">La nature et le volume du trafic de chacun dépendaient des choix des organismes de la planification centralisée.</sentence>
+				<sentence xml:id="P1E12">La responsabilité des gestionnaires portuaires consistait à appliquer le plan aussi bien que possible.</sentence>
+				<sentence xml:id="P1E13">Les ports des trois républiques baltes traitaient environ trois quarts du trafic maritime soviétique de la façade de la mer Baltique, (75 % en 1990).</sentence>
+				<sentence xml:id="P1E14">Vus de <ENAMEX type="LOCATION">Russie</ENAMEX>, ils se situent désormais à l’étranger.</sentence>
+				<sentence xml:id="P1E15">Principal État riverain et principal utilisateur des transports maritimes, la <ENAMEX type="LOCATION">Russie</ENAMEX> est dorénavant confrontée au choix entre le transit de ses marchandises par des ports devenus étrangers, ce qui engendre des pertes financières et des aléas liés à la conjoncture politique entre les États, ou l’augmentation de ses propres capacités portuaires.</sentence>
+				<sentence xml:id="P1E16">Cette question se pose d’autant plus que les frontières entre la <ENAMEX type="LOCATION">Russie</ENAMEX> et les républiques baltes coïncident avec celles de l’Union européenne ce qui ne facilite la circulation ni des marchandises ni des personnes.</sentence>
+				<sentence xml:id="P1E17">La fragmentation territoriale a affecté l’ensemble de l’économie des États post-soviétiques en raison du partage des ressources, des équipements et des infrastructures.</sentence>
+				<sentence xml:id="P1E18">Ce fut le cas des ports et de la marine marchande.</sentence>
+				<sentence xml:id="P1E19">Les compagnies maritimes soviétiques étaient spécialisées : dans la région de la Baltique, la <ENAMEX type="PERSON">Baltic</ENAMEX> Shipping Company basée à <ENAMEX type="LOCATION">Leningrad</ENAMEX>, exploitait des cargos généralistes océaniques, des porte-conteneurs et des paquebots ; la <ENAMEX type="BUSINESS">Latvian SC</ENAMEX> de <ENAMEX type="BUSINESS">Riga</ENAMEX> des rouliers, des navires frigorifiques et des pétroliers ; la <ENAMEX type="BUSINESS">Lituanian SC</ENAMEX> de <ENAMEX type="BUSINESS">Klaïpeda</ENAMEX> et l’<ENAMEX type="BUSINESS">Estonian SC</ENAMEX> de <ENAMEX type="LOCATION">Tallinn</ENAMEX> principalement des petits cargos et des caboteurs.</sentence>
+				<sentence xml:id="P1E20">Aussi chaque État a-t-il hérité d’une flotte spécialisée peu adaptée aux nouveaux besoins de transport.</sentence>
+				<sentence xml:id="P1E21">Pour ce qui est des ports, la <ENAMEX type="LOCATION">Russie</ENAMEX> a « perdu » son principal port pétrolier en Baltique, alors qu’elle reste un des premiers exportateurs mondiaux de brut et de produits raffinés, ses ports d’exportation des vracs solides, notamment le charbon, tâche confiée à <ENAMEX type="LOCATION">Tallinn-Muuga</ENAMEX> et à <ENAMEX type="BUSINESS">Klaïpeda</ENAMEX>, et ses terminaux à conteneurs localisés à <ENAMEX type="LOCATION">Riga</ENAMEX>.</sentence>
+				<sentence xml:id="P1E22">Figure 1 : Les ports post-soviétiques de la mer Batique en 2008 Dans le contexte chaotique de la privatisation, plusieurs années s’écoulèrent avant que le gouvernement de la <ENAMEX type="LOCATION">Russie</ENAMEX> décide d’élaborer une politique maritime.</sentence>
+				<sentence xml:id="P1E23">Sa mise en œuvre s’accéléra à la fin des années 1990 par des investissements publics et privés destinés à doter le pays de nouvelles infrastructures portuaires pour réduire le recours aux ports étrangers et faire face à une demande croissante tant dans le domaine de l’exportation des pondéreux que dans celui de l’importation de marchandises diverses de plus en plus conteneurisées.</sentence>
+				<sentence xml:id="P1E24">Sur la courte façade dont elle a hérité au fond du golfe de <ENAMEX type="LOCATION">Finlande</ENAMEX>, une fenêtre d’environ 400 km, la <ENAMEX type="LOCATION">Russie</ENAMEX> s’est lancée dans un programme de création de nouvelles installations.</sentence>
+				<sentence xml:id="P1E25">À ces fins les ports de <ENAMEX type="BUSINESS">Primorsk et d’Ust-Luga</ENAMEX> ont été créés au nord-ouest et au sud-ouest de <ENAMEX type="LOCATION">Saint-Pétersbourg</ENAMEX> dont le port a reconquis une place essentielle en Baltique orientale.</sentence>
+				<sentence xml:id="P1E26">Ces investissements ont eu pour conséquence la progression rapide du trafic des ports russiens de la <ENAMEX type="BUSINESS">Baltique</ENAMEX>.</sentence>
+				<sentence xml:id="P1E27">Ils traitent désormais plus du tiers du trafic portuaire du pays, environ 175 millions de tonnes sur un total de 454 millions en 2008.</sentence>
+				<sentence xml:id="P1E28">Cependant la multiplication des acteurs publics et privés a contribué à diversifier les stratégies : en même temps que la <ENAMEX type="LOCATION">Russie</ENAMEX> augmente ses capacités portuaires pour réduire la dépendance et faire face à l’augmentation du trafic, des entreprises russiennes investissent dans les ports des États baltes.</sentence>
+				<sentence xml:id="P1E29">1.2. Économie de marché et concurrence La fin brusque de la planification soviétique a provoqué une grave crise économique et sociale.</sentence>
+				<sentence xml:id="P1E30">Tous les secteurs d’activité ont été fortement perturbés, notamment les flux.</sentence>
+				<sentence xml:id="P1E31">La disparition de la <ENAMEX type="BUSINESS">Baltic SC</ENAMEX>, principale compagnie de navigation de la région, a accentué localement la désorganisation du transport maritime et des échanges extérieurs du pays.</sentence>
+				<sentence xml:id="P1E32">La fonction et la finalité des ports post-soviétiques ont changé.</sentence>
+				<sentence xml:id="P1E33">Dans le nouvel environnement libéral, tout ou partie de leur gestion a été privatisée.</sentence>
+				<sentence xml:id="P1E34">Les fonctions portuaires ont été fractionnées entre de nombreuses entreprises généralement privées, en particulier la consignation, le transit, la manutention, le stockage, l’avitaillement, le remorquage, le lamanage et le pilotage.</sentence>
+				<sentence xml:id="P1E35">Les entreprises portuaires ont dû apprendre à faire face à la concurrence.</sentence>
+				<sentence xml:id="P1E36">Les autorités portuaires ont eu à définir et à mettre en œuvre leur propre stratégie.</sentence>
+				<sentence xml:id="P1E37">Certes, sous la planification, les dirigeants portuaires n’étaient pas totalement passifs.</sentence>
+				<sentence xml:id="P1E38">Comme de nombreuses entreprises et régions, ils contribuaient à l’élaboration du plan en proposant des politiques de développement qu’ils essayaient de faire adopter par le pouvoir central.</sentence>
+				<sentence xml:id="P1E39">Aujourd’hui, leur tâche est plus complexe.</sentence>
+				<sentence xml:id="P1E40">Il leur revient de définir des stratégies, d’en rechercher les financements et de donner satisfaction aux divers clients.</sentence>
+				<sentence xml:id="P1E41">L’État continue certes à jouer un rôle important surtout depuis la fin des années 1990.</sentence>
+				<sentence xml:id="P1E42">Il impulse et soutient financièrement tout ce qui contribue à renforcer une politique nationale des transports.</sentence>
+				<sentence xml:id="P1E43">Il participe aux investissements lourds.</sentence>
+				<sentence xml:id="P1E44">Il n’est cependant plus l’acteur unique et sa place s’est amoindrie.</sentence>
+				<sentence xml:id="P1E45">Dans les pays voisins, malgré une opinion publique nationaliste et souhaitant rompre les relations économiques avec la <ENAMEX type="LOCATION">Russie</ENAMEX>, les gouvernements ont rapidement compris le bénéfice que peuvent procurer le trafic portuaire et le transit.</sentence>
+				<sentence xml:id="P1E46">Les exportations par la <ENAMEX type="PERSON">Baltique</ENAMEX> orientale sont principalement des matières premières minérales en provenance de la <ENAMEX type="LOCATION">Russie</ENAMEX>.</sentence>
+				<sentence xml:id="P1E47">En retour, celle-ci constitue le plus vaste marché pour les importations.</sentence>
+				<sentence xml:id="P1E48">Tous les ports ont donc tenté de conserver voire d’étendre l’arrière-pays hérité de l’époque soviétique, d’y maintenir et si possible d’y accroître leurs parts de marché.</sentence>
+				<sentence xml:id="P1E49">Après que les mouvements nationalistes et écologistes dans les pays Baltes ont promis de mettre fin au transit russe, le pragmatisme des affaires a rapidement pris le dessus.</sentence>
+				<sentence xml:id="P1E50">Les autorités portuaires tout en cherchant à diversifier les flux et les hinterlands, s’efforcent de conserver les marchés hérités.</sentence>
+				<sentence xml:id="P1E51">Les ports finlandais ont été les premiers, dès le début des années 1990, à bénéficier du manque de capacité, d’efficacité et de fiabilité des ports de la <ENAMEX type="LOCATION">Russie</ENAMEX> pour la manutention des marchandises diverses et des conteneurs.</sentence>
+				<sentence xml:id="P1E52">Les flux destinés à la <ENAMEX type="LOCATION">Russie</ENAMEX> ont augmenté à <ENAMEX type="LOCATION">Kotka</ENAMEX>, <ENAMEX type="ORGANISATION">Hamina et Helsinki</ENAMEX>.</sentence>
+				<sentence xml:id="P1E53">Le trafic conteneurisé de <ENAMEX type="LOCATION">Kotka</ENAMEX> a progressé de 46 000 EVP à 130 000 EVP entre 1989 et 1995.</sentence>
+				<sentence xml:id="P1E54">Pendant cette période la part du transit russe s’y est accrue de 5 % à 55 %.</sentence>
+				<sentence xml:id="P1E55">A <ENAMEX type="LOCATION">Helsinki</ENAMEX>, environ 10 % des conteneurs manutentionnés pendant ces années étaient en provenance ou à destination de la <ENAMEX type="LOCATION">Russie</ENAMEX>, soit 34 000 EVP en 1995.</sentence>
+				<sentence xml:id="P1E56">Cette même année 95 % des 28 000 conteneurs manutentionnés à <ENAMEX type="LOCATION">Hamina</ENAMEX> provenaient du transit russe (Serry, 1999).</sentence>
+				<sentence xml:id="P1E57">La masse du transit russien par la <ENAMEX type="LOCATION">Finlande</ENAMEX> a atteint 5,7 millions de tonnes en 2001 (<ENAMEX type="LOCATION">Brodin</ENAMEX>, 2005).</sentence>
+				<sentence xml:id="P1E58">Il s’est stabilisé par la suite (<ENAMEX type="ORGANISATION">Finnsih Ports Association</ENAMEX>).</sentence>
+				<sentence xml:id="P1E59">Il comprend principalement des marchandises diverses, des engrais et des produits chimiques.</sentence>
+				<sentence xml:id="P1E60">Entre la <ENAMEX type="LOCATION">Finlande</ENAMEX> et la <ENAMEX type="LOCATION">Russie</ENAMEX>, les marchandises sont acheminées dans les deux sens par la route et plus encore par chemin de fer.</sentence>
+				<sentence xml:id="P1E61">L’usage de ce dernier est facilité par l’identité des caractéristiques techniques des réseaux ferrés des deux pays.</sentence>
+				<sentence xml:id="P1E62">Les ports baltes ont à leur tour voulu profiter de la mauvaise réputation de <ENAMEX type="BUSINESS">Saint-Pétersbourg</ENAMEX> pour capter des trafics.</sentence>
+				<sentence xml:id="P1E63">Les autorités portuaires ont programmé l’aménagement d’équipements pour l’exportation des matières premières (charbon, minerais, bois) et la manutention des conteneurs.</sentence>
+				<sentence xml:id="P1E64">Elles demandent l’amélioration des liaisons terrestres vers la <ENAMEX type="LOCATION">Russie</ENAMEX> et les États post-soviétiques.</sentence>
+				<sentence xml:id="P1E65">Elles s’efforcent d’attirer des investisseurs russes.</sentence>
+				<sentence xml:id="P1E66">C’est ainsi que des intérêts russiens sont présents dans les ports baltes.</sentence>
+				<sentence xml:id="P1E67">L’entreprise pétrolière Lukoil a participé à la modernisation du terminal pétrolier de <ENAMEX type="LOCATION">Ventspils</ENAMEX> désormais géré par le groupe international <ENAMEX type="BUSINESS">Vitol</ENAMEX>.</sentence>
+				<sentence xml:id="P1E68">L’entreprise minière <ENAMEX type="BUSINESS">Kuzbassrazrezugol</ENAMEX> a contribué à la construction du terminal charbonnier de Muuga où la majorité des actions du terminal pétrolier Vopak EOS est contrôlée par le groupe russien <ENAMEX type="BUSINESS">N-Trans filiale</ENAMEX> de l’entreprise sidérurgique <ENAMEX type="BUSINESS">Severstal</ENAMEX>.</sentence>
+				<sentence xml:id="P1E69">Yukos de son côté avait pris le contrôle du terminal de <ENAMEX type="BUSINESS">Butinge</ENAMEX> en <ENAMEX type="LOCATION">Lituanie</ENAMEX> avant d’en céder 52 % des parts à une entreprise polonaise, <ENAMEX type="BUSINESS">PKN Orla</ENAMEX>.</sentence>
+				<sentence xml:id="P1E70">Ces faits soulignent, si besoin est, qu’il ne faut pas confondre les stratégies géopolitiques des États et la stratégie des acteurs privés qui cherchent à diversifier leurs itinéraires et à conquérir des positions au-delà des frontières de la <ENAMEX type="LOCATION">Russie</ENAMEX>.</sentence>
+				<sentence xml:id="P1E71">Ces efforts n’ont pas été sans effets.</sentence>
+				<sentence xml:id="P1E72">Ainsi, le transit russe en <ENAMEX type="LOCATION">Estonie</ENAMEX> a progressé de moins de 8,7 millions de tonnes en 1994 à 29 millions de tonnes en 2000, année record.</sentence>
+				<sentence xml:id="P1E73">En 2008 il représentait 77 % des 29 millions de tonnes de trafic de <ENAMEX type="BUSINESS">Muuga</ENAMEX>.</sentence>
+				<sentence xml:id="P1E74">D’après les autorités portuaires, 80 % du trafic de Riga sont constitués du transit de et vers les États de la <ENAMEX type="INSTITUTION">CEI</ENAMEX>.</sentence>
+				<sentence xml:id="P1E75">Ce transit représente de même plus de 80 % du trafic ferroviaire de marchandises de la <ENAMEX type="LOCATION">Lettonie</ENAMEX>.</sentence>
+				<sentence xml:id="P1E76">La <ENAMEX type="LOCATION">Russie</ENAMEX> arrive en tête de clients avec plus de la moitié du tonnage.</sentence>
+				<sentence xml:id="P1E77">Elle est suivie par la <ENAMEX type="LOCATION">Biélorussie</ENAMEX> avec un tiers.</sentence>
+				<sentence xml:id="P1E78">Moins important car les matières premières y tiennent une place plus modeste, le transit occupe encore plus du tiers du trafic de <ENAMEX type="BUSINESS">Klaipeda</ENAMEX>, dont le principal client est désormais la <ENAMEX type="LOCATION">Biélorussie</ENAMEX> (22 % du trafic total) qui a supplanté la <ENAMEX type="LOCATION">Russie</ENAMEX> (13 %).</sentence>
+				<sentence xml:id="P1E79">A l’exception de <ENAMEX type="LOCATION">Ventspils</ENAMEX> et de <ENAMEX type="PERSON">Butinge</ENAMEX> où le pétrole est acheminé par oléoduc, les relations avec l’arrière pays s’effectuent principalement par chemin de fer.</sentence>
+				<sentence xml:id="P1E80">Le transit tient de ce fait une place essentielle pour les compagnies ferroviaires des pays baltes (plus de 70 % du trafic marchandises en <ENAMEX type="LOCATION">Lituanie</ENAMEX>).</sentence>
+				<sentence xml:id="P1E81">Aussi, non seulement les compagnies ferroviaires des pays baltes n’envisagent pas dans l’immédiat de modifier l’écartement des voies (1520 mm) pour le mettre aux normes occidentales (1435 mm), mais elles modernisent le réseau au gabarit actuel.</sentence>
+				<sentence xml:id="P1E82">L’intégration des trois républiques baltes dans l’<ENAMEX type="ORGANISATION">Union Européenne</ENAMEX> peut avoir des conséquences contradictoires.</sentence>
+				<sentence xml:id="P1E83">Leurs ports resteront-ils des portes pour la <ENAMEX type="LOCATION">Russie</ENAMEX> ou deviendront-ils celles de l’est de l’<ENAMEX type="ORGANISATION">Union Européenne</ENAMEX> ?</sentence>
+				<sentence xml:id="P1E84">Dans la première hypothèse, ils seront des nœuds de transbordement, dans le second, des culs de sac.</sentence>
+				<sentence xml:id="P1E85">En 2008, la part du transit n’a pas diminué malgré des variations conjoncturelles en fonction du type de marchandises.</sentence>
+				<sentence xml:id="P1E86">Les intérêts russiens continuent à s’implanter dans les ports des pays baltes, comme par exemple la participation d’un manutentionnaire russien à la modernisation et l’extension du terminal à conteneurs de Muuga.</sentence>
+				<sentence xml:id="P1E87">2. Le renouveau du port de <ENAMEX type="BUSINESS">Saint-Pétersbourg L’</ENAMEX>ère post-soviétique a mal commencé pour le port de <ENAMEX type="LOCATION">Saint-Pétersbourg</ENAMEX>, seul grand port dont disposait la <ENAMEX type="LOCATION">Russie</ENAMEX> dans la région.</sentence>
+				<sentence xml:id="P1E88">Objet de multiples convoitises (la ville, l’oblast, des groupes privatisés ont tenté d’en prendre le contrôle), il a rencontré de grandes difficultés pour se restructurer.</sentence>
+				<sentence xml:id="P1E89">La faillite et la disparition de l’importante compagnie qui y était basée, les enjeux de pouvoir sur le territoire et les équipements portuaires ainsi que sur le contrôle des flux, en particulier internationaux, la présence de réseaux illégaux et les risques encourus par les marchandises ont fait chuter le trafic au début des années 1990.</sentence>
+				<sentence xml:id="P1E90">Les chargeurs recommandèrent même d’éviter ce port non fiable pour les armateurs et les marchandises.</sentence>
+				<sentence xml:id="P1E91">En 1992, le port a été privatisé avec la création d’une société par action, le « Port Maritime de <ENAMEX type="LOCATION">Saint-Pétersbourg</ENAMEX> » dans laquelle l’État et la ville ont détenu près de la moitié des parts jusqu’en 2005.</sentence>
+				<sentence xml:id="P1E92">Au total, quelques 400 entreprises se sont partagées, parfois au prix d’âpres conflits et dans des conditions obscures, les activités portuaires qui ont été fragmentées.</sentence>
+				<sentence xml:id="P1E93">Les opérateurs privés gèrent aussi bien les quais généralistes que les terminaux spécialisés (bois, vracs liquides, terminal roulier ferroviaire).</sentence>
+				<sentence xml:id="P1E94">La manutention et la plupart des services portuaires ont été privatisés.</sentence>
+				<sentence xml:id="P1E95">Plusieurs opérateurs étrangers se sont installés tel le manutentionnaire de <ENAMEX type="PERSON">Hambourg HHLA</ENAMEX> qui participe à l’extension des terminaux à conteneurs (Kunth, <ENAMEX type="BUSINESS">Thorez</ENAMEX>, 2005).</sentence>
+				<sentence xml:id="P1E96">Comme dans de nombreuses branches notamment dans le transport maritime, les investisseurs privés ne sont pas facilement identifiables car ils utilisent des sociétés écran basées à <ENAMEX type="LOCATION">Chypre</ENAMEX> ou dans des paradis fiscaux (<ENAMEX type="BUSINESS">Sistema</ENAMEX> portov).</sentence>
+				<sentence xml:id="P1E97">Un organisme public a été fondé en 1994 : l’« Autorité Maritime Portuaire » devenue « le Grand Port Maritime de <ENAMEX type="LOCATION">Saint-Pétersbourg</ENAMEX> ».</sentence>
+				<sentence xml:id="P1E98">Sans activité commerciale, cet organisme exerce les fonctions régaliennes, entre autre l’organisation et la surveillance de la navigation et la sécurité dans le port.</sentence>
+				<sentence xml:id="P1E99">Il a la responsabilité des chenaux et des bassins.</sentence>
+				<sentence xml:id="P1E100">Des équipements anciens ont été réhabilités et un certain nombre d’aménagements nouveaux ont été réalisés, en particulier pour les flux de conteneurs et de denrées périssables réfrigérées, les deux trafics qui ont le plus augmenté.</sentence>
+				<sentence xml:id="P1E101">Ces travaux mettent en valeur les atouts du port.</sentence>
+				<sentence xml:id="P1E102">Sa situation en fait le port le plus proche des deux principaux foyers de consommation de la <ENAMEX type="LOCATION">Russie</ENAMEX>, <ENAMEX type="BUSINESS">Saint-Pétersbourg</ENAMEX> et sa région d’une part et surtout l’Okroug Fédéral Centre avec <ENAMEX type="LOCATION">Moscou</ENAMEX>, première concentration urbaine de <ENAMEX type="LOCATION">Russie</ENAMEX>.</sentence>
+				<sentence xml:id="P1E103">Cette proximité, à l’échelle du pays, est renforcée par un réseau de transports continentaux dense et efficace.</sentence>
+				<sentence xml:id="P1E104"><ENAMEX type="LOCATION">Saint-Pétersbourg</ENAMEX> est en effet après <ENAMEX type="LOCATION">Moscou</ENAMEX> le principal nœud ferroviaire et routier du pays.</sentence>
+				<sentence xml:id="P1E105">Les infrastructures routières et ferroviaires ont été modernisées.</sentence>
+				<sentence xml:id="P1E106">Les agglomérations de <ENAMEX type="LOCATION">Moscou</ENAMEX> et <ENAMEX type="BUSINESS">Saint-Pétersbourg</ENAMEX> sont reliées par autoroute et par des trains à grande vitesse.</sentence>
+				<sentence xml:id="P1E107">La <ENAMEX type="BUSINESS">Neva</ENAMEX> et le lac Ladoga donnent accès aux voies fluviales du système des cinq mers ouvert aussi bien sur <ENAMEX type="LOCATION">Moscou</ENAMEX> que sur les pays de la <ENAMEX type="BUSINESS">Volga</ENAMEX>.</sentence>
+				<sentence xml:id="P1E108">Le port souffre néanmoins de contraintes et de limites.</sentence>
+				<sentence xml:id="P1E109">Certaines sont communes à toute la mer Baltique, notamment la faible profondeur des détroits danois.</sentence>
+				<sentence xml:id="P1E110">D’autres sont spécifiques.</sentence>
+				<sentence xml:id="P1E111">Le chenal entre la mer et le port, long de 27 milles (50 km) est peu profond.</sentence>
+				<sentence xml:id="P1E112">Le tirant d’eau des navires ne peut dépasser 12 mètres (11 mètres jusqu’en 2009) et leur longueur ne peut excéder 290 mètres.</sentence>
+				<sentence xml:id="P1E113">Le port en lourd maximal plafonne de la sorte aux environs de 70 000 tonnes.</sentence>
+				<sentence xml:id="P1E114">Les grands navires transocéaniques ne peuvent l’emprunter et les pétroliers de grande taille doivent être chargés sur rade.</sentence>
+				<sentence xml:id="P1E115">Un approfondissement du chenal à 15 mètres est projeté en 2012.</sentence>
+				<sentence xml:id="P1E116">Autre obstacle, saisonnier celui-ci, le gel particulièrement long au fond du golfe, dure en moyenne de fin novembre à fin mars.</sentence>
+				<sentence xml:id="P1E117">La banquise perturbe la navigation.</sentence>
+				<sentence xml:id="P1E118">Des navires de classe « glace », à coque renforcée, sont nécessaires.</sentence>
+				<sentence xml:id="P1E119">Ils naviguent en convois derrière des brise-glaces.</sentence>
+				<sentence xml:id="P1E120">C’est la raison pour laquelle le trafic diminue pendant les mois d’hiver.</sentence>
+				<sentence xml:id="P1E121">Une nouvelle contrainte résulte de la détérioration des conditions d’accès au port, suite à l’aménagement de la digue, de part et d’autre de l’île <ENAMEX type="BUSINESS">Kotlin</ENAMEX>, sensée protéger la ville des inondations provoquées, dans certaines circonstances, par la remontée du niveau des eaux marines, au fond du golfe de <ENAMEX type="LOCATION">Finlande</ENAMEX>.</sentence>
+				<sentence xml:id="P1E122">Depuis son achèvement, elle génère des courants perturbateurs.</sentence>
+				<sentence xml:id="P1E123">Aux contraintes nautiques s’ajoute la proximité du port avec le centre de la ville.</sentence>
+				<sentence xml:id="P1E124">Le port fluvial et les entreprises de construction et de réparation navale, qui pratiquent aussi de la manutention, se situent le long de la <ENAMEX type="BUSINESS">Neva</ENAMEX>, immédiatement en aval du centre historique de la ville.</sentence>
+				<sentence xml:id="P1E125">La majorité des bassins et des quais se localisent en bordure des quartiers sud-ouest.</sentence>
+				<sentence xml:id="P1E126">Les accès terrestres au port sont de ce fait difficiles.</sentence>
+				<sentence xml:id="P1E127">Pour atteindre les quais, aussi bien les voies ferrées que les routes traversent des quartiers d’habitation densément peuplés.</sentence>
+				<sentence xml:id="P1E128">C’est une des raisons qui ont poussé les autorités municipales et régionales à demander la construction de nouveaux ports, à l’extérieur de l’agglomération.</sentence>
+				<sentence xml:id="P1E129">Le « Grand port maritime de <ENAMEX type="LOCATION">Saint-Pétersbourg</ENAMEX> » comprend, en effet, quelques petits ports annexes, situés à l’intérieur du territoire municipal (figure 2).</sentence>
+				<sentence xml:id="P1E130">A proximité de la digue nord, <ENAMEX type="ORGANISATION">Gorskaïa accueille des navires fluvio-maritimes</ENAMEX> qui transportent des grumes.</sentence>
+				<sentence xml:id="P1E131">Près de la digue sud, Lomonossov dispose d’un terminal pour le bois et traite des marchandises diverses.</sentence>
+				<sentence xml:id="P1E132">A proximité, la firme finlandaise <ENAMEX type="LOCATION">Neste</ENAMEX> a implanté un terminal pour produits pétroliers.</sentence>
+				<sentence xml:id="P1E133">Le port de commerce de <ENAMEX type="LOCATION">Cronstadt</ENAMEX>, qui jouxte la base navale, comprend deux postes pour les divers et le terminal à conteneurs <ENAMEX type="PERSON">Moby Dick</ENAMEX>, aménagé en 2002 par la société finlandaise <ENAMEX type="BUSINESS">Container Ships Oy</ENAMEX>.</sentence>
+				<sentence xml:id="P1E134">Ces ports ont des capacités limitées, tant en tirant d’eau (7 mètres à <ENAMEX type="LOCATION">Lomonossov</ENAMEX>, moins dans les autres ports), qu’en longueur des navires.</sentence>
+				<sentence xml:id="P1E135">Le trafic n’atteint un million de tonnes dans aucune de ces dépendances.</sentence>
+				<sentence xml:id="P1E136">Toutefois, en raison de l’engorgement des accès au port principal, la ville élabore un plan de développement des avants ports.</sentence>
+				<sentence xml:id="P1E137">Ce projet ne peut aboutir que s’il est financé en partenariat par des investisseurs privés, pour ce qui concerne les aménagement portuaires, postes à quai, engins de levage, terre pleins, hangars de stockage, et leurs accès routiers et ferroviaires et, d’autre part, par l’État pour les aménagements nautiques (chenaux d’accès, approfondissement des bassins).</sentence>
+				<sentence xml:id="P1E138">Sa réalisation n’est donc pas encore assurée.</sentence>
+				<sentence xml:id="P1E139">Figure 2 : Les ports russiens du golfe de <ENAMEX type="PERSON">Finlande P. Thorez</ENAMEX>, d’après A. Brodin.</sentence>
+				<sentence xml:id="P1E140">Le trafic de <ENAMEX type="LOCATION">Saint-Pétersbourg</ENAMEX> a augmenté rapidement.</sentence>
+				<sentence xml:id="P1E141">Après avoir quintuplé entre 1995 et 2004, il a atteint 59,9 millions de tonnes en 2008 (tableau 1).</sentence>
+				<sentence xml:id="P1E142">Le recul en 2009, lié à la baisse des importations, est compensé par la reprise au cours des neuf premiers mois de 2010.</sentence>
+				<sentence xml:id="P1E143">Le port s’est hissé au premier rang des ports généralistes post-soviétiques de la <ENAMEX type="BUSINESS">Baltique</ENAMEX>.</sentence>
+				<sentence xml:id="P1E144">La tendance de la fin de la période soviétique et des premières années des indépendances, au cours desquelles la croissance des ports des États baltes était plus forte, a été inversée.</sentence>
+				<sentence xml:id="P1E145">Compte tenu des contraintes de site, une bonne partie du trafic soviétique avait en effet été détournée vers les pays baltes.</sentence>
+				<sentence xml:id="P1E146">Ainsi les lignes régulières vers l’<ENAMEX type="LOCATION">Europe</ENAMEX> de l’ouest étaient-elles opérées à partir de Riga.</sentence>
+				<sentence xml:id="P1E147">Depuis le milieu des années 1990, <ENAMEX type="LOCATION">Saint-Pétersbourg</ENAMEX> a récupéré la majorité des importations par voie maritime destinées à la <ENAMEX type="LOCATION">Russie</ENAMEX>.</sentence>
+				<sentence xml:id="P1E148">Il traite une part des exportations, y compris des matières premières, mais en quantité modeste.</sentence>
+				<sentence xml:id="P1E149">L’évolution du trafic conteneurisé est spectaculaire.</sentence>
+				<sentence xml:id="P1E150">De 61 000 EVP en 1991, il s’est élevé à 580 000 EVP en 2002, 1,1 millions d’<ENAMEX type="BUSINESS">EVP</ENAMEX> en 2005 et 1,9 millions d’<ENAMEX type="BUSINESS">EVP</ENAMEX> en 2008, soit 63 % des mouvements de conteneurs dans les ports post-soviétiques de la <ENAMEX type="BUSINESS">Baltique</ENAMEX>, contre moins de 30 % en 1995.</sentence>
+				<sentence xml:id="P1E151">En tonnage le trafic conteneurisé se hisse désormais à la première place (19 millions de tonnes en 2008).</sentence>
+				<sentence xml:id="P1E152">Il a été pénalisé en 2009 par le recul des importations (1,3 millions d’EVP), mais ce nombre a été dépassé en trois semestres en 2010, signe d’une reprise rapide des flux.</sentence>
+				<sentence xml:id="P1E153">Le pétrole et les produits pétroliers suivent à peu près la courbe générale.</sentence>
+				<sentence xml:id="P1E154">Ils constituent environ un quart du trafic (15 millions de tonnes).</sentence>
+				<sentence xml:id="P1E155">Les vracs solides stagnent depuis 2006 autour de 9,5 millions de tonnes, en raison du transfert du trafic charbonnier vers le nouveau port d’<ENAMEX type="BUSINESS">Ust-Luga</ENAMEX>.</sentence>
+				<sentence xml:id="P1E156">Les marchandises diverses non conteneurisées tiennent une place importante (14,7 millions de tonnes), notamment les métaux et les produits réfrigérés.</sentence>
+				<sentence xml:id="P1E157">Le port dispose aussi d’un terminal spécialisé pour l’exportation du bois.</sentence>
+				<sentence xml:id="P1E158">Au trafic maritime, il convient d’ajouter le trafic du port fluvial de l’ordre de 16 millions de tonnes (<ENAMEX type="BUSINESS">Brodin</ENAMEX>, 2005).</sentence>
+				<sentence xml:id="P1E159">La croissance des activités portuaires s’accompagne de l’implantation progressive dans la ville, de fonctions liées au négoce maritime, en particulier de représentations des grands armements internationaux (Evergreen, <ENAMEX type="BUSINESS">K line</ENAMEX>, NYK, <ENAMEX type="LOCATION">Maersk</ENAMEX>, <ENAMEX type="ORGANISATION">CMA-CGM</ENAMEX>).</sentence>
+				<sentence xml:id="P1E160"><ENAMEX type="LOCATION">Saint-Pétersbourg</ENAMEX> peut, à terme, se donner une stature de métropole maritime.</sentence>
+				<sentence xml:id="P1E161">Ce, d’autant plus que la ville grâce à son patrimoine culturel, devient une escale obligée des navires de croisière.</sentence>
+				<sentence xml:id="P1E162">De nouveaux quais ont été aménagés pour leur accostage et l’on espère plus de 2 millions de croisiéristes en 2010.</sentence>
+				<sentence xml:id="P1E163">Tableau 1 : trafic des ports russes de la <ENAMEX type="BUSINESS">Baltique</ENAMEX> (en millions de tonnes) 1990 1995 2000 2005 2008 2009 Saint-Pétersbourg 10,2 10,5 32,0 57,4 59,9 50,4 Primorsk - - - 57,3 75,5 79,1 Ust-<ENAMEX type="LOCATION">Luga - - - 0</ENAMEX>,5 6,9 10,3 Vyborg  ?</sentence>
+				<sentence xml:id="P1E164">2,5 0,7  ?</sentence>
+				<sentence xml:id="P1E165">1,3 1,1 Vysotsk  ?</sentence>
+				<sentence xml:id="P1E166">0,9 2,9 3,5 16,0* nc Kaliningrad 12,6 5,5 2,8 9,2 15,3 nc * 2007 D’après A.Serry 2006, www.transrussia.net et www.pasp.ru 3. Les nouveaux ports du golfe de <ENAMEX type="LOCATION">Finlande</ENAMEX> En dehors du « Grand Port de <ENAMEX type="LOCATION">Saint-Pétersbourg</ENAMEX> », la <ENAMEX type="LOCATION">Russie</ENAMEX> dispose de plusieurs ports dans le golfe de <ENAMEX type="LOCATION">Finlande</ENAMEX>.</sentence>
+				<sentence xml:id="P1E167">Avant les créations récentes, deux autres anciens ports, dont l’activité est longtemps restée marginale, s’y localisaient : Vyborg et <ENAMEX type="PERSON">Vysotsk</ENAMEX>.</sentence>
+				<sentence xml:id="P1E168">Tous deux sont pénalisés par des conditions nautiques défavorables.</sentence>
+				<sentence xml:id="P1E169">Vyborg ne peut recevoir que des navires de moins de 7 mètres de tirant d’eau et de moins de 135 mètres de longueur.</sentence>
+				<sentence xml:id="P1E170">Ce modeste port généraliste a été orienté presque exclusivement à l’exportation jusqu’en 1998.</sentence>
+				<sentence xml:id="P1E171">Acheté par <ENAMEX type="PERSON">Rosa Holding</ENAMEX>, cette dernière l’a cédé au groupe <ENAMEX type="BUSINESS">Oslo Marine</ENAMEX> qui espère doubler le tonnage.</sentence>
+				<sentence xml:id="P1E172">Le port dispose depuis peu d’un nouveau terminal et les voies d’accès terrestres ont été reconstruites.</sentence>
+				<sentence xml:id="P1E173">Malgré des travaux de dragage, prévus pour approfondir le chenal, les perspectives de croissance demeurent limitées.</sentence>
+				<sentence xml:id="P1E174">En effet, le port est entouré par les espaces urbains.</sentence>
+				<sentence xml:id="P1E175">Vysotsk, situé sur une île à l’entrée du golfe de <ENAMEX type="LOCATION">Vyborg</ENAMEX>, fonctionne exclusivement à l’exportation.</sentence>
+				<sentence xml:id="P1E176">Il comprend deux parties distinctes : le port de commerce et le port pétrolier.</sentence>
+				<sentence xml:id="P1E177">Le premier est spécialisé dans les vracs solides, charbon, coke et éventuellement concentré de minerai de fer, depuis son acquisition par <ENAMEX type="BUSINESS">Rosa Holding</ENAMEX>.</sentence>
+				<sentence xml:id="P1E178">Ce groupe, né de l’exploitation du charbon dans le <ENAMEX type="BUSINESS">Kouzbass</ENAMEX>, a diversifié ses activités.</sentence>
+				<sentence xml:id="P1E179">Du contrôle de la chaîne de transport du charbon, il est passé à la manutention portuaire générale.</sentence>
+				<sentence xml:id="P1E180">Il entend désormais développer de nouveaux trafics à <ENAMEX type="LOCATION">Vysotsk</ENAMEX>, notamment les conteneurs et les marchandises diverses.</sentence>
+				<sentence xml:id="P1E181">Le second a vu le jour plus tardivement lorsque <ENAMEX type="BUSINESS">Lukoil</ENAMEX> décida d’implanter un petit terminal pétrolier.</sentence>
+				<sentence xml:id="P1E182">Elle en a ajouté un second en 2004 qui peut accueillir des navires de 80 000 tonnes de port en lourd, puis un troisième qui a porté la capacité du port pétrolier à 15 millions de tonnes en 2008.</sentence>
+				<sentence xml:id="P1E183">D’ores et déjà, le trafic a quintuplé depuis 2000.</sentence>
+				<sentence xml:id="P1E184">En 2007, il s’est élevé à 16 millions de tonnes, réparties en 4,3 millions de tonnes de charbon, et 11,7 millions de tonnes de pétrole et produits pétroliers.</sentence>
+				<sentence xml:id="P1E185">Ces pondéreux sont acheminés vers le port par voie ferrée.</sentence>
+				<sentence xml:id="P1E186">Le réveil de ces deux ports témoigne de la multiplicité des acteurs qui ont leur propre stratégie.</sentence>
+				<sentence xml:id="P1E187">On constate en particulier que <ENAMEX type="BUSINESS">Lukoil</ENAMEX>, invitée à participer, avec d’autres compagnies pétrolières, au projet de <ENAMEX type="PERSON">Primorsk</ENAMEX>, a préféré faire cavalier seul en créant ses propres installations à <ENAMEX type="LOCATION">Vysotsk</ENAMEX>.</sentence>
+				<sentence xml:id="P1E188">L’augmentation des échanges internationaux de la <ENAMEX type="LOCATION">Russie</ENAMEX>, les prévisions de croissance des trafics portuaires et la volonté de réduire la dépendance de ports étrangers ont poussé les autorités à programmer la construction de nouveaux ports, en particulier en mer Baltique.</sentence>
+				<sentence xml:id="P1E189">Le gouvernement décida, dès 1992, la création de ports dans le golfe de <ENAMEX type="LOCATION">Finlande</ENAMEX>.</sentence>
+				<sentence xml:id="P1E190">Il fallut cependant attendre 1997 pour que cette décision commence à se traduire sur le terrain.</sentence>
+				<sentence xml:id="P1E191">Par décret du 6 juin 1997, il fut choisi de construire trois ports.</sentence>
+				<sentence xml:id="P1E192">Un sur la rive septentrionale du golfe, Primorsk, et deux sur la rive méridionale, <ENAMEX type="ORGANISATION">Ust-Luga</ENAMEX> et <ENAMEX type="BUSINESS">Batareïnaïa</ENAMEX>.</sentence>
+				<sentence xml:id="P1E193">Primorsk fut le projet le plus rapidement achevé, en raison de l’importance vitale pour la <ENAMEX type="LOCATION">Russie</ENAMEX> des exportations d’hydrocarbures.</sentence>
+				<sentence xml:id="P1E194"><ENAMEX type="BUSINESS">Situé</ENAMEX> à une centaine de kilomètres au nord-ouest de <ENAMEX type="LOCATION">Saint-Pétersbourg</ENAMEX>, ses conditions nautiques avantageuses, à l’échelle du fond du golfe de <ENAMEX type="LOCATION">Finlande</ENAMEX>, permettent de recevoir les plus gros navires admissibles en mer Baltique, soit 15 mètres de tirant d’eau et 150 000 tonnes de port en lourd.</sentence>
+				<sentence xml:id="P1E195">Le site a été choisi à l’origine pour l’exportation des vracs solides, dans un premier temps le charbon, puis pour y aménager un port spécialisé dans l’exportation de pétrole brut.</sentence>
+				<sentence xml:id="P1E196">L’entreprise publique russe Transneft, qui détient le monopole du transport de pétrole brut par oléoducs, a été chargée des travaux, suite à l’incapacité des compagnies pétrolières russes à se mettre d’accord.</sentence>
+				<sentence xml:id="P1E197">En même temps que le port, sa filiale <ENAMEX type="PERSON">Baltnefteprovod</ENAMEX> a construit l’oléoduc qui alimente le port depuis <ENAMEX type="BUSINESS">Kirichi</ENAMEX>, nœud du système des oléoducs du nord-ouest de la <ENAMEX type="LOCATION">Russie</ENAMEX> (BTS).</sentence>
+				<sentence xml:id="P1E198">Primorsk reçoit par cet oléoduc du brut des gisements de <ENAMEX type="LOCATION">Sibérie occidentale</ENAMEX>, de <ENAMEX type="LOCATION">Timan</ENAMEX>-Petchora et du bassin de la Volga.</sentence>
+				<sentence xml:id="P1E199">Il a été doublé par un oléoduc destiné à l’acheminement de produits raffinés (mazout, fuel lourd, gas-oil).</sentence>
+				<sentence xml:id="P1E200">Le premier chargement de brut a été effectué le 28 décembre 2001.</sentence>
+				<sentence xml:id="P1E201">Le volume des exportations, 79 millions de tonnes en 2009, a atteint rapidement la capacité initialement prévue.</sentence>
+				<sentence xml:id="P1E202">Devançant Ventspils, <ENAMEX type="BUSINESS">Primorsk</ENAMEX> est désormais le premier port pétrolier de la Baltique.</sentence>
+				<sentence xml:id="P1E203">Bien que le port soit, du point de vue administratif, une filiale du Grand port maritime de <ENAMEX type="LOCATION">Saint-Pétersbourg</ENAMEX>, le terminal pétrolier est géré par <ENAMEX type="BUSINESS">Specmornefteport</ENAMEX>, une filiale de <ENAMEX type="BUSINESS">Transneft</ENAMEX>.</sentence>
+				<sentence xml:id="P1E204">Son développement, à court terme, viendra de la croissance programmée de l’exportation de produits raffinés grâce à la mise en service du deuxième BTS. A moyen terme, les autorités régionales de l’oblast de <ENAMEX type="LOCATION">Leningrad</ENAMEX> envisagent son extension comme port généraliste.</sentence>
+				<sentence xml:id="P1E205">En termes de territoire, le principal aménagement se localise sur la rive méridionale du golfe à <ENAMEX type="ORGANISATION">Ust-Luga</ENAMEX>, prévu pour devenir un grand port généraliste ou universel.</sentence>
+				<sentence xml:id="P1E206">Propriété d’une société d’économie mixte, la <ENAMEX type="BUSINESS">Joint Stock Company Ust-Luga</ENAMEX>, sa réalisation a avancé à un rythme décevant jusqu’en 2005.</sentence>
+				<sentence xml:id="P1E207">Cette année là, le trafic n’avait pas atteint un million de tonnes.</sentence>
+				<sentence xml:id="P1E208">La multiplicité des investisseurs a retardé les chantiers.</sentence>
+				<sentence xml:id="P1E209">En effet, les entreprises russes ont du mal à coopérer.</sentence>
+				<sentence xml:id="P1E210">Elles recherchent des positions dominantes voire exclusives.</sentence>
+				<sentence xml:id="P1E211">Ainsi, la compagnie <ENAMEX type="BUSINESS">Ust-Luga</ENAMEX> offre tous les services portuaires, de la consignation à l’avitaillement et au remorquage, comme cela se pratiquait dans les ports soviétiques.</sentence>
+				<sentence xml:id="P1E212">Elle n’encourage pas la concurrence.</sentence>
+				<sentence xml:id="P1E213">De même, les nombreux investisseurs intéressés par <ENAMEX type="BUSINESS">Ust-Luga</ENAMEX>, n’ont pas fait preuve d’enthousiasme lorsqu’il leur a été demandé de participer à des investissements d’intérêt commun.</sentence>
+				<sentence xml:id="P1E214">En outre les négociations sur les questions foncières se prolongent.</sentence>
+				<sentence xml:id="P1E215">L’autorité portuaire semble vouloir garder la propriété des terrains qu’elle envisage de louer, alors que les opérateurs préfèreraient acquérir en pleine propriété les surfaces sur lesquelles ils comptent construire leurs équipements.</sentence>
+				<sentence xml:id="P1E216">Le ministre des transports, M. <ENAMEX type="PERSON">Levitine</ENAMEX>, s’en est d’ailleurs pris aux entreprises, y compris portuaires, plus promptes, selon lui, à répartir les bénéfices aux actionnaires qu’à investir.</sentence>
+				<sentence xml:id="P1E217">Les premières installations, visitées par le président V. Poutine, ce qui souligne l’importance que l’État accorde au projet, sont entrées en service en 2005.</sentence>
+				<sentence xml:id="P1E218">Cette visite a été l’occasion de redynamiser le projet.</sentence>
+				<sentence xml:id="P1E219">Le port devrait comprendre à terme 9 terminaux offrant une capacité de l’ordre de 35 millions de tonnes qui pourrait être portée à 100 millions selon les responsables régionaux.</sentence>
+				<sentence xml:id="P1E220">La priorité a été donnée au terminal charbonnier destiné à soulager celui de <ENAMEX type="LOCATION">Saint-Pétersbourg</ENAMEX>.</sentence>
+				<sentence xml:id="P1E221">Ainsi, dès le début de l’année 2006, deux des trois postes à charbon de l’entreprise Rosterminalugol ont été achevés.</sentence>
+				<sentence xml:id="P1E222">Au cours de la première année, ils ont exporté 3,5 millions de tonnes.</sentence>
+				<sentence xml:id="P1E223">La capacité du terminal doit être portée à 12,5 millions de tonnes en 2011.</sentence>
+				<sentence xml:id="P1E224">La seconde priorité a été la construction du terminal ferroviaire.</sentence>
+				<sentence xml:id="P1E225">« D’intérêt fédéral », il est conçu pour l’embarquement et le débarquement de convois ferroviaires et de véhicules, pour desservir, entre autres, <ENAMEX type="LOCATION">Baltiisk</ENAMEX>, avant port de <ENAMEX type="LOCATION">Kaliningrad</ENAMEX> et assurer la continuité territoriale avec l’oblast de même nom.</sentence>
+				<sentence xml:id="P1E226">Les premiers wagons ont embarqué en septembre 2006.</sentence>
+				<sentence xml:id="P1E227">Le port dispose d’un terminal pour le soufre et d’un terminal pour le bois.</sentence>
+				<sentence xml:id="P1E228">Un terminal pour marchandises diverses a été inauguré en 2007.</sentence>
+				<sentence xml:id="P1E229">Il atteindra sa capacité maximale (3 millions de tonnes) en 2010.</sentence>
+				<sentence xml:id="P1E230">La première tranche d’un terminal roulier, destiné à la réception de véhicules neufs, a été mise en service en 2010, la seconde est prévue en 2012.</sentence>
+				<sentence xml:id="P1E231">Sont en cours d’aménagement pour une entrée en service en 2011 et 2012, un terminal pour les pondéreux et les produits métallurgiques (aluminium et ferrailles), ainsi qu’un terminal à conteneurs d’une capacité initiale de 500 000 EVP qui doit être portée par la suite à 3 millions d’<ENAMEX type="BUSINESS">EVP</ENAMEX>.</sentence>
+				<sentence xml:id="P1E232">La <ENAMEX type="BUSINESS">NCC</ENAMEX> (<ENAMEX type="BUSINESS">National Container Company</ENAMEX>), première entreprise privée de <ENAMEX type="LOCATION">Russie</ENAMEX> dans ce secteur, participe à cette réalisation.</sentence>
+				<sentence xml:id="P1E233">Le site a aussi été choisi pour renforcer les capacités d’exportation d’hydrocabures.</sentence>
+				<sentence xml:id="P1E234">Transneft a décidé, en 2009, la construction d’un nouvel oléoduc (BTS 2) entre <ENAMEX type="BUSINESS">Ounetcha</ENAMEX>, où passe l’oléoduc qui achemine le pétrole vers l’<ENAMEX type="LOCATION">Europe centrale</ENAMEX>, et <ENAMEX type="BUSINESS">Ust-Luga</ENAMEX>.</sentence>
+				<sentence xml:id="P1E235">Il s’agit de compléter le BTS de Primorsk, et de réduire le rôle du transit continental, notamment par l’<ENAMEX type="LOCATION">Ukraine</ENAMEX>.</sentence>
+				<sentence xml:id="P1E236">Prévus pour une mise en service en 2012, l’oléoduc et le terminal pétrolier auront une capacité initiale de 30 millions de tonnes.</sentence>
+				<sentence xml:id="P1E237">Le chenal d’une profondeur de 16 mètres permet l’accès de navires de 100 000 tonnes de port en lourd pour les marchandises sèches et de 150 000 tonnes pour les vracs liquides.</sentence>
+				<sentence xml:id="P1E238">Un autre projet, dans la baie de <ENAMEX type="BUSINESS">Batareïnaïa</ENAMEX>, à côté de la centrale nucléaire de <ENAMEX type="PERSON">Sosnovy Bor</ENAMEX> reste pour l’instant sans suite.</sentence>
+				<sentence xml:id="P1E239">Les autorités régionales et fédérales semblent, en effet, réticentes à un mitage portuaire du littoral du golfe de <ENAMEX type="LOCATION">Finlande</ENAMEX>.</sentence>
+				<sentence xml:id="P1E240">Il comprend des sites de grande valeur écologique et les lieux de villégiature de la population péterbourgeoise.</sentence>
+				<sentence xml:id="P1E241">Le conflit d’usage peut conduire à limiter les nouveaux sites d’implantation portuaire ou du moins, à éviter de les disperser.</sentence>
+				<sentence xml:id="P1E242">Dans cette hypothèse, le développement futur des ports se ferait à <ENAMEX type="BUSINESS">Primorsk</ENAMEX> et <ENAMEX type="BUSINESS">Ust-Luga</ENAMEX>.</sentence>
+				<sentence xml:id="P1E243">La crise n’a pas eu d’effets importants en 2008.</sentence>
+				<sentence xml:id="P1E244">Les trafics portuaires ont commencé toutefois à diminuer à l’automne 2008.</sentence>
+				<sentence xml:id="P1E245">Les évolutions au cours de l’année 2009 ont été variables en fonction de la conjoncture des marchés et de la consommation.</sentence>
+				<sentence xml:id="P1E246">Les exportations de charbon et de produits métallurgiques ont diminué.</sentence>
+				<sentence xml:id="P1E247">Cependant le recul a particulièrement affecté les importations de marchandises diverses conteneurisées, à cause du tassement du marché russien.</sentence>
+				<sentence xml:id="P1E248">Les exportations de matières premières et notamment de pétrole et de produits pétroliers ont épargnées, du moins jusqu’au premier semestre de l’année 2010.</sentence>
+				<sentence xml:id="P1E249">La crise a néanmoins rendu les investisseurs moins confiants.</sentence>
+				<sentence xml:id="P1E250">Certains projets ont été suspendus ou différés dans l’attente de marchés plus stables.</sentence>
+				<sentence xml:id="P1E251">4. Le cas de <ENAMEX type="PERSON">Kaliningrad Port</ENAMEX> le plus occidental de la <ENAMEX type="LOCATION">Russie</ENAMEX> et en son temps de l’<ENAMEX type="LOCATION">URSS</ENAMEX>, <ENAMEX type="BUSINESS">Kaliningrad</ENAMEX> se situe désormais dans une enclave au sein de l’<ENAMEX type="ORGANISATION">Union européenne</ENAMEX>.</sentence>
+				<sentence xml:id="P1E252">L’oblast de <ENAMEX type="LOCATION">Kaliningrad</ENAMEX> qui s’étend sur 15 000 km2, est séparé du reste du pays par au moins deux États.</sentence>
+				<sentence xml:id="P1E253">Les relations terrestres avec le reste de la <ENAMEX type="LOCATION">Russie</ENAMEX> dépendent donc de l’attitude des États à traverser, en particulier de la <ENAMEX type="LOCATION">Lituanie</ENAMEX> et des accords entre la <ENAMEX type="LOCATION">Russie</ENAMEX> et l’<ENAMEX type="ORGANISATION">Union européenne</ENAMEX>.</sentence>
+				<sentence xml:id="P1E254">Ce contexte singulier donne de nouvelles fonctions au port et ce à plusieurs titres.</sentence>
+				<sentence xml:id="P1E255">Pendant la période soviétique les deux activités maritimes principales étaient une base navale à <ENAMEX type="LOCATION">Baltiisk</ENAMEX>, et un port de pêche armant, outre des chalutiers de pêche côtière, une flotte de pêche océanique au long cours.</sentence>
+				<sentence xml:id="P1E256">Le port de commerce avait une finalité régionale.</sentence>
+				<sentence xml:id="P1E257">Aucune flotte de commerce n’y était d’ailleurs basée.</sentence>
+				<sentence xml:id="P1E258">Aujourd’hui il est amené à jouer un rôle considérable dans la continuité territoriale russe et il peut être un outil de développement régional en liaison avec la <ENAMEX type="BUSINESS">Zone</ENAMEX> économique spéciale.</sentence>
+				<sentence xml:id="P1E259">Il est divisé entre quatre organismes : l’entreprise publique du port de pêche, le port de commerce, le port fluvial et le port de <ENAMEX type="BUSINESS">Svetly</ENAMEX>.</sentence>
+				<sentence xml:id="P1E260">Ce dernier se situe au bord de la lagune, entre <ENAMEX type="LOCATION">Baltiisk</ENAMEX> et <ENAMEX type="BUSINESS">Kaliningrad</ENAMEX>.</sentence>
+				<sentence xml:id="P1E261">Le port de pêche maintient son activité.</sentence>
+				<sentence xml:id="P1E262">Désormais plusieurs entreprises assurent les divers types de pêche.</sentence>
+				<sentence xml:id="P1E263">Elles ont débarqué 345 000 tonnes de poissons en 2004 soit 11 % des prises débarquées en <ENAMEX type="LOCATION">Russie</ENAMEX>.</sentence>
+				<sentence xml:id="P1E264">Les autres ports sont généralistes.</sentence>
+				<sentence xml:id="P1E265">Leur trafic comprend pour partie des matières premières et des vracs à l’exportation, en provenance du reste du pays par chemin de fer, pour partie des marchandises d’importation destinées à la région et enfin des produits manufacturés dans l’oblast puis exportées.</sentence>
+				<sentence xml:id="P1E266">L’oblast bénéficie, en effet, d’un statut de <ENAMEX type="BUSINESS">Zone</ENAMEX> économique spéciale qui a pendant quelques années nourri le rêve de transformer la région en «<ENAMEX type="PERSON"> Hong Kong de la Baltique</ENAMEX> ».</sentence>
+				<sentence xml:id="P1E267">A défaut de ce rêve, les franchises douanières ont attiré des entreprises étrangères allemandes, polonaises et lituaniennes.</sentence>
+				<sentence xml:id="P1E268">Elles élaborent des biens de consommation, expédiés ensuite sur le marché russien et, dans une moindre mesure, dans l’<ENAMEX type="ORGANISATION">Union européenne</ENAMEX>.</sentence>
+				<sentence xml:id="P1E269">Une dizaine de lignes régulières relient <ENAMEX type="BUSINESS">Kaliningrad</ENAMEX> aux ports de l’<ENAMEX type="LOCATION">Europe</ENAMEX> du nord ainsi qu’aux ports russiens du golfe de <ENAMEX type="LOCATION">Finlande</ENAMEX>.</sentence>
+				<sentence xml:id="P1E270"><ENAMEX type="LOCATION">Kaliningrad</ENAMEX>, seul port russien de la Baltique à ne pas être pris par les glaces, ne profite pas de cet avantage contrebalancé par les hauts fonds qui en limitent l’accès (navires n’excédant pas 8 mètres de tirant d’eau et 15 000 tonnes de port en lourd) et par la situation d’enclave.</sentence>
+				<sentence xml:id="P1E271">Cela n’a pas empêché Lukoil d’ouvrir un terminal en novembre 2000.</sentence>
+				<sentence xml:id="P1E272">A la différence des autres ports de la Baltique, l’avenir du port est lié aux évolutions géopolitiques.</sentence>
+				<sentence xml:id="P1E273">Il dépend principalement des relations de l’oblast’ et plus généralement de la <ENAMEX type="LOCATION">Russie</ENAMEX> avec leurs voisins de l’<ENAMEX type="ORGANISATION">Union européenne</ENAMEX>.</sentence>
+				<sentence xml:id="P1E274">Conclusion Le développement des ports russes de la Baltique répond à deux exigences : l’une géopolitique et la seconde d’aménagement du territoire régional.</sentence>
+				<sentence xml:id="P1E275">La <ENAMEX type="LOCATION">Russie</ENAMEX> cherche à conforter son indépendance maritime.</sentence>
+				<sentence xml:id="P1E276">Elle a besoin de ports d’exportation de matières premières, notamment d’hydrocarbures et de charbon, et de terminaux à conteneurs.</sentence>
+				<sentence xml:id="P1E277">Au début des années 2000, les investissements ont été multipliés, encouragés par la stabilisation de la situation générale dans le pays et la croissance économique.</sentence>
+				<sentence xml:id="P1E278">La crise qui a débuté en 2008 fragilise ce renouveau portuaire.</sentence>
+				<sentence xml:id="P1E279">Dans le même temps, la <ENAMEX type="LOCATION">Russie</ENAMEX> doit faire face à la saturation du nœud de transport de <ENAMEX type="LOCATION">Saint-Pétersbourg</ENAMEX>, tout en renforçant ses capacités portuaires en mer Baltique.</sentence>
+				<sentence xml:id="P1E280">Cette façade est la plus proche des grands foyers de peuplement.</sentence>
+				<sentence xml:id="P1E281">Elle a aussi pour arrière pays d’importants gisements de matières premières alors qu’elle s’ouvre sur d’importants clients.</sentence>
+				<sentence xml:id="P1E282">Afin de désengorger la ville, les extensions portuaires doivent être réalisées à l’extérieur de l’agglomération.</sentence>
+				<sentence xml:id="P1E283">Ceci nécessite non seulement des aménagements maritimes, mais la refonte de tout le réseau des transports terrestres au voisinage de la métropole du Nord-ouest.</sentence>
+				<sentence xml:id="P1E284">La concurrence est vive pour gagner des trafics dans le vaste hinterland de la <ENAMEX type="LOCATION">Russie</ENAMEX> et des États de la <ENAMEX type="INSTITUTION">CEI</ENAMEX>.</sentence>
+				<sentence xml:id="P1E285">Les ports russiens de la Baltique sont en compétition tant avec les ports voisins de la <ENAMEX type="LOCATION">Finlande</ENAMEX> et des Etats <ENAMEX type="PERSON">Baltes</ENAMEX>, qu’avec les ports allemands et de la rangée du Nord lorsqu’ils desservent la <ENAMEX type="LOCATION">Russie</ENAMEX> par voie terrestre.</sentence>
+				<sentence xml:id="P1E286">La concurrence s’aiguise par conséquent aussi au niveau du choix modal pour les échanges entre la <ENAMEX type="LOCATION">Russie</ENAMEX> et l’<ENAMEX type="ORGANISATION">Union européenne</ENAMEX>.</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P2">
+				<sentence xml:id="P2E0">http://tem.revues.org/1129</sentence>
+			</p>
+			<p xml:lang="fr" xml:id="P3">
+				<sentence xml:id="P3E0">10.4000/tem.1129</sentence>
+			</p>
+		</document>
+	</subcorpus>
+</corpus>
