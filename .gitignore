@@ -1,5 +1,6 @@
 target
 build
+out
 grobid-home/tmp
 .DS_Store
 Thumbs.db
