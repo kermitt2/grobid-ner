@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<corpus>
+	<subcorpus>
+		<document name="EHRI_unit_it-002880-f_r_1434.2layers.xml">
+			<p xml:lang="en" xml:id="P0">
+				<sentence xml:id="P0E0">The files concern <ENAMEX type="CONCEPTUAL">anti-semitic</ENAMEX> posters <ENAMEX subType="2" type="PERIOD">from <ENAMEX type="PERIOD">April 1942</ENAMEX></ENAMEX> (&quot;<ENAMEX type="PERSON_TYPE">Jews</ENAMEX> are your deadly enemy&quot;); confiscation of <ENAMEX type="PERSON_TYPE">Jewish</ENAMEX> property and adaptation for such property for public use (for example: the synagogue was adapted for police purposes); the report of the <ENAMEX type="TITLE">chief</ENAMEX> of the county concerning registration by doctors <ENAMEX type="PERSON_TYPE">Aryan</ENAMEX> origins all cases of deaths of <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> in <ENAMEX type="PERIOD">August 1942</ENAMEX>; the main instructions for how settlements in the county were to deal with <ENAMEX type="PERSON_TYPE">Jews</ENAMEX>, how they were to forced <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> to work, how they were to confiscate and register private property of <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> <ENAMEX type="PERIOD">from September 1941</ENAMEX>.</sentence>
+			</p>
+		</document>
+	</subcorpus>
+</corpus>
