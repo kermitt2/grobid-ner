@@ -269,9 +269,9 @@ public class TwoLayerEntityCombinator {
                     int sentenceBasedIndex = 0;
 
                     // small adjustment to avoid sentence starting with a space
-                    if (para.charAt(sentenceStart) == ' ') {
-                        sentenceStart++;
-                    }
+//                    if (para.charAt(sentenceStart) == ' ') {
+//                        sentenceStart++;
+//                    }
 
                     StringBuilder sb = new StringBuilder();
                     for (int index = sentenceStart; index < sentenceEnd; index++) {
@@ -321,7 +321,19 @@ public class TwoLayerEntityCombinator {
                     if (CollectionUtils.isNotEmpty(offsetEndReverseMap.get(sentenceEnd))) {
                         final List<Entity> entitiesByIndexEnd = offsetEndReverseMap.get(sentenceEnd);
                         for (Entity entity : entitiesByIndexEnd) {
-                            sb.append("</ENAMEX>");
+                            if (entity.getOffsetStart() >= sentenceStart) {
+                                if (entity.getOrigin().equals(Entity.Origin.GROBID)) {
+                                    if (entitiesByIndexEnd.stream()
+                                            .filter(entity1 -> entity1.getOffsetStart() == entity.getOffsetStart() &&
+                                                    entity1.getOffsetEnd() == entity.getOffsetEnd() &&
+                                                    entity1.getOrigin().equals(Entity.Origin.USER))
+                                            .count() == 0) {
+                                        sb.append("</ENAMEX>");
+                                    }
+                                } else {
+                                    sb.append("</ENAMEX>");
+                                }
+                            }
                         }
                     }
 

@@ -1,35 +1,43 @@
 package org.grobid.trainer;
 
+import com.ctc.wstx.stax.WstxInputFactory;
+import org.codehaus.stax2.XMLStreamReader2;
 import org.grobid.core.data.Entity;
 import org.grobid.core.data.Paragraph;
 import org.grobid.core.data.Sentence;
 import org.grobid.core.data.TrainingDocument;
+import org.grobid.core.engines.NEREnParser;
 import org.grobid.core.engines.NERParser;
 import org.grobid.core.lexicon.NERLexicon;
+import org.grobid.core.main.GrobidHomeFinder;
+import org.grobid.core.main.LibraryLoader;
+import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.OffsetPosition;
+import org.grobid.trainer.stax.CustomEMEXFormatStaxHandler;
+import org.grobid.trainer.stax.StaxUtils;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
+import java.io.File;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 import static org.easymock.EasyMock.*;
+import static org.hamcrest.Matchers.hasSize;
+import static org.junit.Assert.assertThat;
 
 public class TwoLayerEntityCombinatorTest {
+
+    WstxInputFactory inputFactory = new WstxInputFactory();
 
     TwoLayerEntityCombinator target;
     NERParser parserMock;
 
     @Before
     public void setUp() throws Exception {
-//        GrobidHomeFinder grobidHomeFinder = new GrobidHomeFinder(Arrays.asList("../../grobid-home"));
-//        File grobidHome = grobidHomeFinder.findGrobidHomeOrFail();
-//        grobidHomeFinder.findGrobidPropertiesOrFail(grobidHome);
-//
-//        GrobidProperties.getInstance(grobidHomeFinder);
-//        LibraryLoader.load();
-
         target = new TwoLayerEntityCombinator();
 
         parserMock = createMock(NERParser.class);
@@ -81,7 +89,6 @@ public class TwoLayerEntityCombinatorTest {
         president.setOffsets(new OffsetPosition(4, 13));
         president.setType(NERLexicon.NER_Type.TITLE);
 
-
         expect(parserMock.extractNE(rawValue)).andReturn(Arrays.asList(potus2, president, us));
 
         replay(parserMock);
@@ -90,5 +97,27 @@ public class TwoLayerEntityCombinatorTest {
         System.out.println(output);
     }
 
+    @Ignore("Requires the model")
+    @Test
+    public void test2() throws Exception {
+        GrobidHomeFinder grobidHomeFinder = new GrobidHomeFinder(Arrays.asList("../../grobid-home"));
+        File grobidHome = grobidHomeFinder.findGrobidHomeOrFail();
+        grobidHomeFinder.findGrobidPropertiesOrFail(grobidHome);
+
+        GrobidProperties.getInstance(grobidHomeFinder);
+        LibraryLoader.load();
+
+        NERParser enParser = new NEREnParser();
+        target.setEnParser(enParser);
+
+        InputStream resourceAsStream = this.getClass().getResourceAsStream("strange.case.2.enamex.xml");
+        XMLStreamReader2 reader = (XMLStreamReader2) inputFactory.createXMLStreamReader(resourceAsStream);
+
+        CustomEMEXFormatStaxHandler handler = new CustomEMEXFormatStaxHandler();
+        StaxUtils.traverse(reader, handler);
+
+        System.out.println(target.constructXML(handler.getDocuments()));
+
+    }
 
 }

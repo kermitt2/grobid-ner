@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<corpus>
+    <subcorpus>
+        <document name="baobao.en">
+
+            <p xml:lang="en" xml:id="P20">
+                <sentence xml:id="P20E0">Main article: <ENAMEX type="LOCATION">UK</ENAMEX> renegotiation of <ENAMEX type="INSTITUTION">EU</ENAMEX> membership, <ENAMEX type="PERIOD">2016</ENAMEX></sentence>
+            </p>
+            
+        </document>
+    </subcorpus>
+</corpus>
