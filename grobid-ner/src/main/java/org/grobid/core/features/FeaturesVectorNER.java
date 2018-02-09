@@ -1,5 +1,6 @@
 package org.grobid.core.features;
 
+import org.grobid.core.lexicon.TemporalLexicon;
 import org.grobid.core.utilities.TextUtilities;
 
 import java.util.StringTokenizer;
@@ -27,10 +28,23 @@ public class FeaturesVectorNER {
     public boolean lastName = false;
     public boolean commonName = false;
     public boolean firstName = false;
-    public boolean year = false;
-    public boolean month = false;
     public boolean cityName = false;
     public boolean countryName = false;
+
+    //Match digits corresponding to possible year
+    public boolean matchingYearDigits = false;
+
+    //Match multiligual month names
+    public boolean matchingMonthNames = false;
+
+    //Match digits corresponding to possible month
+    public boolean matchingMonthDigits = false;
+
+    //Match multiligual day names
+    public boolean matchingDayNames = false;
+
+    //Match digits corresponding to possible days
+    public boolean matchingDayDigits = false;
 
     public String shadowNumber = null; // Convert digits to “0”
 
@@ -91,7 +105,7 @@ public class FeaturesVectorNER {
         // punctuation information (1)
         //res.append(" " + punctType); // in case the token is a punctuation (NO otherwise)
 
-        // lexical information (7)
+        // lexical information (10)
         if (lastName)
             res.append(" 1");
         else
@@ -117,17 +131,32 @@ public class FeaturesVectorNER {
         else
             res.append(" 0");
 
-        if (year)
+        if (matchingYearDigits)
             res.append(" 1");
         else
             res.append(" 0");
 
-        if (month)
+        if (matchingMonthNames)
             res.append(" 1");
         else
             res.append(" 0");
 
+        if (matchingMonthDigits)
+            res.append(" 1");
+        else
+            res.append(" 0");
 
+        if (matchingDayNames)
+            res.append(" 1");
+        else
+            res.append(" 0");
+
+        if (matchingDayDigits)
+            res.append(" 1");
+        else
+            res.append(" 0");
+
+        
         // lexical feature: belongs to a known location (1)
         if (isLocationToken)
             res.append(" 1");
@@ -198,6 +227,8 @@ public class FeaturesVectorNER {
                                                    boolean isOrganisationToken, boolean isOrgFormToken) {
         FeatureFactory featureFactory = FeatureFactory.getInstance();
 
+        TemporalLexicon temporalLexicon = TemporalLexicon.getInstance();
+
         FeaturesVectorNER featuresVector = new FeaturesVectorNER();
 
         featuresVector.string = token;
@@ -249,25 +280,23 @@ public class FeaturesVectorNER {
         if (featuresVector.punctType == null)
             featuresVector.punctType = "NOPUNCT";
 
-        Matcher m2 = featureFactory.year.matcher(token);
+        Matcher m2 = temporalLexicon.year.matcher(token);
         if (m2.find()) {
-            featuresVector.year = true;
+            featuresVector.matchingYearDigits = true;
         }
 
-        if (featureFactory.test_common(token)) {
-            featuresVector.commonName = true;
+        featuresVector.matchingMonthNames = temporalLexicon.isMonthNameMatching(token);
+
+        m2 = temporalLexicon.month.matcher(token);
+        if (m2.find()) {
+            featuresVector.matchingMonthDigits = true;
         }
 
-        if (featureFactory.test_first_names(token)) {
-            featuresVector.firstName = true;
-        }
+        featuresVector.matchingDayNames = temporalLexicon.isDayNameMatching(token);
 
-        if (featureFactory.test_last_names(token)) {
-            featuresVector.lastName = true;
-        }
-
-        if (featureFactory.test_month(token)) {
-            featuresVector.month = true;
+        m2 = temporalLexicon.month.matcher(token);
+        if (m2.find()) {
+            featuresVector.matchingDayDigits = true;
         }
 
         if (featureFactory.test_city(token)) {
