@@ -48,7 +48,7 @@
 				<sentence xml:id="P9E2">In line with the outcome of the vote, <ENAMEX type="MEASURE">67%</ENAMEX> in favour of staying in, the <ENAMEX type="LOCATION">United Kingdom</ENAMEX> remained a member of the <ENAMEX type="INSTITUTION">EEC</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P10">
-				<sentence xml:id="P10E0"><ENAMEX type="EVENT"><ENAMEX subType="2" type="ORGANISATION">United Kingdom European Community</ENAMEX> (<ENAMEX subType="2" type="CONCEPT">Common Market</ENAMEX>) Membership Referendum <ENAMEX subType="2" type="PERIOD">1975</ENAMEX></ENAMEX></sentence>
+				<sentence xml:id="P10E0"><ENAMEX type="EVENT"><ENAMEX subType="2" type="ORGANISATION">United Kingdom European Community</ENAMEX> (<ENAMEX subType="2" type="ORGANISATION">Common Market</ENAMEX>) Membership Referendum <ENAMEX subType="2" type="PERIOD">1975</ENAMEX></ENAMEX></sentence>
 			</p>
 			<p xml:lang="en" xml:id="P17">
 				<sentence xml:id="P17E0">Between referendums</sentence>
