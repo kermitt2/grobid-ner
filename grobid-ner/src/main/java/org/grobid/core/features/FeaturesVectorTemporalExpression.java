@@ -1,5 +1,6 @@
 package org.grobid.core.features;
 
+import org.grobid.core.lexicon.TemporalLexicon;
 import org.grobid.core.utilities.TextUtilities;
 
 import java.util.regex.Matcher;
@@ -18,8 +19,12 @@ public class FeaturesVectorTemporalExpression {
     // OPENQUOTE, ENDQUOTE
 
     // lexical features
-    public boolean year = false;
-    public boolean month = false;
+    public boolean matchingYearDigits = false;
+    public boolean matchingMonthNames = false;
+    public boolean matchingMonthDigits = false;
+    public boolean matchingDayNames = false;
+    public boolean matchingDayDigits = false;
+
 
     public String shadowNumber = null; // Convert digits to “0”
 
@@ -30,8 +35,10 @@ public class FeaturesVectorTemporalExpression {
     public String wordShapeTrimmed = null;
 
 
-    static public FeaturesVectorTemporalExpression addFeatures(String word, String label) {
+    public static FeaturesVectorTemporalExpression addFeatures(String word, String label) {
         FeatureFactory featureFactory = FeatureFactory.getInstance();
+
+        TemporalLexicon temporalLexicon = TemporalLexicon.getInstance();
 
         FeaturesVectorTemporalExpression featuresVector = new FeaturesVectorTemporalExpression();
 
@@ -44,17 +51,17 @@ public class FeaturesVectorTemporalExpression {
 
         if (featureFactory.test_all_capital(word)) {
             featuresVector.capitalisation = "ALLCAPS";
-        }else if (featureFactory.test_first_capital(word)) {
+        } else if (featureFactory.test_first_capital(word)) {
             featuresVector.capitalisation = "INITCAP";
-        }else {
+        } else {
             featuresVector.capitalisation = "NOCAPS";
         }
 
         if (featureFactory.test_number(word)) {
             featuresVector.digit = "ALLDIGIT";
-        }else if (featureFactory.test_digit(word)) {
+        } else if (featureFactory.test_digit(word)) {
             featuresVector.digit = "CONTAINDIGIT";
-        }else {
+        } else {
             featuresVector.digit = "NODIGIT";
         }
 
@@ -73,7 +80,7 @@ public class FeaturesVectorTemporalExpression {
             featuresVector.punctType = "HYPHEN";
         } else if (word.equals("\"") || word.equals("\'") || word.equals("`")) {
             featuresVector.punctType = "QUOTE";
-        }  else if(word.equals("/") || word.equals("\\")) {
+        } else if (word.equals("/") || word.equals("\\")) {
             featuresVector.punctType = "SLASH";
         }
 
@@ -86,13 +93,23 @@ public class FeaturesVectorTemporalExpression {
         if (featuresVector.punctType == null)
             featuresVector.punctType = "NOPUNCT";
 
-        Matcher m2 = featureFactory.year.matcher(word);
+        Matcher m2 = temporalLexicon.year.matcher(word);
         if (m2.find()) {
-            featuresVector.year = true;
+            featuresVector.matchingYearDigits = true;
         }
 
-        if (featureFactory.test_month(word)) {
-            featuresVector.month = true;
+        featuresVector.matchingMonthNames = temporalLexicon.isMonthNameMatching(word);
+
+        m2 = temporalLexicon.month.matcher(word);
+        if (m2.find()) {
+            featuresVector.matchingMonthDigits = true;
+        }
+
+        featuresVector.matchingDayNames = temporalLexicon.isDayNameMatching(word);
+
+        m2 = temporalLexicon.month.matcher(word);
+        if (m2.find()) {
+            featuresVector.matchingDayDigits = true;
         }
 
         featuresVector.shadowNumber = TextUtilities.shadowNumbers(word);
@@ -143,13 +160,28 @@ public class FeaturesVectorTemporalExpression {
         else
             res.append(" 0");
 
-        // lexical information (2)
-        if (year)
+        // lexical information (5)
+        if (matchingYearDigits)
             res.append(" 1");
         else
             res.append(" 0");
 
-        if (month)
+        if (matchingMonthNames)
+            res.append(" 1");
+        else
+            res.append(" 0");
+
+        if (matchingMonthDigits)
+            res.append(" 1");
+        else
+            res.append(" 0");
+
+        if (matchingDayNames)
+            res.append(" 1");
+        else
+            res.append(" 0");
+
+        if (matchingDayDigits)
             res.append(" 1");
         else
             res.append(" 0");

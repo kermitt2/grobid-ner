@@ -17,14 +17,14 @@ public class TemporalLexiconTest {
 
     @Before
     public void setUp() throws Exception {
-        target = new TemporalLexicon();
+        target = new TemporalLexicon(true);
     }
 
     @Test
     public void testLoading_Days() throws Exception {
         InputStream is = this.getClass().getResourceAsStream("days_multilanguage.sample.csv");
 
-        final Map<String, List<String>> load = target.load(is, TemporalLexicon.DAYS);
+        final Map<String, List<String>> load = target.load(is, TemporalLexicon.DAYS_NB_ITEMS);
 
         assertThat(load.keySet(), hasSize(8));
         
@@ -36,7 +36,7 @@ public class TemporalLexiconTest {
     public void testLoading_Months() throws Exception {
         InputStream is = this.getClass().getResourceAsStream("months_multilanguage.sample.csv");
 
-        final Map<String, List<String>> load = target.load(is, TemporalLexicon.MONTHS);
+        final Map<String, List<String>> load = target.load(is, TemporalLexicon.MONTHS_NB_ITEMS);
 
         assertThat(load.keySet(), hasSize(11));
 
@@ -49,32 +49,32 @@ public class TemporalLexiconTest {
     public void testIsMonth() throws Exception {
         InputStream is = this.getClass().getResourceAsStream("months_multilanguage.sample.csv");
 
-        final Map<String, List<String>> data = target.load(is, TemporalLexicon.MONTHS);
+        final Map<String, List<String>> data = target.load(is, TemporalLexicon.MONTHS_NB_ITEMS);
 
         target.setDictionaryMonths(data);
 
-        assertThat(target.isMonth("jan"), is(true));
-        assertThat(target.isMonth("january"), is(true));
-        assertThat(target.isMonth("January"), is(true));
-        assertThat(target.isMonth("janvier"), is(true));
-        assertThat(target.isMonth("fevrier"), is(true));
-        assertThat(target.isMonth("Fevrier"), is(true));
-        assertThat(target.isMonth("février"), is(true));
+        assertThat(target.isMonthNameMatching("jan"), is(true));
+        assertThat(target.isMonthNameMatching("january"), is(true));
+        assertThat(target.isMonthNameMatching("January"), is(true));
+        assertThat(target.isMonthNameMatching("janvier"), is(true));
+        assertThat(target.isMonthNameMatching("fevrier"), is(true));
+        assertThat(target.isMonthNameMatching("Fevrier"), is(true));
+        assertThat(target.isMonthNameMatching("février"), is(true));
     }
 
     @Test
     public void testIsDay() throws Exception {
         InputStream is = this.getClass().getResourceAsStream("days_multilanguage.sample.csv");
 
-        final Map<String, List<String>> data = target.load(is, TemporalLexicon.DAYS);
+        final Map<String, List<String>> data = target.load(is, TemporalLexicon.DAYS_NB_ITEMS);
 
         target.setDictionaryDays(data);
 
-        assertThat(target.isDay("mon"), is(true));
-        assertThat(target.isDay("monday"), is(true));
-        assertThat(target.isDay("Monday"), is(true));
-        assertThat(target.isDay("miércoles"), is(true));
-        assertThat(target.isDay("miercoles"), is(true));
+        assertThat(target.isDayNameMatching("mon"), is(true));
+        assertThat(target.isDayNameMatching("monday"), is(true));
+        assertThat(target.isDayNameMatching("Monday"), is(true));
+        assertThat(target.isDayNameMatching("miércoles"), is(true));
+        assertThat(target.isDayNameMatching("miercoles"), is(true));
     }
 
 

@@ -4,7 +4,9 @@ import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 import org.apache.commons.io.IOUtils;
+import org.grobid.core.utilities.GrobidProperties;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.text.Normalizer;
@@ -12,6 +14,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Pattern;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 import static org.apache.commons.lang3.StringUtils.lowerCase;
@@ -19,21 +22,45 @@ import static org.apache.commons.lang3.StringUtils.lowerCase;
 public class TemporalLexicon {
 
     // Predefined values for loading months or days
-    public static final Integer DAYS = 8;
-    public static final Integer MONTHS = 13;
+    public static final Integer DAYS_NB_ITEMS = 8;
+    public static final String DAYS_CSV_FILENAME = "days_multilanguage.csv";
+    public static final Integer MONTHS_NB_ITEMS = 13;
+    public static final String MONTHS_CSV_FILENAME = "months_multilanguage.csv";
 
     private List<String> dictionaryDays = new ArrayList<>();
     private List<String> dictionaryMonths = new ArrayList<>();
 
-    public TemporalLexicon() {
+    public Pattern year = Pattern.compile("[1,2][0-9][0-9][0-9]");
 
+    public Pattern month = Pattern.compile("1|2|3|4|5|6|7|8|9|10|11|12");
+    public Pattern day = Pattern.compile("1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31");
+
+    private static TemporalLexicon instance;
+
+    public static TemporalLexicon getInstance() {
+        if (instance == null) {
+            getNewInstance();
+        }
+        return instance;
     }
 
-    public TemporalLexicon(String lexiconLocation) {
-        Map<String, List<String>> lexiconDays = load(lexiconLocation, DAYS);
+    private static synchronized void getNewInstance() {
+        instance = new TemporalLexicon("/temporalLexicon");
+    }
+
+    /**
+     * Just for testing
+     */
+    TemporalLexicon(boolean testing) {
+    }
+
+    private TemporalLexicon(String lexiconLocation) {
+        Map<String, List<String>> lexiconDays = load(lexiconLocation +
+                File.separator + DAYS_CSV_FILENAME, DAYS_NB_ITEMS);
         dictionaryDays = fillDictionaryList(lexiconDays);
 
-        Map<String, List<String>> lexiconMonths = load(lexiconLocation, MONTHS);
+        Map<String, List<String>> lexiconMonths = load(lexiconLocation +
+                File.separator + MONTHS_CSV_FILENAME, MONTHS_NB_ITEMS);
         dictionaryMonths = fillDictionaryList(lexiconMonths);
     }
 
@@ -48,7 +75,7 @@ public class TemporalLexicon {
                 final String unAccented = Normalizer
                         .normalize(valueLowerCase, Normalizer.Form.NFD)
                         .replaceAll("[^\\p{ASCII}]", "");
-                if(!unAccented.equalsIgnoreCase(valueLowerCase)) {
+                if (!unAccented.equalsIgnoreCase(valueLowerCase)) {
                     dictionaryList.add(unAccented);
                 }
 
@@ -94,11 +121,11 @@ public class TemporalLexicon {
         return multilanguageDayNamesDictionary;
     }
 
-    public boolean isMonth(String potentialMonth) {
+    public boolean isMonthNameMatching(String potentialMonth) {
         return dictionaryMonths.contains(lowerCase(potentialMonth));
     }
 
-    public boolean isDay(String potentialDay) {
+    public boolean isDayNameMatching(String potentialDay) {
         return dictionaryDays.contains(lowerCase(potentialDay));
     }
 
