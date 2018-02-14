@@ -4,7 +4,7 @@
 		<document name="Wikipedia_brexit.2layers.xml">
 			<p xml:lang="en" xml:id="P0">
 				<sentence xml:id="P0E0"><ENAMEX type="EVENT">Brexit</ENAMEX> is the forthcoming withdrawal of the <ENAMEX type="LOCATION"><ENAMEX subType="2" type="LOCATION">United Kingdom</ENAMEX> (<ENAMEX subType="2" type="LOCATION">UK</ENAMEX>)</ENAMEX> from the <ENAMEX type="INSTITUTION"><ENAMEX subType="2" type="INSTITUTION">European Union</ENAMEX> (<ENAMEX subType="2" type="ORGANISATION">EU</ENAMEX>)</ENAMEX>.</sentence>
-				<sentence xml:id="P0E1">In the <ENAMEX type="EVENT"><ENAMEX subType="2" type="PERIOD">June 2016</ENAMEX> referendum</ENAMEX>, <ENAMEX type="MEASURE">52%</ENAMEX> voted to leave the <ENAMEX type="INSTITUTION">EU</ENAMEX>, leading into a complex separation process implying political and economic changes for the <ENAMEX type="LOCATION">UK</ENAMEX> and other countries.</sentence>
+				<sentence xml:id="P0E1">In the <ENAMEX type="EVENT">June 2016 referendum</ENAMEX>, <ENAMEX type="MEASURE">52%</ENAMEX> voted to leave the <ENAMEX type="INSTITUTION">EU</ENAMEX>, leading into a complex separation process implying political and economic changes for the <ENAMEX type="LOCATION">UK</ENAMEX> and other countries.</sentence>
 				<sentence xml:id="P0E2">The timetable for withdrawal has not yet been firmly established.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P1">
@@ -14,7 +14,7 @@
 				<sentence xml:id="P1E3">The assumption is that during the <ENAMEX type="PERIOD">two-year</ENAMEX> window new agreements will be negotiated, but there is no requirement that there be new agreements.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P2">
-				<sentence xml:id="P2E0">Withdrawal has been the goal of various individuals, advocacy groups, and political parties since the <ENAMEX type="LOCATION">UK</ENAMEX> joined the <ENAMEX type="INSTITUTION"><ENAMEX subType="2" type="INSTITUTION">European Economic Community</ENAMEX> (<ENAMEX subType="2" type="INSTITUTION">EEC</ENAMEX>)</ENAMEX>, the predecessor of the <ENAMEX type="INSTITUTION">EU</ENAMEX>, in <ENAMEX type="PERIOD">1973</ENAMEX>, though continued membership of the <ENAMEX type="INSTITUTION">EEC</ENAMEX> was approved in a <ENAMEX type="EVENT"><ENAMEX subType="2" type="PERIOD">1975</ENAMEX> referendum</ENAMEX> by <ENAMEX type="MEASURE">67%</ENAMEX> of voters.</sentence>
+				<sentence xml:id="P2E0">Withdrawal has been the goal of various individuals, advocacy groups, and political parties since the <ENAMEX type="LOCATION">UK</ENAMEX> joined the <ENAMEX type="INSTITUTION"><ENAMEX subType="2" type="INSTITUTION">European Economic Community</ENAMEX> (<ENAMEX subType="2" type="INSTITUTION">EEC</ENAMEX>)</ENAMEX>, the predecessor of the <ENAMEX type="INSTITUTION">EU</ENAMEX>, in <ENAMEX type="PERIOD">1973</ENAMEX>, though continued membership of the <ENAMEX type="INSTITUTION">EEC</ENAMEX> was approved in a <ENAMEX type="EVENT">1975 referendum</ENAMEX> by <ENAMEX type="MEASURE">67%</ENAMEX> of voters.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P3">
 				<sentence xml:id="P3E0">Background</sentence>
@@ -48,13 +48,13 @@
 				<sentence xml:id="P9E2">In line with the outcome of the vote, <ENAMEX type="MEASURE">67%</ENAMEX> in favour of staying in, the <ENAMEX type="LOCATION">United Kingdom</ENAMEX> remained a member of the <ENAMEX type="INSTITUTION">EEC</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P10">
-				<sentence xml:id="P10E0"><ENAMEX type="EVENT"><ENAMEX subType="2" type="ORGANISATION">United Kingdom European Community</ENAMEX> (<ENAMEX subType="2" type="ORGANISATION">Common Market</ENAMEX>) Membership Referendum <ENAMEX subType="2" type="PERIOD">1975</ENAMEX></ENAMEX></sentence>
+				<sentence xml:id="P10E0"><ENAMEX type="EVENT"><ENAMEX subType="2" type="ORGANISATION">United Kingdom European Community</ENAMEX> (<ENAMEX subType="2" type="ORGANISATION">Common Market</ENAMEX>) <ENAMEX subType="2" type="EVENT">Membership Referendum 1975</ENAMEX></ENAMEX></sentence>
 			</p>
 			<p xml:lang="en" xml:id="P17">
 				<sentence xml:id="P17E0">Between referendums</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P18">
-				<sentence xml:id="P18E0">The opposition <ENAMEX type="ORGANISATION">Labour Party</ENAMEX> campaigned in the <ENAMEX type="EVENT"> 1983 general election</ENAMEX> on a commitment to withdraw from the <ENAMEX type="INSTITUTION">EEC</ENAMEX>.</sentence>
+				<sentence xml:id="P18E0">The opposition <ENAMEX type="ORGANISATION">Labour Party</ENAMEX> campaigned in the <ENAMEX type="EVENT">1983 general election</ENAMEX> on a commitment to withdraw from the <ENAMEX type="INSTITUTION">EEC</ENAMEX>.</sentence>
 				<sentence xml:id="P18E1">It was heavily defeated as the <ENAMEX type="PERSON_TYPE">Conservative</ENAMEX> government of <ENAMEX type="PERSON">Margaret Thatcher</ENAMEX> was re-elected.</sentence>
 				<sentence xml:id="P18E2">The <ENAMEX type="ORGANISATION">Labour Party</ENAMEX> subsequently changed its policy.</sentence>
 			</p>
@@ -63,7 +63,7 @@
 				<sentence xml:id="P19E1">The new name reflected the evolution of the organisation from an economic union into a political union.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P20">
-				<sentence xml:id="P20E0">The <ENAMEX type="ORGANISATION">Referendum Party</ENAMEX> was formed in <ENAMEX type="PERIOD">1994</ENAMEX> by <ENAMEX type="PERSON">Sir James Goldsmith</ENAMEX><!--check Sir as title --> to contest the <ENAMEX type="EVENT">1997 general election</ENAMEX>  on a platform of providing a referendum on the <ENAMEX type="LOCATION">UK</ENAMEX>&apos;s membership of the <ENAMEX type="INSTITUTION">EU</ENAMEX>.</sentence>
+				<sentence xml:id="P20E0">The <ENAMEX type="ORGANISATION">Referendum Party</ENAMEX> was formed in <ENAMEX type="PERIOD">1994</ENAMEX> by <ENAMEX type="PERSON">Sir James Goldsmith</ENAMEX><!--check Sir as title --> to contest the <ENAMEX type="EVENT">1997 general election</ENAMEX> on a platform of providing a referendum on the <ENAMEX type="LOCATION">UK</ENAMEX>&apos;s membership of the <ENAMEX type="INSTITUTION">EU</ENAMEX>.</sentence>
 				<sentence xml:id="P20E1">It fielded candidates in <ENAMEX type="MEASURE">547</ENAMEX> constituencies at that election and won <ENAMEX type="MEASURE">810,860</ENAMEX> votes, <ENAMEX type="MEASURE">2.6%</ENAMEX> of total votes cast.</sentence>
 				<sentence xml:id="P20E2">It failed to win a single parliamentary seat as its vote was spread out, losing its deposit (funded by <ENAMEX type="PERSON">Goldsmith</ENAMEX>) in <ENAMEX type="MEASURE">505</ENAMEX> constituencies.</sentence>
 			</p>
@@ -197,7 +197,7 @@
 				<sentence xml:id="P64E0"><ENAMEX type="LEGAL">Article 50 of the Treaty on European Union</ENAMEX> provides an invocation procedure whereby a member can notify the <ENAMEX type="INSTITUTION">European Council</ENAMEX> and there is a <ENAMEX type="PERIOD">two year</ENAMEX> negotiation period after which the treaties cease to apply - although a leaving agreement may be agreed by Qualified majority voting.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P65">
-				<sentence xml:id="P65E0">As was the case with the <ENAMEX type="EVENT">Scottish independence referendum</ENAMEX> <ENAMEX type="PERIOD">two years earlier</ENAMEX>, the <ENAMEX type="EVENT"><ENAMEX subType="2" type="PERIOD">2016</ENAMEX> referendum</ENAMEX> did not directly require the government to do anything in particular.</sentence>
+				<sentence xml:id="P65E0">As was the case with the <ENAMEX type="EVENT">Scottish independence referendum</ENAMEX> <ENAMEX type="PERIOD">two years earlier</ENAMEX>, the <ENAMEX type="EVENT">2016 referendum</ENAMEX> did not directly require the government to do anything in particular.</sentence>
 				<sentence xml:id="P65E1">It does not require the government to initiate, or even schedule, the <ENAMEX type="LEGAL">Article  50</ENAMEX> procedure. Although <ENAMEX type="PERSON">Cameron</ENAMEX> stated during the campaign that he would invoke <ENAMEX type="LEGAL">Article  50</ENAMEX> straight away in the event of a leave victory, he refused to allow the <ENAMEX type="INSTITUTION">Civil Service</ENAMEX> to make any contingency plans, something the <ENAMEX type="ORGANISATION">Foreign Affairs Select Committee</ENAMEX> later described as &quot;an act of gross negligence.&quot;</sentence>
 				<sentence xml:id="P65E2">Following the referendum result <ENAMEX type="PERSON">Cameron</ENAMEX> announced that he would resign before the <ENAMEX type="EVENT"><ENAMEX subType="2" type="ORGANISATION">Conservative party</ENAMEX> conference in <ENAMEX subType="2" type="PERIOD">October</ENAMEX></ENAMEX>, and that it would be for the incoming <ENAMEX type="TITLE">Prime Minister</ENAMEX> to invoke <ENAMEX type="LEGAL">Article <ENAMEX subType="2" type="MEASURE">50</ENAMEX></ENAMEX>.</sentence>
 			</p>
@@ -238,7 +238,7 @@
 			</p>
 			<p xml:lang="en" xml:id="P73">
 				<sentence xml:id="P73E0">Newly appointed <ENAMEX type="PERSON"><ENAMEX subType="2" type="TITLE">PM</ENAMEX> <ENAMEX subType="2" type="PERSON">Theresa May</ENAMEX></ENAMEX> made it clear that negotiations with the <ENAMEX type="INSTITUTION">EU</ENAMEX> required a &quot;<ENAMEX type="LOCATION">UK</ENAMEX>-wide approach&quot;.</sentence>
-				<sentence xml:id="P73E1">Speaking in <ENAMEX type="LOCATION">Scotland</ENAMEX> on <ENAMEX type="PERIOD"><ENAMEX subType="2" type="PERIOD">15 July 2016</ENAMEX>, <ENAMEX type="PERSON">May</ENAMEX></ENAMEX> offered the following comment.</sentence>
+				<sentence xml:id="P73E1">Speaking in <ENAMEX type="LOCATION">Scotland</ENAMEX> on <ENAMEX type="PERIOD">15 July 2016</ENAMEX>, <ENAMEX type="PERSON">May</ENAMEX> offered the following comment.</sentence>
 				<sentence xml:id="P73E2">&quot;I have already said that I won&apos;t be triggering <ENAMEX type="LEGAL">articl50</ENAMEX> until I think that we have a <ENAMEX type="LOCATION">UK</ENAMEX> approach and objectives for negotiations – I think it is important that we establish that before we trigger <ENAMEX type="LEGAL">article 50</ENAMEX>.&quot;</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P74">
@@ -264,7 +264,7 @@
 				<sentence xml:id="P80E0">Delay in invoking <ENAMEX type="LEGAL">Article 50</ENAMEX></sentence>
 			</p>
 			<p xml:lang="en" xml:id="P81">
-				<sentence xml:id="P81E0">On <ENAMEX type="PERIOD">19 July 2016</ENAMEX>, at a preliminary <ENAMEX type="INSTITUTION">High Court</ENAMEX> hearing of a challenge to the government&apos;s claim that it could issue the <ENAMEX type="LEGAL">Article 50</ENAMEX> notification without Parliamentary approval, lawyers for the government confirmed that the <ENAMEX type="TITLE">prime minister</ENAMEX> would not issue any such notification before the <ENAMEX type="PERIOD">end of 2016</ENAMEX></ENAMEX>.</sentence>
+				<sentence xml:id="P81E0">On <ENAMEX type="PERIOD">19 July 2016</ENAMEX>, at a preliminary <ENAMEX type="INSTITUTION">High Court</ENAMEX> hearing of a challenge to the government&apos;s claim that it could issue the <ENAMEX type="LEGAL">Article 50</ENAMEX> notification without Parliamentary approval, lawyers for the government confirmed that the <ENAMEX type="TITLE">prime minister</ENAMEX> would not issue any such notification before the <ENAMEX type="PERIOD">end of 2016</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P82">
 				<sentence xml:id="P82E0"><ENAMEX type="PERSON"><ENAMEX subType="2" type="PERSON">Nicolas J. Firzli</ENAMEX> of the <ENAMEX subType="2" type="ORGANISATION">World Pensions Council</ENAMEX> (<ENAMEX subType="2" type="ORGANISATION">WPC</ENAMEX>)</ENAMEX> has argued that it could be in <ENAMEX type="LOCATION">Britain</ENAMEX>&apos;s national interest to proceed slowly in the coming months; <ENAMEX type="INSTITUTION">Her <ENAMEX subType="2" type="TITLE">Majesty<!-- check Majesty if title--></ENAMEX>&apos;s Government</ENAMEX> may want to push <ENAMEX type="LOCATION">Brussels</ENAMEX> to accept the principles of a free trade deal before invoking <ENAMEX type="LEGAL">Article 50</ENAMEX>, hopefully gaining support from some other member states whose economy is strongly tied to the <ENAMEX type="LOCATION">UK</ENAMEX>, thus &quot;allowing a more nimble union to focus on the free trade of goods and services without undue bureaucratic burdens, modern antitrust law and stronger external borders, leaving the rest to member states&quot;.</sentence>
@@ -291,7 +291,7 @@
 				<sentence xml:id="P87E0">As the <ENAMEX type="LOCATION">UK</ENAMEX> electorate has voted to leave the <ENAMEX type="INSTITUTION">EU</ENAMEX>, its subsequent relationship with the remaining <ENAMEX type="INSTITUTION">EU</ENAMEX> members could take several forms.</sentence>
 				<sentence xml:id="P87E1">A research paper presented to the <ENAMEX type="INSTITUTION">UK Parliament</ENAMEX> proposed a number of alternatives to membership which would continue to allow access to the <ENAMEX type="INSTITUTION">EU</ENAMEX> internal market.</sentence>
 				<sentence xml:id="P87E2">These include remaining in the <ENAMEX type="INSTITUTION"><ENAMEX subType="2" type="INSTITUTION">European Economic Area</ENAMEX> (<ENAMEX subType="2" type="INSTITUTION">EEA</ENAMEX>)</ENAMEX> as a <ENAMEX type="INSTITUTION"><ENAMEX subType="2" type="ORGANISATION">European Free Trade Association</ENAMEX> (<ENAMEX subType="2" type="ORGANISATION">EFTA</ENAMEX>)</ENAMEX> member (alongside <ENAMEX type="LOCATION"><ENAMEX subType="2" type="LOCATION">Iceland</ENAMEX>, <ENAMEX subType="2" type="LOCATION">Liechtenstein</ENAMEX>, <ENAMEX subType="2" type="LOCATION">Norway</ENAMEX> and <ENAMEX subType="2" type="LOCATION">Switzerland</ENAMEX></ENAMEX>), or seeking to negotiate bilateral terms more along the <ENAMEX type="NATIONAL">Swiss</ENAMEX> model with a series of interdependent sectoral agreements.</sentence>
-				<sentence xml:id="P87E3"><ENAMEX type="LOCATION">Britain</ENAMEX> has not negotiated a trade agreement <ENAMEX type="PERIOD">since before <ENAMEX subType="2" type="PERIOD">1973</ENAMEX></ENAMEX>, and the government is looking to the private sector for assistance.</sentence>
+				<sentence xml:id="P87E3"><ENAMEX type="LOCATION">Britain</ENAMEX> has not negotiated a trade agreement <ENAMEX type="PERIOD">since before 1973</ENAMEX>, and the government is looking to the private sector for assistance.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P88">
 				<sentence xml:id="P88E0">Were the <ENAMEX type="LOCATION">UK</ENAMEX> to join the <ENAMEX type="INSTITUTION">EEA</ENAMEX> as an <ENAMEX type="INSTITUTION">EFTA</ENAMEX> member, it would have to sign up to <ENAMEX type="INSTITUTION">EU</ENAMEX> internal market legislation without being able to participate in its development or vote on its content.</sentence>
@@ -324,7 +324,6 @@
 			</p>
 			<p xml:lang="en" xml:id="P94">
 				<sentence xml:id="P94E0">A <ENAMEX type="TITLE"><ENAMEX subType="2" type="ORGANISATION">Conservative</ENAMEX> <ENAMEX subType="2" type="ORGANISATION">MEP</ENAMEX></ENAMEX> representing <ENAMEX type="LOCATION">South East England</ENAMEX>, <ENAMEX type="PERSON">Daniel Hannan</ENAMEX>, predicted on <ENAMEX type="CREATION">BBC Newsnight</ENAMEX> that immigration from the <ENAMEX type="INSTITUTION">European Union</ENAMEX> would not end after <ENAMEX type="EVENT">Brexit</ENAMEX>: &quot;Frankly, if people watching think that they have voted and there is now going to be zero immigration from the <ENAMEX type="INSTITUTION">EU</ENAMEX>, they are going to be disappointed.</sentence>
-				<sentence xml:id="P94E1">...</sentence>
 				<sentence xml:id="P94E2">you will look in vain for anything that the <ENAMEX type="ORGANISATION">Leave campaign</ENAMEX> said at any point that ever suggested there would ever be any kind of border closure or drawing up of the drawbridge.&quot;</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P95">
@@ -344,7 +343,7 @@
 			</p>
 			<p xml:lang="en" xml:id="P98">
 				<sentence xml:id="P98E0">Prior to the referendum, the <ENAMEX type="INSTITUTION">UK treasury</ENAMEX> estimated that being in the <ENAMEX type="INSTITUTION">EU</ENAMEX> has a strong positive effect on trade and as a result the <ENAMEX type="LOCATION">UK</ENAMEX>&apos;s trade would be worse off if it left the <ENAMEX type="INSTITUTION">EU</ENAMEX>.</sentence>
-				<sentence xml:id="P98E1">The <ENAMEX type="INSTITUTION"><ENAMEX subType="2" type="INSTITUTION">International Monetary Fund</ENAMEX> (<ENAMEX subType="2" type="NSTITUTION">IMF</ENAMEX>)</ENAMEX> forecasts reduced world economic growth by <ENAMEX type="MEASURE">0.1%</ENAMEX> following the referendum, and greater reductions in <ENAMEX type="LOCATION">UK</ENAMEX> economic growth.</sentence>
+				<sentence xml:id="P98E1">The <ENAMEX type="INSTITUTION"><ENAMEX subType="2" type="INSTITUTION">International Monetary Fund</ENAMEX> (<ENAMEX subType="2" type="INSTITUTION">IMF</ENAMEX>)</ENAMEX> forecasts reduced world economic growth by <ENAMEX type="MEASURE">0.1%</ENAMEX> following the referendum, and greater reductions in <ENAMEX type="LOCATION">UK</ENAMEX> economic growth.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P99">
 				<sentence xml:id="P99E0">Supporters of withdrawal from the <ENAMEX type="INSTITUTION">EU</ENAMEX> have argued that the cessation of net contributions to the <ENAMEX type="INSTITUTION">EU</ENAMEX> would allow for some cuts to taxes and/or increases in government spending.</sentence>
@@ -426,7 +425,7 @@
 			<p xml:lang="en" xml:id="P115">
 				<sentence xml:id="P115E0">In <ENAMEX type="PERIOD">2015</ENAMEX>, <ENAMEX type="PERSON"><ENAMEX subType="2" type="TITLE">Chief Minister of Gibraltar</ENAMEX> <ENAMEX subType="2" type="PERSON">Fabian Picardo</ENAMEX></ENAMEX> suggested that <ENAMEX type="LOCATION">Gibraltar</ENAMEX> would attempt to remain part of the <ENAMEX type="INSTITUTION">EU</ENAMEX> in the event the <ENAMEX type="LOCATION">UK</ENAMEX> voted to leave, but reaffirmed that, regardless of the result, the territory would remain <ENAMEX type="NATIONAL">British</ENAMEX>.</sentence>
 				<sentence xml:id="P115E1">In a letter to the <ENAMEX type="ORGANISATION">UK Foreign Affairs Select Committee</ENAMEX>, he requested that <ENAMEX type="LOCATION">Gibraltar</ENAMEX> be considered in negotiations post-<ENAMEX type="EVENT">Brexit</ENAMEX>.</sentence>
-				<sentence xml:id="P115E2"><ENAMEX type="personal">Spain&apos;s foreign minister <ENAMEX subType="2" type="PERSON">José García-Margallo</ENAMEX></ENAMEX> said <ENAMEX type="LOCATION">Spain</ENAMEX> would seek talks on <ENAMEX type="LOCATION">Gibraltar</ENAMEX> the &quot;very next day&quot; after a <ENAMEX type="NATIONAL">British</ENAMEX> exit from the <ENAMEX type="INSTITUTION">EU</ENAMEX>.</sentence>
+				<sentence xml:id="P115E2"><ENAMEX type="PERSON"><ENAMEX subType="2" type="LOCATION">Spain</ENAMEX>&apos;s <ENAMEX subType="2" type="TITLE">foreign minister</ENAMEX> <ENAMEX subType="2" type="PERSON">José García-Margallo</ENAMEX></ENAMEX> said <ENAMEX type="LOCATION">Spain</ENAMEX> would seek talks on <ENAMEX type="LOCATION">Gibraltar</ENAMEX> the &quot;very next day&quot; after a <ENAMEX type="NATIONAL">British</ENAMEX> exit from the <ENAMEX type="INSTITUTION">EU</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P116">
 				<sentence xml:id="P116E0">Status of <ENAMEX type="LOCATION">London</ENAMEX></sentence>
@@ -448,7 +447,7 @@
 				<sentence xml:id="P119E3">These claims have been disputed, as the <ENAMEX type="LEGAL"><ENAMEX subType="2" type="PERSON">Le Touquet</ENAMEX> treaty</ENAMEX> enabling juxtaposed controls was not debated from within the <ENAMEX type="INSTITUTION">EU</ENAMEX>, and would not be legally void upon leaving.</sentence>
 				<sentence xml:id="P119E4">After the <ENAMEX type="EVENT">Brexit</ENAMEX> vote, <ENAMEX type="PERSON">Xavier Bertrand</ENAMEX> asked <ENAMEX type="PERSON">François Hollande</ENAMEX> to renogotiate the <ENAMEX type="LEGAL"><ENAMEX subType="2" type="PERSON">Touquet</ENAMEX> agreement</ENAMEX>, which can be terminated by either party with <ENAMEX type="PERIOD">two years</ENAMEX>&apos; notice.</sentence>
 				<sentence xml:id="P119E5"><ENAMEX type="PERSON">Hollande</ENAMEX> rejected the suggestion, and said: &quot;Calling into question the <ENAMEX type="LEGAL">Touquet deal</ENAMEX> on the pretext that <ENAMEX type="LOCATION">Britain</ENAMEX> has voted for <ENAMEX type="EVENT">Brexit</ENAMEX> and will have to start negotiations to leave the <ENAMEX type="INSTITUTION">Union</ENAMEX> doesn&apos;t make sense.&quot;</sentence>
-				<sentence xml:id="P119E6"><ENAMEX type="PERSON"><ENAMEX subType="2" type="PERSON">Bernard Cazeneuve</ENAMEX>, the <ENAMEX subType="2" type="TITLE">French Interior Minister</ENAMEX>, confirmed there would be &quot;no changes to the accord&quot;.</sentence>
+				<sentence xml:id="P119E6"><ENAMEX type="PERSON"><ENAMEX subType="2" type="PERSON">Bernard Cazeneuve</ENAMEX>, the <ENAMEX subType="2" type="TITLE">French Interior Minister</ENAMEX></ENAMEX>, confirmed there would be &quot;no changes to the accord&quot;.</sentence>
 				<sentence xml:id="P119E7">He said: &quot;The border at <ENAMEX type="LOCATION">Calais</ENAMEX> is closed and will remain so.&quot;</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P120">
