@@ -15,7 +15,7 @@ env:
     - GRADLE_OPTS="-Xmx512m"
 
 script:
-  - ./gradlew build --no-daemon
+  - sh -c 'cd grobid-ner && ./gradlew build --no-daemon'
 
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
