@@ -10,7 +10,18 @@ addons:
     packages:
       - oracle-java8-installer
 
+env:
+  global:
+    - GRADLE_OPTS="-Xmx512m"
 
-script: mvn clean install -Dmaven.test.skip=true
-#after_success:
-#  - mvn clean cobertura:cobertura org.eluder.coveralls:coveralls-maven-plugin:report
+script:
+  - ./gradlew build --no-daemon
+
+before_cache:
+  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+
+cache:
+  directories:
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
