@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.grobid</groupId>
     <artifactId>grobid-ner</artifactId>
-    <version>0.5.0-SNAPSHOT</version>
+    <version>0.5.0</version>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
 
@@ -19,7 +18,8 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:kermitt2/grobid-ner.git</developerConnection>
-    </scm>
+      <tag>0.5.0</tag>
+  </scm>
 
     <repositories>
         <repository>
@@ -286,7 +286,7 @@
                             <executable>java</executable>
                             <arguments>
                                 <argument>-classpath</argument>
-                                <classpath/>
+                                <classpath />
                                 <argument>org.grobid.trainer.NEREvaluation</argument>
                             </arguments>
                         </configuration>
@@ -312,7 +312,7 @@
                             <executable>java</executable>
                             <arguments>
                                 <argument>-classpath</argument>
-                                <classpath/>
+                                <classpath />
                                 <argument>org.grobid.trainer.CoNNLNERTrainer</argument>
                             </arguments>
                         </configuration>
@@ -338,7 +338,7 @@
                             <executable>java</executable>
                             <arguments>
                                 <argument>-classpath</argument>
-                                <classpath/>
+                                <classpath />
                                 <argument>org.grobid.trainer.AssembleNERCorpus</argument>
                             </arguments>
                         </configuration>
@@ -364,7 +364,7 @@
                             <executable>java</executable>
                             <arguments>
                                 <argument>-classpath</argument>
-                                <classpath/>
+                                <classpath />
                                 <argument>org.grobid.trainer.NERTrainerRunner</argument>
                                 <argument>2</argument>
                                 <argument>ner</argument>
@@ -397,7 +397,7 @@
                             <executable>java</executable>
                             <arguments>
                                 <argument>-classpath</argument>
-                                <classpath/>
+                                <classpath />
                                 <argument>org.grobid.trainer.NERTrainerRunner</argument>
                                 <argument>1</argument>
                                 <argument>ner</argument>
@@ -427,7 +427,7 @@
                             <executable>java</executable>
                             <arguments>
                                 <argument>-classpath</argument>
-                                <classpath/>
+                                <classpath />
                                 <argument>org.grobid.trainer.NERTrainerRunner</argument>
                                 <argument>2</argument>
                                 <argument>nerfr</argument>
@@ -460,7 +460,7 @@
                             <executable>java</executable>
                             <arguments>
                                 <argument>-classpath</argument>
-                                <classpath/>
+                                <classpath />
                                 <argument>org.grobid.trainer.NERTrainerRunner</argument>
                                 <argument>1</argument>
                                 <argument>nerfr</argument>
