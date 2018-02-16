@@ -10,7 +10,8 @@ addons:
     packages:
       - oracle-java8-installer
 
+script:
+- sh -c 'cd grobid-ner && mvn clean install -Dmaven.test.skip=true'
 
-script: mvn clean install -Dmaven.test.skip=true
 #after_success:
 #  - mvn clean cobertura:cobertura org.eluder.coveralls:coveralls-maven-plugin:report
