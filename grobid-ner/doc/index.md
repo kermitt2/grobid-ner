@@ -29,6 +29,8 @@ Annotated data will be always welcomed, if you like to contribute, you can conta
 
 * [Largest entity mention](largest-entity-mention.md)
 
+* [Second-layers entity mention](second-layers-entity-mention.md)
+
 * [Annotation examples](annotation-examples.md)
 
 * [Training NER models](training-ner-model.md)
