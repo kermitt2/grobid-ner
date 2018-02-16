@@ -17,6 +17,10 @@
         <license.file>${basedir}/LICENSE</license.file>
     </properties>
 
+    <scm>
+        <developerConnection>scm:git:git@github.com:kermitt2/grobid-ner.git</developerConnection>
+    </scm>
+
     <repositories>
         <repository>
             <id>3rd-party-local-repo</id>
@@ -120,9 +124,6 @@
 
     <build>
         <plugins>
-            <!--plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-jar-plugin</artifactId>
-                <configuration> <archive> <manifest> <mainClass>org.grobid.core.engines.Engine</mainClass>
-                </manifest> </archive> </configuration> </plugin -->
             <plugin>
                 <groupId>com.jolira</groupId>
                 <artifactId>onejar-maven-plugin</artifactId>
@@ -140,6 +141,12 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
             </plugin>
 
             <!--plugin>
