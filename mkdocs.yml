@@ -17,6 +17,7 @@ pages:
   - 'Annotation Guidelines': 'annotation-guidelines.md'
   - 'Classes and Senses': 'class-and-senses.md'
   - 'Largest entity mention': 'largest-entity-mention.md'
+  - 'Second-layers entity mention': 'second-layers-entity-mention.md'
   - 'Annotation examples': 'annotation-examples.md'
   - 'Datasets and training': 'training-ner-model.md'
   - 'Generate training data': 'generate-training-data.md'
