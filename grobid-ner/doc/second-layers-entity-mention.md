@@ -1,14 +1,13 @@
-
 # Principle
 <!-- TODO add rules and examples -->
 
 A second level of annotation has been added, typically to reduce very long entity (following the [largest entity](http://grobid-ner.readthedocs.io/en/latest/largest-entity-mention/) rules).
 <br/>
-This second level of annotation is indicated with the subType attribue and his values fixed to "2" in ENAMEX tags (<ENAMEX subType="2" type="SOME_CLASSE" where SOME_CLASS correspond to a class present in the [TAGSET](http://grobid-ner.readthedocs.io/en/latest/class-and-senses/#classes-quick-overview) )
+This second level of annotation is indicated with the subType attribue and his values fixed to "2" in ENAMEX tags : <ENAMEX subType="2" type="SOME_CLASSE" where SOME_CLASS correspond to a class present in the [TAGSET](http://grobid-ner.readthedocs.io/en/latest/class-and-senses/#classes-quick-overview) 
 <br/>
 An automatic choice beetween largest entities (first annotation process) and a second layer entities (second annotation process) is processed to build a new model. 
 <br/>
-The principle is to **add or divise** annotations present in a larger annotation, one level bellow (see [examples](http://grobid-ner.readthedocs.io/en/latest/second-layers-entity-mention/#various-examples)).
+The principle is to **add or divise** annotations present in a larger annotation, one level bellow, see [examples](http://grobid-ner.readthedocs.io/en/latest/second-layers-entity-mention/#various-examples)
 
 # Cases where second-layers applied
 
@@ -41,46 +40,46 @@ When we choose to use a second-layers, all informations grouped by the largest e
 
 * Shorten annotation
 
-<span style="color:red">We can't do : </span>
-`[...] <ENAMEX type="MEASURE"><ENAMEX subType="2" type="MEASURE">eleven</ENAMEX> million</ENAMEX> [...]`</span>
+We can't do : 
+`[...] <ENAMEX type="MEASURE"><ENAMEX subType="2" type="MEASURE">eleven</ENAMEX> million</ENAMEX> [...]`
 
-<span style="color:green">We keep : </span>
+We keep : 
 `[...] <ENAMEX type="MEASURE">eleven million</ENAMEX> [...]`
 
 * Multiple possible annotations sticked
 
-<span style="color:red">We can't do : </span>
-`[...] <ENAMEX type="LEGAL"><ENAMEX subType="2" type="LEGAL">European Union Referendum Act</ENAMEX> <ENAMEX subType="2" type="PERIOD">2015</ENAMEX></ENAMEX> [...]`</span>
+We can't do : 
+`[...] <ENAMEX type="LEGAL"><ENAMEX subType="2" type="LEGAL">European Union Referendum Act</ENAMEX> <ENAMEX subType="2" type="PERIOD">2015</ENAMEX></ENAMEX> [...]`
 
-<span style="color:green">We keep : </span>
+We keep : 
 `[...] <ENAMEX type="LEGAL">European Union Referendum Act 2015</ENAMEX> [...]`
 
 * Locations occupied by an another location
 
-<span style="color:red">We can't do : </span>
-`[...] <ENAMEX type="LOCATION"><ENAMEX subType="2" type="NATIONAL">German</ENAMEX>-occupied <ENAMEX subType="2" type="LOCATION">Poland</ENAMEX></ENAMEX> [...]`</span>
+We can't do : 
+`[...] <ENAMEX type="LOCATION"><ENAMEX subType="2" type="NATIONAL">German</ENAMEX>-occupied <ENAMEX subType="2" type="LOCATION">Poland</ENAMEX></ENAMEX> [...]`
 
-<span style="color:green">We keep : </span>
+We keep : 
 `[...] <ENAMEX type="LOCATION">German-occupied Poland</ENAMEX> [...]`
 
 * No possibility to keep the original tags
 
-<span style="color:red">We can't do : </span>
-`[...] <ENAMEX type="LEGAL"><ENAMEX subType="2" type="NATIONAL">German</ENAMEX>-<ENAMEX subType="2" type="NATIONAL">Soviet agreement</ENAMEX></ENAMEX> [...]`</span>
+We can't do : 
+`[...] <ENAMEX type="LEGAL"><ENAMEX subType="2" type="NATIONAL">German</ENAMEX>-<ENAMEX subType="2" type="NATIONAL">Soviet agreement</ENAMEX></ENAMEX> [...]`
 
 Because we will lose the original tag (here `LEGAL`), and `agreement` alone cannot be annotated as `LEGAL` (to eventually keep the original tag, made by the largest entity match).
 
-<span style="color:green">We keep : </span>
+We keep : 
 `[...] <ENAMEX type="LEGAL">German-Soviet agreement</ENAMEX> [...]`
 
 or 
 
-<span style="color:red">We can't do : </span>
-`[...] <ENAMEX type="INSTITUTION"><ENAMEX subType="2" type="NATIONAL">French</ENAMEX> Army</ENAMEX> [...]`</span>
+We can't do : 
+`[...] <ENAMEX type="INSTITUTION"><ENAMEX subType="2" type="NATIONAL">French</ENAMEX> Army</ENAMEX> [...]`
 
 Because we will lose the original tag (here `INSTITUTION`).
 
-<span style="color:green">We keep : </span>
+We keep : 
 `[...] <ENAMEX type="LEGAL">German-Soviet agreement</ENAMEX> [...]`
 
 
