@@ -44,6 +44,14 @@
         </repository>
     </repositories>
 
+    <distributionManagement>
+            <repository>
+                <id>bintray-lfoppiano-maven</id>
+                <name>lfoppiano-maven</name>
+                <url>https://api.bintray.com/maven/rookies/maven/grobid-ner/;publish=1</url>
+            </repository>
+    </distributionManagement>
+
     <dependencies>
         <!-- GROBID -->
         <dependency>
