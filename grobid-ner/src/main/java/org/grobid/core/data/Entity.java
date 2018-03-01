@@ -1,5 +1,6 @@
 package org.grobid.core.data;
 
+import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.utilities.OffsetPosition;
 import org.grobid.core.lexicon.NERLexicon;
 import org.grobid.core.layout.BoundingBox;
@@ -13,7 +14,7 @@ import java.util.List;
  * @author Patrice Lopez
  *
  */
-public class Entity implements Comparable<Entity> {   
+public class Entity implements Comparable<Entity> {
 
 	// Orign of the entity definition
 	public enum Origin {
@@ -57,10 +58,9 @@ public class Entity implements Comparable<Entity> {
 	
 	// optional bounding box in the source document
 	private List<BoundingBox> boundingBoxes = null;
-		
-	// potition in the global tokenization
-	//private int startTokenPos = -1;
-	//private int endTokenPos = -1;
+
+	//list of layout tokens corresponding to this entity
+	private List<LayoutToken> layoutTokens = null;
 
 	// orign of the entity definition
 	private Origin origin = Origin.GROBID;
@@ -234,6 +234,14 @@ public class Entity implements Comparable<Entity> {
     public void setIsAcronym(boolean acronym) {
         this.isAcronym = acronym;
     }
+
+	public List<LayoutToken> getLayoutTokens() {
+		return layoutTokens;
+	}
+
+	public void setLayoutTokens(List<LayoutToken> layoutTokens) {
+		this.layoutTokens = layoutTokens;
+	}
 
 	@Override
 	public boolean equals(Object object) {

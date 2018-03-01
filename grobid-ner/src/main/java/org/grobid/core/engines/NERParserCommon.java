@@ -91,12 +91,12 @@ public class NERParserCommon {
 
         for (LayoutToken token : tokens) {
             if ((token.getText() == null) ||
-                (token.getText().length() == 0) ||
-                token.getText().equals(" ") || 
-                token.getText().equals("\t") || 
-                token.getText().equals("\n") || 
-                token.getText().equals("\r") || 
-                token.getText().equals("\u00A0")) {
+                    (token.getText().length() == 0) ||
+                    token.getText().equals(" ") ||
+                    token.getText().equals("\t") ||
+                    token.getText().equals("\n") ||
+                    token.getText().equals("\r") ||
+                    token.getText().equals("\u00A0")) {
                 continue;
             }
 
@@ -171,6 +171,7 @@ public class NERParserCommon {
             currentEntity.setTypeFromString(GenericTaggerUtils.getPlainLabel(clusterLabel.getLabel()));
             currentEntity.setBoundingBoxes(BoundingBoxCalculator.calculate(cluster.concatTokens()));
             currentEntity.setOffsets(calculateOffsets(cluster));
+            currentEntity.setLayoutTokens(cluster.concatTokens());
             entities.add(currentEntity);
         }
 
@@ -181,24 +182,26 @@ public class NERParserCommon {
         final List<LabeledTokensContainer> labeledTokensContainers = cluster.getLabeledTokensContainers();
         if (CollectionUtils.isEmpty(labeledTokensContainers) || CollectionUtils.isEmpty(labeledTokensContainers.get(0).getLayoutTokens())) {
             return new OffsetPosition();
-        } else {
-            final LabeledTokensContainer labeledTokensContainer = labeledTokensContainers.get(0);
-            final List<LayoutToken> layoutTokens = labeledTokensContainer.getLayoutTokens();
-
-            int start = layoutTokens.get(0).getOffset();
-            int end = start + LayoutTokensUtil.normalizeText(LayoutTokensUtil.toText(cluster.concatTokens())).length();
-
-            return new OffsetPosition(start, end);
         }
+
+        final LabeledTokensContainer labeledTokensContainer = labeledTokensContainers.get(0);
+        final List<LayoutToken> layoutTokens = labeledTokensContainer.getLayoutTokens();
+
+        int start = layoutTokens.get(0).getOffset();
+        int end = start + LayoutTokensUtil.normalizeText(LayoutTokensUtil.toText(cluster.concatTokens())).length();
+
+        return new OffsetPosition(start, end);
     }
+
     /**
      * Extract the named entities from a labelled text.
      * Use the new method using the clusteror List
-     *      resultExtraction(GrobidModels model, String result, List<LayoutToken> tokenizations)
+     * resultExtraction(GrobidModels model, String result, List<LayoutToken> tokenizations)
      */
+    @Deprecated
     public static List<Entity> resultExtraction(String text,
-                                         List<Pair<String, String>> labeled,
-                                         List<LayoutToken> tokenizations) {
+                                                List<Pair<String, String>> labeled,
+                                                List<LayoutToken> tokenizations) {
 
         List<Entity> entities = new ArrayList<Entity>();
         String label = null; // label
@@ -302,11 +305,11 @@ public class NERParserCommon {
      * Input file should be a text file. Each file is a paragraph entry that it's normally processed by NERD.
      */
     static public StringBuilder createTraining(String inputFile,
-                               String outputPath,
-                               String fileName,
-                               NERParser parser, 
-                               String lang,
-                               AbstractTokenizer tokenizer) throws Exception {
+                                               String outputPath,
+                                               String fileName,
+                                               NERParser parser,
+                                               String lang,
+                                               AbstractTokenizer tokenizer) throws Exception {
         File file = new File(inputFile);
         if (!file.exists()) {
             throw new GrobidException("Cannot create training data because input file can not be accessed: " + inputFile);
@@ -344,7 +347,7 @@ public class NERParserCommon {
         // let's segment in paragraphs, assuming we have one per paragraph per line
         String[] paragraphs = text.split("\n");
 
-        for(int p=0; p<paragraphs.length; p++) {
+        for (int p = 0; p < paragraphs.length; p++) {
             String theText = paragraphs[p];
             if (theText.trim().length() == 0)
                 continue;
@@ -360,20 +363,20 @@ public class NERParserCommon {
             // this is only outputed for readability
             List<Sentence> sentences = NERParserCommon.sentenceSegmentation(theText, lang, tokenizer);
             int sentenceIndex = 0;
-            for(int s=0; s < sentences.size(); s++) {
+            for (int s = 0; s < sentences.size(); s++) {
                 Sentence sentence = sentences.get(s);
                 int sentenceStart = sentence.getOffsetStart();
                 int sentenceEnd = sentence.getOffsetEnd();
 
                 sb.append("\t\t\t\t<sentence xml:id=\"P" + p + "E" + sentenceIndex + "\">");
 
-                if ( (entities == null) || (entities.size() == 0) ) {
+                if ((entities == null) || (entities.size() == 0)) {
                     // don't forget to encode the text for XML
                     sb.append(TextUtilities.HTMLEncode(theText.substring(sentenceStart, sentenceEnd)));
                 } else {
                     int index = sentenceStart;
                     // smal adjustement to avoid sentence starting with a space
-                    if (theText.charAt(index) == ' ') 
+                    if (theText.charAt(index) == ' ')
                         index++;
                     for (Entity entity : entities) {
                         if (entity.getOffsetEnd() < sentenceStart)
@@ -393,7 +396,7 @@ public class NERParserCommon {
 
                         index = entityEnd;
 
-                        while (index > sentenceEnd)  {
+                        while (index > sentenceEnd) {
                             // bad luck, the sentence segmentation or ner failed somehow and we have an 
                             // entity across 2 sentences, so we merge on the fly these 2 sentences, which is
                             // easier than it looks ;)
@@ -409,7 +412,7 @@ public class NERParserCommon {
                     if (index < sentenceEnd)
                         sb.append(TextUtilities.HTMLEncode(theText.substring(index, sentenceEnd)));
                     //else if (index > sentenceEnd)
-                        //System.out.println(theText.length() + " / / " + theText + "/ / " + index + " / / " + sentenceEnd);
+                    //System.out.println(theText.length() + " / / " + theText + "/ / " + index + " / / " + sentenceEnd);
                 }
 
                 sb.append("</sentence>\n");
@@ -417,14 +420,14 @@ public class NERParserCommon {
             }
 
             sb.append("\t\t\t</p>\n");
-        }    
+        }
         return sb;
     }
 
     static public int createTrainingBatch(String inputDirectory,
-                                   String outputDirectory,
-                                   NERParser parser,
-                                   String lang) throws IOException {
+                                          String outputDirectory,
+                                          NERParser parser,
+                                          String lang) throws IOException {
         // note that at the stage, we have already selected the NERParser according to the language
         try {
             File path = new File(inputDirectory);
@@ -485,8 +488,8 @@ public class NERParserCommon {
         BufferedReader br = new BufferedReader(new InputStreamReader(is));
         List<List<String>> sentences = segmenter.getSentences(br);
         List<Sentence> results = new ArrayList<Sentence>();
-        
-        if ( (sentences == null) || (sentences.size() == 0) ) {
+
+        if ((sentences == null) || (sentences.size() == 0)) {
             // there is some text but not in a state so that a sentence at least can be
             // identified by the sentence segmenter, so we parse it as a single sentence
             Sentence sentence = new Sentence();
@@ -495,20 +498,20 @@ public class NERParserCommon {
             pos.end = text.length();
             sentence.setOffsets(pos);
             results.add(sentence);
-            return results; 
+            return results;
         }
-        
+
         // we need to realign with the original sentences, so we have to match it from the text 
         // to be parsed based on the tokenization
-        int offSetSentence = 0;  
+        int offSetSentence = 0;
         //List<List<String>> trueSentences = new ArrayList<List<String>>();
-        for(List<String> theSentence : sentences) {  
+        for (List<String> theSentence : sentences) {
             int next = offSetSentence;
-            for(String token : theSentence) {                   
+            for (String token : theSentence) {
                 next = text.indexOf(token, next);
-                next = next+token.length();
-            } 
-            List<String> dummy = new ArrayList<String>();                    
+                next = next + token.length();
+            }
+            List<String> dummy = new ArrayList<String>();
             //dummy.add(text.substring(offSetSentence, next));   
             //trueSentences.add(dummy);   
             Sentence sentence = new Sentence();
@@ -518,7 +521,7 @@ public class NERParserCommon {
             sentence.setOffsets(pos);
             results.add(sentence);
             offSetSentence = next;
-        } 
-        return results; 
+        }
+        return results;
     }
 }
