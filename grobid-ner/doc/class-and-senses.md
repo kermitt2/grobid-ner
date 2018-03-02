@@ -229,8 +229,8 @@ For example:
 
 ---
 ### MEDIA
-in order to distinguish between NATIONAL and MEDIA
-Examples: `British TV`and `Lituantian TV`should be annotated as `NATIONAl`whereas BBC or CNN should be annotated as `MEDIA`
+References are usually referring to the proper name. 
+When references are expressed using a more generic `nationality + role`, for example `British TV` or `Lituantian newspaper`, they should not be annotated as `MEDIA`.
 
 ---
 ### NATIONAL
