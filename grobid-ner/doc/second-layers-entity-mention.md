@@ -35,6 +35,12 @@ The principle is to **add or divise** annotations present in a larger annotation
 - [...]<ENAMEX type="LEGAL"><ENAMEX subType="2" type="INSTITUTION">UE</ENAMEX> law – <ENAMEX subType="2" type="LEGAL">Article 50</ENAMEX></ENAMEX>[...]
 ```
 
+* Tricky Informations
+    - with `PERIOD` like "the night of", "the end of" :
+```xml
+- [...]<ENAMEX type="PERIOD"><ENAMEX subType="2" type="PERIOD">the night of</ENAMEX> <ENAMEX subType="2" type="PERIOD">22-23 October 1948</ENAMEX></ENAMEX>[...]
+```
+
 
 # Cases where second-layers not applied 
 
@@ -119,7 +125,7 @@ Other example:
 
 - <ENAMEX type="MEASURE"><ENAMEX subType="2" type="MEASURE">3</ENAMEX> or <ENAMEX subType="2" type="MEASURE">over 4</ENAMEX></ENAMEX> houses [...]
 
-- 
+- <ENAMEX type="PERIOD"><ENAMEX subType="2" type="PERIOD">the night of</ENAMEX> <ENAMEX subType="2" type="PERIOD">22-23 October 1948</ENAMEX></ENAMEX>
 
 - 
 
