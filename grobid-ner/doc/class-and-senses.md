@@ -230,7 +230,13 @@ For example:
 ---
 ### MEDIA
 in order to distinguish between NATIONAL and MEDIA
-Examples: `British TV`and `Lituantian TV`should be annotated as `NATIONAl`whereas BBC or CNN should be annotated as `MEDIA`
+Examples: in `British TV` and `Lituanian TV`, `British` and `Lituanian` should be annotated as `NATIONAl`whereas BBC or CNN should be annotated as `MEDIA`
+
+```xml
+<ENAMEX type="NATIONAL">Lituanian</ENAMEX> TV
+<ENAMEX type="MEDIA">BBC</ENAMEX>
+```
+
 
 ---
 ### NATIONAL
