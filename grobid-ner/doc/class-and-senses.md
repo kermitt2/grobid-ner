@@ -113,10 +113,10 @@ Human-made object, including softwares.
 ### INSTALLATION
 ➡ Sometimes a LOCATION name refers to an INSTALLATION name. In that case it's annotated as INSTALLATION. For example Nazi camps [(issue #42)](https://github.com/kermitt2/grobid-ner/issues/42):
 ```xml
-- <ENAMEX type="INTALLATION">Auschwitz</ENAMEX>
-- <ENAMEX type="INTALLATION">Lager Nordhausen</ENAMEX>
-- <ENAMEX type="INTALLATION">Mittelbau-Dora</ENAMEX>
-- <ENAMEX type="INTALLATION">Mauthausen-Gusen concentration camp</ENAMEX>
+- <ENAMEX type="INSTALLATION">Auschwitz</ENAMEX>
+- <ENAMEX type="INSTALLATION">Lager Nordhausen</ENAMEX>
+- <ENAMEX type="INSTALLATION">Mittelbau-Dora</ENAMEX>
+- <ENAMEX type="INSTALLATION">Mauthausen-Gusen concentration camp</ENAMEX>
 ```
 
 ---
@@ -229,8 +229,14 @@ For example:
 
 ---
 ### MEDIA
-References are usually referring to the proper name. 
-When references are expressed using a more generic `nationality + role`, for example `British TV` or `Lituantian newspaper`, they should not be annotated as `MEDIA`.
+in order to distinguish between NATIONAL and MEDIA
+Examples: in `British TV` and `Lituanian TV`, `British` and `Lituanian` should be annotated as `NATIONAl`whereas BBC or CNN should be annotated as `MEDIA`
+
+```xml
+<ENAMEX type="NATIONAL">Lituanian</ENAMEX> TV
+<ENAMEX type="MEDIA">BBC</ENAMEX>
+```
+
 
 ---
 ### NATIONAL
