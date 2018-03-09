@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<corpus>
+	<subcorpus>
+		<document name="EHRI_unit_il-002798-o_32-61.2layers.xml">
+			<p xml:lang="en" xml:id="P0">
+				<sentence xml:id="P0E0">Documentation of the murder of the <ENAMEX type="PERSON_TYPE"><ENAMEX subType="2" type="PERSON_TYPE">Jews</ENAMEX> of <ENAMEX subType="2" type="LOCATION">Crimea</ENAMEX></ENAMEX>, <ENAMEX type="PERIOD">1941-1942</ENAMEX> Excerpts of documents of the <ENAMEX type="INSTITUTION"><ENAMEX subType="2" type="INSTITUTION">Soviet Extraordinary State Commission</ENAMEX> (<ENAMEX subType="2" type="INSTITUTION">ChGK</ENAMEX>)</ENAMEX> in the <ENAMEX type="LOCATION">Crimean occupied territory</ENAMEX>, including information regarding the murder of <ENAMEX type="PERSON_TYPE">Jews</ENAMEX> in <ENAMEX type="LOCATION"><ENAMEX subType="2" type="LOCATION">Yevpatoria</ENAMEX>, <ENAMEX subType="2" type="LOCATION">Zuya</ENAMEX>, <ENAMEX subType="2" type="LOCATION">Kheyrus</ENAMEX> and <ENAMEX subType="2" type="LOCATION">Biyuk-Onlar</ENAMEX></ENAMEX>, names of those who perished, <ENAMEX type="PERIOD">January-March 1942</ENAMEX>; notice from the <ENAMEX type="TITLE"><ENAMEX subType="2" type="TITLE">mayor</ENAMEX> of <ENAMEX subType="2" type="LOCATION">Simferopol</ENAMEX></ENAMEX> regarding housing for <ENAMEX type="PERSON_TYPE">Jews</ENAMEX>, <ENAMEX type="PERIOD">15 March 1942</ENAMEX>; Ausweis (identity card) of <ENAMEX type="PERSON">Foma Paskitovski</ENAMEX>, from <ENAMEX type="LOCATION">Kerch</ENAMEX>; copy of a photograph of a cell in the <ENAMEX type="INSTALLATION">Kerch jail</ENAMEX>, <ENAMEX type="PERIOD">December 1941</ENAMEX>.</sentence>
+			</p>
+		</document>
+	</subcorpus>
+</corpus>
