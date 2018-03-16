@@ -21,7 +21,7 @@
 			</p>
 			<p xml:lang="en" xml:id="P4">
 				<sentence xml:id="P4E0">The <ENAMEX type="LOCATION">UK</ENAMEX> was not a signatory to the <ENAMEX type="LEGAL">Treaty of Rome</ENAMEX> which created the <ENAMEX type="INSTITUTION">EEC</ENAMEX> in <ENAMEX type="PERIOD">1957</ENAMEX>.</sentence>
-				<sentence xml:id="P4E1">The country subsequently applied to join the organisation in <ENAMEX type="PERIOD">1963</ENAMEX> and again in <ENAMEX type="PERIOD">1967</ENAMEX>, but both applications were vetoed by the <ENAMEX type="PERSON"><ENAMEX subType="2" type="TITLE">President of <ENAMEX subType="2" type="LOCATION">France</ENAMEX></ENAMEX>, <ENAMEX subType="2" type="PERSON">Charles de Gaulle</ENAMEX></ENAMEX>, ostensibly because &quot;a number of aspects of <ENAMEX type="LOCATION">Britain</ENAMEX>&apos;s economy, from working practices to agriculture&quot; had &quot;made <ENAMEX type="LOCATION">Britain</ENAMEX> incompatible with <ENAMEX type="LOCATION">Europe</ENAMEX>&quot; and that <ENAMEX type="LOCATION">Britain</ENAMEX> harboured a &quot;deep-seated hostility&quot; to any pan-<ENAMEX type="NATIONAL">European</ENAMEX> project.</sentence>
+				<sentence xml:id="P4E1">The country subsequently applied to join the organisation in <ENAMEX type="PERIOD">1963</ENAMEX> and again in <ENAMEX type="PERIOD">1967</ENAMEX>, but both applications were vetoed by the <ENAMEX type="PERSON"><ENAMEX subType="2" type="TITLE">President</ENAMEX> of <ENAMEX subType="2" type="LOCATION">France</ENAMEX>, <ENAMEX subType="2" type="PERSON">Charles de Gaulle</ENAMEX></ENAMEX>, ostensibly because &quot;a number of aspects of <ENAMEX type="LOCATION">Britain</ENAMEX>&apos;s economy, from working practices to agriculture&quot; had &quot;made <ENAMEX type="LOCATION">Britain</ENAMEX> incompatible with <ENAMEX type="LOCATION">Europe</ENAMEX>&quot; and that <ENAMEX type="LOCATION">Britain</ENAMEX> harboured a &quot;deep-seated hostility&quot; to any pan-<ENAMEX type="NATIONAL">European</ENAMEX> project.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P5">
 				<sentence xml:id="P5E0">Once <ENAMEX type="PERSON">de Gaulle</ENAMEX> had relinquished the <ENAMEX type="NATIONAL">French</ENAMEX> presidency, the <ENAMEX type="LOCATION">UK</ENAMEX> made a <ENAMEX type="MEASURE">third</ENAMEX> application for membership, which was successful.</sentence>
@@ -33,7 +33,7 @@
 				<sentence xml:id="P6E0"><ENAMEX type="EVENT">1975 referendum</ENAMEX></sentence>
 			</p>
 			<p xml:lang="en" xml:id="P7">
-				<sentence xml:id="P7E0">Main article: <ENAMEX type="EVENT"><ENAMEX subType="2" type="EVENT">United Kingdom European Communities membership referendum</ENAMEX>, <ENAMEX subType="2" type="PERIOD">1975</ENAMEX></ENAMEX></sentence>
+				<sentence xml:id="P7E0">Main article: <ENAMEX type="EVENT"><ENAMEX subType="2" type="LOCATION">United Kingdom</ENAMEX> <ENAMEX subType="2" type="EVENT">European Communities membership referendum</ENAMEX>, <ENAMEX subType="2" type="PERIOD">1975</ENAMEX></ENAMEX></sentence>
 			</p>
 			<p xml:lang="en" xml:id="P8">
 				<sentence xml:id="P8E0">In <ENAMEX type="PERIOD">1975</ENAMEX>, the <ENAMEX type="LOCATION">United Kingdom</ENAMEX> held a referendum on whether the <ENAMEX type="LOCATION">UK</ENAMEX> should remain in the <ENAMEX type="INSTITUTION">EEC</ENAMEX>.</sentence>
@@ -44,11 +44,11 @@
 			</p>
 			<p xml:lang="en" xml:id="P9">
 				<sentence xml:id="P9E0">On <ENAMEX type="PERIOD">5 June 1975</ENAMEX>, the electorate were asked to vote yes or no on the question: &quot;Do you think the <ENAMEX type="LOCATION">UK</ENAMEX> should stay in the <ENAMEX type="INSTITUTION"><ENAMEX subType="2" type="INSTITUTION">European Community</ENAMEX> (<ENAMEX subType="2" type="INSTITUTION">Common Market</ENAMEX>)</ENAMEX>?&quot;</sentence>
-				<sentence xml:id="P9E1">Every administrative county in the <ENAMEX type="LOCATION">UK</ENAMEX> had a majority of &quot;Yes&quot;, except the <ENAMEX type="LOCATION">Shetland Islands</ENAMEX> and the <ENAMEX type="LOCATION">Outer Hebrides</ENAMEX>.</sentence>
+				<sentence xml:id="P9E1">Every administrative county in the <ENAMEX type="LOCATION">UK</ENAMEX> had a majority of &quot;Yes&quot;, except the <ENAMEX type="LOCATION"><ENAMEX subType="2" type="LOCATION">Shetland Islands</ENAMEX> and the <ENAMEX subType="2" type="LOCATION">Outer Hebrides</ENAMEX></ENAMEX>.</sentence>
 				<sentence xml:id="P9E2">In line with the outcome of the vote, <ENAMEX type="MEASURE">67%</ENAMEX> in favour of staying in, the <ENAMEX type="LOCATION">United Kingdom</ENAMEX> remained a member of the <ENAMEX type="INSTITUTION">EEC</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P10">
-				<sentence xml:id="P10E0"><ENAMEX type="EVENT"><ENAMEX subType="2" type="INSTITUTION">United Kingdom European Community</ENAMEX> (<ENAMEX subType="2" type="INSTITUTION">Common Market</ENAMEX>) <ENAMEX subType="2" type="EVENT">Membership Referendum 1975</ENAMEX></ENAMEX></sentence>
+				<sentence xml:id="P10E0"><ENAMEX type="EVENT"><ENAMEX subType="2" type="LOCATION">United Kingdom</ENAMEX> <ENAMEX subType="2" type="EVENT">European Community (Common Market) Membership Referendum 1975</ENAMEX></ENAMEX></sentence>
 			</p>
 			<p xml:lang="en" xml:id="P17">
 				<sentence xml:id="P17E0">Between referendums</sentence>
@@ -63,7 +63,7 @@
 				<sentence xml:id="P19E1">The new name reflected the evolution of the organisation from an economic union into a political union.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P20">
-				<sentence xml:id="P20E0">The <ENAMEX type="ORGANISATION">Referendum Party</ENAMEX> was formed in <ENAMEX type="PERIOD">1994</ENAMEX> by <ENAMEX type="PERSON">Sir James Goldsmith</ENAMEX><!--check Sir as title --> to contest the <ENAMEX type="EVENT">1997 general election</ENAMEX> on a platform of providing a referendum on the <ENAMEX type="LOCATION">UK</ENAMEX>&apos;s membership of the <ENAMEX type="INSTITUTION">EU</ENAMEX>.</sentence>
+				<sentence xml:id="P20E0">The <ENAMEX type="ORGANISATION">Referendum Party</ENAMEX> was formed in <ENAMEX type="PERIOD">1994</ENAMEX> by <ENAMEX type="PERSON"><ENAMEX subType="2" type="TITLE">Sir</ENAMEX> <ENAMEX subType="2" type="PERSON">James Goldsmith</ENAMEX></ENAMEX> to contest the <ENAMEX type="EVENT">1997 general election</ENAMEX> on a platform of providing a referendum on the <ENAMEX type="LOCATION">UK</ENAMEX>&apos;s membership of the <ENAMEX type="INSTITUTION">EU</ENAMEX>.</sentence>
 				<sentence xml:id="P20E1">It fielded candidates in <ENAMEX type="MEASURE">547</ENAMEX> constituencies at that election and won <ENAMEX type="MEASURE">810,860</ENAMEX> votes, <ENAMEX type="MEASURE">2.6%</ENAMEX> of total votes cast.</sentence>
 				<sentence xml:id="P20E2">It failed to win a single parliamentary seat as its vote was spread out, losing its deposit (funded by <ENAMEX type="PERSON">Goldsmith</ENAMEX>) in <ENAMEX type="MEASURE">505</ENAMEX> constituencies.</sentence>
 			</p>
@@ -73,7 +73,7 @@
 				<sentence xml:id="P21E2">This was the <ENAMEX type="MEASURE">first</ENAMEX> time since the <ENAMEX type="EVENT">1910 general election</ENAMEX> that any party other than the <ENAMEX type="ORGANISATION"><ENAMEX subType="2" type="ORGANISATION">Labour</ENAMEX> or <ENAMEX subType="2" type="ORGANISATION">Conservative</ENAMEX> parties</ENAMEX> had taken the largest share of the vote in a nationwide election.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P22">
-				<sentence xml:id="P22E0">In <ENAMEX type="PERIOD">2014</ENAMEX>, <ENAMEX type="ORGANISATION">UKIP</ENAMEX> won <ENAMEX type="MEASURE">two</ENAMEX> by-elections, triggered when the sitting <ENAMEX type="TITLE"><ENAMEX subType="2" type="ORGANISATION">Conservative</ENAMEX> <ENAMEX subType="2" type="TITLE">MPs</ENAMEX></ENAMEX> defected to <ENAMEX type="ORGANISATION">UKIP</ENAMEX> and then resigned.</sentence>
+				<sentence xml:id="P22E0">In <ENAMEX type="PERIOD">2014</ENAMEX>, <ENAMEX type="ORGANISATION">UKIP</ENAMEX> won <ENAMEX type="MEASURE">two</ENAMEX> by-elections, triggered when the sitting <ENAMEX type="TITLE"><ENAMEX subType="2" type="PERSON_TYPE">Conservative</ENAMEX> <ENAMEX subType="2" type="TITLE">MPs</ENAMEX></ENAMEX> defected to <ENAMEX type="ORGANISATION">UKIP</ENAMEX> and then resigned.</sentence>
 				<sentence xml:id="P22E1">These were their <ENAMEX type="MEASURE">first</ENAMEX> elected <ENAMEX type="TITLE">MPs</ENAMEX>.</sentence>
 				<sentence xml:id="P22E2">At the <ENAMEX type="EVENT">2015 general election</ENAMEX>  <ENAMEX type="ORGANISATION">UKIP</ENAMEX> took <ENAMEX type="MEASURE">12.6%</ENAMEX> of the total vote and held <ENAMEX type="MEASURE">one of the two</ENAMEX> seats won in <ENAMEX type="PERIOD">2014</ENAMEX>.</sentence>
 			</p>
@@ -108,7 +108,7 @@
 			<p xml:lang="en" xml:id="P31">
 				<sentence xml:id="P31E0">The <ENAMEX type="ORGANISATION">Conservative Party</ENAMEX> unexpectedly won the <ENAMEX type="EVENT">2015 general election</ENAMEX> with a majority.</sentence>
 				<sentence xml:id="P31E1">Soon afterwards the <ENAMEX type="LEGAL">European Union Referendum Act 2015</ENAMEX> was introduced into <ENAMEX type="INSTITUTION">Parliament</ENAMEX> to enable the referendum.</sentence>
-				<sentence xml:id="P31E2">Despite being in favour of remaining in a reformed <ENAMEX type="INSTITUTION">European Union</ENAMEX> himself, <ENAMEX type="PERSON">Cameron</ENAMEX> announced that <ENAMEX type="TITLE"><ENAMEX subType="2" type="TITLE">Conservative Ministers</ENAMEX> and <ENAMEX subType="2" type="TITLE">MPs</ENAMEX></ENAMEX> were free to campaign in favour of remaining in the <ENAMEX type="INSTITUTION">EU</ENAMEX> or leaving it, according to their conscience.</sentence>
+				<sentence xml:id="P31E2">Despite being in favour of remaining in a reformed <ENAMEX type="INSTITUTION">European Union</ENAMEX> himself, <ENAMEX type="PERSON">Cameron</ENAMEX> announced that <ENAMEX type="TITLE"><ENAMEX subType="2" type="PERSON_TYPE">Conservative</ENAMEX> <ENAMEX subType="2" type="TITLE">Ministers</ENAMEX> and <ENAMEX subType="2" type="TITLE">MPs</ENAMEX></ENAMEX> were free to campaign in favour of remaining in the <ENAMEX type="INSTITUTION">EU</ENAMEX> or leaving it, according to their conscience.</sentence>
 				<sentence xml:id="P31E3">This decision came after mounting pressure for a free vote for ministers.</sentence>
 				<sentence xml:id="P31E4">In an exception to the usual rule of <ENAMEX type="LEGAL">cabinet collective responsibility</ENAMEX>, <ENAMEX type="PERSON">Cameron</ENAMEX> allowed <ENAMEX type="TITLE">cabinet ministers</ENAMEX> to campaign publicly for <ENAMEX type="INSTITUTION">EU</ENAMEX> withdrawal.</sentence>
 			</p>
@@ -125,7 +125,7 @@
 			<p xml:lang="en" xml:id="P35">
 				<sentence xml:id="P35E0">The official campaign group for leaving the <ENAMEX type="INSTITUTION">EU</ENAMEX> was <ENAMEX type="ORGANISATION">Vote Leave</ENAMEX>.</sentence>
 				<sentence xml:id="P35E1">Other major campaign groups included <ENAMEX type="ORGANISATION">Leave</ENAMEX>.</sentence>
-				<sentence xml:id="P35E2"><ENAMEX type="INSTITUTION">EU</ENAMEX>, <ENAMEX type="ORGANISATION">Grassroots Out</ENAMEX>, and <ENAMEX type="ORGANISATION">Better Off Out</ENAMEX>, while no-<ENAMEX type="INSTITUTION">EU</ENAMEX> affiliated organisations also campaigned for the <ENAMEX type="LOCATION">United Kingdom</ENAMEX>&apos;s withdrawal, such as the <ENAMEX type="ORGANISATION">Commonwealth Freedom of Movement Organisation</ENAMEX>.</sentence>
+				<sentence xml:id="P35E2"><ENAMEX type="INSTITUTION">EU</ENAMEX>, <ENAMEX type="ORGANISATION"><ENAMEX subType="2" type="ORGANISATION">Grassroots Out</ENAMEX>, and <ENAMEX subType="2" type="ORGANISATION">Better Off Out</ENAMEX></ENAMEX>, while no-<ENAMEX type="INSTITUTION">EU</ENAMEX> affiliated organisations also campaigned for the <ENAMEX type="LOCATION">United Kingdom</ENAMEX>&apos;s withdrawal, such as the <ENAMEX type="ORGANISATION">Commonwealth Freedom of Movement Organisation</ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P36">
 				<sentence xml:id="P36E0">The official campaign to stay in the <ENAMEX type="INSTITUTION">EU</ENAMEX>, chaired by <ENAMEX type="PERSON">Stuart Rose</ENAMEX>, was known as <ENAMEX type="ORGANISATION">Britain Stronger in Europe</ENAMEX>, or informally as <ENAMEX type="ORGANISATION">Remain</ENAMEX>.</sentence>
@@ -159,7 +159,7 @@
 				<sentence xml:id="P57E0">The political scene in the <ENAMEX type="LOCATION">UK</ENAMEX> went through substantial change and shock after the referendum.</sentence>
 				<sentence xml:id="P57E1">After the result was declared, <ENAMEX type="PERSON">Cameron</ENAMEX> announced that he would resign by <ENAMEX type="PERIOD">October</ENAMEX>.</sentence>
 				<sentence xml:id="P57E2">In the event, he stood down on <ENAMEX type="PERIOD">13 July</ENAMEX>, with <ENAMEX type="PERSON">Theresa May</ENAMEX> becoming <ENAMEX type="TITLE">Prime Minister</ENAMEX>.  <ENAMEX type="PERSON">George Osborne</ENAMEX> was replaced as <ENAMEX type="TITLE">Chancellor of the Exchequer</ENAMEX> by <ENAMEX type="PERSON">Philip Hammond</ENAMEX>, <ENAMEX type="PERSON">Boris Johnson</ENAMEX> was appointed <ENAMEX type="TITLE"><ENAMEX subType="2" type="TITLE">Secretary of State</ENAMEX> for <ENAMEX subType="2" type="INSTITUTION">Foreign and Commonwealth Affairs</ENAMEX></ENAMEX>, and <ENAMEX type="PERSON">David Davis</ENAMEX> became <ENAMEX type="TITLE"><ENAMEX subType="2" type="TITLE">Secretary of State</ENAMEX> for <ENAMEX subType="2" type="INSTITUTION">Exiting the European Union</ENAMEX></ENAMEX>.</sentence>
-				<sentence xml:id="P57E3"><ENAMEX type="ORGANISATION">Labour</ENAMEX> leader <ENAMEX type="PERSON">Jeremy Corbyn</ENAMEX> lost a vote of confidence among his parliamentary party and a leadership challenge was launched, while on <ENAMEX type="PERIOD">4 July</ENAMEX>, <ENAMEX type="PERSON">Nigel Farage</ENAMEX> announced his resignation as <ENAMEX type="TITLE"><ENAMEX subType="2" type="TITLE">head</ENAMEX> of <ENAMEX subType="2" type="ORGANISATION">UKIP</ENAMEX></ENAMEX>.</sentence>
+				<sentence xml:id="P57E3"><ENAMEX type="PERSON_TYPE">Labour</ENAMEX> leader <ENAMEX type="PERSON">Jeremy Corbyn</ENAMEX> lost a vote of confidence among his parliamentary party and a leadership challenge was launched, while on <ENAMEX type="PERIOD">4 July</ENAMEX>, <ENAMEX type="PERSON">Nigel Farage</ENAMEX> announced his resignation as <ENAMEX type="TITLE"><ENAMEX subType="2" type="TITLE">head</ENAMEX> of <ENAMEX subType="2" type="ORGANISATION">UKIP</ENAMEX></ENAMEX>.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P58">
 				<sentence xml:id="P58E0">Outside the <ENAMEX type="LOCATION">UK</ENAMEX> many <ENAMEX type="CONCEPTUAL">Eurosceptic</ENAMEX> leaders celebrated and expected others to follow the <ENAMEX type="LOCATION">UK</ENAMEX> example.</sentence>
@@ -196,7 +196,7 @@
 			<p xml:lang="en" xml:id="P64">
 				<sentence xml:id="P64E0"><ENAMEX type="LEGAL"><ENAMEX subType="2" type="LEGAL">Article 50</ENAMEX> of the <ENAMEX subType="2" type="LEGAL">Treaty on European Union</ENAMEX></ENAMEX> provides an invocation procedure whereby a member can notify the <ENAMEX type="INSTITUTION">European Council</ENAMEX> and there is a <ENAMEX type="PERIOD">two year</ENAMEX> negotiation period after which the treaties cease to apply - although a leaving agreement may be agreed by Qualified majority voting.</sentence>
 			</p>
-			<p xml:lang="en" xml:id="P65">
+			<p xml:lang="en" xml:id="P65"><!-- @todo@ -->
 				<sentence xml:id="P65E0">As was the case with the <ENAMEX type="EVENT">Scottish independence referendum</ENAMEX> <ENAMEX type="PERIOD">two years earlier</ENAMEX>, the <ENAMEX type="EVENT">2016 referendum</ENAMEX> did not directly require the government to do anything in particular.</sentence>
 				<sentence xml:id="P65E1">It does not require the government to initiate, or even schedule, the <ENAMEX type="LEGAL">Article  50</ENAMEX> procedure. Although <ENAMEX type="PERSON">Cameron</ENAMEX> stated during the campaign that he would invoke <ENAMEX type="LEGAL">Article  50</ENAMEX> straight away in the event of a leave victory, he refused to allow the <ENAMEX type="INSTITUTION">Civil Service</ENAMEX> to make any contingency plans, something the <ENAMEX type="ORGANISATION">Foreign Affairs Select Committee</ENAMEX> later described as &quot;an act of gross negligence.&quot;</sentence>
 				<sentence xml:id="P65E2">Following the referendum result <ENAMEX type="PERSON">Cameron</ENAMEX> announced that he would resign before the <ENAMEX type="EVENT"><ENAMEX subType="2" type="EVENT">Conservative party conference</ENAMEX> in <ENAMEX subType="2" type="PERIOD">October</ENAMEX></ENAMEX>, and that it would be for the incoming <ENAMEX type="TITLE">Prime Minister</ENAMEX> to invoke <ENAMEX type="LEGAL">Article 50</ENAMEX>.</sentence>
