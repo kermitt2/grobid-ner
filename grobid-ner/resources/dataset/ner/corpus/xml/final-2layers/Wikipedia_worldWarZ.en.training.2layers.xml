@@ -62,7 +62,7 @@
 				<sentence xml:id="P8E4">Prewar military tactics and equipment are mentioned as being employed to deal with sometimes well-armed and organized human criminal or rebel opposition.</sentence>
 			</p>
 			<p xml:lang="en" xml:id="P9">
-				<sentence xml:id="P9E0"><ENAMEX type="PERIOD">Ten years after the official end of the zombie war</ENAMEX><!--to check (interval usualy kept at one annotation even in 2layers annotation here too long?)-->, <ENAMEX type="MEASURE">millions</ENAMEX> of zombies are still active, mainly on the ocean floor or on snow line islands.</sentence>
+				<sentence xml:id="P9E0"><ENAMEX type="PERIOD">Ten years after the official end of the zombie war</ENAMEX>, <ENAMEX type="MEASURE">millions</ENAMEX> of zombies are still active, mainly on the ocean floor or on snow line islands.</sentence>
 				<sentence xml:id="P9E1">A democratic <ENAMEX type="LOCATION">Cuba</ENAMEX> has become the world&apos;s most thriving economy.</sentence>
 				<sentence xml:id="P9E2">Following a civil war that saw use of nuclear weapons, <ENAMEX type="LOCATION">China</ENAMEX> has become a democracy and is now known as the &quot;<ENAMEX type="LOCATION">Chinese Federation</ENAMEX>&quot;.</sentence>
 				<sentence xml:id="P9E3"><ENAMEX type="LOCATION">Tibet</ENAMEX> is freed from <ENAMEX type="NATIONAL">Chinese</ENAMEX> rule and hosts <ENAMEX type="LOCATION">Lhasa</ENAMEX>, the world&apos;s most populated city.</sentence>
