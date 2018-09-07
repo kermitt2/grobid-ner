@@ -1,14 +1,16 @@
 language: java
-dist: trusty
 sudo: false
 
 jdk:
   - oraclejdk8
+  - oraclejdk9
+  - oraclejdk10
 
 addons:
   apt:
     packages:
       - oracle-java8-installer
+      - oracle-java9-installer
 
 script:
 - sh -c 'cd grobid-ner && mvn clean install -Dmaven.test.skip=true'
