@@ -11,6 +11,7 @@ addons:
 
 matrix:
   include:
+    - language: java
     - language: python
       python: 3.6
       install: pip install flake8
