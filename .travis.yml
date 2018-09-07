@@ -1,5 +1,4 @@
 language: java
-dist: trusty
 sudo: false
 
 jdk:
@@ -9,6 +8,12 @@ addons:
   apt:
     packages:
       - oracle-java8-installer
+
+matrix:
+  include:
+    - python: 3.6
+      install: pip install flake8
+      script: flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
 
 script:
 - sh -c 'cd grobid-ner && mvn clean install -Dmaven.test.skip=true'
