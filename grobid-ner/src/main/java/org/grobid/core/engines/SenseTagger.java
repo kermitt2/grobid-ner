@@ -10,8 +10,10 @@ import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.lexicon.LexiconPositionsIndexes;
 import org.grobid.core.lexicon.NERLexicon;
 import org.grobid.core.utilities.OffsetPosition;
-import org.grobid.core.utilities.Pair;
+//import org.grobid.core.utilities.Pair;
 import org.grobid.core.utilities.TextUtilities;
+
+import org.apache.commons.lang3.tuple.Pair;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -200,8 +202,8 @@ public class SenseTagger extends AbstractParser {
 			List<Integer> positions = new ArrayList<Integer>();
 			List<String> ners = new ArrayList<String>();
             for (Pair<String, String> tokPair : taggedText) {
-				String tok = tokPair.getA();
-				String tokLabel = tokPair.getB();
+				String tok = tokPair.getLeft();
+				String tokLabel = tokPair.getRight();
 				positions.add(pos);
 				if (tokLabel.equals("other") || tokLabel.equals("O"))
 					tokLabel = "O";
@@ -330,8 +332,8 @@ public class SenseTagger extends AbstractParser {
 		Sense currentSense = null;
 		String previousLabel = "O";
 		for (Pair<String, String> l : labeled) {
-            actual = l.a;
-            originalLabel = l.b;  
+            actual = l.getLeft();
+            originalLabel = l.getRight();  
 			if (originalLabel.startsWith("B-")) 
 				label = originalLabel.substring(2, originalLabel.length());
 			else
