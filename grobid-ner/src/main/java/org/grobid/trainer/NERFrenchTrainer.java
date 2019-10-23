@@ -188,7 +188,7 @@ public class NERFrenchTrainer extends AbstractTrainer {
 			String line = null;
 			for(int i = 0; i<lines.length; i++) {
 				line = lines[i].trim();
-
+//System.out.println(line);
                 // note that we work at sentence level
                 if (line.startsWith("-DOCSTART-") || line.startsWith("-X-")) {
                     // the balance of data between training and evaluation is realised
@@ -203,7 +203,6 @@ public class NERFrenchTrainer extends AbstractTrainer {
                         else
                             writer = writerEvaluation;
                     }
-
                     continue;
                 }
 
@@ -216,15 +215,24 @@ public class NERFrenchTrainer extends AbstractTrainer {
                 }
                 //System.out.println(line);
 
-				if (line.length() == 0)  {
+				if (line.trim().length() == 0 && tokens.size() > 0)  {                 
 					// sentence is complete
-					LayoutToken token = new LayoutToken("\n");
+					/*LayoutToken token = new LayoutToken("\n");
 					tokens.add(token);
-					labels.add(null);
+					labels.add(null);*/
 
+                    locationPositions = lexicon.tokenPositionsLocationNames(tokens);
+                    personTitlePositions = lexicon.tokenPositionsPersonTitle(tokens);
+                    organisationPositions = lexicon.tokenPositionsOrganisationNames(tokens);
+                    orgFormPositions = lexicon.tokenPositionsOrgForm(tokens);
+                    addFeatures(tokens, labels, writer,
+                        locationPositions, personTitlePositions, organisationPositions, orgFormPositions);
+                    writer.write("\n");
+
+                    tokens = new ArrayList<LayoutToken>();
+                    labels = new ArrayList<String>();
 					res++;
-				}
-				else {
+				} else {
 					String pieces[] = line.split("\t");
 					if (pieces.length != 2)
 						continue;
@@ -232,22 +240,13 @@ public class NERFrenchTrainer extends AbstractTrainer {
 					/*if (!tokens.get(tokens.size()-1).getText().equals("\n")) {
 						LayoutToken token = new LayoutToken(" ");
 						tokens.add(token);
-				labels.add(null);
+				    labels.add(null);
 					}*/
-						LayoutToken token = new LayoutToken(pieces[0]);
+					LayoutToken token = new LayoutToken(pieces[0]);
 					tokens.add(token);
 					labels.add(pieces[1]);
 				}
 			}
-
-					locationPositions = lexicon.tokenPositionsLocationNames(tokens);
-		            personTitlePositions = lexicon.tokenPositionsPersonTitle(tokens);
-		            organisationPositions = lexicon.tokenPositionsOrganisationNames(tokens);
-					orgFormPositions = lexicon.tokenPositionsOrgForm(tokens);
-
-					addFeatures(tokens, labels, writer,
-					locationPositions, personTitlePositions, organisationPositions, orgFormPositions);
-				writer.write("\n");
 		}
 		catch (Exception ex) {
 			throw new GrobidResourceException(
@@ -435,10 +434,12 @@ public class NERFrenchTrainer extends AbstractTrainer {
      * @throws Exception
      */
     public static void main(String[] args) throws Exception {
-        final GrobidHomeFinder grobidHomeFinder = new GrobidHomeFinder(Arrays.asList("../../grobid-home", "../grobid-home"));
-        GrobidProperties.getInstance(grobidHomeFinder);
+        GrobidProperties.getInstance();
+        NERFrenchTrainer trainer = new NERFrenchTrainer();
 
-        AbstractTrainer.runTraining(new NERFrenchTrainer());
-        AbstractTrainer.runEvaluation(new NERFrenchTrainer());
+        AbstractTrainer.runTraining(trainer);
+        System.out.println(AbstractTrainer.runEvaluation(trainer));
+
+        System.exit(0);
     }
 }

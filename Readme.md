@@ -5,9 +5,9 @@
 
 ## Purpose
 
-GROBID NER is a Named-Entity Recogniser based on the GROBID library ([grobid](https://github.com/kermitt2/grobid)), a text mining tool exploiting CRF. The installation of GROBID is necessary.  
+__grobid-ner__ is a Named-Entity Recogniser based on the GROBID library ([grobid](https://github.com/kermitt2/grobid)), a text mining tool exploiting CRF. The installation of GROBID is necessary.  
 
-GROBID NER has been developed more specifically for the purpose of supporting the disambiguation and resolution of the entities against knowledge bases such as Wikidata. 
+__grobid-ner__ has been developed more specifically for the purpose of supporting the disambiguation and resolution of the entities against knowledge bases such as Wikidata. The project comes with a NER model for English with 27 named entity classes and its corresponding dataset, all CC-BY. The high number of classes is motivated to help further entity disambiguation and to bring more entities than the usual datasets.
 
 For a description of the NER, installation, usage and other technical features, see the [documentation](http://grobid-ner.readthedocs.io/en/latest/). 
 
@@ -92,6 +92,10 @@ Instance-level recall:      87.08
 ```
 
 Runtime __single thread__: 88,451 tokens labeled in 1228 ms, 72,028 tokens per second. Tokens are defined by GROBID default tokenizers. This is Wapiti CRF labeling only, without the additional post-processing. Intel(R) Core(TM) i7-4790K CPU @ 4.00GHz, 16GB RAM. 
+
+### 27-class English dataset
+
+
 
 ## License
 
