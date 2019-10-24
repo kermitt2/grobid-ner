@@ -15,11 +15,21 @@ import java.io.*;
 import java.util.*;
 
 /**
+ * Train a CRF model with CoNLL 2003 NER data (usual eng.train, eng.testa, eng.testb, 
+ * with only 1 token and class per line, tab-separated).
+ * 
+ * To simplify the evaluation, we use a local install of wapiti executable that should 
+ * be indicated in the property file and the official CoNLL evaluation script (in perl)
+ * that should be installed with the CoNLL 2003 NER data under /bin/conlleval
+ *
  * @author Patrice Lopez
  */
 public class CoNNLNERTrainer extends NERTrainer {
 
     private String conllPath = null;
+
+    // this is for CoNLL eval only (for historical reasons... TBD: try to use the JNI Wapiti wrapper instead!)
+    private String wapitiExecPath = null;
 
     private void loadAdditionalProperties() {
         Properties prop = new Properties();
@@ -32,6 +42,9 @@ public class CoNNLNERTrainer extends NERTrainer {
 
             // get the property value
             conllPath = prop.getProperty("grobid.ner.reuters.conll_path");
+
+            // get the property value
+            wapitiExecPath = prop.getProperty("grobid.ner.wapiti.exec");
         } catch (IOException ex) {
             throw new GrobidResourceException(
                     "An exception occured when accessing/reading the grobid-ner property file.", ex);
@@ -72,7 +85,6 @@ public class CoNNLNERTrainer extends NERTrainer {
             List<OffsetPosition> organisationPositions = null;
             List<OffsetPosition> orgFormPositions = null;
 
-            //List<String> labeled = new ArrayList<String>();
             BufferedReader br = new BufferedReader(new InputStreamReader(
                     new DataInputStream(new FileInputStream(trainFile))));
             String line;
@@ -86,19 +98,20 @@ public class CoNNLNERTrainer extends NERTrainer {
                 }
 
                 if (line.trim().length() == 0) {
-                    LayoutToken token = new LayoutToken("\n");
-                    tokens.add(token);
-                    labels.add(null);
+                    //LayoutToken token = new LayoutToken("\n");
+                    //tokens.add(token);
+                    //labels.add(null);
                     previousLabel = "O";
                     continue;
                 }
 
-                String[] toks = line.split(" ");
+                String[] toks = line.split("\t");
 
-                if (toks.length != 4) {
-                    System.err.println("Invalid number of tokens for CoNNL corpus line: " + line);
+                if (toks.length != 2) {
+                    System.err.println("Invalid number of tokens for CoNNL train set line: " + line);
                     continue;
                 }
+
                 // we take the standard Grobid tokenizer
                 StringTokenizer st2 = new StringTokenizer(toks[0],
                         TextUtilities.fullPunctuations, true);
@@ -109,23 +122,23 @@ public class CoNNLNERTrainer extends NERTrainer {
                     LayoutToken token = new LayoutToken(tok);
                     tokens.add(token);
 
-                    String label = toks[3];
+                    String label = toks[1];
                     label = translate(label);
 
-					/*if (label.equals("O")) 
-						labeled.add(tok + "\tO");
-					else if (previousLabel.equals("O") || !previousLabel.equals(label))
-						labeled.add(tok + "\tB-" + label);
-					else
-						labeled.add(tok + "\tI-" + label);*/
-
-                    if (previousLabel.equals("O") || !previousLabel.equals(label))
-                        label = "B-" + label;
-                    else
-                        label = "I-" + label;
+					if (!label.equals("O")) {
+    					if (previousLabel.equals("O") || !previousLabel.equals(label)) {
+                            previousLabel = label;
+    						label = "B-" + label;
+                        }
+    					else {
+                            previousLabel = label;
+    						label = "I-" + label;
+                        }
+                    } else {
+                        previousLabel = label;
+                    }
 
                     labels.add(label);
-                    previousLabel = label;
                 }
             }
 
@@ -135,7 +148,7 @@ public class CoNNLNERTrainer extends NERTrainer {
             orgFormPositions = lexicon.tokenPositionsOrgForm(tokens);
 
             addFeatures(tokens, labels, writer,
-                    locationPositions, titleNamePositions, organisationPositions, orgFormPositions);
+                    locationPositions, titleNamePositions, organisationPositions, orgFormPositions, true);
             writer.write("\n");
 
             br.close();
@@ -150,10 +163,6 @@ public class CoNNLNERTrainer extends NERTrainer {
                                     " is not correctly set : " + conllPath + "/eng.testa");
                 }
 
-				/*locationPositions = new ArrayList<List<OffsetPosition>>();
-	            titleNamePositions = new ArrayList<List<OffsetPosition>>();
-	            organisationPositions = new ArrayList<List<OffsetPosition>>();
-				orgFormPositions = new ArrayList<List<OffsetPosition>>();*/
                 tokens = new ArrayList<LayoutToken>();
                 labels = new ArrayList<String>();
                 br = new BufferedReader(new InputStreamReader(
@@ -166,17 +175,17 @@ public class CoNNLNERTrainer extends NERTrainer {
                     }
 
                     if (line.trim().length() == 0) {
-                        LayoutToken token = new LayoutToken("\n");
-                        tokens.add(token);
-                        labels.add(null);
+                        //LayoutToken token = new LayoutToken("\n");
+                        //tokens.add(token);
+                        //labels.add(null);
                         previousLabel = "O";
                         continue;
                     }
 
-                    String[] toks = line.split(" ");
+                    String[] toks = line.split("\t");
 
-                    if (toks.length != 4) {
-                        System.err.println("Invalid number of tokens for CoNNL corpus line: " + line);
+                    if (toks.length != 2) {
+                        System.err.println("Invalid number of tokens for CoNNL testa line: " + line);
                         continue;
                     }
                     // we take the standard Grobid tokenizer
@@ -189,23 +198,23 @@ public class CoNNLNERTrainer extends NERTrainer {
                         LayoutToken token = new LayoutToken(tok);
                         tokens.add(token);
 
-                        String label = toks[3];
+                        String label = toks[1];
                         label = translate(label);
-						
-						/*if (label.equals("O")) 
-							labeled.add(tok + "\tO");
-						else if (previousLabel.equals("O") || !previousLabel.equals(label))
-							labeled.add(tok + "\tB-" + label);
-						else
-							labeled.add(tok + "\tI-" + label);*/
 
-                        if (previousLabel.equals("O") || !previousLabel.equals(label))
-                            label = "B-" + label;
-                        else
-                            label = "I-" + label;
+                        if (!label.equals("O")) {
+                            if (previousLabel.equals("O") || !previousLabel.equals(label)) {
+                                previousLabel = label;
+                                label = "B-" + label;
+                            }
+                            else {
+                                previousLabel = label;
+                                label = "I-" + label;
+                            }
+                        } else {
+                            previousLabel = label;
+                        }
 
                         labels.add(label);
-                        previousLabel = label;
                     }
                 }
 
@@ -215,7 +224,7 @@ public class CoNNLNERTrainer extends NERTrainer {
                 orgFormPositions = lexicon.tokenPositionsOrgForm(tokens);
 
                 addFeatures(tokens, labels, writer,
-                        locationPositions, titleNamePositions, organisationPositions, orgFormPositions);
+                        locationPositions, titleNamePositions, organisationPositions, orgFormPositions, true);
                 writer.write("\n");
 
                 br.close();
@@ -315,15 +324,15 @@ public class CoNNLNERTrainer extends NERTrainer {
                 }
 
                 if (line.trim().length() == 0) {
-                    LayoutToken token = new LayoutToken("\n");
-                    tokens.add(token);
-                    labels.add(null);
+                    //LayoutToken token = new LayoutToken("\n");
+                    //tokens.add(token);
+                    //labels.add(null);
                     previousLabel = "O";
                     continue;
                 }
 
-                String[] toks = line.split(" ");
-                if (toks.length != 4) {
+                String[] toks = line.split("\t");
+                if (toks.length != 2) {
                     System.err.println("Invalid number of tokens for CoNNL corpus line: " + line);
                     previousLabel = "O";
                     continue;
@@ -339,23 +348,23 @@ public class CoNNLNERTrainer extends NERTrainer {
                     LayoutToken token = new LayoutToken(tok);
                     tokens.add(token);
 
-                    String label = toks[3];
+                    String label = toks[1];
                     label = translate(label);
-					
-					/*if (label.equals("O")) 
-						labeled.add(tok + "\tO");
-					else if (previousLabel.equals("O") || !previousLabel.equals(label))
-						labeled.add(tok + "\tB-" + label);
-					else
-						labeled.add(tok + "\tI-" + label);*/
 
-                    if (previousLabel.equals("O") || !previousLabel.equals(label))
-                        label = "B-" + label;
-                    else
-                        label = "I-" + label;
+                    if (!label.equals("O")) {
+                        if (previousLabel.equals("O") || !previousLabel.equals(label)) {
+                            previousLabel = label;
+                            label = "B-" + label;
+                        }
+                        else {
+                            previousLabel = label;
+                            label = "I-" + label;
+                        }
+                    } else {
+                        previousLabel = label;
+                    }
 
                     labels.add(label);
-                    previousLabel = label;
                 }
             }
             locationPositions = lexicon.tokenPositionsLocationNames(tokens);
@@ -364,7 +373,7 @@ public class CoNNLNERTrainer extends NERTrainer {
             orgFormPositions = lexicon.tokenPositionsOrgForm(tokens);
 
             addFeatures(tokens, labels, writer,
-                    locationPositions, titleNamePositions, organisationPositions, orgFormPositions);
+                    locationPositions, titleNamePositions, organisationPositions, orgFormPositions, true);
             writer.write("\n");
 
             br.close();
@@ -373,8 +382,8 @@ public class CoNNLNERTrainer extends NERTrainer {
             // apply now the model, we use a simple command line as it is only evaluation
             String modelPath = GrobidProperties.getModelPath(model).getAbsolutePath() + ".connl";
 
+            String[] command = {wapitiExecPath, "label", "-m", modelPath, evalOutputFile.getPath(), evalOutputFile2.getPath()};
 
-            String[] command = {"wapiti", "label", "-m", modelPath, evalOutputFile.getPath(), evalOutputFile2.getPath()};
             ProcessBuilder builder = new ProcessBuilder(command);
             //System.out.println("command: " + builder.command());
             Process process = builder.start();
@@ -442,15 +451,13 @@ public class CoNNLNERTrainer extends NERTrainer {
      * @param args Command line arguments.
      */
     public static void main(String[] args) {
-        GrobidHomeFinder grobidHomeFinder = new GrobidHomeFinder(Arrays.asList("../../grobid-home"));
+        GrobidHomeFinder grobidHomeFinder = new GrobidHomeFinder(Arrays.asList("../grobid-home"));
         GrobidProperties.getInstance(grobidHomeFinder);
 
         CoNNLNERTrainer trainer = new CoNNLNERTrainer();
 
-//        trainer.trainCoNLL(true);
-//        trainer.evalCoNLL("eng.train");
-//        trainer.evalCoNLL("eng.testa");
-        
+        trainer.trainCoNLL(true);
+        //trainer.evalCoNLL("eng.testa");
         trainer.evalCoNLL("eng.testb");
     }
 

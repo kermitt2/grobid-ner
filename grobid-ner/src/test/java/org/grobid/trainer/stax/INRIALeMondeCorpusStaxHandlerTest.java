@@ -27,7 +27,7 @@ public class INRIALeMondeCorpusStaxHandlerTest {
         target = new INRIALeMondeCorpusStaxHandler(writer);
     }
 
-    @Test
+    /*@Test
     public void testSampleParsing_shouldWork() throws Exception {
 
         InputStream is = this.getClass().getResourceAsStream("/le.monde.corpus.sample.xml");
@@ -44,7 +44,7 @@ public class INRIALeMondeCorpusStaxHandlerTest {
         assertThat(splitted[2], is(",\tO"));
 
         assertThat(splitted[51], is("zbb\tO"));
-    }
+    }*/
 
     @Test
     public void testTranslate_Organisation() throws Exception {

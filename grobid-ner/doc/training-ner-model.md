@@ -64,23 +64,10 @@ For the French NER model:
 > mvn compile exec:exec -Ptrain_eval_nerfr
 ```
 
-In this mode, by default, 90% of the available data is used for training and the remaining for evaluation. This ratio can be changed by editing the corresponding exec profile in the `pom.xml` file.
+In this mode, by default, 90% of the available data is used for training and the remaining for evaluation. This ratio can be changed by editing the corresponding exec profile in the pom.xml file.
 
 ### n-fold evaluation
 
-For 10-fold cross evaluation, use the following commands:
-
-For the English NER model:
-```bash
-> mvn compile exec:exec -Ptrain_eval_nfold_ner
-```
-
-For the French NER model:
-```bash
-> mvn compile exec:exec -Ptrain_eval_nfold_nerfr
-```
-
-You can adjust the number of folds (default is 10 as indicated above) by editing the corresponding exec profile in the `pom.xml` file.
 
 
 ### Train the Sense model

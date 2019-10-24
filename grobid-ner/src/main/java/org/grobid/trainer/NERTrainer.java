@@ -500,6 +500,18 @@ public class NERTrainer extends AbstractTrainer {
                                    List<OffsetPosition> personTitlePositions,
                                    List<OffsetPosition> organisationPositions,
                                    List<OffsetPosition> orgFormPositions) {
+        addFeatures(tokens, labels, writer, locationPositions, personTitlePositions, organisationPositions, orgFormPositions, false);
+    }
+
+    @SuppressWarnings({"UnusedParameters"})    
+    static public void addFeatures(List<LayoutToken> tokens,
+                                   List<String> labels,
+                                   Writer writer,
+                                   List<OffsetPosition> locationPositions,
+                                   List<OffsetPosition> personTitlePositions,
+                                   List<OffsetPosition> organisationPositions,
+                                   List<OffsetPosition> orgFormPositions,
+                                   boolean leaveLabelUntouched) {
         //int totalLine = texts.size();
         int posit = 0;
         //int sentence = 0;
@@ -617,42 +629,48 @@ public class NERTrainer extends AbstractTrainer {
                 if (labels.size() > n)
                     label = labels.get(n);
                 if (label != null) {
-                    // second piece is the NER label, which could a single label or a list of labels in brackets
-                    // separated by a comma
-                    if (label.startsWith("[")) {
-                        String rawlab = label.substring(1, label.length() - 1);
-                        int ind = rawlab.indexOf(",");
-                        if (ind != -1) {
-                            rawlab = rawlab.substring(0, ind);
-                            if (rawlab.startsWith("B-") || rawlab.equals("O") ||
-                                    rawlab.equals("0")) {
+                    // second piece is the NER label
+                    // in case of CoNLL, we can use labels just as they are, already in BIO scheme
+                    if (leaveLabelUntouched) {
+                        cleanLine += "\t" + label;
+                        previousLabel = label;
+                    } else {
+                        // the NER label could a single label or a list of labels in brackets
+                        // separated by a comma
+                        if (label.startsWith("[")) {
+                            String rawlab = label.substring(1, label.length() - 1);
+                            int ind = rawlab.indexOf(",");
+                            if (ind != -1) {
+                                rawlab = rawlab.substring(0, ind);
+                                if (rawlab.startsWith("B-") || rawlab.equals("O") ||
+                                        rawlab.equals("0")) {
+                                    cleanLine += "\t" + rawlab;
+                                } else {
+                                    if ((previousLabel == null) || (!previousLabel.equals(rawlab)) ||
+                                            (previousLabel.equals("O")) || (previousLabel.equals("0"))) {
+                                        cleanLine += "\tB-" + rawlab;
+                                    } else
+                                        cleanLine += "\t" + rawlab;
+                                }
+                            } else {
+                                //cleanLine += "\t" + labels;
+                                System.out.println("WARNING, format error:" + rawlab);
+                            }
+                            previousLabel = rawlab;
+                        } else {
+                            String rawlab = label;
+                            if (rawlab.startsWith("B-") || rawlab.equals("O") || rawlab.equals("0")) {
                                 cleanLine += "\t" + rawlab;
                             } else {
                                 if ((previousLabel == null) || (!previousLabel.equals(rawlab)) ||
                                         (previousLabel.equals("O")) || (previousLabel.equals("0"))) {
                                     cleanLine += "\tB-" + rawlab;
+
                                 } else
                                     cleanLine += "\t" + rawlab;
                             }
-                        } else {
-                            //cleanLine += "\t" + labels;
-                            System.out.println("WARNING, format error:" + rawlab);
+                            previousLabel = rawlab;
                         }
-                        previousLabel = rawlab;
-                    } else {
-                        String rawlab = label;
-                        if (rawlab.startsWith("B-") || rawlab.equals("O") ||
-                                rawlab.equals("0")) {
-                            cleanLine += "\t" + rawlab;
-                        } else {
-                            if ((previousLabel == null) || (!previousLabel.equals(rawlab)) ||
-                                    (previousLabel.equals("O")) || (previousLabel.equals("0"))) {
-                                cleanLine += "\tB-" + rawlab;
-
-                            } else
-                                cleanLine += "\t" + rawlab;
-                        }
-                        previousLabel = rawlab;
                     }
                 }
                 FeaturesVectorNER featuresVector =
