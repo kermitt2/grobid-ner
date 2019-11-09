@@ -7,15 +7,20 @@
 
 __grobid-ner__ is a Named-Entity Recogniser based on the GROBID library ([grobid](https://github.com/kermitt2/grobid)), a text mining tool exploiting CRF. The installation of GROBID is necessary.  
 
-__grobid-ner__ has been developed more specifically for the purpose of supporting the disambiguation and resolution of the entities against knowledge bases such as Wikidata. The project comes with a NER model for English with 27 named entity classes and its corresponding dataset, all CC-BY. The high number of classes is motivated to help further entity disambiguation and to bring more entities than the usual datasets.
-
 For a description of the NER, installation, usage and other technical features, see the [documentation](http://grobid-ner.readthedocs.io/en/latest/). 
 
-For comparison with Deep Learning architectures used for sequence labelling, see the project [DeLFT](https://github.com/kermitt2/delft).
+This project has been developed to explore NER with CRF. It allows in particular reliable and reproducible comparisons with other approaches. For comparisons with Deep Learning architectures used for state-of-the-art sequence labelling, see the project [DeLFT](https://github.com/kermitt2/delft).
+
+__grobid-ner__ is originally more specifically dedicated to the support of disambiguation and resolution of the entities against knowledge bases such as Wikidata. The project comes with a NER model for English with 27 named entity classes and its corresponding dataset, all CC-BY. The high number of classes is motivated to help further entity disambiguation and to bring more entities than the usual datasets.
+
 
 ## Benchmarking 
 
-### CoNLL-2003 (English)
+### 27-class English dataset
+
+
+
+
 
 ### Corpus LeMonde (FTB, French) 
 
@@ -93,9 +98,19 @@ Instance-level recall:      87.08
 
 Runtime __single thread__: 88,451 tokens labeled in 1228 ms, 72,028 tokens per second. Tokens are defined by GROBID default tokenizers. This is Wapiti CRF labeling only, without the additional post-processing. Intel(R) Core(TM) i7-4790K CPU @ 4.00GHz, 16GB RAM. 
 
-### 27-class English dataset
 
+### CoNLL-2003 (English)
 
+We use the official CoNLL eval script bellow: 
+
+```
+processed 46377 tokens with 5628 phrases; found: 5522 phrases; correct: 4746.
+accuracy:  96.64%; precision:  85.95%; recall:  84.33%; FB1:  85.13
+         LOCATION: precision:  87.12%; recall:  89.95%; FB1:  88.51  1716
+     ORGANISATION: precision:  84.67%; recall:  78.02%; FB1:  81.21  1526
+           PERSON: precision:  88.91%; recall:  89.24%; FB1:  89.07  1623
+          UNKNOWN: precision:  78.54%; recall:  74.46%; FB1:  76.44  657
+```
 
 ## License
 

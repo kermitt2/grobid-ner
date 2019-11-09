@@ -31,6 +31,15 @@ public class CoNNLNERTrainer extends NERTrainer {
     // this is for CoNLL eval only (for historical reasons... TBD: try to use the JNI Wapiti wrapper instead!)
     private String wapitiExecPath = null;
 
+    public CoNNLNERTrainer() {
+        super();
+
+        // adjusting CRF training parameters for this model
+        this.epsilon = 0.0001;
+        this.window = 20;
+        this.nbMaxIterations = 50;
+    }
+
     private void loadAdditionalProperties() {
         Properties prop = new Properties();
         InputStream input = null;
@@ -233,6 +242,9 @@ public class CoNNLNERTrainer extends NERTrainer {
 
             // we can train now a model
             GenericTrainer trainer = TrainerFactory.getTrainer();
+            trainer.setEpsilon(this.epsilon);
+            trainer.setWindow(this.window);
+            trainer.setNbMaxIterations(this.nbMaxIterations);
             final File tempModelPath = new File(GrobidProperties.getModelPath(model).getAbsolutePath() + ".connl");
 
             System.out.println("Model file under: " + tempModelPath.getPath());
@@ -324,9 +336,6 @@ public class CoNNLNERTrainer extends NERTrainer {
                 }
 
                 if (line.trim().length() == 0) {
-                    //LayoutToken token = new LayoutToken("\n");
-                    //tokens.add(token);
-                    //labels.add(null);
                     previousLabel = "O";
                     continue;
                 }

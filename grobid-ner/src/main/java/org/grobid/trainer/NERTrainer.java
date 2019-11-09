@@ -47,8 +47,8 @@ public class NERTrainer extends AbstractTrainer {
         super(GrobidModels.ENTITIES_NER);
 
         // adjusting CRF training parameters for this model
-        epsilon = 0.000001;
-        window = 20;
+        this.epsilon = 0.000001;
+        this.window = 20;
 
         // read additional properties for this sub-project to get the paths to the resources
         Properties prop = new Properties();
