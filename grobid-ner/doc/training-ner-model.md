@@ -64,7 +64,11 @@ For the French NER model:
 > mvn compile exec:exec -Ptrain_eval_nerfr
 ```
 
-In this mode, by default, 80% of the available data is used for training and the remaining for evaluation. This ratio can be changed by editing the corresponding exec profile in the pom.xml file.
+In this mode, by default, 90% of the available data is used for training and the remaining for evaluation. This ratio can be changed by editing the corresponding exec profile in the pom.xml file.
+
+### n-fold evaluation
+
+
 
 ### Train the Sense model
 

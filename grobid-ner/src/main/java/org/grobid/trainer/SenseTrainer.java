@@ -719,7 +719,7 @@ public class SenseTrainer extends AbstractTrainer {
         File tmpEvalPath = getTempEvaluationDataPath();
         createCRFPPData(evalDataF, tmpEvalPath);
 
-        return EvaluationUtilities.evaluateStandard(tmpEvalPath.getAbsolutePath(), getTagger());
+        return EvaluationUtilities.evaluateStandard(tmpEvalPath.getAbsolutePath(), getTagger()).toString();
     }
 
     /**

@@ -47,8 +47,9 @@ public class NERTrainer extends AbstractTrainer {
         super(GrobidModels.ENTITIES_NER);
 
         // adjusting CRF training parameters for this model
-        epsilon = 0.000001;
-        window = 20;
+        this.epsilon = 0.000001;
+        this.window = 20;
+        this.nbMaxIterations = 200;
 
         // read additional properties for this sub-project to get the paths to the resources
         Properties prop = new Properties();
@@ -120,7 +121,7 @@ public class NERTrainer extends AbstractTrainer {
 
             // process the core trainig set first (set of Wikipedia and Reuters files corresponding to the
             // CoNLL set but with the 26 class annotations manually corrected)
-            totalExamples = processCore(writer2, writer3, splitRatio);
+            totalExamples = processCore(corpusDir, writer2, writer3, splitRatio);
 
             // process the reuters corpus then (previous "core files" will be ignored)
 //			totalExamples += processReutersCorpus(writer2, writer3, splitRatio);
@@ -223,26 +224,32 @@ public class NERTrainer extends AbstractTrainer {
         return totalExamples;
     }
 
-
-    private int processCore(Writer writerTraining, Writer writerEvaluation, double splitRatio) {
+    private int processCore(File corpusDir, Writer writerTraining, Writer writerEvaluation, double splitRatio) {
         int res = 0;
-        File corpusDir1 = null;
-        File corpusDir2 = null;
-        File corpusDir3 = null;
-        File corpusDir4 = null;
         try {
+
+            File[] refFiles = corpusDir.listFiles(new FilenameFilter() {
+                public boolean accept(File dir, String name) {
+                    return name.endsWith(".ner26.train") || name.endsWith(".ner26.testa") || name.endsWith(".ner26.testb");
+                }
+            });
+
+            if (refFiles == null) {
+                return 0;
+            }
+
             // the "core" Reuters set is a the set of Reuters files corresponding to the
             // CoNLL set, but with the 26 class annotations manually corrected
             // these annotated files are available in the corpus resource path of the model
-            corpusDir1 = new File(nerCorpusPath + "/reuters.ner26.train");
+            /*corpusDir1 = new File("resources/dataset/ner/corpus/reuters.ner26.train");
             System.out.println("Path to 26-classes Reuters corpus CoNLL train set: " + corpusDir1.getPath());
             if (!corpusDir1.exists()) {
                 throw new
                         GrobidException("Cannot start training, because corpus resource folder is not correctly set : "
                         + corpusDir1.getPath());
-            }
+            }*/
 
-            corpusDir2 = new File(nerCorpusPath + "/reuters.ner26.testa");
+            /*corpusDir2 = new File(nerCorpusPath + "/reuters.ner26.testa");
             System.out.println("Path to 26-classes Reuters corpus CoNLL testa set: " + corpusDir2.getPath());
             if (!corpusDir2.exists()) {
                 throw new
@@ -256,27 +263,24 @@ public class NERTrainer extends AbstractTrainer {
                 throw new
                         GrobidException("Cannot start training, because corpus resource folder is not correctly set : "
                         + corpusDir3.getPath());
-            }
+            }*/
 
             // Wikipedia annotated file
-            corpusDir4 = new File("resources/dataset/ner/corpus/wikipedia.ner26.train");
+            /*corpusDir4 = new File("resources/dataset/ner/corpus/wikipedia.ner26.train");
             System.out.println("Path to 26-classes Wikipedia corpus train set: " + corpusDir4.getPath());
             if (!corpusDir4.exists()) {
                 throw new
                         GrobidException("Cannot start training, because corpus resource folder is not correctly set : "
                         + corpusDir4.getPath());
-            }
+            }*/
 
-            List<File> corpora = new ArrayList<File>();
-            corpora.add(corpusDir1);
-            //corpora.add(corpusDir2);
-            //corpora.add(corpusDir3);
-            corpora.add(corpusDir4);
+            for (File tf : refFiles) {
+                String name = tf.getName();
+                System.out.println(name);
 
-            for (File corpusDir : corpora) {
                 Writer writer = null;
                 BufferedReader bufReader = new BufferedReader(
-                        new InputStreamReader(new FileInputStream(corpusDir), "UTF-8"));
+                        new InputStreamReader(new FileInputStream(tf), "UTF-8"));
                 // to store unit term positions
                 List<OffsetPosition> locationPositions = null;
                 List<OffsetPosition> personTitlePositions = null;
@@ -302,6 +306,21 @@ public class NERTrainer extends AbstractTrainer {
                             else
                                 writer = writerEvaluation;
                         }
+
+                        if (tokens.size() > 0) {
+                            locationPositions = lexicon.tokenPositionsLocationNames(tokens);
+                            personTitlePositions = lexicon.tokenPositionsPersonTitle(tokens);
+                            organisationPositions = lexicon.tokenPositionsOrganisationNames(tokens);
+                            orgFormPositions = lexicon.tokenPositionsOrgForm(tokens);
+
+                            addFeatures(tokens, labels, writer,
+                                    locationPositions, personTitlePositions, organisationPositions, orgFormPositions);
+                            writer.write("\n");
+
+                            tokens = new ArrayList<LayoutToken>();
+                            labels = new ArrayList<String>();
+                        }
+
                         continue;
                     }
 
@@ -312,31 +331,35 @@ public class NERTrainer extends AbstractTrainer {
                         res++;
                     } else {
                         String pieces[] = line.split("\t");
-                        if (pieces.length != 2)
+                        if (pieces.length != 3)
                             continue;
                         // check if previous label is different from new line - if yes add a space
-                        if (!tokens.get(tokens.size() - 1).getText().equals("\n")) {
+                        if (tokens.size() > 0 && 
+                            !tokens.get(tokens.size() - 1).getText().equals("\n")) {
                             LayoutToken token = new LayoutToken(" ");
                             tokens.add(token);
                             labels.add(null);
                         }
                         LayoutToken token = new LayoutToken(pieces[0]);
                         tokens.add(token);
-                        labels.add(pieces[1]);
+                        String label = pieces[1];
+                        if (label.equals("0"))
+                            label = "O";
+                        labels.add(label);
                     }
                 }
 
+                // last doc
+                if (tokens.size() > 0) {
+                    locationPositions = lexicon.tokenPositionsLocationNames(tokens);
+                    personTitlePositions = lexicon.tokenPositionsPersonTitle(tokens);
+                    organisationPositions = lexicon.tokenPositionsOrganisationNames(tokens);
+                    orgFormPositions = lexicon.tokenPositionsOrgForm(tokens);
 
-                locationPositions = lexicon.tokenPositionsLocationNames(tokens);
-                personTitlePositions = lexicon.tokenPositionsPersonTitle(tokens);
-                organisationPositions = lexicon.tokenPositionsOrganisationNames(tokens);
-                orgFormPositions = lexicon.tokenPositionsOrgForm(tokens);
-
-
-                addFeatures(tokens, labels, writer,
-                        locationPositions, personTitlePositions, organisationPositions, orgFormPositions);
-                writer.write("\n");
-
+                    addFeatures(tokens, labels, writer,
+                            locationPositions, personTitlePositions, organisationPositions, orgFormPositions);
+                    writer.write("\n");
+                }
 
                 bufReader.close();
             }
@@ -500,6 +523,18 @@ public class NERTrainer extends AbstractTrainer {
                                    List<OffsetPosition> personTitlePositions,
                                    List<OffsetPosition> organisationPositions,
                                    List<OffsetPosition> orgFormPositions) {
+        addFeatures(tokens, labels, writer, locationPositions, personTitlePositions, organisationPositions, orgFormPositions, false);
+    }
+
+    @SuppressWarnings({"UnusedParameters"})    
+    static public void addFeatures(List<LayoutToken> tokens,
+                                   List<String> labels,
+                                   Writer writer,
+                                   List<OffsetPosition> locationPositions,
+                                   List<OffsetPosition> personTitlePositions,
+                                   List<OffsetPosition> organisationPositions,
+                                   List<OffsetPosition> orgFormPositions,
+                                   boolean leaveLabelUntouched) {
         //int totalLine = texts.size();
         int posit = 0;
         //int sentence = 0;
@@ -507,18 +542,6 @@ public class NERTrainer extends AbstractTrainer {
         int currentPersonTitleIndex = 0;
         int currentOrganisationIndex = 0;
         int currentOrgFormIndex = 0;
-        //List<OffsetPosition> localLocationPositions = null;
-        //List<OffsetPosition> localPersonTitlePositions = null;
-        //List<OffsetPosition> localOrganisationPositions = null;
-        //List<OffsetPosition> localOrgFormPositions = null;
-        /*if (locationPositions.size() > sentence)
-			localLocationPositions = locationPositions.get(sentence);
-		if (personTitlePositions.size() > sentence)
-			localPersonTitlePositions = personTitlePositions.get(sentence);
-		if (organisationPositions.size() > sentence)
-			localOrganisationPositions = organisationPositions.get(sentence);
-		if (orgFormPositions.size() > sentence)
-			localOrgFormPositions = orgFormPositions.get(sentence);	*/
         boolean isLocationToken = false;
         boolean isPersonTitleToken = false;
         boolean isOrganisationToken = false;
@@ -530,23 +553,8 @@ public class NERTrainer extends AbstractTrainer {
                 if (token.getText().trim().equals("@newline") || token.getText().equals("\n")) {
                     writer.write("\n");
                     writer.flush();
-                    //sentence++;
                     previousLabel = null;
-					/*if (locationPositions.size() > sentence)
-						localLocationPositions = locationPositions.get(sentence);
-					if (personTitlePositions.size() > sentence)
-						localPersonTitlePositions = personTitlePositions.get(sentence);
-					if (organisationPositions.size() > sentence)
-						localOrganisationPositions = organisationPositions.get(sentence);
-					if (orgFormPositions.size() > sentence)
-						localOrgFormPositions = orgFormPositions.get(sentence);*/
                 }
-				
-				/*int ind = line.indexOf("\t");
-				if (ind == -1) 
-				 	ind = line.indexOf(" ");
-				if (ind != -1) {		
-				}*/
 
                 // do we have a unit term at position posit?
                 if ((locationPositions != null) && (locationPositions.size() > 0)) {
@@ -617,42 +625,48 @@ public class NERTrainer extends AbstractTrainer {
                 if (labels.size() > n)
                     label = labels.get(n);
                 if (label != null) {
-                    // second piece is the NER label, which could a single label or a list of labels in brackets
-                    // separated by a comma
-                    if (label.startsWith("[")) {
-                        String rawlab = label.substring(1, label.length() - 1);
-                        int ind = rawlab.indexOf(",");
-                        if (ind != -1) {
-                            rawlab = rawlab.substring(0, ind);
-                            if (rawlab.startsWith("B-") || rawlab.equals("O") ||
-                                    rawlab.equals("0")) {
+                    // second piece is the NER label
+                    // in case of CoNLL, we can use labels just as they are, already in BIO scheme
+                    if (leaveLabelUntouched) {
+                        cleanLine += "\t" + label;
+                        previousLabel = label;
+                    } else {
+                        // the NER label could a single label or a list of labels in brackets
+                        // separated by a comma
+                        if (label.startsWith("[")) {
+                            String rawlab = label.substring(1, label.length() - 1);
+                            int ind = rawlab.indexOf(",");
+                            if (ind != -1) {
+                                rawlab = rawlab.substring(0, ind);
+                                if (rawlab.startsWith("B-") || rawlab.equals("O") ||
+                                        rawlab.equals("0")) {
+                                    cleanLine += "\t" + rawlab;
+                                } else {
+                                    if ((previousLabel == null) || (!previousLabel.equals(rawlab)) ||
+                                            (previousLabel.equals("O")) || (previousLabel.equals("0"))) {
+                                        cleanLine += "\tB-" + rawlab;
+                                    } else
+                                        cleanLine += "\t" + rawlab;
+                                }
+                            } else {
+                                //cleanLine += "\t" + labels;
+                                System.out.println("WARNING, format error:" + rawlab);
+                            }
+                            previousLabel = rawlab;
+                        } else {
+                            String rawlab = label;
+                            if (rawlab.startsWith("B-") || rawlab.equals("O") || rawlab.equals("0")) {
                                 cleanLine += "\t" + rawlab;
                             } else {
                                 if ((previousLabel == null) || (!previousLabel.equals(rawlab)) ||
                                         (previousLabel.equals("O")) || (previousLabel.equals("0"))) {
                                     cleanLine += "\tB-" + rawlab;
+
                                 } else
                                     cleanLine += "\t" + rawlab;
                             }
-                        } else {
-                            //cleanLine += "\t" + labels;
-                            System.out.println("WARNING, format error:" + rawlab);
+                            previousLabel = rawlab;
                         }
-                        previousLabel = rawlab;
-                    } else {
-                        String rawlab = label;
-                        if (rawlab.startsWith("B-") || rawlab.equals("O") ||
-                                rawlab.equals("0")) {
-                            cleanLine += "\t" + rawlab;
-                        } else {
-                            if ((previousLabel == null) || (!previousLabel.equals(rawlab)) ||
-                                    (previousLabel.equals("O")) || (previousLabel.equals("0"))) {
-                                cleanLine += "\tB-" + rawlab;
-
-                            } else
-                                cleanLine += "\t" + rawlab;
-                        }
-                        previousLabel = rawlab;
                     }
                 }
                 FeaturesVectorNER featuresVector =
@@ -681,10 +695,11 @@ public class NERTrainer extends AbstractTrainer {
     public static void main(String[] args) {
         final GrobidHomeFinder grobidHomeFinder = new GrobidHomeFinder(Arrays.asList("../../grobid-home", "../grobid-home"));
         GrobidProperties.getInstance(grobidHomeFinder);
-
         NERTrainer trainer = new NERTrainer();
 
         AbstractTrainer.runTraining(trainer);
-        AbstractTrainer.runEvaluation(trainer);
+        System.out.println(AbstractTrainer.runEvaluation(trainer));
+
+        System.exit(0);
     }
 }

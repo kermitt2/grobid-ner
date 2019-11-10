@@ -7,7 +7,7 @@ import org.grobid.core.engines.tagging.GenericTaggerUtils;
 import org.grobid.core.lang.Language;
 import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.lexicon.LexiconPositionsIndexes;
-import org.grobid.core.utilities.Pair;
+//import org.grobid.core.utilities.Pair;
 import org.grobid.core.layout.LayoutToken;
 
 import org.slf4j.Logger;
@@ -15,6 +15,7 @@ import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
+import org.apache.commons.lang3.tuple.Pair;
 import static org.apache.commons.lang3.StringUtils.isEmpty;
 
 /**
@@ -104,8 +105,8 @@ public class NERFrParser extends AbstractParser implements NERParser {
 
 //        int count = 0;
         for (Pair<String, String> labeledEntry : labeledEntries) {
-            String value = labeledEntry.a;
-            String label = labeledEntry.b;
+            String value = labeledEntry.getLeft();
+            String label = labeledEntry.getRight();
 
             if (value != null) {
                 sb.append(value).append("\t").append(label);

@@ -110,6 +110,7 @@ public class INRIALeMondeCorpusStaxHandler implements StaxParserContentHandler {
             sb = new StringBuilder();
         } else if (reader.getName().getLocalPart().equals("sentence")) {
             inSentence = false;
+            sb.append("\n");
         } else if (reader.getName().getLocalPart().equals("ENAMEX")) {
             inNamedEntity = false;
             entityType = null;
