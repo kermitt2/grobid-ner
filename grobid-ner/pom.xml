@@ -205,30 +205,7 @@
     </build>
 
     <profiles>
-        <!-- mvn generate-resources -Ptrain_ner -e -->
-        <profile>
-            <id>train_ner</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>exec-maven-plugin</artifactId>
-                        <version>1.1.1</version>
-                        <executions>
-                            <execution>
-                                <phase>generate-resources</phase>
-                                <goals>
-                                    <goal>java</goal>
-                                </goals>
-                                <configuration>
-                                    <mainClass>org.grobid.trainer.NERTrainer</mainClass>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
+
         <profile>
             <id>train_nerfr</id>
             <build>
@@ -379,8 +356,37 @@
                                 <argument>-gH</argument>
                                 <argument>../grobid-home</argument>
                                 <argument>-s</argument>
-                                <argument>0.9
-                                </argument> <!-- to be changed for another ratio of training/evaluation segmentation -->
+                                <argument>0.8</argument> <!-- to be changed for another ratio of training/evaluation segmentation -->
+                            </arguments>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <!-- mvn compile exec:exec -Ptrain_ner -->
+        <profile>
+            <id>train_ner</id>
+            <activation>
+                <property>
+                    <name>train_ner</name>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <configuration>
+                            <executable>java</executable>
+                            <arguments>
+                                <argument>-classpath</argument>
+                                <classpath />
+                                <argument>org.grobid.trainer.NERTrainerRunner</argument>
+                                <argument>0</argument>
+                                <argument>ner</argument>
+                                <argument>-gH</argument>
+                                <argument>../grobid-home</argument>
                             </arguments>
                         </configuration>
                     </plugin>

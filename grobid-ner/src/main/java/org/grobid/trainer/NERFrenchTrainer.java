@@ -41,9 +41,9 @@ public class NERFrenchTrainer extends AbstractTrainer {
         super(GrobidModels.ENTITIES_NERFR);
 
         // adjusting CRF training parameters for this model
-        epsilon = 0.000001;
-        window = 20;
-        nbMaxIterations = 1000;
+        this.epsilon = 0.000001;
+        this.window = 20;
+        this.nbMaxIterations = 1000;
 
         // read additional properties for this sub-project to get the paths to the resources
         Properties prop = new Properties();

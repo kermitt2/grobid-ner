@@ -37,7 +37,7 @@ public class CoNNLNERTrainer extends NERTrainer {
         // adjusting CRF training parameters for this model
         this.epsilon = 0.0001;
         this.window = 20;
-        this.nbMaxIterations = 50;
+        this.nbMaxIterations = 60;
     }
 
     private void loadAdditionalProperties() {
@@ -101,16 +101,21 @@ public class CoNNLNERTrainer extends NERTrainer {
             List<LayoutToken> tokens = new ArrayList<LayoutToken>();
             List<String> labels = new ArrayList<String>();
             while ((line = br.readLine()) != null) {
-                if (line.startsWith("-DOCSTART-")) {
+                if (line.startsWith("-DOCSTART-") || (line.trim().length() == 0)) {
                     previousLabel = "O";
-                    continue;
-                }
+                    if (tokens.size() > 0) {
+                        locationPositions = lexicon.tokenPositionsLocationNames(tokens);
+                        titleNamePositions = lexicon.tokenPositionsPersonTitle(tokens);
+                        organisationPositions = lexicon.tokenPositionsOrganisationNames(tokens);
+                        orgFormPositions = lexicon.tokenPositionsOrgForm(tokens);
 
-                if (line.trim().length() == 0) {
-                    //LayoutToken token = new LayoutToken("\n");
-                    //tokens.add(token);
-                    //labels.add(null);
-                    previousLabel = "O";
+                        addFeatures(tokens, labels, writer,
+                                locationPositions, titleNamePositions, organisationPositions, orgFormPositions, true);
+                        writer.write("\n");
+
+                        tokens = new ArrayList<LayoutToken>();
+                        labels = new ArrayList<String>();
+                    }
                     continue;
                 }
 
@@ -151,14 +156,17 @@ public class CoNNLNERTrainer extends NERTrainer {
                 }
             }
 
-            locationPositions = lexicon.tokenPositionsLocationNames(tokens);
-            titleNamePositions = lexicon.tokenPositionsPersonTitle(tokens);
-            organisationPositions = lexicon.tokenPositionsOrganisationNames(tokens);
-            orgFormPositions = lexicon.tokenPositionsOrgForm(tokens);
+            // last doc
+            if (tokens.size() > 0) {
+                locationPositions = lexicon.tokenPositionsLocationNames(tokens);
+                titleNamePositions = lexicon.tokenPositionsPersonTitle(tokens);
+                organisationPositions = lexicon.tokenPositionsOrganisationNames(tokens);
+                orgFormPositions = lexicon.tokenPositionsOrgForm(tokens);
 
-            addFeatures(tokens, labels, writer,
-                    locationPositions, titleNamePositions, organisationPositions, orgFormPositions, true);
-            writer.write("\n");
+                addFeatures(tokens, labels, writer,
+                        locationPositions, titleNamePositions, organisationPositions, orgFormPositions, true);
+                writer.write("\n");
+            }
 
             br.close();
 
@@ -178,16 +186,22 @@ public class CoNNLNERTrainer extends NERTrainer {
                         new DataInputStream(new FileInputStream(trainFile))));
                 previousLabel = "O";
                 while ((line = br.readLine()) != null) {
-                    if (line.startsWith("-DOCSTART-")) {
+                    if (line.startsWith("-DOCSTART-") || (line.trim().length() == 0)) {
                         previousLabel = "O";
-                        continue;
-                    }
+                        if (tokens.size() > 0) {
+                            locationPositions = lexicon.tokenPositionsLocationNames(tokens);
+                            titleNamePositions = lexicon.tokenPositionsPersonTitle(tokens);
+                            organisationPositions = lexicon.tokenPositionsOrganisationNames(tokens);
+                            orgFormPositions = lexicon.tokenPositionsOrgForm(tokens);
 
-                    if (line.trim().length() == 0) {
-                        //LayoutToken token = new LayoutToken("\n");
-                        //tokens.add(token);
-                        //labels.add(null);
-                        previousLabel = "O";
+                            addFeatures(tokens, labels, writer,
+                                    locationPositions, titleNamePositions, organisationPositions, orgFormPositions, true);
+                            writer.write("\n");
+
+                            tokens = new ArrayList<LayoutToken>();
+                            labels = new ArrayList<String>();
+                        }
+
                         continue;
                     }
 
@@ -227,14 +241,17 @@ public class CoNNLNERTrainer extends NERTrainer {
                     }
                 }
 
-                locationPositions = lexicon.tokenPositionsLocationNames(tokens);
-                titleNamePositions = lexicon.tokenPositionsPersonTitle(tokens);
-                organisationPositions = lexicon.tokenPositionsOrganisationNames(tokens);
-                orgFormPositions = lexicon.tokenPositionsOrgForm(tokens);
+                // last doc
+                if (tokens.size() > 0) {
+                    locationPositions = lexicon.tokenPositionsLocationNames(tokens);
+                    titleNamePositions = lexicon.tokenPositionsPersonTitle(tokens);
+                    organisationPositions = lexicon.tokenPositionsOrganisationNames(tokens);
+                    orgFormPositions = lexicon.tokenPositionsOrgForm(tokens);
 
-                addFeatures(tokens, labels, writer,
-                        locationPositions, titleNamePositions, organisationPositions, orgFormPositions, true);
-                writer.write("\n");
+                    addFeatures(tokens, labels, writer,
+                            locationPositions, titleNamePositions, organisationPositions, orgFormPositions, true);
+                    writer.write("\n");
+                }
 
                 br.close();
             }
@@ -287,7 +304,6 @@ public class CoNNLNERTrainer extends NERTrainer {
      */
     public void evalCoNLL(String set) {
         loadAdditionalProperties();
-        long start = System.currentTimeMillis();
         Writer writer = null;
         File evalOutputFile2 = null;
         try {
@@ -330,13 +346,22 @@ public class CoNNLNERTrainer extends NERTrainer {
             List<String> labels = new ArrayList<String>();
             String previousLabel = "O";
             while ((line = br.readLine()) != null) {
-                if (line.startsWith("-DOCSTART-") || line.startsWith("--")) {
+                if (line.startsWith("-DOCSTART-") || line.startsWith("--") || (line.trim().length() == 0)) {
                     previousLabel = "O";
-                    continue;
-                }
+                    if (tokens.size() > 0) {
+                        locationPositions = lexicon.tokenPositionsLocationNames(tokens);
+                        titleNamePositions = lexicon.tokenPositionsPersonTitle(tokens);
+                        organisationPositions = lexicon.tokenPositionsOrganisationNames(tokens);
+                        orgFormPositions = lexicon.tokenPositionsOrgForm(tokens);
 
-                if (line.trim().length() == 0) {
-                    previousLabel = "O";
+                        addFeatures(tokens, labels, writer,
+                                locationPositions, titleNamePositions, organisationPositions, orgFormPositions, true);
+                        writer.write("\n");
+
+                        tokens = new ArrayList<LayoutToken>();
+                        labels = new ArrayList<String>();
+                    }
+
                     continue;
                 }
 
@@ -376,14 +401,18 @@ public class CoNNLNERTrainer extends NERTrainer {
                     labels.add(label);
                 }
             }
-            locationPositions = lexicon.tokenPositionsLocationNames(tokens);
-            titleNamePositions = lexicon.tokenPositionsPersonTitle(tokens);
-            organisationPositions = lexicon.tokenPositionsOrganisationNames(tokens);
-            orgFormPositions = lexicon.tokenPositionsOrgForm(tokens);
 
-            addFeatures(tokens, labels, writer,
-                    locationPositions, titleNamePositions, organisationPositions, orgFormPositions, true);
-            writer.write("\n");
+            // last doc
+            if (tokens.size() > 0) {
+                locationPositions = lexicon.tokenPositionsLocationNames(tokens);
+                titleNamePositions = lexicon.tokenPositionsPersonTitle(tokens);
+                organisationPositions = lexicon.tokenPositionsOrganisationNames(tokens);
+                orgFormPositions = lexicon.tokenPositionsOrgForm(tokens);
+
+                addFeatures(tokens, labels, writer,
+                        locationPositions, titleNamePositions, organisationPositions, orgFormPositions, true);
+                writer.write("\n");
+            }
 
             br.close();
             writer.close();
@@ -395,6 +424,9 @@ public class CoNNLNERTrainer extends NERTrainer {
 
             ProcessBuilder builder = new ProcessBuilder(command);
             //System.out.println("command: " + builder.command());
+
+            long start = System.currentTimeMillis();
+
             Process process = builder.start();
             try {
                 int exitValue = process.waitFor();
@@ -403,11 +435,13 @@ public class CoNNLNERTrainer extends NERTrainer {
                 e.printStackTrace();
             }
 
-            // we reformat the output for application of the CoNLL eval script
+            long end = System.currentTimeMillis();
+            System.out.println("evaluation labelling done in " + (end - start) + " ms.");
+
+            // we apply the CoNLL eval script
             br = new BufferedReader(new InputStreamReader(
                     new DataInputStream(new FileInputStream(evalOutputFile2))));
 
-            // and finally apply the CoNLL evaluation script
             builder = new ProcessBuilder("/usr/bin/perl", conllPath + "/bin/conlleval");
             //System.out.println("command: " + builder.command());
             BufferedReader br2 = null;
@@ -449,9 +483,6 @@ public class CoNNLNERTrainer extends NERTrainer {
         } finally {
             IOUtils.closeQuietly(writer);
         }
-
-        long end = System.currentTimeMillis();
-        System.out.println("evaluation done in " + (end - start) / 1000 + " s.");
     }
 
     /**
@@ -469,6 +500,4 @@ public class CoNNLNERTrainer extends NERTrainer {
         //trainer.evalCoNLL("eng.testa");
         trainer.evalCoNLL("eng.testb");
     }
-
-
 }
