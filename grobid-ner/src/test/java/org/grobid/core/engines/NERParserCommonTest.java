@@ -81,7 +81,7 @@ public class NERParserCommonTest {
     /**
      * Testing the resultExtraction old method
      **/
-    @Test
+    /*@Test
     public void testResultExtraction_oldMethod_simple() throws Exception {
         final String input = "Austria fought the enemies with Germany.";
 
@@ -111,13 +111,13 @@ public class NERParserCommonTest {
         assertThat(entities.get(1).getOffsetStart(), is(32));
         assertThat(entities.get(1).getOffsetEnd(), is(39));
         assertThat(input.substring(entities.get(1).getOffsetStart(), entities.get(1).getOffsetEnd()), is("Germany"));
-    }
+    }*/
 
 
     /**
      * Testing the resultExtraction old method
      **/
-    @Test
+    /*@Test
     public void testResultExtraction_OldMethod_simple2() throws Exception {
         final String input = "Austria Hungary fought the enemies with Germany.";
 
@@ -142,5 +142,5 @@ public class NERParserCommonTest {
         assertThat(entities.get(0).getOffsetStart(), is(0));
         assertThat(entities.get(0).getOffsetEnd(), is(15));
         assertThat(input.substring(entities.get(0).getOffsetStart(), entities.get(0).getOffsetEnd()), is("Austria Hungary"));
-    }
+    }*/
 }

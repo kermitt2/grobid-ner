@@ -1,11 +1,11 @@
-GROBID NER is a module of [Grobid](https://github.com/kermitt2/grobid) . 
+grobid-ner is a sub-module of [Grobid](https://github.com/kermitt2/grobid). 
 
-## Grobid Installation
+## Grobid installation
 
-GROBID is library for extracting bibliographical information from technical and scientific documents. 
+Grobid is library for extracting and structuring the content of technical and scientific documents. 
 The tool offers a convenient environment for creating efficient text mining tool based on CRF.
 
-Clone source code from github:
+Clone Grobid source code from github, version 0.6.0:
 
 ```bash
 > git clone https://github.com/kermitt2/grobid.git
@@ -27,13 +27,9 @@ The standard method for building the project is to use maven. In the main direct
 
 Grobid should then be installed and ready.
 
-It is also possible to build the project with ant.
+## grobid-ner settings
 
-```bash
-> ant package
-```
-
-## Grobid NER Settings
+Current grobid-ner version is 0.6.0, the version should be in sync with Grobid version. 
 
 Clone source code from github:
 
@@ -47,8 +43,7 @@ Or download directly the zip file:
 > https://github.com/kermitt2/grobid/zipball/master
 ```
 
-GROBID NER is actually a sub-project of GROBID. 
-Although GROBID NER might be merged with GROBID in the future, at this point the GROBID NER sub-module simply needs to be added manually to the main directory of GROBID: 
+grobid-ner is actually a sub-project of GROBID. The GROBID NER sub-module simply needs to be added manually to the main directory of Grobid: 
 
 ```bash
 > cp -r grobid-ner /path/to/grobid/
@@ -56,7 +51,7 @@ Although GROBID NER might be merged with GROBID in the future, at this point the
 > cp -r grobid-home/models/* /path/to/grobid/grobid-home/models/
 ```
 
-Then build the GROBID NER subproject:
+Then build the grobid-ner subproject:
 
 ```bash
 > cd /path/to/grobid/grobid-ner

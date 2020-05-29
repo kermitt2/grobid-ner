@@ -25,7 +25,7 @@ public class SenseTaggerTest extends EngineMockTest {
         return (file);
     }
 
-    @Test
+    //@Test
     public void testSenseTagger() throws Exception {
         File textFile =
                 new File(this.getResourceDir("./src/test/resources/").getAbsoluteFile() + "/test.en.txt");

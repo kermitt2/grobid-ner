@@ -12,10 +12,10 @@ pages:
 - About:
   - 'Licence': 'Licence.md'
 - User Manual:
-  - 'Build and Install': 'build-and-install.md'
-  - 'Using GROBID NER': 'using-grobid-ner.md'
-  - 'Annotation Guidelines': 'annotation-guidelines.md'
-  - 'Classes and Senses': 'class-and-senses.md'
+  - 'Build and install': 'build-and-install.md'
+  - 'Using grobid-ner': 'using-grobid-ner.md'
+  - 'Annotation guidelines': 'annotation-guidelines.md'
+  - 'Classes and senses': 'class-and-senses.md'
   - 'Largest entity mention': 'largest-entity-mention.md'
   - 'Second-layers entity mention': 'second-layers-entity-mention.md'
   - 'Annotation examples': 'annotation-examples.md'

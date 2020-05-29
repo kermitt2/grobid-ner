@@ -149,6 +149,9 @@ public class NERParserCommon {
      */
     public List<Entity> resultExtraction(GrobidModels model, String result, List<LayoutToken> tokenizations) {
 
+        // convert to usual Grobid label scheme to use TaggingTokenClusteror
+        result = result.replace("\tB-", "\tI-");
+
         List<Entity> entities = new ArrayList<Entity>();
 
         TaggingTokenClusteror clusteror = new TaggingTokenClusteror(model, result, tokenizations);
@@ -168,7 +171,7 @@ public class NERParserCommon {
             String clusterContent = LayoutTokensUtil.normalizeText(LayoutTokensUtil.toText(cluster.concatTokens()));
             currentEntity = new Entity();
             currentEntity.setRawName(clusterContent);
-            currentEntity.setTypeFromString(GenericTaggerUtils.getPlainLabel(clusterLabel.getLabel()));
+            currentEntity.setTypeFromString(GenericTaggerUtils.getPlainIOBLabel(clusterLabel.getLabel()));
             currentEntity.setBoundingBoxes(BoundingBoxCalculator.calculate(cluster.concatTokens()));
             currentEntity.setOffsets(calculateOffsets(cluster));
             currentEntity.setLayoutTokens(cluster.concatTokens());
@@ -198,7 +201,7 @@ public class NERParserCommon {
      * Use the new method using the clusteror List
      * resultExtraction(GrobidModels model, String result, List<LayoutToken> tokenizations)
      */
-    @Deprecated
+    /*@Deprecated
     public static List<Entity> resultExtraction(String text,
                                                 List<Pair<String, String>> labeled,
                                                 List<LayoutToken> tokenizations) {
@@ -296,7 +299,7 @@ public class NERParserCommon {
         }
 
         return entities;
-    }
+    }*/
 
 
     /**
