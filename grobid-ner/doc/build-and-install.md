@@ -5,35 +5,39 @@ grobid-ner is a sub-module of [Grobid](https://github.com/kermitt2/grobid).
 Grobid is library for extracting and structuring the content of technical and scientific documents. 
 The tool offers a convenient environment for creating efficient text mining tool based on CRF.
 
-Clone Grobid source code from github, version 0.6.0:
+Clone Grobid source code from github, release 0.6.0:
 
 ```bash
-> git clone https://github.com/kermitt2/grobid.git
+> git clone --branch 0.6.0 https://github.com/kermitt2/grobid
 ```
 
-Or download directly the zip file:
+Or download directly the zip file of this release:
 
 ```bash
-> https://github.com/kermitt2/grobid/zipball/master
+> wget https://github.com/kermitt2/grobid/archive/0.6.0.zip
+
+> unzip 0.6.0.zip
 ```
 
-<!--- ## [Build the project](https://github.com/kermitt2/grobid/wiki/Build-the-project) -->
-
-The standard method for building the project is to use maven. In the main directory:
+Then build Grobid, in the main directory:
 
 ```bash
-> mvn -Dmaven.test.skip=true clean install
+> cd grobid
+
+> ./gradlew clean install
 ```
 
-Grobid should then be installed and ready.
+For further explanations, see the [Install Grobid documentation page](https://grobid.readthedocs.io/en/latest/Install-Grobid/)
 
 ## grobid-ner settings
 
 Current grobid-ner version is 0.6.0, the version should be in sync with Grobid version. 
 
-Clone source code from github:
+Clone source code of grobid-ner from github:
 
 ```bash
+> cd grobid/
+
 > git clone https://github.com/kermitt2/grobid-ner.git
 ```
 
