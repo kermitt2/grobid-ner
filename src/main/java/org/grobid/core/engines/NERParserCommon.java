@@ -1,42 +1,30 @@
 package org.grobid.core.engines;
 
+import com.googlecode.clearnlp.engine.EngineGetter;
+import com.googlecode.clearnlp.segmentation.AbstractSegmenter;
+import com.googlecode.clearnlp.tokenization.AbstractTokenizer;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.io.FileUtils;
 import org.grobid.core.GrobidModels;
 import org.grobid.core.data.Entity;
 import org.grobid.core.data.Sense;
 import org.grobid.core.data.Sentence;
-import org.grobid.core.exceptions.GrobidResourceException;
+import org.grobid.core.engines.label.TaggingLabel;
 import org.grobid.core.engines.tagging.GenericTaggerUtils;
 import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.features.FeaturesVectorNER;
-import org.grobid.core.lexicon.Lexicon;
-import org.grobid.core.lexicon.LexiconPositionsIndexes;
-import org.grobid.core.lexicon.NERLexicon;
-import org.grobid.core.lang.Language;
-import org.grobid.core.tokenization.LabeledTokensContainer;
-import org.grobid.core.utilities.Pair;
-import org.grobid.core.utilities.LanguageUtilities;
-import org.grobid.core.utilities.TextUtilities;
-import org.grobid.core.utilities.OffsetPosition;
 import org.grobid.core.layout.LayoutToken;
+import org.grobid.core.lexicon.LexiconPositionsIndexes;
+import org.grobid.core.tokenization.LabeledTokensContainer;
 import org.grobid.core.tokenization.TaggingTokenCluster;
 import org.grobid.core.tokenization.TaggingTokenClusteror;
-import org.grobid.core.utilities.LayoutTokensUtil;
-import org.grobid.core.utilities.BoundingBoxCalculator;
-import org.grobid.core.engines.label.TaggingLabel;
+import org.grobid.core.utilities.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.googlecode.clearnlp.component.AbstractComponent;
-import com.googlecode.clearnlp.segmentation.AbstractSegmenter;
-import com.googlecode.clearnlp.engine.EngineGetter;
-import com.googlecode.clearnlp.reader.AbstractReader;
-import com.googlecode.clearnlp.tokenization.AbstractTokenizer;
 
 import static org.apache.commons.lang3.StringUtils.isEmpty;
 

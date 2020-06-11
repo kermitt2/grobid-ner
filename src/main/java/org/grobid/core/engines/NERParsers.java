@@ -26,6 +26,10 @@ public class NERParsers {
 
     private Map<String, NERParser> parsers = null;
 
+    public NERParsers(HashMap<String, NERParser> parsers) {
+        this.parsers = parsers;
+    }
+
     public NERParsers() {
         parsers = new HashMap<String, NERParser>();
         // supported languages

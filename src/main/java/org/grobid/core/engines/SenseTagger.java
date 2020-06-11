@@ -1,6 +1,8 @@
 package org.grobid.core.engines;
 
 import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.lang3.tuple.Pair;
+import org.grobid.core.GrobidModel;
 import org.grobid.core.GrobidModels;
 import org.grobid.core.data.Sense;
 import org.grobid.core.engines.tagging.GenericTaggerUtils;
@@ -10,14 +12,13 @@ import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.lexicon.LexiconPositionsIndexes;
 import org.grobid.core.lexicon.NERLexicon;
 import org.grobid.core.utilities.OffsetPosition;
-//import org.grobid.core.utilities.Pair;
 import org.grobid.core.utilities.TextUtilities;
-
-import org.apache.commons.lang3.tuple.Pair;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
+
+//import org.grobid.core.utilities.Pair;
 
 /**
  * Sense tagging model for named entities
@@ -28,9 +29,13 @@ public class SenseTagger extends AbstractParser {
 
 	protected NERLexicon nerLexicon = NERLexicon.getInstance();
 	protected Lexicon lexicon = Lexicon.getInstance();
-	
+
+	public SenseTagger(GrobidModel model) {
+	    super(model);
+    }
+
     public SenseTagger() {
-        super(GrobidModels.ENTITIES_NERSense);
+        this(GrobidModels.ENTITIES_NERSense);
     }
 
     /**
