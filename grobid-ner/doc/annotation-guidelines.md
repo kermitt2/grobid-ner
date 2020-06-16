@@ -1,4 +1,4 @@
-<h1>Annotation Guidelines for GROBID NER</h1>
+<h1>Annotation guidelines for grobid-ner</h1>
 
 # Principle
 

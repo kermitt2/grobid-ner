@@ -2,8 +2,8 @@
 
 ## Purposes
 
-GROBID NER is a Named-Entity Recogniser module for [GROBID](https://raw.github.com/kermitt2/grobid), a tool based on CRF.
-GROBID NER has been developed more specifically for the purpose of further supporting post disambiguation and resolution of entities against knowledge bases such as Wikipedia.
+grobid-ner is a Named-Entity Recogniser module for [GROBID](https://raw.github.com/kermitt2/grobid), a tool based on CRF.
+grobid-ner has been developed more specifically for the purpose of further supporting post disambiguation and resolution of entities against knowledge bases such as Wikipedia.
 
 The current models shipped with the source uses 27 Named Entity [classes](class-and-senses.md) and have been trained using the following dataset:
 
@@ -19,9 +19,9 @@ Annotated data will be always welcomed, if you like to contribute, you can conta
 
 ## User manual
 
-* [Install GROBID NER](build-and-install.md)
+* [Install grobid-ner](build-and-install.md)
 
-* [Using GROBID NER](using-grobid-ner.md)
+* [Using grobid-ner](using-grobid-ner.md)
 
 * [Annotation guidelines](annotation-guidelines.md)
 
