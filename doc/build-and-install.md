@@ -31,7 +31,7 @@ For further explanations, see the [Install Grobid documentation page](https://gr
 
 ## grobid-ner settings
 
-Current grobid-ner version is 0.6.0, the version should be in sync with Grobid version. 
+Current grobid-ner version is `0.6.0`, the version should be in sync with Grobid version. 
 
 Clone source code of grobid-ner from github:
 
