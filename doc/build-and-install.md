@@ -47,18 +47,14 @@ Or download directly the zip file:
 > https://github.com/kermitt2/grobid/zipball/master
 ```
 
-grobid-ner is actually a sub-project of GROBID. The GROBID NER sub-module simply needs to be added manually to the main directory of Grobid: 
+Copy the provided pre-trained model in the standard grobid-home path:
 
 ```bash
-> cp -r grobid-ner /path/to/grobid/
-
-> cp -r grobid-home/models/* /path/to/grobid/grobid-home/models/
+> ./gradlew copyModels 
 ```
 
 Then build the grobid-ner subproject:
 
 ```bash
-> cd /path/to/grobid/grobid-ner
-
-> mvn clean install
+> ./gradlew clean install
 ```
