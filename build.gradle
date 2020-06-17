@@ -60,7 +60,7 @@ configurations {
 /** Model management **/
 task copyModels(type: Copy) {
     from "${rootDir}/resources/models"
-    include "**/*.wapiti"
+    include "*"
     into "${rootDir}/../grobid-home/models/"
 }
 
