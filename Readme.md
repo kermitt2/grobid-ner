@@ -5,7 +5,7 @@
 
 ## Purpose
 
-__grobid-ner__ is a Named-Entity Recogniser based on the GROBID library ([grobid](https://github.com/kermitt2/grobid)), a text mining tool exploiting CRF. The installation of GROBID is necessary.  
+__grobid-ner__ is a Named-Entity Recogniser based on [GROBID](https://github.com/kermitt2/grobid), a text mining tool. The installation of GROBID is necessary.  
 
 For a description of the NER, installation, usage and other technical features, see the [documentation](http://grobid-ner.readthedocs.io/en/latest/). 
 
