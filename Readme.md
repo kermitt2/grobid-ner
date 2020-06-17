@@ -2,10 +2,11 @@
 
 [![Documentation Status](https://readthedocs.org/projects/grobid-ner/badge/?version=latest)](http://grobid-ner.readthedocs.io/en/latest/)
 [![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
+[![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/kermitt2/grobid-ner/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/kermitt2/grobid-ner)
 
 ## Purpose
 
-__grobid-ner__ is a Named-Entity Recogniser based on [GROBID](https://github.com/kermitt2/grobid), a text mining tool. The installation of GROBID is necessary.  
+__grobid-ner__ is a Named-Entity Recogniser based on [GROBID](https://github.com/kermitt2/grobid), a text mining tool. The installation of GROBID is necessary. 
 
 For a description of the NER, installation, usage and other technical features, see the [documentation](http://grobid-ner.readthedocs.io/en/latest/). 
 
@@ -25,7 +26,6 @@ Average over 10 folds:
 
 label                accuracy     precision    recall       f1           support
 
-0                    9.99         0            0            0            1      
 ANIMAL               79.92        45           35           38.33        12     
 ARTIFACT             89.73        45           31.67        34.67        25     
 AWARD                79.86        33.33        25           25           11     
@@ -215,7 +215,7 @@ Runtime __single thread__: 88,451 tokens labeled in 1228 ms, 72,028 tokens per s
 
 ### CoNLL-2003 (English)
 
-We use the official CoNLL eval script bellow: 
+We use report results with the official CoNLL eval script:
 
 ```
 processed 52236 tokens with 5628 phrases; found: 5612 phrases; correct: 4805.
