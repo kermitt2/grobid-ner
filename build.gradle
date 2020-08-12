@@ -18,8 +18,8 @@ repositories {
 
 
 dependencies {
-    compile 'org.grobid:grobid-core:0.6.0'
-    compile 'org.grobid:grobid-trainer:0.6.0'
+    compile 'org.grobid:grobid-core:0.6.1'
+    compile 'org.grobid:grobid-trainer:0.6.1'
     compile 'commons-pool:commons-pool:1.6'
     compile 'commons-io:commons-io:2.5'
     compile 'org.apache.commons:commons-lang3:3.6'
@@ -42,7 +42,7 @@ dependencies {
 }
 
 group = 'org.grobid'
-version = '0.6.0'
+version = '0.6.1'
 description = 'grobid-ner'
 sourceCompatibility = '1.8'
 

@@ -9,17 +9,17 @@ When using maven, you need to include in your pom file the path to the grobid-co
 	<dependency>
 	    <groupId>org.grobid.core</groupId>
 	    <artifactId>grobid</artifactId>
-	    <version>0.6.0</version>
+	    <version>0.6.1</version>
 	    <scope>system</scope>
-	    <systemPath>${project.basedir}/lib/grobid-core-0.6.0.jar</systemPath>
+	    <systemPath>${project.basedir}/lib/grobid-core-0.6.1.jar</systemPath>
 	</dependency>
 
 	<dependency>
 	    <groupId>org.grobid.ner</groupId>
 	    <artifactId>grobid-ner</artifactId>
-	    <version>0.6.0</version>
+	    <version>0.6.1</version>
 	    <scope>system</scope>
-	    <systemPath>${project.basedir}/lib/grobid-ner-0.6.0.jar</systemPath>
+	    <systemPath>${project.basedir}/lib/grobid-ner-0.6.1.jar</systemPath>
 	</dependency>
 	
 
