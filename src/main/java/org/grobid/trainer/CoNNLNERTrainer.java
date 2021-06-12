@@ -7,9 +7,13 @@ import org.grobid.core.exceptions.GrobidResourceException;
 import org.grobid.core.lexicon.NERLexicon;
 import org.grobid.core.main.GrobidHomeFinder;
 import org.grobid.core.utilities.GrobidProperties;
+import org.grobid.core.utilities.GrobidNerConfiguration;
 import org.grobid.core.utilities.OffsetPosition;
 import org.grobid.core.utilities.TextUtilities;
 import org.grobid.core.layout.LayoutToken;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 
 import java.io.*;
 import java.util.*;
@@ -41,25 +45,17 @@ public class CoNNLNERTrainer extends NERTrainer {
     }
 
     private void loadAdditionalProperties() {
-        Properties prop = new Properties();
-        InputStream input = null;
-        try {
-            input = new FileInputStream("src/main/resources/grobid-ner.properties");
+        GrobidNerConfiguration grobidNerConfiguration;
+        ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
+        try{
+            grobidNerConfiguration = mapper.readValue(new File("resources/config/grobid-ner.yaml"), GrobidNerConfiguration.class);
 
-            // load the properties file
-            prop.load(input);
-
-            // get the property value
-            conllPath = prop.getProperty("grobid.ner.reuters.conll_path");
-
-            // get the property value
-            wapitiExecPath = prop.getProperty("grobid.ner.wapiti.exec");
+            conllPath = grobidNerConfiguration.getReutersConllPath();
+            wapitiExecPath = grobidNerConfiguration.getWapitiExecPath();
         } catch (IOException ex) {
             throw new GrobidResourceException(
                     "An exception occured when accessing/reading the grobid-ner property file.", ex);
-        } finally {
-            IOUtils.closeQuietly(input);
-        }
+        } 
     }
 
     /**
@@ -258,7 +254,7 @@ public class CoNNLNERTrainer extends NERTrainer {
             writer.close();
 
             // we can train now a model
-            GenericTrainer trainer = TrainerFactory.getTrainer();
+            GenericTrainer trainer = TrainerFactory.getTrainer(model);
             trainer.setEpsilon(this.epsilon);
             trainer.setWindow(this.window);
             trainer.setNbMaxIterations(this.nbMaxIterations);
@@ -267,7 +263,7 @@ public class CoNNLNERTrainer extends NERTrainer {
             System.out.println("Model file under: " + tempModelPath.getPath());
             trainer.train(getTemplatePath(),
                     trainingOutputFile,
-                    tempModelPath, GrobidProperties.getNBThreads(), GrobidModels.ENTITIES_NER);
+                    tempModelPath, GrobidProperties.getWapitiNbThreads(), GrobidModels.ENTITIES_NER);
 
         } catch (Exception e) {
             throw new GrobidException("An exception occured while running Grobid CoNLL-2003 NER training.", e);

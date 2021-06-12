@@ -12,10 +12,14 @@ import org.grobid.core.lexicon.NERLexicon;
 import org.grobid.core.main.GrobidHomeFinder;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.OffsetPosition;
+import org.grobid.core.utilities.GrobidNerConfiguration;
 import org.grobid.trainer.stax.INRIALeMondeCorpusStaxHandler;
 import org.grobid.trainer.stax.StaxUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -45,29 +49,14 @@ public class NERFrenchTrainer extends AbstractTrainer {
         this.window = 20;
         this.nbMaxIterations = 1000;
 
-        // read additional properties for this sub-project to get the paths to the resources
-        Properties prop = new Properties();
-        InputStream input = null;
+        GrobidNerConfiguration grobidNerConfiguration = null;
         try {
-            input = new FileInputStream("src/main/resources/grobid-ner.properties");
-
-            // load the properties file
-            prop.load(input);
-
-            // get the property value
-            leMondeCorpusPath = prop.getProperty("grobid.ner.leMondeCorpus.path");
+            ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
+            grobidNerConfiguration = mapper.readValue(new File("resources/config/grobid-ner.yaml"), GrobidNerConfiguration.class);
+            leMondeCorpusPath = grobidNerConfiguration.getLeMondeCorpusPath();
         } catch (IOException ex) {
-            throw new GrobidResourceException(
-                    "An exception occured when accessing/reading the grobid-ner property file.", ex);
-        } finally {
-            if (input != null) {
-                try {
-                    input.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
+            throw new GrobidResourceException("An exception occured when accessing/reading the grobid-ner property file.", ex);
+        } 
     }
 
     @Override

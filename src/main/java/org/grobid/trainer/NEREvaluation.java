@@ -6,6 +6,7 @@ import org.grobid.core.engines.NEREnParser;
 import org.grobid.core.engines.NERParsers;
 import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.exceptions.GrobidResourceException;
+import org.grobid.core.utilities.GrobidNerConfiguration;
 import org.grobid.core.factory.GrobidFactory;
 import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.lexicon.Lexicon;
@@ -17,6 +18,9 @@ import org.grobid.core.utilities.TextUtilities;
 import org.grobid.trainer.stax.INRIALeMondeCorpusStaxHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 
 import java.io.*;
 import java.util.*;
@@ -43,22 +47,17 @@ public class NEREvaluation {
     }
 
     private void loadAdditionalProperties() {
-        Properties prop = new Properties();
-        InputStream input = null;
+       GrobidNerConfiguration grobidNerConfiguration = null;
         try {
-            input = new FileInputStream("src/main/resources/grobid-ner.properties");
-
-            // load the properties file
-            prop.load(input);
+            ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
+            grobidNerConfiguration = mapper.readValue(new File("resources/config/grobid-ner.yaml"), GrobidNerConfiguration.class);
 
             // get the property value
-            conllPath = prop.getProperty("grobid.ner.reuters.conll_path");
+            conllPath = grobidNerConfiguration.getReutersConllPath();
         } catch (IOException ex) {
             throw new GrobidResourceException(
                     "An exception occured when accessing/reading the grobid-ner property file.", ex);
-        } finally {
-            IOUtils.closeQuietly(input);
-        }
+        } 
     }
 
 

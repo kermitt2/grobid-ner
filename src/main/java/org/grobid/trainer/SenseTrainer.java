@@ -10,6 +10,7 @@ import org.grobid.core.main.GrobidHomeFinder;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.OffsetPosition;
 import org.grobid.core.utilities.TextUtilities;
+import org.grobid.core.utilities.GrobidNerConfiguration;
 import org.grobid.core.layout.LayoutToken;
 import org.grobid.trainer.evaluation.EvaluationUtilities;
 import org.grobid.trainer.sax.ReutersSaxHandler;
@@ -21,6 +22,9 @@ import java.io.*;
 import java.util.*;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 
 /**
  * Train a model for estimating the most likely synset for a recognized named entity. This sense
@@ -48,33 +52,21 @@ public class SenseTrainer extends AbstractTrainer {
         super(GrobidModels.ENTITIES_NERSense);
         descriptions = new TreeMap<String, String>();
 
-        // we read first the module specific property file to get the paths to the resources
-        Properties prop = new Properties();
-        InputStream input = null;
-
+                GrobidNerConfiguration grobidNerConfiguration = null;
         try {
-            input = new FileInputStream("src/main/resources/grobid-ner.properties");
-
-            // load the properties file
-            prop.load(input);
+            ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
+            grobidNerConfiguration = mapper.readValue(new File("resources/config/grobid-ner.yaml"), GrobidNerConfiguration.class);
 
             // get the property value
-            reutersPath = prop.getProperty("grobid.ner.reuters.paths");
-            conllPath = prop.getProperty("grobid.ner.reuters.conll_path");
-            idiliaPath = prop.getProperty("grobid.ner.reuters.idilia_path");
-            nerCorpusPath = prop.getProperty("grobid.ner.extra_corpus");
+            reutersPath = grobidNerConfiguration.getReutersPaths();
+            conllPath = grobidNerConfiguration.getReutersConllPath();
+            idiliaPath = grobidNerConfiguration.getReutersIdiliaPath();
+            nerCorpusPath = grobidNerConfiguration.getExtraCorpus();
+
         } catch (IOException ex) {
             throw new GrobidResourceException(
                     "An exception occured when accessing/reading the grobid-ner property file.", ex);
-        } finally {
-            if (input != null) {
-                try {
-                    input.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
+        } 
     }
 
     @Override

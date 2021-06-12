@@ -1,0 +1,38 @@
+grobidHome: "../grobid-home/"
+
+reutersPaths: "/mnt/data/reuters/cd"
+reutersConllPath: "/mnt/data/resources/ner/ner"
+reutersConllPath: "/Users/lfoppiano/development/inria/grobid-resources/ner/conll-ner"
+reutersIdiliaPath: "/mnt/data/idilia/reuters"
+extraCorpus: "/mnt/data/resources/ner/grobid"
+leMondeCorpusPath: "/mnt/data/resources/leMondeCorpus"
+wapitiExecPath: "/home/lopez/Wapiti/build/wapiti_runner"
+
+models:
+  # we configure here how each sequence labeling model should be implemented
+  # for feature-engineered CRF, use "wapiti" and possible training parameters are window, epsilon and nbMaxIterations
+  # for Deep Learning, use "delft" and select the target DL architecture (see DeLFT library), the training 
+  # parameters then depends on this selected DL architecture 
+  
+  - name: "ner"
+    engine: "wapiti"
+    wapiti:
+      # wapiti training parameters, they will be used at training time only
+      epsilon: 0.000001
+      window: 50
+      nbMaxIterations: 1000
+
+  - name: "nerfr"
+    engine: "wapiti"
+    wapiti:
+      epsilon: 0.000001
+      window: 20
+      nbMaxIterations: 1000
+
+  - name: "nersense"
+    engine: "wapiti"
+    wapiti:
+      # wapiti training parameters, they will be used at training time only
+      epsilon: 0.000001
+      window: 20
+      nbMaxIterations: 1000

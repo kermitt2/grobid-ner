@@ -13,7 +13,8 @@ import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.main.LibraryLoader;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.OffsetPosition;
-//import org.grobid.core.utilities.Pair;
+import org.grobid.core.utilities.GrobidNerConfiguration;
+import org.grobid.core.utilities.GrobidConfig.ModelParameters;
 import org.grobid.core.utilities.TextUtilities;
 import org.grobid.trainer.sax.ReutersSaxHandler;
 import org.grobid.trainer.sax.SemDocSaxHandler;
@@ -28,6 +29,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 import java.util.StringTokenizer;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 
 import static org.apache.commons.lang3.StringUtils.isBlank;
 import static org.apache.commons.lang3.StringUtils.trim;
@@ -50,35 +54,21 @@ public class AssembleNERCorpus {
     private Lexicon lexicon = null;
 
     public AssembleNERCorpus() {
-        // we read the module specific property file to get the paths to the resources
-        Properties prop = new Properties();
-        InputStream input = null;
-
+        GrobidNerConfiguration grobidNerConfiguration = null;
         try {
-            input = this.getClass().getResourceAsStream("/grobid-ner.properties");
-
-            // load the properties file
-            prop.load(input);
+            ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
+            grobidNerConfiguration = mapper.readValue(new File("resources/config/grobid-ner.yaml"), GrobidNerConfiguration.class);
 
             // get the property value
-            reutersPath = prop.getProperty("grobid.ner.reuters.paths");
-            conllPath = prop.getProperty("grobid.ner.reuters.conll_path");
-            idiliaPath = prop.getProperty("grobid.ner.reuters.idilia_path");
-            nerCorpusPath = prop.getProperty("grobid.ner.extra_corpus");
+            reutersPath = grobidNerConfiguration.getReutersPaths();
+            conllPath = grobidNerConfiguration.getReutersConllPath();
+            idiliaPath = grobidNerConfiguration.getReutersIdiliaPath();
+            nerCorpusPath = grobidNerConfiguration.getExtraCorpus();
 
             lexicon = Lexicon.getInstance();
         } catch (IOException ex) {
             ex.printStackTrace();
-        } finally {
-            if (input != null) {
-                try {
-                    input.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-
+        } 
     }
 
     /**
@@ -93,8 +83,15 @@ public class AssembleNERCorpus {
         SenseTagger parserSense = null;
         String pGrobidHome = "../grobid-home";
         String pGrobidProperties = "../grobid-home/config/grobid.properties";
+        GrobidNerConfiguration grobidNerConfiguration = null;
         try {
+            ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
+            grobidNerConfiguration = mapper.readValue(new File("resources/config/grobid-ner.yaml"), GrobidNerConfiguration.class);
+
             GrobidProperties.getInstance();
+            for (ModelParameters theModel : grobidNerConfiguration.getModels())
+                GrobidProperties.getInstance().addModel(theModel);
+
             LibraryLoader.load();
             parserNER = new NEREnParser();
             parserSense = new SenseTagger();

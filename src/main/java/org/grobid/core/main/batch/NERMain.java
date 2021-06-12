@@ -4,6 +4,8 @@ import org.grobid.core.engines.NERParsers;
 import org.grobid.core.main.GrobidHomeFinder;
 import org.grobid.core.main.LibraryLoader;
 import org.grobid.core.utilities.GrobidProperties;
+import org.grobid.core.utilities.GrobidNerConfiguration;
+import org.grobid.core.utilities.GrobidConfig.ModelParameters;
 import org.grobid.trainer.AssembleNERCorpus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,6 +13,9 @@ import org.slf4j.LoggerFactory;
 import java.io.File;
 import java.util.Arrays;
 import java.util.List;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 
 import static org.apache.commons.lang3.StringUtils.isNotEmpty;
 
@@ -43,31 +48,37 @@ public class NERMain {
     }
 
     /**
-     * Init process with the provided grobid-home
+     * Init process with the provided grobid-home or  default value of the grobid home
      *
      * @param grobidHome
      */
     protected static void initProcess(String grobidHome) {
         try {
-            final GrobidHomeFinder grobidHomeFinder = new GrobidHomeFinder(Arrays.asList(grobidHome));
-            grobidHomeFinder.findGrobidHomeOrFail();
-            GrobidProperties.getInstance(grobidHomeFinder);
-            LibraryLoader.load();
-        } catch (final Exception exp) {
-            System.err.println("Grobid initialisation failed: " + exp);
-        }
-    }
+            GrobidNerConfiguration grobidNerConfiguration = null;
+            try {
+                ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
+                grobidNerConfiguration = mapper.readValue(new File("resources/config/grobid-ner.yaml"), GrobidNerConfiguration.class);
+            } catch(Exception e) {
+                LOGGER.error("The config file does not appear valid, see resources/config/grobid-astro.yaml", e);
+            }
 
-    /**
-     * Init process with the default value of the grobid home
-     */
-    protected static void initProcess() {
-        try {
+            if (grobidHome != null) {
+                final GrobidHomeFinder grobidHomeFinder = new GrobidHomeFinder(Arrays.asList(grobidHome));
+                grobidHomeFinder.findGrobidHomeOrFail();
+                GrobidProperties.getInstance(grobidHomeFinder);
+            } else {
+                final GrobidHomeFinder grobidHomeFinder = new GrobidHomeFinder(Arrays.asList(grobidNerConfiguration.getGrobidHome()));
+                grobidHomeFinder.findGrobidHomeOrFail();
+                GrobidProperties.getInstance(grobidHomeFinder);
+            }
+
+            for (ModelParameters theModel : grobidNerConfiguration.getModels())
+                GrobidProperties.getInstance().addModel(theModel);
+
             LibraryLoader.load();
         } catch (final Exception exp) {
             System.err.println("Grobid initialisation failed: " + exp);
         }
-        GrobidProperties.getInstance();
     }
 
     /**
@@ -174,7 +185,7 @@ public class NERMain {
                 initProcess(gbdArgs.getPath2grobidHome());
             } else {
                 LOGGER.warn("Grobid home not provided, using default. ");
-                initProcess();
+                initProcess(null);
             }
             int nb = 0;
 
