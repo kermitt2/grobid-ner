@@ -2,8 +2,17 @@ package org.grobid.core.utilities;
 
 import org.grobid.core.utilities.GrobidConfig.ModelParameters;
 import java.util.*;
+import java.io.File;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class GrobidNerConfiguration {
+
+    private static Logger LOGGER = LoggerFactory.getLogger(GrobidNerConfiguration.class);
 
     public String grobidHome;
     public String reutersPaths;
@@ -12,6 +21,25 @@ public class GrobidNerConfiguration {
     public String extraCorpus;
     public String leMondeCorpusPath;
     public String wapitiExecPath;
+
+    public GrobidNerConfiguration getInstance() {
+        return getInstance(null);
+    }
+
+    public static GrobidNerConfiguration getInstance(String projectRootPath) {
+
+        GrobidNerConfiguration grobidNerConfiguration = null;
+        try {
+            ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
+            if (projectRootPath == null)
+                grobidNerConfiguration = mapper.readValue(new File("resources/config/grobid-ner.yaml"), GrobidNerConfiguration.class);
+            else
+                grobidNerConfiguration = mapper.readValue(new File(projectRootPath + "/resources/config/grobid-ner.yaml"), GrobidNerConfiguration.class);
+        } catch(Exception e) {
+            LOGGER.error("The config file does not appear valid, see resources/config/grobid-astro.yaml", e);
+        }
+        return grobidNerConfiguration;
+    }
 
     // sequence labeling models
     public List<ModelParameters> models;
