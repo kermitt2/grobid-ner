@@ -72,9 +72,8 @@ configurations {
 
 /** Model management **/
 task copyModels(type: Copy) {
-    from "${rootDir}/resources/models"
-    include "*"
-    into "${rootDir}/../grobid-home/models/"
+    from "resources/models"
+    into "../grobid-home/models"
 }
 
 /** Training configuration **/
