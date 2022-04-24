@@ -52,7 +52,7 @@ public class SenseTrainer extends AbstractTrainer {
         super(GrobidModels.ENTITIES_NERSense);
         descriptions = new TreeMap<String, String>();
 
-                GrobidNerConfiguration grobidNerConfiguration = null;
+        GrobidNerConfiguration grobidNerConfiguration = null;
         try {
             ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
             grobidNerConfiguration = mapper.readValue(new File("resources/config/grobid-ner.yaml"), GrobidNerConfiguration.class);
