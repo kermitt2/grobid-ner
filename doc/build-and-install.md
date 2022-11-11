@@ -5,10 +5,10 @@ grobid-ner is a sub-module of [Grobid](https://github.com/kermitt2/grobid).
 Grobid is library for extracting and structuring the content of technical and scientific documents. 
 The tool offers a convenient environment for creating efficient text mining tool based on CRF.
 
-Clone Grobid source code from github, latest stable version (currently 0.7.1):
+Clone Grobid source code from github, latest stable version (currently 0.7.2):
 
 ```bash
-> git clone https://github.com/kermitt2/grobid.git --branch 0.7.1
+> git clone https://github.com/kermitt2/grobid.git --branch 0.7.2
 ```
 
 Then build Grobid, in the main directory:
