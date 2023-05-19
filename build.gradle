@@ -7,9 +7,7 @@ buildscript {
         }
     }
     dependencies {
-        //classpath 'gradle.plugin.org.kt3k.gradle.plugin:coveralls-gradle-plugin:2.12.0'
         classpath "gradle.plugin.com.github.jengelman.gradle.plugins:shadow:7.0.0"
-        //classpath 'com.adarshr:gradle-test-logger-plugin:2.0.0'
     }
 }
 
@@ -23,11 +21,6 @@ repositories {
     mavenCentral()
 }
 
-/*plugins {
-    id 'com.github.johnrengelman.shadow' version '7.0.0'
-    id "de.undercouch.download" version "4.1.1"
-}*/
-
 apply plugin: 'java-library'
 apply plugin: 'base'
 apply plugin: 'maven-publish'
@@ -38,21 +31,6 @@ wrapper {
 
 import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 import org.apache.tools.ant.taskdefs.condition.Os
-
-/*plugins {
-    id 'java'
-    id 'maven'
-    id 'com.github.johnrengelman.shadow' version '5.2.0'
-}
-
-repositories {
-    mavenLocal()
-    mavenCentral()
-    maven { url "https://grobid.s3.eu-west-1.amazonaws.com/repo/" }
-    flatDir {
-        dirs 'localLibs'
-    }
-}*/
 
 ext {
     // treating them separately, these jars will be flattened into grobid-core.jar on installing,
@@ -167,7 +145,12 @@ task trainEvalNer(dependsOn: 'classes', type: JavaExec, group: 'training') {
     main = 'org.grobid.trainer.NERTrainerRunner'
     classpath = sourceSets.main.runtimeClasspath
     args 2, 'ner', '-gH', getArg('gH', '../../grobid-home'), '-s', getArg('s', '0.8')
-    jvmArgs '-Xmx3072m'
+    if (JavaVersion.current().compareTo(JavaVersion.VERSION_1_8) > 0) {
+        jvmArgs '-Xmx3072m', "--add-opens", "java.base/java.lang=ALL-UNNAMED"
+    } else {
+        jvmArgs '-Xmx3072m'
+    }
+    systemProperty "java.library.path","${System.getProperty('java.library.path')}:" + libraries
 }
 
 // Evaluation NER
@@ -176,7 +159,12 @@ task evalNer(dependsOn: 'classes', type: JavaExec, group: 'training') {
     main = 'org.grobid.trainer.NERTrainerRunner'
     classpath = sourceSets.main.runtimeClasspath
     args 1, 'ner', '-gH', getArg('gH', '../../grobid-home')
-    jvmArgs '-Xmx3072m'
+    if (JavaVersion.current().compareTo(JavaVersion.VERSION_1_8) > 0) {
+        jvmArgs '-Xmx3072m', "--add-opens", "java.base/java.lang=ALL-UNNAMED"
+    } else {
+        jvmArgs '-Xmx3072m'
+    }
+    systemProperty "java.library.path","${System.getProperty('java.library.path')}:" + libraries
 }
 
 // Train and evaluation NER FR
@@ -185,7 +173,12 @@ task trainEvalNerFr(dependsOn: 'classes', type: JavaExec, group: 'training') {
     main = 'org.grobid.trainer.NERTrainerRunner'
     classpath = sourceSets.main.runtimeClasspath
     args 2, 'nerfr', '-gH', getArg('gH', '../../grobid-home'), '-s', getArg('s', '0.8')
-    jvmArgs '-Xmx3072m'
+    if (JavaVersion.current().compareTo(JavaVersion.VERSION_1_8) > 0) {
+        jvmArgs '-Xmx3072m', "--add-opens", "java.base/java.lang=ALL-UNNAMED"
+    } else {
+        jvmArgs '-Xmx3072m'
+    }
+    systemProperty "java.library.path","${System.getProperty('java.library.path')}:" + libraries
 }
 
 // Evaluation NER FR
@@ -194,7 +187,12 @@ task evalNerFr(dependsOn: 'classes', type: JavaExec, group: 'training') {
     main = 'org.grobid.trainer.NERTrainerRunner'
     classpath = sourceSets.main.runtimeClasspath
     args 1, 'nerfr', '-gH', getArg('gH', '../../grobid-home')
-    jvmArgs '-Xmx3072m'
+    if (JavaVersion.current().compareTo(JavaVersion.VERSION_1_8) > 0) {
+        jvmArgs '-Xmx3072m', "--add-opens", "java.base/java.lang=ALL-UNNAMED"
+    } else {
+        jvmArgs '-Xmx3072m'
+    }
+    systemProperty "java.library.path","${System.getProperty('java.library.path')}:" + libraries
 }
 
 task install(dependsOn: publishToMavenLocal)
@@ -250,29 +248,7 @@ artifacts {
     archives mainJar
 }
 
-/*shadowJar {
-    classifier = 'onejar'
-    zip64 true
-    manifest {
-        attributes 'Main-Class': 'org.grobid.core.main.batch.NERMain'
-    }
-}
-
-jar {
-    dependsOn mainJar
-    enabled false
-}*/
-
-/*artifacts {
-    archives shadowJar
-    archives mainJar
-}*/
-
 /*tasks.withType(JavaCompile) {
     options.compilerArgs << "-Xlint:deprecation"
     options.compilerArgs << "-Xlint:unchecked"
 }*/
-
-
-
-
