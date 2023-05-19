@@ -1,4 +1,45 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven {
+            url 'https://plugins.gradle.org/m2/'
+        }
+    }
+    dependencies {
+        //classpath 'gradle.plugin.org.kt3k.gradle.plugin:coveralls-gradle-plugin:2.12.0'
+        classpath "gradle.plugin.com.github.jengelman.gradle.plugins:shadow:7.0.0"
+        //classpath 'com.adarshr:gradle-test-logger-plugin:2.0.0'
+    }
+}
+
 plugins {
+    id 'com.github.johnrengelman.shadow' version '7.0.0'
+    id "de.undercouch.download" version "4.1.1"
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+/*plugins {
+    id 'com.github.johnrengelman.shadow' version '7.0.0'
+    id "de.undercouch.download" version "4.1.1"
+}*/
+
+apply plugin: 'java-library'
+apply plugin: 'base'
+apply plugin: 'maven-publish'
+
+wrapper {
+    gradleVersion "7.2"
+}
+
+import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
+import org.apache.tools.ant.taskdefs.condition.Os
+
+/*plugins {
     id 'java'
     id 'maven'
     id 'com.github.johnrengelman.shadow' version '5.2.0'
@@ -7,15 +48,16 @@ plugins {
 repositories {
     mavenLocal()
     mavenCentral()
-//    maven { url "https://jitpack.io" }
     maven { url "https://grobid.s3.eu-west-1.amazonaws.com/repo/" }
-//    jcenter()
-//    maven { url "https://dl.bintray.com/rookies/maven" }
-//    maven { url "http://oss.jfrog.org/artifactory/libs-snapshot" }
-//    maven { url "http://oss.jfrog.org/artifactory/libs-release" }
     flatDir {
         dirs 'localLibs'
     }
+}*/
+
+ext {
+    // treating them separately, these jars will be flattened into grobid-core.jar on installing,
+    // to avoid missing dependencies from the projects that include grobid-core (see 'jar' taskin grobid-core)
+    localLibs = []
 }
 
 dependencies {
@@ -28,8 +70,8 @@ dependencies {
         }
     }
 
-    implementation 'org.grobid:grobid-core:0.7.2'
-    implementation 'org.grobid:grobid-trainer:0.7.2'
+    implementation 'org.grobid:grobid-core:0.7.3'
+    implementation 'org.grobid:grobid-trainer:0.7.3'
     implementation 'commons-pool:commons-pool:1.6'
     implementation 'commons-io:commons-io:2.5'
     implementation 'org.apache.commons:commons-lang3:3.6'
@@ -57,7 +99,7 @@ dependencies {
 }
 
 group = 'org.grobid'
-version = '0.7.2'
+version = '0.7.3'
 description = 'grobid-ner'
 sourceCompatibility = '1.8'
 
@@ -90,13 +132,30 @@ def trainerTasks = [
         "train_conll"             : "org.grobid.trainer.CoNNLNERTrainer"
 ]
 
+def libraries = ""
+if (Os.isFamily(Os.FAMILY_MAC)) {
+    if (Os.OS_ARCH.equals("aarch64")) {
+        libraries = "${file("../grobid-home/lib/mac_arm-64").absolutePath}"    
+    } else {
+        libraries = "${file("../grobid-home/lib/mac-64").absolutePath}"
+    }
+} else if (Os.isFamily(Os.FAMILY_UNIX)) {
+    libraries = "${file("../grobid-home/lib/lin-64/jep").absolutePath}:" +
+        "${file("../grobid-home/lib/lin-64").absolutePath}:"
+} else  {
+    throw new RuntimeException("Unsupported platform!")
+}  
+
 trainerTasks.each { taskName, mainClassName ->
     tasks.create(name: taskName, type: JavaExec, group: 'training') {
         main = mainClassName
         classpath = sourceSets.main.runtimeClasspath
+        if (JavaVersion.current().compareTo(JavaVersion.VERSION_1_8) > 0)
+            jvmArgs '-Xmx3072m', "--add-opens", "java.base/java.lang=ALL-UNNAMED"
+        systemProperty "java.library.path","${System.getProperty('java.library.path')}:" + libraries
     }
 }
-
+ 
 // return the default value if the property has not been specified in command line
 ext.getArg = { propName, defaultVal ->
     return project.hasProperty(propName) ? project.getProperty(propName) : defaultVal;
@@ -138,19 +197,60 @@ task evalNerFr(dependsOn: 'classes', type: JavaExec, group: 'training') {
     jvmArgs '-Xmx3072m'
 }
 
-import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
+task install(dependsOn: publishToMavenLocal)
 
-task mainJar(type: ShadowJar, group: 'test') {
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+    repositories {
+        mavenLocal()
+    }
+}
+
+task mainJar(type: ShadowJar) {
     zip64 true
     from sourceSets.main.output
+
     from {
-        project.configurations.compile.collect {
+        project.configurations.runtimeClasspath.collect {
 //            it.isDirectory() ? [] : localLibs.contains(it.getName()) ? zipTree(it) : []
         }
     }
 }
 
 shadowJar {
+    archiveClassifier = 'onejar'
+    mergeServiceFiles()
+    zip64 true
+    manifest {
+        attributes 'Main-Class': 'org.grobid.core.main.batch.NERMain'
+    }
+    //from sourceSets.main.output
+
+    from {
+        project.configurations.runtimeClasspath.collect {
+            it.isDirectory() ? [] : localLibs.contains(it.getName()) ? zipTree(it) : []
+        }
+    }
+
+    configurations = [project.configurations.runtimeClasspath]
+}
+
+jar {
+    dependsOn mainJar
+    enabled true
+}
+
+artifacts {
+    archives jar
+    archives shadowJar
+    archives mainJar
+}
+
+/*shadowJar {
     classifier = 'onejar'
     zip64 true
     manifest {
@@ -161,12 +261,12 @@ shadowJar {
 jar {
     dependsOn mainJar
     enabled false
-}
+}*/
 
-artifacts {
+/*artifacts {
     archives shadowJar
     archives mainJar
-}
+}*/
 
 /*tasks.withType(JavaCompile) {
     options.compilerArgs << "-Xlint:deprecation"
