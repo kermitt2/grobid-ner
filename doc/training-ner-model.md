@@ -28,7 +28,8 @@ Since the training data are not freely available, it is necessarily to assembly 
 
 
 ### Train the NER model
-The assumption is that all the required datasets have been downloaded and the property file `grobid-ner.properties` updated accordingly.
+
+The assumption is that all the required datasets have been downloaded and the property file `grobid-ner.yaml` updated accordingly.
 The required files are:
 
 - wikipedia.ner26.train shipped with the project
@@ -39,7 +40,7 @@ The required files are:
 To start the training:
 
 ```bash
-> mvn generate-resources -Ptrain_ner
+> ./gradlew trainNer 
 ```
 
 Due to the semi-supervised training, the process is pretty heavy and it will require several days, depending on the hardware available.  
@@ -47,7 +48,7 @@ Due to the semi-supervised training, the process is pretty heavy and it will req
 The French NER can be trained as follow:
 
 ```bash
-> mvn generate-resources -Ptrain_nerfr
+> ./gradlew trainNerFr 
 ```
 
 ### Train and evaluation of the NER model
@@ -56,24 +57,24 @@ The following commands will split automatically and randomly the available annot
 
 For the English NER model:
 ```bash
-> mvn compile exec:exec -Ptrain_eval_ner
+> ./gradlew trainEvalNer 
 ```
 
 For the French NER model:
 ```bash
-> mvn compile exec:exec -Ptrain_eval_nerfr
+> ./gradlew trainEvalNerFr 
 ```
 
 In this mode, by default, 90% of the available data is used for training and the remaining for evaluation. This ratio can be changed by editing the corresponding exec profile in the pom.xml file.
 
 ### n-fold evaluation
 
-
+...
 
 ### Train the Sense model
 
 To start the training:
 
 ```bash
-> mvn generate-resources -Ptrain_nersense
+> ./gradlew trainNerSence
 ```

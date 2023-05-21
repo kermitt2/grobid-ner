@@ -4,29 +4,31 @@ The NER can be called as follow.
 
 ## Building with maven
 
-When using maven, you need to include in your pom file the path to the grobid-core and grobid-ner jar files, for instance as follow (replace `0.2.14` by the valid `<current version>`):
+When using maven, you need to include in your pom file the path to the grobid-core and grobid-ner jar files, for instance as follow (replace `0.7.3` by the valid `<current version>`):
 
+```xml
 	<dependency>
 	    <groupId>org.grobid.core</groupId>
 	    <artifactId>grobid</artifactId>
-	    <version>0.6.1</version>
+	    <version>0.7.3</version>
 	    <scope>system</scope>
-	    <systemPath>${project.basedir}/lib/grobid-core-0.6.1.jar</systemPath>
+	    <systemPath>${project.basedir}/lib/grobid-core-0.7.3.jar</systemPath>
 	</dependency>
 
 	<dependency>
 	    <groupId>org.grobid.ner</groupId>
 	    <artifactId>grobid-ner</artifactId>
-	    <version>0.6.1</version>
+	    <version>0.7.3</version>
 	    <scope>system</scope>
-	    <systemPath>${project.basedir}/lib/grobid-ner-0.6.1.jar</systemPath>
+	    <systemPath>${project.basedir}/lib/grobid-ner-0.7.3.jar</systemPath>
 	</dependency>
-	
+```	
 
 ## API call
 
 When using grobid-ner, you have to initiate a context with the path to the Grobid resources, the following class give an example of usage:
 
+```java
 		import org.grobid.core.*;
         import org.grobid.core.data.*;
         import org.grobid.core.factory.*;
@@ -59,6 +61,6 @@ When using grobid-ner, you have to initiate a context with the path to the Grobi
 			// If an exception is generated, print a stack trace
 			e.printStackTrace();
 		} 
-		
+```		
 
 The context paths (`pGrobidHome` and `pGrobidProperties`) can be set by a property file, or for a web application by a `web.xml` file (see for instance grobid-service).
