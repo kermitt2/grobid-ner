@@ -50,6 +50,12 @@ dependencies {
 
     implementation 'org.grobid:grobid-core:0.7.3'
     implementation 'org.grobid:grobid-trainer:0.7.3'
+    implementation 'black.ninia:jep:4.0.2'
+    implementation 'org.apache.opennlp:opennlp-tools:1.9.1'
+    implementation "joda-time:joda-time:2.9.9"
+    implementation "org.apache.lucene:lucene-analyzers-common:4.5.1"
+    implementation group: 'org.jruby', name: 'jruby-complete', version: '9.2.13.0'
+
     implementation 'commons-pool:commons-pool:1.6'
     implementation 'commons-io:commons-io:2.5'
     implementation 'org.apache.commons:commons-lang3:3.6'
@@ -98,7 +104,7 @@ task copyModels(type: Copy) {
 }
 
 /** Training configuration **/
-def trainerTasks = [
+/*def trainerTasks = [
         //Training models
 //        "train_temporalExpression": "org.grobid.trainer.TemporalExpressionTrainer",
         "train_ner"               : "org.grobid.trainer.NEREnglishTrainer",
@@ -108,7 +114,7 @@ def trainerTasks = [
         // CONLL
         "eval_conll"              : "org.grobid.trainer.NEREvaluation",
         "train_conll"             : "org.grobid.trainer.CoNNLNERTrainer"
-]
+]*/
 
 def libraries = ""
 if (Os.isFamily(Os.FAMILY_MAC)) {
@@ -124,27 +130,43 @@ if (Os.isFamily(Os.FAMILY_MAC)) {
     throw new RuntimeException("Unsupported platform!")
 }  
 
-trainerTasks.each { taskName, mainClassName ->
+/*trainerTasks.each { taskName, mainClassName ->
     tasks.create(name: taskName, type: JavaExec, group: 'training') {
         main = mainClassName
         classpath = sourceSets.main.runtimeClasspath
         if (JavaVersion.current().compareTo(JavaVersion.VERSION_1_8) > 0)
             jvmArgs '-Xmx3072m', "--add-opens", "java.base/java.lang=ALL-UNNAMED"
+        else 
+            jvmArgs '-Xmx3072m'
         systemProperty "java.library.path","${System.getProperty('java.library.path')}:" + libraries
     }
-}
+}*/
  
 // return the default value if the property has not been specified in command line
 ext.getArg = { propName, defaultVal ->
     return project.hasProperty(propName) ? project.getProperty(propName) : defaultVal;
 }
 
-// Train and evaluation NER
-// run like: gradle trainEvalNer -gH /path/to/grobid-home
-task trainEvalNer(dependsOn: 'classes', type: JavaExec, group: 'training') {
+// Train NER
+// run like: ./gradlew trainNer 
+task(trainNer, dependsOn: 'classes', type: JavaExec, group: 'training') {
     main = 'org.grobid.trainer.NERTrainerRunner'
     classpath = sourceSets.main.runtimeClasspath
-    args 2, 'ner', '-gH', getArg('gH', '../../grobid-home'), '-s', getArg('s', '0.8')
+    args 0, 'ner', '-gH', getArg('gH', '../grobid-home')
+    if (JavaVersion.current().compareTo(JavaVersion.VERSION_1_8) > 0) {
+        jvmArgs '-Xmx3072m', "--add-opens", "java.base/java.lang=ALL-UNNAMED"
+    } else {
+        jvmArgs '-Xmx3072m'
+    }
+    systemProperty "java.library.path","${System.getProperty('java.library.path')}:" + libraries
+}
+
+// Train and eval NER (based on split ratio)
+// run like: ./gradlew trainEvalNer 
+task(trainEvalNer, dependsOn: 'classes', type: JavaExec, group: 'training') {
+    main = 'org.grobid.trainer.NERTrainerRunner'
+    classpath = sourceSets.main.runtimeClasspath
+    args 2, 'ner', '-gH', getArg('gH', '../grobid-home'), '-s', getArg('s', '0.8')
     if (JavaVersion.current().compareTo(JavaVersion.VERSION_1_8) > 0) {
         jvmArgs '-Xmx3072m', "--add-opens", "java.base/java.lang=ALL-UNNAMED"
     } else {
@@ -154,11 +176,11 @@ task trainEvalNer(dependsOn: 'classes', type: JavaExec, group: 'training') {
 }
 
 // Evaluation NER
-// run like: gradle evalNer -gH /path/to/grobid-home
+// run like: ./gradlew evalNer 
 task evalNer(dependsOn: 'classes', type: JavaExec, group: 'training') {
     main = 'org.grobid.trainer.NERTrainerRunner'
     classpath = sourceSets.main.runtimeClasspath
-    args 1, 'ner', '-gH', getArg('gH', '../../grobid-home')
+    args 1, 'ner', '-gH', getArg('gH', '../grobid-home')
     if (JavaVersion.current().compareTo(JavaVersion.VERSION_1_8) > 0) {
         jvmArgs '-Xmx3072m', "--add-opens", "java.base/java.lang=ALL-UNNAMED"
     } else {
@@ -167,12 +189,26 @@ task evalNer(dependsOn: 'classes', type: JavaExec, group: 'training') {
     systemProperty "java.library.path","${System.getProperty('java.library.path')}:" + libraries
 }
 
-// Train and evaluation NER FR
-// run like: gradle trainEvalNerFr -gH /path/to/grobid-home
+// Train NER FR
+// run like: ./gradlew trainNerFr
+task trainNerFr(dependsOn: 'classes', type: JavaExec, group: 'training') {
+    main = 'org.grobid.trainer.NERTrainerRunner'
+    classpath = sourceSets.main.runtimeClasspath
+    args 0, 'nerfr', '-gH', getArg('gH', '../grobid-home')
+    if (JavaVersion.current().compareTo(JavaVersion.VERSION_1_8) > 0) {
+        jvmArgs '-Xmx3072m', "--add-opens", "java.base/java.lang=ALL-UNNAMED"
+    } else {
+        jvmArgs '-Xmx3072m'
+    }
+    systemProperty "java.library.path","${System.getProperty('java.library.path')}:" + libraries
+}
+
+// Train and eval NER FR (based on split ratio)
+// run like: ./gradlew trainEvalNerFr
 task trainEvalNerFr(dependsOn: 'classes', type: JavaExec, group: 'training') {
     main = 'org.grobid.trainer.NERTrainerRunner'
     classpath = sourceSets.main.runtimeClasspath
-    args 2, 'nerfr', '-gH', getArg('gH', '../../grobid-home'), '-s', getArg('s', '0.8')
+    args 2, 'nerfr', '-gH', getArg('gH', '../grobid-home'), '-s', getArg('s', '0.8')
     if (JavaVersion.current().compareTo(JavaVersion.VERSION_1_8) > 0) {
         jvmArgs '-Xmx3072m', "--add-opens", "java.base/java.lang=ALL-UNNAMED"
     } else {
@@ -182,11 +218,25 @@ task trainEvalNerFr(dependsOn: 'classes', type: JavaExec, group: 'training') {
 }
 
 // Evaluation NER FR
-// run like: gradle evalNerFr -gH /path/to/grobid-home
+// run like: ./gradlew evalNerFr 
 task evalNerFr(dependsOn: 'classes', type: JavaExec, group: 'training') {
     main = 'org.grobid.trainer.NERTrainerRunner'
     classpath = sourceSets.main.runtimeClasspath
-    args 1, 'nerfr', '-gH', getArg('gH', '../../grobid-home')
+    args 1, 'nerfr', '-gH', getArg('gH', '../grobid-home')
+    if (JavaVersion.current().compareTo(JavaVersion.VERSION_1_8) > 0) {
+        jvmArgs '-Xmx3072m', "--add-opens", "java.base/java.lang=ALL-UNNAMED"
+    } else {
+        jvmArgs '-Xmx3072m'
+    }
+    systemProperty "java.library.path","${System.getProperty('java.library.path')}:" + libraries
+}
+
+// Train sense model
+// run like: ./gradlew trainNerSense
+task trainNerSense(dependsOn: 'classes', type: JavaExec, group: 'training') {
+    main = 'org.grobid.trainer.NERTrainerRunner'
+    classpath = sourceSets.main.runtimeClasspath
+    args 0, 'nersense', '-gH', getArg('gH', '../grobid-home')
     if (JavaVersion.current().compareTo(JavaVersion.VERSION_1_8) > 0) {
         jvmArgs '-Xmx3072m', "--add-opens", "java.base/java.lang=ALL-UNNAMED"
     } else {
