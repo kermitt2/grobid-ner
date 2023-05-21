@@ -1,8 +1,11 @@
 package org.grobid.trainer;
 
 import org.grobid.core.main.GrobidHomeFinder;
+import org.grobid.core.main.LibraryLoader;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.GrobidNerConfiguration;
+import org.grobid.core.utilities.GrobidConfig.ModelParameters;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -95,6 +98,23 @@ public class NERTrainerRunner {
 
         System.out.println(grobidHomeFinder);
         GrobidProperties.getInstance(grobidHomeFinder);
+
+        GrobidNerConfiguration grobidNerConfiguration = null;
+        try {
+            ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
+            File yamlFile = new File("resources/config/grobid-ner.yaml");
+            yamlFile = new File(yamlFile.getAbsolutePath());
+            grobidNerConfiguration = mapper.readValue(yamlFile, GrobidNerConfiguration.class);
+        } catch(Exception e) {
+            LOGGER.error("The config file does not appear valid, see resources/config/grobid-astro.yaml", e);
+        }
+
+        if (grobidNerConfiguration != null) {
+            for (ModelParameters theModel : grobidNerConfiguration.getModels()) {         
+                GrobidProperties.getInstance().addModel(theModel);
+            }
+        }
+        LibraryLoader.load();
 
         String model = args[1];
 

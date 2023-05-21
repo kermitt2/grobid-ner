@@ -55,7 +55,9 @@ public class SenseTrainer extends AbstractTrainer {
         GrobidNerConfiguration grobidNerConfiguration = null;
         try {
             ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
-            grobidNerConfiguration = mapper.readValue(new File("resources/config/grobid-ner.yaml"), GrobidNerConfiguration.class);
+            File yamlFile = new File("resources/config/grobid-ner.yaml");
+            yamlFile = new File(yamlFile.getAbsolutePath());
+            grobidNerConfiguration = mapper.readValue(yamlFile, GrobidNerConfiguration.class);
 
             // get the property value
             reutersPath = grobidNerConfiguration.getReutersPaths();

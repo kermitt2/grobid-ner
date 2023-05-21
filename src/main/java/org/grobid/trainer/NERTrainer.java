@@ -9,11 +9,13 @@ import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.lexicon.NERLexicon;
 import org.grobid.core.main.GrobidHomeFinder;
+import org.grobid.core.main.LibraryLoader;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.OffsetPosition;
 import org.grobid.core.utilities.GrobidNerConfiguration;
 import org.grobid.trainer.sax.ReutersSaxHandler;
 import org.grobid.trainer.sax.SemDocSaxHandler;
+import org.grobid.core.utilities.GrobidConfig.ModelParameters;
 
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
@@ -53,26 +55,25 @@ public class NERTrainer extends AbstractTrainer {
         this.epsilon = 0.000001;
         this.window = 20;
         this.nbMaxIterations = 200;
-
-        // read additional properties for this sub-project to get the paths to the resources
-        Properties prop = new Properties();
-        InputStream input = null;
         try {
-            input = new FileInputStream("src/main/resources/grobid-ner.properties");
-
-            // load the properties file
-            prop.load(input);
+            GrobidNerConfiguration grobidNerConfiguration = null;
+            try {
+                ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
+                File yamlFile = new File("resources/config/grobid-ner.yaml");
+                yamlFile = new File(yamlFile.getAbsolutePath());
+                grobidNerConfiguration = mapper.readValue(yamlFile, GrobidNerConfiguration.class);
+            } catch(Exception e) {
+                LOGGER.error("The config file does not appear valid, see resources/config/grobid-astro.yaml", e);
+            }
 
             // get the property value
-            reutersPath = prop.getProperty("grobid.ner.reuters.paths");
-            idiliaPath = prop.getProperty("grobid.ner.reuters.idilia_path");
-            nerCorpusPath = prop.getProperty("grobid.ner.extra_corpus");
-        } catch (IOException ex) {
+            reutersPath = grobidNerConfiguration.getReutersPaths();
+            idiliaPath = grobidNerConfiguration.getReutersIdiliaPath();
+            nerCorpusPath = grobidNerConfiguration.getExtraCorpus();
+        } catch (Exception ex) {
             throw new GrobidResourceException(
-                    "An exception occured when accessing/reading the grobid-ner property file.", ex);
-        } finally {
-            IOUtils.closeQuietly(input);
-        }
+                    "An exception occured when accessing/reading the grobid-ner config file.", ex);
+        } 
     }
 
     @Override

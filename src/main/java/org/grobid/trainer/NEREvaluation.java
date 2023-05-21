@@ -12,9 +12,12 @@ import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.lexicon.NERLexicon;
 import org.grobid.core.main.GrobidHomeFinder;
+import org.grobid.core.main.LibraryLoader;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.OffsetPosition;
 import org.grobid.core.utilities.TextUtilities;
+import org.grobid.core.utilities.GrobidConfig.ModelParameters;
+
 import org.grobid.trainer.stax.INRIALeMondeCorpusStaxHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -43,23 +46,30 @@ public class NEREvaluation {
     public NEREvaluation() {
         GrobidProperties.getInstance();
         model = GrobidModels.ENTITIES_NER;
-        loadAdditionalProperties();
-    }
-
-    private void loadAdditionalProperties() {
-       GrobidNerConfiguration grobidNerConfiguration = null;
+        GrobidNerConfiguration grobidNerConfiguration = null;
         try {
             ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
-            grobidNerConfiguration = mapper.readValue(new File("resources/config/grobid-ner.yaml"), GrobidNerConfiguration.class);
+            File yamlFile = new File("resources/config/grobid-ner.yaml");
+            yamlFile = new File(yamlFile.getAbsolutePath());
+            grobidNerConfiguration = mapper.readValue(yamlFile, GrobidNerConfiguration.class);
 
-            // get the property value
+            // get the config value
             conllPath = grobidNerConfiguration.getReutersConllPath();
+
+            if (grobidNerConfiguration != null) {
+                for (ModelParameters model : grobidNerConfiguration.getModels()) {
+                    GrobidProperties.getInstance().addModel(model);
+                }
+            }
+
+            LibraryLoader.load();
+            nerLexicon = NERLexicon.getInstance();
+            lexicon = Lexicon.getInstance();
         } catch (IOException ex) {
             throw new GrobidResourceException(
                     "An exception occured when accessing/reading the grobid-ner property file.", ex);
         } 
     }
-
 
     /**
      * Evaluation based on the CoNLL-2003 shared task NER gold corpus, English set.

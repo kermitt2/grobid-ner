@@ -57,9 +57,11 @@ public class NERMain {
             GrobidNerConfiguration grobidNerConfiguration = null;
             try {
                 ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
-                grobidNerConfiguration = mapper.readValue(new File("resources/config/grobid-ner.yaml"), GrobidNerConfiguration.class);
+                File yamlFile = new File("resources/config/grobid-ner.yaml");
+                yamlFile = new File(yamlFile.getAbsolutePath());
+                grobidNerConfiguration = mapper.readValue(yamlFile, GrobidNerConfiguration.class);
             } catch(Exception e) {
-                LOGGER.error("The config file does not appear valid, see resources/config/grobid-astro.yaml", e);
+                LOGGER.error("The config file does not appear valid, see resources/config/grobid-ner.yaml", e);
             }
 
             if (grobidHome != null) {

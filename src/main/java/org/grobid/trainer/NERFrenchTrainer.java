@@ -10,9 +10,12 @@ import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.lexicon.NERLexicon;
 import org.grobid.core.main.GrobidHomeFinder;
+import org.grobid.core.main.LibraryLoader;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.OffsetPosition;
 import org.grobid.core.utilities.GrobidNerConfiguration;
+import org.grobid.core.utilities.GrobidConfig.ModelParameters;
+
 import org.grobid.trainer.stax.INRIALeMondeCorpusStaxHandler;
 import org.grobid.trainer.stax.StaxUtils;
 import org.slf4j.Logger;
@@ -52,7 +55,9 @@ public class NERFrenchTrainer extends AbstractTrainer {
         GrobidNerConfiguration grobidNerConfiguration = null;
         try {
             ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
-            grobidNerConfiguration = mapper.readValue(new File("resources/config/grobid-ner.yaml"), GrobidNerConfiguration.class);
+            File yamlFile = new File("resources/config/grobid-ner.yaml");
+            yamlFile = new File(yamlFile.getAbsolutePath());
+            grobidNerConfiguration = mapper.readValue(yamlFile, GrobidNerConfiguration.class);
             leMondeCorpusPath = grobidNerConfiguration.getLeMondeCorpusPath();
         } catch (IOException ex) {
             throw new GrobidResourceException("An exception occured when accessing/reading the grobid-ner property file.", ex);
