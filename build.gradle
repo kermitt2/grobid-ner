@@ -85,7 +85,9 @@ dependencies {
 group = 'org.grobid'
 version = '0.7.3'
 description = 'grobid-ner'
-sourceCompatibility = '1.8'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
