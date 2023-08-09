@@ -7,7 +7,7 @@ docs_dir: doc
 extra_css:
   - 'custom.css'
 include_search: true
-pages:
+nav:
 - Home: 'index.md'
 - About:
   - 'Licence': 'Licence.md'
