@@ -48,8 +48,8 @@ dependencies {
         }
     }
 
-    implementation 'org.grobid:grobid-core:0.7.3'
-    implementation 'org.grobid:grobid-trainer:0.7.3'
+    implementation 'org.grobid:grobid-core:0.8.0'
+    implementation 'org.grobid:grobid-trainer:0.8.0'
     implementation 'black.ninia:jep:4.0.2'
     implementation 'org.apache.opennlp:opennlp-tools:1.9.1'
     implementation "joda-time:joda-time:2.9.9"
@@ -83,11 +83,11 @@ dependencies {
 }
 
 group = 'org.grobid'
-version = '0.7.3'
+version = '0.8.0'
 description = 'grobid-ner'
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+sourceCompatibility = 1.11
+targetCompatibility = 1.11
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
