@@ -19,6 +19,7 @@ plugins {
 repositories {
     mavenLocal()
     mavenCentral()
+    maven { url "https://grobid.s3.eu-west-1.amazonaws.com/repo/" }
 }
 
 apply plugin: 'java-library'
